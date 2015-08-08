@@ -9,6 +9,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     /// </summary>
     public sealed class PatternSettings
     {
+        private const string InitialNewLine = "\r\n";
+
+        private char[] CoreNewLine = new char[] { '\r', '\n' };
+
         private int _indentSize;
 
         /// <summary>
@@ -54,6 +58,23 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             get { return _indentSize; }
             set { _indentSize = Math.Max(value, 1); }
+        }
+
+        /// <summary>
+        /// Gets or sets the line terminator string used by the current <see cref="PatternSettings"/>.
+        /// </summary>
+        public string NewLine
+        {
+            get { return new string(CoreNewLine); }
+            set
+            {
+                if (value == null)
+                {
+                    value = InitialNewLine;
+                }
+
+                CoreNewLine = value.ToCharArray();
+            }
         }
     }
 }

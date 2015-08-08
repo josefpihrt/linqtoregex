@@ -15,11 +15,12 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         private static readonly Regex _newLineRegex = NonbacktrackingGroup(NewLine()).ToRegex();
 
-        public string AddComments(string pattern, LineInfoCollection lines)
+        public string AddComments(string pattern, LineInfoCollection lines, PatternSettings settings)
         {
             _index = 0;
             _sb = new StringBuilder();
             _lines = lines;
+            string newLine = settings.NewLine;
             var splits = _newLineRegex.Split(pattern);
             int maxLength = splits.Max(f => f.Length);
             bool isFirst = true;
@@ -32,7 +33,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 }
                 else
                 {
-                    _sb.AppendLine();
+                    _sb.Append(newLine);
                 }
 
                 _sb.Append(split);
