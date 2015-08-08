@@ -65,7 +65,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             if (_comment)
             {
-                var builder = new CommentBuilder();
+                var builder = new FormattedPatternBuilder();
                 return builder.AddComments(_sb.ToString(), _lines, Settings);
             }
             else

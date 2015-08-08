@@ -119,7 +119,7 @@
     <Compile Include="Substitution\EntireInputSubstitution.cs" />
     <Compile Include="Substitution\TextSubstitution.cs" />
     <Compile Include="SyntaxKind.cs" />
-    <Compile Include="CommentBuilder.cs" />
+    <Compile Include="FormattedPatternBuilder.cs" />
     <Compile Include="TextPattern.cs" />
     <Compile Include="NamedBlock.cs" />
     <Compile Include="NegativeSurroundAssertion.cs" />
