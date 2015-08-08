@@ -3,6 +3,7 @@
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using static Pihrtsoft.Text.RegularExpressions.Linq.Patterns;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
@@ -12,7 +13,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         private StringBuilder _sb;
         private LineInfoCollection _lines;
 
-        private static readonly Regex _newLineRegex = Patterns.NewLine().ToRegex();
+        private static readonly Regex _newLineRegex = NonbacktrackingGroup(NewLine()).ToRegex();
 
         public string AddComments(string pattern, LineInfoCollection lines)
         {
@@ -21,12 +22,21 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             _lines = lines;
             var splits = _newLineRegex.Split(pattern);
             int maxLength = splits.Max(f => f.Length);
+            bool isFirst = true;
 
             foreach (var split in splits)
             {
+                if (isFirst)
+                {
+                    isFirst = false;
+                }
+                else
+                {
+                    _sb.AppendLine();
+                }
+
                 _sb.Append(split);
                 AppendComment(maxLength - split.Length + 1);
-                _sb.AppendLine();
                 _index++;
             }
 
