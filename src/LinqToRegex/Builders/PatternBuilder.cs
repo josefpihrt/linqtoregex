@@ -1927,6 +1927,17 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendDirect(charCode.ToString("X2", CultureInfo.InvariantCulture));
         }
 
+        internal void AppendUnicodeHexadecimal(int charCode)
+        {
+            if (charCode < 0 || charCode > 0xFFFF)
+            {
+                throw new ArgumentOutOfRangeException(nameof(charCode));
+            }
+
+            AppendBackslash('u');
+            AppendDirect(charCode.ToString("X4", CultureInfo.InvariantCulture).PadLeft(4, '0'));
+        }
+
         internal void AppendDirect(int value)
         {
             _sb.Append(NumberToString(value));
