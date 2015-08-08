@@ -8,7 +8,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     /// <summary>
     /// Provides static methods and constants for obtaining regular expression language elements.
     /// </summary>
-    public static partial class Syntax
+    internal static partial class Syntax
     {
         /// <summary>
         /// Specifies start token of the inline comment.
@@ -254,34 +254,29 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public const char IgnorePatternWhiteSpaceChar = 'x';
 
         /// <summary>
-        /// Specifies start token of the substitution patter.
-        /// </summary>
-        public const string SubstitutionChar = "$";
-
-        /// <summary>
         /// Specifies a substitution pattern that substitutes last captured group.
         /// </summary>
-        public const string SubstituteLastCapturedGroup = SubstitutionChar + "+";
+        public const string SubstituteLastCapturedGroup = "$+";
 
         /// <summary>
         /// Specifies a substitution pattern that substitutes entire input string.
         /// </summary>
-        public const string SubstituteEntireInput = SubstitutionChar + "_";
+        public const string SubstituteEntireInput = "$_";
 
         /// <summary>
         /// Specifies a substitution pattern that substitutes entire match.
         /// </summary>
-        public const string SubstituteEntireMatch = SubstitutionChar + "&";
+        public const string SubstituteEntireMatch = "$&";
 
         /// <summary>
         /// Specifies a substitution pattern that substitutes all the text of the input string after the match.
         /// </summary>
-        public const string SubstituteAfterMatch = SubstitutionChar + "'";
+        public const string SubstituteAfterMatch = "$'";
 
         /// <summary>
         /// Specifies a substitution pattern that substitutes all the text of the input string before the match.
         /// </summary>
-        public const string SubstituteBeforeMatch = SubstitutionChar + "`";
+        public const string SubstituteBeforeMatch = "$`";
 
         /// <summary>
         /// Specifies start token of the substitution pattern that substitutes a named group.
