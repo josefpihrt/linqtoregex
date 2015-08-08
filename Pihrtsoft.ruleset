@@ -2,6 +2,7 @@
 <RuleSet Name="Pihrtsoft" Description="Code analysis rules for Pihrtsoft" ToolsVersion="14.0">
   <IncludeAll Action="Warning" />
   <Rules AnalyzerId="CSharpEssentials" RuleNamespace="CSharpEssentials">
+    <Rule Id="CSE0003" Action="None" />
   </Rules>
   <Rules AnalyzerId="CodeCracker.CSharp" RuleNamespace="CodeCracker.CSharp">
     <Rule Id="CC0001" Action="None" />
