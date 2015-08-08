@@ -181,17 +181,13 @@ There are methods, such as `AnyNative` or `CrawlNative` that behaves differently
 In these two patterns, a dot can match any character except linefeed or any character in `RegexOptions.Singleline` option is applied.
 
 ### Prefix "While"
+"While" is an alias for a `*` quantifier. Methods whose name  begins with "While" returns pattern that matches a specified character zero or more times.
+
 ```c#
 var pattern = WhileChar('a'); // a*
 ```
 ```c#
 var pattern = WhileDigit(); // \d*
-```
-```c#
-var pattern = WhileNotChar('a'); // [^a]*
-```
-```c#
-var pattern = WhileNotNewLineChar(); // [^\r\n]*
 ```
 ```c#
 var pattern = WhileWhiteSpace(); // \s*
@@ -202,7 +198,16 @@ var pattern = WhileWhiteSpaceExceptNewLine(); // [\s-[\r\n]]*
 ```c#
 var pattern = WhileWordChar(); // \w*
 ```
+### Prefix "WhileNot"
+Methods whose name  begins with "WhileNot" returns pattern that matches a character that is not a specified character zero or more times.
+```c#
+var pattern = WhileNotChar('a'); // [^a]*
+```
+```c#
+var pattern = WhileNotNewLineChar(); // [^\r\n]*
+```
 ### Prefix "Until"
+Methods whose name begins with "Until" returns pattern that matches a character that is not a specified character zero or more times terminated with the same character.
 ```c#
 var pattern = UntilChar('a'); // (?:[^a]*a)
 ```
