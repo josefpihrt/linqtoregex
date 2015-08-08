@@ -81,77 +81,85 @@ var pattern = Join(WhiteSpaces(), "a", "b", "c", "d");
 Regex syntax: `a\s+b\s+c\s+d`
 
 ### Quantifiers
-
-`?` quantifier matches previous element zero or one times. Use `Maybe` method to apply this quantifier.
+Use `Maybe` method to match previoud element zero or one time.
 ```c#
-var pattern = Patterns.Digit().Maybe();
+var pattern = Digit().Maybe();
 ```
-`*` quantifier matches previous element zero or more times. Use `MaybeMany` method to apply this quantifier.
-```c#
-var pattern = Patterns.Digit().MaybeMany();
-```
-`+` quantifier matches previous element one or more times. Use `OneMany` method to apply this quantifier.
-```c#
-var pattern = Patterns.Digit().OneMany();
-```
+Regex syntax: `\d?`
 
-By default quantifiers are "greedy" which means that previous element is matched as many times as possible. If you want to match previous element as few times as possible, use `Lazy` method.
-
-Following pattern will match any character zero or more times but as few times as possible. Regex syntax is `[\s\S]*?` .
+Use `MaybeMany` method to match previoud element zero or more times.
 ```c#
-var pattern = Patterns.Any().MaybeMany().Lazy();
+var pattern = Digit().MaybeMany();
 ```
+Regex syntax: `\d*`
 
-Previous pattern is quite common so it is wrapped into a following method.
+Use `OneMany` method to match previoud element one or more times.
+```c#
+var pattern = Digit().OneMany();
+```
+Regex syntax: `\d+`
+
+Quantifiers are "greedy" by default which means that previous element is matched as many times as possible. If you want to match previous element as few times as possible, use `Lazy` method.
+
+Following pattern will match any character zero or more times but as few times as possible.
+```c#
+var pattern = Any().MaybeMany().Lazy();
+```
+Regex syntax: `[\s\S]*?`
+
+Previous pattern is quite common so it is wrapped into a `Crawl` method.
 ```c#
 var pattern = Patterns.Crawl();
 ```
 
 #### Quantifier group
-
 In regular expressions syntax you can apply quantifier only after the element that should be quantified. In LINQ to Regex you can define a quantifier group and put a quantified content into it.
 
 ### Operators
 #### + Operator
-The `+` operator concatenates the operands into a new pattern. Following three pattern have the same meaning.
-
-Pattern class has many instance methods that allows you to concatenate the current instance with another pattern. Following pattern matches an empty line.
+The `+` operator concatenates the operands into a new pattern. Following pattern matches an empty line.
 ```c#
 var pattern = Patterns.BeginLine().Assert(Patterns.NewLine());
 ```
+Regex syntax: `(?m:^)(?=(?:\r?\n))`
+
 Same goal can be achieved using `+` operator.
 ```c#
 var pattern = Patterns.BeginLine() + Patterns.Assert(Patterns.NewLine());
 ```
-With "using static" statement pattern more concise.
+With "using static" statement the expression is more concise.
 ```c#
 var pattern = BeginLine() + Assert(NewLine());
 ```
 
 #### - Operator
-`-` operator can be used to create character subtraction. This operator is defined for `CharGroup`, `CharGrouping` and `CharPattern` types.
-
-`Except` method is used to create character subtraction. Following pattern matches a white-space character except a carriage return and a linefeed. Regex syntax is `[\s-[\r\n]]` .
+`-` operator can be used to create character subtraction. This operator is defined for `CharGroup`, `CharGrouping` and `CharPattern` types. `Except` method is used to create character subtraction. Following pattern matches a white-space character except a carriage return and a linefeed.
 ```c#
 var pattern = Patterns.WhiteSpace().Except(Chars.CarriageReturn().Linefeed());
 ```
+Regex syntax: `[\s-[\r\n]]`
+
 Same goal can be achieved using `-` operator.
 ```c#
 var pattern = Patterns.WhiteSpace() - Chars.CarriageReturn().Linefeed();
 ```
-In fact this pattern is quite common so it is wrapped into a following method.
+Previous pattern is quite common so it is wrapped into a `WhiteSpaceExceptNewLine` method.
 ```c#
 var pattern = Patterns.WhiteSpaceExceptNewLine();
 ```
 
 #### | Operator
-`Any` method represents a group in which any one of the specified patterns has to be matched.
+`Any` method represents a group in which any one of the specified patterns has to be matched. Following pattern matches a word that begin with a or b.
 ```c#
-var pattern = Pattern.Any("first", "second", "third");
+var pattern = Any(
+    WordBoundary() + "a" + WordChars(), 
+    WordBoundary() + "b" + WordChars());
 ```
+Regex syntax: `(?:\ba\w+|\bb\w+)`
+
 Same goal can be achieved using `|` operator
 ```c#
-var pattern = "first" | "second" | "third;
+var pattern = (WordBoundary() + "a" + WordChars()) | (WordBoundary() + "b" + WordChars());
 ```
 
 #### ! Operator
@@ -159,20 +167,16 @@ var pattern = "first" | "second" | "third;
 ```c#
 var pattern = Patterns.NotAssertBack(CarriageReturn()).Linefeed();
 ```
+Regex syntax: `(?:(?<!\r)\n)`
+
 Same goal can be achieved using ! operator.
 ```c#
 var pattern = !Patterns.AssertBack(CarriageReturn()) + Patterns.Linefeed();
 ```
-
-With "using static" statement the pattern is more concise.
+With "using static" statement the expression is more concise.
 ```c#
 var pattern = !AssertBack(CarriageReturn()) + Linefeed();
 ```
-
-### Suffix "Native"
-
-There are methods, such as `AnyNative` or `CrawlNative` that behaves differently depending on the provided `RegexOptions` value.
-In these two patterns, a dot can match any character except linefeed or any character in `RegexOptions.Singleline` option is applied.
 
 ### Prefix "While"
 "While" is an alias for a `*` quantifier. Methods whose name  begins with "While" returns pattern that matches a specified character zero or more times.
@@ -208,6 +212,10 @@ var pattern = UntilChar('a'); // (?:[^a]*a)
 ```c#
 var pattern = UntilNewLine(); // (?:[^\n]*\n)
 ```
+
+### Suffix "Native"
+There are methods, such as `AnyNative` or `CrawlNative` that behaves differently depending on the provided `RegexOptions` value.
+In these two patterns, a dot can match any character except linefeed or any character in `RegexOptions.Singleline` option is applied.
 
 ### Examples
 
