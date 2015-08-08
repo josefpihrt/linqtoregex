@@ -1573,6 +1573,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (_comment)
             {
                 _lines.Last.QuantifierKind = QuantifierKind.Count;
+                _lines.Last.Count1 = exactCount;
+
             }
         }
 
@@ -1620,6 +1622,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (_comment)
             {
                 _lines.Last.QuantifierKind = QuantifierKind.CountRange;
+                _lines.Last.Count1 = minCount;
+                _lines.Last.Count2 = maxCount;
             }
         }
 
@@ -1664,6 +1668,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (_comment)
             {
                 _lines.Last.QuantifierKind = QuantifierKind.CountFrom;
+                _lines.Last.Count1 = 0;
+                _lines.Last.Count2 = minCount;
             }
         }
 
@@ -1699,6 +1705,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (_comment)
             {
                 _lines.Last.QuantifierKind = QuantifierKind.MaybeCount;
+                _lines.Last.Count1 = maxCount;
             }
 
             if (lazy)

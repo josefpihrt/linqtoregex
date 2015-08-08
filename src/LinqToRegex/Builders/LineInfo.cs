@@ -12,5 +12,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public SyntaxKind Kind { get; set; }
         public QuantifierKind QuantifierKind { get; set; }
         public bool Lazy { get; set; }
+
+        public int Count1 { get; set; } = -1;
+        public int Count2 { get; set; } = -1;
     }
 }

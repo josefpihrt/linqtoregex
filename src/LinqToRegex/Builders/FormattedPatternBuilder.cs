@@ -81,7 +81,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return _comments[(int)Current.Kind];
         }
 
-        private static string GetQuantifierComment(QuantifierKind kind)
+        private string GetQuantifierComment(QuantifierKind kind)
         {
             switch (kind)
             {
@@ -92,13 +92,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 case QuantifierKind.OneMany:
                     return "one or more times";
                 case QuantifierKind.Count:
-                    return "exactly n times";
+                    return $"exactly {Current.Count1} times";
                 case QuantifierKind.CountRange:
-                    return "from n to m times";
+                    return $"from {Current.Count1} to {Current.Count2} times";
                 case QuantifierKind.CountFrom:
-                    return "at least n times";
+                    return $"at least {Current.Count1} times";
                 case QuantifierKind.MaybeCount:
-                    return "from zero to n times";
+                    return $"from zero to {Current.Count1} times";
             }
 
             return null;
