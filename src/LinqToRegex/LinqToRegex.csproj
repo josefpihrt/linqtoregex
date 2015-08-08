@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A5C864F0-D0A3-4A3C-8854-CE4EE631901B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pihrtsoft.Text.RegularExpressions.Linq</RootNamespace>
+    <AssemblyName>Pihrtsoft.Text.RegularExpressions.Linq</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\..\Pihrtsoft.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Debug\Pihrtsoft.Text.RegularExpressions.Linq.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>
+    </CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Release\Pihrtsoft.Text.RegularExpressions.Linq.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>LinqToRegex.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Anchor\Assertion.cs" />
+    <Compile Include="Anchor\BackAssertion.cs" />
+    <Compile Include="Anchor\EndOfInput.cs" />
+    <Compile Include="Anchor\EndOfLine.cs" />
+    <Compile Include="Anchor\EndOfInputOrBeforeEndingLinefeed.cs" />
+    <Compile Include="Anchor\NegativeAssertion.cs" />
+    <Compile Include="Anchor\NegativeBackAssertion.cs" />
+    <Compile Include="Anchor\NegativeWordBoundary.cs" />
+    <Compile Include="Anchor\PreviousMatchEnd.cs" />
+    <Compile Include="Anchor\StartOfInput.cs" />
+    <Compile Include="Anchor\StartOfLine.cs" />
+    <Compile Include="Anchor\WordBoundary.cs" />
+    <Compile Include="AnyChar.cs" />
+    <Compile Include="AnyCharNative.cs" />
+    <Compile Include="AsciiChar.cs" />
+    <Compile Include="AsciiCharSurroundPattern.cs" />
+    <Compile Include="CharClass.cs" />
+    <Compile Include="CharEscapeMode.cs" />
+    <Compile Include="CharGroup.cs" />
+    <Compile Include="CharGrouping.cs" />
+    <Compile Include="CharGroupings.cs" />
+    <Compile Include="CharGrouping_.cs" />
+    <Compile Include="CharGroup_.cs" />
+    <Compile Include="CharPattern.cs" />
+    <Compile Include="CharPattern_.cs" />
+    <Compile Include="CharSubtraction.cs" />
+    <Compile Include="LineInfoCollection.cs" />
+    <Compile Include="LineInfo.cs" />
+    <Compile Include="ConcatPattern.cs" />
+    <Compile Include="ContentPattern.cs" />
+    <Compile Include="ExceptionHelper.cs" />
+    <Compile Include="Extensions\BaseGroupExtensions.cs" />
+    <Compile Include="Extensions\EnumerableExtensions.cs" />
+    <Compile Include="Extensions\GroupExtensions.cs" />
+    <Compile Include="Extensions\MatchExtensions.cs" />
+    <Compile Include="Extensions\RegexExtensions.cs" />
+    <Compile Include="GeneralCategory.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="GroupMode.cs" />
+    <Compile Include="GroupNameReference.cs" />
+    <Compile Include="GroupNumberReference.cs" />
+    <Compile Include="Group\BalancingGroup.cs" />
+    <Compile Include="Group\GroupingPattern.cs" />
+    <Compile Include="Group\GroupOptions.cs" />
+    <Compile Include="Group\NamedGroup.cs" />
+    <Compile Include="Group\NonbacktrackingGroup.cs" />
+    <Compile Include="Group\NoncapturingGroup.cs" />
+    <Compile Include="Group\NumberedGroup.cs" />
+    <Compile Include="IBaseGroup.cs" />
+    <Compile Include="IdentifierBoundary.cs" />
+    <Compile Include="IExcludedGroup.cs" />
+    <Compile Include="IfAssert.cs" />
+    <Compile Include="IfGroup.cs" />
+    <Compile Include="INegateable.cs" />
+    <Compile Include="JoinContainer.cs" />
+    <Compile Include="LazyQuantifier.cs" />
+    <Compile Include="CaseAwareTextPattern.cs" />
+    <Compile Include="QuantifierKind.cs" />
+    <Compile Include="SyntaxKind.cs" />
+    <Compile Include="CommentBuilder.cs" />
+    <Compile Include="TextPattern.cs" />
+    <Compile Include="NamedBlock.cs" />
+    <Compile Include="NegativeSurroundAssertion.cs" />
+    <Compile Include="Options.cs" />
+    <Compile Include="OrContainer.cs" />
+    <Compile Include="Pattern.cs" />
+    <Compile Include="PatternBuilder.cs" />
+    <Compile Include="PatternOptions.cs" />
+    <Compile Include="Patterns.cs" />
+    <Compile Include="PatternSettings.cs" />
+    <Compile Include="Pattern_.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuantifiablePattern.cs" />
+    <Compile Include="QuantifiedGroup.cs" />
+    <Compile Include="QuantifiedGroup_.cs" />
+    <Compile Include="QuantifiedPattern.cs" />
+    <Compile Include="QuantifiedPattern_.cs" />
+    <Compile Include="RegexUtility.cs" />
+    <Compile Include="Substitution.cs" />
+    <Compile Include="Substitutions.cs" />
+    <Compile Include="Substitution_.cs" />
+    <Compile Include="SurroundAssertion.cs" />
+    <Compile Include="SurroundPattern.cs" />
+    <Compile Include="Syntax.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="AppDictionary.xml">
+      <SubType>Designer</SubType>
+    </CodeAnalysisDictionary>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LinqToRegex.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="Pihrtsoft" Description="Code analysis rules for Pihrtsoft" ToolsVersion="14.0">
+  <IncludeAll Action="Warning" />
+  <Rules AnalyzerId="CSharpEssentials" RuleNamespace="CSharpEssentials">
+    <Rule Id="CSE0003" Action="None" />
+  </Rules>
+  <Rules AnalyzerId="CodeCracker.CSharp" RuleNamespace="CodeCracker.CSharp">
+    <Rule Id="CC0001" Action="None" />
+    <Rule Id="CC0006" Action="None" />
+    <Rule Id="CC0013" Action="None" />
+    <Rule Id="CC0014" Action="None" />
+    <Rule Id="CC0015" Action="None" />
+    <Rule Id="CC0030" Action="None" />
+    <Rule Id="CC0031" Action="None" />
+    <Rule Id="CC0045" Action="None" />
+  </Rules>
+  <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+    <Rule Id="CA1303" Action="None" />
+    <Rule Id="CA2000" Action="None" />
+    <Rule Id="CA2104" Action="None" />
+  </Rules>
+</RuleSet>

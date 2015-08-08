@@ -1,0 +1,48 @@
+﻿// Copyright (c) Josef Pihrt. All rights reserved. Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
+
+namespace Pihrtsoft.Text.RegularExpressions.Linq
+{
+    internal enum SyntaxKind
+    {
+        AnyChar,
+        AnyCharExceptLinefeed,
+        Assertion,
+        BackAssertion,
+        BalancingGroup,
+        BeginningOfInput,
+        BeginningOfInputOrLine,
+        Character,
+        CharGroup,
+        Digit,
+        EndOfInput,
+        EndOfInputOrBeforeEndingLinefeed,
+        EndOfInputOrLine,
+        GeneralCategory,
+        Group,
+        GroupEnd,
+        GroupOptions,
+        GroupReference,
+        IfAssert,
+        IfGroup,
+        NamedBlock,
+        NamedGroup,
+        NegativeAssertion,
+        NegativeBackAssertion,
+        NegativeCharGroup,
+        NegativeWordBoundary,
+        NonbacktrackingGroup,
+        NoncapturingGroup,
+        NotDigit,
+        NotGeneralCategory,
+        NotNamedBlock,
+        NotWhiteSpace,
+        NotWordChar,
+        Options,
+        Or,
+        PreviousMatchEnd,
+        Text,
+        WhiteSpace,
+        WordBoundary,
+        WordChar,
+    }
+}
