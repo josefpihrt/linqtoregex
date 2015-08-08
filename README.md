@@ -182,50 +182,75 @@ var pattern = !AssertBack(CarriageReturn()) + Linefeed();
 "While" is an alias for a `*` quantifier. Methods whose name  begins with "While" returns pattern that matches a specified character zero or more times.
 
 ```c#
-var pattern = WhileChar('a'); // a*
+var pattern = WhileChar('a');
 ```
+Regex syntax: `a*`
+
 ```c#
-var pattern = WhileDigit(); // \d*
+var pattern = WhileDigit();
 ```
+Regex syntax: `\d*`
+
 ```c#
-var pattern = WhileWhiteSpace(); // \s*
+var pattern = WhileWhiteSpace();
 ```
+Regex syntax: `\s*`
+
 ```c#
-var pattern = WhileWhiteSpaceExceptNewLine(); // [\s-[\r\n]]*
+var pattern = WhileWhiteSpaceExceptNewLine();
 ```
+Regex syntax: `[\s-[\r\n]]*`
+
 ```c#
-var pattern = WhileWordChar(); // \w*
+var pattern = WhileWordChar();
 ```
+Regex syntax: `\w*`
+
 ### Prefix "WhileNot"
 Methods whose name  begins with "WhileNot" returns pattern that matches a character that is not a specified character zero or more times.
 ```c#
-var pattern = WhileNotChar('a'); // [^a]*
+var pattern = WhileNotChar('a');
 ```
+Regex syntax: `[^a]*`
+
 ```c#
-var pattern = WhileNotNewLineChar(); // [^\r\n]*
+var pattern = WhileNotNewLineChar();
 ```
+Regex syntax: `[^\r\n]*`
+
 ### Prefix "Until"
-Methods whose name begins with "Until" returns pattern that matches a character that is not a specified character zero or more times terminated with the same character.
+Methods whose name begins with "Until" returns pattern that matches a character that is not a specified character zero or more times terminated with the specified character.
 ```c#
-var pattern = UntilChar('a'); // (?:[^a]*a)
+var pattern = UntilChar('a');
 ```
+Regex syntax: `(?:[^a]*a)`
+
 ```c#
-var pattern = UntilNewLine(); // (?:[^\n]*\n)
+var pattern = UntilNewLine();
 ```
+Regex syntax: `(?:[^\n]*\n)`
 
 ### Suffix "Native"
-There are methods, such as `AnyNative` or `CrawlNative` that behaves differently depending on the provided `RegexOptions` value.
-In these two patterns, a dot can match any character except linefeed or any character in `RegexOptions.Singleline` option is applied.
+Methods whose name ends with "Native" returns pattern that behaves differently depending on the provided `RegexOptions`.
+In the follwoing two patterns, a dot can match any character except linefeed or any character if `RegexOptions.Singleline` option is applied.
+
+```c#
+var pattern = AnyNative();
+```
+Regex syntax: `.`
+
+```c#
+var pattern = CrawlNative();
+```
+Regex syntax: `.*?`
 
 ### Examples
 
 #### Leading White-space
 ```c#
 Pattern pattern = BeginInputOrLine().WhiteSpaceExceptNewLine().OneMany());
-
-Console.WriteLine(pattern.ToString(PatternOptions.FormatAndComment));
 ```
-Output:
+Regex syntax:
 ```
 ^            # beginning of input
 [\s-[\r\n]]+ # character group one or more times
@@ -237,10 +262,8 @@ var pattern =
         .NotWordChars()
         .GroupReference(1)
         .WordBoundary();
-
-Console.WriteLine(pattern.ToString(PatternOptions.FormatAndComment));
 ```
-Output:
+Regex syntax:
 ```
 (           # numbered group
     (?:     # noncapturing group
@@ -258,10 +281,8 @@ Output:
 string q = "\"";
 
 var pattern = "@" + q + WhileNotChar(q) + MaybeMany(q + q + WhileNotChar(q)) + q;
-
-Console.WriteLine(pattern.ToString(PatternOptions.FormatAndComment));
 ```
-Output:
+Regex syntax:
 ```
 @"        # text
 [^"]*     # negative character group zero or more times
@@ -269,7 +290,7 @@ Output:
     ""    # text
     [^"]* # negative character group zero or more times
 )*        # group zero or more times
-"         # character
+"         # quote mark
 ```
 #### Words in Sequence in Any Order
 ```c#
@@ -282,10 +303,8 @@ var pattern =
         .GroupReference(1)
         .GroupReference(2)
         .GroupReference(3);
-
-Console.WriteLine(pattern.ToString(PatternOptions.FormatAndComment));
 ```
-Output:
+Regex syntax:
 ```
 \b                # word boundary
 (?:               # noncapturing group
@@ -325,29 +344,27 @@ Pattern pattern =
             )
         )
     );
-
-Console.WriteLine(pattern.ToString(PatternOptions.FormatAndComment));
 ```
-Output:
+Regex syntax:
 ```
-<              # character
-!              # character
-\[             # character
+<              # left angle bracket
+!              # exclamation mark
+\[             # left square bracket
 CDATA          # text
-\[             # character
+\[             # left square bracket
 (              # numbered group
     [^\]]*     # negative character group zero or more times
     (?:        # noncapturing group
-        ]      # character
+        ]      # right square bracket
         (?!    # negative lookahead assertion
             ]> # text
         )      # group end
         [^\]]* # negative character group zero or more times
     )*         # group zero or more times
 )              # group end
-]              # character
-]              # character
->              # character
+]              # right square bracket
+]              # right square bracket
+>              # right angle bracket
 ```
 
 ### NuGet Package
