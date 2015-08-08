@@ -18,14 +18,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
         }
 
-        /// <summary>
-        /// Creates and returns a new instance of the <see cref="Substitution"/> class.
-        /// </summary>
-        /// <param name="value">A content of the substitution pattern.</param>
-        /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        internal static Substitution Create(string value) => new TextSubstitution(value);
-
         internal Substitution Append(Substitution substitution)
         {
             substitution.Previous = this;
@@ -108,7 +100,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="value">A text to append.</param>
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"></exception>
-        public Substitution Text(string value) => Append(Create(value));
+        public Substitution Text(string value) => Append(Substitutions.Text(value));
 
         internal virtual string Value => null;
 

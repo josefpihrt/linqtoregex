@@ -14,8 +14,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="value">A content of the substitution pattern.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        public static Substitution Text(string value) => Substitution.Create(value);
+        public static Substitution Text(string value) => new TextSubstitution(value);
 
         /// <summary>
         /// Returns a substitution pattern that substitutes the last substring matched by the named group.
@@ -24,36 +23,36 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"></exception>
         /// <exception cref="ArgumentException"></exception>
-        public static Substitution NamedGroup(string groupName) => new Substitution.NamedGroupSubstitution(groupName);
+        public static Substitution NamedGroup(string groupName) => new NamedGroupSubstitution(groupName);
 
         /// <summary>
         /// Returns a substitution pattern that substitutes the last captured group.
         /// </summary>
         /// <returns></returns>
-        public static Substitution LastCapturedGroup() => new Substitution.LastCapturedGroupSubstitution();
+        public static Substitution LastCapturedGroup() => new LastCapturedGroupSubstitution();
 
         /// <summary>
         /// Returns a substitution pattern that substitutes the entire input string.
         /// </summary>
         /// <returns></returns>
-        public static Substitution EntireInput() => new Substitution.EntireInputSubstitution();
+        public static Substitution EntireInput() => new EntireInputSubstitution();
 
         /// <summary>
         /// Returns a substitution pattern that substitutes the entire match.
         /// </summary>
         /// <returns></returns>
-        public static Substitution EntireMatch() => new Substitution.EntireMatchSubstitution();
+        public static Substitution EntireMatch() => new EntireMatchSubstitution();
 
         /// <summary>
         /// Returns a substitution pattern that substitutes all the text of the input string after the match.
         /// </summary>
         /// <returns></returns>
-        public static Substitution AfterMatch() => new Substitution.AfterMatchSubstitution();
+        public static Substitution AfterMatch() => new AfterMatchSubstitution();
 
         /// <summary>
         /// Returns a substitution pattern that substitutes all the text of the input string before the match.
         /// </summary>
         /// <returns></returns>
-        public static Substitution BeforeMatch() => new Substitution.BeforeMatchSubstitution();
+        public static Substitution BeforeMatch() => new BeforeMatchSubstitution();
     }
 }

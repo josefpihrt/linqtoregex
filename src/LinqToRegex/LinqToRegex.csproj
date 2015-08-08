@@ -110,6 +110,12 @@
     <Compile Include="LazyQuantifier.cs" />
     <Compile Include="CaseAwareTextPattern.cs" />
     <Compile Include="QuantifierKind.cs" />
+    <Compile Include="Substitution\NamedGroupSubstitution.cs" />
+    <Compile Include="Substitution\BeforeMatchSubstitution.cs" />
+    <Compile Include="Substitution\AfterMatchSubstitution.cs" />
+    <Compile Include="Substitution\LastCapturedGroupSubstitution.cs" />
+    <Compile Include="Substitution\EntireInputSubstitution.cs" />
+    <Compile Include="Substitution\TextSubstitution.cs" />
     <Compile Include="SyntaxKind.cs" />
     <Compile Include="CommentBuilder.cs" />
     <Compile Include="TextPattern.cs" />
@@ -130,9 +136,9 @@
     <Compile Include="QuantifiedPattern.cs" />
     <Compile Include="QuantifiedPattern_.cs" />
     <Compile Include="RegexUtility.cs" />
-    <Compile Include="Substitution.cs" />
-    <Compile Include="Substitutions.cs" />
-    <Compile Include="Substitution_.cs" />
+    <Compile Include="Substitution\Substitution.cs" />
+    <Compile Include="Substitution\Substitutions.cs" />
+    <Compile Include="Substitution\EntireMatchSubstitution.cs" />
     <Compile Include="SurroundAssertion.cs" />
     <Compile Include="SurroundPattern.cs" />
     <Compile Include="Syntax.cs" />
