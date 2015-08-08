@@ -14,8 +14,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     public static class RegexUtility
     {
         internal static readonly RegexOptions InlineOptions = RegexOptions.IgnoreCase | RegexOptions.Multiline | RegexOptions.ExplicitCapture | RegexOptions.Singleline | RegexOptions.IgnorePatternWhitespace;
-
         internal static Regex ValidGroupNameRegex;
+        private static readonly object _randomLock = new object();
+        private static Random _random;
 
         /// <summary>
         /// Gets a value indicating whether the specified group name is a valid name of a regex group.
@@ -369,8 +370,19 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return sb.ToString();
         }
 
-        private static readonly object _randomLock = new object();
-        private static Random _random;
+        /// <summary>
+        /// Gets a designation of the specified Unicode category.
+        /// </summary>
+        /// <param name="category">An enumerated constant that identifies Unicode category.</param>
+        /// <returns></returns>
+        public static string GetCategoryDesignation(GeneralCategory category) => CategoryDesignations[(int)category];
+
+        /// <summary>
+        /// Gets a designation of the specified Unicode block.
+        /// </summary>
+        /// <param name="block">An enumerated constant that identifies Unicode block.</param>
+        /// <returns></returns>
+        public static string GetBlockDesignation(NamedBlock block) => BlockDesignations[(int)block];
 
         private static readonly CharEscapeMode[] EscapeModes = new CharEscapeMode[] {
             // 0 0x00
@@ -1400,6 +1412,159 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             CharEscapeMode.None,
             // 255 0xFF ÿ
             CharEscapeMode.None,
+        };
+
+        internal static readonly string[] CategoryDesignations = new string[]
+        {
+            "C",
+            "M",
+            "L",
+            "N",
+            "P",
+            "Z",
+            "S",
+            "Ll",
+            "Lm",
+            "Lo",
+            "Lt",
+            "Lu",
+            "Me",
+            "Mn",
+            "Mc",
+            "Nd",
+            "Nl",
+            "No",
+            "Cc",
+            "Cf",
+            "Cn",
+            "Co",
+            "Cs",
+            "Pe",
+            "Pc",
+            "Pd",
+            "Pf",
+            "Pi",
+            "Ps",
+            "Po",
+            "Zl",
+            "Zp",
+            "Zs",
+            "Sc",
+            "Sm",
+            "Sk",
+            "So"
+        };
+
+        internal static readonly string[] BlockDesignations = new string[]
+        {
+            "IsAlphabeticPresentationForms",
+            "IsArabic",
+            "IsArabicPresentationForms-A",
+            "IsArabicPresentationForms-B",
+            "IsArmenian",
+            "IsArrows",
+            "IsBasicLatin",
+            "IsBengali",
+            "IsBlockElements",
+            "IsBopomofo",
+            "IsBopomofoExtended",
+            "IsBoxDrawing",
+            "IsBraillePatterns",
+            "IsBuhid",
+            "IsCJKCompatibility",
+            "IsCJKCompatibilityForms",
+            "IsCJKCompatibilityIdeographs",
+            "IsCJKRadicalsSupplement",
+            "IsCJKSymbolsandPunctuation",
+            "IsCJKUnifiedIdeographs",
+            "IsCJKUnifiedIdeographsExtensionA",
+            "IsCombiningDiacriticalMarks",
+            "IsCombiningDiacriticalMarksforSymbols",
+            "IsCombiningHalfMarks",
+            "IsCombiningMarksforSymbols",
+            "IsControlPictures",
+            "IsCurrencySymbols",
+            "IsCyrillic",
+            "IsCyrillicSupplement",
+            "IsDevanagari",
+            "IsDingbats",
+            "IsEnclosedAlphanumerics",
+            "IsEnclosedCJKLettersandMonths",
+            "IsEthiopic",
+            "IsGeneralPunctuation",
+            "IsGeometricShapes",
+            "IsGeorgian",
+            "IsGreek",
+            "IsGreekandCoptic",
+            "IsGreekExtended",
+            "IsGujarati",
+            "IsGurmukhi",
+            "IsHalfwidthandFullwidthForms",
+            "IsHangulCompatibilityJamo",
+            "IsHangulJamo",
+            "IsHangulSyllables",
+            "IsHanunoo",
+            "IsHebrew",
+            "IsHighPrivateUseSurrogates",
+            "IsHighSurrogates",
+            "IsHiragana",
+            "IsCherokee",
+            "IsIdeographicDescriptionCharacters",
+            "IsIPAExtensions",
+            "IsKanbun",
+            "IsKangxiRadicals",
+            "IsKannada",
+            "IsKatakana",
+            "IsKatakanaPhoneticExtensions",
+            "IsKhmer",
+            "IsKhmerSymbols",
+            "IsLao",
+            "IsLatin-1Supplement",
+            "IsLatinExtended-A",
+            "IsLatinExtendedAdditional",
+            "IsLatinExtended-B",
+            "IsLetterlikeSymbols",
+            "IsLimbu",
+            "IsLowSurrogates",
+            "IsMalayalam",
+            "IsMathematicalOperators",
+            "IsMiscellaneousMathematicalSymbols-A",
+            "IsMiscellaneousMathematicalSymbols-B",
+            "IsMiscellaneousSymbols",
+            "IsMiscellaneousSymbolsandArrows",
+            "IsMiscellaneousTechnical",
+            "IsMongolian",
+            "IsMyanmar",
+            "IsNumberForms",
+            "IsOgham",
+            "IsOpticalCharacterRecognition",
+            "IsOriya",
+            "IsPhoneticExtensions",
+            "IsPrivateUse",
+            "IsPrivateUseArea",
+            "IsRunic",
+            "IsSinhala",
+            "IsSmallFormVariants",
+            "IsSpacingModifierLetters",
+            "IsSpecials",
+            "IsSuperscriptsandSubscripts",
+            "IsSupplementalArrows-A",
+            "IsSupplementalArrows-B",
+            "IsSupplementalMathematicalOperators",
+            "IsSyriac",
+            "IsTagalog",
+            "IsTagbanwa",
+            "IsTaiLe",
+            "IsTamil",
+            "IsTelugu",
+            "IsThaana",
+            "IsThai",
+            "IsTibetan",
+            "IsUnifiedCanadianAboriginalSyllabics",
+            "IsVariationSelectors",
+            "IsYijingHexagramSymbols",
+            "IsYiRadicals",
+            "IsYiSyllables"
         };
     }
 }

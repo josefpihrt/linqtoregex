@@ -1410,7 +1410,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             AppendBackslash(negative ? 'P' : 'p');
             AppendDirect('{');
-            AppendDirect(Syntax.CategoryDesignations[(int)category]);
+            AppendDirect(RegexUtility.CategoryDesignations[(int)category]);
             AppendDirect('}');
 
             if (_comment && _charGroupLevel == 0)
@@ -1443,7 +1443,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             AppendBackslash(negative ? 'P' : 'p');
             AppendDirect('{');
-            AppendDirect(Syntax.BlockDesignations[(int)block]);
+            AppendDirect(RegexUtility.BlockDesignations[(int)block]);
             AppendDirect('}');
 
             if (_comment && _charGroupLevel == 0)
