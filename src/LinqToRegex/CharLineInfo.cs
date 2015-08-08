@@ -2,15 +2,16 @@
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
-    internal class LineInfo
+    internal sealed class CharLineInfo
+        : LineInfo
     {
-        public LineInfo(SyntaxKind kind)
+        public CharLineInfo(SyntaxKind kind, char character)
+            : base(kind)
         {
             Kind = kind;
+            Character = character;
         }
 
-        public SyntaxKind Kind { get; set; }
-        public QuantifierKind QuantifierKind { get; set; }
-        public bool Lazy { get; set; }
+        public char Character { get; set; }
     }
 }

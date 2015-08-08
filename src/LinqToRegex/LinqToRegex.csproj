@@ -78,6 +78,7 @@
     <Compile Include="CharPattern.cs" />
     <Compile Include="CharPattern_.cs" />
     <Compile Include="CharSubtraction.cs" />
+    <Compile Include="CharLineInfo.cs" />
     <Compile Include="LineInfoCollection.cs" />
     <Compile Include="LineInfo.cs" />
     <Compile Include="ConcatPattern.cs" />
@@ -110,6 +111,7 @@
     <Compile Include="LazyQuantifier.cs" />
     <Compile Include="CaseAwareTextPattern.cs" />
     <Compile Include="QuantifierKind.cs" />
+    <Compile Include="TextUtility.cs" />
     <Compile Include="Substitution\NamedGroupSubstitution.cs" />
     <Compile Include="Substitution\BeforeMatchSubstitution.cs" />
     <Compile Include="Substitution\AfterMatchSubstitution.cs" />

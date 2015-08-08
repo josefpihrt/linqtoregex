@@ -16,6 +16,40 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             Add(new LineInfo(kind));
         }
 
+        public void AddCharacter(char character)
+        {
+            Add(new CharLineInfo(SyntaxKind.Character, character));
+        }
+
+        public void AddTextOrCharacter(string value)
+        {
+            if (value.Length > 1)
+            {
+                Add(SyntaxKind.Text);
+            }
+            else
+            {
+                AddCharacter(value[0]);
+            }
+        }
+
+        public void AddTextOrCharacter(string value, int count)
+        {
+            AddTextOrCharacter(value, 0, count);
+        }
+
+        public void AddTextOrCharacter(string value, int startIndex, int count)
+        {
+            if (count > 1)
+            {
+                Add(SyntaxKind.Text);
+            }
+            else
+            {
+                AddCharacter(value[startIndex]);
+            }
+        }
+
         public LineInfo Last => this[Count - 1];
     }
 }

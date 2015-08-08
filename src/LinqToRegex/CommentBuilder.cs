@@ -68,6 +68,15 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             {
                 return "group";
             }
+            else if (Current.Kind == SyntaxKind.Character)
+            {
+                var info = (CharLineInfo)Current;
+                int ch = info.Character;
+                if (ch < 128)
+                {
+                    return TextUtility.GetAsciiCharName((AsciiChar)ch);
+                }
+            }
 
             return _comments[(int)Current.Kind];
         }
