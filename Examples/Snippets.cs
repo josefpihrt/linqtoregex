@@ -1,5 +1,6 @@
 ﻿// Copyright (c) Josef Pihrt. All rights reserved. Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
+using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
 using static Pihrtsoft.Text.RegularExpressions.Linq.Patterns;
@@ -213,37 +214,19 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         public static Pattern CSharpMultilineComment()
         {
-            return "/*" 
-                + WhileNotChar('*')
-                + MaybeMany(
-                    "*" 
-                    + NotAssert("/") 
-                    + WhileNotChar('*'))
-                + "*/";
+            return "/*" + Until("*/");
         }
 
         public static Pattern XmlCData()
         {
-            return SurroundAngleBrackets(
-                    "!" + SurroundSquareBrackets(
-                        "CDATA" + SurroundSquareBrackets(
-                            Group(
-                                WhileNotChar(']')
-                                + MaybeMany(
-                                    "]"
-                                    + NotAssert("]>")
-                                    + WhileNotChar(']'))
-                            )
-                        )
-                    )
-                );
+            return "<![CDATA[" + Until("]]>");
         }
 
         public static Pattern EmailAddress()
         {
             var left = OneMany(Chars.Alphanumeric() + "!#$%&'*+/=?^_`{|}~-");
 
-            var right = Maybe(MaybeMany(Chars.Alphanumeric() + "-").Alphanumeric());
+            var right = Maybe(MaybeMany(Chars.Alphanumeric() + "-") + Alphanumeric());
 
             return NoncapturingGroup(
                 left
@@ -252,6 +235,33 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 + OneMany(Alphanumeric() + right + ".")
                 + Alphanumeric()
                 + right);
+        }
+
+        public static Pattern Until(string value)
+        {
+            if (value == null)
+            {
+                throw new ArgumentNullException(nameof(value));
+            }
+
+            switch (value.Length)
+            {
+                case 0:
+                    return Patterns.Text(string.Empty);
+                case 1:
+                    return UntilChar(value[0]);
+                default:
+                    {
+                        return NoncapturingGroup(
+                            WhileNotChar(value[0])
+                            + MaybeMany(
+                                value[0]
+                                + NotAssert(value.Substring(1))
+                                + WhileNotChar(value[0]))
+                            + value
+                        );
+                    }
+            }
         }
     }
 }
