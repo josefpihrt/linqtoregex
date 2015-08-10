@@ -590,7 +590,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 throw new ArgumentNullException(nameof(value));
             }
 
-            return Patterns.Not(value);
+            return Patterns.NotChar(value);
         }
 
         /// <summary>

@@ -18,7 +18,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
             Dump("email address", Snippets.EmailAddress());
 
-            Dump("verbatim quoted text", Snippets.CSharpVerbatimTextLiteral());
+            Dump("verbatim verbatim string literal", Snippets.CSharpVerbatimTextLiteral());
 
             Dump("leading whitespace", Snippets.LeadingWhiteSpace());
 

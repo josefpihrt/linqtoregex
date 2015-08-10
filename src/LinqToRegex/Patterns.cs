@@ -1216,7 +1216,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="value">A Unicode character.</param>
         /// <returns></returns>
-        public static CharGroup Not(char value)
+        public static CharGroup NotChar(char value)
         {
             return CharGroup.Create(value, true);
         }
@@ -1226,7 +1226,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="value">An enumerated constant that identifies ASCII character.</param>
         /// <returns></returns>
-        public static CharGroup Not(AsciiChar value)
+        public static CharGroup NotChar(AsciiChar value)
         {
             return CharGroup.Create(value, true);
         }
@@ -1236,7 +1236,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="block">An enumerated constant that identifies Unicode block.</param>
         /// <returns></returns>
-        public static CharPattern Not(NamedBlock block)
+        public static CharPattern NotChar(NamedBlock block)
         {
             return CharPattern.Create(block, true);
         }
@@ -1246,7 +1246,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="category">An enumerated constant that identifies Unicode category.</param>
         /// <returns></returns>
-        public static CharPattern Not(GeneralCategory category)
+        public static CharPattern NotChar(GeneralCategory category)
         {
             return CharPattern.Create(category, true);
         }
@@ -1258,7 +1258,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"></exception>
         /// <exception cref="ArgumentException"></exception>
-        public static CharGroup Not(string characters)
+        public static CharGroup NotChar(string characters)
         {
             return CharGroup.Create(characters, true);
         }
@@ -1270,7 +1270,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"></exception>
         /// <exception cref="ArgumentException"></exception>
-        public static CharGroup Not(params char[] characters)
+        public static CharGroup NotChar(params char[] characters)
         {
             return CharGroup.Create(characters, true);
         }
@@ -1281,7 +1281,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="value">A content of a character group.</param>
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"></exception>
-        public static CharGroup Not(CharGrouping value)
+        public static CharGroup NotChar(CharGrouping value)
         {
             return CharGroup.Create(value, true);
         }
@@ -1348,7 +1348,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotTab()
         {
-            return Not(AsciiChar.Tab);
+            return NotChar(AsciiChar.Tab);
         }
 
         /// <summary>
@@ -1388,7 +1388,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotLinefeed()
         {
-            return Not(AsciiChar.Linefeed);
+            return NotChar(AsciiChar.Linefeed);
         }
 
         /// <summary>
@@ -1428,7 +1428,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotCarriageReturn()
         {
-            return Not(AsciiChar.CarriageReturn);
+            return NotChar(AsciiChar.CarriageReturn);
         }
 
         /// <summary>
@@ -1468,7 +1468,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotSpace()
         {
-            return Not(AsciiChar.Space);
+            return NotChar(AsciiChar.Space);
         }
 
         /// <summary>
@@ -1508,7 +1508,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotExclamationMark()
         {
-            return Not(AsciiChar.ExclamationMark);
+            return NotChar(AsciiChar.ExclamationMark);
         }
 
         /// <summary>
@@ -1548,7 +1548,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotQuoteMark()
         {
-            return Not(AsciiChar.QuoteMark);
+            return NotChar(AsciiChar.QuoteMark);
         }
 
         /// <summary>
@@ -1588,7 +1588,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotNumberSign()
         {
-            return Not(AsciiChar.NumberSign);
+            return NotChar(AsciiChar.NumberSign);
         }
 
         /// <summary>
@@ -1628,7 +1628,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotDollar()
         {
-            return Not(AsciiChar.Dollar);
+            return NotChar(AsciiChar.Dollar);
         }
 
         /// <summary>
@@ -1668,7 +1668,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotPercent()
         {
-            return Not(AsciiChar.Percent);
+            return NotChar(AsciiChar.Percent);
         }
 
         /// <summary>
@@ -1708,7 +1708,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotAmpersand()
         {
-            return Not(AsciiChar.Ampersand);
+            return NotChar(AsciiChar.Ampersand);
         }
 
         /// <summary>
@@ -1748,7 +1748,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotApostrophe()
         {
-            return Not(AsciiChar.Apostrophe);
+            return NotChar(AsciiChar.Apostrophe);
         }
 
         /// <summary>
@@ -1788,7 +1788,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotLeftParenthesis()
         {
-            return Not(AsciiChar.LeftParenthesis);
+            return NotChar(AsciiChar.LeftParenthesis);
         }
 
         /// <summary>
@@ -1828,7 +1828,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotRightParenthesis()
         {
-            return Not(AsciiChar.RightParenthesis);
+            return NotChar(AsciiChar.RightParenthesis);
         }
 
         /// <summary>
@@ -1868,7 +1868,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotAsterisk()
         {
-            return Not(AsciiChar.Asterisk);
+            return NotChar(AsciiChar.Asterisk);
         }
 
         /// <summary>
@@ -1908,7 +1908,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotPlus()
         {
-            return Not(AsciiChar.Plus);
+            return NotChar(AsciiChar.Plus);
         }
 
         /// <summary>
@@ -1948,7 +1948,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotComma()
         {
-            return Not(AsciiChar.Comma);
+            return NotChar(AsciiChar.Comma);
         }
 
         /// <summary>
@@ -1988,7 +1988,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotHyphen()
         {
-            return Not(AsciiChar.Hyphen);
+            return NotChar(AsciiChar.Hyphen);
         }
 
         /// <summary>
@@ -2028,7 +2028,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotDot()
         {
-            return Not(AsciiChar.Dot);
+            return NotChar(AsciiChar.Dot);
         }
 
         /// <summary>
@@ -2068,7 +2068,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotSlash()
         {
-            return Not(AsciiChar.Slash);
+            return NotChar(AsciiChar.Slash);
         }
 
         /// <summary>
@@ -2108,7 +2108,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotColon()
         {
-            return Not(AsciiChar.Colon);
+            return NotChar(AsciiChar.Colon);
         }
 
         /// <summary>
@@ -2148,7 +2148,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotSemicolon()
         {
-            return Not(AsciiChar.Semicolon);
+            return NotChar(AsciiChar.Semicolon);
         }
 
         /// <summary>
@@ -2188,7 +2188,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotLeftAngleBracket()
         {
-            return Not(AsciiChar.LeftAngleBracket);
+            return NotChar(AsciiChar.LeftAngleBracket);
         }
 
         /// <summary>
@@ -2228,7 +2228,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotEqualsSign()
         {
-            return Not(AsciiChar.EqualsSign);
+            return NotChar(AsciiChar.EqualsSign);
         }
 
         /// <summary>
@@ -2268,7 +2268,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotRightAngleBracket()
         {
-            return Not(AsciiChar.RightAngleBracket);
+            return NotChar(AsciiChar.RightAngleBracket);
         }
 
         /// <summary>
@@ -2308,7 +2308,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotQuestionMark()
         {
-            return Not(AsciiChar.QuestionMark);
+            return NotChar(AsciiChar.QuestionMark);
         }
 
         /// <summary>
@@ -2348,7 +2348,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotAtSign()
         {
-            return Not(AsciiChar.AtSign);
+            return NotChar(AsciiChar.AtSign);
         }
 
         /// <summary>
@@ -2388,7 +2388,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotLeftSquareBracket()
         {
-            return Not(AsciiChar.LeftSquareBracket);
+            return NotChar(AsciiChar.LeftSquareBracket);
         }
 
         /// <summary>
@@ -2428,7 +2428,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotBackslash()
         {
-            return Not(AsciiChar.Backslash);
+            return NotChar(AsciiChar.Backslash);
         }
 
         /// <summary>
@@ -2468,7 +2468,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotRightSquareBracket()
         {
-            return Not(AsciiChar.RightSquareBracket);
+            return NotChar(AsciiChar.RightSquareBracket);
         }
 
         /// <summary>
@@ -2508,7 +2508,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotCircumflexAccent()
         {
-            return Not(AsciiChar.CircumflexAccent);
+            return NotChar(AsciiChar.CircumflexAccent);
         }
 
         /// <summary>
@@ -2548,7 +2548,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotUnderscore()
         {
-            return Not(AsciiChar.Underscore);
+            return NotChar(AsciiChar.Underscore);
         }
 
         /// <summary>
@@ -2588,7 +2588,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotGraveAccent()
         {
-            return Not(AsciiChar.GraveAccent);
+            return NotChar(AsciiChar.GraveAccent);
         }
 
         /// <summary>
@@ -2628,7 +2628,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotLeftCurlyBracket()
         {
-            return Not(AsciiChar.LeftCurlyBracket);
+            return NotChar(AsciiChar.LeftCurlyBracket);
         }
 
         /// <summary>
@@ -2668,7 +2668,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotVerticalBar()
         {
-            return Not(AsciiChar.VerticalBar);
+            return NotChar(AsciiChar.VerticalBar);
         }
 
         /// <summary>
@@ -2708,7 +2708,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotRightCurlyBracket()
         {
-            return Not(AsciiChar.RightCurlyBracket);
+            return NotChar(AsciiChar.RightCurlyBracket);
         }
 
         /// <summary>
@@ -2748,7 +2748,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotTilde()
         {
-            return Not(AsciiChar.Tilde);
+            return NotChar(AsciiChar.Tilde);
         }
 
         /// <summary>
@@ -3022,7 +3022,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static CharGroup NotNewLineChar()
         {
-            return Not("\r\n");
+            return NotChar("\r\n");
         }
 
         /// <summary>
@@ -3062,7 +3062,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static CharGroup NotAlphanumeric()
         {
-            return Not(Chars.Alphanumeric());
+            return NotChar(Chars.Alphanumeric());
         }
 
         /// <summary>
@@ -3182,7 +3182,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static CharGroup NotAlphanumericUnderscore()
         {
-            return Not(Chars.AlphanumericUnderscore());
+            return NotChar(Chars.AlphanumericUnderscore());
         }
 
         /// <summary>
@@ -3222,7 +3222,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static CharGroup NotLatinLetter()
         {
-            return Not(Chars.LatinLetter());
+            return NotChar(Chars.LatinLetter());
         }
 
         /// <summary>
@@ -3342,7 +3342,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotLetterLower()
         {
-            return DisableOptions(RegexOptions.IgnoreCase, Not(GeneralCategory.LetterLowercase));
+            return DisableOptions(RegexOptions.IgnoreCase, NotChar(GeneralCategory.LetterLowercase));
         }
 
         /// <summary>
@@ -3382,7 +3382,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern NotLetterUpper()
         {
-            return DisableOptions(RegexOptions.IgnoreCase, Not(GeneralCategory.LetterUppercase));
+            return DisableOptions(RegexOptions.IgnoreCase, NotChar(GeneralCategory.LetterUppercase));
         }
 
         /// <summary>
@@ -3422,7 +3422,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static CharGroup NotArabicDigit()
         {
-            return Not(Chars.ArabicDigit());
+            return NotChar(Chars.ArabicDigit());
         }
 
         /// <summary>
@@ -3462,7 +3462,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static CharGroup NotHexadecimalDigit()
         {
-            return Not(Chars.HexadecimalDigit());
+            return NotChar(Chars.HexadecimalDigit());
         }
 
         /// <summary>
@@ -3502,7 +3502,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static CharGroup NotParenthesis()
         {
-            return Not(Chars.Parenthesis());
+            return NotChar(Chars.Parenthesis());
         }
 
         /// <summary>
@@ -3542,7 +3542,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static CharGroup NotCurlyBracket()
         {
-            return Not(Chars.CurlyBracket());
+            return NotChar(Chars.CurlyBracket());
         }
 
         /// <summary>
@@ -3582,7 +3582,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static CharGroup NotSquareBracket()
         {
-            return Not(Chars.SquareBracket());
+            return NotChar(Chars.SquareBracket());
         }
 
         /// <summary>
@@ -3909,7 +3909,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiedPattern WhileNotChar(char value)
         {
-            return Not(value).MaybeMany();
+            return NotChar(value).MaybeMany();
         }
 
         /// <summary>
@@ -3921,7 +3921,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentException"></exception>
         public static QuantifiedPattern WhileNotChar(params char[] characters)
         {
-            return Not(characters).MaybeMany();
+            return NotChar(characters).MaybeMany();
         }
 
         /// <summary>
@@ -3933,7 +3933,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentException"></exception>
         public static QuantifiedPattern WhileNotChar(string characters)
         {
-            return Not(characters).MaybeMany();
+            return NotChar(characters).MaybeMany();
         }
 
         /// <summary>
@@ -3943,7 +3943,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiedPattern WhileNotChar(AsciiChar value)
         {
-            return Not(value).MaybeMany();
+            return NotChar(value).MaybeMany();
         }
 
         /// <summary>
@@ -3954,7 +3954,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"></exception>
         public static QuantifiedPattern WhileNotChar(CharGrouping value)
         {
-            return Not(value).MaybeMany();
+            return NotChar(value).MaybeMany();
         }
 
         /// <summary>
