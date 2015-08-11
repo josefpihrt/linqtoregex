@@ -248,13 +248,15 @@ Regex syntax: `.*?`
 
 ### Examples
 
-#### Leading White-space
+#### Line Leading White-space
 ```c#
-Pattern pattern = BeginInputOrLine().WhiteSpaceExceptNewLine().OneMany());
+var pattern = BeginLine().WhiteSpaceExceptNewLine().OneMany());
 ```
 Regex syntax:
 ```
-^            # beginning of input
+(?m:         # group options
+    ^        # beginning of input or line
+)            # group end
 [\s-[\r\n]]+ # character group one or more times
 ```
 #### Repeated Word
@@ -332,39 +334,28 @@ Regex syntax:
 ```
 #### XML CDATA Value
 ```c#
-Pattern pattern = 
-    SurroundAngleBrackets(
-        "!" + SurroundSquareBrackets(
-            "CDATA" + SurroundSquareBrackets(
-                Group(
-                    WhileNotChar(']')
-                    + MaybeMany(
-                        "]"
-                        + NotAssert("]>")
-                        + WhileNotChar(']'))
-                )
-            )
-        )
-    );
+var pattern = 
+    "<![CDATA["
+        + WhileNotChar(']')
+        + MaybeMany(
+            ']'
+            + NotAssert("]>")
+            + WhileNotChar(']'))
+        + "]]>";
 ```
 Regex syntax:
 ```
-<              # left angle bracket
-!              # exclamation mark
-\[             # left square bracket
-CDATA          # text
-\[             # left square bracket
-(              # numbered group
-    [^\]]*     # negative character group zero or more times
-    (?:        # noncapturing group
-        ]      # right square bracket
-        (?!    # negative lookahead assertion
-            ]> # text
-        )      # group end
-        [^\]]* # negative character group zero or more times
-    )*         # group zero or more times
-)              # group end
-]              # right square bracket
-]              # right square bracket
->              # right angle bracket
+<!         # text
+\[         # left square bracket
+CDATA      # text
+\[         # left square bracket
+[^\]]*     # negative character group zero or more times
+(?:        # noncapturing group
+    ]      # right square bracket
+    (?!    # negative lookahead assertion
+        ]> # text
+    )      # group end
+    [^\]]* # negative character group zero or more times
+)*         # group zero or more times
+]]>        # text
 ```
