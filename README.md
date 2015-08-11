@@ -3,7 +3,6 @@
 * It allows you to create and use regular expressions directly in your code and develop complex expressions while keeping its readability and maintainability.
 * Knowledge of the regular expression syntax is not required (but you should be familiar with basics).
 * The library is distributed via [NuGet](https://www.nuget.org/packages/LinqToRegex).
-* If you are looking for a desktop IDE for a .NET regular expressions, try [Regexator](http://www.regexator.net).
 
 The library contains two namespaces:
 ```c#
@@ -69,13 +68,14 @@ Last two items in the list, `Object[]` and `IEnumerable` can contains zero or mo
 
 Methods that allows to pass a content typed as `object` usually allows to pass an array of object with `params` (`ParamArray` in Visual Basic) keyword. This overload simply convert the array of objects to the `object` and calls overload that accept `object` as an argument. 
 
-### Concat and Join Methods
+### Concat Method
 Static method `Patterns.Concat` concatenates elements of the specified collection.
 ```c#
 var pattern = Concat("a", "b", "c", "d");
 ```
 Regex syntax: `abcd`
 
+### Join Method
 Static method `Patterns.Join` concatenates the elements of the specified collection using the specified separator between each element. It is very similar to a `string.Join` method.
 ```c#
 var pattern = Join(WhiteSpaces(), "a", "b", "c", "d");
@@ -248,13 +248,20 @@ Regex syntax: `.*?`
 
 ### Examples
 
-#### Leading White-space
+In following examples, an output is obtained using following syntax:
 ```c#
-Pattern pattern = BeginInputOrLine().WhiteSpaceExceptNewLine().OneMany());
+Console.WriteLine(pattern.ToString(PatternOptions.FormatAndComment));
+```
+
+#### Line Leading White-space
+```c#
+var pattern = BeginLine().WhiteSpaceExceptNewLine().OneMany());
 ```
 Regex syntax:
 ```
-^            # beginning of input
+(?m:         # group options
+    ^        # beginning of input or line
+)            # group end
 [\s-[\r\n]]+ # character group one or more times
 ```
 #### Repeated Word
@@ -332,39 +339,32 @@ Regex syntax:
 ```
 #### XML CDATA Value
 ```c#
-Pattern pattern = 
-    SurroundAngleBrackets(
-        "!" + SurroundSquareBrackets(
-            "CDATA" + SurroundSquareBrackets(
-                Group(
-                    WhileNotChar(']')
-                    + MaybeMany(
-                        "]"
-                        + NotAssert("]>")
-                        + WhileNotChar(']'))
-                )
-            )
-        )
-    );
+var pattern = 
+    "<![CDATA["
+        + WhileNotChar(']')
+        + MaybeMany(
+            ']'
+            + NotAssert("]>")
+            + WhileNotChar(']'))
+        + "]]>";
 ```
 Regex syntax:
 ```
-<              # left angle bracket
-!              # exclamation mark
-\[             # left square bracket
-CDATA          # text
-\[             # left square bracket
-(              # numbered group
-    [^\]]*     # negative character group zero or more times
-    (?:        # noncapturing group
-        ]      # right square bracket
-        (?!    # negative lookahead assertion
-            ]> # text
-        )      # group end
-        [^\]]* # negative character group zero or more times
-    )*         # group zero or more times
-)              # group end
-]              # right square bracket
-]              # right square bracket
->              # right angle bracket
+<!         # text
+\[         # left square bracket
+CDATA      # text
+\[         # left square bracket
+[^\]]*     # negative character group zero or more times
+(?:        # noncapturing group
+    ]      # right square bracket
+    (?!    # negative lookahead assertion
+        ]> # text
+    )      # group end
+    [^\]]* # negative character group zero or more times
+)*         # group zero or more times
+]]>        # text
 ```
+
+### Desktop IDE for .NET Regular Expressions
+
+If you are looking for a desktop IDE for .NET regular expressions, try [Regexator](http://www.regexator.net).
