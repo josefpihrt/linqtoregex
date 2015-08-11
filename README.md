@@ -3,7 +3,6 @@
 * It allows you to create and use regular expressions directly in your code and develop complex expressions while keeping its readability and maintainability.
 * Knowledge of the regular expression syntax is not required (but you should be familiar with basics).
 * The library is distributed via [NuGet](https://www.nuget.org/packages/LinqToRegex).
-* If you are looking for a desktop IDE for a .NET regular expressions, try [Regexator](http://www.regexator.net).
 
 The library contains two namespaces:
 ```c#
@@ -360,3 +359,7 @@ CDATA      # text
 )*         # group zero or more times
 ]]>        # text
 ```
+
+### Desktop IDE for .NET Regular Expressions
+
+If you are looking for a desktop IDE for .NET regular expressions, try [Regexator](http://www.regexator.net).
