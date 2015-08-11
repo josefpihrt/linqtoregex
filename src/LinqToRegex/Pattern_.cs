@@ -653,7 +653,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return AppendInternal(Patterns.SurroundQuoteMarks(content));
         }
 
-#if DEBUG
         /// <summary>
         /// Appends a pattern that matches two quotation marks (apostrophes), allowing zero or more characters that are not a quotation mark (apostrophe) between the quotation marks (apostrophes).
         /// </summary>
@@ -684,7 +683,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             return AppendInternal(Patterns.SurroundQuoteMarksOrApostrophes(content));
         }
-#endif
 
         /// <summary>
         /// Appends a pattern that matches a text consisting of a left parenthesis and a right parenthesis, allowing zero or more characters that are not a right parenthesis between the parentheses.

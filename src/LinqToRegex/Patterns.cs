@@ -3678,7 +3678,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return Surround(AsciiChar.QuoteMark, (object)content);
         }
 
-#if DEBUG
         /// <summary>
         /// Returns a pattern that matches two quotation marks (apostrophes), allowing zero or more characters that are not a quotation mark (apostrophe) between the quotation marks (apostrophes).
         /// </summary>
@@ -3709,7 +3708,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             return SurroundQuoteMarks(content) | SurroundApostrophes(content);
         }
-#endif
 
         /// <summary>
         /// Returns a pattern that matches a text consisting of a left parenthesis and a right parenthesis, allowing zero or more characters that are not a right parenthesis between the parentheses.
