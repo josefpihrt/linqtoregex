@@ -248,6 +248,11 @@ Regex syntax: `.*?`
 
 ### Examples
 
+In following examples, an output is obtained using following syntax:
+```c#
+Console.WriteLine(pattern.ToString(PatternOptions.FormatAndComment));
+```
+
 #### Line Leading White-space
 ```c#
 var pattern = BeginLine().WhiteSpaceExceptNewLine().OneMany());
