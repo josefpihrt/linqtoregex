@@ -73,17 +73,29 @@ Methods that allows to pass a content typed as `object` usually allows to pass a
 ```c#
 var pattern = Digit().Maybe();
 ```
+or
+```c#
+var pattern = Maybe(Digit());
+```
 Regex syntax: `\d?`
 
 `MaybeMany` method returns a pattern that matches previous element zero or more times.
 ```c#
 var pattern = Digit().MaybeMany();
 ```
+or
+```c#
+var pattern = MaybeMany(Digit());
+```
 Regex syntax: `\d*`
 
 `OneMany` method returns a pattern that matches previous element one or more times.
 ```c#
 var pattern = Digit().OneMany();
+```
+or
+```c#
+var pattern = OneMany(Digit());
 ```
 Regex syntax: `\d+`
 
