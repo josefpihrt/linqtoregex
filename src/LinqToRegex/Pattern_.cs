@@ -984,7 +984,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         }
 
         /// <summary>
-        /// Appends a pattern that matches zero or more characters that are not a specified character and a specified character.
+        /// Appends a pattern that matches zero or more characters until it reaches a specified character.
         /// </summary>
         /// <param name="value">A Unicode character.</param>
         /// <returns></returns>
@@ -994,7 +994,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         }
 
         /// <summary>
-        /// Appends a pattern that matches zero or more characters that are not a specified character and a specified character.
+        /// Appends a pattern that matches zero or more characters until it reaches a specified character.
         /// </summary>
         /// <param name="value">An enumerated constant that identifies ASCII character.</param>
         /// <returns></returns>
@@ -1004,7 +1004,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         }
 
         /// <summary>
-        /// Appends a pattern that matches zero or more characters that are not matched by a specified <see cref="CharGrouping"/> and a character that is matched by a specified <see cref="CharGrouping"/>.
+        /// Appends a pattern that matches zero or more characters until it reaches a character that is matched by a specified <see cref="CharGrouping"/>.
         /// </summary>
         /// <param name="value">A content of a character group.</param>
         /// <returns></returns>
@@ -1015,7 +1015,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         }
 
         /// <summary>
-        /// Appends a pattern that matches zero or more characters that are not a linefeed and a linefeed.
+        /// Appends a pattern that matches zero or more characters until it reaches a linefeed.
         /// </summary>
         /// <returns></returns>
         public QuantifiablePattern UntilNewLine()
