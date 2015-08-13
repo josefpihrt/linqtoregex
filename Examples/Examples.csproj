@@ -50,6 +50,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Snippets.cs" />
+    <Compile Include="StringInterpolation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
