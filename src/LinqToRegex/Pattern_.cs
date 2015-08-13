@@ -1024,6 +1024,17 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         }
 
         /// <summary>
+        /// Appends a pattern that matches zero or more characters until it reaches a specified <paramref name="value"/>.
+        /// </summary>
+        /// <param name="value">A text to be matched.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"></exception>
+        public Pattern Until(string value)
+        {
+            return AppendInternal(Patterns.Until(value));
+        }
+
+        /// <summary>
         /// Appends a pattern that matches any character.
         /// </summary>
         /// <returns></returns>

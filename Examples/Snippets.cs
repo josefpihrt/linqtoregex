@@ -236,32 +236,5 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 + Alphanumeric()
                 + right);
         }
-
-        public static Pattern Until(string value)
-        {
-            if (value == null)
-            {
-                throw new ArgumentNullException(nameof(value));
-            }
-
-            switch (value.Length)
-            {
-                case 0:
-                    return Patterns.Text(string.Empty);
-                case 1:
-                    return UntilChar(value[0]);
-                default:
-                    {
-                        return NoncapturingGroup(
-                            WhileNotChar(value[0])
-                            + MaybeMany(
-                                value[0]
-                                + NotAssert(value.Substring(1))
-                                + WhileNotChar(value[0]))
-                            + value
-                        );
-                    }
-            }
-        }
     }
 }

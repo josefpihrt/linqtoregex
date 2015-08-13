@@ -4005,6 +4005,39 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         }
 
         /// <summary>
+        /// Returns a pattern that matches zero or more characters until it reaches a specified <paramref name="value"/>.
+        /// </summary>
+        /// <param name="value">A text to be matched.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"></exception>
+        public static Pattern Until(string value)
+        {
+            if (value == null)
+            {
+                throw new ArgumentNullException(nameof(value));
+            }
+
+            switch (value.Length)
+            {
+                case 0:
+                    return Text(string.Empty);
+                case 1:
+                    return UntilChar(value[0]);
+                default:
+                    {
+                        return NoncapturingGroup(
+                            WhileNotChar(value[0])
+                            + MaybeMany(
+                                value[0]
+                                + NotAssert(value.Substring(1))
+                                + WhileNotChar(value[0]))
+                            + value
+                        );
+                    }
+            }
+        }
+
+        /// <summary>
         /// Returns a pattern that matches any character zero or more times but as few times as possible.
         /// </summary>
         /// <returns></returns>
