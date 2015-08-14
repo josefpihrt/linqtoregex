@@ -545,7 +545,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 throw new ArgumentNullException(nameof(trueContent));
             }
 
-            AppendGroupStart(false);
+            AppendGroupStart();
+            AppendDirect('(');
 
             if (_comment)
             {
@@ -554,12 +555,11 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
             if (!Settings.HasOptions(PatternOptions.IfConditionWithoutAssertion))
             {
-                AppendAssertion(testContent);
+                AppendDirect("?=");
             }
-            else
-            {
-                AppendNumberedGroup(testContent);
-            }
+
+            AppendGroupContent(testContent);
+            AppendGroupEnd();
 
             RegexOptions currentOptions = _currentOptions;
 
