@@ -143,6 +143,12 @@
     <Compile Include="SurroundAssertion.cs" />
     <Compile Include="SurroundPattern.cs" />
     <Compile Include="Syntax.cs" />
+    <Compile Include="LiteralBuilder\CSharpLiteralBuilder.cs" />
+    <Compile Include="LiteralBuilder\LiteralBuilder.cs" />
+    <Compile Include="LiteralBuilder\LiteralOptions.cs" />
+    <Compile Include="LiteralBuilder\LiteralSettings.cs" />
+    <Compile Include="LiteralBuilder\NewLineKind.cs" />
+    <Compile Include="LiteralBuilder\VisualBasicLiteralBuilder.cs" />
   </ItemGroup>
   <ItemGroup>
     <CodeAnalysisDictionary Include="AppDictionary.xml">
