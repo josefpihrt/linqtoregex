@@ -19,15 +19,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             return
                 TextPart()
-                + MaybeMany(
-                    '{' + CodePart() + '}'
-                    + TextPart()
-                )
+                + MaybeMany('{' + CodePart() + '}' + TextPart())
                 + Any(
                     Assert('"'),
-                    '{'
-                        + CodePart()
-                        + Assert("$\"")
+                    '{' + CodePart() + Assert("$\"")
                 );
         }
 
@@ -35,15 +30,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             return
                 CodePart()
-                + MaybeMany(
-                    '}' + TextPart() + '{'
-                    + CodePart()
-                )
+                + MaybeMany('}' + TextPart() + '{' + CodePart())
                 + Any(
                     Assert("$\""),
-                    '}'
-                        + TextPart()
-                        + Assert('"')
+                    '}' + TextPart() + Assert('"')
                 );
         }
 
@@ -54,7 +44,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return NamedGroup("text",
                 whileNot
                 + MaybeMany(
-                    Any('\\' + NotNewLineChar(), "{{")
+                    Any(
+                        '\\' + NotNewLineChar(),
+                        "{{"
+                    )
                     + whileNot
                 )
             );
