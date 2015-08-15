@@ -1,0 +1,14 @@
+﻿<Dictionary>
+  <Words>
+    <Unrecognized>
+    </Unrecognized>
+    <Recognized>
+      <Word>Pihrtsoft</Word>
+    </Recognized>
+  </Words>
+  <Acronyms>
+    <CasingExceptions>
+      <Word>NonEmpty</Word>
+    </CasingExceptions>
+  </Acronyms>
+</Dictionary>

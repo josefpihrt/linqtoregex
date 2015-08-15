@@ -111,6 +111,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <returns></returns>
         [SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", MessageId = "NonWhite")]
+        [SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", MessageId = "NonEmpty")]
         public static QuantifiablePattern NonEmptyOrWhiteSpaceLine()
         {
             return NonEmptyOrWhiteSpaceLine(false);
@@ -122,6 +123,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="includeNewLine">Indicates whether new line characters should be included in the match.</param>
         /// <returns></returns>
         [SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", MessageId = "NonWhite")]
+        [SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", MessageId = "NonEmpty")]
         public static QuantifiablePattern NonEmptyOrWhiteSpaceLine(bool includeNewLine)
         {
             return NoncapturingGroup(

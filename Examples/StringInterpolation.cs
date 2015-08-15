@@ -4,16 +4,14 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
     public static class StringInterpolation
     {
-        public static Pattern GetPattern()
-        {
-            return "$\""
+        public static Pattern Pattern => 
+            "$\""
                 + Open()
                 + MaybeMany(
                     OneMany(NamedGroup("open", "$\"") + Open())
                     + OneMany(BalancingGroup("close", "open", '"') + Close())
                 )
                 + '"';
-        }
 
         private static Pattern Open()
         {

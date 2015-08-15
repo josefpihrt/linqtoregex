@@ -2,25 +2,19 @@
 
 using System;
 using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using static Pihrtsoft.Text.RegularExpressions.Linq.Patterns;
-using Pihrtsoft.Text.RegularExpressions.Linq.Extensions;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
     internal class Program
     {
+        [SuppressMessage("Microsoft.Usage", "CA1801:ReviewUnusedParameters", MessageId = "args")]
         internal static void Main(string[] args)
         {
-            string s = "apple bubble apple bubble apple bubble";
-            Console.WriteLine(s);
-
-            Console.WriteLine(("a" + WordChars()).ReplaceChar(s, 'x'));
-            Console.WriteLine(("a" + WordChars()).ReplaceChar(s, ' '));
-            Console.WriteLine(("a" + WordChars().ToRegex().ReplaceChar(s, ' ')));
-
             Dump("c# quotation or comment", Snippets.CSharpLiteral());
 
             Dump("cdata value", Snippets.XmlCData());
