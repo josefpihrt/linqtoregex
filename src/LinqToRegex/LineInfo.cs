@@ -9,7 +9,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             Kind = kind;
         }
 
-        public SyntaxKind Kind { get; set; }
+        public SyntaxKind Kind { get; }
         public QuantifierKind QuantifierKind { get; set; }
         public bool Lazy { get; set; }
 

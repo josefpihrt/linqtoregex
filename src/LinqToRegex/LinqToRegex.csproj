@@ -75,6 +75,7 @@
     <Compile Include="CharGroupings.cs" />
     <Compile Include="CharGrouping_.cs" />
     <Compile Include="CharGroup_.cs" />
+    <Compile Include="GeneralCategoryLineInfo.cs" />
     <Compile Include="CharPattern.cs" />
     <Compile Include="CharPattern_.cs" />
     <Compile Include="CharSubtraction.cs" />

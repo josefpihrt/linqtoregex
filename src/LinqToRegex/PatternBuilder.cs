@@ -1460,7 +1460,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
             if (_comment && _charGroupLevel == 0)
             {
-                _lines.Add(negative ? SyntaxKind.NotGeneralCategory : SyntaxKind.GeneralCategory);
+                _lines.AddGeneralCategory(category, negative);
             }
         }
 

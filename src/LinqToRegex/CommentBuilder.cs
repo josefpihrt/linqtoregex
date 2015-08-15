@@ -77,6 +77,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                     return TextUtility.GetAsciiCharName((AsciiChar)ch);
                 }
             }
+            else if (Current.Kind == SyntaxKind.GeneralCategory || Current.Kind == SyntaxKind.NotGeneralCategory)
+            {
+                return _comments[(int)Current.Kind] + " " + ((GeneralCategoryLineInfo)Current).Category;
+            }
 
             return _comments[(int)Current.Kind];
         }

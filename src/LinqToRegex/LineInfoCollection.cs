@@ -21,6 +21,11 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             Add(new CharLineInfo(SyntaxKind.Character, character));
         }
 
+        public void AddGeneralCategory(GeneralCategory category, bool negative)
+        {
+            Add(new GeneralCategoryLineInfo(negative ? SyntaxKind.NotGeneralCategory : SyntaxKind.GeneralCategory, category));
+        }
+
         public void AddTextOrCharacter(string value)
         {
             if (value.Length > 1)
