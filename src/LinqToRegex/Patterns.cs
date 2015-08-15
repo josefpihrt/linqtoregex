@@ -3965,6 +3965,33 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         }
 
         /// <summary>
+        /// Returns a pattern that matches zero or more characters that are not a digit.
+        /// </summary>
+        /// <returns></returns>
+        public static QuantifiedPattern WhileNotDigit()
+        {
+            return WhileNotChar(Chars.Digit());
+        }
+
+        /// <summary>
+        /// Returns a pattern that matches zero or more characters that are not a white-space.
+        /// </summary>
+        /// <returns></returns>
+        public static QuantifiedPattern WhileNotWhiteSpace()
+        {
+            return WhileNotChar(Chars.WhiteSpace());
+        }
+
+        /// <summary>
+        /// Returns a pattern that matches zero or more characters that are not a word character.
+        /// </summary>
+        /// <returns></returns>
+        public static QuantifiedPattern WhileNotWordChar()
+        {
+            return WhileNotChar(Chars.WordChar());
+        }
+
+        /// <summary>
         /// Returns a pattern that matches zero or more characters until it reaches a specified character.
         /// </summary>
         /// <param name="value">A Unicode character.</param>
