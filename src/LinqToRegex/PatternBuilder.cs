@@ -183,7 +183,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
                             if (_comment && !inCharGroup)
                             {
-                                _lines.AddCharacter(ch);
+                                _lines.AddCharacter(SyntaxKind.Character, ch);
                             }
 
                             i++;
@@ -348,7 +348,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
             if (_comment && !inCharGroup)
             {
-                _lines.AddCharacter((char)value);
+                _lines.AddCharacter(SyntaxKind.Character, value);
             }
         }
 
@@ -1174,6 +1174,11 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         internal void AppendCharGroupStart(bool negative)
         {
+            AppendCharGroupStart(negative, -1);
+        }
+
+        private void AppendCharGroupStart(bool negative, int charNumber)
+        {
             AppendInternal('[');
             _charGroupLevel++;
 
@@ -1184,7 +1189,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
             if (_comment && _charGroupLevel == 1)
             {
-                _lines.Add(negative ? SyntaxKind.NegativeCharGroup : SyntaxKind.CharGroup);
+                _lines.AddCharacter(negative ? SyntaxKind.NegativeCharGroup : SyntaxKind.CharGroup, charNumber);
             }
         }
 
@@ -1275,7 +1280,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         internal void AppendCharGroup(AsciiChar value, bool negative)
         {
-            AppendCharGroupStart(negative);
+            AppendCharGroupStart(negative, (int)value);
             Append(value, true);
             AppendCharGroupEnd();
         }
@@ -1313,10 +1318,16 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             {
                 throw new ArgumentException(ExceptionHelper.CharGroupCannotBeEmpty, nameof(characters));
             }
-
-            AppendCharGroupStart(negative);
-            Append(characters, true);
-            AppendCharGroupEnd();
+            else if (characters.Length == 1)
+            {
+                AppendCharGroup(characters[0], negative);
+            }
+            else
+            {
+                AppendCharGroupStart(negative);
+                Append(characters, true);
+                AppendCharGroupEnd();
+            }
         }
 
         internal void AppendCharGroup(char[] characters, bool negative)
@@ -1330,15 +1341,21 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             {
                 throw new ArgumentException(ExceptionHelper.CharGroupCannotBeEmpty, nameof(characters));
             }
-
-            AppendCharGroupStart(negative);
-            Append(characters, true);
-            AppendCharGroupEnd();
+            else if (characters.Length == 1)
+            {
+                AppendCharGroup(characters[0], negative);
+            }
+            else
+            {
+                AppendCharGroupStart(negative);
+                Append(characters, true);
+                AppendCharGroupEnd();
+            }
         }
 
         internal void AppendCharGroup(char value, bool negative)
         {
-            AppendCharGroupStart(negative);
+            AppendCharGroupStart(negative, value);
             Append(value, true);
             AppendCharGroupEnd();
         }

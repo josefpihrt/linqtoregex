@@ -16,9 +16,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             Add(new LineInfo(kind));
         }
 
-        public void AddCharacter(char character)
+        public void AddCharacter(SyntaxKind kind, int character)
         {
-            Add(new CharLineInfo(SyntaxKind.Character, character));
+            Add(new CharLineInfo(kind, character));
         }
 
         public void AddGeneralCategory(GeneralCategory category, bool negative)
@@ -34,7 +34,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             }
             else
             {
-                AddCharacter(value[0]);
+                AddCharacter(SyntaxKind.Character, value[0]);
             }
         }
 
@@ -51,7 +51,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             }
             else
             {
-                AddCharacter(value[startIndex]);
+                AddCharacter(SyntaxKind.Character, value[startIndex]);
             }
         }
 

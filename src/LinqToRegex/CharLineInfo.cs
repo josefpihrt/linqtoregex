@@ -5,12 +5,12 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     internal sealed class CharLineInfo
         : LineInfo
     {
-        public CharLineInfo(SyntaxKind kind, char character)
+        public CharLineInfo(SyntaxKind kind, int charNumber)
             : base(kind)
         {
-            Character = character;
+            CharNumber = charNumber;
         }
 
-        public char Character { get; }
+        public int CharNumber { get; }
     }
 }

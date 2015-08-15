@@ -70,9 +70,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             }
             else if (Current.Kind == SyntaxKind.Character)
             {
-                var info = (CharLineInfo)Current;
-                int ch = info.Character;
-                if (ch < 128)
+                int ch = ((CharLineInfo)Current).CharNumber;
+                if (ch >= 0 && ch < 128)
                 {
                     return TextUtility.GetAsciiCharName((AsciiChar)ch);
                 }
@@ -80,6 +79,21 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             else if (Current.Kind == SyntaxKind.GeneralCategory || Current.Kind == SyntaxKind.NotGeneralCategory)
             {
                 return _comments[(int)Current.Kind] + " " + ((GeneralCategoryLineInfo)Current).Category;
+            }
+            else if (Current.Kind == SyntaxKind.NegativeCharGroup)
+            {
+                int ch = ((CharLineInfo)Current).CharNumber;
+                if (ch >= 0)
+                {
+                    if (ch < 128)
+                    {
+                        return "not " + TextUtility.GetAsciiCharName((AsciiChar)ch);
+                    }
+                    else
+                    {
+                        return "not character";
+                    }
+                }
             }
 
             return _comments[(int)Current.Kind];
