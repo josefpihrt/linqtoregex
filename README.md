@@ -68,36 +68,34 @@ Last two items in the list, `Object[]` and `IEnumerable` can contains zero or mo
 
 Methods that allows to pass a content typed as `object` usually allows to pass an array of object with `params` (`ParamArray` in Visual Basic) keyword. This overload simply convert the array of objects to the `object` and calls overload that accept `object` as an argument. 
 
-### Concat Method
-Static method `Patterns.Concat` concatenates elements of the specified collection.
-```c#
-var pattern = Concat("a", "b", "c", "d");
-```
-Regex syntax: `abcd`
-
-### Join Method
-Static method `Patterns.Join` concatenates the elements of the specified collection using the specified separator between each element. It is very similar to a `string.Join` method.
-```c#
-var pattern = Join(WhiteSpaces(), "a", "b", "c", "d");
-```
-Regex syntax: `a\s+b\s+c\s+d`
-
 ### Quantifiers
-Use `Maybe` method to match previoud element zero or one time.
+`Maybe` method returns a pattern that matches previous element zero or one time.
 ```c#
 var pattern = Digit().Maybe();
 ```
+or
+```c#
+var pattern = Maybe(Digit());
+```
 Regex syntax: `\d?`
 
-Use `MaybeMany` method to match previoud element zero or more times.
+`MaybeMany` method returns a pattern that matches previous element zero or more times.
 ```c#
 var pattern = Digit().MaybeMany();
 ```
+or
+```c#
+var pattern = MaybeMany(Digit());
+```
 Regex syntax: `\d*`
 
-Use `OneMany` method to match previoud element one or more times.
+`OneMany` method returns a pattern that matches previous element one or more times.
 ```c#
 var pattern = Digit().OneMany();
+```
+or
+```c#
+var pattern = OneMany(Digit());
 ```
 Regex syntax: `\d+`
 
@@ -245,6 +243,20 @@ Regex syntax: `.`
 var pattern = CrawlNative();
 ```
 Regex syntax: `.*?`
+
+### Concat Method
+Static method `Patterns.Concat` concatenates elements of the specified collection.
+```c#
+var pattern = Concat("a", "b", "c", "d");
+```
+Regex syntax: `abcd`
+
+### Join Method
+Static method `Patterns.Join` concatenates the elements of the specified collection using the specified separator between each element. It is very similar to a `string.Join` method.
+```c#
+var pattern = Join(WhiteSpaces(), "a", "b", "c", "d");
+```
+Regex syntax: `a\s+b\s+c\s+d`
 
 ### Examples
 
