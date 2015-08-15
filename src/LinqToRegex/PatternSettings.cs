@@ -14,6 +14,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         private char[] CoreNewLine = new char[] { '\r', '\n' };
 
         private int _indentSize;
+        private PatternOptions _options;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="PatternSettings"/> class.
@@ -27,6 +28,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Initializes a new instance of the <see cref="PatternSettings"/> class with a specified options.
         /// </summary>
         /// <param name="options">A bitwise combination of the enumeration values.</param>
+        /// <exception cref="ArgumentException"></exception>
         public PatternSettings(PatternOptions options)
         {
             Options = options;
@@ -44,7 +46,19 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Gets the options of this instance.
         /// </summary>
-        public PatternOptions Options { get; set; }
+        public PatternOptions Options
+        {
+            get { return _options; }
+            set
+            {
+                if ((value & (PatternOptions.CSharpLiteral | PatternOptions.VisualBasicLiteral)) == (PatternOptions.CSharpLiteral | PatternOptions.VisualBasicLiteral))
+                {
+                    throw new ArgumentException(ExceptionHelper.InvalidPatternOptions);
+                }
+
+                _options = value;
+            }
+        }
 
         /// <summary>
         /// Get a value indicating whether a group name will be enclosed in angle brackets or apostrophes.

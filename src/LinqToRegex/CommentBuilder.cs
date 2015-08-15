@@ -7,7 +7,7 @@ using static Pihrtsoft.Text.RegularExpressions.Linq.Patterns;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
-    internal sealed class FormattedPatternBuilder
+    internal sealed class CommentBuilder
     {
         private int _index;
         private StringBuilder _sb;

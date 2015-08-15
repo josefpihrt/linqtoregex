@@ -22,8 +22,11 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         private bool _pendingOr;
         private int _charGroupLevel;
         private int _indentLevel;
+        private bool _isMultiline;
         private readonly bool _format;
         private readonly bool _comment;
+        private readonly bool _literal;
+        private readonly string _newLine;
         private readonly LineInfoCollection _lines;
 
         private static readonly string[] _numbers = new string[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" };
@@ -47,8 +50,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
             _settings = settings;
             _currentOptions = options;
+            _newLine = settings.NewLine;
             _format = settings.HasOptions(PatternOptions.Format);
             _comment = _format && settings.HasOptions(PatternOptions.Comment);
+            _literal = settings.HasOptions(PatternOptions.CSharpLiteral) || settings.HasOptions(PatternOptions.VisualBasicLiteral);
             _sb = new StringBuilder();
 
             if (_comment)
@@ -63,15 +68,55 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public override string ToString()
         {
+            if (_literal)
+            {
+                return GetLiteral();
+            }
+            else
+            {
+                return GetPattern();
+            }
+        }
+
+        private string GetPattern()
+        {
             if (_comment)
             {
-                var builder = new FormattedPatternBuilder();
+                var builder = new CommentBuilder();
                 return builder.AddComments(_sb.ToString(), _lines, Settings);
             }
             else
             {
                 return _sb.ToString();
             }
+        }
+
+        private string GetLiteral()
+        {
+            var sb = new StringBuilder();
+
+            if (Settings.HasOptions(PatternOptions.CSharpLiteral))
+            {
+                sb.Append("@");
+            }
+
+            sb.Append('"');
+
+            if (_isMultiline)
+            {
+                sb.Append(Settings.NewLine);
+            }
+
+            sb.Append(GetPattern());
+
+            if (_isMultiline)
+            {
+                sb.Append(Settings.NewLine);
+            }
+
+            sb.Append('"');
+
+            return sb.ToString();
         }
 
         /// <summary>
@@ -123,7 +168,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                         if (i > 0)
                         {
                             Append();
-                            _sb.Append(value, 0, i);
+                            AppendDirect(value, 0, i);
 
                             if (_comment && !inCharGroup)
                             {
@@ -159,7 +204,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                             if ((i - lastPos) > 0)
                             {
                                 Append();
-                                _sb.Append(value, lastPos, i - lastPos);
+                                AppendDirect(value, lastPos, i - lastPos);
 
                                 if (_comment && !inCharGroup)
                                 {
@@ -174,7 +219,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 }
 
                 Append();
-                _sb.Append(value);
+                AppendDirect(value);
 
                 if (_comment && !inCharGroup)
                 {
@@ -970,8 +1015,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (_format && unindent)
             {
                 _indentLevel--;
-                _sb.AppendLine();
-                _sb.Append(' ', _indentLevel * Settings.IndentSize);
+                AppendLineAndIndent();
             }
 
             AppendDirect(')');
@@ -1938,25 +1982,66 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendDirect(charCode.ToString("X4", CultureInfo.InvariantCulture).PadLeft(4, '0'));
         }
 
-        internal void AppendDirect(int value)
+        internal void AppendDirect(int number)
         {
-            _sb.Append(NumberToString(value));
+            _sb.Append(NumberToString(number));
         }
 
         internal void AppendDirect(char value)
         {
+            if (_literal && value == '"')
+            {
+                _sb.Append('"');
+            }
+
             _sb.Append(value);
         }
 
         internal void AppendDirect(string value)
         {
-            _sb.Append(value);
+            if (_literal)
+            {
+                for (int i = 0; i < value.Length; i++)
+                {
+                    if (value[i] == '"')
+                    {
+                        _sb.Append('"');
+                    }
+
+                    _sb.Append(value[i]);
+                }
+            }
+            else
+            {
+                _sb.Append(value);
+            }
+        }
+
+        private void AppendDirect(string value, int startIndex, int count)
+        {
+            if (_literal)
+            {
+                int length = startIndex + count;
+                for (int i = startIndex; i < length; i++)
+                {
+                    if (value[i] == '"')
+                    {
+                        _sb.Append('"');
+                    }
+
+                    _sb.Append(value[i]);
+                }
+            }
+            else
+            {
+                _sb.Append(value, startIndex, count);
+            }
         }
 
         private void AppendInternal(char value)
         {
             Append();
-            _sb.Append(value);
+            AppendDirect(value);
         }
 
         private void Append()
@@ -1968,8 +2053,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                     if (_pendingOr)
                     {
                         _indentLevel--;
-                        _sb.AppendLine();
-                        _sb.Append(' ', _indentLevel * Settings.IndentSize);
+                        AppendLineAndIndent();
                         _sb.Append('|');
 
                         if (_comment)
@@ -1983,8 +2067,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
                     if (_sb.Length > 0)
                     {
-                        _sb.AppendLine();
-                        _sb.Append(' ', _indentLevel * Settings.IndentSize);
+                        AppendLineAndIndent();
                     }
                 }
             }
@@ -1995,15 +2078,27 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             }
         }
 
-        private static string NumberToString(int value)
+        private void AppendLineAndIndent()
         {
-            if (value >= 0 && value <= 9)
+            AppendLine();
+            _sb.Append(' ', _indentLevel * Settings.IndentSize);
+        }
+
+        private void AppendLine()
+        {
+            _sb.Append(_newLine);
+            _isMultiline = true;
+        }
+
+        private static string NumberToString(int number)
+        {
+            if (number >= 0 && number <= 9)
             {
-                return _numbers[value];
+                return _numbers[number];
             }
             else
             {
-                return value.ToString(CultureInfo.InvariantCulture);
+                return number.ToString(CultureInfo.InvariantCulture);
             }
         }
 

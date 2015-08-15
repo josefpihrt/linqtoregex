@@ -5,7 +5,7 @@ using System;
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
     /// <summary>
-    /// Represents a pattern that is quantified, i.e. the quantifier is applied on it. If required, pattern will be enclosed in the the (noncapturing) group. This class is abstract.
+    /// Represents a pattern that is quantified, i.e. the quantifier is applied on it. If required, pattern will be enclosed in the (noncapturing) group. This class is abstract.
     /// </summary>
     public abstract partial class QuantifiedGroup
         : QuantifiedPattern

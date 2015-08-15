@@ -18,7 +18,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
             Dump("email address", Snippets.EmailAddress());
 
-            Dump("verbatim verbatim string literal", Snippets.CSharpVerbatimTextLiteral());
+            Dump("verbatim string literal", Snippets.CSharpVerbatimTextLiteral());
 
             Dump("leading whitespace", Snippets.LeadingWhiteSpace());
 
@@ -71,7 +71,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         private static void Dump(string title, Pattern pattern)
         {
-            var options = PatternOptions.FormatAndComment;
+            var options = PatternOptions.FormatAndComment | PatternOptions.CSharpLiteral;
 
             if (!string.IsNullOrEmpty(title))
             {

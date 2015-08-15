@@ -38,6 +38,16 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Indicates that the <see cref="PatternOptions.Format"/> and <see cref="PatternOptions.Comment"/> options are used. This is a composite options.
         /// </summary>
-        FormatAndComment = 12
+        FormatAndComment = 12,
+
+        /// <summary>
+        /// Specifies that a pattern will be converted to C# multiline literal. This option cannot be used in a combination with <see cref="PatternOptions.VisualBasicLiteral"/>.
+        /// </summary>
+        CSharpLiteral = 16,
+
+        /// <summary>
+        /// Specifies that a pattern will be converted to Visual Basic multiline literal. This option cannot be used in a combination with <see cref="PatternOptions.CSharpLiteral"/>.
+        /// </summary>
+        VisualBasicLiteral = 32
     }
 }
