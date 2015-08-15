@@ -202,6 +202,11 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         }
 
 #if DEBUG
+        public static string ReplaceChar(this Regex regex, string input, char value)
+        {
+            return regex.Replace(input, match => new string(value, match.Length));
+        }
+
         public static string ReplaceCapture(this Regex regex, string input, string groupName, CaptureEvaluator evaluator)
         {
             if (regex == null)

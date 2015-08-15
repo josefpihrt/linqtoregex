@@ -497,6 +497,17 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         }
 
 #if DEBUG
+
+        public string ReplaceChar(string input, char value)
+        {
+            return ReplaceChar(input, value, RegexOptions.None);
+        }
+
+        public string ReplaceChar(string input, char value, RegexOptions options)
+        {
+            return Replace(input, match => new string(value, match.Length), options);
+        }
+
         public string ReplaceCapture(string input, string groupName, CaptureEvaluator evaluator)
         {
             return ReplaceCapture(input, groupName, evaluator, RegexOptions.None);
@@ -504,7 +515,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         public string ReplaceCapture(string input, string groupName, CaptureEvaluator evaluator, RegexOptions options)
         {
-            return ReplaceCapture(input, evaluator, EnumerateCaptures(input, groupName).OrderBy(c => c.Index));
+            return ReplaceCapture(input, evaluator, EnumerateCaptures(input, groupName, options).OrderBy(c => c.Index));
         }
 
         public string ReplaceCapture(string input, int groupNumber, CaptureEvaluator evaluator)
@@ -514,7 +525,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         public string ReplaceCapture(string input, int groupNumber, CaptureEvaluator evaluator, RegexOptions options)
         {
-            return ReplaceCapture(input, evaluator, EnumerateCaptures(input, groupNumber).OrderBy(c => c.Index));
+            return ReplaceCapture(input, evaluator, EnumerateCaptures(input, groupNumber, options).OrderBy(c => c.Index));
         }
 
         private static string ReplaceCapture(string input, CaptureEvaluator evaluator, IEnumerable<Capture> captures)

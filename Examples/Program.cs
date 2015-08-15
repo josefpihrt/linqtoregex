@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using static Pihrtsoft.Text.RegularExpressions.Linq.Patterns;
+using Pihrtsoft.Text.RegularExpressions.Linq.Extensions;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
@@ -13,6 +14,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     {
         internal static void Main(string[] args)
         {
+            string s = "apple bubble apple bubble apple bubble";
+            Console.WriteLine(s);
+
+            Console.WriteLine(("a" + WordChars()).ReplaceChar(s, 'x'));
+            Console.WriteLine(("a" + WordChars()).ReplaceChar(s, ' '));
+            Console.WriteLine(("a" + WordChars().ToRegex().ReplaceChar(s, ' ')));
+
             Dump("c# quotation or comment", Snippets.CSharpLiteral());
 
             Dump("cdata value", Snippets.XmlCData());
@@ -63,11 +71,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             Dump("repeated word", exp);
 
             Console.ReadKey();
-        }
-
-        private static void Dump(Pattern pattern)
-        {
-            Dump(null, pattern);
         }
 
         private static void Dump(string title, Pattern pattern)
