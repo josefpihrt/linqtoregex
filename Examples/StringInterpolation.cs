@@ -67,10 +67,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return whileNot
                 + MaybeMany(
                     Any(
-                        Snippets.CSharpEscapedTextLiteral(),
-                        Snippets.CSharpVerbatimTextLiteral(),
-                        Snippets.CSharpCharacterLiteral(),
-                        Snippets.CSharpMultilineComment()
+                        NamedGroup("text", Snippets.CSharpEscapedTextLiteral()),
+                        NamedGroup("text", Snippets.CSharpVerbatimTextLiteral()),
+                        NamedGroup("char", Snippets.CSharpCharacterLiteral()),
+                        NamedGroup("comment", Snippets.CSharpMultilineComment())
                     )
                     + whileNot
                 );
