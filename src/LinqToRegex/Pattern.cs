@@ -2,6 +2,8 @@
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Text.RegularExpressions;
 using Pihrtsoft.Text.RegularExpressions.Linq.Extensions;
 
@@ -493,6 +495,45 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             return Regex.Replace(input, Value, evaluator);
         }
+
+#if DEBUG
+        public string ReplaceCapture(string input, string groupName, CaptureEvaluator evaluator)
+        {
+            return ReplaceCapture(input, groupName, evaluator, RegexOptions.None);
+        }
+
+        public string ReplaceCapture(string input, string groupName, CaptureEvaluator evaluator, RegexOptions options)
+        {
+            return ReplaceCapture(input, evaluator, EnumerateCaptures(input, groupName).OrderBy(c => c.Index));
+        }
+
+        public string ReplaceCapture(string input, int groupNumber, CaptureEvaluator evaluator)
+        {
+            return ReplaceCapture(input, groupNumber, evaluator, RegexOptions.None);
+        }
+
+        public string ReplaceCapture(string input, int groupNumber, CaptureEvaluator evaluator, RegexOptions options)
+        {
+            return ReplaceCapture(input, evaluator, EnumerateCaptures(input, groupNumber).OrderBy(c => c.Index));
+        }
+
+        private static string ReplaceCapture(string input, CaptureEvaluator evaluator, IEnumerable<Capture> captures)
+        {
+            var sb = new StringBuilder();
+            int index = 0;
+
+            foreach (Capture capture in captures)
+            {
+                sb.Append(input, index, capture.Index - index);
+                sb.Append(evaluator(capture));
+                index = capture.Index + capture.Length;
+            }
+
+            sb.Append(input, index, input.Length - index);
+
+            return sb.ToString();
+        }
+#endif
 
         /// <summary>
         /// Within a specified input string, replaces all strings that match the current instance with a string returned by a <see cref="MatchEvaluator"/> delegate. Specified options modify the matching operation.

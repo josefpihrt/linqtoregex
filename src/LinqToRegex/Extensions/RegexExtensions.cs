@@ -2,6 +2,8 @@
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Text.RegularExpressions;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
@@ -198,5 +200,44 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
                 match = match.NextMatch();
             }
         }
+
+#if DEBUG
+        public static string ReplaceCapture(this Regex regex, string input, string groupName, CaptureEvaluator evaluator)
+        {
+            if (regex == null)
+            {
+                throw new ArgumentNullException(nameof(regex));
+            }
+
+            return ReplaceCapture(input, evaluator, regex.EnumerateCaptures(input, groupName).OrderBy(c => c.Index));
+        }
+
+        public static string ReplaceCapture(this Regex regex, string input, int groupNumber, CaptureEvaluator evaluator)
+        {
+            if (regex == null)
+            {
+                throw new ArgumentNullException(nameof(regex));
+            }
+
+            return ReplaceCapture(input, evaluator, regex.EnumerateCaptures(input, groupNumber).OrderBy(c => c.Index));
+        }
+
+        private static string ReplaceCapture(string input, CaptureEvaluator evaluator, IEnumerable<Capture> captures)
+        {
+            var sb = new StringBuilder();
+            int index = 0;
+
+            foreach (Capture capture in captures)
+            {
+                sb.Append(input, index, capture.Index - index);
+                sb.Append(evaluator(capture));
+                index = capture.Index + capture.Length;
+            }
+
+            sb.Append(input, index, input.Length - index);
+
+            return sb.ToString();
+        }
+#endif
     }
 }

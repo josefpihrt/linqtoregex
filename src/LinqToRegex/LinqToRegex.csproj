@@ -67,6 +67,7 @@
     <Compile Include="AnyCharNative.cs" />
     <Compile Include="AsciiChar.cs" />
     <Compile Include="AsciiCharSurroundPattern.cs" />
+    <Compile Include="CaptureEvaluator.cs" />
     <Compile Include="CharClass.cs" />
     <Compile Include="CharEscapeMode.cs" />
     <Compile Include="CharGroup.cs" />
