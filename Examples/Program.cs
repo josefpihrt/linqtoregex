@@ -6,6 +6,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
+using Pihrtsoft.Text.RegularExpressions.Linq.Extensions;
 using static Pihrtsoft.Text.RegularExpressions.Linq.Patterns;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq

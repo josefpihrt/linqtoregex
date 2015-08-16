@@ -508,6 +508,26 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return Replace(input, match => new string(value, match.Length), options);
         }
 
+        public string ReplaceCaptureChar(string input, string groupName, char value)
+        {
+            return ReplaceCaptureChar(input, groupName, value, RegexOptions.None);
+        }
+
+        public string ReplaceCaptureChar(string input, string groupName, char value, RegexOptions options)
+        {
+            return ReplaceCapture(input, groupName, capture => new string(value, capture.Length), options);
+        }
+
+        public string ReplaceCaptureChar(string input, int groupNumber, char value)
+        {
+            return ReplaceCaptureChar(input, groupNumber, value, RegexOptions.None);
+        }
+
+        public string ReplaceCaptureChar(string input, int groupNumber, char value, RegexOptions options)
+        {
+            return ReplaceCapture(input, groupNumber, capture => new string(value, capture.Length), options);
+        }
+
         public string ReplaceCapture(string input, string groupName, CaptureEvaluator evaluator)
         {
             return ReplaceCapture(input, groupName, evaluator, RegexOptions.None);

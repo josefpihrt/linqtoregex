@@ -212,6 +212,16 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             return regex.Replace(input, match => new string(value, match.Length));
         }
 
+        public static string ReplaceCaptureChar(this Regex regex, string input, string groupName, char value)
+        {
+            if (regex == null)
+            {
+                throw new ArgumentNullException(nameof(regex));
+            }
+
+            return regex.ReplaceCapture(input, groupName, capture => new string(value, capture.Length));
+        }
+
         public static string ReplaceCapture(this Regex regex, string input, string groupName, CaptureEvaluator evaluator)
         {
             if (regex == null)
