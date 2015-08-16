@@ -214,44 +214,42 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
 
         public static string ReplaceCaptureChar(this Regex regex, string input, string groupName, char value)
         {
-            if (regex == null)
-            {
-                throw new ArgumentNullException(nameof(regex));
-            }
-
-            return regex.ReplaceCapture(input, groupName, capture => new string(value, capture.Length));
+            return ReplaceCaptures(regex, input, groupName, capture => new string(value, capture.Length));
         }
 
-        public static string ReplaceCapture(this Regex regex, string input, string groupName, CaptureEvaluator evaluator)
-        {
-            if (regex == null)
-            {
-                throw new ArgumentNullException(nameof(regex));
-            }
-
-            return ReplaceCapture(input, evaluator, regex.EnumerateCaptures(input, groupName).OrderBy(c => c.Index));
-        }
-
-        public static string ReplaceCapture(this Regex regex, string input, int groupNumber, CaptureEvaluator evaluator)
-        {
-            if (regex == null)
-            {
-                throw new ArgumentNullException(nameof(regex));
-            }
-
-            return ReplaceCapture(input, evaluator, regex.EnumerateCaptures(input, groupNumber).OrderBy(c => c.Index));
-        }
-
-        private static string ReplaceCapture(string input, CaptureEvaluator evaluator, IEnumerable<Capture> captures)
+        public static string ReplaceCaptures(this Regex regex, string input, string groupName, CaptureEvaluator evaluator)
         {
             var sb = new StringBuilder();
             int index = 0;
 
-            foreach (Capture capture in captures)
+            foreach (Match match in EnumerateMatches(regex, input))
             {
-                sb.Append(input, index, capture.Index - index);
-                sb.Append(evaluator(capture));
-                index = capture.Index + capture.Length;
+                foreach (Capture capture in match.EnumerateCaptures(groupName).OrderBy(capture => capture.Index))
+                {
+                    sb.Append(input, index, capture.Index - index);
+                    sb.Append(evaluator(capture));
+                    index = capture.Index + capture.Length;
+                }
+            }
+
+            sb.Append(input, index, input.Length - index);
+
+            return sb.ToString();
+        }
+
+        public static string ReplaceCaptures(this Regex regex, string input, int groupNumber, CaptureEvaluator evaluator)
+        {
+            var sb = new StringBuilder();
+            int index = 0;
+
+            foreach (Match match in EnumerateMatches(regex, input))
+            {
+                foreach (Capture capture in match.EnumerateCaptures(groupNumber).OrderBy(capture => capture.Index))
+                {
+                    sb.Append(input, index, capture.Index - index);
+                    sb.Append(evaluator(capture));
+                    index = capture.Index + capture.Length;
+                }
             }
 
             sb.Append(input, index, input.Length - index);

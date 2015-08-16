@@ -515,7 +515,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         public string ReplaceCaptureChar(string input, string groupName, char value, RegexOptions options)
         {
-            return ReplaceCapture(input, groupName, capture => new string(value, capture.Length), options);
+            return ReplaceCaptures(input, groupName, capture => new string(value, capture.Length), options);
         }
 
         public string ReplaceCaptureChar(string input, int groupNumber, char value)
@@ -525,39 +525,52 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         public string ReplaceCaptureChar(string input, int groupNumber, char value, RegexOptions options)
         {
-            return ReplaceCapture(input, groupNumber, capture => new string(value, capture.Length), options);
+            return ReplaceCaptures(input, groupNumber, capture => new string(value, capture.Length), options);
         }
 
-        public string ReplaceCapture(string input, string groupName, CaptureEvaluator evaluator)
+        public string ReplaceCaptures(string input, string groupName, CaptureEvaluator evaluator)
         {
-            return ReplaceCapture(input, groupName, evaluator, RegexOptions.None);
+            return ReplaceCaptures(input, groupName, evaluator, RegexOptions.None);
         }
 
-        public string ReplaceCapture(string input, string groupName, CaptureEvaluator evaluator, RegexOptions options)
-        {
-            return ReplaceCapture(input, evaluator, EnumerateCaptures(input, groupName, options).OrderBy(c => c.Index));
-        }
-
-        public string ReplaceCapture(string input, int groupNumber, CaptureEvaluator evaluator)
-        {
-            return ReplaceCapture(input, groupNumber, evaluator, RegexOptions.None);
-        }
-
-        public string ReplaceCapture(string input, int groupNumber, CaptureEvaluator evaluator, RegexOptions options)
-        {
-            return ReplaceCapture(input, evaluator, EnumerateCaptures(input, groupNumber, options).OrderBy(c => c.Index));
-        }
-
-        private static string ReplaceCapture(string input, CaptureEvaluator evaluator, IEnumerable<Capture> captures)
+        public string ReplaceCaptures(string input, string groupName, CaptureEvaluator evaluator, RegexOptions options)
         {
             var sb = new StringBuilder();
             int index = 0;
 
-            foreach (Capture capture in captures)
+            foreach (Match match in EnumerateMatches(input, options))
             {
-                sb.Append(input, index, capture.Index - index);
-                sb.Append(evaluator(capture));
-                index = capture.Index + capture.Length;
+                foreach (Capture capture in match.EnumerateCaptures(groupName).OrderBy(c => c.Index))
+                {
+                    sb.Append(input, index, capture.Index - index);
+                    sb.Append(evaluator(capture));
+                    index = capture.Index + capture.Length;
+                }
+            }
+
+            sb.Append(input, index, input.Length - index);
+
+            return sb.ToString();
+        }
+
+        public string ReplaceCaptures(string input, int groupNumber, CaptureEvaluator evaluator)
+        {
+            return ReplaceCaptures(input, groupNumber, evaluator, RegexOptions.None);
+        }
+
+        public string ReplaceCaptures(string input, int groupNumber, CaptureEvaluator evaluator, RegexOptions options)
+        {
+            var sb = new StringBuilder();
+            int index = 0;
+
+            foreach (Match match in EnumerateMatches(input, options))
+            {
+                foreach (Capture capture in match.EnumerateCaptures(groupNumber).OrderBy(c => c.Index))
+                {
+                    sb.Append(input, index, capture.Index - index);
+                    sb.Append(evaluator(capture));
+                    index = capture.Index + capture.Length;
+                }
             }
 
             sb.Append(input, index, input.Length - index);

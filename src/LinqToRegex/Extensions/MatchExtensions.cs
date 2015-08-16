@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Josef Pihrt. All rights reserved. Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
@@ -43,5 +45,42 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
 
             return match.Groups[groupNumber];
         }
+
+#if DEBUG
+        public static IEnumerable<Capture> EnumerateCaptures(this Match match)
+        {
+            if (match == null)
+            {
+                throw new ArgumentNullException(nameof(match));
+            }
+
+            return match.Captures.Cast<Capture>();
+        }
+
+        public static IEnumerable<Capture> EnumerateCaptures(this Match match, string groupName)
+        {
+            if (match == null)
+            {
+                throw new ArgumentNullException(nameof(match));
+            }
+
+            if (groupName == null)
+            {
+                throw new ArgumentNullException(nameof(groupName));
+            }
+
+            return match.Groups[groupName].Captures.Cast<Capture>();
+        }
+
+        public static IEnumerable<Capture> EnumerateCaptures(this Match match, int groupNumber)
+        {
+            if (match == null)
+            {
+                throw new ArgumentNullException(nameof(match));
+            }
+
+            return match.Groups[groupNumber].Captures.Cast<Capture>();
+        }
+#endif
     }
 }
