@@ -46,7 +46,12 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             return match.Groups[groupNumber];
         }
 
-#if DEBUG
+        /// <summary>
+        /// Returns an enumerable collection of captures from a specified match.
+        /// </summary>
+        /// <param name="match">A regular expression match.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="match"/> is <c>null</c>.</exception>
         public static IEnumerable<Capture> EnumerateCaptures(this Match match)
         {
             if (match == null)
@@ -57,6 +62,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             return match.Captures.Cast<Capture>();
         }
 
+        /// <summary>
+        /// Returns an enumerable collection of captures from a group with a specified name that is from a specified match.
+        /// </summary>
+        /// <param name="match">A regular expression match.</param>
+        /// <param name="groupName">A name of the group.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="match"/> or <paramref name="groupName"/> is <c>null</c>.</exception>
         public static IEnumerable<Capture> EnumerateCaptures(this Match match, string groupName)
         {
             if (match == null)
@@ -72,6 +84,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             return match.Groups[groupName].Captures.Cast<Capture>();
         }
 
+        /// <summary>
+        /// Returns an enumerable collection of captures from a group with a specified number that is from a specified match.
+        /// </summary>
+        /// <param name="match">A regular expression match.</param>
+        /// <param name="groupNumber">A number of the group.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="match"/> is <c>null</c>.</exception>
         public static IEnumerable<Capture> EnumerateCaptures(this Match match, int groupNumber)
         {
             if (match == null)
@@ -81,6 +100,5 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
 
             return match.Groups[groupNumber].Captures.Cast<Capture>();
         }
-#endif
     }
 }
