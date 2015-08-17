@@ -497,7 +497,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         }
 
 #if DEBUG
-
         public string ReplaceChar(string input, char value)
         {
             return ReplaceChar(input, value, RegexOptions.None);
