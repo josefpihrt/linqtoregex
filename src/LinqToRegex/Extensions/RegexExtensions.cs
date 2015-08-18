@@ -202,7 +202,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         }
 
 #if DEBUG
-        public static string ReplaceChar(this Regex regex, string input, char value)
+        public static string ReplaceChars(this Regex regex, string input, char value)
         {
             if (regex == null)
             {
@@ -212,7 +212,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             return regex.Replace(input, match => new string(value, match.Length));
         }
 
-        public static string ReplaceCaptureChar(this Regex regex, string input, string groupName, char value)
+        public static string ReplaceCaptureChars(this Regex regex, string input, string groupName, char value)
         {
             return ReplaceCaptures(regex, input, groupName, capture => new string(value, capture.Length));
         }
