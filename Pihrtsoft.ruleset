@@ -17,6 +17,7 @@
   </Rules>
   <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
     <Rule Id="CA1303" Action="None" />
+    <Rule Id="CA1305" Action="None" />
     <Rule Id="CA2000" Action="None" />
     <Rule Id="CA2104" Action="None" />
   </Rules>

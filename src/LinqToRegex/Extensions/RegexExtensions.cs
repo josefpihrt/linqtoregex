@@ -292,16 +292,44 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             return sb.ToString();
         }
 
+        /// <summary>
+        /// Splits an input string into an enumerable collection of strings at the positions defined by a regular expression.
+        /// </summary>
+        /// <param name="regex">The regular expression to be matched.</param>
+        /// <param name="input">The string to split.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"></exception>
         public static IEnumerable<string> EnumerateSplit(this Regex regex, string input)
         {
             return RegexSplit.EnumerateValues(regex, input);
         }
 
+        /// <summary>
+        /// Splits an input string a specified number of times into an enumerable collection of strings at the positions defined by a regular expression.
+        /// </summary>
+        /// <param name="regex">The regular expression to be matched.</param>
+        /// <param name="input">The string to split.</param>
+        /// <param name="count">The maximum number of times the input can be split.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"></exception>
         public static IEnumerable<string> EnumerateSplit(this Regex regex, string input, int count)
         {
             return RegexSplit.EnumerateValues(regex, input, count);
         }
 
+        /// <summary>
+        /// Splits an input string a specified number of times into an enumerable collection of strings at the positions defined by a regular expression.
+        /// The search starts at a specified position in the input string.
+        /// </summary>
+        /// <param name="regex">The regular expression to be matched.</param>
+        /// <param name="input">The string to split.</param>
+        /// <param name="count">The maximum number of times the input can be split.</param>
+        /// <param name="startAt">The position in the input string where the search starts.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"></exception>
         public static IEnumerable<string> EnumerateSplit(this Regex regex, string input, int count, int startAt)
         {
             return RegexSplit.EnumerateValues(regex, input, count, startAt);
