@@ -6,7 +6,6 @@ using System.Text.RegularExpressions;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
-#if DEBUG
     internal static class RegexSplit
     {
         public static IEnumerable<string> EnumerateValues(Regex regex, string input)
@@ -124,5 +123,4 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             }
         }
     }
-#endif
 }

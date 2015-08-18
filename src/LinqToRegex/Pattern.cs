@@ -497,32 +497,32 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         }
 
 #if DEBUG
-        public string ReplaceChar(string input, char value)
+        public string ReplaceChars(string input, char value)
         {
-            return ReplaceChar(input, value, RegexOptions.None);
+            return ReplaceChars(input, value, RegexOptions.None);
         }
 
-        public string ReplaceChar(string input, char value, RegexOptions options)
+        public string ReplaceChars(string input, char value, RegexOptions options)
         {
             return Replace(input, match => new string(value, match.Length), options);
         }
 
-        public string ReplaceCaptureChar(string input, string groupName, char value)
+        public string ReplaceCaptureChars(string input, string groupName, char value)
         {
-            return ReplaceCaptureChar(input, groupName, value, RegexOptions.None);
+            return ReplaceCaptureChars(input, groupName, value, RegexOptions.None);
         }
 
-        public string ReplaceCaptureChar(string input, string groupName, char value, RegexOptions options)
+        public string ReplaceCaptureChars(string input, string groupName, char value, RegexOptions options)
         {
             return ReplaceCaptures(input, groupName, capture => new string(value, capture.Length), options);
         }
 
-        public string ReplaceCaptureChar(string input, int groupNumber, char value)
+        public string ReplaceCaptureChars(string input, int groupNumber, char value)
         {
-            return ReplaceCaptureChar(input, groupNumber, value, RegexOptions.None);
+            return ReplaceCaptureChars(input, groupNumber, value, RegexOptions.None);
         }
 
-        public string ReplaceCaptureChar(string input, int groupNumber, char value, RegexOptions options)
+        public string ReplaceCaptureChars(string input, int groupNumber, char value, RegexOptions options)
         {
             return ReplaceCaptures(input, groupNumber, capture => new string(value, capture.Length), options);
         }
