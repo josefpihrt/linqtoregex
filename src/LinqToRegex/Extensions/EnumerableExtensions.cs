@@ -57,17 +57,11 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="groupNumber">A number of the group.</param>
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
         public static IEnumerable<Group> EnumerateGroups(this IEnumerable<Match> matches, int groupNumber)
         {
             if (matches == null)
             {
                 throw new ArgumentNullException(nameof(matches));
-            }
-
-            if (groupNumber < 0)
-            {
-                throw new ArgumentOutOfRangeException(nameof(groupNumber));
             }
 
             return matches.Select(match => match.Groups[groupNumber]);

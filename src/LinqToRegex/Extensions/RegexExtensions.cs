@@ -219,6 +219,26 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
 
         public static string ReplaceCaptures(this Regex regex, string input, string groupName, CaptureEvaluator evaluator)
         {
+            if (regex == null)
+            {
+                throw new ArgumentNullException(nameof(regex));
+            }
+
+            if (input == null)
+            {
+                throw new ArgumentNullException(nameof(input));
+            }
+
+            if (groupName == null)
+            {
+                throw new ArgumentNullException(nameof(groupName));
+            }
+
+            if (evaluator == null)
+            {
+                throw new ArgumentNullException(nameof(evaluator));
+            }
+
             var sb = new StringBuilder();
             int index = 0;
 
@@ -239,6 +259,21 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
 
         public static string ReplaceCaptures(this Regex regex, string input, int groupNumber, CaptureEvaluator evaluator)
         {
+            if (regex == null)
+            {
+                throw new ArgumentNullException(nameof(regex));
+            }
+
+            if (input == null)
+            {
+                throw new ArgumentNullException(nameof(input));
+            }
+
+            if (evaluator == null)
+            {
+                throw new ArgumentNullException(nameof(evaluator));
+            }
+
             var sb = new StringBuilder();
             int index = 0;
 
