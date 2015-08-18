@@ -47,7 +47,23 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         }
 
         /// <summary>
-        /// Returns an enumerable collection of captures from a specified match.
+        /// Returns enumerable collection of group of a specified match.
+        /// </summary>
+        /// <param name="match">A regular expression match.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="match"/> is <c>null</c>.</exception>
+        public static IEnumerable<Group> EnumerateGroups(this Match match)
+        {
+            if (match == null)
+            {
+                throw new ArgumentNullException(nameof(match));
+            }
+
+            return match.Groups.Cast<Group>();
+        }
+
+        /// <summary>
+        /// Enumerates through groups of a specified match and returns each capture from each group.
         /// </summary>
         /// <param name="match">A regular expression match.</param>
         /// <returns></returns>
@@ -59,11 +75,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
                 throw new ArgumentNullException(nameof(match));
             }
 
-            return match.Captures.Cast<Capture>();
+            return match
+                .EnumerateGroups()
+                .SelectMany(group => group.Captures.Cast<Capture>());
         }
 
         /// <summary>
-        /// Returns an enumerable collection of captures from a group with a specified name that is from a specified match.
+        /// Returns an enumerable collection of captures of a group with a specified name that is from a specified match.
         /// </summary>
         /// <param name="match">A regular expression match.</param>
         /// <param name="groupName">A name of the group.</param>
@@ -85,7 +103,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         }
 
         /// <summary>
-        /// Returns an enumerable collection of captures from a group with a specified number that is from a specified match.
+        /// Returns an enumerable collection of captures of a group with a specified number that is from a specified match.
         /// </summary>
         /// <param name="match">A regular expression match.</param>
         /// <param name="groupNumber">A number of the group.</param>

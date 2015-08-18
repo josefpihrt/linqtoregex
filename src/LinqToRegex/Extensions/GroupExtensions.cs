@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Josef Pihrt. All rights reserved. Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
@@ -29,6 +31,22 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             }
 
             return null;
+        }
+
+        /// <summary>
+        /// Returns enumerable collection of captures of a specified group.
+        /// </summary>
+        /// <param name="group">A regular expression group.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"></exception>
+        public static IEnumerable<Capture> EnumerateCaptures(this Group group)
+        {
+            if (group == null)
+            {
+                throw new ArgumentNullException(nameof(group));
+            }
+
+            return group.Captures.Cast<Capture>();
         }
     }
 }
