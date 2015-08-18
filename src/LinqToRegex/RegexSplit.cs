@@ -58,10 +58,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 yield break;
             }
 
-            count--;
             int prevIndex = 0;
 
-            foreach (var match in EnumerateMatches(firstMatch, regex.RightToLeft))
+            foreach (var match in EnumerateMatches(firstMatch, count, regex.RightToLeft))
             {
                 yield return input.Substring(prevIndex, match.Index - prevIndex);
                 prevIndex = match.Index + match.Length;
@@ -86,25 +85,28 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                         }
                     }
                 }
-
-                count--;
-                if (count == 0)
-                {
-                    yield break;
-                }
             }
 
             yield return input.Substring(prevIndex, input.Length - prevIndex);
         }
 
-        private static IEnumerable<Match> EnumerateMatches(Match match, bool rightToLeft)
+        private static IEnumerable<Match> EnumerateMatches(Match match, int count, bool rightToLeft)
         {
+            count--;
+
             if (rightToLeft)
             {
                 var matches = new List<Match>();
                 while (match.Success)
                 {
                     matches.Add(match);
+
+                    count--;
+                    if (count == 0)
+                    {
+                        break;
+                    }
+
                     match = match.NextMatch();
                 }
 
@@ -118,6 +120,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 while (match.Success)
                 {
                     yield return match;
+
+                    count--;
+                    if (count == 0)
+                    {
+                        yield break;
+                    }
+
                     match = match.NextMatch();
                 }
             }
