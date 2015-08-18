@@ -256,6 +256,21 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
 
             return sb.ToString();
         }
+
+        public static IEnumerable<string> EnumerateSplit(this Regex regex, string input)
+        {
+            return RegexSplit.EnumerateValues(regex, input);
+        }
+
+        public static IEnumerable<string> EnumerateSplit(this Regex regex, string input, int count)
+        {
+            return RegexSplit.EnumerateValues(regex, input, count);
+        }
+
+        public static IEnumerable<string> EnumerateSplit(this Regex regex, string input, int count, int startAt)
+        {
+            return RegexSplit.EnumerateValues(regex, input, count, startAt);
+        }
 #endif
     }
 }
