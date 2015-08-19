@@ -16,7 +16,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         [SuppressMessage("Microsoft.Usage", "CA1801:ReviewUnusedParameters", MessageId = "args")]
         internal static void Main(string[] args)
         {
-            Dump("c# quotation or comment", Snippets.CSharpLiteral());
+            Dump("c# quotation", Snippets.CSharpLiteral());
 
             Dump("cdata value", Snippets.XmlCData());
 

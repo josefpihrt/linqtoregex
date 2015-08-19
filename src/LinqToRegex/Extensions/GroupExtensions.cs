@@ -13,27 +13,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
     public static class GroupExtensions
     {
         /// <summary>
-        /// Returns last <see cref="Capture"/> of a specified <see cref="Group"/>.
-        /// </summary>
-        /// <param name="group">A regular expression group.</param>
-        /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        public static Capture LastCapture(this Group group)
-        {
-            if (group == null)
-            {
-                throw new ArgumentNullException(nameof(group));
-            }
-
-            if (group.Captures.Count > 0)
-            {
-                return group.Captures[group.Captures.Count - 1];
-            }
-
-            return null;
-        }
-
-        /// <summary>
         /// Returns enumerable collection of captures of a specified group.
         /// </summary>
         /// <param name="group">A regular expression group.</param>
