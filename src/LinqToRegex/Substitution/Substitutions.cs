@@ -17,6 +17,14 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static Substitution Text(string value) => new TextSubstitution(value);
 
         /// <summary>
+        /// Returns a substitution pattern that substitutes the last substring matched by the numbered or named group.
+        /// </summary>
+        /// <param name="groupNumber">A number of the group.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        public static Substitution Group(int groupNumber) => new NumberedGroupSubstitution(groupNumber);
+
+        /// <summary>
         /// Returns a substitution pattern that substitutes the last substring matched by the named group.
         /// </summary>
         /// <param name="groupName">Valid regex group name.</param>
