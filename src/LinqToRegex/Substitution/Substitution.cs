@@ -44,7 +44,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
                 while (stack.Count > 0)
                 {
-                    sb.Append(stack.Pop().Value);
+                    stack.Pop().AppendTo(sb);
                 }
 
                 return sb.ToString();
@@ -53,6 +53,11 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             {
                 return Value;
             }
+        }
+
+        internal virtual void AppendTo(StringBuilder builder)
+        {
+            builder.Append(Value);
         }
 
         /// <summary>
@@ -107,8 +112,14 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="value">A text to append.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
         public Substitution Text(string value) => Append(Substitutions.Text(value));
+
+        /// <summary>
+        /// Appends a specified character to the substitution pattern.
+        /// </summary>
+        /// <param name="value">A Unicode character to append.</param>
+        /// <returns></returns>
+        public Substitution Text(char value) => Append(Substitutions.Text(value));
 
         /// <summary>
         /// Concatenate two elements into a new <see cref="Substitution"/>.
@@ -168,6 +179,40 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 throw new ArgumentNullException(nameof(left));
             }
 
+            if (right == null)
+            {
+                throw new ArgumentNullException(nameof(right));
+            }
+
+            return Substitutions.Text(left).Append(right);
+        }
+
+        /// <summary>
+        /// Concatenate two elements into a new <see cref="Substitution"/>.
+        /// </summary>
+        /// <param name="left">The first element to concatenate.</param>
+        /// <param name="right">The second element to concatenate.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"></exception>
+        public static Substitution operator +(Substitution left, char right)
+        {
+            if (left == null)
+            {
+                throw new ArgumentNullException(nameof(left));
+            }
+
+            return left.Append(Substitutions.Text(right));
+        }
+
+        /// <summary>
+        /// Concatenate two elements into a new <see cref="Substitution"/>.
+        /// </summary>
+        /// <param name="left">The first element to concatenate.</param>
+        /// <param name="right">The second element to concatenate.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"></exception>
+        public static Substitution operator +(char left, Substitution right)
+        {
             if (right == null)
             {
                 throw new ArgumentNullException(nameof(right));

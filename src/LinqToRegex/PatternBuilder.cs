@@ -30,8 +30,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         private readonly string _newLine;
         private readonly LineInfoCollection _lines;
 
-        private static readonly string[] _numbers = new string[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" };
-
         internal PatternBuilder()
             : this(new PatternSettings())
         {
@@ -695,7 +693,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 throw new ArgumentOutOfRangeException(nameof(groupNumber));
             }
 
-            AppendIfGroup(NumberToString(groupNumber), trueContent, falseContent);
+            AppendIfGroup(TextUtility.NumberToString(groupNumber), trueContent, falseContent);
         }
 
         /// <summary>
@@ -2006,7 +2004,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         internal void AppendDirect(int number)
         {
-            _sb.Append(NumberToString(number));
+            _sb.Append(TextUtility.NumberToString(number));
         }
 
         internal void AppendDirect(char value)
@@ -2110,18 +2108,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             _sb.Append(_newLine);
             _isMultiline = true;
-        }
-
-        private static string NumberToString(int number)
-        {
-            if (number >= 0 && number <= 9)
-            {
-                return _numbers[number];
-            }
-            else
-            {
-                return number.ToString(CultureInfo.InvariantCulture);
-            }
         }
 
         private bool IsEnabled(RegexOptions options) => (_currentOptions & options) == options;

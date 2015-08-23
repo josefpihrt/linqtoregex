@@ -298,36 +298,41 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             {
                 if (input[i] == '$')
                 {
-                    StringBuilder sb = new StringBuilder();
-                    char ch = input[i];
-                    int lastPos;
-                    sb.Append(input, 0, i);
-
-                    do
-                    {
-                        sb.Append("$$");
-                        i++;
-                        lastPos = i;
-
-                        while (i < input.Length)
-                        {
-                            ch = input[i];
-                            if (ch == '$')
-                            {
-                                break;
-                            }
-                            i++;
-                        }
-
-                        sb.Append(input, lastPos, i - lastPos);
-
-                    } while (i < input.Length);
-
+                    var sb = new StringBuilder();
+                    EscapeSubstitution(input, i, sb);
                     return sb.ToString();
                 }
             }
 
             return input;
+        }
+
+        internal static void EscapeSubstitution(string input, int i, StringBuilder sb)
+        {
+            char ch = input[i];
+            int lastPos;
+            sb.Append(input, 0, i);
+
+            do
+            {
+                sb.Append("$$");
+                i++;
+                lastPos = i;
+
+                while (i < input.Length)
+                {
+                    ch = input[i];
+                    if (ch == '$')
+                    {
+                        break;
+                    }
+
+                    i++;
+                }
+
+                sb.Append(input, lastPos, i - lastPos);
+
+            } while (i < input.Length);
         }
 
         /// <summary>

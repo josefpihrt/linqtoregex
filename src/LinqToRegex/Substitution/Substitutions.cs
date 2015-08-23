@@ -17,6 +17,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static Substitution Text(string value) => new TextSubstitution(value);
 
         /// <summary>
+        /// Returns a substitution pattern with a specified character.
+        /// </summary>
+        /// <param name="value">A Unicode character.</param>
+        /// <returns></returns>
+        public static Substitution Text(char value) => new CharSubstitution(value);
+
+        /// <summary>
         /// Returns a substitution pattern that substitutes the last substring matched by the numbered or named group.
         /// </summary>
         /// <param name="groupNumber">A number of the group.</param>

@@ -114,6 +114,7 @@
     <Compile Include="CaseAwareTextPattern.cs" />
     <Compile Include="QuantifierKind.cs" />
     <Compile Include="Substitution\NumberedGroupSubstitution.cs" />
+    <Compile Include="Substitution\CharSubstitution.cs" />
     <Compile Include="TextUtility.cs" />
     <Compile Include="Substitution\NamedGroupSubstitution.cs" />
     <Compile Include="Substitution\BeforeMatchSubstitution.cs" />
