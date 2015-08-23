@@ -110,6 +110,72 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"></exception>
         public Substitution Text(string value) => Append(Substitutions.Text(value));
 
+        /// <summary>
+        /// Concatenate two elements into a new <see cref="Substitution"/>.
+        /// </summary>
+        /// <param name="left">The first element to concatenate.</param>
+        /// <param name="right">The second element to concatenate.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"></exception>
+        public static Substitution operator +(Substitution left, Substitution right)
+        {
+            if (left == null)
+            {
+                throw new ArgumentNullException(nameof(left));
+            }
+
+            if (right == null)
+            {
+                throw new ArgumentNullException(nameof(right));
+            }
+
+            return left.Append(right);
+        }
+
+        /// <summary>
+        /// Concatenate two elements into a new <see cref="Substitution"/>.
+        /// </summary>
+        /// <param name="left">The first element to concatenate.</param>
+        /// <param name="right">The second element to concatenate.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"></exception>
+        public static Substitution operator +(Substitution left, string right)
+        {
+            if (left == null)
+            {
+                throw new ArgumentNullException(nameof(left));
+            }
+
+            if (right == null)
+            {
+                throw new ArgumentNullException(nameof(right));
+            }
+
+            return left.Text(right);
+        }
+
+        /// <summary>
+        /// Concatenate two elements into a new <see cref="Substitution"/>.
+        /// </summary>
+        /// <param name="left">The first element to concatenate.</param>
+        /// <param name="right">The second element to concatenate.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"></exception>
+        public static Substitution operator +(string left, Substitution right)
+        {
+            if (left == null)
+            {
+                throw new ArgumentNullException(nameof(left));
+            }
+
+            if (right == null)
+            {
+                throw new ArgumentNullException(nameof(right));
+            }
+
+            return Substitutions.Text(left).Append(right);
+        }
+
         internal virtual string Value => null;
 
         internal Substitution Previous { get; set; }
