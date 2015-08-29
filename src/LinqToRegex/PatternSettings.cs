@@ -28,7 +28,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Initializes a new instance of the <see cref="PatternSettings"/> class with a specified options.
         /// </summary>
         /// <param name="options">A bitwise combination of the enumeration values.</param>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentException"><paramref name="options"/> has both <see cref="PatternOptions.CSharpLiteral"/> flag and <see cref="PatternOptions.VisualBasicLiteral"/> flag set.</exception>
         public PatternSettings(PatternOptions options)
         {
             Options = options;
@@ -46,6 +46,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Gets the options of this instance.
         /// </summary>
+        /// <exception cref="ArgumentException"><paramref name="value"/> has both <see cref="PatternOptions.CSharpLiteral"/> flag and <see cref="PatternOptions.VisualBasicLiteral"/> flag set.</exception>
         public PatternOptions Options
         {
             get { return _options; }

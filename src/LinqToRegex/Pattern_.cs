@@ -815,7 +815,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="first">The first character of the range.</param>
         /// <param name="last">The last character of the range.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="last"/> character number is less than <paramref name="first"/> character number.</exception>
         public QuantifiablePattern Range(char first, char last)
         {
             return AppendInternal(Patterns.Range(first, last));
@@ -827,7 +827,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="first">The first character of the range.</param>
         /// <param name="last">The last character of the range.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="last"/> character number is less than <paramref name="first"/> character number.</exception>
         public QuantifiablePattern NotRange(char first, char last)
         {
             return AppendInternal(Patterns.NotRange(first, last));
@@ -847,7 +847,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup WhiteSpaceExceptNewLine(int exactCount)
         {
             return AppendInternal(Patterns.WhiteSpaceExceptNewLine(exactCount));
@@ -1076,7 +1076,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup Any(int exactCount)
         {
             return AppendInternal(Patterns.Any(exactCount));
@@ -1096,7 +1096,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup AnyExceptLinefeed(int exactCount)
         {
             return AppendInternal(Patterns.AnyExceptLinefeed(exactCount));
@@ -1116,7 +1116,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup AnyNative(int exactCount)
         {
             return AppendInternal(Patterns.AnyNative(exactCount));
@@ -1154,7 +1154,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup Alphanumeric(int exactCount)
         {
             return AppendInternal(Patterns.Alphanumeric(exactCount));
@@ -1174,7 +1174,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotAlphanumeric(int exactCount)
         {
             return AppendInternal(Patterns.NotAlphanumeric(exactCount));
@@ -1194,7 +1194,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup AlphanumericLower(int exactCount)
         {
             return AppendInternal(Patterns.AlphanumericLower(exactCount));
@@ -1214,7 +1214,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotAlphanumericLower(int exactCount)
         {
             return AppendInternal(Patterns.NotAlphanumericLower(exactCount));
@@ -1234,7 +1234,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup AlphanumericUpper(int exactCount)
         {
             return AppendInternal(Patterns.AlphanumericUpper(exactCount));
@@ -1254,7 +1254,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotAlphanumericUpper(int exactCount)
         {
             return AppendInternal(Patterns.NotAlphanumericUpper(exactCount));
@@ -1274,7 +1274,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup AlphanumericUnderscore(int exactCount)
         {
             return AppendInternal(Patterns.AlphanumericUnderscore(exactCount));
@@ -1294,7 +1294,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotAlphanumericUnderscore(int exactCount)
         {
             return AppendInternal(Patterns.NotAlphanumericUnderscore(exactCount));
@@ -1314,7 +1314,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup LatinLetter(int exactCount)
         {
             return AppendInternal(Patterns.LatinLetter(exactCount));
@@ -1334,7 +1334,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup LatinLetterLower(int exactCount)
         {
             return AppendInternal(Patterns.LatinLetterLower(exactCount));
@@ -1354,7 +1354,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup LatinLetterUpper(int exactCount)
         {
             return AppendInternal(Patterns.LatinLetterUpper(exactCount));
@@ -1374,7 +1374,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotLatinLetter(int exactCount)
         {
             return AppendInternal(Patterns.NotLatinLetter(exactCount));
@@ -1394,7 +1394,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotLatinLetterLower(int exactCount)
         {
             return AppendInternal(Patterns.NotLatinLetterLower(exactCount));
@@ -1414,7 +1414,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotLatinLetterUpper(int exactCount)
         {
             return AppendInternal(Patterns.NotLatinLetterUpper(exactCount));
@@ -1434,7 +1434,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup LetterLower(int exactCount)
         {
             return AppendInternal(Patterns.LetterLower(exactCount));
@@ -1454,7 +1454,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotLetterLower(int exactCount)
         {
             return AppendInternal(Patterns.NotLetterLower(exactCount));
@@ -1474,7 +1474,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup LetterUpper(int exactCount)
         {
             return AppendInternal(Patterns.LetterUpper(exactCount));
@@ -1494,7 +1494,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotLetterUpper(int exactCount)
         {
             return AppendInternal(Patterns.NotLetterUpper(exactCount));
@@ -1514,7 +1514,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup ArabicDigit(int exactCount)
         {
             return AppendInternal(Patterns.ArabicDigit(exactCount));
@@ -1534,7 +1534,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotArabicDigit(int exactCount)
         {
             return AppendInternal(Patterns.NotArabicDigit(exactCount));
@@ -1554,7 +1554,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup HexadecimalDigit(int exactCount)
         {
             return AppendInternal(Patterns.HexadecimalDigit(exactCount));
@@ -1574,7 +1574,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotHexadecimalDigit(int exactCount)
         {
             return AppendInternal(Patterns.NotHexadecimalDigit(exactCount));
@@ -1594,7 +1594,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup Digit(int exactCount)
         {
             return AppendInternal(Patterns.Digit(exactCount));
@@ -1623,7 +1623,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotDigit(int exactCount)
         {
             return AppendInternal(Patterns.NotDigit(exactCount));
@@ -1652,7 +1652,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup WhiteSpace(int exactCount)
         {
             return AppendInternal(Patterns.WhiteSpace(exactCount));
@@ -1681,7 +1681,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotWhiteSpace(int exactCount)
         {
             return AppendInternal(Patterns.NotWhiteSpace(exactCount));
@@ -1710,7 +1710,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup WordChar(int exactCount)
         {
             return AppendInternal(Patterns.WordChar(exactCount));
@@ -1739,7 +1739,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotWordChar(int exactCount)
         {
             return AppendInternal(Patterns.NotWordChar(exactCount));
@@ -1906,7 +1906,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup Tab(int exactCount)
         {
             return AppendInternal(Patterns.Tab(exactCount));
@@ -1926,7 +1926,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotTab(int exactCount)
         {
             return AppendInternal(Patterns.NotTab(exactCount));
@@ -1946,7 +1946,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup Linefeed(int exactCount)
         {
             return AppendInternal(Patterns.Linefeed(exactCount));
@@ -1966,7 +1966,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotLinefeed(int exactCount)
         {
             return AppendInternal(Patterns.NotLinefeed(exactCount));
@@ -1986,7 +1986,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup CarriageReturn(int exactCount)
         {
             return AppendInternal(Patterns.CarriageReturn(exactCount));
@@ -2006,7 +2006,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotCarriageReturn(int exactCount)
         {
             return AppendInternal(Patterns.NotCarriageReturn(exactCount));
@@ -2026,7 +2026,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup Space(int exactCount)
         {
             return AppendInternal(Patterns.Space(exactCount));
@@ -2046,7 +2046,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotSpace(int exactCount)
         {
             return AppendInternal(Patterns.NotSpace(exactCount));
@@ -2066,7 +2066,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup ExclamationMark(int exactCount)
         {
             return AppendInternal(Patterns.ExclamationMark(exactCount));
@@ -2086,7 +2086,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotExclamationMark(int exactCount)
         {
             return AppendInternal(Patterns.NotExclamationMark(exactCount));
@@ -2106,7 +2106,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup QuoteMark(int exactCount)
         {
             return AppendInternal(Patterns.QuoteMark(exactCount));
@@ -2126,7 +2126,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotQuoteMark(int exactCount)
         {
             return AppendInternal(Patterns.NotQuoteMark(exactCount));
@@ -2146,7 +2146,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NumberSign(int exactCount)
         {
             return AppendInternal(Patterns.NumberSign(exactCount));
@@ -2166,7 +2166,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotNumberSign(int exactCount)
         {
             return AppendInternal(Patterns.NotNumberSign(exactCount));
@@ -2186,7 +2186,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup Dollar(int exactCount)
         {
             return AppendInternal(Patterns.Dollar(exactCount));
@@ -2206,7 +2206,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotDollar(int exactCount)
         {
             return AppendInternal(Patterns.NotDollar(exactCount));
@@ -2226,7 +2226,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup Percent(int exactCount)
         {
             return AppendInternal(Patterns.Percent(exactCount));
@@ -2246,7 +2246,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotPercent(int exactCount)
         {
             return AppendInternal(Patterns.NotPercent(exactCount));
@@ -2266,7 +2266,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup Ampersand(int exactCount)
         {
             return AppendInternal(Patterns.Ampersand(exactCount));
@@ -2286,7 +2286,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotAmpersand(int exactCount)
         {
             return AppendInternal(Patterns.NotAmpersand(exactCount));
@@ -2306,7 +2306,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup Apostrophe(int exactCount)
         {
             return AppendInternal(Patterns.Apostrophe(exactCount));
@@ -2326,7 +2326,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotApostrophe(int exactCount)
         {
             return AppendInternal(Patterns.NotApostrophe(exactCount));
@@ -2346,7 +2346,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup LeftParenthesis(int exactCount)
         {
             return AppendInternal(Patterns.LeftParenthesis(exactCount));
@@ -2366,7 +2366,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotLeftParenthesis(int exactCount)
         {
             return AppendInternal(Patterns.NotLeftParenthesis(exactCount));
@@ -2386,7 +2386,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup RightParenthesis(int exactCount)
         {
             return AppendInternal(Patterns.RightParenthesis(exactCount));
@@ -2406,7 +2406,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotRightParenthesis(int exactCount)
         {
             return AppendInternal(Patterns.NotRightParenthesis(exactCount));
@@ -2426,7 +2426,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup Asterisk(int exactCount)
         {
             return AppendInternal(Patterns.Asterisk(exactCount));
@@ -2446,7 +2446,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotAsterisk(int exactCount)
         {
             return AppendInternal(Patterns.NotAsterisk(exactCount));
@@ -2466,7 +2466,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup Plus(int exactCount)
         {
             return AppendInternal(Patterns.Plus(exactCount));
@@ -2486,7 +2486,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotPlus(int exactCount)
         {
             return AppendInternal(Patterns.NotPlus(exactCount));
@@ -2506,7 +2506,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup Comma(int exactCount)
         {
             return AppendInternal(Patterns.Comma(exactCount));
@@ -2526,7 +2526,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotComma(int exactCount)
         {
             return AppendInternal(Patterns.NotComma(exactCount));
@@ -2546,7 +2546,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup Hyphen(int exactCount)
         {
             return AppendInternal(Patterns.Hyphen(exactCount));
@@ -2566,7 +2566,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotHyphen(int exactCount)
         {
             return AppendInternal(Patterns.NotHyphen(exactCount));
@@ -2586,7 +2586,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup Dot(int exactCount)
         {
             return AppendInternal(Patterns.Dot(exactCount));
@@ -2606,7 +2606,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotDot(int exactCount)
         {
             return AppendInternal(Patterns.NotDot(exactCount));
@@ -2626,7 +2626,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup Slash(int exactCount)
         {
             return AppendInternal(Patterns.Slash(exactCount));
@@ -2646,7 +2646,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotSlash(int exactCount)
         {
             return AppendInternal(Patterns.NotSlash(exactCount));
@@ -2666,7 +2666,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup Colon(int exactCount)
         {
             return AppendInternal(Patterns.Colon(exactCount));
@@ -2686,7 +2686,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotColon(int exactCount)
         {
             return AppendInternal(Patterns.NotColon(exactCount));
@@ -2706,7 +2706,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup Semicolon(int exactCount)
         {
             return AppendInternal(Patterns.Semicolon(exactCount));
@@ -2726,7 +2726,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotSemicolon(int exactCount)
         {
             return AppendInternal(Patterns.NotSemicolon(exactCount));
@@ -2746,7 +2746,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup LeftAngleBracket(int exactCount)
         {
             return AppendInternal(Patterns.LeftAngleBracket(exactCount));
@@ -2766,7 +2766,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotLeftAngleBracket(int exactCount)
         {
             return AppendInternal(Patterns.NotLeftAngleBracket(exactCount));
@@ -2786,7 +2786,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup EqualsSign(int exactCount)
         {
             return AppendInternal(Patterns.EqualsSign(exactCount));
@@ -2806,7 +2806,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotEqualsSign(int exactCount)
         {
             return AppendInternal(Patterns.NotEqualsSign(exactCount));
@@ -2826,7 +2826,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup RightAngleBracket(int exactCount)
         {
             return AppendInternal(Patterns.RightAngleBracket(exactCount));
@@ -2846,7 +2846,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotRightAngleBracket(int exactCount)
         {
             return AppendInternal(Patterns.NotRightAngleBracket(exactCount));
@@ -2866,7 +2866,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup QuestionMark(int exactCount)
         {
             return AppendInternal(Patterns.QuestionMark(exactCount));
@@ -2886,7 +2886,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotQuestionMark(int exactCount)
         {
             return AppendInternal(Patterns.NotQuestionMark(exactCount));
@@ -2906,7 +2906,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup AtSign(int exactCount)
         {
             return AppendInternal(Patterns.AtSign(exactCount));
@@ -2926,7 +2926,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotAtSign(int exactCount)
         {
             return AppendInternal(Patterns.NotAtSign(exactCount));
@@ -2946,7 +2946,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup LeftSquareBracket(int exactCount)
         {
             return AppendInternal(Patterns.LeftSquareBracket(exactCount));
@@ -2966,7 +2966,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotLeftSquareBracket(int exactCount)
         {
             return AppendInternal(Patterns.NotLeftSquareBracket(exactCount));
@@ -2986,7 +2986,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup Backslash(int exactCount)
         {
             return AppendInternal(Patterns.Backslash(exactCount));
@@ -3006,7 +3006,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotBackslash(int exactCount)
         {
             return AppendInternal(Patterns.NotBackslash(exactCount));
@@ -3026,7 +3026,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup RightSquareBracket(int exactCount)
         {
             return AppendInternal(Patterns.RightSquareBracket(exactCount));
@@ -3046,7 +3046,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotRightSquareBracket(int exactCount)
         {
             return AppendInternal(Patterns.NotRightSquareBracket(exactCount));
@@ -3066,7 +3066,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup CircumflexAccent(int exactCount)
         {
             return AppendInternal(Patterns.CircumflexAccent(exactCount));
@@ -3086,7 +3086,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotCircumflexAccent(int exactCount)
         {
             return AppendInternal(Patterns.NotCircumflexAccent(exactCount));
@@ -3106,7 +3106,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup Underscore(int exactCount)
         {
             return AppendInternal(Patterns.Underscore(exactCount));
@@ -3126,7 +3126,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotUnderscore(int exactCount)
         {
             return AppendInternal(Patterns.NotUnderscore(exactCount));
@@ -3146,7 +3146,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup GraveAccent(int exactCount)
         {
             return AppendInternal(Patterns.GraveAccent(exactCount));
@@ -3166,7 +3166,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotGraveAccent(int exactCount)
         {
             return AppendInternal(Patterns.NotGraveAccent(exactCount));
@@ -3186,7 +3186,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup LeftCurlyBracket(int exactCount)
         {
             return AppendInternal(Patterns.LeftCurlyBracket(exactCount));
@@ -3206,7 +3206,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotLeftCurlyBracket(int exactCount)
         {
             return AppendInternal(Patterns.NotLeftCurlyBracket(exactCount));
@@ -3226,7 +3226,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup VerticalBar(int exactCount)
         {
             return AppendInternal(Patterns.VerticalBar(exactCount));
@@ -3246,7 +3246,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotVerticalBar(int exactCount)
         {
             return AppendInternal(Patterns.NotVerticalBar(exactCount));
@@ -3266,7 +3266,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup RightCurlyBracket(int exactCount)
         {
             return AppendInternal(Patterns.RightCurlyBracket(exactCount));
@@ -3286,7 +3286,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotRightCurlyBracket(int exactCount)
         {
             return AppendInternal(Patterns.NotRightCurlyBracket(exactCount));
@@ -3306,7 +3306,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup Tilde(int exactCount)
         {
             return AppendInternal(Patterns.Tilde(exactCount));
@@ -3326,7 +3326,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotTilde(int exactCount)
         {
             return AppendInternal(Patterns.NotTilde(exactCount));
@@ -3346,7 +3346,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup Parenthesis(int exactCount)
         {
             return AppendInternal(Patterns.Parenthesis(exactCount));
@@ -3366,7 +3366,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotParenthesis(int exactCount)
         {
             return AppendInternal(Patterns.NotParenthesis(exactCount));
@@ -3386,7 +3386,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup CurlyBracket(int exactCount)
         {
             return AppendInternal(Patterns.CurlyBracket(exactCount));
@@ -3406,7 +3406,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotCurlyBracket(int exactCount)
         {
             return AppendInternal(Patterns.NotCurlyBracket(exactCount));
@@ -3426,7 +3426,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup SquareBracket(int exactCount)
         {
             return AppendInternal(Patterns.SquareBracket(exactCount));
@@ -3446,7 +3446,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedGroup NotSquareBracket(int exactCount)
         {
             return AppendInternal(Patterns.NotSquareBracket(exactCount));

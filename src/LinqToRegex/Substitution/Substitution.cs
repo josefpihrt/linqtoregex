@@ -65,7 +65,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="groupNumber">A number of the group.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="groupNumber"/> is less than zero.</exception>
         public Substitution Group(int groupNumber) => Append(Substitutions.Group(groupNumber));
 
         /// <summary>

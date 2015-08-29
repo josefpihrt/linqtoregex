@@ -78,7 +78,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="length">A number of characters to be searched.</param>
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="beginning"/> is less than zero or greater than the length of input.
+        /// <para><paramref name="length"/> is less than zero or greater then the length of input.</para>
+        /// <para><paramref name="beginning"/> + <paramref name="length"/> - 1 is outside the range of input.</para>
+        /// </exception>
         public static IEnumerable<Match> EnumerateMatches(this Regex regex, string input, int beginning, int length)
         {
             if (regex == null)

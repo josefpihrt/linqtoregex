@@ -49,7 +49,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times the pattern must be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedPattern Count(int exactCount)
         {
             return AppendInternal(new QuantifiedPattern.CountQuantifiedPattern(exactCount));
@@ -61,7 +61,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="minCount">A minimal number of times the pattern must be matched.</param>
         /// <param name="maxCount">A maximum number of times the pattern can be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="minCount"/> is less than zero or <paramref name="maxCount"/> is less than <paramref name="minCount"/>.</exception>
         public QuantifiedPattern Count(int minCount, int maxCount)
         {
             return AppendInternal(new QuantifiedPattern.CountQuantifiedPattern(minCount, maxCount));
@@ -72,7 +72,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="minCount">A minimal number of times the pattern must be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="minCount"/> is less than zero.</exception>
         public QuantifiedPattern CountFrom(int minCount)
         {
             return AppendInternal(new QuantifiedPattern.CountFromQuantifiedPattern(minCount));
@@ -83,7 +83,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="maxCount">A maximum number of times the pattern can be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="maxCount"/> is less than zero.</exception>
         public QuantifiedPattern MaybeCount(int maxCount)
         {
             return AppendInternal(new QuantifiedPattern.CountQuantifiedPattern(0, maxCount));

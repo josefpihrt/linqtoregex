@@ -106,7 +106,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="groupName">A name of the group.</param>
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="matches"/> or <paramref name="groupName"/> is <c>null</c>.</exception>
-        /// <exception cref="ArgumentException"></exception>
         public static IEnumerable<Group> EnumerateSuccessGroups(this IEnumerable<Match> matches, string groupName)
         {
             foreach (var match in matches)

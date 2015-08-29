@@ -349,7 +349,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="length">Length of a group name.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="length"/> is less than one.</exception>
         public static string GetRandomGroupName(int length)
         {
             if (length < 1)

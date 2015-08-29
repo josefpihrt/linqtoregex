@@ -352,6 +352,11 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         internal void AppendCharRange(char firstChar, char lastChar)
         {
+            if (lastChar < firstChar)
+            {
+                throw new ArgumentOutOfRangeException(nameof(lastChar));
+            }
+
             Append(firstChar, true);
             AppendDirect('-');
             Append(lastChar, true);
@@ -1371,7 +1376,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="first">The first character of the range.</param>
         /// <param name="last">The last character of the range.</param>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="last"/> character number is less than <paramref name="first"/> character number.</exception>
         public void AppendCharGroup(char first, char last)
         {
             AppendCharGroup(first, last, false);
@@ -1382,7 +1387,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="first">The first character of the range.</param>
         /// <param name="last">The last character of the range.</param>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="last"/> character number is less than <paramref name="first"/> character number.</exception>
         public void AppendNegativeCharGroup(char first, char last)
         {
             AppendCharGroup(first, last, true);
@@ -1605,7 +1610,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Appends a quantifier that matches previous element specific number of times.
         /// </summary>
         /// <param name="exactCount">A number of times the pattern must be matched.</param>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public void AppendCount(int exactCount)
         {
             AppendCount(exactCount, false);
@@ -1616,7 +1621,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times the pattern must be matched.</param>
         /// <param name="lazy">Indicates whether the quantifier will be greedy or lazy.</param>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public void AppendCount(int exactCount, bool lazy)
         {
             if (exactCount < 0)
@@ -1651,7 +1656,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="minCount">A minimal number of times the pattern must be matched.</param>
         /// <param name="maxCount">A maximum number of times the pattern can be matched.</param>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="minCount"/> is less than zero or <paramref name="maxCount"/> is less than <paramref name="minCount"/>.</exception>
         public void AppendCount(int minCount, int maxCount)
         {
             AppendCount(minCount, maxCount, false);
@@ -1663,7 +1668,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="minCount">A minimal number of times the pattern must be matched.</param>
         /// <param name="maxCount">A maximum number of times the pattern can be matched.</param>
         /// <param name="lazy">Indicates whether the quantifier will be greedy or lazy.</param>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="minCount"/> is less than zero or <paramref name="maxCount"/> is less than <paramref name="minCount"/>.</exception>
         public void AppendCount(int minCount, int maxCount, bool lazy)
         {
             if (minCount < 0 || maxCount < minCount)
@@ -1699,7 +1704,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Appends a quantifier that matches previous element at least specified number of times.
         /// </summary>
         /// <param name="minCount">A minimal number of times the pattern must be matched.</param>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="minCount"/> is less than zero.</exception>
         public void AppendCountFrom(int minCount)
         {
             AppendCountFrom(minCount, false);
@@ -1710,7 +1715,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="minCount">A minimal number of times the pattern must be matched.</param>
         /// <param name="lazy">Indicates whether the quantifier will be greedy or lazy.</param>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="minCount"/> is less than zero.</exception>
         public void AppendCountFrom(int minCount, bool lazy)
         {
             if (minCount < 0)
@@ -1745,7 +1750,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Appends a quantifier that matches previous element at most specified number of times.
         /// </summary>
         /// <param name="maxCount">A maximum number of times the pattern can be matched.</param>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="maxCount"/> is less than zero.</exception>
         public void AppendMaybeCount(int maxCount)
         {
             AppendMaybeCount(maxCount, false);
@@ -1756,7 +1761,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="maxCount">A maximum number of times the pattern can be matched.</param>
         /// <param name="lazy">Indicates whether the quantifier will be greedy or lazy.</param>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="maxCount"/> is less than zero.</exception>
         public void AppendMaybeCount(int maxCount, bool lazy)
         {
             if (maxCount < 0)
@@ -1825,7 +1830,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Appends a pattern that applies specified options.
         /// </summary>
         /// <param name="applyOptions">A bitwise combination of the enumeration values that are applied.</param>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentException"><paramref name="applyOptions"/> value is not convertible to inline chars.</exception>
         public void AppendOptions(RegexOptions applyOptions)
         {
             AppendOptions(applyOptions, RegexOptions.None);
@@ -1836,7 +1841,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="applyOptions">A bitwise combination of the enumeration values that are applied.</param>
         /// <param name="disableOptions">A bitwise combination of the enumeration values that are disabled.</param>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentException"><paramref name="applyOptions"/> or <paramref name="disableOptions"/> value is not convertible to inline chars.</exception>
         public void AppendOptions(RegexOptions applyOptions, RegexOptions disableOptions)
         {
             if (applyOptions != RegexOptions.None || disableOptions != RegexOptions.None)
@@ -1871,7 +1876,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="applyOptions">A bitwise combination of the enumeration values that are applied.</param>
         /// <param name="content">The pattern to match.</param>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentException"><paramref name="applyOptions"/> value is not convertible to inline chars.</exception>
         public void AppendOptions(RegexOptions applyOptions, object content)
         {
             AppendOptions(applyOptions, RegexOptions.None, content);
@@ -1884,7 +1889,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="disableOptions">A bitwise combination of the enumeration values that are disabled.</param>
         /// <param name="content">The pattern to match.</param>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentException"><paramref name="applyOptions"/> or <paramref name="disableOptions"/> value is not convertible to inline chars.</exception>
         internal void AppendOptions(RegexOptions applyOptions, RegexOptions disableOptions, object content)
         {
             if (!RegexUtility.IsValidInlineOptions(applyOptions))
