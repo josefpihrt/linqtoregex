@@ -2,7 +2,6 @@
 
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
@@ -296,28 +295,28 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             return regex.Replace(input, match => new string(value, match.Length));
         }
 
-        public static string ReplaceCaptureChars(this Regex regex, string input, string groupName, char value)
+        public static string ReplaceGroupChars(this Regex regex, string input, string groupName, char value)
         {
-            return ReplaceCaptures(regex, input, groupName, capture => new string(value, capture.Length));
+            return ReplaceGroups(regex, input, groupName, group => new string(value, group.Length));
         }
 
-        public static string ReplaceCaptures(this Regex regex, string input, string groupName, CaptureEvaluator evaluator)
+        public static string ReplaceGroupChars(this Regex regex, string input, int groupNumber, char value)
         {
-            if (regex == null)
-            {
-                throw new ArgumentNullException(nameof(regex));
-            }
+            return ReplaceGroups(regex, input, groupNumber, group => new string(value, group.Length));
+        }
 
-            if (input == null)
-            {
-                throw new ArgumentNullException(nameof(input));
-            }
+        public static string ReplaceGroups(this Regex regex, string input, string groupName, GroupEvaluator evaluator)
+        {
+            return ReplaceGroups(EnumerateSuccessGroups(regex, input, groupName), input, evaluator);
+        }
 
-            if (groupName == null)
-            {
-                throw new ArgumentNullException(nameof(groupName));
-            }
+        public static string ReplaceGroups(this Regex regex, string input, int groupNumber, GroupEvaluator evaluator)
+        {
+            return ReplaceGroups(EnumerateSuccessGroups(regex, input, groupNumber), input, evaluator);
+        }
 
+        private static string ReplaceGroups(IEnumerable<Group> groups, string input, GroupEvaluator evaluator)
+        {
             if (evaluator == null)
             {
                 throw new ArgumentNullException(nameof(evaluator));
@@ -326,49 +325,11 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             var sb = new StringBuilder();
             int index = 0;
 
-            foreach (Match match in EnumerateMatches(regex, input))
+            foreach (Group group in groups)
             {
-                foreach (Capture capture in match.EnumerateCaptures(groupName).OrderBy(capture => capture.Index))
-                {
-                    sb.Append(input, index, capture.Index - index);
-                    sb.Append(evaluator(capture));
-                    index = capture.Index + capture.Length;
-                }
-            }
-
-            sb.Append(input, index, input.Length - index);
-
-            return sb.ToString();
-        }
-
-        public static string ReplaceCaptures(this Regex regex, string input, int groupNumber, CaptureEvaluator evaluator)
-        {
-            if (regex == null)
-            {
-                throw new ArgumentNullException(nameof(regex));
-            }
-
-            if (input == null)
-            {
-                throw new ArgumentNullException(nameof(input));
-            }
-
-            if (evaluator == null)
-            {
-                throw new ArgumentNullException(nameof(evaluator));
-            }
-
-            var sb = new StringBuilder();
-            int index = 0;
-
-            foreach (Match match in EnumerateMatches(regex, input))
-            {
-                foreach (Capture capture in match.EnumerateCaptures(groupNumber).OrderBy(capture => capture.Index))
-                {
-                    sb.Append(input, index, capture.Index - index);
-                    sb.Append(evaluator(capture));
-                    index = capture.Index + capture.Length;
-                }
+                sb.Append(input, index, group.Index - index);
+                sb.Append(evaluator(group));
+                index = group.Index + group.Length;
             }
 
             sb.Append(input, index, input.Length - index);

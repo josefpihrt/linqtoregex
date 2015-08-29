@@ -63,6 +63,7 @@
     <Compile Include="Anchor\StartOfInput.cs" />
     <Compile Include="Anchor\StartOfLine.cs" />
     <Compile Include="Anchor\WordBoundary.cs" />
+    <Compile Include="GroupEvaluator.cs" />
     <Compile Include="RegexSplit.cs" />
     <Compile Include="AnyChar.cs" />
     <Compile Include="AnyCharNative.cs" />
