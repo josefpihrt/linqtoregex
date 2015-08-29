@@ -2,7 +2,6 @@
 
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
@@ -59,7 +58,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
                 throw new ArgumentNullException(nameof(match));
             }
 
-            return match.Groups.Cast<Group>();
+            for (int i = 0; i < match.Groups.Count; i++)
+            {
+                yield return match.Groups[i];
+            }
         }
 
         /// <summary>
@@ -75,9 +77,17 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
                 throw new ArgumentNullException(nameof(match));
             }
 
-            return match
-                .EnumerateGroups()
-                .SelectMany(group => group.Captures.Cast<Capture>());
+            for (int i = 0; i < match.Groups.Count; i++)
+            {
+                var group = match.Groups[i];
+                if (group.Success)
+                {
+                    for (int j = 0; j < group.Captures.Count; j++)
+                    {
+                        yield return group.Captures[j];
+                    }
+                }
+            }
         }
 
         /// <summary>
@@ -94,12 +104,14 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
                 throw new ArgumentNullException(nameof(match));
             }
 
-            if (groupName == null)
+            var group = match.Groups[groupName];
+            if (group.Success)
             {
-                throw new ArgumentNullException(nameof(groupName));
+                for (int i = 0; i < group.Captures.Count; i++)
+                {
+                    yield return group.Captures[i];
+                }
             }
-
-            return match.Groups[groupName].Captures.Cast<Capture>();
         }
 
         /// <summary>
@@ -116,7 +128,14 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
                 throw new ArgumentNullException(nameof(match));
             }
 
-            return match.Groups[groupNumber].Captures.Cast<Capture>();
+            var group = match.Groups[groupNumber];
+            if (group.Success)
+            {
+                for (int i = 0; i < group.Captures.Count; i++)
+                {
+                    yield return group.Captures[i];
+                }
+            }
         }
     }
 }
