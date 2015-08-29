@@ -17,7 +17,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// </summary>
         /// <param name="matches">The sequence to enumerate.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="matches"/> is <c>null</c>.</exception>
         public static IEnumerable<Group> EnumerateGroups(this IEnumerable<Match> matches)
         {
             if (matches == null)
@@ -34,7 +34,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="matches">The sequence to enumerate.</param>
         /// <param name="groupName">A name of the group.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="matches"/> or <paramref name="groupName"/> is <c>null</c>.</exception>
         public static IEnumerable<Group> EnumerateGroups(this IEnumerable<Match> matches, string groupName)
         {
             if (matches == null)
@@ -56,7 +56,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="matches">The sequence to enumerate.</param>
         /// <param name="groupNumber">A number of the group.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="matches"/> is <c>null</c>.</exception>
         public static IEnumerable<Group> EnumerateGroups(this IEnumerable<Match> matches, int groupNumber)
         {
             if (matches == null)
@@ -72,7 +72,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// </summary>
         /// <param name="matches">The sequence to enumerate.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="matches"/> is <c>null</c>.</exception>
         public static IEnumerable<Group> EnumerateSuccessGroups(this IEnumerable<Match> matches)
         {
             return EnumerateGroups(matches)
@@ -85,7 +85,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="matches">The sequence to enumerate.</param>
         /// <param name="groupName">A name of the group.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="matches"/> or <paramref name="groupName"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"></exception>
         public static IEnumerable<Group> EnumerateSuccessGroups(this IEnumerable<Match> matches, string groupName)
         {
@@ -99,8 +99,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="matches">The sequence to enumerate.</param>
         /// <param name="groupNumber">A number of the group.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="matches"/> is <c>null</c>.</exception>
         public static IEnumerable<Group> EnumerateSuccessGroups(this IEnumerable<Match> matches, int groupNumber)
         {
             return EnumerateGroups(matches, groupNumber)
@@ -112,7 +111,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// </summary>
         /// <param name="matches">The sequence to enumerate.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="matches"/> is <c>null</c>.</exception>
         public static IEnumerable<Capture> EnumerateCaptures(this IEnumerable<Match> matches)
         {
             return EnumerateSuccessGroups(matches)
@@ -125,8 +124,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="matches">The sequence to enumerate.</param>
         /// <param name="groupName">A name of the group.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="matches"/> or <paramref name="groupName"/> is <c>null</c>.</exception>
         public static IEnumerable<Capture> EnumerateCaptures(this IEnumerable<Match> matches, string groupName)
         {
             return EnumerateSuccessGroups(matches, groupName)
@@ -139,8 +137,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="matches">The sequence to enumerate.</param>
         /// <param name="groupNumber">A number of the group.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="matches"/> is <c>null</c>.</exception>
         public static IEnumerable<Capture> EnumerateCaptures(this IEnumerable<Match> matches, int groupNumber)
         {
             return EnumerateSuccessGroups(matches, groupNumber)
@@ -152,7 +149,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// </summary>
         /// <param name="groups">The sequence to enumerate.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="groups"/> is <c>null</c>.</exception>
         public static IEnumerable<Capture> EnumerateCaptures(this IEnumerable<Group> groups)
         {
             if (groups == null)
@@ -166,17 +163,17 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <summary>
         /// Returns enumerable collection of captures values.
         /// </summary>
-        /// <param name="collection">The sequence to enumerate.</param>
+        /// <param name="captures">The sequence to enumerate.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        public static IEnumerable<string> EnumerateValues(this IEnumerable<Capture> collection)
+        /// <exception cref="ArgumentNullException"><paramref name="captures"/> is <c>null</c>.</exception>
+        public static IEnumerable<string> EnumerateValues(this IEnumerable<Capture> captures)
         {
-            if (collection == null)
+            if (captures == null)
             {
-                throw new ArgumentNullException(nameof(collection));
+                throw new ArgumentNullException(nameof(captures));
             }
 
-            return collection.Select(capture => capture.Value);
+            return captures.Select(capture => capture.Value);
         }
     }
 }

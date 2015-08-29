@@ -16,7 +16,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Initializes a new instance of the <see cref="QuantifiedGroup"/> class with a specified content.
         /// </summary>
         /// <param name="content">The content of the group.</param>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         protected QuantifiedGroup(object content)
         {
             if (content == null)

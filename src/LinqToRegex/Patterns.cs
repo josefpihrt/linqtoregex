@@ -37,7 +37,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="separator">The pattern to use as a separator.</param>
         /// <param name="values">A collection object that implements <see cref="IEnumerable"/>.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="values"/> is <c>null</c>.</exception>
         public static Pattern Join(object separator, IEnumerable values)
         {
             return new JoinContainer(separator, values);
@@ -49,7 +49,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="separator">The pattern to use as a separator.</param>
         /// <param name="values">An object array that contains the patterns to concatenate.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="values"/> is <c>null</c>.</exception>
         public static Pattern Join(object separator, params object[] values)
         {
             return new JoinContainer(separator, values);
@@ -61,7 +61,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="surroundContent">A pattern to be surrounding the base pattern.</param>
         /// <param name="content">A base pattern to be surrounded.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="surroundContent"/> or <paramref name="content"/> is <c>null</c>.</exception>
         internal static Pattern Surround(object surroundContent, object content)
         {
             return Surround(surroundContent, content, surroundContent);
@@ -74,7 +74,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="content">A base pattern to be surrounded.</param>
         /// <param name="contentAfter">A pattern to be placed after the base pattern.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="contentBefore"/> or <paramref name="content"/> or <paramref name="contentAfter"/> is <c>null</c>.</exception>
         internal static Pattern Surround(object contentBefore, object content, object contentAfter)
         {
             return new SurroundPattern(contentBefore, content, contentAfter);
@@ -86,7 +86,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="surroundChar">A character to be surrounding the base pattern.</param>
         /// <param name="value">A base pattern to be surrounded.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         internal static Pattern Surround(AsciiChar surroundChar, object value)
         {
             return Surround(surroundChar, value, surroundChar);
@@ -99,7 +99,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="value">A base pattern to be surrounded.</param>
         /// <param name="charAfter">A character to be placed after the base pattern.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         internal static Pattern Surround(AsciiChar charBefore, object value, AsciiChar charAfter)
         {
             return new AsciiCharSurroundPattern(charBefore, value, charAfter);
@@ -132,7 +132,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <typeparam name="TPattern">The type of the pattern.</typeparam>
         /// <param name="value">A pattern to be negated.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public static TPattern Not<TPattern>(INegateable<TPattern> value) where TPattern : Pattern
         {
             if (value == null)
@@ -164,7 +164,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="testContent">The content to assert.</param>
         /// <param name="trueContent">The content to be matched if the assertion succeeds.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="testContent"/> or <paramref name="trueContent"/> is <c>null</c>.</exception>
         public static QuantifiablePattern IfAssert(object testContent, object trueContent)
         {
             return IfAssert(testContent, trueContent, null);
@@ -177,7 +177,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="trueContent">The content to be matched if the assertion succeeds.</param>
         /// <param name="falseContent">The content to be matched if the assertion fails.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="testContent"/> or <paramref name="trueContent"/> is <c>null</c>.</exception>
         public static QuantifiablePattern IfAssert(object testContent, object trueContent, object falseContent)
         {
             return new IfAssert(testContent, trueContent, falseContent);
@@ -189,8 +189,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="groupName">A name of the group.</param>
         /// <param name="trueContent">The content to be matched if the named group is matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="groupName"/> or <paramref name="trueContent"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
         public static QuantifiablePattern IfGroup(string groupName, object trueContent)
         {
             return IfGroup(groupName, trueContent, null);
@@ -203,8 +203,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="trueContent">The content to be matched if the named group is matched.</param>
         /// <param name="falseContent">The content to be matched if the named group is not matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="groupName"/> or <paramref name="trueContent"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
         public static QuantifiablePattern IfGroup(string groupName, object trueContent, object falseContent)
         {
             return new IfGroup(groupName, trueContent, falseContent);
@@ -216,8 +216,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="groupNumber">A number of the group.</param>
         /// <param name="trueContent">The content to be matched if the numbered group is matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="trueContent"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="groupNumber"/> is less than zero.</exception>
         public static QuantifiablePattern IfGroup(int groupNumber, object trueContent)
         {
             return IfGroup(groupNumber, trueContent, null);
@@ -230,8 +230,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="trueContent">The content to be matched if the numbered group is matched.</param>
         /// <param name="falseContent">The content to be matched if the numbered group is not matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="trueContent"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="groupNumber"/> is less than zero.</exception>
         public static QuantifiablePattern IfGroup(int groupNumber, object trueContent, object falseContent)
         {
             return new IfGroup(groupNumber, trueContent, falseContent);
@@ -242,7 +242,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">A content to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Assertion Assert(object content)
         {
             return new Assertion(content);
@@ -253,7 +253,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Assertion Assert(params object[] content)
         {
             return Assert((object)content);
@@ -264,7 +264,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">A content not to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern NotAssert(object content)
         {
             return new NegativeAssertion(content);
@@ -275,7 +275,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">An object array that contains zero or more patterns none of which has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern NotAssert(params object[] content)
         {
             return NotAssert((object)content);
@@ -286,7 +286,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">A content to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static BackAssertion AssertBack(object content)
         {
             return new BackAssertion(content);
@@ -297,7 +297,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static BackAssertion AssertBack(params object[] content)
         {
             return AssertBack((object)content);
@@ -308,7 +308,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">A content not to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern NotAssertBack(object content)
         {
             return new NegativeBackAssertion(content);
@@ -319,7 +319,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">An object array that contains zero or more patterns none of which has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern NotAssertBack(params object[] content)
         {
             return NotAssertBack((object)content);
@@ -331,7 +331,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="assertion">A content of the assertions.</param>
         /// <param name="content">The content to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="assertion"/> <paramref name="content"/> is <c>null</c>.</exception>
         public static SurroundAssertion AssertSurround(object assertion, object content)
         {
             return AssertSurround(assertion, content, assertion);
@@ -344,7 +344,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="content">The content to be matched.</param>
         /// <param name="assertion">A content of the lookahead assertion.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="backAssertion"/> or <paramref name="content"/> or <paramref name="assertion"/> is <c>null</c>.</exception>
         public static SurroundAssertion AssertSurround(object backAssertion, object content, object assertion)
         {
             return new SurroundAssertion(backAssertion, content, assertion);
@@ -356,7 +356,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="assertion">A content of the negative assertions.</param>
         /// <param name="content">The content to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="assertion"/> <paramref name="content"/> is <c>null</c>.</exception>
         public static NegativeSurroundAssertion NotAssertSurround(object assertion, object content)
         {
             return NotAssertSurround(assertion, content, assertion);
@@ -369,7 +369,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="content">The content to be matched.</param>
         /// <param name="assertion">A content of the negative lookahead assertion.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="backAssertion"/> or <paramref name="content"/> or <paramref name="assertion"/> is <c>null</c>.</exception>
         public static NegativeSurroundAssertion NotAssertSurround(object backAssertion, object content, object assertion)
         {
             return new NegativeSurroundAssertion(backAssertion, content, assertion);
@@ -513,7 +513,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">A text to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern SurroundWordBoundary(object content)
         {
             return Surround(WordBoundary(), content).AsNoncapturingGroup();
@@ -524,7 +524,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">An object array that contains zero or more values any one of which has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern SurroundWordBoundary(params object[] content)
         {
             return SurroundWordBoundary((object)content);
@@ -535,7 +535,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">The content to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern EntireInput(object content)
         {
             return Surround(BeginInput(), content, EndInput()).AsNoncapturingGroup();
@@ -546,7 +546,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">An object array that contains zero or more values any one of which has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern EntireInput(params object[] content)
         {
             return EntireInput((object)content);
@@ -567,7 +567,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern Any(params object[] content)
         {
             return NoncapturingGroup(content);
@@ -587,7 +587,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">The content to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern Group(object content)
         {
             return new NumberedGroup(content);
@@ -598,7 +598,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern Group(params object[] content)
         {
             return Group((object)content);
@@ -610,8 +610,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="name">A name of the group.</param>
         /// <param name="content">The content to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="name"/> <paramref name="content"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="name"/> is not a valid regex group name.</exception>
         public static QuantifiablePattern NamedGroup(string name, object content)
         {
             return new NamedGroup(name, content);
@@ -623,8 +623,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="name">A name of the group.</param>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="name"/> <paramref name="content"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="name"/> is not a valid regex group name.</exception>
         public static QuantifiablePattern NamedGroup(string name, params object[] content)
         {
             return NamedGroup(name, (object)content);
@@ -635,7 +635,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">The content to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern NoncapturingGroup(object content)
         {
             return new NoncapturingGroup(content);
@@ -646,7 +646,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern NoncapturingGroup(params object[] content)
         {
             return NoncapturingGroup((object)content);
@@ -659,8 +659,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="name2">Previously defined group name.</param>
         /// <param name="content">The content to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="name1"/> or <paramref name="name2"/> or <paramref name="content"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="name1"/> or <paramref name="name2"/> is not a valid regex group name.</exception>
         public static QuantifiablePattern BalancingGroup(string name1, string name2, object content)
         {
             return new BalancingGroup(name1, name2, content);
@@ -673,8 +673,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="name2">Previously defined group name.</param>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="name1"/> or <paramref name="name2"/> or <paramref name="content"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="name1"/> or <paramref name="name2"/> is not a valid regex group name.</exception>
         public static QuantifiablePattern BalancingGroup(string name1, string name2, params object[] content)
         {
             return BalancingGroup(name1, name2, (object)content);
@@ -685,7 +685,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">The content to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern NonbacktrackingGroup(object content)
         {
             return new NonbacktrackingGroup(content);
@@ -696,7 +696,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern NonbacktrackingGroup(params object[] content)
         {
             return NonbacktrackingGroup((object)content);
@@ -707,7 +707,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">The content to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiedGroup Maybe(object content)
         {
             return new QuantifiedGroup.MaybeQuantifiedGroup(content);
@@ -719,7 +719,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="first">First element of a sequence that contains patterns any one of which has to be matched.</param>
         /// <param name="others">Other elements of a sequence that contains patterns any one of which has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="first"/> is <c>null</c>.</exception>
         public static QuantifiedGroup Maybe(object first, params object[] others)
         {
             if (first == null)
@@ -750,7 +750,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">The content to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiedGroup MaybeMany(object content)
         {
             return new QuantifiedGroup.MaybeManyQuantifiedGroup(content);
@@ -762,7 +762,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="first">First element of a sequence that contains patterns any one of which has to be matched.</param>
         /// <param name="others">Other elements of a sequence that contains patterns any one of which has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="first"/> is <c>null</c>.</exception>
         public static QuantifiedGroup MaybeMany(object first, params object[] others)
         {
             if (first == null)
@@ -793,7 +793,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">The content to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiedGroup OneMany(object content)
         {
             return new QuantifiedGroup.OneManyQuantifiedGroup(content);
@@ -805,7 +805,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="first">First element of a sequence that contains patterns any one of which has to be matched.</param>
         /// <param name="others">Other elements of a sequence that contains patterns any one of which has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="first"/> is <c>null</c>.</exception>
         public static QuantifiedGroup OneMany(object first, params object[] others)
         {
             if (first == null)
@@ -837,8 +837,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="exactCount">A number of times the pattern has to be matched.</param>
         /// <param name="content">The content to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup Count(int exactCount, object content)
         {
             return new QuantifiedGroup.CountQuantifiedGroup(exactCount, content);
@@ -851,8 +851,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="first">First element of a sequence that contains patterns any one of which has to be matched.</param>
         /// <param name="others">Other elements of a sequence that contains patterns any one of which has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="first"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup Count(int exactCount, object first, params object[] others)
         {
             if (first == null)
@@ -885,8 +885,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="maxCount">A maximum number of times the pattern can be matched.</param>
         /// <param name="content">The content to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="minCount"/> is less than zero or <paramref name="maxCount"/> is less than <paramref name="minCount"/>.</exception>
         public static QuantifiedGroup Count(int minCount, int maxCount, object content)
         {
             return new QuantifiedGroup.CountQuantifiedGroup(minCount, maxCount, content);
@@ -900,8 +900,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="first">First element of a sequence that contains patterns any one of which has to be matched.</param>
         /// <param name="others">Other elements of a sequence that contains patterns any one of which has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="first"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="minCount"/> is less than zero or <paramref name="maxCount"/> is less than <paramref name="minCount"/>.</exception>
         public static QuantifiedGroup Count(int minCount, int maxCount, object first, params object[] others)
         {
             if (first == null)
@@ -933,8 +933,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="minCount">A minimal number of times the pattern must be matched.</param>
         /// <param name="content">The content to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="minCount"/> is less than zero.</exception>
         public static QuantifiedGroup CountFrom(int minCount, object content)
         {
             return new QuantifiedGroup.CountFromQuantifiedGroup(minCount, content);
@@ -947,8 +947,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="first">First element of a sequence that contains patterns any one of which has to be matched.</param>
         /// <param name="others">Other elements of a sequence that contains patterns any one of which has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="first"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="minCount"/> is less than zero.</exception>
         public static QuantifiedGroup CountFrom(int minCount, object first, params object[] others)
         {
             if (first == null)
@@ -980,8 +980,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="maxCount">A maximum number of times the pattern can be matched.</param>
         /// <param name="content">The content to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="maxCount"/> is less than zero.</exception>
         public static QuantifiedGroup MaybeCount(int maxCount, object content)
         {
             return new QuantifiedGroup.CountQuantifiedGroup(0, maxCount, content);
@@ -994,8 +994,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="first">First element of a sequence that contains patterns any one of which has to be matched.</param>
         /// <param name="others">Other elements of a sequence that contains patterns any one of which has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="first"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="maxCount"/> is less than zero.</exception>
         public static QuantifiedGroup MaybeCount(int maxCount, object first, params object[] others)
         {
             if (first == null)
@@ -1026,7 +1026,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="groupNumber">A number of the group.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="groupNumber"/> is less than zero.</exception>
         public static QuantifiablePattern GroupReference(int groupNumber)
         {
             return new GroupNumberReference(groupNumber);
@@ -1037,8 +1037,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="groupName">A name of the group.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="groupName"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
         public static QuantifiablePattern GroupReference(string groupName)
         {
             return new GroupNameReference(groupName);
@@ -1060,7 +1060,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="applyOptions">A bitwise combination of the enumeration values that are applied.</param>
         /// <param name="content">The content to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern Options(RegexOptions applyOptions, object content)
         {
             return new GroupOptions(applyOptions, content);
@@ -1072,7 +1072,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="applyOptions">A bitwise combination of the enumeration values that are applied.</param>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern Options(RegexOptions applyOptions, params object[] content)
         {
             return Options(applyOptions, (object)content);
@@ -1096,7 +1096,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="disableOptions">A bitwise combination of the enumeration values that are disabled.</param>
         /// <param name="content">The content to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern Options(RegexOptions applyOptions, RegexOptions disableOptions, object content)
         {
             return new GroupOptions(applyOptions, disableOptions, content);
@@ -1109,6 +1109,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="disableOptions">A bitwise combination of the enumeration values that are disabled.</param>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
         /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern Options(RegexOptions applyOptions, RegexOptions disableOptions, params object[] content)
         {
             return Options(applyOptions, disableOptions, (object)content);
@@ -1130,7 +1131,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="options">A bitwise combination of the enumeration values that are disabled.</param>
         /// <param name="content">The content to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern DisableOptions(RegexOptions options, object content)
         {
             return new GroupOptions(RegexOptions.None, options, content);
@@ -1142,7 +1143,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="options">A bitwise combination of the enumeration values that are disabled.</param>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern DisableOptions(RegexOptions options, params object[] content)
         {
             return Options(RegexOptions.None, options, (object)content);
@@ -1193,8 +1194,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="characters">A set of characters any one of which has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="characters"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="characters"/> length is equal to zero.</exception>
         public static CharGroup Character(string characters)
         {
             return CharGroup.Create(characters, false);
@@ -1205,7 +1206,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="value">A content of a character group.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public static CharGroup Character(CharGrouping value)
         {
             return CharGroup.Create(value, false);
@@ -1256,8 +1257,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="characters">Unicode characters.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="characters"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="characters"/> length is equal to zero.</exception>
         public static CharGroup NotChar(string characters)
         {
             return CharGroup.Create(characters, true);
@@ -1268,8 +1269,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="characters">Unicode characters.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="characters"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="characters"/> is empty.</exception>
         public static CharGroup NotChar(params char[] characters)
         {
             return CharGroup.Create(characters, true);
@@ -1280,7 +1281,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="value">A content of a character group.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public static CharGroup NotChar(CharGrouping value)
         {
             return CharGroup.Create(value, true);
@@ -1316,7 +1317,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="baseGroup">A base group.</param>
         /// <param name="excludedGroup">An excluded group.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="baseGroup"/> or <paramref name="excludedGroup"/> is <c>null</c>.</exception>
         public static CharSubtraction Except(IBaseGroup baseGroup, IExcludedGroup excludedGroup)
         {
             return new CharSubtraction(baseGroup, excludedGroup);
@@ -3630,7 +3631,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">The content to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern SurroundApostrophes(object content)
         {
             return Surround(AsciiChar.Apostrophe, content);
@@ -3641,7 +3642,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern SurroundApostrophes(params object[] content)
         {
             return Surround(AsciiChar.Apostrophe, (object)content);
@@ -3661,7 +3662,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content"></param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern SurroundQuoteMarks(object content)
         {
             return Surround(AsciiChar.QuoteMark, content);
@@ -3672,7 +3673,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern SurroundQuoteMarks(params object[] content)
         {
             return Surround(AsciiChar.QuoteMark, (object)content);
@@ -3692,7 +3693,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content"></param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern SurroundQuoteMarksOrApostrophes(object content)
         {
             return SurroundQuoteMarks(content) | SurroundApostrophes(content);
@@ -3703,7 +3704,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern SurroundQuoteMarksOrApostrophes(params object[] content)
         {
             return SurroundQuoteMarks(content) | SurroundApostrophes(content);
@@ -3723,7 +3724,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content"></param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern SurroundParentheses(object content)
         {
             return Surround(AsciiChar.LeftParenthesis, content, AsciiChar.RightParenthesis);
@@ -3734,7 +3735,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern SurroundParentheses(params object[] content)
         {
             return Surround(AsciiChar.LeftParenthesis, (object)content, AsciiChar.RightParenthesis);
@@ -3754,7 +3755,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content"></param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern SurroundCurlyBrackets(object content)
         {
             return Surround(AsciiChar.LeftCurlyBracket, content, AsciiChar.RightCurlyBracket);
@@ -3765,7 +3766,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern SurroundCurlyBrackets(params object[] content)
         {
             return Surround(AsciiChar.LeftCurlyBracket, (object)content, AsciiChar.RightCurlyBracket);
@@ -3785,7 +3786,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content"></param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern SurroundSquareBrackets(object content)
         {
             return Surround(AsciiChar.LeftSquareBracket, content, AsciiChar.RightSquareBracket);
@@ -3796,7 +3797,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern SurroundSquareBrackets(params object[] content)
         {
             return Surround(AsciiChar.LeftSquareBracket, (object)content, AsciiChar.RightSquareBracket);
@@ -3816,7 +3817,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content"></param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern SurroundAngleBrackets(object content)
         {
             return Surround(AsciiChar.LeftAngleBracket, content, AsciiChar.RightAngleBracket);
@@ -3827,7 +3828,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern SurroundAngleBrackets(params object[] content)
         {
             return Surround(AsciiChar.LeftAngleBracket, (object)content, AsciiChar.RightAngleBracket);
@@ -3858,7 +3859,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="value">A set of Unicode characters.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public static QuantifiedPattern WhileChar(CharGrouping value)
         {
             return Character(value).MaybeMany();
@@ -3915,8 +3916,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="characters">Unicode characters.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="characters"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="characters"/> is empty.</exception>
         public static QuantifiedPattern WhileNotChar(params char[] characters)
         {
             return NotChar(characters).MaybeMany();
@@ -3927,8 +3928,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="characters">Unicode characters.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="characters"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="characters"/> length is equal to zero.</exception>
         public static QuantifiedPattern WhileNotChar(string characters)
         {
             return NotChar(characters).MaybeMany();
@@ -3949,7 +3950,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="value">A set of Unicode characters.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public static QuantifiedPattern WhileNotChar(CharGrouping value)
         {
             return NotChar(value).MaybeMany();
@@ -4016,7 +4017,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="value">A content of a character group.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public static QuantifiablePattern UntilChar(CharGrouping value)
         {
             return WhileNotChar(value).Character(value).AsNoncapturingGroup();
@@ -4036,7 +4037,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="value">A text to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public static Pattern Until(string value)
         {
             if (value == null)
@@ -4109,8 +4110,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="closingCharacter">Closing Unicode character to balance.</param>
         /// <param name="groupName">A name of the group that contains balanced content of the opening and closing character.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="groupName"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
         public static Pattern Balance(char openingCharacter, char closingCharacter, string groupName)
         {
             RegexUtility.CheckGroupName(groupName);
@@ -4128,8 +4129,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="groupName">A name of the group that contains balanced content of the opening and closing character.</param>
         /// <param name="openGroupName">A name of the group that contains opening character.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="groupName"/> or <paramref name="openGroupName"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="groupName"/> or <paramref name="openGroupName"/> is not a valid regex group name.</exception>
         public static Pattern Balance(char openingCharacter, char closingCharacter, string groupName, string openGroupName)
         {
             RegexUtility.CheckGroupName(groupName);

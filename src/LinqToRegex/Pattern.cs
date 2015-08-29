@@ -156,7 +156,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="input">The string to search for a match.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
         public MatchCollection Matches(string input)
         {
             return Regex.Matches(input, Value);
@@ -168,7 +168,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="input">The string to search for a match.</param>
         /// <param name="options">A bitwise combination of the enumeration values that specify options for matching.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
         public MatchCollection Matches(string input, RegexOptions options)
         {
             return Regex.Matches(input, ToString(options), options);
@@ -179,7 +179,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="input">The string to search for a match.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
         public IEnumerable<Match> EnumerateMatches(string input)
         {
             return EnumerateMatches(input, RegexOptions.None);
@@ -191,7 +191,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="input">The string to search for a match.</param>
         /// <param name="options">A bitwise combination of the enumeration values that specify options for matching.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
         public IEnumerable<Match> EnumerateMatches(string input, RegexOptions options)
         {
             Match match = Regex.Match(input, ToString(options), options);
@@ -207,7 +207,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="input">The string to search for a match.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
         public IEnumerable<Group> EnumerateGroups(string input)
         {
             return EnumerateGroups(input, RegexOptions.None);
@@ -219,7 +219,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="input">The string to search for a match.</param>
         /// <param name="options">A bitwise combination of the enumeration values that specify options for matching.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
         public IEnumerable<Group> EnumerateGroups(string input, RegexOptions options)
         {
             return EnumerateMatches(input, options).EnumerateGroups();
@@ -231,7 +231,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="input">The string to search for a match.</param>
         /// <param name="groupName">A name of the group.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> or <paramref name="groupName"/> is <c>null</c>.</exception>
         public IEnumerable<Group> EnumerateGroups(string input, string groupName)
         {
             return EnumerateGroups(input, groupName, RegexOptions.None);
@@ -244,7 +244,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="groupName">A name of the group.</param>
         /// <param name="options">A bitwise combination of the enumeration values that specify options for matching.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> or <paramref name="groupName"/> is <c>null</c>.</exception>
         public IEnumerable<Group> EnumerateGroups(string input, string groupName, RegexOptions options)
         {
             return EnumerateMatches(input, options).EnumerateGroups(groupName);
@@ -256,8 +256,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="input">The string to search for a match.</param>
         /// <param name="groupNumber">A valid number of the group.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
         public IEnumerable<Group> EnumerateGroups(string input, int groupNumber)
         {
             return EnumerateGroups(input, groupNumber, RegexOptions.None);
@@ -270,8 +269,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="groupNumber">A valid number of the group.</param>
         /// <param name="options">A bitwise combination of the enumeration values that specify options for matching.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
         public IEnumerable<Group> EnumerateGroups(string input, int groupNumber, RegexOptions options)
         {
             return EnumerateMatches(input, options).EnumerateGroups(groupNumber);
@@ -282,7 +280,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="input">The string to search for a match.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
         public IEnumerable<Group> EnumerateSuccessGroups(string input)
         {
             return EnumerateSuccessGroups(input, RegexOptions.None);
@@ -294,7 +292,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="input">The string to search for a match.</param>
         /// <param name="options">A bitwise combination of the enumeration values that specify options for matching.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
         public IEnumerable<Group> EnumerateSuccessGroups(string input, RegexOptions options)
         {
             return EnumerateMatches(input, options).EnumerateSuccessGroups();
@@ -306,7 +304,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="input">The string to search for a match.</param>
         /// <param name="groupName">A name of the group.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> or <paramref name="groupName"/> is <c>null</c>.</exception>
         public IEnumerable<Group> EnumerateSuccessGroups(string input, string groupName)
         {
             return EnumerateSuccessGroups(input, groupName, RegexOptions.None);
@@ -319,7 +317,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="groupName">A name of the group.</param>
         /// <param name="options">A bitwise combination of the enumeration values that specify options for matching.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> or <paramref name="groupName"/> is <c>null</c>.</exception>
         public IEnumerable<Group> EnumerateSuccessGroups(string input, string groupName, RegexOptions options)
         {
             return EnumerateMatches(input, options).EnumerateSuccessGroups(groupName);
@@ -331,8 +329,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="input">The string to search for a match.</param>
         /// <param name="groupNumber">A valid number of the group.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
         public IEnumerable<Group> EnumerateSuccessGroups(string input, int groupNumber)
         {
             return EnumerateSuccessGroups(input, groupNumber, RegexOptions.None);
@@ -345,8 +342,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="groupNumber">A valid number of the group.</param>
         /// <param name="options">A bitwise combination of the enumeration values that specify options for matching.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
         public IEnumerable<Group> EnumerateSuccessGroups(string input, int groupNumber, RegexOptions options)
         {
             return EnumerateMatches(input, options).EnumerateSuccessGroups(groupNumber);
@@ -357,7 +353,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="input">The string to search for a match.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
         public IEnumerable<Capture> EnumerateCaptures(string input)
         {
             return EnumerateCaptures(input, RegexOptions.None);
@@ -369,7 +365,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="input">The string to search for a match.</param>
         /// <param name="options">A bitwise combination of the enumeration values that specify options for matching.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
         public IEnumerable<Capture> EnumerateCaptures(string input, RegexOptions options)
         {
             return EnumerateMatches(input, options).EnumerateCaptures();
@@ -381,7 +377,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="input">The string to search for a match.</param>
         /// <param name="groupName">A name of the group.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> or <paramref name="groupName"/> is <c>null</c>.</exception>
         public IEnumerable<Capture> EnumerateCaptures(string input, string groupName)
         {
             return EnumerateCaptures(input, groupName, RegexOptions.None);
@@ -394,7 +390,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="groupName">A name of the group.</param>
         /// <param name="options">A bitwise combination of the enumeration values that specify options for matching.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> or <paramref name="groupName"/> is <c>null</c>.</exception>
         public IEnumerable<Capture> EnumerateCaptures(string input, string groupName, RegexOptions options)
         {
             return EnumerateMatches(input, options).EnumerateCaptures(groupName);
@@ -406,8 +402,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="input">The string to search for a match.</param>
         /// <param name="groupNumber">A valid number of the group.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
         public IEnumerable<Capture> EnumerateCaptures(string input, int groupNumber)
         {
             return EnumerateCaptures(input, groupNumber, RegexOptions.None);
@@ -420,8 +415,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="groupNumber">A valid number of the group.</param>
         /// <param name="options">A bitwise combination of the enumeration values that specify options for matching.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
         public IEnumerable<Capture> EnumerateCaptures(string input, int groupNumber, RegexOptions options)
         {
             return EnumerateMatches(input, options).EnumerateCaptures(groupNumber);
@@ -432,7 +426,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="input">The string to search for a match.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
         public bool IsMatch(string input)
         {
             return Regex.IsMatch(input, Value);
@@ -444,7 +438,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="input">The string to search for a match.</param>
         /// <param name="options">A bitwise combination of the enumeration values that specify options for matching.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
         public bool IsMatch(string input, RegexOptions options)
         {
             return Regex.IsMatch(input, ToString(options), options);
@@ -455,7 +449,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="input">The string to search for a match.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
         public Match Match(string input)
         {
             return Regex.Match(input, Value);
@@ -467,7 +461,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="input">The string to search for a match.</param>
         /// <param name="options">A bitwise combination of the enumeration values that specify options for matching.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
         public Match Match(string input, RegexOptions options)
         {
             return Regex.Match(input, ToString(options), options);
@@ -478,7 +472,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="input">The string to search for a match.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
         public string Replace(string input)
         {
             return Replace(input, string.Empty);
@@ -490,7 +484,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="input">The string to search for a match.</param>
         /// <param name="evaluator">A method that examines each match and returns a replacement string.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> or <paramref name="evaluator"/> is <c>null</c>.</exception>
         public string Replace(string input, MatchEvaluator evaluator)
         {
             return Regex.Replace(input, Value, evaluator);
@@ -610,7 +604,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="evaluator">A method that examines each match and returns a replacement string.</param>
         /// <param name="options">A bitwise combination of the enumeration values that specify options for matching.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> or <paramref name="evaluator"/> is <c>null</c>.</exception>
         public string Replace(string input, MatchEvaluator evaluator, RegexOptions options)
         {
             return Regex.Replace(input, ToString(options), evaluator, options);
@@ -666,7 +660,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="left">The first element to concatenate.</param>
         /// <param name="right">The second element to concatenate.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="left"/> or <paramref name="right"/> is <c>null</c>.</exception>
         public static Pattern operator +(Pattern left, Pattern right)
         {
             if (left == null)
@@ -688,7 +682,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="left">The first element to concatenate.</param>
         /// <param name="right">The second element to concatenate.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="left"/> or <paramref name="right"/> is <c>null</c>.</exception>
         public static Pattern operator +(Pattern left, string right)
         {
             if (left == null)
@@ -710,7 +704,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="left">The first element to concatenate.</param>
         /// <param name="right">The second element to concatenate.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="left"/> or <paramref name="right"/> is <c>null</c>.</exception>
         public static Pattern operator +(string left, Pattern right)
         {
             if (left == null)
@@ -732,7 +726,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="left">The first element to concatenate.</param>
         /// <param name="right">The second element to concatenate.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="left"/> is <c>null</c>.</exception>
         public static Pattern operator +(Pattern left, char right)
         {
             if (left == null)
@@ -749,7 +743,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="left">The first element to concatenate.</param>
         /// <param name="right">The second element to concatenate.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="right"/> is <c>null</c>.</exception>
         public static Pattern operator +(char left, Pattern right)
         {
             if (right == null)
@@ -766,7 +760,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="left">The first element to match.</param>
         /// <param name="right">The second element to match.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="left"/> or <paramref name="right"/> is <c>null</c>.</exception>
         public static QuantifiablePattern operator |(Pattern left, Pattern right)
         {
             return Patterns.Or(left, right);
@@ -778,7 +772,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="left">The first element to match.</param>
         /// <param name="right">The second element to match.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="left"/> or <paramref name="right"/> is <c>null</c>.</exception>
         public static QuantifiablePattern operator |(Pattern left, string right)
         {
             return Patterns.Or(left, right);
@@ -790,7 +784,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="left">The first element to match.</param>
         /// <param name="right">The second element to match.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="left"/> or <paramref name="right"/> is <c>null</c>.</exception>
         public static QuantifiablePattern operator |(string left, Pattern right)
         {
             return Patterns.Or(left, right);
@@ -802,7 +796,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="left">The first element to match.</param>
         /// <param name="right">The second element to match.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="left"/> or <paramref name="right"/> is <c>null</c>.</exception>
         public static QuantifiablePattern operator |(Pattern left, CharGrouping right)
         {
             return Patterns.Or(left, right);
@@ -814,7 +808,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="left">The first element to match.</param>
         /// <param name="right">The second element to match.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="left"/> or <paramref name="right"/> is <c>null</c>.</exception>
         public static QuantifiablePattern operator |(CharGrouping left, Pattern right)
         {
             return Patterns.Or(left, right);
@@ -826,10 +820,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="left">The first element to match.</param>
         /// <param name="right">The second element to match.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="left"/> is <c>null</c>.</exception>
         public static QuantifiablePattern operator |(Pattern left, char right)
         {
-            return Patterns.Or(left, right.ToString());
+            return Patterns.Or(left, right);
         }
 
         /// <summary>
@@ -838,10 +832,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="left">The first element to match.</param>
         /// <param name="right">The second element to match.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="right"/> is <c>null</c>.</exception>
         public static QuantifiablePattern operator |(char left, Pattern right)
         {
-            return Patterns.Or(left.ToString(), right);
+            return Patterns.Or(left, right);
         }
 
         /// <summary>

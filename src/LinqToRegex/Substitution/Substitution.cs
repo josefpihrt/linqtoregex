@@ -73,8 +73,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="groupName">Valid regex group name.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="groupName"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
         public Substitution NamedGroup(string groupName) => Append(Substitutions.NamedGroup(groupName));
 
         /// <summary>
@@ -127,7 +127,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="left">The first element to concatenate.</param>
         /// <param name="right">The second element to concatenate.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="left"/> or <paramref name="right"/> is <c>null</c>.</exception>
         public static Substitution operator +(Substitution left, Substitution right)
         {
             if (left == null)
@@ -149,7 +149,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="left">The first element to concatenate.</param>
         /// <param name="right">The second element to concatenate.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="left"/> or <paramref name="right"/> is <c>null</c>.</exception>
         public static Substitution operator +(Substitution left, string right)
         {
             if (left == null)
@@ -171,7 +171,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="left">The first element to concatenate.</param>
         /// <param name="right">The second element to concatenate.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="left"/> or <paramref name="right"/> is <c>null</c>.</exception>
         public static Substitution operator +(string left, Substitution right)
         {
             if (left == null)
@@ -193,7 +193,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="left">The first element to concatenate.</param>
         /// <param name="right">The second element to concatenate.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="left"/> is <c>null</c>.</exception>
         public static Substitution operator +(Substitution left, char right)
         {
             if (left == null)
@@ -210,7 +210,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="left">The first element to concatenate.</param>
         /// <param name="right">The second element to concatenate.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="right"/> is <c>null</c>.</exception>
         public static Substitution operator +(char left, Substitution right)
         {
             if (right == null)

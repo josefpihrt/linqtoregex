@@ -65,8 +65,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="characters">A set of Unicode characters.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="characters"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="characters"/> length is equal to zero.</exception>
         public CharGrouping Append(string characters) => Append(Chars.Character(characters));
 
         /// <summary>
@@ -427,7 +427,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Appends the text representation of the current instance of the character grouping to the specified <see cref="PatternBuilder"/>.
         /// </summary>
         /// <param name="builder">The builder to use for appending the text.</param>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="builder"/> is <c>null</c>.</exception>
         public void AppendBaseGroupTo(PatternBuilder builder)
         {
             if (builder == null)
@@ -442,7 +442,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Appends the text representation of the character group containing the current instance to the specified <see cref="PatternBuilder"/>.
         /// </summary>
         /// <param name="builder">The builder to use for appending the text.</param>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="builder"/> is <c>null</c>.</exception>
         public void AppendExcludedGroupTo(PatternBuilder builder)
         {
             if (builder == null)
@@ -484,7 +484,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="left">The first element to concatenate.</param>
         /// <param name="right">The second element to concatenate.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="left"/> or <paramref name="right"/> is <c>null</c>.</exception>
         public static CharGrouping operator +(CharGrouping left, CharGrouping right)
         {
             if (left == null)
@@ -506,7 +506,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="left">The first element to concatenate.</param>
         /// <param name="right">The second element to concatenate.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="left"/> or <paramref name="right"/> is <c>null</c>.</exception>
         public static CharGrouping operator +(CharGrouping left, string right)
         {
             if (left == null)
@@ -528,7 +528,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="left">The first element to concatenate.</param>
         /// <param name="right">The second element to concatenate.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="left"/> or <paramref name="right"/> is <c>null</c>.</exception>
         public static CharGrouping operator +(string left, CharGrouping right)
         {
             if (left == null)
@@ -550,7 +550,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="left">The first element to concatenate.</param>
         /// <param name="right">The second element to concatenate.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="left"/> is <c>null</c>.</exception>
         public static CharGrouping operator +(CharGrouping left, char right)
         {
             if (left == null)
@@ -567,7 +567,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="left">The first element to concatenate.</param>
         /// <param name="right">The second element to concatenate.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="right"/> is <c>null</c>.</exception>
         public static CharGrouping operator +(char left, CharGrouping right)
         {
             if (right == null)
@@ -583,6 +583,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="value">A value</param>
         /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public static CharGroup operator !(CharGrouping value)
         {
             if (value == null)
@@ -599,7 +600,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="baseGroup">A base group.</param>
         /// <param name="excludedGroup">An excluded group.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="baseGroup"/> or <paramref name="excludedGroup"/> is <c>null</c>.</exception>
         public static CharSubtraction operator -(CharGrouping baseGroup, CharGrouping excludedGroup)
         {
             return new CharSubtraction(baseGroup, excludedGroup);
@@ -611,7 +612,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="baseGroup">A base group.</param>
         /// <param name="excludedGroup">An excluded group.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="baseGroup"/> or <paramref name="excludedGroup"/> is <c>null</c>.</exception>
         public static CharSubtraction operator -(CharGrouping baseGroup, CharGroup excludedGroup)
         {
             return new CharSubtraction(baseGroup, excludedGroup);
@@ -623,7 +624,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="baseGroup">A base group.</param>
         /// <param name="excludedGroup">An excluded group.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="baseGroup"/> or <paramref name="excludedGroup"/> is <c>null</c>.</exception>
         public static CharSubtraction operator -(CharGrouping baseGroup, CharPattern excludedGroup)
         {
             return new CharSubtraction(baseGroup, excludedGroup);
@@ -634,6 +635,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="characters">A set of Unicode characters.</param>
         /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="characters"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="characters"/> length is equal to zero.</exception>
         public static explicit operator CharGrouping(string characters)
         {
             return Chars.Character(characters);

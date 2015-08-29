@@ -14,8 +14,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="characters">A set of Unicode characters.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="characters"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="characters"/> length is equal to zero.</exception>
         public static CharGrouping Character(string characters)
         {
             return new CharGrouping.CharactersCharGrouping(characters);

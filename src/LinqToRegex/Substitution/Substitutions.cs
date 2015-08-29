@@ -36,8 +36,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="groupName">Valid regex group name.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="groupName"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
         public static Substitution NamedGroup(string groupName) => new NamedGroupSubstitution(groupName);
 
         /// <summary>

@@ -187,7 +187,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="input">The text to be converted.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
         public static string Escape(string input)
         {
             return Escape(input, false);
@@ -199,7 +199,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="input">The text to be converted.</param>
         /// <param name="inCharGroup">Indicates whether the text is considered to be inside or outside of the character group.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
         public static string Escape(string input, bool inCharGroup)
         {
             if (input == null)
@@ -286,7 +286,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="input">The substitution pattern to be escaped.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
         public static string EscapeSubstitution(string input)
         {
             if (input == null)

@@ -33,7 +33,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Appends the text representation of the current instance of the character subtraction to the specified <see cref="PatternBuilder"/>.
         /// </summary>
         /// <param name="builder">The builder to use for appending the text.</param>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="builder"/> is <c>null</c>.</exception>
         public void AppendExcludedGroupTo(PatternBuilder builder)
         {
             if (builder == null)

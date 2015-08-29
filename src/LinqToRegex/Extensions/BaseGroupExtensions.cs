@@ -15,7 +15,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="baseGroup">A base group.</param>
         /// <param name="excludedGroup">An excluded group.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="baseGroup"/> or <paramref name="excludedGroup"/> is <c>null</c>.</exception>
         public static CharSubtraction Except(this IBaseGroup baseGroup, IExcludedGroup excludedGroup)
         {
             return new CharSubtraction(baseGroup, excludedGroup);

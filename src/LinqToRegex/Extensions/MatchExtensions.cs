@@ -18,7 +18,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="match">A regular expression match.</param>
         /// <param name="groupName">A name of the group.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="match"/> is <c>null</c>.</exception>
         public static Group Group(this Match match, string groupName)
         {
             if (match == null)
@@ -35,7 +35,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="match">A regular expression match.</param>
         /// <param name="groupNumber">A number of the group.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="match"/> is <c>null</c>.</exception>
         public static Group Group(this Match match, int groupNumber)
         {
             if (match == null)

@@ -23,7 +23,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Initializes a new instance of the <see cref="GroupingPattern"/> class with a specified content.
         /// </summary>
         /// <param name="content">A content of the grouping.</param>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         protected GroupingPattern(object content)
         {
             if (content == null)
@@ -38,7 +38,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Initializes a new instance of the <see cref="GroupingPattern"/> class with a specified content.
         /// </summary>
         /// <param name="content">A content of the grouping.</param>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         protected GroupingPattern(GroupingPattern content)
         {
             if (content == null)

@@ -17,7 +17,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// </summary>
         /// <param name="group">A regular expression group.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="group"/> is <c>null</c>.</exception>
         public static IEnumerable<Capture> EnumerateCaptures(this Group group)
         {
             if (group == null)

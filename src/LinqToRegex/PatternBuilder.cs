@@ -131,7 +131,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Appends specified characters to this instance.
         /// </summary>
         /// <param name="characters">Unicode characters.</param>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="characters"/> is <c>null</c>.</exception>
         public void Append(char[] characters)
         {
             Append(characters, false);
@@ -361,7 +361,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Appends the text representation of the pattern to this instance.
         /// </summary>
         /// <param name="pattern">The pattern to append.</param>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="pattern"/> is <c>null</c>.</exception>
         public void Append(Pattern pattern)
         {
             if (pattern == null)
@@ -400,7 +400,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Appends the text representation of the pattern to this instance.
         /// </summary>
         /// <param name="value">The pattern to append.</param>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public void Append(CharGrouping value)
         {
             AppendCharGroup(value);
@@ -630,8 +630,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="groupName">A name of the group.</param>
         /// <param name="trueContent">The pattern to match if the named group is matched.</param>
         /// <param name="falseContent">The pattern to match if the named group is not matched.</param>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="groupName"/> or <paramref name="trueContent"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
         public void AppendIfGroup(string groupName, object trueContent, object falseContent)
         {
             AppendIfGroupInternal(groupName, trueContent, falseContent, true);
@@ -684,8 +684,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="groupNumber">A number of the group.</param>
         /// <param name="trueContent">The pattern to match if the named group is matched.</param>
         /// <param name="falseContent">The pattern to match if the named group is not matched.</param>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="trueContent"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="groupNumber"/> is less than zero.</exception>
         public void AppendIfGroup(int groupNumber, object trueContent, object falseContent)
         {
             if (groupNumber < 0)
@@ -877,7 +877,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="content">The content to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public void AppendNumberedGroup(object content)
         {
             if (content == null)
@@ -907,8 +907,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="name">A name of the group.</param>
         /// <param name="content">The content to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="name"/> or <paramref name="content"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="name"/> is not a valid regex group name.</exception>
         public void AppendNamedGroup(string name, object content)
         {
             RegexUtility.CheckGroupName(name, nameof(name));
@@ -941,7 +941,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Appends a noncapturing group with a specified content.
         /// </summary>
         /// <param name="content">The content to be matched.</param>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public void AppendNoncapturingGroup(object content)
         {
             if (content == null)
@@ -969,7 +969,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Appends a nonbacktracking group with a specified content.
         /// </summary>
         /// <param name="content">The content to be matched.</param>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public void AppendNonbacktrackingGroup(object content)
         {
             if (content == null)
@@ -1295,8 +1295,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Appends a character group containing specified characters.
         /// </summary>
         /// <param name="characters">A set of characters any one of which has to be matched.</param>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="characters"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="characters"/> length is equal to zero.</exception>
         public void AppendCharGroup(string characters)
         {
             AppendCharGroup(characters, false);
@@ -1306,8 +1306,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Appends a negative character group containing specified characters.
         /// </summary>
         /// <param name="characters">Unicode characters.</param>
-        /// <exception cref="ArgumentNullException"></exception>
-        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="characters"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="characters"/> length is equal to zero.</exception>
         public void AppendNegativeCharGroup(string characters)
         {
             AppendCharGroup(characters, true);
@@ -1399,7 +1399,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Appends a character group containing specified <see cref="CharGrouping"/>.
         /// </summary>
         /// <param name="value">A content of a character group.</param>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public void AppendCharGroup(CharGrouping value)
         {
             AppendCharGroup(value, false);
@@ -1409,7 +1409,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Appends a negative character group containing specified <see cref="CharGrouping"/>.
         /// </summary>
         /// <param name="value">A content of a character group.</param>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public void AppendNegativeCharGroup(CharGrouping value)
         {
             AppendCharGroup(value, true);
@@ -1432,7 +1432,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="baseGroup">A base group.</param>
         /// <param name="excludedGroup">An excluded group.</param>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="baseGroup"/> or <paramref name="excludedGroup"/> is <c>null</c>.</exception>
         public void AppendSubtraction(IBaseGroup baseGroup, IExcludedGroup excludedGroup)
         {
             if (baseGroup == null)
@@ -1870,7 +1870,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="applyOptions">A bitwise combination of the enumeration values that are applied.</param>
         /// <param name="content">The pattern to match.</param>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"></exception>
         public void AppendOptions(RegexOptions applyOptions, object content)
         {
@@ -1883,7 +1883,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="applyOptions">A bitwise combination of the enumeration values that are applied.</param>
         /// <param name="disableOptions">A bitwise combination of the enumeration values that are disabled.</param>
         /// <param name="content">The pattern to match.</param>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"></exception>
         internal void AppendOptions(RegexOptions applyOptions, RegexOptions disableOptions, object content)
         {
