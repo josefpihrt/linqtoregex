@@ -352,11 +352,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         internal void AppendCharRange(char firstChar, char lastChar)
         {
-            if (lastChar < firstChar)
-            {
-                throw new ArgumentOutOfRangeException(nameof(lastChar));
-            }
-
             Append(firstChar, true);
             AppendDirect('-');
             Append(lastChar, true);
@@ -1379,6 +1374,11 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="last"/> character number is less than <paramref name="first"/> character number.</exception>
         public void AppendCharGroup(char first, char last)
         {
+            if (last < first)
+            {
+                throw new ArgumentOutOfRangeException(nameof(last));
+            }
+
             AppendCharGroup(first, last, false);
         }
 
@@ -1390,6 +1390,11 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="last"/> character number is less than <paramref name="first"/> character number.</exception>
         public void AppendNegativeCharGroup(char first, char last)
         {
+            if (last < first)
+            {
+                throw new ArgumentOutOfRangeException(nameof(last));
+            }
+
             AppendCharGroup(first, last, true);
         }
 
