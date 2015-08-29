@@ -2,7 +2,6 @@
 
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
@@ -25,7 +24,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
                 throw new ArgumentNullException(nameof(matches));
             }
 
-            return matches.SelectMany(match => match.Groups.Cast<Group>());
+            foreach (var match in matches)
+            {
+                for (int i = 0; i < match.Groups.Count; i++)
+                {
+                    yield return match.Groups[i];
+                }
+            }
         }
 
         /// <summary>
@@ -47,7 +52,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
                 throw new ArgumentNullException(nameof(groupName));
             }
 
-            return matches.Select(match => match.Groups[groupName]);
+            foreach (var match in matches)
+            {
+                yield return match.Groups[groupName];
+            }
         }
 
         /// <summary>
@@ -64,7 +72,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
                 throw new ArgumentNullException(nameof(matches));
             }
 
-            return matches.Select(match => match.Groups[groupNumber]);
+            foreach (var match in matches)
+            {
+                yield return match.Groups[groupNumber];
+            }
         }
 
         /// <summary>
@@ -75,8 +86,17 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="matches"/> is <c>null</c>.</exception>
         public static IEnumerable<Group> EnumerateSuccessGroups(this IEnumerable<Match> matches)
         {
-            return EnumerateGroups(matches)
-                .Where(group => group.Success);
+            foreach (var match in matches)
+            {
+                for (int i = 0; i < match.Groups.Count; i++)
+                {
+                    var group = match.Groups[i];
+                    if (group.Success)
+                    {
+                        yield return group;
+                    }
+                }
+            }
         }
 
         /// <summary>
@@ -89,8 +109,14 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentException"></exception>
         public static IEnumerable<Group> EnumerateSuccessGroups(this IEnumerable<Match> matches, string groupName)
         {
-            return EnumerateGroups(matches, groupName)
-                .Where(group => group.Success);
+            foreach (var match in matches)
+            {
+                var group = match.Groups[groupName];
+                if (group.Success)
+                {
+                    yield return group;
+                }
+            }
         }
 
         /// <summary>
@@ -102,8 +128,14 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="matches"/> is <c>null</c>.</exception>
         public static IEnumerable<Group> EnumerateSuccessGroups(this IEnumerable<Match> matches, int groupNumber)
         {
-            return EnumerateGroups(matches, groupNumber)
-                .Where(group => group.Success);
+            foreach (var match in matches)
+            {
+                var group = match.Groups[groupNumber];
+                if (group.Success)
+                {
+                    yield return group;
+                }
+            }
         }
 
         /// <summary>
@@ -114,8 +146,20 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="matches"/> is <c>null</c>.</exception>
         public static IEnumerable<Capture> EnumerateCaptures(this IEnumerable<Match> matches)
         {
-            return EnumerateSuccessGroups(matches)
-                .EnumerateCaptures();
+            foreach (var match in matches)
+            {
+                for (int i = 0; i < match.Groups.Count; i++)
+                {
+                    var group = match.Groups[i];
+                    if (group.Success)
+                    {
+                        for (int j = 0; j < group.Captures.Count; j++)
+                        {
+                            yield return group.Captures[j];
+                        }
+                    }
+                }
+            }
         }
 
         /// <summary>
@@ -127,8 +171,17 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="matches"/> or <paramref name="groupName"/> is <c>null</c>.</exception>
         public static IEnumerable<Capture> EnumerateCaptures(this IEnumerable<Match> matches, string groupName)
         {
-            return EnumerateSuccessGroups(matches, groupName)
-                .EnumerateCaptures();
+            foreach (var match in matches)
+            {
+                var group = match.Groups[groupName];
+                if (group.Success)
+                {
+                    for (int i = 0; i < group.Captures.Count; i++)
+                    {
+                        yield return group.Captures[i];
+                    }
+                }
+            }
         }
 
         /// <summary>
@@ -140,8 +193,17 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="matches"/> is <c>null</c>.</exception>
         public static IEnumerable<Capture> EnumerateCaptures(this IEnumerable<Match> matches, int groupNumber)
         {
-            return EnumerateSuccessGroups(matches, groupNumber)
-                .EnumerateCaptures();
+            foreach (var match in matches)
+            {
+                var group = match.Groups[groupNumber];
+                if (group.Success)
+                {
+                    for (int i = 0; i < group.Captures.Count; i++)
+                    {
+                        yield return group.Captures[i];
+                    }
+                }
+            }
         }
 
         /// <summary>
@@ -157,7 +219,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
                 throw new ArgumentNullException(nameof(groups));
             }
 
-            return groups.SelectMany(group => group.Captures.Cast<Capture>());
+            foreach (var group in groups)
+            {
+                for (int i = 0; i < group.Captures.Count; i++)
+                {
+                    yield return group.Captures[i];
+                }
+            }
         }
 
         /// <summary>
@@ -173,7 +241,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
                 throw new ArgumentNullException(nameof(captures));
             }
 
-            return captures.Select(capture => capture.Value);
+            foreach (var capture in captures)
+            {
+                yield return capture.Value;
+            }
         }
     }
 }
