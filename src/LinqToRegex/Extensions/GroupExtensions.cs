@@ -2,7 +2,6 @@
 
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
@@ -25,7 +24,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
                 throw new ArgumentNullException(nameof(group));
             }
 
-            return group.Captures.Cast<Capture>();
+            for (int i = 0; i < group.Captures.Count; i++)
+            {
+                yield return group.Captures[i];
+            }
         }
     }
 }
