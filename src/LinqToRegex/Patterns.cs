@@ -3660,7 +3660,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches specified pattern surrounded with quotation marks.
         /// </summary>
-        /// <param name="content"></param>
+        /// <param name="content">The content to be matched.</param>
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern SurroundQuoteMarks(object content)
@@ -3691,7 +3691,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches specified pattern surrounded with quotation marks or apostrophes.
         /// </summary>
-        /// <param name="content"></param>
+        /// <param name="content">The content to be matched.</param>
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern SurroundQuoteMarksOrApostrophes(object content)
@@ -3722,7 +3722,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches specified pattern surrounded with left and right parenthesis.
         /// </summary>
-        /// <param name="content"></param>
+        /// <param name="content">The content to be matched.</param>
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern SurroundParentheses(object content)
@@ -3753,7 +3753,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches specified pattern surrounded with left and right curly bracket.
         /// </summary>
-        /// <param name="content"></param>
+        /// <param name="content">The content to be matched.</param>
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern SurroundCurlyBrackets(object content)
@@ -3784,7 +3784,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches specified pattern surrounded with left and right square bracket.
         /// </summary>
-        /// <param name="content"></param>
+        /// <param name="content">The content to be matched.</param>
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern SurroundSquareBrackets(object content)
@@ -3815,7 +3815,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches specified pattern surrounded with left and right angle bracket.
         /// </summary>
-        /// <param name="content"></param>
+        /// <param name="content">The content to be matched.</param>
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern SurroundAngleBrackets(object content)
