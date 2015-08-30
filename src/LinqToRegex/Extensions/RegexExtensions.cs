@@ -305,6 +305,26 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             return ReplaceGroups(regex, input, groupNumber, group => new string(value, group.Length));
         }
 
+        public static string ReplaceGroups(this Regex regex, string input, string groupName, string replacement)
+        {
+            if (replacement == null)
+            {
+                throw new ArgumentNullException(nameof(replacement));
+            }
+
+            return ReplaceGroups(EnumerateSuccessGroups(regex, input, groupName), input, group => replacement);
+        }
+
+        public static string ReplaceGroups(this Regex regex, string input, int groupNumber, string replacement)
+        {
+            if (replacement == null)
+            {
+                throw new ArgumentNullException(nameof(replacement));
+            }
+
+            return ReplaceGroups(EnumerateSuccessGroups(regex, input, groupNumber), input, group => replacement);
+        }
+
         public static string ReplaceGroups(this Regex regex, string input, string groupName, GroupEvaluator evaluator)
         {
             return ReplaceGroups(EnumerateSuccessGroups(regex, input, groupName), input, evaluator);
