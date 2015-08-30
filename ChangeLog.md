@@ -1,3 +1,7 @@
+#### LINQ to Regex 2.1.1 (not released yet)
+
+* "WhileNot" pattern added.
+
 #### LINQ to Regex 2.1.0
 
 * Added capability to convert pattern to C# or Visual Basic string literal.
