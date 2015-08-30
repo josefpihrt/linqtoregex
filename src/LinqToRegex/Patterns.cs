@@ -3901,6 +3901,34 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return WhiteSpaceExceptNewLine().MaybeMany();
         }
 
+#if DEBUG
+        public static Pattern WhileNot(string value)
+        {
+            if (value == null)
+            {
+                throw new ArgumentNullException(nameof(value));
+            }
+
+            switch (value.Length)
+            {
+                case 0:
+                    return Text(string.Empty);
+                case 1:
+                    return WhileNotChar(value[0]);
+                default:
+                    {
+                        return NoncapturingGroup(
+                            WhileNotChar(value[0])
+                            + MaybeMany(
+                                value[0]
+                                + NotAssert(value.Substring(1))
+                                + WhileNotChar(value[0]))
+                        );
+                    }
+            }
+        }
+#endif
+
         /// <summary>
         /// Returns a pattern that matches zero or more characters that are not a specified character.
         /// </summary>

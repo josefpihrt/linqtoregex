@@ -920,6 +920,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return AppendInternal(Patterns.WhileWhiteSpaceExceptNewLine());
         }
 
+#if DEBUG
+        public Pattern WhileNot(string value)
+        {
+            return AppendInternal(Patterns.WhileNot(value));
+        }
+#endif
+
         /// <summary>
         /// Appends a pattern that matches zero or more characters that are not a specified character.
         /// </summary>
