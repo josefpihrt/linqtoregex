@@ -3901,7 +3901,12 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return WhiteSpaceExceptNewLine().MaybeMany();
         }
 
-#if DEBUG
+        /// <summary>
+        /// Returns a pattern that matches zero or more characters that are not followed with a specified <paramref name="value"/>.
+        /// </summary>
+        /// <param name="value">A text to find but not to match.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public static Pattern WhileNot(string value)
         {
             if (value == null)
@@ -3927,7 +3932,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                     }
             }
         }
-#endif
 
         /// <summary>
         /// Returns a pattern that matches zero or more characters that are not a specified character.
