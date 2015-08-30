@@ -501,99 +501,44 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return Replace(input, match => new string(value, match.Length), options);
         }
 
-        public string ReplaceCaptureChars(string input, string groupName, char value)
+        public string ReplaceGroupChars(string input, string groupName, char value)
         {
-            return ReplaceCaptureChars(input, groupName, value, RegexOptions.None);
+            return ReplaceGroupChars(input, groupName, value, RegexOptions.None);
         }
 
-        public string ReplaceCaptureChars(string input, string groupName, char value, RegexOptions options)
+        public string ReplaceGroupChars(string input, string groupName, char value, RegexOptions options)
         {
-            return ReplaceCaptures(input, groupName, capture => new string(value, capture.Length), options);
+            return RegexReplace.ReplaceGroups(EnumerateSuccessGroups(input, groupName, options), input, group => new string(value, group.Length));
         }
 
-        public string ReplaceCaptureChars(string input, int groupNumber, char value)
+        public string ReplaceGroupChars(string input, int groupNumber, char value)
         {
-            return ReplaceCaptureChars(input, groupNumber, value, RegexOptions.None);
+            return ReplaceGroupChars(input, groupNumber, value, RegexOptions.None);
         }
 
-        public string ReplaceCaptureChars(string input, int groupNumber, char value, RegexOptions options)
+        public string ReplaceGroupChars(string input, int groupNumber, char value, RegexOptions options)
         {
-            return ReplaceCaptures(input, groupNumber, capture => new string(value, capture.Length), options);
+            return RegexReplace.ReplaceGroups(EnumerateSuccessGroups(input, groupNumber, options), input, group => new string(value, group.Length));
         }
 
-        public string ReplaceCaptures(string input, string groupName, CaptureEvaluator evaluator)
+        public string ReplaceGroups(string input, string groupName, string replacement)
         {
-            return ReplaceCaptures(input, groupName, evaluator, RegexOptions.None);
+            return RegexReplace.ReplaceGroups(EnumerateSuccessGroups(input, groupName), input, replacement);
         }
 
-        public string ReplaceCaptures(string input, string groupName, CaptureEvaluator evaluator, RegexOptions options)
+        public string ReplaceGroups(string input, string groupName, GroupEvaluator evaluator)
         {
-            if (input == null)
-            {
-                throw new ArgumentNullException(nameof(input));
-            }
-
-            if (groupName == null)
-            {
-                throw new ArgumentNullException(nameof(groupName));
-            }
-
-            if (evaluator == null)
-            {
-                throw new ArgumentNullException(nameof(evaluator));
-            }
-
-            var sb = new StringBuilder();
-            int index = 0;
-
-            foreach (Match match in EnumerateMatches(input, options))
-            {
-                foreach (Capture capture in match.EnumerateCaptures(groupName).OrderBy(c => c.Index))
-                {
-                    sb.Append(input, index, capture.Index - index);
-                    sb.Append(evaluator(capture));
-                    index = capture.Index + capture.Length;
-                }
-            }
-
-            sb.Append(input, index, input.Length - index);
-
-            return sb.ToString();
+            return RegexReplace.ReplaceGroups(EnumerateSuccessGroups(input, groupName), input, evaluator);
         }
 
-        public string ReplaceCaptures(string input, int groupNumber, CaptureEvaluator evaluator)
+        public string ReplaceGroups(string input, int groupNumber, string replacement)
         {
-            return ReplaceCaptures(input, groupNumber, evaluator, RegexOptions.None);
+            return RegexReplace.ReplaceGroups(EnumerateSuccessGroups(input, groupNumber), input, replacement);
         }
 
-        public string ReplaceCaptures(string input, int groupNumber, CaptureEvaluator evaluator, RegexOptions options)
+        public string ReplaceGroups(string input, int groupNumber, GroupEvaluator evaluator)
         {
-            if (input == null)
-            {
-                throw new ArgumentNullException(nameof(input));
-            }
-
-            if (evaluator == null)
-            {
-                throw new ArgumentNullException(nameof(evaluator));
-            }
-
-            var sb = new StringBuilder();
-            int index = 0;
-
-            foreach (Match match in EnumerateMatches(input, options))
-            {
-                foreach (Capture capture in match.EnumerateCaptures(groupNumber).OrderBy(c => c.Index))
-                {
-                    sb.Append(input, index, capture.Index - index);
-                    sb.Append(evaluator(capture));
-                    index = capture.Index + capture.Length;
-                }
-            }
-
-            sb.Append(input, index, input.Length - index);
-
-            return sb.ToString();
+            return RegexReplace.ReplaceGroups(EnumerateSuccessGroups(input, groupNumber), input, evaluator);
         }
 #endif
 

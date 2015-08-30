@@ -307,54 +307,22 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
 
         public static string ReplaceGroups(this Regex regex, string input, string groupName, string replacement)
         {
-            if (replacement == null)
-            {
-                throw new ArgumentNullException(nameof(replacement));
-            }
-
-            return ReplaceGroups(EnumerateSuccessGroups(regex, input, groupName), input, group => replacement);
+            return RegexReplace.ReplaceGroups(EnumerateSuccessGroups(regex, input, groupName), input, replacement);
         }
 
         public static string ReplaceGroups(this Regex regex, string input, int groupNumber, string replacement)
         {
-            if (replacement == null)
-            {
-                throw new ArgumentNullException(nameof(replacement));
-            }
-
-            return ReplaceGroups(EnumerateSuccessGroups(regex, input, groupNumber), input, group => replacement);
+            return RegexReplace.ReplaceGroups(EnumerateSuccessGroups(regex, input, groupNumber), input, replacement);
         }
 
         public static string ReplaceGroups(this Regex regex, string input, string groupName, GroupEvaluator evaluator)
         {
-            return ReplaceGroups(EnumerateSuccessGroups(regex, input, groupName), input, evaluator);
+            return RegexReplace.ReplaceGroups(EnumerateSuccessGroups(regex, input, groupName), input, evaluator);
         }
 
         public static string ReplaceGroups(this Regex regex, string input, int groupNumber, GroupEvaluator evaluator)
         {
-            return ReplaceGroups(EnumerateSuccessGroups(regex, input, groupNumber), input, evaluator);
-        }
-
-        private static string ReplaceGroups(IEnumerable<Group> groups, string input, GroupEvaluator evaluator)
-        {
-            if (evaluator == null)
-            {
-                throw new ArgumentNullException(nameof(evaluator));
-            }
-
-            var sb = new StringBuilder();
-            int index = 0;
-
-            foreach (Group group in groups)
-            {
-                sb.Append(input, index, group.Index - index);
-                sb.Append(evaluator(group));
-                index = group.Index + group.Length;
-            }
-
-            sb.Append(input, index, input.Length - index);
-
-            return sb.ToString();
+            return RegexReplace.ReplaceGroups(EnumerateSuccessGroups(regex, input, groupNumber), input, evaluator);
         }
 
         /// <summary>
