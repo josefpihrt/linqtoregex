@@ -5,7 +5,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
 using static Pihrtsoft.Text.RegularExpressions.Linq.Patterns;
 
-namespace Pihrtsoft.Text.RegularExpressions.Linq
+namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
 {
     public static class Snippets
     {

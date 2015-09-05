@@ -1,6 +1,6 @@
 ﻿using static Pihrtsoft.Text.RegularExpressions.Linq.Patterns;
 
-namespace Pihrtsoft.Text.RegularExpressions.Linq
+namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
 {
     public static class StringInterpolation
     {

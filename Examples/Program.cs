@@ -9,7 +9,7 @@ using System.Text.RegularExpressions;
 using Pihrtsoft.Text.RegularExpressions.Linq.Extensions;
 using static Pihrtsoft.Text.RegularExpressions.Linq.Patterns;
 
-namespace Pihrtsoft.Text.RegularExpressions.Linq
+namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
 {
     internal class Program
     {
