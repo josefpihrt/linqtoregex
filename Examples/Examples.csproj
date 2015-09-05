@@ -56,15 +56,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\src\LinqToRegex\LinqToRegex.csproj">
-      <Project>{a5c864f0-d0a3-4a3c-8854-ce4ee631901b}</Project>
-      <Name>LinqToRegex</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <CodeAnalysisDictionary Include="AppDictionary.xml">
       <SubType>Designer</SubType>
     </CodeAnalysisDictionary>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\src\Pihrtsoft.Text.RegularExpressions.Linq\Pihrtsoft.Text.RegularExpressions.Linq.csproj">
+      <Project>{a5c864f0-d0a3-4a3c-8854-ce4ee631901b}</Project>
+      <Name>Pihrtsoft.Text.RegularExpressions.Linq</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
