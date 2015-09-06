@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pihrtsoft.Text.RegularExpressions.Linq.Examples", "Examples\Pihrtsoft.Text.RegularExpressions.Linq.Examples.csproj", "{3B7F4B7E-A1FB-4E0E-B670-DC6F9123941D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqToRegexExamples", "Examples\LinqToRegexExamples.csproj", "{3B7F4B7E-A1FB-4E0E-B670-DC6F9123941D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pihrtsoft.Text.RegularExpressions.Linq", "src\Pihrtsoft.Text.RegularExpressions.Linq\Pihrtsoft.Text.RegularExpressions.Linq.csproj", "{A5C864F0-D0A3-4A3C-8854-CE4EE631901B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqToRegex", "src\LinqToRegex\LinqToRegex.csproj", "{A5C864F0-D0A3-4A3C-8854-CE4EE631901B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

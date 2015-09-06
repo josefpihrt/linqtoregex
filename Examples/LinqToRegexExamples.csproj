@@ -61,9 +61,9 @@
     </CodeAnalysisDictionary>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\src\Pihrtsoft.Text.RegularExpressions.Linq\Pihrtsoft.Text.RegularExpressions.Linq.csproj">
+    <ProjectReference Include="..\src\LinqToRegex\LinqToRegex.csproj">
       <Project>{a5c864f0-d0a3-4a3c-8854-ce4ee631901b}</Project>
-      <Name>Pihrtsoft.Text.RegularExpressions.Linq</Name>
+      <Name>LinqToRegex</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
