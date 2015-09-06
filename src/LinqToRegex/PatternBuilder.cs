@@ -1746,8 +1746,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (_isComment)
             {
                 _lines.Last.QuantifierKind = QuantifierKind.CountFrom;
-                _lines.Last.Count1 = 0;
-                _lines.Last.Count2 = minCount;
+                _lines.Last.Count1 = minCount;
             }
         }
 
@@ -1783,7 +1782,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (_isComment)
             {
                 _lines.Last.QuantifierKind = QuantifierKind.MaybeCount;
-                _lines.Last.Count1 = maxCount;
+                _lines.Last.Count1 = 0;
+                _lines.Last.Count2 = maxCount;
             }
 
             if (lazy)

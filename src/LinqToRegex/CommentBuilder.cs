@@ -116,7 +116,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 case QuantifierKind.CountFrom:
                     return $"at least {Current.Count1} times";
                 case QuantifierKind.MaybeCount:
-                    return $"from zero to {Current.Count1} times";
+                    return $"from zero to {Current.Count2} times";
             }
 
             return null;
