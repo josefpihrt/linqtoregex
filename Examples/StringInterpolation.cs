@@ -4,17 +4,19 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
 {
     public static class StringInterpolation
     {
+        public const string OpenToken = "$\"";
+
         public static Pattern Pattern
         {
             get
             {
-                return "$\""
-                           + Open()
-                           + MaybeMany(
-                               OneMany(NamedGroup("open", "$\"") + Open())
-                               + OneMany(BalancingGroup("close", "open", '"') + Close())
-                           )
-                           + '"';
+                return OpenToken
+                    + Open()
+                    + MaybeMany(
+                        OneMany(NamedGroup("open", OpenToken) + Open())
+                        + OneMany(BalancingGroup("close", "open", '"') + Close())
+                    )
+                    + '"';
             }
         }
 
@@ -25,7 +27,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
                 + MaybeMany('{' + CodePart() + '}' + TextPart())
                 + Any(
                     Assert('"'),
-                    '{' + CodePart() + Assert("$\"")
+                    '{' + CodePart() + Assert(OpenToken)
                 );
         }
 
@@ -35,7 +37,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
                 CodePart()
                 + MaybeMany('}' + TextPart() + '{' + CodePart())
                 + Any(
-                    Assert("$\""),
+                    Assert(OpenToken),
                     '}' + TextPart() + Assert('"')
                 );
         }

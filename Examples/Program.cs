@@ -43,7 +43,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
                 .Assert(Crawl().SurroundWordBoundary("word2"))
                 .Any().MaybeMany();
 
-            Dump("äll words anywhere", exp);
+            Dump("all words anywhere", exp);
 
             var words = new string[] { "one", "two", "three" };
 
