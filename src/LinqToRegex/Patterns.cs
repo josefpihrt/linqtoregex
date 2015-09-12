@@ -4136,7 +4136,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches one or many opening characters balanced with one or many closing characters.
         /// Between the characters can be zero or many characters that are neither opening nor closing character.
-        /// A name for the group containing opening character is randomly generated and if the characters are balanced, the group has no captures.
         /// </summary>
         /// <param name="openingCharacter">Opening Unicode character to balance.</param>
         /// <param name="closingCharacter">Closing Unicode character to balance.</param>
@@ -4144,42 +4143,26 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="groupName"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
-        public static Pattern Balance(char openingCharacter, char closingCharacter, string groupName)
+        public static Pattern BalanceChar(char openingCharacter, char closingCharacter, string groupName)
         {
             RegexUtility.CheckGroupName(groupName);
 
-            return BalanceInternal(openingCharacter, closingCharacter, groupName, groupName + "_" + RegexUtility.GetRandomGroupName());
+            return BalanceChar(openingCharacter, closingCharacter, groupName, groupName + "_" + RegexUtility.GetRandomGroupName());
         }
 
-        /// <summary>
-        /// Returns a pattern that matches one or many opening characters balanced with one or many closing characters.
-        /// Between the characters can be zero or many characters that are neither opening nor closing character.
-        /// If the characters are balanced, group containing opening character has no captures.
-        /// </summary>
-        /// <param name="openingCharacter">Opening Unicode character to balance.</param>
-        /// <param name="closingCharacter">Closing Unicode character to balance.</param>
-        /// <param name="groupName">A name of the group that contains balanced content of the opening and closing character.</param>
-        /// <param name="openGroupName">A name of the group that contains opening character.</param>
-        /// <returns></returns>
-        /// <exception cref="ArgumentNullException"><paramref name="groupName"/> or <paramref name="openGroupName"/> is <c>null</c>.</exception>
-        /// <exception cref="ArgumentException"><paramref name="groupName"/> or <paramref name="openGroupName"/> is not a valid regex group name.</exception>
-        public static Pattern Balance(char openingCharacter, char closingCharacter, string groupName, string openGroupName)
+        private static Pattern BalanceChar(char open, char close, string groupName, string openGroupName)
         {
-            RegexUtility.CheckGroupName(groupName);
-            RegexUtility.CheckGroupName(openGroupName, nameof(openGroupName));
+            var whileNot = WhileNotChar(open, close);
 
-            return BalanceInternal(openingCharacter, closingCharacter, groupName, openGroupName);
-        }
-
-        private static Pattern BalanceInternal(char open, char close, string closeGroup, string openGroup)
-        {
             return open
-                + WhileNotChar(open, close)
-                + MaybeMany(
-                    OneMany(
-                        NamedGroup(openGroup, open) + WhileNotChar(open, close))
-                    + OneMany(
-                        BalancingGroup(closeGroup, openGroup, close) + WhileNotChar(open, close))
+                + NamedGroup(groupName,
+                    whileNot
+                    + MaybeMany(
+                        OneMany(
+                            NamedGroup(openGroupName, open) + whileNot)
+                        + OneMany(
+                            BalancingGroup(groupName, openGroupName, close) + whileNot)
+                    )
                 )
                 + close;
         }

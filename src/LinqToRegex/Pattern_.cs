@@ -3717,7 +3717,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Appends a pattern that matches one or many opening characters balanced with one or many closing characters.
         /// Between the characters can be zero or many characters that are neither opening nor closing character.
-        /// A name for the group containing opening character is randomly generated and if the characters are balanced, the group has no captures.
         /// </summary>
         /// <param name="openingCharacter">Opening Unicode character to balance.</param>
         /// <param name="closingCharacter">Closing Unicode character to balance.</param>
@@ -3725,26 +3724,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="groupName"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
-        public Pattern Balance(char openingCharacter, char closingCharacter, string groupName)
+        public Pattern BalanceChar(char openingCharacter, char closingCharacter, string groupName)
         {
-            return AppendInternal(Patterns.Balance(openingCharacter, closingCharacter, groupName));
-        }
-
-        /// <summary>
-        /// Appends a pattern that matches one or many opening characters balanced with one or many closing characters.
-        /// Between the characters can be zero or many characters that are neither opening nor closing character.
-        /// If the characters are balanced, group containing opening character has no captures.
-        /// </summary>
-        /// <param name="openingCharacter">Opening Unicode character to balance.</param>
-        /// <param name="closingCharacter">Closing Unicode character to balance.</param>
-        /// <param name="groupName">A name of the group that contains balanced content of the opening and closing character.</param>
-        /// <param name="openGroupName">A name of the group that contains opening character.</param>
-        /// <returns></returns>
-        /// <exception cref="ArgumentNullException"><paramref name="groupName"/> or <paramref name="openGroupName"/> is <c>null</c>.</exception>
-        /// <exception cref="ArgumentException"><paramref name="groupName"/> or <paramref name="openGroupName"/> is not a valid regex group name.</exception>
-        public Pattern Balance(char openingCharacter, char closingCharacter, string groupName, string openGroupName)
-        {
-            return AppendInternal(Patterns.Balance(openingCharacter, closingCharacter, groupName, openGroupName));
+            return AppendInternal(Patterns.BalanceChar(openingCharacter, closingCharacter, groupName));
         }
 
         /// <summary>
