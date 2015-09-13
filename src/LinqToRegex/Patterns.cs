@@ -4144,6 +4144,21 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             return BalanceChar('(', ')', contentGroupName);
         }
+
+        public static Pattern BalanceSquareBrackets(string contentGroupName)
+        {
+            return BalanceChar('[', ']', contentGroupName);
+        }
+
+        public static Pattern BalanceCurlyBrackets(string contentGroupName)
+        {
+            return BalanceChar('{', '}', contentGroupName);
+        }
+
+        public static Pattern BalanceAngleBrackets(string contentGroupName)
+        {
+            return BalanceChar('<', '>', contentGroupName);
+        }
 #endif
 
         private static Pattern BalanceChar(char open, char close, string groupName, string openGroupName)

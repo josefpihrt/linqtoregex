@@ -3747,6 +3747,21 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             return AppendInternal(Patterns.BalanceParentheses(contentGroupName));
         }
+
+        public Pattern BalanceSquareBrackets(string contentGroupName)
+        {
+            return AppendInternal(Patterns.BalanceSquareBrackets(contentGroupName));
+        }
+
+        public Pattern BalanceCurlyBrackets(string contentGroupName)
+        {
+            return AppendInternal(Patterns.BalanceCurlyBrackets(contentGroupName));
+        }
+
+        public Pattern BalanceAngleBrackets(string contentGroupName)
+        {
+            return AppendInternal(Patterns.BalanceAngleBrackets(contentGroupName));
+        }
 #endif
 
         /// <summary>
