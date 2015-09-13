@@ -1,6 +1,6 @@
-#### LINQ to Regex 2.1.1 (not released yet)
+#### LINQ to Regex 2.2.0 (not released yet)
 
-* "WhileNot" pattern added.
+New patterns: WhileNot, UntilChar(string).
 
 #### LINQ to Regex 2.1.0
 

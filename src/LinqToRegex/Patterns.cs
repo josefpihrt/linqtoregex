@@ -4056,6 +4056,19 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         }
 
         /// <summary>
+        /// Returns a pattern that matches zero or more characters until it reaches any one of the specified characters.
+        /// </summary>
+        /// <param name="characters">Unicode characters.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="characters"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="characters"/> length is equal to zero.</exception>
+        /// <returns></returns>
+        public static QuantifiablePattern UntilChar(string characters)
+        {
+            return WhileNotChar(characters).Character(characters).AsNoncapturingGroup();
+        }
+
+        /// <summary>
         /// Returns a pattern that matches zero or more characters until it reaches a linefeed.
         /// </summary>
         /// <returns></returns>
