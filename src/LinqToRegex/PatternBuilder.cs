@@ -420,7 +420,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (values != null)
             {
                 Append(values, mode);
-
                 return;
             }
 
