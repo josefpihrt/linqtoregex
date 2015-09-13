@@ -2,7 +2,6 @@
 
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Text.RegularExpressions;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
@@ -22,14 +21,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         public static IEnumerable<Match> EnumerateMatches(this Regex regex, string input)
         {
             if (regex == null)
-            {
                 throw new ArgumentNullException(nameof(regex));
-            }
 
             if (input == null)
-            {
                 throw new ArgumentNullException(nameof(input));
-            }
 
             Match match = regex.Match(input);
             while (match.Success)
@@ -51,14 +46,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         public static IEnumerable<Match> EnumerateMatches(this Regex regex, string input, int startAt)
         {
             if (regex == null)
-            {
                 throw new ArgumentNullException(nameof(regex));
-            }
 
             if (input == null)
-            {
                 throw new ArgumentNullException(nameof(input));
-            }
 
             Match match = regex.Match(input, startAt);
             while (match.Success)
@@ -84,14 +75,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         public static IEnumerable<Match> EnumerateMatches(this Regex regex, string input, int beginning, int length)
         {
             if (regex == null)
-            {
                 throw new ArgumentNullException(nameof(regex));
-            }
 
             if (input == null)
-            {
                 throw new ArgumentNullException(nameof(input));
-            }
 
             Match match = regex.Match(input, beginning, length);
             while (match.Success)
@@ -288,9 +275,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         public static string ReplaceChars(this Regex regex, string input, char value)
         {
             if (regex == null)
-            {
                 throw new ArgumentNullException(nameof(regex));
-            }
 
             return regex.Replace(input, match => new string(value, match.Length));
         }

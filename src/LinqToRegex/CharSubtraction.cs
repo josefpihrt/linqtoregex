@@ -16,14 +16,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         internal CharSubtraction(IBaseGroup baseGroup, IExcludedGroup excludedGroup)
         {
             if (baseGroup == null)
-            {
                 throw new ArgumentNullException(nameof(baseGroup));
-            }
 
             if (excludedGroup == null)
-            {
                 throw new ArgumentNullException(nameof(excludedGroup));
-            }
 
             _baseGroup = baseGroup;
             _excludedGroup = excludedGroup;
@@ -37,9 +33,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public void AppendExcludedGroupTo(PatternBuilder builder)
         {
             if (builder == null)
-            {
                 throw new ArgumentNullException(nameof(builder));
-            }
 
             AppendTo(builder);
         }

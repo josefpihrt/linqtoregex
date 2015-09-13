@@ -14,9 +14,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public AsciiCharSurroundPattern(AsciiChar charBefore, object content, AsciiChar charAfter)
         {
             if (content == null)
-            {
                 throw new ArgumentNullException(nameof(content));
-            }
 
             _charBefore = charBefore;
             _content = content;

@@ -14,9 +14,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public JoinContainer(object separator, object values)
         {
             if (values == null)
-            {
                 throw new ArgumentNullException(nameof(values));
-            }
 
             _separator = separator;
             _values = values;

@@ -20,9 +20,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             internal override void AppendContentTo(PatternBuilder builder)
             {
                 if (builder == null)
-                {
                     throw new ArgumentNullException(nameof(builder));
-                }
 
                 builder.Append(_value, true);
             }
@@ -49,9 +47,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             internal override void AppendContentTo(PatternBuilder builder)
             {
                 if (builder == null)
-                {
                     throw new ArgumentNullException(nameof(builder));
-                }
 
                 builder.Append(_value, true);
             }
@@ -72,14 +68,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             public TextCharGroup(string characters, bool negative)
             {
                 if (characters == null)
-                {
                     throw new ArgumentNullException(nameof(characters));
-                }
 
                 if (characters.Length == 0)
-                {
                     throw new ArgumentException(ExceptionHelper.CharGroupCannotBeEmpty, nameof(characters));
-                }
 
                 _characters = characters;
                 Negative = negative;
@@ -88,9 +80,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             internal override void AppendContentTo(PatternBuilder builder)
             {
                 if (builder == null)
-                {
                     throw new ArgumentNullException(nameof(builder));
-                }
 
                 builder.Append(_characters, true);
             }
@@ -111,14 +101,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             public CharactersCharGroup(char[] characters, bool negative)
             {
                 if (characters == null)
-                {
                     throw new ArgumentNullException(nameof(characters));
-                }
 
                 if (characters.Length == 0)
-                {
                     throw new ArgumentException(ExceptionHelper.CharGroupCannotBeEmpty, nameof(characters));
-                }
 
                 _characters = characters;
                 Negative = negative;
@@ -127,9 +113,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             internal override void AppendContentTo(PatternBuilder builder)
             {
                 if (builder == null)
-                {
                     throw new ArgumentNullException(nameof(builder));
-                }
 
                 builder.Append(_characters, true);
             }
@@ -151,9 +135,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             public CharRangeCharGroup(char firstChar, char lastChar, bool negative)
             {
                 if (lastChar < firstChar)
-                {
                     throw new ArgumentOutOfRangeException(nameof(lastChar));
-                }
 
                 _firstChar = firstChar;
                 _lastChar = lastChar;
@@ -163,9 +145,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             internal override void AppendContentTo(PatternBuilder builder)
             {
                 if (builder == null)
-                {
                     throw new ArgumentNullException(nameof(builder));
-                }
 
                 builder.AppendCharRange(_firstChar, _lastChar);
             }
@@ -255,9 +235,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             public CharGroupingCharGroup(CharGrouping value, bool negative)
             {
                 if (value == null)
-                {
                     throw new ArgumentNullException(nameof(value));
-                }
 
                 _item = value;
                 Negative = negative;
@@ -284,9 +262,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             internal CharGroupCharGroup(CharGroup group, bool negative)
             {
                 if (group == null)
-                {
                     throw new ArgumentNullException(nameof(group));
-                }
 
                 _group = group;
                 Negative = negative;

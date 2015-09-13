@@ -35,9 +35,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static NegativeAssertion operator !(Assertion value)
         {
             if (value == null)
-            {
                 throw new ArgumentNullException(nameof(value));
-            }
 
             return value.Negate();
         }

@@ -11,9 +11,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         internal NumberedGroupSubstitution(int groupNumber)
         {
             if (groupNumber < 0)
-            {
                 throw new ArgumentOutOfRangeException(nameof(groupNumber));
-            }
 
             GroupNumber = groupNumber;
         }

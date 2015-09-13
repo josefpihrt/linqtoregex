@@ -14,19 +14,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public SurroundPattern(object contentBefore, object content, object contentAfter)
         {
             if (contentBefore == null)
-            {
                 throw new ArgumentNullException(nameof(contentBefore));
-            }
 
             if (content == null)
-            {
                 throw new ArgumentNullException(nameof(content));
-            }
 
             if (contentAfter == null)
-            {
                 throw new ArgumentNullException(nameof(contentAfter));
-            }
 
             _contentBefore = contentBefore;
             _content = content;

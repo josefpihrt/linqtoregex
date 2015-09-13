@@ -21,9 +21,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         public static Group Group(this Match match, string groupName)
         {
             if (match == null)
-            {
                 throw new ArgumentNullException(nameof(match));
-            }
 
             return match.Groups[groupName];
         }
@@ -38,9 +36,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         public static Group Group(this Match match, int groupNumber)
         {
             if (match == null)
-            {
                 throw new ArgumentNullException(nameof(match));
-            }
 
             return match.Groups[groupNumber];
         }
@@ -54,9 +50,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         public static IEnumerable<Group> EnumerateGroups(this Match match)
         {
             if (match == null)
-            {
                 throw new ArgumentNullException(nameof(match));
-            }
 
             for (int i = 0; i < match.Groups.Count; i++)
             {
@@ -73,9 +67,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         public static IEnumerable<Capture> EnumerateCaptures(this Match match)
         {
             if (match == null)
-            {
                 throw new ArgumentNullException(nameof(match));
-            }
 
             for (int i = 0; i < match.Groups.Count; i++)
             {
@@ -100,9 +92,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         public static IEnumerable<Capture> EnumerateCaptures(this Match match, string groupName)
         {
             if (match == null)
-            {
                 throw new ArgumentNullException(nameof(match));
-            }
 
             var group = match.Groups[groupName];
             if (group.Success)
@@ -124,9 +114,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         public static IEnumerable<Capture> EnumerateCaptures(this Match match, int groupNumber)
         {
             if (match == null)
-            {
                 throw new ArgumentNullException(nameof(match));
-            }
 
             var group = match.Groups[groupNumber];
             if (group.Success)

@@ -12,9 +12,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public GroupNumberReference(int groupNumber)
         {
             if (groupNumber < 0)
-            {
                 throw new ArgumentOutOfRangeException(nameof(groupNumber));
-            }
 
             _groupNumber = groupNumber;
         }

@@ -13,9 +13,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public ConcatPattern(object content)
         {
             if (content == null)
-            {
                 throw new ArgumentNullException(nameof(content));
-            }
 
             _content = content;
         }

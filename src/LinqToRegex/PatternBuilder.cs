@@ -43,9 +43,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         internal PatternBuilder(PatternSettings settings, RegexOptions options)
         {
             if (settings == null)
-            {
                 throw new ArgumentNullException(nameof(settings));
-            }
 
             _settings = settings;
             _currentOptions = options;
@@ -140,9 +138,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         internal void Append(char[] characters, bool inCharGroup)
         {
             if (characters == null)
-            {
                 throw new ArgumentNullException(nameof(characters));
-            }
 
             foreach (var value in characters)
             {
@@ -301,9 +297,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         internal void Append(int value, bool inCharGroup)
         {
             if (value < 0 || value > 0xFFFF)
-            {
                 throw new ArgumentOutOfRangeException(nameof(value));
-            }
 
             AppendInternal(value, inCharGroup);
         }
@@ -365,9 +359,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public void Append(Pattern pattern)
         {
             if (pattern == null)
-            {
                 throw new ArgumentNullException(nameof(pattern));
-            }
 
             if (pattern.Previous != null)
             {
@@ -580,14 +572,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public void AppendIfAssert(object testContent, object trueContent, object falseContent)
         {
             if (testContent == null)
-            {
                 throw new ArgumentNullException(nameof(testContent));
-            }
 
             if (trueContent == null)
-            {
                 throw new ArgumentNullException(nameof(trueContent));
-            }
 
             AppendGroupStart();
             AppendDirect('(');
@@ -645,9 +633,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             }
 
             if (trueContent == null)
-            {
                 throw new ArgumentNullException(nameof(trueContent));
-            }
 
             AppendGroupStart(false);
             AppendDirect('(');
@@ -689,9 +675,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public void AppendIfGroup(int groupNumber, object trueContent, object falseContent)
         {
             if (groupNumber < 0)
-            {
                 throw new ArgumentOutOfRangeException(nameof(groupNumber));
-            }
 
             AppendIfGroup(TextUtility.NumberToString(groupNumber), trueContent, falseContent);
         }
@@ -881,9 +865,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public void AppendNumberedGroup(object content)
         {
             if (content == null)
-            {
                 throw new ArgumentNullException(nameof(content));
-            }
 
             AppendNumberedGroupStart();
             AppendGroupContent(content);
@@ -914,9 +896,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             RegexUtility.CheckGroupName(name, nameof(name));
 
             if (content == null)
-            {
                 throw new ArgumentNullException(nameof(content));
-            }
 
             AppendNamedGroupInternal(name, content);
         }
@@ -945,9 +925,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public void AppendNoncapturingGroup(object content)
         {
             if (content == null)
-            {
                 throw new ArgumentNullException(nameof(content));
-            }
 
             AppendNoncapturingGroupStart();
             AppendGroupContent(content);
@@ -973,9 +951,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public void AppendNonbacktrackingGroup(object content)
         {
             if (content == null)
-            {
                 throw new ArgumentNullException(nameof(content));
-            }
 
             AppendGroupStart();
             AppendDirect('>');
@@ -992,9 +968,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         internal void AppendBalancingGroup(string name1, string name2, object content)
         {
             if (content == null)
-            {
                 throw new ArgumentNullException(nameof(content));
-            }
 
             AppendGroupStart();
             AppendDirect(Settings.IdentifierBoundary == IdentifierBoundary.Apostrophe ? '\'' : '<');
@@ -1316,15 +1290,12 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         internal void AppendCharGroup(string characters, bool negative)
         {
             if (characters == null)
-            {
                 throw new ArgumentNullException(nameof(characters));
-            }
 
             if (characters.Length == 0)
-            {
                 throw new ArgumentException(ExceptionHelper.CharGroupCannotBeEmpty, nameof(characters));
-            }
-            else if (characters.Length == 1)
+
+            if (characters.Length == 1)
             {
                 AppendCharGroup(characters[0], negative);
             }
@@ -1339,15 +1310,12 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         internal void AppendCharGroup(char[] characters, bool negative)
         {
             if (characters == null)
-            {
                 throw new ArgumentNullException(nameof(characters));
-            }
 
             if (characters.Length == 0)
-            {
                 throw new ArgumentException(ExceptionHelper.CharGroupCannotBeEmpty, nameof(characters));
-            }
-            else if (characters.Length == 1)
+
+            if (characters.Length == 1)
             {
                 AppendCharGroup(characters[0], negative);
             }
@@ -1375,9 +1343,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public void AppendCharGroup(char first, char last)
         {
             if (last < first)
-            {
                 throw new ArgumentOutOfRangeException(nameof(last));
-            }
 
             AppendCharGroup(first, last, false);
         }
@@ -1391,9 +1357,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public void AppendNegativeCharGroup(char first, char last)
         {
             if (last < first)
-            {
                 throw new ArgumentOutOfRangeException(nameof(last));
-            }
 
             AppendCharGroup(first, last, true);
         }
@@ -1428,9 +1392,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         internal void AppendCharGroup(CharGrouping value, bool negative)
         {
             if (value == null)
-            {
                 throw new ArgumentNullException(nameof(value));
-            }
 
             AppendCharGroupStart(negative);
             value.AppendContentTo(this);
@@ -1446,14 +1408,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public void AppendSubtraction(IBaseGroup baseGroup, IExcludedGroup excludedGroup)
         {
             if (baseGroup == null)
-            {
                 throw new ArgumentNullException(nameof(baseGroup));
-            }
 
             if (excludedGroup == null)
-            {
                 throw new ArgumentNullException(nameof(excludedGroup));
-            }
 
             AppendCharGroupStart();
 
@@ -1630,9 +1588,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public void AppendCount(int exactCount, bool lazy)
         {
             if (exactCount < 0)
-            {
                 throw new ArgumentOutOfRangeException(nameof(exactCount));
-            }
 
             AppendCountInternal(exactCount);
 
@@ -1677,9 +1633,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public void AppendCount(int minCount, int maxCount, bool lazy)
         {
             if (minCount < 0 || maxCount < minCount)
-            {
                 throw new ArgumentOutOfRangeException(nameof(minCount));
-            }
 
             AppendCountInternal(minCount, maxCount);
 
@@ -1724,9 +1678,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public void AppendCountFrom(int minCount, bool lazy)
         {
             if (minCount < 0)
-            {
                 throw new ArgumentOutOfRangeException(nameof(minCount));
-            }
 
             AppendCountFromInternal(minCount);
 
@@ -1769,9 +1721,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public void AppendMaybeCount(int maxCount, bool lazy)
         {
             if (maxCount < 0)
-            {
                 throw new ArgumentOutOfRangeException(nameof(maxCount));
-            }
 
             AppendDirect('{');
             AppendDirect('0');
@@ -1852,14 +1802,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (applyOptions != RegexOptions.None || disableOptions != RegexOptions.None)
             {
                 if (!RegexUtility.IsValidInlineOptions(applyOptions))
-                {
                     throw new ArgumentException(ExceptionHelper.RegexOptionsNotConvertibleToInlineChars, nameof(applyOptions));
-                }
 
                 if (!RegexUtility.IsValidInlineOptions(disableOptions))
-                {
                     throw new ArgumentException(ExceptionHelper.RegexOptionsNotConvertibleToInlineChars, nameof(disableOptions));
-                }
 
                 AppendGroupStart(false);
                 AppendOptionsChars(applyOptions, disableOptions);
@@ -1898,19 +1844,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         internal void AppendOptions(RegexOptions applyOptions, RegexOptions disableOptions, object content)
         {
             if (!RegexUtility.IsValidInlineOptions(applyOptions))
-            {
                 throw new ArgumentException(ExceptionHelper.RegexOptionsNotConvertibleToInlineChars, nameof(applyOptions));
-            }
 
             if (!RegexUtility.IsValidInlineOptions(disableOptions))
-            {
                 throw new ArgumentException(ExceptionHelper.RegexOptionsNotConvertibleToInlineChars, nameof(disableOptions));
-            }
 
             if (content == null)
-            {
                 throw new ArgumentNullException(nameof(content));
-            }
 
             if (applyOptions != RegexOptions.None || disableOptions != RegexOptions.None)
             {
@@ -1992,9 +1932,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         internal void AppendAsciiHexadecimal(int charCode)
         {
             if (charCode < 0 || charCode > 0xFF)
-            {
                 throw new ArgumentOutOfRangeException(nameof(charCode));
-            }
 
             AppendBackslash('x');
             AppendDirect(charCode.ToString("X2", CultureInfo.InvariantCulture));
@@ -2004,9 +1942,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         internal void AppendUnicodeHexadecimal(int charCode)
         {
             if (charCode < 0 || charCode > 0xFFFF)
-            {
                 throw new ArgumentOutOfRangeException(nameof(charCode));
-            }
 
             AppendBackslash('u');
             AppendDirect(charCode.ToString("X4", CultureInfo.InvariantCulture).PadLeft(4, '0'));

@@ -19,9 +19,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             protected override void AppendItemContentTo(PatternBuilder builder)
             {
                 if (builder == null)
-                {
                     throw new ArgumentNullException(nameof(builder));
-                }
 
                 builder.Append(_value, true);
             }
@@ -40,9 +38,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             protected override void AppendItemContentTo(PatternBuilder builder)
             {
                 if (builder == null)
-                {
                     throw new ArgumentNullException(nameof(builder));
-                }
 
                 builder.Append(_value, true);
             }
@@ -56,14 +52,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             public CharactersCharGrouping(string characters)
             {
                 if (characters == null)
-                {
                     throw new ArgumentNullException(nameof(characters));
-                }
 
                 if (characters.Length == 0)
-                {
                     throw new ArgumentException(ExceptionHelper.CharGroupCannotBeEmpty, nameof(characters));
-                }
 
                 _characters = characters;
             }
@@ -71,9 +63,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             protected override void AppendItemContentTo(PatternBuilder builder)
             {
                 if (builder == null)
-                {
                     throw new ArgumentNullException(nameof(builder));
-                }
 
                 builder.Append(_characters, true);
             }
@@ -88,9 +78,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             public CharacterRangeCharGrouping(char firstChar, char lastChar)
             {
                 if (lastChar < firstChar)
-                {
                     throw new ArgumentOutOfRangeException(nameof(lastChar));
-                }
 
                 _firstChar = firstChar;
                 _lastChar = lastChar;
@@ -99,9 +87,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             protected override void AppendItemContentTo(PatternBuilder builder)
             {
                 if (builder == null)
-                {
                     throw new ArgumentNullException(nameof(builder));
-                }
 
                 builder.AppendCharRange(_firstChar, _lastChar);
             }
@@ -120,9 +106,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             protected override void AppendItemContentTo(PatternBuilder builder)
             {
                 if (builder == null)
-                {
                     throw new ArgumentNullException(nameof(builder));
-                }
 
                 builder.AppendCharClass(_value);
             }
@@ -143,9 +127,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             protected override void AppendItemContentTo(PatternBuilder builder)
             {
                 if (builder == null)
-                {
                     throw new ArgumentNullException(nameof(builder));
-                }
 
                 builder.AppendGeneralCategory(_category, Negative);
             }
@@ -168,9 +150,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             protected override void AppendItemContentTo(PatternBuilder builder)
             {
                 if (builder == null)
-                {
                     throw new ArgumentNullException(nameof(builder));
-                }
 
                 builder.AppendNamedBlock(_block, Negative);
             }
@@ -186,9 +166,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             public CharGroupingCharGrouping(CharGrouping value)
             {
                 if (value == null)
-                {
                     throw new ArgumentNullException(nameof(value));
-                }
 
                 _value = value;
             }
@@ -196,9 +174,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             protected override void AppendItemContentTo(PatternBuilder builder)
             {
                 if (builder == null)
-                {
                     throw new ArgumentNullException(nameof(builder));
-                }
 
                 _value.AppendContentTo(builder);
             }

@@ -20,9 +20,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         public static IEnumerable<Capture> EnumerateCaptures(this Group group)
         {
             if (group == null)
-            {
                 throw new ArgumentNullException(nameof(group));
-            }
 
             for (int i = 0; i < group.Captures.Count; i++)
             {

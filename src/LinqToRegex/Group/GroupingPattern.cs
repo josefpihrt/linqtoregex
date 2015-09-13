@@ -27,9 +27,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         protected GroupingPattern(object content)
         {
             if (content == null)
-            {
                 throw new ArgumentNullException(nameof(content));
-            }
 
             _content = content;
         }
@@ -42,9 +40,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         protected GroupingPattern(GroupingPattern content)
         {
             if (content == null)
-            {
                 throw new ArgumentNullException(nameof(content));
-            }
 
             _content = content.Content;
         }

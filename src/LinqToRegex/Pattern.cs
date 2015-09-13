@@ -72,9 +72,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         internal TPattern AppendInternal<TPattern>(TPattern pattern) where TPattern : Pattern
         {
             if (pattern == null)
-            {
                 throw new ArgumentNullException(nameof(pattern));
-            }
 
             Pattern first = pattern;
             while (first.Previous != null)
@@ -609,14 +607,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static Pattern operator +(Pattern left, Pattern right)
         {
             if (left == null)
-            {
                 throw new ArgumentNullException(nameof(left));
-            }
 
             if (right == null)
-            {
                 throw new ArgumentNullException(nameof(right));
-            }
 
             return left.Append(right);
         }
@@ -631,14 +625,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static Pattern operator +(Pattern left, string right)
         {
             if (left == null)
-            {
                 throw new ArgumentNullException(nameof(left));
-            }
 
             if (right == null)
-            {
                 throw new ArgumentNullException(nameof(right));
-            }
 
             return left.Text(right);
         }
@@ -653,14 +643,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static Pattern operator +(string left, Pattern right)
         {
             if (left == null)
-            {
                 throw new ArgumentNullException(nameof(left));
-            }
 
             if (right == null)
-            {
                 throw new ArgumentNullException(nameof(right));
-            }
 
             return Patterns.Text(left).Append(right);
         }
@@ -675,9 +661,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static Pattern operator +(Pattern left, char right)
         {
             if (left == null)
-            {
                 throw new ArgumentNullException(nameof(left));
-            }
 
             return left.Append(Patterns.Character(right));
         }
@@ -692,9 +676,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static Pattern operator +(char left, Pattern right)
         {
             if (right == null)
-            {
                 throw new ArgumentNullException(nameof(right));
-            }
 
             return Patterns.Character(left).Append(right);
         }

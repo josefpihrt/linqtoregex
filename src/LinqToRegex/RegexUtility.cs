@@ -65,14 +65,11 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         internal static void CheckGroupName(string groupName, string paramName)
         {
             if (groupName == null)
-            {
                 throw new ArgumentNullException(paramName);
-            }
 
             if (!IsValidGroupNameInternal(groupName))
-            {
                 throw new ArgumentException("Invalid group name.", paramName);
-            }
+
         }
 
         /// <summary>
@@ -203,9 +200,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static string Escape(string input, bool inCharGroup)
         {
             if (input == null)
-            {
                 throw new ArgumentNullException(nameof(input));
-            }
 
             CharEscapeMode mode = CharEscapeMode.None;
 
@@ -290,9 +285,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static string EscapeSubstitution(string input)
         {
             if (input == null)
-            {
                 throw new ArgumentNullException(nameof(input));
-            }
 
             for (int i = 0; i < input.Length; i++)
             {
@@ -353,9 +346,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static string GetRandomGroupName(int length)
         {
             if (length < 1)
-            {
                 throw new ArgumentOutOfRangeException(nameof(length));
-            }
 
             var sb = new StringBuilder(length);
 

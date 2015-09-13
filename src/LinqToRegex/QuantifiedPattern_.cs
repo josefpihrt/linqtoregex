@@ -15,9 +15,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             internal CountQuantifiedPattern(int exactCount)
             {
                 if (exactCount < 0)
-                {
                     throw new ArgumentOutOfRangeException(nameof(exactCount));
-                }
 
                 _count1 = exactCount;
                 _count2 = -1;
@@ -26,9 +24,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             internal CountQuantifiedPattern(int minCount, int maxCount)
             {
                 if (minCount < 0 || maxCount < minCount)
-                {
                     throw new ArgumentOutOfRangeException(nameof(minCount));
-                }
 
                 _count1 = minCount;
                 _count2 = maxCount;
@@ -55,9 +51,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             internal CountFromQuantifiedPattern(int minCount)
             {
                 if (minCount < 0)
-                {
                     throw new ArgumentOutOfRangeException(nameof(minCount));
-                }
 
                 _minCount = minCount;
             }

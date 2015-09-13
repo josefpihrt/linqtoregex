@@ -20,14 +20,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             : base(content)
         {
             if (!RegexUtility.IsValidInlineOptions(applyOptions))
-            {
                 throw new ArgumentException(ExceptionHelper.RegexOptionsNotConvertibleToInlineChars, nameof(applyOptions));
-            }
 
             if (!RegexUtility.IsValidInlineOptions(disableOptions))
-            {
                 throw new ArgumentException(ExceptionHelper.RegexOptionsNotConvertibleToInlineChars, nameof(disableOptions));
-            }
 
             _applyOptions = applyOptions;
             _disableOptions = disableOptions;

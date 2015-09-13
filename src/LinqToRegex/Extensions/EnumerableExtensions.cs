@@ -20,9 +20,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         public static IEnumerable<Group> EnumerateGroups(this IEnumerable<Match> matches)
         {
             if (matches == null)
-            {
                 throw new ArgumentNullException(nameof(matches));
-            }
 
             foreach (var match in matches)
             {
@@ -43,14 +41,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         public static IEnumerable<Group> EnumerateGroups(this IEnumerable<Match> matches, string groupName)
         {
             if (matches == null)
-            {
                 throw new ArgumentNullException(nameof(matches));
-            }
 
             if (groupName == null)
-            {
                 throw new ArgumentNullException(nameof(groupName));
-            }
 
             foreach (var match in matches)
             {
@@ -68,9 +62,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         public static IEnumerable<Group> EnumerateGroups(this IEnumerable<Match> matches, int groupNumber)
         {
             if (matches == null)
-            {
                 throw new ArgumentNullException(nameof(matches));
-            }
 
             foreach (var match in matches)
             {
@@ -214,9 +206,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         public static IEnumerable<Capture> EnumerateCaptures(this IEnumerable<Group> groups)
         {
             if (groups == null)
-            {
                 throw new ArgumentNullException(nameof(groups));
-            }
 
             foreach (var group in groups)
             {
@@ -236,9 +226,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         public static IEnumerable<string> EnumerateValues(this IEnumerable<Capture> captures)
         {
             if (captures == null)
-            {
                 throw new ArgumentNullException(nameof(captures));
-            }
 
             foreach (var capture in captures)
             {

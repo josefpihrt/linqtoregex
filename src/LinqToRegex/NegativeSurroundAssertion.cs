@@ -17,19 +17,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         internal NegativeSurroundAssertion(object backAssertion, object content, object assertion)
         {
             if (backAssertion == null)
-            {
                 throw new ArgumentNullException(nameof(backAssertion));
-            }
 
             if (content == null)
-            {
                 throw new ArgumentNullException(nameof(content));
-            }
 
             if (assertion == null)
-            {
                 throw new ArgumentNullException(nameof(assertion));
-            }
 
             _backAssertion = backAssertion;
             _content = content;

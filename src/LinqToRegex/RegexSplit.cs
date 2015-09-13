@@ -16,9 +16,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static IEnumerable<string> EnumerateValues(Regex regex, string input, int count)
         {
             if (regex == null)
-            {
                 throw new ArgumentNullException(nameof(regex));
-            }
 
             return EnumerateValues(regex, input, count, regex.RightToLeft ? input.Length : 0);
         }
@@ -26,24 +24,16 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static IEnumerable<string> EnumerateValues(Regex regex, string input, int count, int startAt)
         {
             if (regex == null)
-            {
                 throw new ArgumentNullException(nameof(regex));
-            }
 
             if (input == null)
-            {
                 throw new ArgumentNullException(nameof(input));
-            }
 
             if (count < 0)
-            {
                 throw new ArgumentOutOfRangeException(nameof(count));
-            }
 
             if (startAt < 0 || startAt > input.Length)
-            {
                 throw new ArgumentOutOfRangeException(nameof(startAt));
-            }
 
             if (count == 1)
             {

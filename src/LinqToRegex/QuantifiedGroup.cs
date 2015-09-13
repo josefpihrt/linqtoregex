@@ -20,9 +20,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         protected QuantifiedGroup(object content)
         {
             if (content == null)
-            {
                 throw new ArgumentNullException(nameof(content));
-            }
 
             _content = content;
         }

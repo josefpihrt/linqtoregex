@@ -131,14 +131,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static Substitution operator +(Substitution left, Substitution right)
         {
             if (left == null)
-            {
                 throw new ArgumentNullException(nameof(left));
-            }
 
             if (right == null)
-            {
                 throw new ArgumentNullException(nameof(right));
-            }
 
             return left.Append(right);
         }
@@ -153,14 +149,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static Substitution operator +(Substitution left, string right)
         {
             if (left == null)
-            {
                 throw new ArgumentNullException(nameof(left));
-            }
 
             if (right == null)
-            {
                 throw new ArgumentNullException(nameof(right));
-            }
 
             return left.Text(right);
         }
@@ -175,14 +167,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static Substitution operator +(string left, Substitution right)
         {
             if (left == null)
-            {
                 throw new ArgumentNullException(nameof(left));
-            }
 
             if (right == null)
-            {
                 throw new ArgumentNullException(nameof(right));
-            }
 
             return Substitutions.Text(left).Append(right);
         }
@@ -197,9 +185,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static Substitution operator +(Substitution left, char right)
         {
             if (left == null)
-            {
                 throw new ArgumentNullException(nameof(left));
-            }
 
             return left.Append(Substitutions.Text(right));
         }
@@ -214,9 +200,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static Substitution operator +(char left, Substitution right)
         {
             if (right == null)
-            {
                 throw new ArgumentNullException(nameof(right));
-            }
 
             return Substitutions.Text(left).Append(right);
         }

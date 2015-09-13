@@ -12,9 +12,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static string ReplaceGroups(IEnumerable<Group> groups, string input, string replacement)
         {
             if (replacement == null)
-            {
                 throw new ArgumentNullException(nameof(replacement));
-            }
 
             return ReplaceGroups(groups, input, group => replacement);
         }
@@ -22,9 +20,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static string ReplaceGroups(IEnumerable<Group> groups, string input, GroupEvaluator evaluator)
         {
             if (evaluator == null)
-            {
                 throw new ArgumentNullException(nameof(evaluator));
-            }
 
             var sb = new StringBuilder();
             int index = 0;

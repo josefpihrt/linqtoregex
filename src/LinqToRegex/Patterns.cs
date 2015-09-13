@@ -136,9 +136,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static TPattern Not<TPattern>(INegateable<TPattern> value) where TPattern : Pattern
         {
             if (value == null)
-            {
                 throw new ArgumentNullException(nameof(value));
-            }
 
             return value.Negate();
         }
@@ -146,14 +144,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         internal static QuantifiablePattern Or(object left, object right)
         {
             if (left == null)
-            {
                 throw new ArgumentNullException(nameof(left));
-            }
 
             if (right == null)
-            {
                 throw new ArgumentNullException(nameof(right));
-            }
 
             return new OrContainer(left, right);
         }
@@ -723,9 +717,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static QuantifiedGroup Maybe(object first, params object[] others)
         {
             if (first == null)
-            {
                 throw new ArgumentNullException(nameof(first));
-            }
 
             if (others == null || others.Length == 0)
             {
@@ -766,9 +758,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static QuantifiedGroup MaybeMany(object first, params object[] others)
         {
             if (first == null)
-            {
                 throw new ArgumentNullException(nameof(first));
-            }
 
             if (others == null || others.Length == 0)
             {
@@ -809,9 +799,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static QuantifiedGroup OneMany(object first, params object[] others)
         {
             if (first == null)
-            {
                 throw new ArgumentNullException(nameof(first));
-            }
 
             if (others == null || others.Length == 0)
             {
@@ -856,9 +844,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static QuantifiedGroup Count(int exactCount, object first, params object[] others)
         {
             if (first == null)
-            {
                 throw new ArgumentNullException(nameof(first));
-            }
 
             if (others == null || others.Length == 0)
             {
@@ -905,9 +891,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static QuantifiedGroup Count(int minCount, int maxCount, object first, params object[] others)
         {
             if (first == null)
-            {
                 throw new ArgumentNullException(nameof(first));
-            }
 
             if (others == null || others.Length == 0)
             {
@@ -952,9 +936,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static QuantifiedGroup CountFrom(int minCount, object first, params object[] others)
         {
             if (first == null)
-            {
                 throw new ArgumentNullException(nameof(first));
-            }
 
             if (others == null || others.Length == 0)
             {
@@ -999,9 +981,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static QuantifiedGroup MaybeCount(int maxCount, object first, params object[] others)
         {
             if (first == null)
-            {
                 throw new ArgumentNullException(nameof(first));
-            }
 
             if (others == null || others.Length == 0)
             {
@@ -3910,9 +3890,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static Pattern WhileNot(string value)
         {
             if (value == null)
-            {
                 throw new ArgumentNullException(nameof(value));
-            }
 
             switch (value.Length)
             {
@@ -4086,9 +4064,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static Pattern Until(string value)
         {
             if (value == null)
-            {
                 throw new ArgumentNullException(nameof(value));
-            }
 
             switch (value.Length)
             {

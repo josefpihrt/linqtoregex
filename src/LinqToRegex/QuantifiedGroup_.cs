@@ -16,9 +16,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 : base(content)
             {
                 if (exactCount < 0)
-                {
                     throw new ArgumentOutOfRangeException(nameof(exactCount));
-                }
 
                 _count1 = exactCount;
                 _count2 = -1;
@@ -28,9 +26,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 : base(content)
             {
                 if (minCount < 0 || maxCount < minCount)
-                {
                     throw new ArgumentOutOfRangeException(nameof(minCount));
-                }
 
                 _count1 = minCount;
                 _count2 = maxCount;
@@ -39,9 +35,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             protected override void AppendQuantifierTo(PatternBuilder builder)
             {
                 if (builder == null)
-                {
                     throw new ArgumentNullException(nameof(builder));
-                }
 
                 if (_count2 == -1)
                 {
@@ -63,9 +57,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 : base(content)
             {
                 if (minCount < 0)
-                {
                     throw new ArgumentOutOfRangeException(nameof(minCount));
-                }
 
                 _minCount = minCount;
             }
@@ -73,9 +65,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             protected override void AppendQuantifierTo(PatternBuilder builder)
             {
                 if (builder == null)
-                {
                     throw new ArgumentNullException(nameof(builder));
-                }
 
                 builder.AppendCountFromInternal(_minCount);
             }
@@ -92,9 +82,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             protected override void AppendQuantifierTo(PatternBuilder builder)
             {
                 if (builder == null)
-                {
                     throw new ArgumentNullException(nameof(builder));
-                }
 
                 builder.AppendMaybe();
             }
@@ -111,9 +99,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             protected override void AppendQuantifierTo(PatternBuilder builder)
             {
                 if (builder == null)
-                {
                     throw new ArgumentNullException(nameof(builder));
-                }
 
                 builder.AppendMaybeMany();
             }
@@ -130,9 +116,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             protected override void AppendQuantifierTo(PatternBuilder builder)
             {
                 if (builder == null)
-                {
                     throw new ArgumentNullException(nameof(builder));
-                }
 
                 builder.AppendOneMany();
             }

@@ -31,9 +31,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static NegativeWordBoundary operator !(WordBoundary value)
         {
             if (value == null)
-            {
                 throw new ArgumentNullException(nameof(value));
-            }
 
             return value.Negate();
         }

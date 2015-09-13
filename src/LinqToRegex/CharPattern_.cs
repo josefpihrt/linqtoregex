@@ -26,9 +26,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             protected override void AppendGroupContentTo(PatternBuilder builder)
             {
                 if (builder == null)
-                {
                     throw new ArgumentNullException(nameof(builder));
-                }
 
                 builder.Append(_value, true);
             }
@@ -54,9 +52,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             protected override void AppendGroupContentTo(PatternBuilder builder)
             {
                 if (builder == null)
-                {
                     throw new ArgumentNullException(nameof(builder));
-                }
 
                 builder.Append(_value, true);
             }

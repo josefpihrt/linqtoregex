@@ -17,9 +17,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             RegexUtility.CheckGroupName(groupName);
 
             if (trueContent == null)
-            {
                 throw new ArgumentNullException(nameof(trueContent));
-            }
 
             _groupName = groupName;
             _trueContent = trueContent;
@@ -29,14 +27,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public IfGroup(int groupNumber, object trueContent, object falseContent)
         {
             if (groupNumber < 0)
-            {
                 throw new ArgumentOutOfRangeException(nameof(groupNumber));
-            }
 
             if (trueContent == null)
-            {
                 throw new ArgumentNullException(nameof(trueContent));
-            }
 
             _groupName = groupNumber.ToString(CultureInfo.InvariantCulture);
             _trueContent = trueContent;

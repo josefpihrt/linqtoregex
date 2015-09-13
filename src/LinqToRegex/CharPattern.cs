@@ -43,9 +43,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         protected virtual void AppendGroupContentTo(PatternBuilder builder)
         {
             if (builder == null)
-            {
                 throw new ArgumentNullException(nameof(builder));
-            }
 
             AppendTo(builder);
         }
@@ -58,9 +56,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public void AppendBaseGroupTo(PatternBuilder builder)
         {
             if (builder == null)
-            {
                 throw new ArgumentNullException(nameof(builder));
-            }
 
             AppendGroupContentTo(builder);
         }
@@ -73,9 +69,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public void AppendExcludedGroupTo(PatternBuilder builder)
         {
             if (builder == null)
-            {
                 throw new ArgumentNullException(nameof(builder));
-            }
 
             builder.AppendCharGroupStart();
             AppendGroupContentTo(builder);
@@ -90,9 +84,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static CharGroup operator !(CharPattern value)
         {
             if (value == null)
-            {
                 throw new ArgumentNullException(nameof(value));
-            }
 
             return value.Negate();
         }

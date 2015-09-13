@@ -53,9 +53,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             set
             {
                 if ((value & (PatternOptions.CSharpLiteral | PatternOptions.VisualBasicLiteral)) == (PatternOptions.CSharpLiteral | PatternOptions.VisualBasicLiteral))
-                {
                     throw new ArgumentException(ExceptionHelper.InvalidPatternOptions);
-                }
 
                 _options = value;
             }
