@@ -347,14 +347,17 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
             var sb = new StringBuilder(length);
 
-            lock (_randomLock)
+            if (_random == null)
             {
-                if (_random == null)
-                    _random = new Random();
-
-                for (int i = 0; i < length; i++)
-                    sb.Append((char)_random.Next(97, 122));
+                lock (_randomLock)
+                {
+                    if (_random == null)
+                        _random = new Random();
+                }
             }
+
+            for (int i = 0; i < length; i++)
+                sb.Append((char)_random.Next(97, 122));
 
             return sb.ToString();
         }
