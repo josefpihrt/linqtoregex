@@ -35,10 +35,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 throw new ArgumentNullException(nameof(value));
 
             CharGrouping first = value;
+
             while (first.Previous != null)
-            {
                 first = first.Previous;
-            }
 
             first.Previous = this;
             return value;
@@ -462,9 +461,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 } while (item != null);
 
                 while (stack.Count > cnt)
-                {
                     stack.Pop().AppendItemContentTo(builder);
-                }
             }
             else
             {

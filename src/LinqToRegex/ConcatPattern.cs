@@ -24,9 +24,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (values != null)
             {
                 for (int i = 0; i < values.Length; i++)
-                {
                     builder.Append(values[i]);
-                }
             }
             else
             {
@@ -34,9 +32,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 if (items != null)
                 {
                     foreach (var item in items)
-                    {
                         builder.Append(item);
-                    }
                 }
             }
         }

@@ -17,13 +17,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         internal override void AppendTo(StringBuilder builder)
         {
             if (_char == '$')
-            {
                 builder.Append("$$");
-            }
             else
-            {
                 builder.Append(_char);
-            }
         }
 
         internal override string Value => (_char == '$') ? "$$" : _char.ToString();

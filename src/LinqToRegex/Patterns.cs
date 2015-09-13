@@ -422,13 +422,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static Pattern EndLine(bool beforeCarriageReturn)
         {
             if (beforeCarriageReturn)
-            {
                 return Assert(CarriageReturn().Maybe().EndLine());
-            }
             else
-            {
                 return EndLine();
-            }
         }
 
         /// <summary>
@@ -448,13 +444,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static QuantifiablePattern EndInputOrLine(bool beforeCarriageReturn)
         {
             if (beforeCarriageReturn)
-            {
                 return Assert(CarriageReturn().Maybe().EndInputOrLine());
-            }
             else
-            {
                 return EndInputOrLine();
-            }
         }
 
         /// <summary>
@@ -720,21 +712,16 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 throw new ArgumentNullException(nameof(first));
 
             if (others == null || others.Length == 0)
-            {
                 return Maybe(first);
-            }
-            else if (others.Length == 1)
-            {
-                return Maybe(new object[] { first, others[0] });
-            }
-            else
-            {
-                var content = new object[others.Length + 1];
-                content[0] = first;
-                Array.Copy(others, 0, content, 1, others.Length);
 
-                return Maybe(content);
-            }
+            if (others.Length == 1)
+                return Maybe(new object[] { first, others[0] });
+
+            var content = new object[others.Length + 1];
+            content[0] = first;
+            Array.Copy(others, 0, content, 1, others.Length);
+
+            return Maybe(content);
         }
 
         /// <summary>
@@ -761,21 +748,16 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 throw new ArgumentNullException(nameof(first));
 
             if (others == null || others.Length == 0)
-            {
                 return MaybeMany(first);
-            }
-            else if (others.Length == 1)
-            {
-                return MaybeMany(new object[] { first, others[0] });
-            }
-            else
-            {
-                var content = new object[others.Length + 1];
-                content[0] = first;
-                Array.Copy(others, 0, content, 1, others.Length);
 
-                return MaybeMany(content);
-            }
+            if (others.Length == 1)
+                return MaybeMany(new object[] { first, others[0] });
+
+            var content = new object[others.Length + 1];
+            content[0] = first;
+            Array.Copy(others, 0, content, 1, others.Length);
+
+            return MaybeMany(content);
         }
 
         /// <summary>
@@ -802,21 +784,16 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 throw new ArgumentNullException(nameof(first));
 
             if (others == null || others.Length == 0)
-            {
                 return OneMany(first);
-            }
-            else if (others.Length == 1)
-            {
-                return OneMany(new object[] { first, others[0] });
-            }
-            else
-            {
-                var content = new object[others.Length + 1];
-                content[0] = first;
-                Array.Copy(others, 0, content, 1, others.Length);
 
-                return OneMany(content);
-            }
+            if (others.Length == 1)
+                return OneMany(new object[] { first, others[0] });
+
+            var content = new object[others.Length + 1];
+            content[0] = first;
+            Array.Copy(others, 0, content, 1, others.Length);
+
+            return OneMany(content);
         }
 
         /// <summary>
@@ -847,21 +824,16 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 throw new ArgumentNullException(nameof(first));
 
             if (others == null || others.Length == 0)
-            {
                 return Count(exactCount, first);
-            }
-            else if (others.Length == 1)
-            {
-                return Count(exactCount, new object[] { first, others[0] });
-            }
-            else
-            {
-                var content = new object[others.Length + 1];
-                content[0] = first;
-                Array.Copy(others, 0, content, 1, others.Length);
 
-                return Count(exactCount, content);
-            }
+            if (others.Length == 1)
+                return Count(exactCount, new object[] { first, others[0] });
+
+            var content = new object[others.Length + 1];
+            content[0] = first;
+            Array.Copy(others, 0, content, 1, others.Length);
+
+            return Count(exactCount, content);
         }
 
         /// <summary>
@@ -894,21 +866,16 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 throw new ArgumentNullException(nameof(first));
 
             if (others == null || others.Length == 0)
-            {
                 return Count(minCount, maxCount, first);
-            }
-            else if (others.Length == 1)
-            {
-                return Count(minCount, maxCount, (object)(new object[] { first, others[0] }));
-            }
-            else
-            {
-                var content = new object[others.Length + 1];
-                content[0] = first;
-                Array.Copy(others, 0, content, 1, others.Length);
 
-                return Count(minCount, maxCount, (object)content);
-            }
+            if (others.Length == 1)
+                return Count(minCount, maxCount, (object)(new object[] { first, others[0] }));
+
+            var content = new object[others.Length + 1];
+            content[0] = first;
+            Array.Copy(others, 0, content, 1, others.Length);
+
+            return Count(minCount, maxCount, (object)content);
         }
 
         /// <summary>
@@ -939,21 +906,16 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 throw new ArgumentNullException(nameof(first));
 
             if (others == null || others.Length == 0)
-            {
                 return CountFrom(minCount, first);
-            }
-            else if (others.Length == 1)
-            {
-                return CountFrom(minCount, new object[] { first, others[0] });
-            }
-            else
-            {
-                var content = new object[others.Length + 1];
-                content[0] = first;
-                Array.Copy(others, 0, content, 1, others.Length);
 
-                return CountFrom(minCount, content);
-            }
+            if (others.Length == 1)
+                return CountFrom(minCount, new object[] { first, others[0] });
+
+            var content = new object[others.Length + 1];
+            content[0] = first;
+            Array.Copy(others, 0, content, 1, others.Length);
+
+            return CountFrom(minCount, content);
         }
 
         /// <summary>
@@ -984,21 +946,16 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 throw new ArgumentNullException(nameof(first));
 
             if (others == null || others.Length == 0)
-            {
                 return MaybeCount(maxCount, first);
-            }
-            else if (others.Length == 1)
-            {
-                return MaybeCount(maxCount, new object[] { first, others[0] });
-            }
-            else
-            {
-                var content = new object[others.Length + 1];
-                content[0] = first;
-                Array.Copy(others, 0, content, 1, others.Length);
 
-                return MaybeCount(maxCount, content);
-            }
+            if (others.Length == 1)
+                return MaybeCount(maxCount, new object[] { first, others[0] });
+
+            var content = new object[others.Length + 1];
+            content[0] = first;
+            Array.Copy(others, 0, content, 1, others.Length);
+
+            return MaybeCount(maxCount, content);
         }
 
         /// <summary>

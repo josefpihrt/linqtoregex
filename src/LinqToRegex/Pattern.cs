@@ -75,10 +75,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 throw new ArgumentNullException(nameof(pattern));
 
             Pattern first = pattern;
+
             while (first.Previous != null)
-            {
                 first = first.Previous;
-            }
+
             first.Previous = this;
 
             return pattern;
@@ -784,9 +784,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             get
             {
                 if (_value == null)
-                {
                     _value = ToString();
-                }
 
                 return _value;
             }

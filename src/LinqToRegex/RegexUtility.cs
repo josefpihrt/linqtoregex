@@ -258,9 +258,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                             mode = GetEscapeModeInternal((int)input[i], inCharGroup);
 
                             if (mode != CharEscapeMode.None)
-                            {
                                 break;
-                            }
 
                             i++;
                         }
@@ -315,10 +313,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 while (i < input.Length)
                 {
                     ch = input[i];
+
                     if (ch == '$')
-                    {
                         break;
-                    }
 
                     i++;
                 }
@@ -353,14 +350,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             lock (_randomLock)
             {
                 if (_random == null)
-                {
                     _random = new Random();
-                }
 
                 for (int i = 0; i < length; i++)
-                {
                     sb.Append((char)_random.Next(97, 122));
-                }
             }
 
             return sb.ToString();

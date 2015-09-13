@@ -20,13 +20,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (x != null)
             {
                 if (y != null)
-                {
                     return Combine(x.Content as object[], y.Content as object[]);
-                }
                 else
-                {
                     return Combine(x.Content as object[], second);
-                }
             }
             else if (y != null)
             {

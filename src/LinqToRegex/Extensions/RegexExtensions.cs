@@ -100,9 +100,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             foreach (var match in EnumerateMatches(regex, input))
             {
                 for (int i = 0; i < match.Groups.Count; i++)
-                {
                     yield return match.Groups[i];
-                }
             }
         }
 
@@ -117,9 +115,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         public static IEnumerable<Group> EnumerateGroups(this Regex regex, string input, string groupName)
         {
             foreach (var match in EnumerateMatches(regex, input))
-            {
                 yield return match.Groups[groupName];
-            }
         }
 
         /// <summary>
@@ -133,9 +129,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         public static IEnumerable<Group> EnumerateGroups(this Regex regex, string input, int groupNumber)
         {
             foreach (var match in EnumerateMatches(regex, input))
-            {
                 yield return match.Groups[groupNumber];
-            }
         }
 
         /// <summary>
@@ -152,10 +146,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
                 for (int i = 0; i < match.Groups.Count; i++)
                 {
                     var group = match.Groups[i];
+
                     if (group.Success)
-                    {
                         yield return group;
-                    }
                 }
             }
         }
@@ -173,10 +166,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             foreach (var match in EnumerateMatches(regex, input))
             {
                 var group = match.Groups[groupName];
+
                 if (group.Success)
-                {
                     yield return group;
-                }
             }
         }
 
@@ -193,10 +185,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             foreach (var match in EnumerateMatches(regex, input))
             {
                 var group = match.Groups[groupNumber];
+
                 if (group.Success)
-                {
                     yield return group;
-                }
             }
         }
 
@@ -217,9 +208,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
                     if (group.Success)
                     {
                         for (int j = 0; j < group.Captures.Count; j++)
-                        {
                             yield return group.Captures[j];
-                        }
                     }
                 }
             }
@@ -241,9 +230,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
                 if (group.Success)
                 {
                     for (int i = 0; i < group.Captures.Count; i++)
-                    {
                         yield return group.Captures[i];
-                    }
                 }
             }
         }
@@ -264,9 +251,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
                 if (group.Success)
                 {
                     for (int i = 0; i < group.Captures.Count; i++)
-                    {
                         yield return group.Captures[i];
-                    }
                 }
             }
         }

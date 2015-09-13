@@ -29,13 +29,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public void AddTextOrCharacter(string value)
         {
             if (value.Length > 1)
-            {
                 Add(SyntaxKind.Text);
-            }
             else
-            {
                 AddCharacter(SyntaxKind.Character, value[0]);
-            }
         }
 
         public void AddTextOrCharacter(string value, int count)
@@ -46,13 +42,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public void AddTextOrCharacter(string value, int startIndex, int count)
         {
             if (count > 1)
-            {
                 Add(SyntaxKind.Text);
-            }
             else
-            {
                 AddCharacter(SyntaxKind.Character, value[startIndex]);
-            }
         }
 
         public LineInfo Last => this[Count - 1];

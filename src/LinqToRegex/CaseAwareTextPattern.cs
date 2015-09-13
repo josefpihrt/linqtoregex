@@ -21,13 +21,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (!string.IsNullOrEmpty(_text))
             {
                 if (_ignoreCase)
-                {
                     builder.AppendOptions(RegexOptions.IgnoreCase, _text);
-                }
                 else
-                {
                     builder.AppendOptions(RegexOptions.None, RegexOptions.IgnoreCase, _text);
-                }
             }
         }
     }

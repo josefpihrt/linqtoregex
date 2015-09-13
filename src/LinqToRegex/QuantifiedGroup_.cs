@@ -38,13 +38,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                     throw new ArgumentNullException(nameof(builder));
 
                 if (_count2 == -1)
-                {
                     builder.AppendCountInternal(_count1);
-                }
                 else
-                {
                     builder.AppendCountInternal(_count1, _count2);
-                }
             }
         }
 

@@ -53,9 +53,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
                 throw new ArgumentNullException(nameof(match));
 
             for (int i = 0; i < match.Groups.Count; i++)
-            {
                 yield return match.Groups[i];
-            }
         }
 
         /// <summary>
@@ -75,9 +73,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
                 if (group.Success)
                 {
                     for (int j = 0; j < group.Captures.Count; j++)
-                    {
                         yield return group.Captures[j];
-                    }
                 }
             }
         }
@@ -98,9 +94,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             if (group.Success)
             {
                 for (int i = 0; i < group.Captures.Count; i++)
-                {
                     yield return group.Captures[i];
-                }
             }
         }
 
@@ -120,9 +114,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             if (group.Success)
             {
                 for (int i = 0; i < group.Captures.Count; i++)
-                {
                     yield return group.Captures[i];
-                }
             }
         }
     }

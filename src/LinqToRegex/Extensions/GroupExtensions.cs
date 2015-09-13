@@ -23,9 +23,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
                 throw new ArgumentNullException(nameof(group));
 
             for (int i = 0; i < group.Captures.Count; i++)
-            {
                 yield return group.Captures[i];
-            }
         }
     }
 }

@@ -50,9 +50,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 throw new ArgumentNullException(nameof(builder));
 
             if (Negative)
-            {
                 builder.AppendDirect('^');
-            }
 
             AppendContentTo(builder);
         }

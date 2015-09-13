@@ -34,13 +34,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         internal override void AppendTo(PatternBuilder builder)
         {
             if (AddGroup)
-            {
                 builder.AppendNoncapturingGroup(Content);
-            }
             else
-            {
                 builder.AppendGroupContent(Content);
-            }
 
             AppendQuantifierTo(builder);
         }
@@ -50,22 +46,16 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             get
             {
                 Pattern exp = Content as QuantifiablePattern;
+
                 if (exp != null)
-                {
                     return (exp.Previous != null);
-                }
-                else
-                {
-                    string s = Content as string;
-                    if (s != null)
-                    {
-                        return s.Length == 0 || s.Length > 1;
-                    }
-                    else
-                    {
-                        return !(Content is CharGrouping);
-                    }
-                }
+
+                string s = Content as string;
+
+                if (s != null)
+                    return s.Length == 0 || s.Length > 1;
+
+                return !(Content is CharGrouping);
             }
         }
 

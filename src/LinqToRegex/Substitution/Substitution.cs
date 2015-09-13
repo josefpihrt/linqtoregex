@@ -43,9 +43,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 } while (item != null);
 
                 while (stack.Count > 0)
-                {
                     stack.Pop().AppendTo(sb);
-                }
 
                 return sb.ToString();
             }

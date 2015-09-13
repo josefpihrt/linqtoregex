@@ -33,13 +33,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             internal override void AppendTo(PatternBuilder builder)
             {
                 if (_count2 == -1)
-                {
                     builder.AppendCountInternal(_count1);
-                }
                 else
-                {
                     builder.AppendCountInternal(_count1, _count2);
-                }
             }
         }
 

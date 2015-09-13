@@ -82,9 +82,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             set
             {
                 if (value == null)
-                {
                     value = InitialNewLine;
-                }
 
                 CoreNewLine = value.ToCharArray();
             }

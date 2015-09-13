@@ -73,9 +73,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
             var options = PatternOptions.FormatAndComment | PatternOptions.CSharpLiteral;
 
             if (!string.IsNullOrEmpty(title))
-            {
                 Console.WriteLine($"{title}:");
-            }
 
             Console.WriteLine(pattern.ToString(options));
             Console.WriteLine(string.Empty);

@@ -54,9 +54,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             _sb = new StringBuilder();
 
             if (_isComment)
-            {
                 _lines = new LineInfoCollection();
-            }
         }
 
         /// <summary>
@@ -66,13 +64,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public override string ToString()
         {
             if (_isLiteral)
-            {
                 return GetLiteral();
-            }
             else
-            {
                 return GetPattern();
-            }
         }
 
         private string GetPattern()
@@ -93,23 +87,17 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             var sb = new StringBuilder();
 
             if (Settings.HasOptions(PatternOptions.CSharpLiteral))
-            {
                 sb.Append("@");
-            }
 
             sb.Append('"');
 
             if (_isMultiline)
-            {
                 sb.Append(Settings.NewLine);
-            }
 
             sb.Append(GetPattern());
 
             if (_isMultiline)
-            {
                 sb.Append(Settings.NewLine);
-            }
 
             sb.Append('"');
 
@@ -141,9 +129,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 throw new ArgumentNullException(nameof(characters));
 
             foreach (var value in characters)
-            {
                 Append(value, inCharGroup);
-            }
         }
 
         internal void Append(string value, bool inCharGroup)
@@ -166,9 +152,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                             AppendDirect(value, 0, i);
 
                             if (_isComment && !inCharGroup)
-                            {
                                 _lines.AddTextOrCharacter(value, i);
-                            }
                         }
 
                         do
@@ -176,9 +160,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                             Append(ch, mode);
 
                             if (_isComment && !inCharGroup)
-                            {
                                 _lines.AddCharacter(SyntaxKind.Character, ch);
-                            }
 
                             i++;
                             lastPos = i;
@@ -189,9 +171,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                                 mode = RegexUtility.GetEscapeModeInternal((int)ch, inCharGroup);
 
                                 if (mode != CharEscapeMode.None)
-                                {
                                     break;
-                                }
 
                                 i++;
                             }
@@ -202,9 +182,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                                 AppendDirect(value, lastPos, i - lastPos);
 
                                 if (_isComment && !inCharGroup)
-                                {
                                     _lines.AddTextOrCharacter(value, lastPos, i - lastPos);
-                                }
                             }
 
                         } while (i < value.Length);
@@ -217,9 +195,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 AppendDirect(value);
 
                 if (_isComment && !inCharGroup)
-                {
                     _lines.AddTextOrCharacter(value);
-                }
             }
         }
 
@@ -339,9 +315,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             }
 
             if (_isComment && !inCharGroup)
-            {
                 _lines.AddCharacter(SyntaxKind.Character, value);
-            }
         }
 
         internal void AppendCharRange(char firstChar, char lastChar)
@@ -364,9 +338,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (pattern.Previous != null)
             {
                 if (_patterns == null)
-                {
                     _patterns = new Stack<Pattern>();
-                }
 
                 int cnt = _patterns.Count;
                 Pattern item = pattern;
@@ -378,9 +350,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 } while (item != null);
 
                 while (_patterns.Count > cnt)
-                {
                     _patterns.Pop().AppendTo(this);
-                }
             }
             else
             {
@@ -417,9 +387,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         internal void Append(object value, GroupMode mode)
         {
             if (value == null)
-            {
                 return;
-            }
 
             Pattern pattern = value as Pattern;
             if (pattern != null)
@@ -458,9 +426,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
             IEnumerable items = value as IEnumerable;
             if (items != null)
-            {
                 Append(items, mode);
-            }
         }
 
         private void Append(object[] values, GroupMode mode)
@@ -468,13 +434,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (values.Length > 0)
             {
                 if (mode == GroupMode.Group)
-                {
                     AppendNumberedGroupStart();
-                }
                 else if (mode == GroupMode.NoncapturingGroup)
-                {
                     AppendNoncapturingGroupStart();
-                }
 
                 _pendingOr = false;
                 int length = Length;
@@ -489,9 +451,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 _pendingOr = false;
 
                 if (mode != GroupMode.None)
-                {
                     AppendGroupEnd();
-                }
             }
         }
 
@@ -502,13 +462,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (en.MoveNext())
             {
                 if (mode == GroupMode.Group)
-                {
                     AppendNumberedGroupStart();
-                }
                 else if (mode == GroupMode.NoncapturingGroup)
-                {
                     AppendNoncapturingGroupStart();
-                }
 
                 _pendingOr = false;
                 int length = Length;
@@ -524,9 +480,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 _pendingOr = false;
 
                 if (mode != GroupMode.None)
-                {
                     AppendGroupEnd();
-                }
             }
         }
 
@@ -541,9 +495,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendDirect('?');
 
             if (indent)
-            {
                 _indentLevel++;
-            }
         }
 
         internal void AppendGroupContent(object content)
@@ -581,14 +533,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendDirect('(');
 
             if (_isComment)
-            {
                 _lines.Add(SyntaxKind.IfAssert);
-            }
 
             if (!Settings.HasOptions(PatternOptions.IfConditionWithoutAssertion))
-            {
                 AppendDirect("?=");
-            }
 
             AppendGroupContent(testContent);
             AppendGroupEnd();
@@ -628,9 +576,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         internal void AppendIfGroupInternal(string groupName, object trueContent, object falseContent, bool checkGroupName)
         {
             if (checkGroupName)
-            {
                 RegexUtility.CheckGroupName(groupName);
-            }
 
             if (trueContent == null)
                 throw new ArgumentNullException(nameof(trueContent));
@@ -641,9 +587,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendGroupEnd(false);
 
             if (_isComment)
-            {
                 _lines.Add(SyntaxKind.IfGroup);
-            }
 
             RegexOptions currentOptions = _currentOptions;
 
@@ -689,9 +633,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendGroupStart();
 
             if (_isComment)
-            {
                 _lines.Add(SyntaxKind.Assertion);
-            }
 
             AppendDirect("=");
             AppendGroupContent(content);
@@ -707,9 +649,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendGroupStart();
 
             if (_isComment)
-            {
                 _lines.Add(SyntaxKind.NegativeAssertion);
-            }
 
             AppendDirect("!");
             AppendGroupContent(content);
@@ -725,9 +665,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendGroupStart();
 
             if (_isComment)
-            {
                 _lines.Add(SyntaxKind.BackAssertion);
-            }
 
             AppendDirect("<=");
             AppendGroupContent(content);
@@ -743,9 +681,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendGroupStart();
 
             if (_isComment)
-            {
                 _lines.Add(SyntaxKind.NegativeBackAssertion);
-            }
 
             AppendDirect("<!");
             AppendGroupContent(content);
@@ -760,9 +696,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendBackslash('A');
 
             if (_isComment)
-            {
                 _lines.Add(SyntaxKind.BeginningOfInput);
-            }
         }
 
         /// <summary>
@@ -773,9 +707,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendInternal('^');
 
             if (_isComment)
-            {
                 _lines.Add(IsEnabled(RegexOptions.Multiline) ? SyntaxKind.BeginningOfInputOrLine : SyntaxKind.BeginningOfInput);
-            }
         }
 
         /// <summary>
@@ -786,9 +718,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendBackslash('z');
 
             if (_isComment)
-            {
                 _lines.Add(SyntaxKind.EndOfInput);
-            }
         }
 
         /// <summary>
@@ -799,9 +729,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendInternal('$');
 
             if (_isComment)
-            {
                 _lines.Add(IsEnabled(RegexOptions.Multiline) ? SyntaxKind.EndOfInputOrLine : SyntaxKind.EndOfInput);
-            }
         }
 
         /// <summary>
@@ -812,9 +740,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendBackslash('Z');
 
             if (_isComment)
-            {
                 _lines.Add(SyntaxKind.EndOfInputOrBeforeEndingLinefeed);
-            }
         }
 
         /// <summary>
@@ -825,9 +751,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendBackslash('b');
 
             if (_isComment)
-            {
                 _lines.Add(SyntaxKind.WordBoundary);
-            }
         }
 
         /// <summary>
@@ -838,9 +762,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendBackslash('B');
 
             if (_isComment)
-            {
                 _lines.Add(SyntaxKind.NegativeWordBoundary);
-            }
         }
 
         /// <summary>
@@ -851,9 +773,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendBackslash('G');
 
             if (_isComment)
-            {
                 _lines.Add(SyntaxKind.PreviousMatchEnd);
-            }
         }
 
         /// <summary>
@@ -878,9 +798,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             _indentLevel++;
 
             if (_isComment)
-            {
                 _lines.Add(SyntaxKind.Group);
-            }
         }
 
         /// <summary>
@@ -909,9 +827,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendDirect(Settings.IdentifierBoundary == IdentifierBoundary.Apostrophe ? '\'' : '>');
 
             if (_isComment)
-            {
                 _lines.Add(SyntaxKind.NamedGroup);
-            }
 
             AppendGroupContent(content);
             AppendGroupEnd();
@@ -938,9 +854,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendDirect(':');
 
             if (_isComment)
-            {
                 _lines.Add(SyntaxKind.NoncapturingGroup);
-            }
         }
 
         /// <summary>
@@ -957,9 +871,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendDirect('>');
 
             if (_isComment)
-            {
                 _lines.Add(SyntaxKind.NonbacktrackingGroup);
-            }
 
             AppendGroupContent(content);
             AppendGroupEnd();
@@ -978,9 +890,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendDirect(Settings.IdentifierBoundary == IdentifierBoundary.Apostrophe ? '\'' : '>');
 
             if (_isComment)
-            {
                 _lines.Add(SyntaxKind.BalancingGroup);
-            }
 
             AppendGroupContent(content);
             AppendGroupEnd();
@@ -1002,9 +912,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendDirect(')');
 
             if (_isComment && unindent)
-            {
                 _lines.Add(SyntaxKind.GroupEnd);
-            }
         }
 
         /// <summary>
@@ -1016,9 +924,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             _charGroupLevel++;
 
             if (_isComment)
-            {
                 _lines.Add(SyntaxKind.AnyChar);
-            }
 
             AppendWhiteSpace();
             AppendNotWhiteSpace();
@@ -1035,9 +941,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendInternal('.');
 
             if (_isComment)
-            {
                 _lines.Add(IsEnabled(RegexOptions.Singleline) ? SyntaxKind.AnyChar : SyntaxKind.AnyCharExceptLinefeed);
-            }
         }
 
         /// <summary>
@@ -1077,9 +981,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendBackslash('d');
 
             if (_isComment && _charGroupLevel == 0)
-            {
                 _lines.Add(SyntaxKind.Digit);
-            }
         }
 
         /// <summary>
@@ -1090,9 +992,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendBackslash('D');
 
             if (_isComment && _charGroupLevel == 0)
-            {
                 _lines.Add(SyntaxKind.NotDigit);
-            }
         }
 
         /// <summary>
@@ -1103,9 +1003,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendBackslash('s');
 
             if (_isComment && _charGroupLevel == 0)
-            {
                 _lines.Add(SyntaxKind.WhiteSpace);
-            }
         }
 
         /// <summary>
@@ -1116,9 +1014,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendBackslash('S');
 
             if (_isComment && _charGroupLevel == 0)
-            {
                 _lines.Add(SyntaxKind.NotWhiteSpace);
-            }
         }
 
         /// <summary>
@@ -1129,9 +1025,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendBackslash('w');
 
             if (_isComment && _charGroupLevel == 0)
-            {
                 _lines.Add(SyntaxKind.WordChar);
-            }
         }
 
         /// <summary>
@@ -1142,9 +1036,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendBackslash('W');
 
             if (_isComment && _charGroupLevel == 0)
-            {
                 _lines.Add(SyntaxKind.NotWordChar);
-            }
         }
 
         internal void AppendCharGroupStart()
@@ -1163,14 +1055,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             _charGroupLevel++;
 
             if (negative)
-            {
                 AppendDirect('^');
-            }
 
             if (_isComment && _charGroupLevel == 1)
-            {
                 _lines.AddCharacter(negative ? SyntaxKind.NegativeCharGroup : SyntaxKind.CharGroup, charNumber);
-            }
         }
 
         internal void AppendCharGroupEnd()
@@ -1450,9 +1338,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendDirect('}');
 
             if (_isComment && _charGroupLevel == 0)
-            {
                 _lines.AddGeneralCategory(category, negative);
-            }
         }
 
         /// <summary>
@@ -1483,9 +1369,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendDirect('}');
 
             if (_isComment && _charGroupLevel == 0)
-            {
                 _lines.Add(negative ? SyntaxKind.NotNamedBlock : SyntaxKind.NamedBlock);
-            }
         }
 
         /// <summary>
@@ -1505,14 +1389,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendDirect('?');
 
             if (_isComment)
-            {
                 _lines.Last.QuantifierKind = QuantifierKind.Maybe;
-            }
 
             if (lazy)
-            {
                 AppendLazy();
-            }
         }
 
         /// <summary>
@@ -1532,14 +1412,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendDirect('*');
 
             if (_isComment)
-            {
                 _lines.Last.QuantifierKind = QuantifierKind.MaybeMany;
-            }
 
             if (lazy)
-            {
                 AppendLazy();
-            }
         }
 
         /// <summary>
@@ -1559,14 +1435,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendDirect('+');
 
             if (_isComment)
-            {
                 _lines.Last.QuantifierKind = QuantifierKind.OneMany;
-            }
 
             if (lazy)
-            {
                 AppendLazy();
-            }
         }
 
         /// <summary>
@@ -1593,9 +1465,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendCountInternal(exactCount);
 
             if (lazy)
-            {
                 AppendLazy();
-            }
         }
 
         internal void AppendCountInternal(int exactCount)
@@ -1638,9 +1508,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendCountInternal(minCount, maxCount);
 
             if (lazy)
-            {
                 AppendLazy();
-            }
         }
 
         internal void AppendCountInternal(int minCount, int maxCount)
@@ -1683,9 +1551,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendCountFromInternal(minCount);
 
             if (lazy)
-            {
                 AppendLazy();
-            }
         }
 
         internal void AppendCountFromInternal(int minCount)
@@ -1737,9 +1603,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             }
 
             if (lazy)
-            {
                 AppendLazy();
-            }
         }
 
         internal void AppendLazy()
@@ -1747,9 +1611,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendDirect('?');
 
             if (_isComment)
-            {
                 _lines.Last.Lazy = true;
-            }
         }
 
         internal void AppendGroupReferenceInternal(int groupNumber)
@@ -1758,14 +1620,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendDirect(groupNumber);
 
             if (!_isFormat && Settings.HasOptions(PatternOptions.SeparateGroupNumberReference))
-            {
                 AppendDirect("(?:)");
-            }
 
             if (_isComment)
-            {
                 _lines.Add(SyntaxKind.GroupReference);
-            }
         }
 
         internal void AppendGroupReferenceInternal(string groupName)
@@ -1776,9 +1634,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendDirect(Settings.IdentifierBoundary == IdentifierBoundary.Apostrophe ? '\'' : '>');
 
             if (_isComment)
-            {
                 _lines.Add(SyntaxKind.GroupReference);
-            }
         }
 
         /// <summary>
@@ -1812,9 +1668,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 AppendGroupEnd(false);
 
                 if (_isComment)
-                {
                     _lines.Add(SyntaxKind.Options);
-                }
 
                 _currentOptions |= applyOptions;
                 _currentOptions &= ~disableOptions;
@@ -1859,9 +1713,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 AppendDirect(':');
 
                 if (_isComment)
-                {
                     _lines.Add(SyntaxKind.GroupOptions);
-                }
             }
             else
             {
@@ -1898,29 +1750,19 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         private void AppendOptionsChars(RegexOptions options)
         {
             if ((options & RegexOptions.IgnoreCase) == RegexOptions.IgnoreCase)
-            {
                 AppendDirect('i');
-            }
 
             if ((options & RegexOptions.Multiline) == RegexOptions.Multiline)
-            {
                 AppendDirect('m');
-            }
 
             if ((options & RegexOptions.ExplicitCapture) == RegexOptions.ExplicitCapture)
-            {
                 AppendDirect('n');
-            }
 
             if ((options & RegexOptions.Singleline) == RegexOptions.Singleline)
-            {
                 AppendDirect('s');
-            }
 
             if ((options & RegexOptions.IgnorePatternWhitespace) == RegexOptions.IgnorePatternWhitespace)
-            {
                 AppendDirect('x');
-            }
         }
 
         private void AppendBackslash(char value)
@@ -1956,9 +1798,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         internal void AppendDirect(char value)
         {
             if (_isLiteral && value == '"')
-            {
                 _sb.Append('"');
-            }
 
             _sb.Append(value);
         }
@@ -1970,9 +1810,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 for (int i = 0; i < value.Length; i++)
                 {
                     if (value[i] == '"')
-                    {
                         _sb.Append('"');
-                    }
 
                     _sb.Append(value[i]);
                 }
@@ -1991,9 +1829,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 for (int i = startIndex; i < length; i++)
                 {
                     if (value[i] == '"')
-                    {
                         _sb.Append('"');
-                    }
 
                     _sb.Append(value[i]);
                 }
@@ -2023,18 +1859,14 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                         _sb.Append('|');
 
                         if (_isComment)
-                        {
                             _lines.Add(SyntaxKind.Or);
-                        }
 
                         _pendingOr = false;
                         _indentLevel++;
                     }
 
                     if (_sb.Length > 0)
-                    {
                         AppendLineAndIndent();
-                    }
                 }
             }
             else if (_pendingOr)
@@ -2070,9 +1902,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             get
             {
                 if (_charGroupings == null)
-                {
                     _charGroupings = new Stack<CharGrouping>();
-                }
 
                 return _charGroupings;
             }

@@ -28,13 +28,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             foreach (var split in splits)
             {
                 if (isFirst)
-                {
                     isFirst = false;
-                }
                 else
-                {
                     _sb.Append(newLine);
-                }
 
                 _sb.Append(split);
                 AppendComment(maxLength - split.Length + 1);
@@ -56,9 +52,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 _sb.Append(GetQuantifierComment(Current.QuantifierKind));
 
                 if (Current.Lazy)
-                {
                     _sb.Append(" but as few times as possible");
-                }
+
             }
         }
 
@@ -72,9 +67,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             {
                 int ch = ((CharLineInfo)Current).CharNumber;
                 if (ch >= 0 && ch < 128)
-                {
                     return TextUtility.GetAsciiCharName((AsciiChar)ch);
-                }
+
             }
             else if (Current.Kind == SyntaxKind.GeneralCategory || Current.Kind == SyntaxKind.NotGeneralCategory)
             {
@@ -86,13 +80,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 if (ch >= 0)
                 {
                     if (ch < 128)
-                    {
                         return "not " + TextUtility.GetAsciiCharName((AsciiChar)ch);
-                    }
                     else
-                    {
                         return "not character";
-                    }
                 }
             }
 

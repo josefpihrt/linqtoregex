@@ -60,9 +60,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                     for (int i = (match.Groups.Count - 1); i >= 1; i--)
                     {
                         if (match.Groups[i].Success)
-                        {
                             yield return match.Groups[i].Value;
-                        }
                     }
                 }
                 else
@@ -70,9 +68,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                     for (int i = 1; i < match.Groups.Count; i++)
                     {
                         if (match.Groups[i].Success)
-                        {
                             yield return match.Groups[i].Value;
-                        }
                     }
                 }
             }
@@ -92,18 +88,15 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                     matches.Add(match);
 
                     count--;
+
                     if (count == 0)
-                    {
                         break;
-                    }
 
                     match = match.NextMatch();
                 }
 
                 for (int i = (matches.Count - 1); i >= 0; i--)
-                {
                     yield return matches[i];
-                }
             }
             else
             {
@@ -112,10 +105,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                     yield return match;
 
                     count--;
+
                     if (count == 0)
-                    {
                         yield break;
-                    }
 
                     match = match.NextMatch();
                 }
