@@ -3742,6 +3742,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return AppendInternal(Patterns.BalanceChar(openingCharacter, closingCharacter, groupName));
         }
 
+#if DEBUG
+        public Pattern BalanceParentheses(string contentGroupName)
+        {
+            return AppendInternal(Patterns.BalanceParentheses(contentGroupName));
+        }
+#endif
+
         /// <summary>
         /// Returns a noncapturing group with current instance as a content.
         /// </summary>

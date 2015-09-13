@@ -4163,6 +4163,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return BalanceChar(openingCharacter, closingCharacter, groupName, groupName + "_" + RegexUtility.GetRandomGroupName());
         }
 
+#if DEBUG
+        public static Pattern BalanceParentheses(string contentGroupName)
+        {
+            return BalanceChar('(', ')', contentGroupName);
+        }
+#endif
+
         private static Pattern BalanceChar(char open, char close, string groupName, string openGroupName)
         {
             var whileNot = WhileNotChar(open, close);
