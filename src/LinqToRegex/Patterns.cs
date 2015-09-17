@@ -4096,27 +4096,57 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return BalanceChar(openingCharacter, closingCharacter, groupName, groupName + "_" + RegexUtility.GetRandomGroupName());
         }
 
-#if DEBUG
-        public static Pattern BalanceParentheses(string contentGroupName)
+        /// <summary>
+        /// Returns a pattern that matches one or many left parenthesis balanced with one or many right parenthesis.
+        /// Between the characters can be zero or many characters that are neither left nor right parenthesis.
+        /// </summary>
+        /// <param name="groupName">A name of the group that contains balanced content between left and right parenthesis.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="groupName"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
+        public static Pattern BalanceParentheses(string groupName)
         {
-            return BalanceChar('(', ')', contentGroupName);
+            return BalanceChar('(', ')', groupName);
         }
 
-        public static Pattern BalanceSquareBrackets(string contentGroupName)
+        /// <summary>
+        /// Returns a pattern that matches one or many left square bracket balanced with one or many right square bracket.
+        /// Between the characters can be zero or many characters that are neither left nor right square bracket.
+        /// </summary>
+        /// <param name="groupName">A name of the group that contains balanced content between left and right square bracket.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="groupName"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
+        public static Pattern BalanceSquareBrackets(string groupName)
         {
-            return BalanceChar('[', ']', contentGroupName);
+            return BalanceChar('[', ']', groupName);
         }
 
-        public static Pattern BalanceCurlyBrackets(string contentGroupName)
+        /// <summary>
+        /// Returns a pattern that matches one or many left curly bracket balanced with one or many right curly bracket.
+        /// Between the characters can be zero or many characters that are neither left nor right curly bracket.
+        /// </summary>
+        /// <param name="groupName">A name of the group that contains balanced content between left and right curly bracket.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="groupName"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
+        public static Pattern BalanceCurlyBrackets(string groupName)
         {
-            return BalanceChar('{', '}', contentGroupName);
+            return BalanceChar('{', '}', groupName);
         }
 
-        public static Pattern BalanceAngleBrackets(string contentGroupName)
+        /// <summary>
+        /// Returns a pattern that matches one or many left angle bracket balanced with one or many right angle bracket.
+        /// Between the characters can be zero or many characters that are neither left nor right angle bracket.
+        /// </summary>
+        /// <param name="groupName">A name of the group that contains balanced content between left and right angle bracket.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="groupName"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
+        public static Pattern BalanceAngleBrackets(string groupName)
         {
-            return BalanceChar('<', '>', contentGroupName);
+            return BalanceChar('<', '>', groupName);
         }
-#endif
 
         private static Pattern BalanceChar(char open, char close, string groupName, string openGroupName)
         {

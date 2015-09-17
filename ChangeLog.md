@@ -1,3 +1,7 @@
+#### LINQ to Regex 2.2.1 (not released yet)
+
+New patterns: BalanceParentheses, BalanceSquareBrackets, BalanceCurlyBrackets, BalanceAngleBrackets.
+
 #### LINQ to Regex 2.2.0 (2015-09-15)
 
 New patterns: WhileNot, UntilChar(string).
