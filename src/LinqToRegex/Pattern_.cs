@@ -3742,27 +3742,57 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return AppendInternal(Patterns.BalanceChar(openingCharacter, closingCharacter, groupName));
         }
 
-#if DEBUG
-        public Pattern BalanceParentheses(string contentGroupName)
+        /// <summary>
+        /// Appends a pattern that matches one or many left parenthesis balanced with one or many right parenthesis.
+        /// Between the characters can be zero or many characters that are neither left nor right parenthesis.
+        /// </summary>
+        /// <param name="groupName">A name of the group that contains balanced content between left and right parenthesis.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="groupName"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
+        public Pattern BalanceParentheses(string groupName)
         {
-            return AppendInternal(Patterns.BalanceParentheses(contentGroupName));
+            return AppendInternal(Patterns.BalanceParentheses(groupName));
         }
 
-        public Pattern BalanceSquareBrackets(string contentGroupName)
+        /// <summary>
+        /// Appends a pattern that matches one or many left square bracket balanced with one or many right square bracket.
+        /// Between the characters can be zero or many characters that are neither left nor right square bracket.
+        /// </summary>
+        /// <param name="groupName">A name of the group that contains balanced content between left and right square bracket.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="groupName"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
+        public Pattern BalanceSquareBrackets(string groupName)
         {
-            return AppendInternal(Patterns.BalanceSquareBrackets(contentGroupName));
+            return AppendInternal(Patterns.BalanceSquareBrackets(groupName));
         }
 
-        public Pattern BalanceCurlyBrackets(string contentGroupName)
+        /// <summary>
+        /// Appends a pattern that matches one or many left curly bracket balanced with one or many right curly bracket.
+        /// Between the characters can be zero or many characters that are neither left nor right curly bracket.
+        /// </summary>
+        /// <param name="groupName">A name of the group that contains balanced content between left and right curly bracket.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="groupName"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
+        public Pattern BalanceCurlyBrackets(string groupName)
         {
-            return AppendInternal(Patterns.BalanceCurlyBrackets(contentGroupName));
+            return AppendInternal(Patterns.BalanceCurlyBrackets(groupName));
         }
 
-        public Pattern BalanceAngleBrackets(string contentGroupName)
+        /// <summary>
+        /// Appends a pattern that matches one or many left angle bracket balanced with one or many right angle bracket.
+        /// Between the characters can be zero or many characters that are neither left nor right angle bracket.
+        /// </summary>
+        /// <param name="groupName">A name of the group that contains balanced content between left and right angle bracket.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="groupName"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
+        public Pattern BalanceAngleBrackets(string groupName)
         {
-            return AppendInternal(Patterns.BalanceAngleBrackets(contentGroupName));
+            return AppendInternal(Patterns.BalanceAngleBrackets(groupName));
         }
-#endif
 
         /// <summary>
         /// Returns a noncapturing group with current instance as a content.
