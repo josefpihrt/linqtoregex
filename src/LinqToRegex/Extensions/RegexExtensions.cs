@@ -294,9 +294,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         {
             return RegexReplace.ReplaceGroups(EnumerateSuccessGroups(regex, input, groupNumber), input, evaluator);
         }
+#endif
 
         /// <summary>
-        /// Splits an input string into an enumerable collection of strings at the positions defined by a regular expression.
+        /// Splits the specified input string at the positions defined by the regular expression into an enumerable collection of strings.
         /// </summary>
         /// <param name="regex">The regular expression to be matched.</param>
         /// <param name="input">The string to split.</param>
@@ -308,7 +309,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         }
 
         /// <summary>
-        /// Splits an input string a specified number of times into an enumerable collection of strings at the positions defined by a regular expression.
+        /// Splits the specified input string a specified number of times at the positions defined by the regular expression into an enumerable collection of strings.
         /// </summary>
         /// <param name="regex">The regular expression to be matched.</param>
         /// <param name="input">The string to split.</param>
@@ -322,7 +323,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         }
 
         /// <summary>
-        /// Splits an input string a specified number of times into an enumerable collection of strings at the positions defined by a regular expression.
+        /// Splits the specified input string a specified number of times at the positions defined by the regular expression into an enumerable collection of strings.
         /// The search starts at a specified position in the input string.
         /// </summary>
         /// <param name="regex">The regular expression to be matched.</param>
@@ -338,6 +339,5 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         {
             return RegexSplit.EnumerateValues(regex, input, count, startAt);
         }
-#endif
     }
 }
