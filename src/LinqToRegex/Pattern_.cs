@@ -3802,5 +3802,22 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             return Patterns.NoncapturingGroup(this);
         }
+
+#if DEBUG
+        public Pattern Never()
+        {
+            return AppendInternal(Patterns.Never());
+        }
+
+        public Pattern RequireGroup(string groupName)
+        {
+            return AppendInternal(Patterns.RequireGroup(groupName));
+        }
+
+        public Pattern DisallowGroup(string groupName)
+        {
+            return AppendInternal(Patterns.DisallowGroup(groupName));
+        }
+#endif
     }
 }

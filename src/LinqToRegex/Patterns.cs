@@ -4164,5 +4164,17 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 )
                 + close;
         }
+
+#if DEBUG
+        public static Pattern RequireGroup(string groupName)
+        {
+            return IfGroup(groupName, string.Empty, Never());
+        }
+
+        public static Pattern DisallowGroup(string groupName)
+        {
+            return IfGroup(groupName, Never());
+        }
+#endif
     }
 }
