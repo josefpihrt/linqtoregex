@@ -214,5 +214,24 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             foreach (var capture in captures)
                 yield return capture.Value;
         }
+#if DEBUG
+        public static IEnumerable<int> Indexes(this IEnumerable<Capture> captures)
+        {
+            if (captures == null)
+                throw new ArgumentNullException(nameof(captures));
+
+            foreach (Capture capture in captures)
+                yield return capture.Index;
+        }
+
+        public static IEnumerable<string> Values(this IEnumerable<Capture> captures)
+        {
+            if (captures == null)
+                throw new ArgumentNullException(nameof(captures));
+
+            foreach (Capture capture in captures)
+                yield return capture.Value;
+        }
+#endif
     }
 }

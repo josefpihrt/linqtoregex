@@ -6,7 +6,7 @@ New patterns: BalanceParentheses, BalanceSquareBrackets, BalanceCurlyBrackets, B
 
 New patterns: WhileNot, UntilChar(string).
 
-#### LINQ to Regex 2.1.0
+#### LINQ to Regex 2.1.0 (2015-08-25)
 
 * Added capability to convert pattern to C# or Visual Basic string literal.
 * + operator overloaded for Substitution class.
