@@ -10,43 +10,5 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public LineInfoCollection()
         {
         }
-
-        public void Add(SyntaxKind kind)
-        {
-            Add(new LineInfo(kind));
-        }
-
-        public void AddCharacter(SyntaxKind kind, int character)
-        {
-            Add(new CharLineInfo(kind, character));
-        }
-
-        public void AddGeneralCategory(GeneralCategory category, bool negative)
-        {
-            Add(new GeneralCategoryLineInfo(negative ? SyntaxKind.NotGeneralCategory : SyntaxKind.GeneralCategory, category));
-        }
-
-        public void AddTextOrCharacter(string value)
-        {
-            if (value.Length > 1)
-                Add(SyntaxKind.Text);
-            else
-                AddCharacter(SyntaxKind.Character, value[0]);
-        }
-
-        public void AddTextOrCharacter(string value, int count)
-        {
-            AddTextOrCharacter(value, 0, count);
-        }
-
-        public void AddTextOrCharacter(string value, int startIndex, int count)
-        {
-            if (count > 1)
-                Add(SyntaxKind.Text);
-            else
-                AddCharacter(SyntaxKind.Character, value[startIndex]);
-        }
-
-        public LineInfo Last => this[Count - 1];
     }
 }

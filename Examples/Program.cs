@@ -70,7 +70,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
 
         private static void Dump(string title, Pattern pattern)
         {
-            var options = PatternOptions.FormatAndComment | PatternOptions.CSharpLiteral;
+            var options = PatternOptions.FormatAndComment | PatternOptions.InlineOptions;
 
             if (!string.IsNullOrEmpty(title))
                 Console.WriteLine($"{title}:");
