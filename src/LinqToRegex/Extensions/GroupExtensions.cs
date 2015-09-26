@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
 {
     /// <summary>
-    /// Provides a set of static methods that extends the <see cref="Group"/> class.
+    /// Provides a set of static methods that extends <see cref="Group"/> class.
     /// </summary>
     public static class GroupExtensions
     {

@@ -200,6 +200,23 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             }
         }
 
+#if DEBUG
+        /// <summary>
+        /// Returns an enumerable collection of captures indexes.
+        /// </summary>
+        /// <param name="captures">The sequence to enumerate.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="captures"/> is <c>null</c>.</exception>
+        public static IEnumerable<int> EnumerateIndexes(this IEnumerable<Capture> captures)
+        {
+            if (captures == null)
+                throw new ArgumentNullException(nameof(captures));
+
+            foreach (Capture capture in captures)
+                yield return capture.Index;
+        }
+#endif
+
         /// <summary>
         /// Returns enumerable collection of captures values.
         /// </summary>
@@ -214,24 +231,5 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             foreach (var capture in captures)
                 yield return capture.Value;
         }
-#if DEBUG
-        public static IEnumerable<int> Indexes(this IEnumerable<Capture> captures)
-        {
-            if (captures == null)
-                throw new ArgumentNullException(nameof(captures));
-
-            foreach (Capture capture in captures)
-                yield return capture.Index;
-        }
-
-        public static IEnumerable<string> Values(this IEnumerable<Capture> captures)
-        {
-            if (captures == null)
-                throw new ArgumentNullException(nameof(captures));
-
-            foreach (Capture capture in captures)
-                yield return capture.Value;
-        }
-#endif
     }
 }

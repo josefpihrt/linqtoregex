@@ -6,8 +6,17 @@ using System.Text.RegularExpressions;
 namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
 {
 #if DEBUG
+    /// <summary>
+    /// Provides a set of static methods that extends <see cref="Capture"/> class.
+    /// </summary>
     public static class CaptureExtensions
     {
+        /// <summary>
+        /// Returns a sum of index and length of a specified <paramref name="capture"/>.
+        /// </summary>
+        /// <param name="capture">A regular expression capture.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="capture"/> is <c>null</c>.</exception>
         public static int EndIndex(this Capture capture)
         {
             if (capture == null)
