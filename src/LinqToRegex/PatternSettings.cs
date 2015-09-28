@@ -44,7 +44,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public bool HasOptions(PatternOptions options) => (Options & options) == options;
 
         /// <summary>
-        /// Gets the options of this instance.
+        /// Gets or sets the options of this instance.
         /// </summary>
         /// <exception cref="ArgumentException"><paramref name="value"/> has both <see cref="PatternOptions.CSharpLiteral"/> flag and <see cref="PatternOptions.VisualBasicLiteral"/> flag set.</exception>
         public PatternOptions Options
@@ -60,7 +60,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         }
 
         /// <summary>
-        /// Get a value indicating whether a group name will be enclosed in angle brackets or apostrophes.
+        /// Gets or sets a value indicating whether a group name will be enclosed in angle brackets or apostrophes.
         /// </summary>
         public IdentifierBoundary IdentifierBoundary { get; set; }
 
