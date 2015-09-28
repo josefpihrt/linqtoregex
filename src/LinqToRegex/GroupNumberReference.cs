@@ -7,14 +7,12 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     internal sealed class GroupNumberReference
         : QuantifiablePattern
     {
-        private readonly int _groupNumber;
-
         public GroupNumberReference(int groupNumber)
         {
             if (groupNumber < 0)
                 throw new ArgumentOutOfRangeException(nameof(groupNumber));
 
-            _groupNumber = groupNumber;
+            GroupNumber = groupNumber;
         }
 
         internal override void AppendTo(PatternBuilder builder)
@@ -22,6 +20,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             builder.AppendGroupReferenceInternal(GroupNumber);
         }
 
-        public int GroupNumber => _groupNumber;
+        public int GroupNumber { get; }
     }
 }

@@ -1,5 +1,7 @@
 #### LINQ to Regex 2.2.1 (not released yet)
 
+New extension method EnumerateIndexes that extends IEnumerable<Capture> added.
+New extension method EndIndex that extends Capture added.
 New patterns: BalanceParentheses, BalanceSquareBrackets, BalanceCurlyBrackets, BalanceAngleBrackets.
 
 #### LINQ to Regex 2.2.0 (2015-09-15)

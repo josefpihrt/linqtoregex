@@ -5,13 +5,11 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     internal sealed class GroupNameReference
         : QuantifiablePattern
     {
-        private readonly string _groupName;
-
         public GroupNameReference(string groupName)
         {
             RegexUtility.CheckGroupName(groupName);
 
-            _groupName = groupName;
+            GroupName = groupName;
         }
 
         internal override void AppendTo(PatternBuilder builder)
@@ -19,6 +17,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             builder.AppendGroupReferenceInternal(GroupName);
         }
 
-        public string GroupName => _groupName;
+        public string GroupName { get; }
     }
 }
