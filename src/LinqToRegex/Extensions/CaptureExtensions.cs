@@ -5,7 +5,6 @@ using System.Text.RegularExpressions;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
 {
-#if DEBUG
     /// <summary>
     /// Provides a set of static methods that extends <see cref="Capture"/> class.
     /// </summary>
@@ -25,5 +24,4 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             return capture.Index + capture.Length;
         }
     }
-#endif
 }

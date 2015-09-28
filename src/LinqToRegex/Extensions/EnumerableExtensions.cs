@@ -200,7 +200,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             }
         }
 
-#if DEBUG
         /// <summary>
         /// Returns an enumerable collection of captures indexes.
         /// </summary>
@@ -215,7 +214,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             foreach (Capture capture in captures)
                 yield return capture.Index;
         }
-#endif
 
         /// <summary>
         /// Returns enumerable collection of captures values.
