@@ -48,7 +48,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Specifies that a pattern will be converted to Visual Basic multiline literal. This option cannot be used in a combination with <see cref="PatternOptions.CSharpLiteral"/>.
         /// </summary>
-        VisualBasicLiteral = 32
+        VisualBasicLiteral = 32,
 
 #if DEBUG
         /// <summary>
