@@ -59,9 +59,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
             Dump("words in sequence in any order", exp);
 
             exp = Group(Word())
-                     .NotWordChars()
-                     .GroupReference(1)
-                     .WordBoundary();
+                .NotWordChars()
+                .GroupReference(1)
+                .WordBoundary();
 
             Dump("repeated word", exp);
 
@@ -70,7 +70,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
 
         private static void Dump(string title, Pattern pattern)
         {
-            var options = PatternOptions.FormatAndComment | PatternOptions.InlineOptions;
+            var options = PatternOptions.FormatAndComment;
 
             if (!string.IsNullOrEmpty(title))
                 Console.WriteLine($"{title}:");
