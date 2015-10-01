@@ -216,6 +216,21 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         }
 
         /// <summary>
+        /// Returns enumerable collection of captures lengths.
+        /// </summary>
+        /// <param name="captures">The sequence to enumerate.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="captures"/> is <c>null</c>.</exception>
+        public static IEnumerable<int> EnumerateLengths(this IEnumerable<Capture> captures)
+        {
+            if (captures == null)
+                throw new ArgumentNullException(nameof(captures));
+
+            foreach (var capture in captures)
+                yield return capture.Length;
+        }
+
+        /// <summary>
         /// Returns enumerable collection of captures values.
         /// </summary>
         /// <param name="captures">The sequence to enumerate.</param>
