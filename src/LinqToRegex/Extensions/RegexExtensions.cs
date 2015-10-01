@@ -339,5 +339,55 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         {
             return RegexSplit.EnumerateValues(regex, input, count, startAt);
         }
+
+#if DEBUG
+        /// <summary>
+        /// Returns an enumerable collection of matches indexes.
+        /// </summary>
+        /// <param name="regex">The regular expression to be matched.</param>
+        /// <param name="input">The string to search for a match.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
+        public static IEnumerable<int> EnumerateIndexes(this Regex regex, string input)
+        {
+            if (regex == null)
+                throw new ArgumentNullException(nameof(regex));
+
+            foreach (Match match in regex.EnumerateMatches(input))
+                yield return match.Index;
+        }
+
+        /// <summary>
+        /// Returns an enumerable collection of matches lengths.
+        /// </summary>
+        /// <param name="regex">The regular expression to be matched.</param>
+        /// <param name="input">The string to search for a match.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
+        public static IEnumerable<int> EnumerateLengths(this Regex regex, string input)
+        {
+            if (regex == null)
+                throw new ArgumentNullException(nameof(regex));
+
+            foreach (Match match in regex.EnumerateMatches(input))
+                yield return match.Length;
+        }
+
+        /// <summary>
+        /// Returns an enumerable collection of matches values.
+        /// </summary>
+        /// <param name="regex">The regular expression to be matched.</param>
+        /// <param name="input">The string to search for a match.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
+        public static IEnumerable<string> EnumerateValues(this Regex regex, string input)
+        {
+            if (regex == null)
+                throw new ArgumentNullException(nameof(regex));
+
+            foreach (Match match in regex.EnumerateMatches(input))
+                yield return match.Value;
+        }
+#endif
     }
 }
