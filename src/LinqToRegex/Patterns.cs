@@ -4199,14 +4199,50 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         }
 
 #if DEBUG
+        /// <summary>
+        /// Returns a pattern that requires previously defined group with a specified name to be matched. Otherwise, a match will fail.
+        /// </summary>
+        /// <param name="groupName">A name of the group.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="groupName"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
         public static Pattern RequireGroup(string groupName)
         {
             return IfGroup(groupName, string.Empty, Never());
         }
 
+        /// <summary>
+        /// Returns a pattern that requires previously defined group with a specified number to be matched. Otherwise, a match will fail.
+        /// </summary>
+        /// <param name="groupNumber">A number of the group.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="groupNumber"/> is less than zero.</exception>
+        public static Pattern RequireGroup(int groupNumber)
+        {
+            return IfGroup(groupNumber, string.Empty, Never());
+        }
+
+        /// <summary>
+        /// Returns a pattern that requires previously defined group with a specified name not to be matched. Otherwise, a match will fail.
+        /// </summary>
+        /// <param name="groupName">A name of the group.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="groupName"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
         public static Pattern DisallowGroup(string groupName)
         {
             return IfGroup(groupName, Never());
+        }
+
+        /// <summary>
+        /// Returns a pattern that requires previously defined group with a specified number not to be matched. Otherwise, a match will fail.
+        /// </summary>
+        /// <param name="groupNumber">A number of the group.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="groupNumber"/> is less than zero.</exception>
+        public static Pattern DisallowGroup(int groupNumber)
+        {
+            return IfGroup(groupNumber, Never());
         }
 #endif
     }

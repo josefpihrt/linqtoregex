@@ -3809,14 +3809,50 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return AppendInternal(Patterns.Never());
         }
 
+        /// <summary>
+        /// Appends a pattern that requires previously defined group with a specified name to be matched. Otherwise, a match will fail.
+        /// </summary>
+        /// <param name="groupName">A name of the group.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="groupName"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
         public Pattern RequireGroup(string groupName)
         {
             return AppendInternal(Patterns.RequireGroup(groupName));
         }
 
+        /// <summary>
+        /// Appends a pattern that requires previously defined group with a specified number to be matched. Otherwise, a match will fail.
+        /// </summary>
+        /// <param name="groupNumber">A number of the group.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="groupNumber"/> is less than zero.</exception>
+        public Pattern RequireGroup(int groupNumber)
+        {
+            return AppendInternal(Patterns.RequireGroup(groupNumber));
+        }
+
+        /// <summary>
+        /// Appends a pattern that requires previously defined group with a specified name not to be matched. Otherwise, a match will fail.
+        /// </summary>
+        /// <param name="groupName">A name of the group.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="groupName"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
         public Pattern DisallowGroup(string groupName)
         {
             return AppendInternal(Patterns.DisallowGroup(groupName));
+        }
+
+        /// <summary>
+        /// Appends a pattern that requires previously defined group with a specified number not to be matched. Otherwise, a match will fail.
+        /// </summary>
+        /// <param name="groupNumber">A number of the group.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="groupNumber"/> is less than zero.</exception>
+        public Pattern DisallowGroup(int groupNumber)
+        {
+            return AppendInternal(Patterns.DisallowGroup(groupNumber));
         }
 #endif
     }
