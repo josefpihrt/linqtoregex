@@ -2,6 +2,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
@@ -342,7 +343,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
 
 #if DEBUG
         /// <summary>
-        /// Returns an enumerable collection of matches indexes.
+        /// Searches the specified input string for occurrence of the specified regular expression and returns an enumerable collection of matches indexes.
         /// </summary>
         /// <param name="regex">The regular expression to be matched.</param>
         /// <param name="input">The string to search for a match.</param>
@@ -358,7 +359,20 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         }
 
         /// <summary>
-        /// Returns an enumerable collection of matches lengths.
+        /// Searches the specified input string for all occurrences of the specified regular expression and returns an array of matches indexes.
+        /// </summary>
+        /// <param name="regex">The regular expression to be matched.</param>
+        /// <param name="input">The string to search for a match.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
+        public static int[] Indexes(this Regex regex, string input)
+        {
+            return EnumerateIndexes(regex, input).ToArray();
+
+        }
+
+        /// <summary>
+        /// Searches the specified input string for occurrence of the specified regular expression and returns an enumerable collection of matches lengths.
         /// </summary>
         /// <param name="regex">The regular expression to be matched.</param>
         /// <param name="input">The string to search for a match.</param>
@@ -374,7 +388,20 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         }
 
         /// <summary>
-        /// Returns an enumerable collection of matches values.
+        /// Searches the specified input string for all occurrences of the specified regular expression and returns an array of matches lengths.
+        /// </summary>
+        /// <param name="regex">The regular expression to be matched.</param>
+        /// <param name="input">The string to search for a match.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
+        public static int[] Lengths(this Regex regex, string input)
+        {
+            return EnumerateLengths(regex, input).ToArray();
+
+        }
+
+        /// <summary>
+        /// Searches the specified input string for occurrence of the specified regular expression and returns an enumerable collection of matches values.
         /// </summary>
         /// <param name="regex">The regular expression to be matched.</param>
         /// <param name="input">The string to search for a match.</param>
@@ -387,6 +414,19 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
 
             foreach (Match match in regex.EnumerateMatches(input))
                 yield return match.Value;
+        }
+
+        /// <summary>
+        /// Searches the specified input string for all occurrences of the specified regular expression and returns an array of matches values.
+        /// </summary>
+        /// <param name="regex">The regular expression to be matched.</param>
+        /// <param name="input">The string to search for a match.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
+        public static string[] Values(this Regex regex, string input)
+        {
+            return EnumerateValues(regex, input).ToArray();
+
         }
 #endif
     }
