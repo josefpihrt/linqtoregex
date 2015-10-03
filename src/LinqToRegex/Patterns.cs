@@ -18,7 +18,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static Pattern Concat(object content)
         {
-            return new ConcatPattern(content);
+            return new ConcatContainer(content);
         }
 
         /// <summary>
@@ -28,7 +28,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static Pattern Concat(params object[] content)
         {
-            return new ConcatPattern(content);
+            return new ConcatContainer(content);
         }
 
         /// <summary>

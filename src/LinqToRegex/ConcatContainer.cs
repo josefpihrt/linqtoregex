@@ -5,12 +5,12 @@ using System.Collections;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
-    internal sealed class ConcatPattern
+    internal sealed class ConcatContainer
         : Pattern
     {
         private readonly object _content;
 
-        public ConcatPattern(object content)
+        public ConcatContainer(object content)
         {
             if (content == null)
                 throw new ArgumentNullException(nameof(content));

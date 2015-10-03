@@ -86,7 +86,7 @@
     <Compile Include="CharLineInfo.cs" />
     <Compile Include="LineInfoCollection.cs" />
     <Compile Include="LineInfo.cs" />
-    <Compile Include="ConcatPattern.cs" />
+    <Compile Include="ConcatContainer.cs" />
     <Compile Include="ContentPattern.cs" />
     <Compile Include="ExceptionHelper.cs" />
     <Compile Include="Extensions\BaseGroupExtensions.cs" />
