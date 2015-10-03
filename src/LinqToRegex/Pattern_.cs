@@ -32,11 +32,11 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         }
 
         /// <summary>
-        /// Appends a pattern that matches any one of the patterns specified in the collection.
+        /// Appends a noncapturing group with a specified content.
         /// </summary>
-        /// <param name="content">A collection that contains zero or more patterns any one of which has to be matched.</param>
+        /// <param name="content">The content to be matched.</param>
         /// <returns></returns>
-        public QuantifiablePattern Any(IEnumerable content)
+        public QuantifiablePattern Any(object content)
         {
             return AppendInternal(Patterns.Any(content));
         }

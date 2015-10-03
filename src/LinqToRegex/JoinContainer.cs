@@ -9,20 +9,20 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         : Pattern
     {
         private readonly object _separator;
-        private readonly object _values;
+        private readonly object _content;
 
-        public JoinContainer(object separator, object values)
+        public JoinContainer(object separator, object content)
         {
-            if (values == null)
-                throw new ArgumentNullException(nameof(values));
+            if (content == null)
+                throw new ArgumentNullException(nameof(content));
 
             _separator = separator;
-            _values = values;
+            _content = content;
         }
 
         internal override void AppendTo(PatternBuilder builder)
         {
-            var values = _values as object[];
+            var values = _content as object[];
             if (values != null)
             {
                 if (values.Length > 0)
@@ -41,7 +41,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             }
             else
             {
-                var items = _values as IEnumerable;
+                var items = _content as IEnumerable;
 
                 IEnumerator en = items.GetEnumerator();
 

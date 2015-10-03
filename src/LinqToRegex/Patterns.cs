@@ -12,17 +12,17 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     public static class Patterns
     {
         /// <summary>
-        /// Concatenates the elements of a <see cref="IEnumerable"/> collection.
+        /// Concatenates the elements in a specified <paramref name="content"/>.
         /// </summary>
-        /// <param name="content">A collection object that implements <see cref="IEnumerable"/>.</param>
+        /// <param name="content">An object that contains the elements to concatenate.</param>
         /// <returns></returns>
-        public static Pattern Concat(IEnumerable content)
+        public static Pattern Concat(object content)
         {
             return new ConcatPattern(content);
         }
 
         /// <summary>
-        /// Concatenates the elements in a specified Object array.
+        /// Concatenates the elements in a specified object array.
         /// </summary>
         /// <param name="content">An object array that contains the elements to concatenate.</param>
         /// <returns></returns>
@@ -32,27 +32,27 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         }
 
         /// <summary>
-        /// Concatenates the elements of a <see cref="IEnumerable"/> collection using the specified separator between each element.
+        /// Concatenates the elements in a specified <paramref name="content"/> using the specified separator between each element.
         /// </summary>
         /// <param name="separator">The pattern to use as a separator.</param>
-        /// <param name="values">A collection object that implements <see cref="IEnumerable"/>.</param>
+        /// <param name="content">An object that contains the elements to join.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"><paramref name="values"/> is <c>null</c>.</exception>
-        public static Pattern Join(object separator, IEnumerable values)
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
+        public static Pattern Join(object separator, object content)
         {
-            return new JoinContainer(separator, values);
+            return new JoinContainer(separator, content);
         }
 
         /// <summary>
         /// Concatenates the elements of an object array, using the specified separator between each element.
         /// </summary>
         /// <param name="separator">The pattern to use as a separator.</param>
-        /// <param name="values">An object array that contains the patterns to concatenate.</param>
+        /// <param name="content">An object array that contains the elements to join.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"><paramref name="values"/> is <c>null</c>.</exception>
-        public static Pattern Join(object separator, params object[] values)
+        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
+        public static Pattern Join(object separator, params object[] content)
         {
-            return new JoinContainer(separator, values);
+            return new JoinContainer(separator, content);
         }
 
         /// <summary>
@@ -539,11 +539,11 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         }
 
         /// <summary>
-        /// Returns a pattern that matches any one of the patterns specified in the collection.
+        /// Returns a noncapturing group with a specified content.
         /// </summary>
-        /// <param name="content">A collection that contains zero or more patterns any one of which has to be matched.</param>
+        /// <param name="content">The content to be matched.</param>
         /// <returns></returns>
-        public static QuantifiablePattern Any(IEnumerable content)
+        public static QuantifiablePattern Any(object content)
         {
             return NoncapturingGroup(content);
         }
