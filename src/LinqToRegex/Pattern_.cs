@@ -3804,6 +3804,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         }
 
 #if DEBUG
+        /// <summary>
+        /// Appends an empty negative lookahead assertion. This pattern is never matched.
+        /// </summary>
+        /// <returns></returns>
         public Pattern Never()
         {
             return AppendInternal(Patterns.Never());
