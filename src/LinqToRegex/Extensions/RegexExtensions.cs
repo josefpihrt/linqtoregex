@@ -428,42 +428,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             return EnumerateValues(regex, input).ToArray();
 
         }
-
-        public static string Value(this Regex regex, string input)
-        {
-            if (regex == null)
-                throw new ArgumentNullException(nameof(regex));
-
-            Match match = regex.Match(input);
-            if (match.Success)
-                return match.Value;
-
-            return null;
-        }
-
-        public static int Index(this Regex regex, string input)
-        {
-            if (regex == null)
-                throw new ArgumentNullException(nameof(regex));
-
-            Match match = regex.Match(input);
-            if (match.Success)
-                return match.Index;
-
-            return -1;
-        }
-
-        public static int Length(this Regex regex, string input)
-        {
-            if (regex == null)
-                throw new ArgumentNullException(nameof(regex));
-
-            Match match = regex.Match(input);
-            if (match.Success)
-                return match.Length;
-
-            return -1;
-        }
 #endif
     }
 }
