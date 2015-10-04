@@ -1,4 +1,4 @@
-#### LINQ to Regex 2.2.1 (not released yet)
+#### LINQ to Regex 2.2.1 (2015-10-04)
 
 New extension methods EnumerateIndexes, EnumerateLengths that extend IEnumerable<Capture> added.
 New extension method EndIndex that extends Capture added.
