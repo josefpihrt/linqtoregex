@@ -349,7 +349,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="input">The string to search for a match.</param>
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
-        public static IEnumerable<int> EnumerateIndexes(this Regex regex, string input)
+        public static IEnumerable<int> Indexes(this Regex regex, string input)
         {
             if (regex == null)
                 throw new ArgumentNullException(nameof(regex));
@@ -359,26 +359,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         }
 
         /// <summary>
-        /// Searches the specified input string for all occurrences of the specified regular expression and returns an array of matches indexes.
-        /// </summary>
-        /// <param name="regex">The regular expression to be matched.</param>
-        /// <param name="input">The string to search for a match.</param>
-        /// <returns></returns>
-        /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
-        public static int[] Indexes(this Regex regex, string input)
-        {
-            return EnumerateIndexes(regex, input).ToArray();
-
-        }
-
-        /// <summary>
         /// Searches the specified input string for occurrence of the specified regular expression and returns an enumerable collection of matches lengths.
         /// </summary>
         /// <param name="regex">The regular expression to be matched.</param>
         /// <param name="input">The string to search for a match.</param>
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
-        public static IEnumerable<int> EnumerateLengths(this Regex regex, string input)
+        public static IEnumerable<int> Lengths(this Regex regex, string input)
         {
             if (regex == null)
                 throw new ArgumentNullException(nameof(regex));
@@ -388,45 +375,19 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         }
 
         /// <summary>
-        /// Searches the specified input string for all occurrences of the specified regular expression and returns an array of matches lengths.
-        /// </summary>
-        /// <param name="regex">The regular expression to be matched.</param>
-        /// <param name="input">The string to search for a match.</param>
-        /// <returns></returns>
-        /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
-        public static int[] Lengths(this Regex regex, string input)
-        {
-            return EnumerateLengths(regex, input).ToArray();
-
-        }
-
-        /// <summary>
         /// Searches the specified input string for occurrence of the specified regular expression and returns an enumerable collection of matches values.
         /// </summary>
         /// <param name="regex">The regular expression to be matched.</param>
         /// <param name="input">The string to search for a match.</param>
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
-        public static IEnumerable<string> EnumerateValues(this Regex regex, string input)
+        public static IEnumerable<string> Values(this Regex regex, string input)
         {
             if (regex == null)
                 throw new ArgumentNullException(nameof(regex));
 
             foreach (Match match in regex.EnumerateMatches(input))
                 yield return match.Value;
-        }
-
-        /// <summary>
-        /// Searches the specified input string for all occurrences of the specified regular expression and returns an array of matches values.
-        /// </summary>
-        /// <param name="regex">The regular expression to be matched.</param>
-        /// <param name="input">The string to search for a match.</param>
-        /// <returns></returns>
-        /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
-        public static string[] Values(this Regex regex, string input)
-        {
-            return EnumerateValues(regex, input).ToArray();
-
         }
 #endif
     }
