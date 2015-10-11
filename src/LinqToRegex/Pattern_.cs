@@ -1819,7 +1819,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         }
 
         /// <summary>
-        /// Appends a character group containing specified characters.
+        /// Appends a pattern that matches a character from a specified <see cref="string"/>.
         /// </summary>
         /// <param name="characters">A set of characters any one of which has to be matched.</param>
         /// <returns></returns>
@@ -1831,7 +1831,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         }
 
         /// <summary>
-        /// Appends a character group containing specified <see cref="CharGrouping"/>.
+        /// Appends a pattern that matches a character from a specified <see cref="CharGrouping"/>.
         /// </summary>
         /// <param name="value">A content of a character group.</param>
         /// <returns></returns>
@@ -1840,6 +1840,71 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             return AppendInternal(Patterns.Character(value));
         }
+
+#if DEBUG
+        /// <summary>
+        /// Appends a pattern that matches a specified character one or more times.
+        /// </summary>
+        /// <param name="value">A Unicode character.</param>
+        /// <returns></returns>
+        public QuantifiedGroup Characters(char value)
+        {
+            return AppendInternal(Patterns.Characters(value));
+        }
+
+        /// <summary>
+        /// Appends a pattern that matches a specified character one or more times.
+        /// </summary>
+        /// <param name="value">An enumerated constant that identifies ASCII character.</param>
+        /// <returns></returns>
+        public QuantifiedGroup Characters(AsciiChar value)
+        {
+            return AppendInternal(Patterns.Characters(value));
+        }
+
+        /// <summary>
+        /// Appends a pattern that matches one or more characters from a specified Unicode block.
+        /// </summary>
+        /// <param name="block">An enumerated constant that identifies Unicode block.</param>
+        /// <returns></returns>
+        public QuantifiedGroup Characters(NamedBlock block)
+        {
+            return AppendInternal(Patterns.Characters(block));
+        }
+
+        /// <summary>
+        /// Appends a pattern that matches one or more characters from a specified Unicode category.
+        /// </summary>
+        /// <param name="category">An enumerated constant that identifies Unicode category.</param>
+        /// <returns></returns>
+        public QuantifiedGroup Characters(GeneralCategory category)
+        {
+            return AppendInternal(Patterns.Characters(category));
+        }
+
+        /// <summary>
+        /// Appends a pattern that matches one or more characters from a specified <see cref="string"/>.
+        /// </summary>
+        /// <param name="characters">A set of characters any one of which has to be matched.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="characters"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="characters"/> length is equal to zero.</exception>
+        public QuantifiedGroup Characters(string characters)
+        {
+            return AppendInternal(Patterns.Characters(characters));
+        }
+
+        /// <summary>
+        /// Appends a pattern that matches one or more characters from a specified <see cref="CharGrouping"/>.
+        /// </summary>
+        /// <param name="value">A content of a character group.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
+        public QuantifiedGroup Characters(CharGrouping value)
+        {
+            return AppendInternal(Patterns.Characters(value));
+        }
+#endif
 
         /// <summary>
         /// Appends a pattern that matches a character that is not a specified character.

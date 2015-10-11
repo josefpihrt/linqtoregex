@@ -1127,7 +1127,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         }
 
         /// <summary>
-        /// Returns a character group containing specified characters.
+        /// Returns a pattern that matches a character from a specified <see cref="string"/>.
         /// </summary>
         /// <param name="characters">A set of characters any one of which has to be matched.</param>
         /// <returns></returns>
@@ -1139,7 +1139,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         }
 
         /// <summary>
-        /// Returns a character group containing specified <see cref="CharGrouping"/>.
+        /// Returns a pattern that matches a character from a specified <see cref="CharGrouping"/>.
         /// </summary>
         /// <param name="value">A content of a character group.</param>
         /// <returns></returns>
@@ -1148,6 +1148,71 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             return CharGroup.Create(value, false);
         }
+
+#if DEBUG
+        /// <summary>
+        /// Returns a pattern that matches a specified character one or more times.
+        /// </summary>
+        /// <param name="value">A Unicode character.</param>
+        /// <returns></returns>
+        public static QuantifiedGroup Characters(char value)
+        {
+            return OneMany(Character(value));
+        }
+
+        /// <summary>
+        /// Returns a pattern that matches a specified character one or more times.
+        /// </summary>
+        /// <param name="value">An enumerated constant that identifies ASCII character.</param>
+        /// <returns></returns>
+        public static QuantifiedGroup Characters(AsciiChar value)
+        {
+            return OneMany(Character(value));
+        }
+
+        /// <summary>
+        /// Returns a pattern that matches one or more characters from a specified Unicode block.
+        /// </summary>
+        /// <param name="block">An enumerated constant that identifies Unicode block.</param>
+        /// <returns></returns>
+        public static QuantifiedGroup Characters(NamedBlock block)
+        {
+            return OneMany(Character(block));
+        }
+
+        /// <summary>
+        /// Returns a pattern that matches one or more characters from a specified Unicode category.
+        /// </summary>
+        /// <param name="category">An enumerated constant that identifies Unicode category.</param>
+        /// <returns></returns>
+        public static QuantifiedGroup Characters(GeneralCategory category)
+        {
+            return OneMany(Character(category));
+        }
+
+        /// <summary>
+        /// Returns a pattern that matches one or more characters from a specified <see cref="string"/>.
+        /// </summary>
+        /// <param name="characters">A set of characters any one of which has to be matched.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="characters"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="characters"/> length is equal to zero.</exception>
+        public static QuantifiedGroup Characters(string characters)
+        {
+            return OneMany(Character(characters));
+        }
+
+        /// <summary>
+        /// Returns a pattern that matches one or more characters from a specified <see cref="CharGrouping"/>.
+        /// </summary>
+        /// <param name="value">A content of a character group.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
+        public static QuantifiedGroup Characters(CharGrouping value)
+        {
+            return OneMany(Character(value));
+        }
+#endif
 
         /// <summary>
         /// Returns a pattern that matches a character that is not a specified character.
