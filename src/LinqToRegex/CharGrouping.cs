@@ -81,6 +81,58 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public CharGrouping Append(GeneralCategory category) => Append(Chars.Character(category));
 
         /// <summary>
+        /// Appends a pattern that matches any one of the specified characters.
+        /// </summary>
+        /// <param name="characters">A set of Unicode characters.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="characters"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="characters"/> length is equal to zero.</exception>
+        public CharGrouping Character(string characters)
+        {
+            return Append(Chars.Character(characters));
+        }
+
+        /// <summary>
+        /// Appends a pattern that matches specified Unicode character.
+        /// </summary>
+        /// <param name="value">A Unicode character.</param>
+        /// <returns></returns>
+        public CharGrouping Character(char value)
+        {
+            return Append(Chars.Character(value));
+        }
+
+        /// <summary>
+        /// Appends a pattern that matches specified Unicode character.
+        /// </summary>
+        /// <param name="value">An enumerated constant that identifies ASCII character.</param>
+        /// <returns></returns>
+        public CharGrouping Character(AsciiChar value)
+        {
+            return Append(Chars.Character(value));
+        }
+
+        /// <summary>
+        /// Appends a pattern that matches a character from the specified Unicode block.
+        /// </summary>
+        /// <param name="block">An enumerated constant that identifies Unicode block.</param>
+        /// <returns></returns>
+        public CharGrouping Character(NamedBlock block)
+        {
+            return Append(Chars.Character(block));
+        }
+
+        /// <summary>
+        /// Appends a pattern that matches a character from the specified Unicode category.
+        /// </summary>
+        /// <param name="category">An enumerated constant that identifies Unicode category.</param>
+        /// <returns></returns>
+        public CharGrouping Character(GeneralCategory category)
+        {
+            return Append(Chars.Character(category));
+        }
+
+        /// <summary>
         /// Appends a pattern that matches any one character from the specified range.
         /// </summary>
         /// <param name="first">The first character of the range.</param>
