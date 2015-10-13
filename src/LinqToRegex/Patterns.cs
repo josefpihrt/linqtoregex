@@ -1454,7 +1454,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return Character(AsciiChar.Space);
         }
 
-#if DEBUG
         /// <summary>
         /// Returns a pattern that matches one or more spaces.
         /// </summary>
@@ -1463,7 +1462,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             return Space().OneMany();
         }
-#endif
 
         /// <summary>
         /// Returns a pattern that matches a specified number of spaces.
@@ -3219,7 +3217,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return Character(Chars.LatinLetter());
         }
 
-#if DEBUG
         /// <summary>
         /// Returns a pattern that matches one or more latin alphabet letter.
         /// </summary>
@@ -3228,7 +3225,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             return LatinLetter().OneMany();
         }
-#endif
 
         /// <summary>
         /// Returns a pattern that matches a specified number of latin alphabet letters.
@@ -3430,7 +3426,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return Character(Chars.ArabicDigit());
         }
 
-#if DEBUG
         /// <summary>
         /// Returns a pattern that matches one or more arabic digits.
         /// </summary>
@@ -3439,7 +3434,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             return ArabicDigit().OneMany();
         }
-#endif
 
         /// <summary>
         /// Returns a pattern that matches a specified number of arabic digits.

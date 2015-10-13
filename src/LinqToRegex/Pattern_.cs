@@ -1334,6 +1334,15 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         }
 
         /// <summary>
+        /// Appends a pattern that matches one or more latin alphabet letter.
+        /// </summary>
+        /// <returns></returns>
+        public QuantifiedPattern LatinLetters()
+        {
+            return AppendInternal(Patterns.LatinLetters());
+        }
+
+        /// <summary>
         /// Appends a pattern that matches a specified number of latin alphabet letters.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
@@ -1531,6 +1540,15 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public QuantifiablePattern ArabicDigit()
         {
             return AppendInternal(Patterns.ArabicDigit());
+        }
+
+        /// <summary>
+        /// Appends a pattern that matches one or more arabic digits.
+        /// </summary>
+        /// <returns></returns>
+        public QuantifiedPattern ArabicDigits()
+        {
+            return AppendInternal(Patterns.ArabicDigits());
         }
 
         /// <summary>
@@ -2108,6 +2126,15 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public QuantifiablePattern Space()
         {
             return AppendInternal(Patterns.Space());
+        }
+
+        /// <summary>
+        /// Appends a pattern that matches one or more spaces.
+        /// </summary>
+        /// <returns></returns>
+        public QuantifiedPattern Spaces()
+        {
+            return AppendInternal(Patterns.Spaces());
         }
 
         /// <summary>
