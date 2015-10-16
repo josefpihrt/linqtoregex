@@ -134,6 +134,20 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
 
             return match.Groups[groupNumber].Success;
         }
+
+        public static bool SuccessAll(this Match match)
+        {
+            if (match == null)
+                throw new ArgumentNullException(nameof(match));
+
+            for (int i = 0; i < match.Groups.Count; i++)
+            {
+                if (!match.Groups[i].Success)
+                    return false;
+            }
+
+            return true;
+        }
 #endif
     }
 }
