@@ -117,5 +117,23 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
                     yield return group.Captures[i];
             }
         }
+
+#if DEBUG
+        public static bool Success(this Match match, string groupName)
+        {
+            if (match == null)
+                throw new ArgumentNullException(nameof(match));
+
+            return match.Groups[groupName].Success;
+        }
+
+        public static bool Success(this Match match, int groupNumber)
+        {
+            if (match == null)
+                throw new ArgumentNullException(nameof(match));
+
+            return match.Groups[groupNumber].Success;
+        }
+#endif
     }
 }
