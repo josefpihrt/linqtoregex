@@ -148,6 +148,22 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
 
             return true;
         }
+
+        public static string GroupValue(this Match match, string groupName)
+        {
+            if (match == null)
+                throw new ArgumentNullException(nameof(match));
+
+            return match.Groups[groupName].Value;
+        }
+
+        public static string GroupValue(this Match match, int groupNumber)
+        {
+            if (match == null)
+                throw new ArgumentNullException(nameof(match));
+
+            return match.Groups[groupNumber].Value;
+        }
 #endif
     }
 }
