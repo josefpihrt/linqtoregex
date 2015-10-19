@@ -3895,7 +3895,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return Patterns.NoncapturingGroup(this);
         }
 
-#if DEBUG
         /// <summary>
         /// Appends an empty negative lookahead assertion. This pattern is never matched.
         /// </summary>
@@ -3950,6 +3949,5 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             return AppendInternal(Patterns.DisallowGroup(groupNumber));
         }
-#endif
     }
 }

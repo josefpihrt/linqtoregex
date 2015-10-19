@@ -1,6 +1,6 @@
 #### LINQ to Regex 2.2.2 (not released yet)
 
-New patterns: LatinLetters, ArabicDigits, Spaces.
+New patterns: LatinLetters, ArabicDigits, Spaces, RequireGroup, DisallowGroup.
 
 #### LINQ to Regex 2.2.1 (2015-10-04)
 

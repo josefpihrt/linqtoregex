@@ -4257,7 +4257,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 + close;
         }
 
-#if DEBUG
         /// <summary>
         /// Returns a pattern that requires previously defined group with a specified name to be matched. Otherwise, a match will fail.
         /// </summary>
@@ -4303,6 +4302,5 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             return IfGroup(groupNumber, Never());
         }
-#endif
     }
 }
