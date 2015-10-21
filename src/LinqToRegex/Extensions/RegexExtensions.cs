@@ -349,7 +349,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="input">The string to search for a match.</param>
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
-        public static IEnumerable<int> Indexes(this Regex regex, string input)
+        public static IEnumerable<int> EnumerateIndexes(this Regex regex, string input)
         {
             if (regex == null)
                 throw new ArgumentNullException(nameof(regex));
@@ -365,7 +365,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="input">The string to search for a match.</param>
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
-        public static IEnumerable<int> Lengths(this Regex regex, string input)
+        public static IEnumerable<int> EnumerateLengths(this Regex regex, string input)
         {
             if (regex == null)
                 throw new ArgumentNullException(nameof(regex));
@@ -381,7 +381,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="input">The string to search for a match.</param>
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
-        public static IEnumerable<string> Values(this Regex regex, string input)
+        public static IEnumerable<string> EnumerateValues(this Regex regex, string input)
         {
             if (regex == null)
                 throw new ArgumentNullException(nameof(regex));
