@@ -5,24 +5,21 @@ using System.Collections;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
-    internal sealed class JoinContainer
+    internal class JoinContainer
         : Pattern
     {
-        private readonly object _separator;
-        private readonly object _content;
-
         public JoinContainer(object separator, object content)
         {
             if (content == null)
                 throw new ArgumentNullException(nameof(content));
 
-            _separator = separator;
-            _content = content;
+            Separator = separator;
+            Content = content;
         }
 
         internal override void AppendTo(PatternBuilder builder)
         {
-            var values = _content as object[];
+            var values = Content as object[];
             if (values != null)
             {
                 if (values.Length > 0)
@@ -33,7 +30,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                     {
                         for (int i = 1; i < values.Length; i++)
                         {
-                            builder.Append(_separator);
+                            builder.Append(Separator);
                             builder.Append(values[i]);
                         }
                     }
@@ -41,7 +38,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             }
             else
             {
-                var items = _content as IEnumerable;
+                var items = Content as IEnumerable;
 
                 IEnumerator en = items.GetEnumerator();
 
@@ -51,17 +48,21 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
                     if (en.MoveNext())
                     {
-                        builder.Append(_separator);
+                        builder.Append(Separator);
                         builder.Append(en.Current);
 
                         while (en.MoveNext())
                         {
-                            builder.Append(_separator);
+                            builder.Append(Separator);
                             builder.Append(en.Current);
                         }
                     }
                 }
             }
         }
+
+        public object Separator { get; }
+
+        public object Content { get; }
     }
 }
