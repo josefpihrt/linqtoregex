@@ -1903,13 +1903,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Appends a pattern that matches one or more characters from a specified <see cref="string"/>.
         /// </summary>
-        /// <param name="characters">A set of characters any one of which has to be matched.</param>
+        /// <param name="value">A set of characters any one of which has to be matched.</param>
         /// <returns></returns>
-        /// <exception cref="ArgumentNullException"><paramref name="characters"/> is <c>null</c>.</exception>
-        /// <exception cref="ArgumentException"><paramref name="characters"/> length is equal to zero.</exception>
-        public QuantifiedGroup Characters(string characters)
+        /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentException"><paramref name="value"/> length is equal to zero.</exception>
+        public QuantifiedGroup Characters(string value)
         {
-            return AppendInternal(Patterns.Characters(characters));
+            return AppendInternal(Patterns.Characters(value));
         }
 
         /// <summary>
