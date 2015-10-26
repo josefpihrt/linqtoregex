@@ -2119,6 +2119,48 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return Count(exactCount, NotSlash());
         }
 
+#if DEBUG
+        /// <summary>
+        /// Returns a pattern that matches a slash or a backslash.
+        /// </summary>
+        /// <returns></returns>
+        public static CharGroup SlashOrBackslash()
+        {
+            return Character(@"\/");
+        }
+
+        /// <summary>
+        /// Returns a pattern that matches a specified number of characters that are slash or backslash.
+        /// </summary>
+        /// <param name="exactCount">A number of times a character has to be matched.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
+        public static QuantifiedGroup SlashOrBackslash(int exactCount)
+        {
+            return Count(exactCount, SlashOrBackslash());
+        }
+
+        /// <summary>
+        /// Returns a pattern that matches a character that is not a slash or backslash.
+        /// </summary>
+        /// <returns></returns>
+        public static QuantifiablePattern NotSlashOrBackslash()
+        {
+            return NotChar(@"\/");
+        }
+
+        /// <summary>
+        /// Returns a pattern that matches a specified number of characters that are not a slash or backslash
+        /// </summary>
+        /// <param name="exactCount">A number of times a character has to be matched.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
+        public static QuantifiedGroup NotSlashOrBackslash(int exactCount)
+        {
+            return Count(exactCount, NotSlashOrBackslash());
+        }
+#endif
+
         /// <summary>
         /// Returns a pattern that matches a colon.
         /// </summary>

@@ -2768,6 +2768,47 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return AppendInternal(Patterns.NotSlash(exactCount));
         }
 
+#if DEBUG
+        /// <summary>
+        /// Appends a pattern that matches a slash or a backslash.
+        /// </summary>
+        /// <returns></returns>
+        public CharGroup SlashOrBackslash()
+        {
+            return AppendInternal(Patterns.SlashOrBackslash());
+        }
+
+        /// <summary>
+        /// Appends a pattern that matches a specified number of characters that are slash or backslash.
+        /// </summary>
+        /// <param name="exactCount">A number of times a character has to be matched.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
+        public QuantifiedGroup SlashOrBackslash(int exactCount)
+        {
+            return AppendInternal(Patterns.SlashOrBackslash(exactCount));
+        }
+
+        /// <summary>
+        /// Appends a pattern that matches a character that is not a slash or backslash.
+        /// </summary>
+        /// <returns></returns>
+        public QuantifiablePattern NotSlashOrBackslash()
+        {
+            return AppendInternal(Patterns.NotSlashOrBackslash());
+        }
+
+        /// <summary>
+        /// Appends a pattern that matches a specified number of characters that are not a slash or backslash
+        /// </summary>
+        /// <param name="exactCount">A number of times a character has to be matched.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
+        public QuantifiedGroup NotSlashOrBackslash(int exactCount)
+        {
+            return AppendInternal(Patterns.NotSlashOrBackslash(exactCount));
+        }
+#endif
         /// <summary>
         /// Appends a pattern that matches a colon.
         /// </summary>
