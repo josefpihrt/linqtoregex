@@ -391,40 +391,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         }
 
         /// <summary>
-        /// Searches the specified input string for occurrence of the specified regular expression and returns an enumerable collection of groups values.
-        /// </summary>
-        /// <param name="regex">The regular expression to be matched.</param>
-        /// <param name="input">The string to search for a match.</param>
-        /// <param name="groupName">A name of the group.</param>
-        /// <returns></returns>
-        /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
-        public static IEnumerable<string> EnumerateValues(this Regex regex, string input, string groupName)
-        {
-            if (regex == null)
-                throw new ArgumentNullException(nameof(regex));
-
-            foreach (Group group in regex.EnumerateGroups(input, groupName))
-                yield return group.Value;
-        }
-
-        /// <summary>
-        /// Searches the specified input string for occurrence of the specified regular expression and returns an enumerable collection of groups values.
-        /// </summary>
-        /// <param name="regex">The regular expression to be matched.</param>
-        /// <param name="input">The string to search for a match.</param>
-        /// <param name="groupNumber">A number of the group.</param>
-        /// <returns></returns>
-        /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
-        public static IEnumerable<string> EnumerateValues(this Regex regex, string input, int groupNumber)
-        {
-            if (regex == null)
-                throw new ArgumentNullException(nameof(regex));
-
-            foreach (Group group in regex.EnumerateGroups(input, groupNumber))
-                yield return group.Value;
-        }
-
-        /// <summary>
         /// Searches the specified input string for the first occurence of the regular expression and returns named group from a first <see cref="Match"/>.
         /// </summary>
         /// <param name="regex">The regular expression to be matched.</param>
