@@ -390,6 +390,15 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
                 yield return match.Value;
         }
 
+        public static IEnumerable<TResult> EnumerateValues<TResult>(this Regex regex, string input)
+        {
+            if (regex == null)
+                throw new ArgumentNullException(nameof(regex));
+
+            foreach (Match match in regex.EnumerateMatches(input))
+                yield return (TResult)(object)match.Value;
+        }
+
         /// <summary>
         /// Searches the specified input string for the first occurence of the regular expression and returns named group from a first <see cref="Match"/>.
         /// </summary>
