@@ -3988,6 +3988,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return WhiteSpace().MaybeMany();
         }
 
+#if DEBUG
+        public static Pattern WhileWhiteSpace(object content)
+        {
+            return new SurroundPattern(WhileWhiteSpace(), content, WhileWhiteSpace());
+        }
+#endif
+
         /// <summary>
         /// Returns a pattern that matches zero or more characters that are white-space characters but neither a carriage return nor a linefeed.
         /// </summary>
