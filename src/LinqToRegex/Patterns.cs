@@ -4211,6 +4211,17 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return Any().MaybeMany().Lazy();
         }
 
+#if DEBUG
+        /// <summary>
+        /// Returns a pattern that matches any character except linefeed and carriage return zero or more times but as few times as possible.
+        /// </summary>
+        /// <returns></returns>
+        public static Pattern CrawlLine()
+        {
+            return WhileNotNewLineChar().Lazy();
+        }
+#endif
+
         /// <summary>
         /// Returns a pattern that matches any character except linefeed (or any character if the <see cref="RegexOptions.Singleline"/> option is applied) zero or more times but as few times as possible.
         /// </summary>
