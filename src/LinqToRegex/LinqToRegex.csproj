@@ -72,7 +72,7 @@
     <Compile Include="AnyChar.cs" />
     <Compile Include="AnyCharNative.cs" />
     <Compile Include="AsciiChar.cs" />
-    <Compile Include="AsciiCharSurroundPattern.cs" />
+    <Compile Include="AsciiCharSurroundContainer.cs" />
     <Compile Include="CharClass.cs" />
     <Compile Include="CharEscapeMode.cs" />
     <Compile Include="CharGroup.cs" />
@@ -151,7 +151,7 @@
     <Compile Include="Substitution\Substitutions.cs" />
     <Compile Include="Substitution\EntireMatchSubstitution.cs" />
     <Compile Include="SurroundAssertion.cs" />
-    <Compile Include="SurroundPattern.cs" />
+    <Compile Include="SurroundContainer.cs" />
     <Compile Include="Syntax.cs" />
   </ItemGroup>
   <ItemGroup>

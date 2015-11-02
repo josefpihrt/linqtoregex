@@ -102,7 +102,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="contentBefore"/> or <paramref name="content"/> or <paramref name="contentAfter"/> is <c>null</c>.</exception>
         internal static Pattern Surround(object contentBefore, object content, object contentAfter)
         {
-            return new SurroundPattern(contentBefore, content, contentAfter);
+            return new SurroundContainer(contentBefore, content, contentAfter);
         }
 
         /// <summary>
@@ -127,7 +127,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         internal static Pattern Surround(AsciiChar charBefore, object value, AsciiChar charAfter)
         {
-            return new AsciiCharSurroundPattern(charBefore, value, charAfter);
+            return new AsciiCharSurroundContainer(charBefore, value, charAfter);
         }
 
         /// <summary>
@@ -3991,7 +3991,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 #if DEBUG
         public static Pattern WhileWhiteSpace(object content)
         {
-            return new SurroundPattern(WhileWhiteSpace(), content, WhileWhiteSpace());
+            return new SurroundContainer(WhileWhiteSpace(), content, WhileWhiteSpace());
         }
 #endif
 

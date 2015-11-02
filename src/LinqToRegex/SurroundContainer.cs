@@ -4,14 +4,14 @@ using System;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
-    internal class SurroundPattern
+    internal class SurroundContainer
         : Pattern
     {
         private readonly object _content;
         private readonly object _contentBefore;
         private readonly object _contentAfter;
 
-        public SurroundPattern(object contentBefore, object content, object contentAfter)
+        public SurroundContainer(object contentBefore, object content, object contentAfter)
         {
             if (contentBefore == null)
                 throw new ArgumentNullException(nameof(contentBefore));
