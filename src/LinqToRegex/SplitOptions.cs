@@ -9,7 +9,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     public enum SplitOptions
     {
         None = 0,
-        IgnoreGroups = 1,
+        OmitGroups = 1,
         OmitEmptyValues = 2
     }
 #endif

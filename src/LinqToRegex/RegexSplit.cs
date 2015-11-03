@@ -117,7 +117,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 yield break;
             }
 
-            bool ignoreGroups = (options & SplitOptions.IgnoreGroups) != 0;
+            bool omitGroups = (options & SplitOptions.OmitGroups) != 0;
             bool omitEmpty = (options & SplitOptions.OmitEmptyValues) != 0;
             int prevIndex = 0;
 
@@ -128,7 +128,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
                 prevIndex = match.Index + match.Length;
 
-                if (!ignoreGroups)
+                if (!omitGroups)
                 {
                     if (regex.RightToLeft)
                     {
