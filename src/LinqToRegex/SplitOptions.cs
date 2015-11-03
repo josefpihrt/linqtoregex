@@ -10,6 +10,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     {
         None = 0,
         IgnoreGroups = 1,
+        OmitEmptyValues = 2
     }
 #endif
 }

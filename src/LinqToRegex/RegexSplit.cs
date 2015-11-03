@@ -117,30 +117,35 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 yield break;
             }
 
-            bool fIgnoreGroups = (options & SplitOptions.IgnoreGroups) != 0;
+            bool ignoreGroups = (options & SplitOptions.IgnoreGroups) != 0;
+            bool omitEmpty = (options & SplitOptions.OmitEmptyValues) != 0;
             int prevIndex = 0;
 
             foreach (var match in EnumerateMatches(firstMatch, count, regex.RightToLeft))
             {
-                yield return input.Substring(prevIndex, match.Index - prevIndex);
+                if (!omitEmpty || ((match.Index - prevIndex) > 0))
+                    yield return input.Substring(prevIndex, match.Index - prevIndex);
+
                 prevIndex = match.Index + match.Length;
 
-                if (!fIgnoreGroups)
+                if (!ignoreGroups)
                 {
                     if (regex.RightToLeft)
                     {
                         for (int i = (match.Groups.Count - 1); i >= 1; i--)
                         {
-                            if (match.Groups[i].Success)
-                                yield return match.Groups[i].Value;
+                            Group group = match.Groups[i];
+                            if (group.Success && (!omitEmpty || group.Length > 0))
+                                yield return group.Value;
                         }
                     }
                     else
                     {
                         for (int i = 1; i < match.Groups.Count; i++)
                         {
-                            if (match.Groups[i].Success)
-                                yield return match.Groups[i].Value;
+                            Group group = match.Groups[i];
+                            if (group.Success && (!omitEmpty || group.Length > 0))
+                                yield return group.Value;
                         }
                     }
                 }
