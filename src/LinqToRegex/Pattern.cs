@@ -488,58 +488,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return Regex.Replace(input, Value, evaluator);
         }
 
-#if DEBUG
-        public string ReplaceChars(string input, char value)
-        {
-            return ReplaceChars(input, value, RegexOptions.None);
-        }
-
-        public string ReplaceChars(string input, char value, RegexOptions options)
-        {
-            return Replace(input, match => new string(value, match.Length), options);
-        }
-
-        public string ReplaceGroupChars(string input, string groupName, char value)
-        {
-            return ReplaceGroupChars(input, groupName, value, RegexOptions.None);
-        }
-
-        public string ReplaceGroupChars(string input, string groupName, char value, RegexOptions options)
-        {
-            return RegexReplace.ReplaceGroups(EnumerateSuccessGroups(input, groupName, options), input, group => new string(value, group.Length));
-        }
-
-        public string ReplaceGroupChars(string input, int groupNumber, char value)
-        {
-            return ReplaceGroupChars(input, groupNumber, value, RegexOptions.None);
-        }
-
-        public string ReplaceGroupChars(string input, int groupNumber, char value, RegexOptions options)
-        {
-            return RegexReplace.ReplaceGroups(EnumerateSuccessGroups(input, groupNumber, options), input, group => new string(value, group.Length));
-        }
-
-        public string ReplaceGroups(string input, string groupName, string replacement)
-        {
-            return RegexReplace.ReplaceGroups(EnumerateSuccessGroups(input, groupName), input, replacement);
-        }
-
-        public string ReplaceGroups(string input, string groupName, GroupEvaluator evaluator)
-        {
-            return RegexReplace.ReplaceGroups(EnumerateSuccessGroups(input, groupName), input, evaluator);
-        }
-
-        public string ReplaceGroups(string input, int groupNumber, string replacement)
-        {
-            return RegexReplace.ReplaceGroups(EnumerateSuccessGroups(input, groupNumber), input, replacement);
-        }
-
-        public string ReplaceGroups(string input, int groupNumber, GroupEvaluator evaluator)
-        {
-            return RegexReplace.ReplaceGroups(EnumerateSuccessGroups(input, groupNumber), input, evaluator);
-        }
-#endif
-
         /// <summary>
         /// Within a specified input string, replaces all strings that match the current instance with a string returned by a <see cref="MatchEvaluator"/> delegate. Specified options modify the matching operation.
         /// </summary>

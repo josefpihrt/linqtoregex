@@ -9,15 +9,15 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
     internal static class RegexReplace
     {
-        public static string ReplaceGroups(IEnumerable<Group> groups, string input, string replacement)
+        public static string ReplaceGroup(string input, IEnumerable<Group> groups, string replacement)
         {
             if (replacement == null)
                 throw new ArgumentNullException(nameof(replacement));
 
-            return ReplaceGroups(groups, input, group => replacement);
+            return ReplaceGroup(input, groups, group => replacement);
         }
 
-        public static string ReplaceGroups(IEnumerable<Group> groups, string input, GroupEvaluator evaluator)
+        public static string ReplaceGroup(string input, IEnumerable<Group> groups, GroupEvaluator evaluator)
         {
             if (evaluator == null)
                 throw new ArgumentNullException(nameof(evaluator));

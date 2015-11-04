@@ -258,42 +258,42 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         }
 
 #if DEBUG
-        public static string ReplaceChars(this Regex regex, string input, char value)
+        public static string ReplaceMatchChar(this Regex regex, string input, char replacement)
         {
             if (regex == null)
                 throw new ArgumentNullException(nameof(regex));
 
-            return regex.Replace(input, match => new string(value, match.Length));
+            return regex.Replace(input, match => new string(replacement, match.Length));
         }
 
-        public static string ReplaceGroupChars(this Regex regex, string input, string groupName, char value)
+        public static string ReplaceGroupChar(this Regex regex, string input, char replacement, string groupName)
         {
-            return ReplaceGroups(regex, input, groupName, group => new string(value, group.Length));
+            return ReplaceGroup(regex, input, group => new string(replacement, group.Length), groupName);
         }
 
-        public static string ReplaceGroupChars(this Regex regex, string input, int groupNumber, char value)
+        public static string ReplaceGroupChar(this Regex regex, string input, char replacement, int groupNumber)
         {
-            return ReplaceGroups(regex, input, groupNumber, group => new string(value, group.Length));
+            return ReplaceGroup(regex, input, group => new string(replacement, group.Length), groupNumber);
         }
 
-        public static string ReplaceGroups(this Regex regex, string input, string groupName, string replacement)
+        public static string ReplaceGroup(this Regex regex, string input, string replacement, string groupName)
         {
-            return RegexReplace.ReplaceGroups(EnumerateSuccessGroups(regex, input, groupName), input, replacement);
+            return RegexReplace.ReplaceGroup(input, EnumerateSuccessGroups(regex, input, groupName), replacement);
         }
 
-        public static string ReplaceGroups(this Regex regex, string input, int groupNumber, string replacement)
+        public static string ReplaceGroup(this Regex regex, string input, string replacement, int groupNumber)
         {
-            return RegexReplace.ReplaceGroups(EnumerateSuccessGroups(regex, input, groupNumber), input, replacement);
+            return RegexReplace.ReplaceGroup(input, EnumerateSuccessGroups(regex, input, groupNumber), replacement);
         }
 
-        public static string ReplaceGroups(this Regex regex, string input, string groupName, GroupEvaluator evaluator)
+        private static string ReplaceGroup(this Regex regex, string input, GroupEvaluator evaluator, string groupName)
         {
-            return RegexReplace.ReplaceGroups(EnumerateSuccessGroups(regex, input, groupName), input, evaluator);
+            return RegexReplace.ReplaceGroup(input, EnumerateSuccessGroups(regex, input, groupName), evaluator);
         }
 
-        public static string ReplaceGroups(this Regex regex, string input, int groupNumber, GroupEvaluator evaluator)
+        private static string ReplaceGroup(this Regex regex, string input, GroupEvaluator evaluator, int groupNumber)
         {
-            return RegexReplace.ReplaceGroups(EnumerateSuccessGroups(regex, input, groupNumber), input, evaluator);
+            return RegexReplace.ReplaceGroup(input, EnumerateSuccessGroups(regex, input, groupNumber), evaluator);
         }
 #endif
 
