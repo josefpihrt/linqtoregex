@@ -341,7 +341,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             return RegexSplit.EnumerateValues(regex, input, count, startAt);
         }
 
-#if DEBUG
         /// <summary>
         /// Searches the specified input string for occurrence of the specified regular expression and returns an enumerable collection of matches indexes.
         /// </summary>
@@ -390,6 +389,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
                 yield return match.Value;
         }
 
+#if DEBUG
         public static IEnumerable<TResult> EnumerateValues<TResult>(this Regex regex, string input)
         {
             if (regex == null)
