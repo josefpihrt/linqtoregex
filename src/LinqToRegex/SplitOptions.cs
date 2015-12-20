@@ -4,13 +4,11 @@ using System;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
-#if DEBUG
     [Flags]
     public enum SplitOptions
     {
         None = 0,
-        OmitGroups = 1,
+        OmitGroupValues = 1,
         OmitEmptyValues = 2
     }
-#endif
 }
