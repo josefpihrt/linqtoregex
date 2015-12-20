@@ -1,26 +1,29 @@
 ﻿// Copyright (c) Josef Pihrt. All rights reserved. Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using Pihrtsoft.Text.RegularExpressions.Linq.Extensions;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
     internal static class RegexReplace
     {
-        public static string ReplaceGroup(string input, IEnumerable<Group> groups, string replacement)
+        public static string ReplaceGroups(Regex regex, string input, string groupName, GroupEvaluator evaluator)
         {
-            if (replacement == null)
-                throw new ArgumentNullException(nameof(replacement));
-
-            return ReplaceGroup(input, groups, group => replacement);
+            return ReplaceGroups(input, regex.EnumerateSuccessGroups(input, groupName), evaluator, regex.RightToLeft);
         }
 
-        public static string ReplaceGroup(string input, IEnumerable<Group> groups, GroupEvaluator evaluator)
+        public static string ReplaceGroups(Regex regex, string input, int groupNumber, GroupEvaluator evaluator)
         {
-            if (evaluator == null)
-                throw new ArgumentNullException(nameof(evaluator));
+            return ReplaceGroups(input, regex.EnumerateSuccessGroups(input, groupNumber), evaluator, regex.RightToLeft);
+        }
+
+        private static string ReplaceGroups(string input, IEnumerable<Group> groups, GroupEvaluator evaluator, bool rightToLeft)
+        {
+            if (rightToLeft)
+                groups = groups.Reverse();
 
             var sb = new StringBuilder();
             int index = 0;
