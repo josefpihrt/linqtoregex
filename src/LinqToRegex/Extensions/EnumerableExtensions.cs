@@ -2,6 +2,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text.RegularExpressions;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
@@ -244,16 +245,5 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             foreach (var capture in captures)
                 yield return capture.Value;
         }
-
-#if DEBUG
-        public static IEnumerable<TResult> EnumerateValues<TResult>(this IEnumerable<Capture> captures)
-        {
-            if (captures == null)
-                throw new ArgumentNullException(nameof(captures));
-
-            foreach (var capture in captures)
-                yield return (TResult)(object)capture.Value;
-        }
-#endif
     }
 }

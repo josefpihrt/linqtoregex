@@ -23,39 +23,5 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
 
             return capture.Index + capture.Length;
         }
-
-#if DEBUG
-        /// <summary>
-        /// Get the specified capture value converted to 32-bit signed integer.
-        /// </summary>
-        /// <param name="capture">A regular expression capture.</param>
-        /// <returns></returns>
-        /// <exception cref="ArgumentNullException"><paramref name="capture"/> is <c>null</c>.</exception>
-        /// <exception cref="FormatException"></exception>
-        /// <exception cref="OverflowException"></exception>
-        public static int GetInt32Value(this Capture capture)
-        {
-            if (capture == null)
-                throw new ArgumentNullException(nameof(capture));
-
-            return Convert.ToInt32(capture.Value);
-        }
-
-        /// <summary>
-        /// Get the specified capture value converted to 64-bit signed integer.
-        /// </summary>
-        /// <param name="capture">A regular expression capture.</param>
-        /// <returns></returns>
-        /// <exception cref="ArgumentNullException"><paramref name="capture"/> is <c>null</c>.</exception>
-        /// <exception cref="FormatException"></exception>
-        /// <exception cref="OverflowException"></exception>
-        public static long GetInt64Value(this Capture capture)
-        {
-            if (capture == null)
-                throw new ArgumentNullException(nameof(capture));
-
-            return Convert.ToInt64(capture.Value);
-        }
-#endif
     }
 }

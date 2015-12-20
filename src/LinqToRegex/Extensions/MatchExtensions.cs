@@ -119,22 +119,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         }
 
 #if DEBUG
-        public static bool Success(this Match match, string groupName)
-        {
-            if (match == null)
-                throw new ArgumentNullException(nameof(match));
-
-            return match.Groups[groupName].Success;
-        }
-
-        public static bool Success(this Match match, int groupNumber)
-        {
-            if (match == null)
-                throw new ArgumentNullException(nameof(match));
-
-            return match.Groups[groupNumber].Success;
-        }
-
         public static bool SuccessAll(this Match match)
         {
             if (match == null)
@@ -147,22 +131,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             }
 
             return true;
-        }
-
-        public static string GroupValue(this Match match, string groupName)
-        {
-            if (match == null)
-                throw new ArgumentNullException(nameof(match));
-
-            return match.Groups[groupName].Value;
-        }
-
-        public static string GroupValue(this Match match, int groupNumber)
-        {
-            if (match == null)
-                throw new ArgumentNullException(nameof(match));
-
-            return match.Groups[groupNumber].Value;
         }
 #endif
     }
