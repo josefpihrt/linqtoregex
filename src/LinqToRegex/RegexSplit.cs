@@ -61,20 +61,22 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 yield break;
             }
 
-            bool omitGroups = (options & SplitOptions.OmitGroupValues) != 0;
+            bool omitGroupValues = (options & SplitOptions.OmitGroupValues) != 0;
             bool omitEmptyValues = (options & SplitOptions.OmitEmptyValues) != 0;
             int prevIndex = 0;
 
-            foreach (var match in EnumerateMatches(firstMatch, count, regex.RightToLeft))
+            count--;
+
+            foreach (Match match in (regex.RightToLeft) ? EnumerateMatchesRightToLeft(firstMatch, count) : EnumerateMatches(firstMatch, count))
             {
                 if (!omitEmptyValues || ((match.Index - prevIndex) > 0))
                     yield return input.Substring(prevIndex, match.Index - prevIndex);
 
                 prevIndex = match.Index + match.Length;
 
-                if (!omitGroups)
+                if (!omitGroupValues)
                 {
-                    foreach (Group group in EnumerateGroups(match.Groups, regex.RightToLeft))
+                    foreach (Group group in (regex.RightToLeft) ? EnumerateGroupsRightToLeft(match) : EnumerateGroups(match))
                     {
                         if (group.Success && (!omitEmptyValues || group.Length > 0))
                             yield return group.Value;
@@ -85,56 +87,51 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             yield return input.Substring(prevIndex, input.Length - prevIndex);
         }
 
-        private static IEnumerable<Group> EnumerateGroups(GroupCollection groups, bool rightToLeft)
+        private static IEnumerable<Group> EnumerateGroups(Match match)
         {
-            if (rightToLeft)
+            for (int i = 1; i < match.Groups.Count; i++)
+                yield return match.Groups[i];
+        }
+
+        private static IEnumerable<Group> EnumerateGroupsRightToLeft(Match match)
+        {
+            for (int i = (match.Groups.Count - 1); i >= 1; i--)
+                yield return match.Groups[i];
+        }
+
+        private static IEnumerable<Match> EnumerateMatches(Match match, int count)
+        {
+            while (match.Success)
             {
-                for (int i = (groups.Count - 1); i >= 1; i--)
-                    yield return groups[i];
-            }
-            else
-            {
-                for (int i = 1; i < groups.Count; i++)
-                    yield return groups[i];
+                yield return match;
+
+                count--;
+
+                if (count == 0)
+                    yield break;
+
+                match = match.NextMatch();
             }
         }
 
-        private static IEnumerable<Match> EnumerateMatches(Match match, int count, bool rightToLeft)
+        private static IEnumerable<Match> EnumerateMatchesRightToLeft(Match match, int count)
         {
-            count--;
+            var matches = new List<Match>();
 
-            if (rightToLeft)
+            while (match.Success)
             {
-                var matches = new List<Match>();
-                while (match.Success)
-                {
-                    matches.Add(match);
+                matches.Add(match);
 
-                    count--;
+                count--;
 
-                    if (count == 0)
-                        break;
+                if (count == 0)
+                    break;
 
-                    match = match.NextMatch();
-                }
-
-                for (int i = (matches.Count - 1); i >= 0; i--)
-                    yield return matches[i];
+                match = match.NextMatch();
             }
-            else
-            {
-                while (match.Success)
-                {
-                    yield return match;
 
-                    count--;
-
-                    if (count == 0)
-                        yield break;
-
-                    match = match.NextMatch();
-                }
-            }
+            for (int i = (matches.Count - 1); i >= 0; i--)
+                yield return matches[i];
         }
     }
 }
