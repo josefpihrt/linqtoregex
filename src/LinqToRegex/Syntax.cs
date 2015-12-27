@@ -7,7 +7,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     /// <summary>
     /// Provides static methods and constants for obtaining regular expression language elements.
     /// </summary>
-    internal static partial class Syntax
+    internal static class Syntax
     {
         /// <summary>
         /// Specifies start token of the inline comment.

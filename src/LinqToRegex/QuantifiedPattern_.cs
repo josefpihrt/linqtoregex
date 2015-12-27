@@ -61,10 +61,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         internal sealed class MaybeQuantifiedPattern
             : QuantifiedPattern
         {
-            public MaybeQuantifiedPattern()
-            {
-            }
-
             internal override void AppendTo(PatternBuilder builder)
             {
                 builder.AppendMaybe();
@@ -74,10 +70,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         internal sealed class MaybeManyQuantifiedPattern
             : QuantifiedPattern
         {
-            public MaybeManyQuantifiedPattern()
-            {
-            }
-
             internal override void AppendTo(PatternBuilder builder)
             {
                 builder.AppendMaybeMany();
@@ -87,10 +79,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         internal sealed class OneManyQuantifiedPattern
             : QuantifiedPattern
         {
-            public OneManyQuantifiedPattern()
-            {
-            }
-
             internal override void AppendTo(PatternBuilder builder)
             {
                 builder.AppendOneMany();

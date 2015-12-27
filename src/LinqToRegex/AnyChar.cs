@@ -5,10 +5,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     internal sealed class AnyChar
         : QuantifiablePattern
     {
-        public AnyChar()
-        {
-        }
-
         internal override void AppendTo(PatternBuilder builder)
         {
             builder.AppendAnyChar();

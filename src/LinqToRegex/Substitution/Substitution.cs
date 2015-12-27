@@ -9,7 +9,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     /// <summary>
     /// Represents a base class for a substitution in the replacement pattern. This class is abstract.
     /// </summary>
-    public abstract partial class Substitution
+    public abstract class Substitution
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="Substitution"/> class.

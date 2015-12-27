@@ -5,10 +5,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     internal sealed class AnyCharNative
         : QuantifiablePattern
     {
-        public AnyCharNative()
-        {
-        }
-
         internal override void AppendTo(PatternBuilder builder)
         {
             builder.AppendAnyCharNative();

@@ -7,8 +7,5 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     internal sealed class LineInfoCollection
         : Collection<LineInfo>
     {
-        public LineInfoCollection()
-        {
-        }
     }
 }

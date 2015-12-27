@@ -14,6 +14,7 @@
     <Rule Id="CC0031" Action="None" />
     <Rule Id="CC0045" Action="None" />
     <Rule Id="CC0057" Action="None" />
+    <Rule Id="CC0105" Action="None" />
   </Rules>
   <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
     <Rule Id="CA1303" Action="None" />
@@ -21,5 +22,13 @@
     <Rule Id="CA2000" Action="None" />
     <Rule Id="CA2104" Action="None" />
     <Rule Id="CA2225" Action="None" />
+  </Rules>
+  <Rules AnalyzerId="RefactoringEssentials" RuleNamespace="RefactoringEssentials">
+    <Rule Id="RECS0033" Action="None" />
+    <Rule Id="RECS0085" Action="None" />
+    <Rule Id="RECS0091" Action="None" />
+    <Rule Id="RECS0104" Action="None" />
+    <Rule Id="RECS0113" Action="None" />
+    <Rule Id="RECS0129" Action="None" />
   </Rules>
 </RuleSet>
