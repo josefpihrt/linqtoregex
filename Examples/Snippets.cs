@@ -29,6 +29,12 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
                 BeginInputOrLine().WhiteSpaceExceptNewLine().OneMany());
         }
 
+        public static QuantifiablePattern LineLeadingWhiteSpace()
+        {
+            return NoncapturingGroup(
+                BeginLine().WhiteSpaceExceptNewLine().OneMany());
+        }
+
         /// <summary>
         /// Returns a pattern that matches trailing whitespace of the string (or line if the <see cref="RegexOptions.Multiline"/> option is applied). A carriage return is not included in the match.
         /// </summary>
@@ -38,6 +44,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
             return NoncapturingGroup(
                 WhiteSpaceExceptNewLine().OneMany()
                 .EndInputOrLine(true));
+        }
+
+        public static QuantifiablePattern LineTrailingWhiteSpace()
+        {
+            return NoncapturingGroup(
+                WhiteSpaceExceptNewLine().OneMany()
+                .EndLine(true));
         }
 
         /// <summary>
