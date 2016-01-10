@@ -130,7 +130,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (characters == null)
                 throw new ArgumentNullException(nameof(characters));
 
-            foreach (var value in characters)
+            foreach (char value in characters)
                 Append(value, inCharGroup);
         }
 

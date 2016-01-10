@@ -23,11 +23,11 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             _index = 0;
             _sb = new StringBuilder();
             _spaces = CreateSpaces(_maxOptions);
-            var splits = _newLineRegex.Split(pattern);
+            string[] splits = _newLineRegex.Split(pattern);
             int maxLength = splits.Max(f => f.Length);
             bool isFirst = true;
 
-            foreach (var split in splits)
+            foreach (string split in splits)
             {
                 if (isFirst)
                     isFirst = false;

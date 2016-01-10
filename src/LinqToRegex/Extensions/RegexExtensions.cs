@@ -99,7 +99,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         public static IEnumerable<Group> EnumerateGroups(this Regex regex, string input)
         {
-            foreach (var match in EnumerateMatches(regex, input))
+            foreach (Match match in EnumerateMatches(regex, input))
             {
                 for (int i = 0; i < match.Groups.Count; i++)
                     yield return match.Groups[i];
@@ -116,7 +116,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> or <paramref name="groupName"/> is <c>null</c>.</exception>
         public static IEnumerable<Group> EnumerateGroups(this Regex regex, string input, string groupName)
         {
-            foreach (var match in EnumerateMatches(regex, input))
+            foreach (Match match in EnumerateMatches(regex, input))
                 yield return match.Groups[groupName];
         }
 
@@ -130,7 +130,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         public static IEnumerable<Group> EnumerateGroups(this Regex regex, string input, int groupNumber)
         {
-            foreach (var match in EnumerateMatches(regex, input))
+            foreach (Match match in EnumerateMatches(regex, input))
                 yield return match.Groups[groupNumber];
         }
 
@@ -143,11 +143,11 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         public static IEnumerable<Group> EnumerateSuccessGroups(this Regex regex, string input)
         {
-            foreach (var match in EnumerateMatches(regex, input))
+            foreach (Match match in EnumerateMatches(regex, input))
             {
                 for (int i = 0; i < match.Groups.Count; i++)
                 {
-                    var group = match.Groups[i];
+                    Group group = match.Groups[i];
 
                     if (group.Success)
                         yield return group;
@@ -165,9 +165,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> or <paramref name="groupName"/> is <c>null</c>.</exception>
         public static IEnumerable<Group> EnumerateSuccessGroups(this Regex regex, string input, string groupName)
         {
-            foreach (var match in EnumerateMatches(regex, input))
+            foreach (Match match in EnumerateMatches(regex, input))
             {
-                var group = match.Groups[groupName];
+                Group group = match.Groups[groupName];
 
                 if (group.Success)
                     yield return group;
@@ -184,9 +184,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         public static IEnumerable<Group> EnumerateSuccessGroups(this Regex regex, string input, int groupNumber)
         {
-            foreach (var match in EnumerateMatches(regex, input))
+            foreach (Match match in EnumerateMatches(regex, input))
             {
-                var group = match.Groups[groupNumber];
+                Group group = match.Groups[groupNumber];
 
                 if (group.Success)
                     yield return group;
@@ -202,11 +202,11 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         public static IEnumerable<Capture> EnumerateCaptures(this Regex regex, string input)
         {
-            foreach (var match in EnumerateMatches(regex, input))
+            foreach (Match match in EnumerateMatches(regex, input))
             {
                 for (int i = 0; i < match.Groups.Count; i++)
                 {
-                    var group = match.Groups[i];
+                    Group group = match.Groups[i];
                     if (group.Success)
                     {
                         for (int j = 0; j < group.Captures.Count; j++)
@@ -226,9 +226,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> or <paramref name="groupName"/> is <c>null</c>.</exception>
         public static IEnumerable<Capture> EnumerateCaptures(this Regex regex, string input, string groupName)
         {
-            foreach (var match in EnumerateMatches(regex, input))
+            foreach (Match match in EnumerateMatches(regex, input))
             {
-                var group = match.Groups[groupName];
+                Group group = match.Groups[groupName];
                 if (group.Success)
                 {
                     for (int i = 0; i < group.Captures.Count; i++)
@@ -247,9 +247,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         public static IEnumerable<Capture> EnumerateCaptures(this Regex regex, string input, int groupNumber)
         {
-            foreach (var match in EnumerateMatches(regex, input))
+            foreach (Match match in EnumerateMatches(regex, input))
             {
-                var group = match.Groups[groupNumber];
+                Group group = match.Groups[groupNumber];
                 if (group.Success)
                 {
                     for (int i = 0; i < group.Captures.Count; i++)

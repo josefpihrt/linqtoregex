@@ -199,7 +199,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
 
         public static Pattern CSharpEscapedTextLiteral()
         {
-            var chars = MaybeMany(!Chars.QuoteMark().Backslash().NewLineChar());
+            QuantifiedGroup chars = MaybeMany(!Chars.QuoteMark().Backslash().NewLineChar());
 
             return SurroundQuoteMarks(chars + MaybeMany(Backslash().NotNewLineChar() + chars));
         }
@@ -213,7 +213,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
 
         public static Pattern CSharpCharacterLiteral()
         {
-            var chars = MaybeMany(!Chars.Apostrophe().Backslash().NewLineChar());
+            QuantifiedGroup chars = MaybeMany(!Chars.Apostrophe().Backslash().NewLineChar());
 
             return SurroundApostrophes(chars + MaybeMany(Backslash().NotNewLineChar() + chars));
         }
@@ -235,9 +235,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
 
         public static Pattern EmailAddress()
         {
-            var left = OneMany(Chars.Alphanumeric() + "!#$%&'*+/=?^_`{|}~-");
+            QuantifiedGroup left = OneMany(Chars.Alphanumeric() + "!#$%&'*+/=?^_`{|}~-");
 
-            var right = Maybe(MaybeMany(Chars.Alphanumeric() + "-") + Alphanumeric());
+            QuantifiedGroup right = Maybe(MaybeMany(Chars.Alphanumeric() + "-") + Alphanumeric());
 
             return NoncapturingGroup(
                 left

@@ -44,7 +44,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
 
         private static Pattern TextPart()
         {
-            var whileNot = WhileNotChar('\\', '{', '"');
+            QuantifiedPattern whileNot = WhileNotChar('\\', '{', '"');
 
             return NamedGroup("text",
                 whileNot
@@ -60,7 +60,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
 
         private static Pattern CodePart()
         {
-            var whileNot = WhileNotChar('\'', '"', '@', '/', '}', '$');
+            QuantifiedPattern whileNot = WhileNotChar('\'', '"', '@', '/', '}', '$');
 
             return whileNot
                 + MaybeMany(

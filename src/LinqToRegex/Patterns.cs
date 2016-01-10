@@ -4327,7 +4327,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         private static Pattern BalanceChar(char open, char close, string groupName, string openGroupName)
         {
-            var whileNot = WhileNotChar(open, close);
+            QuantifiedPattern whileNot = WhileNotChar(open, close);
 
             return open
                 + NamedGroup(groupName,

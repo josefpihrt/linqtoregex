@@ -31,7 +31,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 var items = _content as IEnumerable;
                 if (items != null)
                 {
-                    foreach (var item in items)
+                    foreach (object item in items)
                         builder.Append(item);
                 }
             }

@@ -69,7 +69,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
 
             for (int i = 0; i < match.Groups.Count; i++)
             {
-                var group = match.Groups[i];
+                Group group = match.Groups[i];
                 if (group.Success)
                 {
                     for (int j = 0; j < group.Captures.Count; j++)
@@ -90,7 +90,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             if (match == null)
                 throw new ArgumentNullException(nameof(match));
 
-            var group = match.Groups[groupName];
+            Group group = match.Groups[groupName];
             if (group.Success)
             {
                 for (int i = 0; i < group.Captures.Count; i++)
@@ -110,7 +110,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             if (match == null)
                 throw new ArgumentNullException(nameof(match));
 
-            var group = match.Groups[groupNumber];
+            Group group = match.Groups[groupNumber];
             if (group.Success)
             {
                 for (int i = 0; i < group.Captures.Count; i++)

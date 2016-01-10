@@ -23,7 +23,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             if (matches == null)
                 throw new ArgumentNullException(nameof(matches));
 
-            foreach (var match in matches)
+            foreach (Match match in matches)
             {
                 for (int i = 0; i < match.Groups.Count; i++)
                     yield return match.Groups[i];
@@ -45,7 +45,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             if (groupName == null)
                 throw new ArgumentNullException(nameof(groupName));
 
-            foreach (var match in matches)
+            foreach (Match match in matches)
                 yield return match.Groups[groupName];
         }
 
@@ -61,7 +61,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             if (matches == null)
                 throw new ArgumentNullException(nameof(matches));
 
-            foreach (var match in matches)
+            foreach (Match match in matches)
                 yield return match.Groups[groupNumber];
         }
 
@@ -73,11 +73,11 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="matches"/> is <c>null</c>.</exception>
         public static IEnumerable<Group> EnumerateSuccessGroups(this IEnumerable<Match> matches)
         {
-            foreach (var match in matches)
+            foreach (Match match in matches)
             {
                 for (int i = 0; i < match.Groups.Count; i++)
                 {
-                    var group = match.Groups[i];
+                    Group group = match.Groups[i];
 
                     if (group.Success)
                         yield return group;
@@ -94,9 +94,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="matches"/> or <paramref name="groupName"/> is <c>null</c>.</exception>
         public static IEnumerable<Group> EnumerateSuccessGroups(this IEnumerable<Match> matches, string groupName)
         {
-            foreach (var match in matches)
+            foreach (Match match in matches)
             {
-                var group = match.Groups[groupName];
+                Group group = match.Groups[groupName];
 
                 if (group.Success)
                     yield return group;
@@ -112,9 +112,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="matches"/> is <c>null</c>.</exception>
         public static IEnumerable<Group> EnumerateSuccessGroups(this IEnumerable<Match> matches, int groupNumber)
         {
-            foreach (var match in matches)
+            foreach (Match match in matches)
             {
-                var group = match.Groups[groupNumber];
+                Group group = match.Groups[groupNumber];
 
                 if (group.Success)
                     yield return group;
@@ -129,11 +129,11 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="matches"/> is <c>null</c>.</exception>
         public static IEnumerable<Capture> EnumerateCaptures(this IEnumerable<Match> matches)
         {
-            foreach (var match in matches)
+            foreach (Match match in matches)
             {
                 for (int i = 0; i < match.Groups.Count; i++)
                 {
-                    var group = match.Groups[i];
+                    Group group = match.Groups[i];
                     if (group.Success)
                     {
                         for (int j = 0; j < group.Captures.Count; j++)
@@ -152,9 +152,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="matches"/> or <paramref name="groupName"/> is <c>null</c>.</exception>
         public static IEnumerable<Capture> EnumerateCaptures(this IEnumerable<Match> matches, string groupName)
         {
-            foreach (var match in matches)
+            foreach (Match match in matches)
             {
-                var group = match.Groups[groupName];
+                Group group = match.Groups[groupName];
                 if (group.Success)
                 {
                     for (int i = 0; i < group.Captures.Count; i++)
@@ -172,9 +172,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="matches"/> is <c>null</c>.</exception>
         public static IEnumerable<Capture> EnumerateCaptures(this IEnumerable<Match> matches, int groupNumber)
         {
-            foreach (var match in matches)
+            foreach (Match match in matches)
             {
-                var group = match.Groups[groupNumber];
+                Group group = match.Groups[groupNumber];
                 if (group.Success)
                 {
                     for (int i = 0; i < group.Captures.Count; i++)
@@ -194,7 +194,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             if (groups == null)
                 throw new ArgumentNullException(nameof(groups));
 
-            foreach (var group in groups)
+            foreach (Group group in groups)
             {
                 for (int i = 0; i < group.Captures.Count; i++)
                     yield return group.Captures[i];
@@ -227,7 +227,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             if (captures == null)
                 throw new ArgumentNullException(nameof(captures));
 
-            foreach (var capture in captures)
+            foreach (Capture capture in captures)
                 yield return capture.Length;
         }
 
@@ -242,7 +242,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             if (captures == null)
                 throw new ArgumentNullException(nameof(captures));
 
-            foreach (var capture in captures)
+            foreach (Capture capture in captures)
                 yield return capture.Value;
         }
     }
