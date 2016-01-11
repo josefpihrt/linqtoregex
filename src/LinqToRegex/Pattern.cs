@@ -113,7 +113,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         }
 
         /// <summary>
-        /// Constructs a pattern text that represents the current instance. with regex options that modify the pattern.
+        /// Constructs a pattern text that represents the current instance with regex options that modify the pattern.
         /// </summary>
         /// <param name="options">A bitwise combination of the enumeration values that modify the pattern.</param>
         /// <returns></returns>
@@ -123,7 +123,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         }
 
         /// <summary>
-        /// Constructs a pattern text that represents the current instance. with options that modify the pattern.
+        /// Constructs a pattern text that represents the current instance with options that modify the pattern.
         /// </summary>
         /// <param name="options">A bitwise combination of the enumeration values that modify the pattern.</param>
         /// <returns></returns>
@@ -133,7 +133,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         }
 
         /// <summary>
-        /// Constructs a pattern text that represents the current instance. with settings that modify the pattern.
+        /// Constructs a pattern text that represents the current instance with settings that modify the pattern.
         /// </summary>
         /// <param name="settings">A settings that modify the pattern.</param>
         /// <returns></returns>
