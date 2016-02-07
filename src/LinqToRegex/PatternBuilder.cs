@@ -49,11 +49,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             _sb = new StringBuilder();
             _fFormat = settings.HasOptions(PatternOptions.Format);
             _fComment = _fFormat && settings.HasOptions(PatternOptions.Comment);
-#if DEBUG
             _fInlineOptions = _fFormat && settings.HasOptions(PatternOptions.InlineOptions);
-#else
-            _fInlineOptions = false;
-#endif
             _fBuilder = _fComment || _fInlineOptions;
             _fLiteral = settings.HasOptions(PatternOptions.CSharpLiteral) || settings.HasOptions(PatternOptions.VisualBasicLiteral);
             _settings = settings;

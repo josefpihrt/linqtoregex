@@ -1877,7 +1877,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return AppendInternal(Patterns.Character(value));
         }
 
-#if DEBUG
         /// <summary>
         /// Appends a pattern that matches a specified character one or more times.
         /// </summary>
@@ -1940,7 +1939,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             return AppendInternal(Patterns.Characters(value));
         }
-#endif
 
         /// <summary>
         /// Appends a pattern that matches a character that is not a specified character.

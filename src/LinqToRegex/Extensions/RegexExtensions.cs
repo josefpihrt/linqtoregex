@@ -258,7 +258,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             }
         }
 
-#if DEBUG
         public static string ReplaceMatchChar(this Regex regex, string input, char replacement)
         {
             if (regex == null)
@@ -288,7 +287,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
 
             return RegexReplace.ReplaceGroups(regex, input, groupNumber, group => new string(replacement, group.Length));
         }
-#endif
 
         /// <summary>
         /// Splits the specified input string at the positions defined by the regular expression into an enumerable collection of strings.

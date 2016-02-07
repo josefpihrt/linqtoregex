@@ -1174,7 +1174,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return CharGroup.Create(value, false);
         }
 
-#if DEBUG
         /// <summary>
         /// Returns a pattern that matches a specified character one or more times.
         /// </summary>
@@ -1237,7 +1236,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             return OneMany(Character(value));
         }
-#endif
 
         /// <summary>
         /// Returns a pattern that matches a character that is not a specified character.
