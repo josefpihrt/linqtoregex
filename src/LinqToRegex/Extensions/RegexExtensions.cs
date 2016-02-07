@@ -256,15 +256,32 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             }
         }
 
-        public static string ReplaceMatchChar(this Regex regex, string input, char replacement)
+        /// <summary>
+        /// Within a specified input string, replaces all strings that match the regular expression with a string where each character is replaced with the specified character.
+        /// </summary>
+        /// <param name="regex">The regular expression to be matched.</param>
+        /// <param name="input">The string to search for a match.</param>
+        /// <param name="replacementChar">The replacement char.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
+        public static string ReplaceMatchChar(this Regex regex, string input, char replacementChar)
         {
             if (regex == null)
                 throw new ArgumentNullException(nameof(regex));
 
-            return regex.Replace(input, match => new string(replacement, match.Length));
+            return regex.Replace(input, match => new string(replacementChar, match.Length));
         }
 
-        public static string ReplaceGroupChar(this Regex regex, string input, char replacement, string groupName)
+        /// <summary>
+        /// Within a specified input string, replaces all groups with the specified name that match the regular expression with a string where each character is replaced with the specified character.
+        /// </summary>
+        /// <param name="regex">The regular expression to be matched.</param>
+        /// <param name="input">The string to search for a match.</param>
+        /// <param name="replacementChar">The replacement char.</param>
+        /// <param name="groupName">A name of the group.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
+        public static string ReplaceGroupChar(this Regex regex, string input, char replacementChar, string groupName)
         {
             if (regex == null)
                 throw new ArgumentNullException(nameof(regex));
@@ -272,10 +289,19 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             if (input == null)
                 throw new ArgumentNullException(nameof(input));
 
-            return RegexReplace.ReplaceGroups(regex, input, groupName, group => new string(replacement, group.Length));
+            return RegexReplace.ReplaceGroups(regex, input, groupName, group => new string(replacementChar, group.Length));
         }
 
-        public static string ReplaceGroupChar(this Regex regex, string input, char replacement, int groupNumber)
+        /// <summary>
+        /// Within a specified input string, replaces all groups with the specified number that match the regular expression with a string where each character is replaced with the specified character.
+        /// </summary>
+        /// <param name="regex">The regular expression to be matched.</param>
+        /// <param name="input">The string to search for a match.</param>
+        /// <param name="replacementChar">The replacement char.</param>
+        /// <param name="groupNumber">A number of the group.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
+        public static string ReplaceGroupChar(this Regex regex, string input, char replacementChar, int groupNumber)
         {
             if (regex == null)
                 throw new ArgumentNullException(nameof(regex));
@@ -283,7 +309,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             if (input == null)
                 throw new ArgumentNullException(nameof(input));
 
-            return RegexReplace.ReplaceGroups(regex, input, groupNumber, group => new string(replacement, group.Length));
+            return RegexReplace.ReplaceGroups(regex, input, groupNumber, group => new string(replacementChar, group.Length));
         }
 
         /// <summary>

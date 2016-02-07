@@ -4,11 +4,25 @@ using System;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
+    /// <summary>
+    /// Provides enumerated values to use when splitting a text.
+    /// </summary>
     [Flags]
     public enum SplitOptions
     {
+        /// <summary>
+        /// Specifies that no options are set.
+        /// </summary>
         None = 0,
+
+        /// <summary>
+        /// Specifies that group values will be omitted from the result.
+        /// </summary>
         OmitGroupValues = 1,
+
+        /// <summary>
+        /// Specifies that empty values will be omitted from the result.
+        /// </summary>
         OmitEmptyValues = 2
     }
 }
