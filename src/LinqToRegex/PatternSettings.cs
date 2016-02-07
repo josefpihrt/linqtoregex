@@ -11,8 +11,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     {
         private const string InitialNewLine = "\r\n";
 
-        private char[] CoreNewLine = new char[] { '\r', '\n' };
-
+        private char[] _coreNewLine = new char[] { '\r', '\n' };
         private int _indentSize;
         private PatternOptions _options;
 
@@ -78,13 +77,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         public string NewLine
         {
-            get { return new string(CoreNewLine); }
+            get { return new string(_coreNewLine); }
             set
             {
                 if (value == null)
                     value = InitialNewLine;
 
-                CoreNewLine = value.ToCharArray();
+                _coreNewLine = value.ToCharArray();
             }
         }
     }
