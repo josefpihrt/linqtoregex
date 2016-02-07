@@ -1,34 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<RuleSet Name="Pihrtsoft" Description="Code analysis rules for Pihrtsoft" ToolsVersion="14.0">
+<RuleSet Name="Pihrtsoft" ToolsVersion="14.0">
   <IncludeAll Action="Warning" />
   <Rules AnalyzerId="CSharpEssentials" RuleNamespace="CSharpEssentials">
-    <Rule Id="CSE0003" Action="None" />
+    <Rule Id="CSE0003" Action="Hidden" />
   </Rules>
   <Rules AnalyzerId="CodeCracker.CSharp" RuleNamespace="CodeCracker.CSharp">
     <Rule Id="CC0001" Action="None" />
     <Rule Id="CC0006" Action="None" />
+    <Rule Id="CC0008" Action="None" />
     <Rule Id="CC0013" Action="None" />
     <Rule Id="CC0014" Action="None" />
     <Rule Id="CC0015" Action="None" />
-    <Rule Id="CC0030" Action="None" />
+    <Rule Id="CC0016" Action="None" />
+    <Rule Id="CC0022" Action="None" />
     <Rule Id="CC0031" Action="None" />
-    <Rule Id="CC0045" Action="None" />
+    <Rule Id="CC0037" Action="None" />
     <Rule Id="CC0057" Action="None" />
+    <Rule Id="CC0068" Action="None" />
+    <Rule Id="CC0081" Action="None" />
+    <Rule Id="CC0090" Action="None" />
     <Rule Id="CC0105" Action="None" />
   </Rules>
   <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+    <Rule Id="CA1026" Action="None" />
     <Rule Id="CA1303" Action="None" />
     <Rule Id="CA1305" Action="None" />
     <Rule Id="CA2000" Action="None" />
     <Rule Id="CA2104" Action="None" />
-    <Rule Id="CA2225" Action="None" />
+  </Rules>
+  <Rules AnalyzerId="Pihrtsoft.CodeAnalysis.SpeedCode" RuleNamespace="Pihrtsoft.CodeAnalysis.SpeedCode">
+    <Rule Id="SC0026" Action="Warning" />
   </Rules>
   <Rules AnalyzerId="RefactoringEssentials" RuleNamespace="RefactoringEssentials">
+    <Rule Id="RECS0002" Action="None" />
+    <Rule Id="RECS0004" Action="None" />
+    <Rule Id="RECS0018" Action="None" />
     <Rule Id="RECS0033" Action="None" />
+    <Rule Id="RECS0070" Action="None" />
     <Rule Id="RECS0085" Action="None" />
     <Rule Id="RECS0091" Action="None" />
     <Rule Id="RECS0104" Action="None" />
     <Rule Id="RECS0113" Action="None" />
     <Rule Id="RECS0129" Action="None" />
+    <Rule Id="RECS0145" Action="None" />
+    <Rule Id="RECS0147" Action="None" />
   </Rules>
 </RuleSet>
