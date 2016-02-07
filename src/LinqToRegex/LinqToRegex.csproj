@@ -36,7 +36,7 @@
     <DocumentationFile>bin\Release\Pihrtsoft.Text.RegularExpressions.Linq.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>false</SignAssembly>
+    <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>LinqToRegex.pfx</AssemblyOriginatorKeyFile>
