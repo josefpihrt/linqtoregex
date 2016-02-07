@@ -325,6 +325,19 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         }
 
         /// <summary>
+        /// Splits the specified input string at the positions defined by the regular expression into an enumerable collection of strings, using the specified split options.
+        /// </summary>
+        /// <param name="regex">The regular expression to be matched.</param>
+        /// <param name="input">The string to split.</param>
+        /// <param name="splitOptions">A bitwise combination of the enumeration values that specify options.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
+        public static IEnumerable<string> EnumerateSplit(this Regex regex, string input, SplitOptions splitOptions)
+        {
+            return RegexSplit.EnumerateValues(regex, input, splitOptions);
+        }
+
+        /// <summary>
         /// Splits the specified input string a specified number of times at the positions defined by the regular expression into an enumerable collection of strings.
         /// </summary>
         /// <param name="regex">The regular expression to be matched.</param>
@@ -336,6 +349,21 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         public static IEnumerable<string> EnumerateSplit(this Regex regex, string input, int count)
         {
             return RegexSplit.EnumerateValues(regex, input, count);
+        }
+
+        /// <summary>
+        /// Splits the specified input string a specified number of times at the positions defined by the regular expression into an enumerable collection of strings, using the specified split options.
+        /// </summary>
+        /// <param name="regex">The regular expression to be matched.</param>
+        /// <param name="input">The string to split.</param>
+        /// <param name="count">The maximum number of times the input can be split.</param>
+        /// <param name="splitOptions">A bitwise combination of the enumeration values that specify options.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="count"/> is less than zero.</exception>
+        public static IEnumerable<string> EnumerateSplit(this Regex regex, string input, int count, SplitOptions splitOptions)
+        {
+            return RegexSplit.EnumerateValues(regex, input, count, splitOptions);
         }
 
         /// <summary>
@@ -354,6 +382,25 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         public static IEnumerable<string> EnumerateSplit(this Regex regex, string input, int count, int startAt)
         {
             return RegexSplit.EnumerateValues(regex, input, count, startAt);
+        }
+
+        /// <summary>
+        /// Splits the specified input string a specified number of times at the positions defined by the regular expression into an enumerable collection of strings, using the specified split options.
+        /// The search starts at a specified position in the input string.
+        /// </summary>
+        /// <param name="regex">The regular expression to be matched.</param>
+        /// <param name="input">The string to split.</param>
+        /// <param name="count">The maximum number of times the input can be split.</param>
+        /// <param name="startAt">The position in the input string where the search starts.</param>
+        /// <param name="splitOptions">A bitwise combination of the enumeration values that specify options.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
+        /// <exception cref="ArgumentOutOfRangeException"><paramref name="count"/> is less than zero.
+        /// <para><paramref name="startAt"/> is less than zero or greater than the length of <paramref name="input"/>.</para>
+        /// </exception>
+        public static IEnumerable<string> EnumerateSplit(this Regex regex, string input, int count, int startAt, SplitOptions splitOptions)
+        {
+            return RegexSplit.EnumerateValues(regex, input, count, startAt, splitOptions);
         }
 
         /// <summary>
