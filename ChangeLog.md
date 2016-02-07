@@ -1,3 +1,11 @@
+#### LINQ to Regex 2.3.0 (2016-02-07)
+
+* New PatternOptions value: InlineOptions.
+* New enum SplitOptions with values: None, OmitGroupValues, OmitEmptyValues.
+* New extension methods that extends Regex: ReplaceMatchChar, ReplaceGroupChar.
+* New extension method that extends Regex: EnumerateSplit (3 overloads added).
+* New pattern: Characters.
+
 #### LINQ to Regex 2.2.2 (2015-11-19)
 
 * New patterns: LatinLetters, ArabicDigits, Spaces, RequireGroup, DisallowGroup.
