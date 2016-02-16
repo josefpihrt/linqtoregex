@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqToRegex", "src\LinqToRegex\LinqToRegex.csproj", "{A5C864F0-D0A3-4A3C-8854-CE4EE631901B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqToRegex", "src\LinqToRegex\LinqToRegex.csproj", "{DFEAF84F-2768-4B4A-8250-7D048F034989}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples", "Examples\Examples.csproj", "{3B7F4B7E-A1FB-4E0E-B670-DC6F9123941D}"
 EndProject
@@ -13,10 +13,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A5C864F0-D0A3-4A3C-8854-CE4EE631901B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A5C864F0-D0A3-4A3C-8854-CE4EE631901B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A5C864F0-D0A3-4A3C-8854-CE4EE631901B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A5C864F0-D0A3-4A3C-8854-CE4EE631901B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFEAF84F-2768-4B4A-8250-7D048F034989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFEAF84F-2768-4B4A-8250-7D048F034989}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFEAF84F-2768-4B4A-8250-7D048F034989}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFEAF84F-2768-4B4A-8250-7D048F034989}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3B7F4B7E-A1FB-4E0E-B670-DC6F9123941D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3B7F4B7E-A1FB-4E0E-B670-DC6F9123941D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B7F4B7E-A1FB-4E0E-B670-DC6F9123941D}.Release|Any CPU.ActiveCfg = Release|Any CPU

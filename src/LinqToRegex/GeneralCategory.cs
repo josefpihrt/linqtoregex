@@ -1,6 +1,6 @@
 ﻿// Copyright (c) Josef Pihrt. All rights reserved. Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
-using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
@@ -12,223 +12,223 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// All control characters. This includes the Cc, Cf, Cs, Co, and Cn categories.
         /// </summary>
-        [Description("All control characters. This includes the Cc, Cf, Cs, Co, and Cn categories.")]
+        [Display(Description = "All control characters. This includes the Cc, Cf, Cs, Co, and Cn categories.")]
         AllControlCharacters,
 
         /// <summary>
         /// All diacritic marks. This includes the Mn, Mc, and Me categories.
         /// </summary>
-        [Description("All diacritic marks. This includes the Mn, Mc, and Me categories.")]
+        [Display(Description = "All diacritic marks. This includes the Mn, Mc, and Me categories.")]
         AllDiacriticMarks,
 
         /// <summary>
         /// All letter characters. This includes the Lu, Ll, Lt, Lm, and Lo characters.
         /// </summary>
-        [Description("All letter characters. This includes the Lu, Ll, Lt, Lm, and Lo characters.")]
+        [Display(Description = "All letter characters. This includes the Lu, Ll, Lt, Lm, and Lo characters.")]
         AllLetterCharacters,
 
         /// <summary>
         /// All numbers. This includes the Nd, Nl, and No categories.
         /// </summary>
-        [Description("All numbers. This includes the Nd, Nl, and No categories.")]
+        [Display(Description = "All numbers. This includes the Nd, Nl, and No categories.")]
         AllNumbers,
 
         /// <summary>
         /// All punctuation characters. This includes the Pc, Pd, Ps, Pe, Pi, Pf, and Po categories.
         /// </summary>
-        [Description("All punctuation characters. This includes the Pc, Pd, Ps, Pe, Pi, Pf, and Po categories.")]
+        [Display(Description = "All punctuation characters. This includes the Pc, Pd, Ps, Pe, Pi, Pf, and Po categories.")]
         AllPunctuationCharacters,
 
         /// <summary>
         /// All separator characters. This includes the Zs, Zl, and Zp categories.
         /// </summary>
-        [Description("All separator characters. This includes the Zs, Zl, and Zp categories.")]
+        [Display(Description = "All separator characters. This includes the Zs, Zl, and Zp categories.")]
         AllSeparatorCharacters,
 
         /// <summary>
         /// All symbols. This includes the Sm, Sc, Sk, and So categories.
         /// </summary>
-        [Description("All symbols. This includes the Sm, Sc, Sk, and So categories.")]
+        [Display(Description = "All symbols. This includes the Sm, Sc, Sk, and So categories.")]
         AllSymbols,
 
         /// <summary>
         /// Letter, Lowercase
         /// </summary>
-        [Description("Letter, Lowercase")]
+        [Display(Description = "Letter, Lowercase")]
         LetterLowercase,
 
         /// <summary>
         /// Letter, Modifier
         /// </summary>
-        [Description("Letter, Modifier")]
+        [Display(Description = "Letter, Modifier")]
         LetterModifier,
 
         /// <summary>
         /// Letter, Other
         /// </summary>
-        [Description("Letter, Other")]
+        [Display(Description = "Letter, Other")]
         LetterOther,
 
         /// <summary>
         /// Letter, Titlecase
         /// </summary>
-        [Description("Letter, Titlecase")]
+        [Display(Description = "Letter, Titlecase")]
         LetterTitlecase,
 
         /// <summary>
         /// Letter, Uppercase
         /// </summary>
-        [Description("Letter, Uppercase")]
+        [Display(Description = "Letter, Uppercase")]
         LetterUppercase,
 
         /// <summary>
         /// Mark, Enclosing
         /// </summary>
-        [Description("Mark, Enclosing")]
+        [Display(Description = "Mark, Enclosing")]
         MarkEnclosing,
 
         /// <summary>
         /// Mark, Nonspacing
         /// </summary>
-        [Description("Mark, Nonspacing")]
+        [Display(Description = "Mark, Nonspacing")]
         MarkNonspacing,
 
         /// <summary>
         /// Mark, Spacing Combining
         /// </summary>
-        [Description("Mark, Spacing Combining")]
+        [Display(Description = "Mark, Spacing Combining")]
         MarkSpacingCombining,
 
         /// <summary>
         /// Number, Decimal Digit
         /// </summary>
-        [Description("Number, Decimal Digit")]
+        [Display(Description = "Number, Decimal Digit")]
         NumberDecimalDigit,
 
         /// <summary>
         /// Number, Letter
         /// </summary>
-        [Description("Number, Letter")]
+        [Display(Description = "Number, Letter")]
         NumberLetter,
 
         /// <summary>
         /// Number, Other
         /// </summary>
-        [Description("Number, Other")]
+        [Display(Description = "Number, Other")]
         NumberOther,
 
         /// <summary>
         /// Other, Control
         /// </summary>
-        [Description("Other, Control")]
+        [Display(Description = "Other, Control")]
         OtherControl,
 
         /// <summary>
         /// Other, Format
         /// </summary>
-        [Description("Other, Format")]
+        [Display(Description = "Other, Format")]
         OtherFormat,
 
         /// <summary>
         /// Other, Not Assigned (no characters have this property)
         /// </summary>
-        [Description("Other, Not Assigned (no characters have this property)")]
+        [Display(Description = "Other, Not Assigned (no characters have this property)")]
         OtherNotAssigned,
 
         /// <summary>
         /// Other, Private Use
         /// </summary>
-        [Description("Other, Private Use")]
+        [Display(Description = "Other, Private Use")]
         OtherPrivateUse,
 
         /// <summary>
         /// Other, Surrogate
         /// </summary>
-        [Description("Other, Surrogate")]
+        [Display(Description = "Other, Surrogate")]
         OtherSurrogate,
 
         /// <summary>
         /// Punctuation, Close
         /// </summary>
-        [Description("Punctuation, Close")]
+        [Display(Description = "Punctuation, Close")]
         PunctuationClose,
 
         /// <summary>
         /// Punctuation, Connector
         /// </summary>
-        [Description("Punctuation, Connector")]
+        [Display(Description = "Punctuation, Connector")]
         PunctuationConnector,
 
         /// <summary>
         /// Punctuation, Dash
         /// </summary>
-        [Description("Punctuation, Dash")]
+        [Display(Description = "Punctuation, Dash")]
         PunctuationDash,
 
         /// <summary>
         /// Punctuation, Final quote (may behave like Ps or Pe depending on usage)
         /// </summary>
-        [Description("Punctuation, Final quote (may behave like Ps or Pe depending on usage)")]
+        [Display(Description = "Punctuation, Final quote (may behave like Ps or Pe depending on usage)")]
         PunctuationFinalQuote,
 
         /// <summary>
         /// Punctuation, Initial quote (may behave like Ps or Pe depending on usage)
         /// </summary>
-        [Description("Punctuation, Initial quote (may behave like Ps or Pe depending on usage)")]
+        [Display(Description = "Punctuation, Initial quote (may behave like Ps or Pe depending on usage)")]
         PunctuationInitialQuote,
 
         /// <summary>
         /// Punctuation, Open
         /// </summary>
-        [Description("Punctuation, Open")]
+        [Display(Description = "Punctuation, Open")]
         PunctuationOpen,
 
         /// <summary>
         /// Punctuation, Other
         /// </summary>
-        [Description("Punctuation, Other")]
+        [Display(Description = "Punctuation, Other")]
         PunctuationOther,
 
         /// <summary>
         /// Separator, Line
         /// </summary>
-        [Description("Separator, Line")]
+        [Display(Description = "Separator, Line")]
         SeparatorLine,
 
         /// <summary>
         /// Separator, Paragraph
         /// </summary>
-        [Description("Separator, Paragraph")]
+        [Display(Description = "Separator, Paragraph")]
         SeparatorParagraph,
 
         /// <summary>
         /// Separator, Space
         /// </summary>
-        [Description("Separator, Space")]
+        [Display(Description = "Separator, Space")]
         SeparatorSpace,
 
         /// <summary>
         /// Symbol, Currency
         /// </summary>
-        [Description("Symbol, Currency")]
+        [Display(Description = "Symbol, Currency")]
         SymbolCurrency,
 
         /// <summary>
         /// Symbol, Math
         /// </summary>
-        [Description("Symbol, Math")]
+        [Display(Description = "Symbol, Math")]
         SymbolMath,
 
         /// <summary>
         /// Symbol, Modifier
         /// </summary>
-        [Description("Symbol, Modifier")]
+        [Display(Description = "Symbol, Modifier")]
         SymbolModifier,
 
         /// <summary>
         /// Symbol, Other
         /// </summary>
-        [Description("Symbol, Other")]
+        [Display(Description = "Symbol, Other")]
         SymbolOther,
     }
 }
