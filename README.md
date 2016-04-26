@@ -379,4 +379,4 @@ CDATA      # text
 
 ### Desktop IDE for .NET Regular Expressions
 
-If you are looking for a desktop IDE for .NET regular expressions, try [Regexator](http://www.regexator.net).
+If you are looking for a desktop IDE for .NET regular expressions, try [Regexator](http://pihrt.net/Regexator).
