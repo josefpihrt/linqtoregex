@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>LinqToRegex</id>
+    <version>2.3.0</version>
+    <title>LINQ to Regex</title>
+    <authors>Josef Pihrt</authors>
+    <owners>Josef Pihrt</owners>
+    <licenseUrl>https://github.com/JosefPihrt/LinqToRegex/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/JosefPihrt/LinqToRegex</projectUrl>
+    <iconUrl>http://pihrt.net/images/regexator.ico</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>LINQ to Regex library provides language integrated access to the .NET regular expressions.</description>
+    <summary>LINQ to Regex library provides language integrated access to the .NET regular expressions.</summary>
+    <copyright>Copyright 2014-2016 Josef Pihrt</copyright>
+    <tags>Regex RegularExpressions LINQ</tags>
+  </metadata>
+</package>

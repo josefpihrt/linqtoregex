@@ -37,6 +37,7 @@
     <CodeAnalysisRuleSet>..\..\LinqToRegex.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="LinqToRegex.nuspec" />
     <None Include="project.json" />
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
