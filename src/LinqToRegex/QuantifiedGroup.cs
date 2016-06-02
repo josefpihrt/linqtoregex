@@ -10,8 +10,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     public abstract partial class QuantifiedGroup
         : QuantifiedPattern
     {
-        private readonly object _content;
-
         /// <summary>
         /// Initializes a new instance of the <see cref="QuantifiedGroup"/> class with a specified content.
         /// </summary>
@@ -22,7 +20,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (content == null)
                 throw new ArgumentNullException(nameof(content));
 
-            _content = content;
+            Content = content;
         }
 
         /// <summary>
@@ -59,6 +57,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             }
         }
 
-        internal object Content => _content;
+        internal object Content { get; }
     }
 }

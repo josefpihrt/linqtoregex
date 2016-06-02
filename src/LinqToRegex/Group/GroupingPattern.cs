@@ -10,8 +10,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     public abstract class GroupingPattern
         : QuantifiablePattern
     {
-        private readonly object _content;
-
         /// <summary>
         /// Initializes a new instance of the <see cref="GroupingPattern"/> class.
         /// </summary>
@@ -29,7 +27,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (content == null)
                 throw new ArgumentNullException(nameof(content));
 
-            _content = content;
+            Content = content;
         }
 
         /// <summary>
@@ -42,9 +40,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (content == null)
                 throw new ArgumentNullException(nameof(content));
 
-            _content = content.Content;
+            Content = content.Content;
         }
 
-        internal object Content => _content;
+        internal object Content { get; }
     }
 }

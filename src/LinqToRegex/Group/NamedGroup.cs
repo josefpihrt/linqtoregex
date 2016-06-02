@@ -5,14 +5,12 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     internal sealed class NamedGroup
         : GroupingPattern
     {
-        private readonly string _name;
-
         public NamedGroup(string name, object content)
             : base(content)
         {
             RegexUtility.CheckGroupName(name, nameof(name));
 
-            _name = name;
+            Name = name;
         }
 
         internal override void AppendTo(PatternBuilder builder)
@@ -20,6 +18,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             builder.AppendNamedGroupInternal(Name, Content);
         }
 
-        public string Name => _name;
+        public string Name { get; }
     }
 }

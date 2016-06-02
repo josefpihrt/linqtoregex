@@ -8,7 +8,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     internal sealed class IfGroup
         : QuantifiablePattern
     {
-        private readonly string _groupName;
         private readonly object _trueContent;
         private readonly object _falseContent;
 
@@ -19,7 +18,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (trueContent == null)
                 throw new ArgumentNullException(nameof(trueContent));
 
-            _groupName = groupName;
+            GroupName = groupName;
             _trueContent = trueContent;
             _falseContent = falseContent;
         }
@@ -32,7 +31,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (trueContent == null)
                 throw new ArgumentNullException(nameof(trueContent));
 
-            _groupName = groupNumber.ToString(CultureInfo.InvariantCulture);
+            GroupName = groupNumber.ToString(CultureInfo.InvariantCulture);
             _trueContent = trueContent;
             _falseContent = falseContent;
         }
@@ -42,6 +41,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             builder.AppendIfGroupInternal(GroupName, _trueContent, _falseContent, false);
         }
 
-        public string GroupName => _groupName;
+        public string GroupName { get; }
     }
 }

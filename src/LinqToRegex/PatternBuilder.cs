@@ -16,7 +16,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     public sealed class PatternBuilder
     {
         private readonly StringBuilder _sb;
-        private readonly PatternSettings _settings;
         private Stack<Pattern> _patterns;
         private Stack<CharGrouping> _charGroupings;
         private RegexOptions _currentOptions;
@@ -52,7 +51,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             _fInlineOptions = _fFormat && settings.HasOptions(PatternOptions.InlineOptions);
             _fBuilder = _fComment || _fInlineOptions;
             _fLiteral = settings.HasOptions(PatternOptions.CSharpLiteral) || settings.HasOptions(PatternOptions.VisualBasicLiteral);
-            _settings = settings;
+            Settings = settings;
 
             if (_fBuilder)
                 _builder = new LineInfoBuilder();
@@ -1888,7 +1887,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Gets the <see cref="PatternSettings"/> object that modifies the pattern.
         /// </summary>
-        public PatternSettings Settings => _settings;
+        public PatternSettings Settings { get; }
 
         internal int Length => _sb.Length;
 

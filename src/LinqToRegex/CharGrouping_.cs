@@ -116,12 +116,11 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             : CharGrouping
         {
             private readonly GeneralCategory _category;
-            private readonly bool _negative;
 
             public GeneralCategoryCharGrouping(GeneralCategory category, bool negative)
             {
                 _category = category;
-                _negative = negative;
+                Negative = negative;
             }
 
             protected override void AppendItemContentTo(PatternBuilder builder)
@@ -132,19 +131,18 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 builder.AppendGeneralCategory(_category, Negative);
             }
 
-            public virtual bool Negative => _negative;
+            public virtual bool Negative { get; }
         }
 
         internal class NamedBlockCharGrouping
             : CharGrouping
         {
             private readonly NamedBlock _block;
-            private readonly bool _negative;
 
             public NamedBlockCharGrouping(NamedBlock block, bool negative)
             {
                 _block = block;
-                _negative = negative;
+                Negative = negative;
             }
 
             protected override void AppendItemContentTo(PatternBuilder builder)
@@ -155,7 +153,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 builder.AppendNamedBlock(_block, Negative);
             }
 
-            public virtual bool Negative => _negative;
+            public virtual bool Negative { get; }
         }
 
         internal class CharGroupingCharGrouping
