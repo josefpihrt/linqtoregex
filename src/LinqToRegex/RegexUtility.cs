@@ -158,8 +158,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (charCode <= 0xFF)
             {
                 return inCharGroup
-                    ? CharGroupEscapeModes[charCode]
-                    : EscapeModes[charCode];
+                    ? _charGroupEscapeModes[charCode]
+                    : _escapeModes[charCode];
             }
 
             return CharEscapeMode.None;
@@ -170,8 +170,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (charCode <= 0xFF)
             {
                 return inCharGroup
-                    ? CharGroupEscapeModes[charCode]
-                    : EscapeModes[charCode];
+                    ? _charGroupEscapeModes[charCode]
+                    : _escapeModes[charCode];
             }
 
             return CharEscapeMode.None;
@@ -373,7 +373,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static string GetBlockDesignation(NamedBlock block) => BlockDesignations[(int)block];
 
-        private static readonly CharEscapeMode[] EscapeModes = new CharEscapeMode[] {
+        private static readonly CharEscapeMode[] _escapeModes = new CharEscapeMode[] {
             // 0 0x00
             CharEscapeMode.AsciiHexadecimal,
             // 1 0x01
@@ -888,7 +888,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             CharEscapeMode.None,
         };
 
-        private static readonly CharEscapeMode[] CharGroupEscapeModes = new CharEscapeMode[] {
+        private static readonly CharEscapeMode[] _charGroupEscapeModes = new CharEscapeMode[] {
             // 0 0x00
             CharEscapeMode.AsciiHexadecimal,
             // 1 0x01
