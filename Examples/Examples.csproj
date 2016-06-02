@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <CodeAnalysisDictionary Include="AppDictionary.xml">
@@ -65,6 +66,10 @@
       <Project>{a5c864f0-d0a3-4a3c-8854-ce4ee631901b}</Project>
       <Name>LinqToRegex</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\CSharpAnalyzers.0.9.50.0\analyzers\dotnet\cs\Pihrtsoft.CodeAnalysis.Common.dll" />
+    <Analyzer Include="..\packages\CSharpAnalyzers.0.9.50.0\analyzers\dotnet\cs\Pihrtsoft.CodeAnalysis.CSharp.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
