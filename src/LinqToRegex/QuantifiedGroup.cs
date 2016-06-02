@@ -50,7 +50,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 if (exp != null)
                     return (exp.Previous != null);
 
-                string s = Content as string;
+                var s = Content as string;
 
                 if (s != null)
                     return s.Length == 0 || s.Length > 1;

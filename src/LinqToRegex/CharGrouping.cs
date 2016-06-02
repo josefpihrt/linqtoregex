@@ -504,7 +504,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             {
                 Stack<CharGrouping> stack = builder.CharGroupings;
                 int cnt = stack.Count;
-                CharGrouping item = this;
+                var item = this;
 
                 do
                 {

@@ -35,7 +35,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 var sb = new StringBuilder();
                 var stack = new Stack<Substitution>();
 
-                Substitution item = this;
+                var item = this;
                 do
                 {
                     stack.Push(item);

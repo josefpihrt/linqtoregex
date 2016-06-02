@@ -386,14 +386,14 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (value == null)
                 return;
 
-            Pattern pattern = value as Pattern;
+            var pattern = value as Pattern;
             if (pattern != null)
             {
                 Append(pattern);
                 return;
             }
 
-            string text = value as string;
+            var text = value as string;
             if (text != null)
             {
                 Append(text);
@@ -406,21 +406,21 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 return;
             }
 
-            CharGrouping charGrouping = value as CharGrouping;
+            var charGrouping = value as CharGrouping;
             if (charGrouping != null)
             {
                 Append(charGrouping);
                 return;
             }
 
-            object[] values = value as object[];
+            var values = value as object[];
             if (values != null)
             {
                 Append(values, mode);
                 return;
             }
 
-            IEnumerable items = value as IEnumerable;
+            var items = value as IEnumerable;
             if (items != null)
                 Append(items, mode);
         }

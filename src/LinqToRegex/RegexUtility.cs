@@ -208,7 +208,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 mode = GetEscapeModeInternal((int)input[i], inCharGroup);
                 if (mode != CharEscapeMode.None)
                 {
-                    StringBuilder sb = new StringBuilder();
+                    var sb = new StringBuilder();
                     char ch = input[i];
                     int lastPos;
                     sb.Append(input, 0, i);

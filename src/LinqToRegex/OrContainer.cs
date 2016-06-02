@@ -36,7 +36,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         private static object[] Combine(object[] left, object[] right)
         {
-            object[] result = new object[left.Length + right.Length];
+            var result = new object[left.Length + right.Length];
 
             Array.Copy(left, result, left.Length);
             Array.Copy(right, 0, result, left.Length, right.Length);
@@ -46,7 +46,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         private static object[] Combine(object[] left, object right)
         {
-            object[] result = new object[left.Length + 1];
+            var result = new object[left.Length + 1];
 
             Array.Copy(left, result, left.Length);
 
@@ -57,7 +57,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         private static object[] Combine(object left, object[] right)
         {
-            object[] result = new object[right.Length + 1];
+            var result = new object[right.Length + 1];
 
             result[0] = left;
 
