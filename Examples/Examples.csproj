@@ -9,9 +9,8 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Pihrtsoft.Text.RegularExpressions.Linq.Examples</RootNamespace>
     <AssemblyName>Pihrtsoft.Text.RegularExpressions.Linq.Examples</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -63,7 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\src\LinqToRegex\LinqToRegex.csproj">
-      <Project>{dfeaf84f-2768-4b4a-8250-7d048f034989}</Project>
+      <Project>{a5c864f0-d0a3-4a3c-8854-ce4ee631901b}</Project>
       <Name>LinqToRegex</Name>
     </ProjectReference>
   </ItemGroup>

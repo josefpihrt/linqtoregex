@@ -1,21 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
-    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DFEAF84F-2768-4B4A-8250-7D048F034989}</ProjectGuid>
+    <ProjectGuid>{A5C864F0-D0A3-4A3C-8854-CE4EE631901B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Pihrtsoft.Text.RegularExpressions.Linq</RootNamespace>
     <AssemblyName>Pihrtsoft.Text.RegularExpressions.Linq</AssemblyName>
-    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
-    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -25,6 +22,8 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\..\Pihrtsoft.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Debug\Pihrtsoft.Text.RegularExpressions.Linq.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -33,20 +32,31 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\..\Pihrtsoft.ruleset</CodeAnalysisRuleSet>
     <DocumentationFile>bin\Release\Pihrtsoft.Text.RegularExpressions.Linq.xml</DocumentationFile>
-    <CodeAnalysisRuleSet>..\..\LinqToRegex.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="LinqToRegex.nuspec" />
-    <None Include="project.json" />
-    <!-- A reference to the entire .NET Framework is automatically included -->
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Anchor\Assertion.cs" />
     <Compile Include="Anchor\BackAssertion.cs" />
     <Compile Include="Anchor\EndOfInput.cs" />
-    <Compile Include="Anchor\EndOfInputOrBeforeEndingLinefeed.cs" />
     <Compile Include="Anchor\EndOfLine.cs" />
+    <Compile Include="Anchor\EndOfInputOrBeforeEndingLinefeed.cs" />
     <Compile Include="Anchor\NegativeAssertion.cs" />
     <Compile Include="Anchor\NegativeBackAssertion.cs" />
     <Compile Include="Anchor\NegativeWordBoundary.cs" />
@@ -54,11 +64,16 @@
     <Compile Include="Anchor\StartOfInput.cs" />
     <Compile Include="Anchor\StartOfLine.cs" />
     <Compile Include="Anchor\WordBoundary.cs" />
+    <Compile Include="JoinAndSurroundContainer.cs" />
+    <Compile Include="RegexOptionsHelper.cs" />
+    <Compile Include="Extensions\CaptureExtensions.cs" />
+    <Compile Include="GroupEvaluator.cs" />
+    <Compile Include="RegexReplace.cs" />
+    <Compile Include="RegexSplit.cs" />
     <Compile Include="AnyChar.cs" />
     <Compile Include="AnyCharNative.cs" />
     <Compile Include="AsciiChar.cs" />
     <Compile Include="AsciiCharSurroundContainer.cs" />
-    <Compile Include="CaseAwareTextPattern.cs" />
     <Compile Include="CharClass.cs" />
     <Compile Include="CharEscapeMode.cs" />
     <Compile Include="CharGroup.cs" />
@@ -66,23 +81,23 @@
     <Compile Include="CharGroupings.cs" />
     <Compile Include="CharGrouping_.cs" />
     <Compile Include="CharGroup_.cs" />
-    <Compile Include="CharLineInfo.cs" />
+    <Compile Include="GeneralCategoryLineInfo.cs" />
     <Compile Include="CharPattern.cs" />
     <Compile Include="CharPattern_.cs" />
     <Compile Include="CharSubtraction.cs" />
+    <Compile Include="CharLineInfo.cs" />
+    <Compile Include="LineInfoCollection.cs" />
+    <Compile Include="LineInfo.cs" />
     <Compile Include="ConcatContainer.cs" />
     <Compile Include="ContentPattern.cs" />
     <Compile Include="ExceptionHelper.cs" />
     <Compile Include="Extensions\BaseGroupExtensions.cs" />
-    <Compile Include="Extensions\CaptureExtensions.cs" />
     <Compile Include="Extensions\EnumerableExtensions.cs" />
     <Compile Include="Extensions\GroupExtensions.cs" />
     <Compile Include="Extensions\MatchExtensions.cs" />
     <Compile Include="Extensions\RegexExtensions.cs" />
     <Compile Include="GeneralCategory.cs" />
-    <Compile Include="GeneralCategoryLineInfo.cs" />
     <Compile Include="GlobalSuppressions.cs" />
-    <Compile Include="GroupEvaluator.cs" />
     <Compile Include="GroupMode.cs" />
     <Compile Include="GroupNameReference.cs" />
     <Compile Include="GroupNumberReference.cs" />
@@ -99,12 +114,23 @@
     <Compile Include="IfAssert.cs" />
     <Compile Include="IfGroup.cs" />
     <Compile Include="INegateable.cs" />
-    <Compile Include="JoinAndSurroundContainer.cs" />
     <Compile Include="JoinContainer.cs" />
     <Compile Include="LazyQuantifier.cs" />
-    <Compile Include="LineInfo.cs" />
+    <Compile Include="CaseAwareTextPattern.cs" />
+    <Compile Include="QuantifierKind.cs" />
+    <Compile Include="SplitOptions.cs" />
+    <Compile Include="Substitution\NumberedGroupSubstitution.cs" />
+    <Compile Include="Substitution\CharSubstitution.cs" />
+    <Compile Include="TextUtility.cs" />
+    <Compile Include="Substitution\NamedGroupSubstitution.cs" />
+    <Compile Include="Substitution\BeforeMatchSubstitution.cs" />
+    <Compile Include="Substitution\AfterMatchSubstitution.cs" />
+    <Compile Include="Substitution\LastCapturedGroupSubstitution.cs" />
+    <Compile Include="Substitution\EntireInputSubstitution.cs" />
+    <Compile Include="Substitution\TextSubstitution.cs" />
+    <Compile Include="SyntaxKind.cs" />
     <Compile Include="LineInfoBuilder.cs" />
-    <Compile Include="LineInfoCollection.cs" />
+    <Compile Include="TextPattern.cs" />
     <Compile Include="NamedBlock.cs" />
     <Compile Include="NegativeSurroundAssertion.cs" />
     <Compile Include="Options.cs" />
@@ -121,34 +147,18 @@
     <Compile Include="QuantifiedGroup_.cs" />
     <Compile Include="QuantifiedPattern.cs" />
     <Compile Include="QuantifiedPattern_.cs" />
-    <Compile Include="QuantifierKind.cs" />
-    <Compile Include="RegexOptionsHelper.cs" />
-    <Compile Include="RegexReplace.cs" />
-    <Compile Include="RegexSplit.cs" />
     <Compile Include="RegexUtility.cs" />
-    <Compile Include="SplitOptions.cs" />
-    <Compile Include="Substitution\AfterMatchSubstitution.cs" />
-    <Compile Include="Substitution\BeforeMatchSubstitution.cs" />
-    <Compile Include="Substitution\CharSubstitution.cs" />
-    <Compile Include="Substitution\EntireInputSubstitution.cs" />
-    <Compile Include="Substitution\EntireMatchSubstitution.cs" />
-    <Compile Include="Substitution\LastCapturedGroupSubstitution.cs" />
-    <Compile Include="Substitution\NamedGroupSubstitution.cs" />
-    <Compile Include="Substitution\NumberedGroupSubstitution.cs" />
     <Compile Include="Substitution\Substitution.cs" />
     <Compile Include="Substitution\Substitutions.cs" />
-    <Compile Include="Substitution\TextSubstitution.cs" />
+    <Compile Include="Substitution\EntireMatchSubstitution.cs" />
     <Compile Include="SurroundAssertion.cs" />
     <Compile Include="SurroundContainer.cs" />
     <Compile Include="Syntax.cs" />
-    <Compile Include="SyntaxKind.cs" />
-    <Compile Include="TextPattern.cs" />
-    <Compile Include="TextUtility.cs" />
   </ItemGroup>
   <ItemGroup>
-    <CodeAnalysisDictionary Include="LinqToRegexDictionary.xml" />
+    <None Include="LinqToRegex.nuspec" />
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

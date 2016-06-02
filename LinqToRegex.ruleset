@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<RuleSet Name="LinqToRegex Rules" ToolsVersion="14.0">
+<RuleSet Name="Rules for LinqToRegex" ToolsVersion="14.0">
   <IncludeAll Action="Warning" />
   <Rules AnalyzerId="CSharpEssentials" RuleNamespace="CSharpEssentials">
     <Rule Id="CSE0003" Action="Hidden" />
@@ -12,15 +12,11 @@
     <Rule Id="CC0014" Action="None" />
     <Rule Id="CC0015" Action="None" />
     <Rule Id="CC0016" Action="None" />
-    <Rule Id="CC0021" Action="None" />
     <Rule Id="CC0022" Action="None" />
-    <Rule Id="CC0030" Action="None" />
     <Rule Id="CC0031" Action="None" />
     <Rule Id="CC0037" Action="None" />
-    <Rule Id="CC0049" Action="None" />
     <Rule Id="CC0057" Action="None" />
     <Rule Id="CC0068" Action="None" />
-    <Rule Id="CC0079" Action="None" />
     <Rule Id="CC0081" Action="None" />
     <Rule Id="CC0090" Action="None" />
     <Rule Id="CC0105" Action="None" />
@@ -29,7 +25,6 @@
     <Rule Id="CA1026" Action="None" />
     <Rule Id="CA1303" Action="None" />
     <Rule Id="CA1305" Action="None" />
-    <Rule Id="CA1720" Action="None" />
     <Rule Id="CA2000" Action="None" />
     <Rule Id="CA2104" Action="None" />
   </Rules>
