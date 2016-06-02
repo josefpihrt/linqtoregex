@@ -59,7 +59,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
                 if (CurrentLine.Lazy)
                     _sb.Append(" but as few times as possible");
-
             }
         }
 
@@ -97,7 +96,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 int ch = ((CharLineInfo)CurrentLine).CharNumber;
                 if (ch >= 0 && ch < 128)
                     return TextUtility.GetAsciiCharName((AsciiChar)ch);
-
             }
             else if (CurrentLine.Kind == SyntaxKind.GeneralCategory || CurrentLine.Kind == SyntaxKind.NotGeneralCategory)
             {
