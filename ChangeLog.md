@@ -1,3 +1,7 @@
+#### LINQ to Regex 2.4.0 (2016-09-13)
+
+* Add support for Portable Class Library
+
 #### LINQ to Regex 2.3.0 (2016-02-07)
 
 * New PatternOptions value: InlineOptions.
