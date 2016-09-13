@@ -422,7 +422,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public QuantifiablePattern NoncapturingGroup(object content)
         {
-            return AppendInternal(Patterns.NoncapturingGroup((content)));
+            return AppendInternal(Patterns.NoncapturingGroup(content));
         }
 
         /// <summary>

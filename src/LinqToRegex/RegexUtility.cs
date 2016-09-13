@@ -47,7 +47,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                     if (g.Success && g.Value.Length > 9)
                     {
                         int result;
-                        return (int.TryParse(g.Value, out result));
+                        return int.TryParse(g.Value, out result);
                     }
 
                     return true;
@@ -201,7 +201,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (input == null)
                 throw new ArgumentNullException(nameof(input));
 
-            CharEscapeMode mode = CharEscapeMode.None;
+            var mode = CharEscapeMode.None;
 
             for (int i = 0; i < input.Length; i++)
             {

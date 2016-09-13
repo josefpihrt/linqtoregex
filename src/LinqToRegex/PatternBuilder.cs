@@ -133,7 +133,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             if (!string.IsNullOrEmpty(value))
             {
-                CharEscapeMode mode = CharEscapeMode.None;
+                var mode = CharEscapeMode.None;
 
                 for (int i = 0; i < value.Length; i++)
                 {

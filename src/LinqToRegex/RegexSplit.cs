@@ -95,7 +95,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         private static IEnumerable<Group> EnumerateGroupsRightToLeft(Match match)
         {
-            for (int i = (match.Groups.Count - 1); i >= 1; i--)
+            for (int i = match.Groups.Count - 1; i >= 1; i--)
                 yield return match.Groups[i];
         }
 
@@ -130,7 +130,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 match = match.NextMatch();
             }
 
-            for (int i = (matches.Count - 1); i >= 0; i--)
+            for (int i = matches.Count - 1; i >= 0; i--)
                 yield return matches[i];
         }
     }

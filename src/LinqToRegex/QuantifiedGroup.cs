@@ -46,7 +46,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 Pattern exp = Content as QuantifiablePattern;
 
                 if (exp != null)
-                    return (exp.Previous != null);
+                    return exp.Previous != null;
 
                 var s = Content as string;
 
