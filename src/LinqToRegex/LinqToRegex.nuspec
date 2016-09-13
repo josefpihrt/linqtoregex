@@ -14,5 +14,13 @@
     <summary>LINQ to Regex library provides language integrated access to the .NET regular expressions.</summary>
     <copyright>Copyright 2014-2016 Josef Pihrt</copyright>
     <tags>Regex RegularExpressions LINQ</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.0" />
+      <group targetFramework=".NETPortable4.5-Profile259" />
+    </dependencies>
   </metadata>
+  <files>
+    <file src="Portable\*.dll;Portable\*.xml" target="lib\portable45-net45+win8+wp8+wpa81" exclude="*.pdb" />
+    <file src="*.dll;*.xml" target="lib\net40" exclude="*.pdb" />
+  </files>
 </package>

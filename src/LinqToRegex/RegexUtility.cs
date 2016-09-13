@@ -1,6 +1,7 @@
 // Copyright (c) Josef Pihrt. All rights reserved. Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
 using System;
+using System.Diagnostics;
 using System.Globalization;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -372,6 +373,326 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="block">An enumerated constant that identifies Unicode block.</param>
         /// <returns></returns>
         public static string GetBlockDesignation(NamedBlock block) => BlockDesignations[(int)block];
+
+        /// <summary>
+        /// Gets a description of the specified Unicode category.
+        /// </summary>
+        /// <param name="category">An enumerated constant that identifies Unicode category.</param>
+        /// <returns></returns>
+        public static string GetCategoryDescription(GeneralCategory category)
+        {
+            switch (category)
+            {
+                case GeneralCategory.AllControlCharacters:
+                    return "All control characters. This includes the Cc, Cf, Cs, Co, and Cn categories.";
+                case GeneralCategory.AllDiacriticMarks:
+                    return "All diacritic marks. This includes the Mn, Mc, and Me categories.";
+                case GeneralCategory.AllLetterCharacters:
+                    return "All letter characters. This includes the Lu, Ll, Lt, Lm, and Lo characters.";
+                case GeneralCategory.AllNumbers:
+                    return "All numbers. This includes the Nd, Nl, and No categories.";
+                case GeneralCategory.AllPunctuationCharacters:
+                    return "All punctuation characters. This includes the Pc, Pd, Ps, Pe, Pi, Pf, and Po categories.";
+                case GeneralCategory.AllSeparatorCharacters:
+                    return "All separator characters. This includes the Zs, Zl, and Zp categories.";
+                case GeneralCategory.AllSymbols:
+                    return "All symbols. This includes the Sm, Sc, Sk, and So categories.";
+                case GeneralCategory.LetterLowercase:
+                    return "Letter, Lowercase";
+                case GeneralCategory.LetterModifier:
+                    return "Letter, Modifier";
+                case GeneralCategory.LetterOther:
+                    return "Letter, Other";
+                case GeneralCategory.LetterTitlecase:
+                    return "Letter, Titlecase";
+                case GeneralCategory.LetterUppercase:
+                    return "Letter, Uppercase";
+                case GeneralCategory.MarkEnclosing:
+                    return "Mark, Enclosing";
+                case GeneralCategory.MarkNonspacing:
+                    return "Mark, Nonspacing";
+                case GeneralCategory.MarkSpacingCombining:
+                    return "Mark, Spacing Combining";
+                case GeneralCategory.NumberDecimalDigit:
+                    return "Number, Decimal Digit";
+                case GeneralCategory.NumberLetter:
+                    return "Number, Letter";
+                case GeneralCategory.NumberOther:
+                    return "Number, Other";
+                case GeneralCategory.OtherControl:
+                    return "Other, Control";
+                case GeneralCategory.OtherFormat:
+                    return "Other, Format";
+                case GeneralCategory.OtherNotAssigned:
+                    return "Other, Not Assigned (no characters have this property)";
+                case GeneralCategory.OtherPrivateUse:
+                    return "Other, Private Use";
+                case GeneralCategory.OtherSurrogate:
+                    return "Other, Surrogate";
+                case GeneralCategory.PunctuationClose:
+                    return "Punctuation, Close";
+                case GeneralCategory.PunctuationConnector:
+                    return "Punctuation, Connector";
+                case GeneralCategory.PunctuationDash:
+                    return "Punctuation, Dash";
+                case GeneralCategory.PunctuationFinalQuote:
+                    return "Punctuation, Final quote (may behave like Ps or Pe depending on usage)";
+                case GeneralCategory.PunctuationInitialQuote:
+                    return "Punctuation, Initial quote (may behave like Ps or Pe depending on usage)";
+                case GeneralCategory.PunctuationOpen:
+                    return "Punctuation, Open";
+                case GeneralCategory.PunctuationOther:
+                    return "Punctuation, Other";
+                case GeneralCategory.SeparatorLine:
+                    return "Separator, Line";
+                case GeneralCategory.SeparatorParagraph:
+                    return "Separator, Paragraph";
+                case GeneralCategory.SeparatorSpace:
+                    return "Separator, Space";
+                case GeneralCategory.SymbolCurrency:
+                    return "Symbol, Currency";
+                case GeneralCategory.SymbolMath:
+                    return "Symbol, Math";
+                case GeneralCategory.SymbolModifier:
+                    return "Symbol, Modifier";
+                case GeneralCategory.SymbolOther:
+                    return "Symbol, Other";
+                default:
+                    Debug.Assert(false, category.ToString());
+                    return "";
+            }
+        }
+
+        /// <summary>
+        /// Gets a description of the specified Unicode block.
+        /// </summary>
+        /// <param name="block">An enumerated constant that identifies Unicode block.</param>
+        /// <returns></returns>
+        public static string GetBlockDescription(NamedBlock block)
+        {
+            switch (block)
+            {
+                case NamedBlock.AlphabeticPresentationForms:
+                    return "FB00 - FB4F";
+                case NamedBlock.Arabic:
+                    return "0600 - 06FF";
+                case NamedBlock.ArabicPresentationFormsA:
+                    return "FB50 - FDFF";
+                case NamedBlock.ArabicPresentationFormsB:
+                    return "FE70 - FEFF";
+                case NamedBlock.Armenian:
+                    return "0530 - 058F";
+                case NamedBlock.Arrows:
+                    return "2190 - 21FF";
+                case NamedBlock.BasicLatin:
+                    return "0000 - 007F";
+                case NamedBlock.Bengali:
+                    return "0980 - 09FF";
+                case NamedBlock.BlockElements:
+                    return "2580 - 259F";
+                case NamedBlock.Bopomofo:
+                    return "3100 - 312F";
+                case NamedBlock.BopomofoExtended:
+                    return "31A0 - 31BF";
+                case NamedBlock.BoxDrawing:
+                    return "2500 - 257F";
+                case NamedBlock.BraillePatterns:
+                    return "2800 - 28FF";
+                case NamedBlock.Buhid:
+                    return "1740 - 175F";
+                case NamedBlock.CJKCompatibility:
+                    return "3300 - 33FF";
+                case NamedBlock.CJKCompatibilityForms:
+                    return "FE30 - FE4F";
+                case NamedBlock.CJKCompatibilityIdeographs:
+                    return "F900 - FAFF";
+                case NamedBlock.CJKRadicalsSupplement:
+                    return "2E80 - 2EFF";
+                case NamedBlock.CJKSymbolsAndPunctuation:
+                    return "3000 - 303F";
+                case NamedBlock.CJKUnifiedIdeographs:
+                    return "4E00 - 9FFF";
+                case NamedBlock.CJKUnifiedIdeographsExtensionA:
+                    return "3400 - 4DBF";
+                case NamedBlock.CombiningDiacriticalMarks:
+                    return "0300 - 036F";
+                case NamedBlock.CombiningDiacriticalMarksForSymbols:
+                    return "20D0 - 20FF";
+                case NamedBlock.CombiningHalfMarks:
+                    return "FE20 - FE2F";
+                case NamedBlock.CombiningMarksForSymbols:
+                    return "20D0 - 20FF";
+                case NamedBlock.ControlPictures:
+                    return "2400 - 243F";
+                case NamedBlock.CurrencySymbols:
+                    return "20A0 - 20CF";
+                case NamedBlock.Cyrillic:
+                    return "0400 - 04FF";
+                case NamedBlock.CyrillicSupplement:
+                    return "0500 - 052F";
+                case NamedBlock.Devanagari:
+                    return "0900 - 097F";
+                case NamedBlock.Dingbats:
+                    return "2700 - 27BF";
+                case NamedBlock.EnclosedAlphanumerics:
+                    return "2460 - 24FF";
+                case NamedBlock.EnclosedCJKLettersAndMonths:
+                    return "3200 - 32FF";
+                case NamedBlock.Ethiopic:
+                    return "1200 - 137F";
+                case NamedBlock.GeneralPunctuation:
+                    return "2000 - 206F";
+                case NamedBlock.GeometricShapes:
+                    return "25A0 - 25FF";
+                case NamedBlock.Georgian:
+                    return "10A0 - 10FF";
+                case NamedBlock.Greek:
+                    return "0370 - 03FF";
+                case NamedBlock.GreekAndCoptic:
+                    return "0370 - 03FF";
+                case NamedBlock.GreekExtended:
+                    return "1F00 - 1FFF";
+                case NamedBlock.Gujarati:
+                    return "0A80 - 0AFF";
+                case NamedBlock.Gurmukhi:
+                    return "0A00 - 0A7F";
+                case NamedBlock.HalfWidthAndFullWidthForms:
+                    return "FF00 - FFEF";
+                case NamedBlock.HangulCompatibilityJamo:
+                    return "3130 - 318F";
+                case NamedBlock.HangulJamo:
+                    return "1100 - 11FF";
+                case NamedBlock.HangulSyllables:
+                    return "AC00 - D7AF";
+                case NamedBlock.Hanunoo:
+                    return "1720 - 173F";
+                case NamedBlock.Hebrew:
+                    return "0590 - 05FF";
+                case NamedBlock.HighPrivateUseSurrogates:
+                    return "DB80 - DBFF";
+                case NamedBlock.HighSurrogates:
+                    return "D800 - DB7F";
+                case NamedBlock.Hiragana:
+                    return "3040 - 309F";
+                case NamedBlock.Cherokee:
+                    return "13A0 - 13FF";
+                case NamedBlock.IdeographicDescriptionCharacters:
+                    return "2FF0 - 2FFF";
+                case NamedBlock.IPAExtensions:
+                    return "0250 - 02AF";
+                case NamedBlock.Kanbun:
+                    return "3190 - 319F";
+                case NamedBlock.KangxiRadicals:
+                    return "2F00 - 2FDF";
+                case NamedBlock.Kannada:
+                    return "0C80 - 0CFF";
+                case NamedBlock.Katakana:
+                    return "30A0 - 30FF";
+                case NamedBlock.KatakanaPhoneticExtensions:
+                    return "31F0 - 31FF";
+                case NamedBlock.Khmer:
+                    return "1780 - 17FF";
+                case NamedBlock.KhmerSymbols:
+                    return "19E0 - 19FF";
+                case NamedBlock.Lao:
+                    return "0E80 - 0EFF";
+                case NamedBlock.Latin1Supplement:
+                    return "0080 - 00FF";
+                case NamedBlock.LatinExtendedA:
+                    return "0100 - 017F";
+                case NamedBlock.LatinExtendedAdditional:
+                    return "1E00 - 1EFF";
+                case NamedBlock.LatinExtendedB:
+                    return "0180 - 024F";
+                case NamedBlock.LetterLikeSymbols:
+                    return "2100 - 214F";
+                case NamedBlock.Limbu:
+                    return "1900 - 194F";
+                case NamedBlock.LowSurrogates:
+                    return "DC00 - DFFF";
+                case NamedBlock.Malayalam:
+                    return "0D00 - 0D7F";
+                case NamedBlock.MathematicalOperators:
+                    return "2200 - 22FF";
+                case NamedBlock.MiscellaneousMathematicalSymbolsA:
+                    return "27C0 - 27EF";
+                case NamedBlock.MiscellaneousMathematicalSymbolsB:
+                    return "2980 - 29FF";
+                case NamedBlock.MiscellaneousSymbols:
+                    return "2600 - 26FF";
+                case NamedBlock.MiscellaneousSymbolsAndArrows:
+                    return "2B00 - 2BFF";
+                case NamedBlock.MiscellaneousTechnical:
+                    return "2300 - 23FF";
+                case NamedBlock.Mongolian:
+                    return "1800 - 18AF";
+                case NamedBlock.Myanmar:
+                    return "1000 - 109F";
+                case NamedBlock.NumberForms:
+                    return "2150 - 218F";
+                case NamedBlock.Ogham:
+                    return "1680 - 169F";
+                case NamedBlock.OpticalCharacterRecognition:
+                    return "2440 - 245F";
+                case NamedBlock.Oriya:
+                    return "0B00 - 0B7F";
+                case NamedBlock.PhoneticExtensions:
+                    return "1D00 - 1D7F";
+                case NamedBlock.PrivateUse:
+                    return "E000 - F8FF";
+                case NamedBlock.PrivateUseArea:
+                    return "E000 - F8FF";
+                case NamedBlock.Runic:
+                    return "16A0 - 16FF";
+                case NamedBlock.Sinhala:
+                    return "0D80 - 0DFF";
+                case NamedBlock.SmallFormVariants:
+                    return "FE50 - FE6F";
+                case NamedBlock.SpacingModifierLetters:
+                    return "02B0 - 02FF";
+                case NamedBlock.Specials:
+                    return "FFF0 - FFFF";
+                case NamedBlock.SuperscriptsAndSubscripts:
+                    return "2070 - 209F";
+                case NamedBlock.SupplementalArrowsA:
+                    return "27F0 - 27FF";
+                case NamedBlock.SupplementalArrowsB:
+                    return "2900 - 297F";
+                case NamedBlock.SupplementalMathematicalOperators:
+                    return "2A00 - 2AFF";
+                case NamedBlock.Syriac:
+                    return "0700 - 074F";
+                case NamedBlock.Tagalog:
+                    return "1700 - 171F";
+                case NamedBlock.Tagbanwa:
+                    return "1760 - 177F";
+                case NamedBlock.TaiLe:
+                    return "1950 - 197F";
+                case NamedBlock.Tamil:
+                    return "0B80 - 0BFF";
+                case NamedBlock.Telugu:
+                    return "0C00 - 0C7F";
+                case NamedBlock.Thaana:
+                    return "0780 - 07BF";
+                case NamedBlock.Thai:
+                    return "0E00 - 0E7F";
+                case NamedBlock.Tibetan:
+                    return "0F00 - 0FFF";
+                case NamedBlock.UnifiedCanadianAboriginalSyllabics:
+                    return "1400 - 167F";
+                case NamedBlock.VariationSelectors:
+                    return "FE00 - FE0F";
+                case NamedBlock.YijingHexagramSymbols:
+                    return "4DC0 - 4DFF";
+                case NamedBlock.YiRadicals:
+                    return "A490 - A4CF";
+                case NamedBlock.YiSyllables:
+                    return "A000 - A48F";
+                default:
+                    Debug.Assert(false, block.ToString());
+                    return "";
+            }
+        }
 
         private static readonly CharEscapeMode[] _escapeModes = new CharEscapeMode[] {
             // 0 0x00
