@@ -510,6 +510,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 {
                     stack.Push(item);
                     item = item.Previous;
+
                 } while (item != null);
 
                 while (stack.Count > cnt)

@@ -181,6 +181,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                                 if (_fBuilder && !inCharGroup)
                                     _builder.AddInfo(value, lastPos, i - lastPos);
                             }
+
                         } while (i < value.Length);
 
                         return;
@@ -343,6 +344,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 {
                     _patterns.Push(item);
                     item = item.Previous;
+
                 } while (item != null);
 
                 while (_patterns.Count > cnt)

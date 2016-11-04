@@ -264,6 +264,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                         }
 
                         sb.Append(input, lastPos, i - lastPos);
+
                     } while (i < input.Length);
 
                     return sb.ToString();
@@ -320,6 +321,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 }
 
                 sb.Append(input, lastPos, i - lastPos);
+
             } while (i < input.Length);
         }
 
