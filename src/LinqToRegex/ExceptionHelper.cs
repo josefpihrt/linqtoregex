@@ -6,6 +6,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     {
         public const string CharGroupCannotBeEmpty = "Character group cannot be empty.";
         public const string RegexOptionsNotConvertibleToInlineChars = "RegexOptions value cannot be expressed as a combination of inline characters.";
-        public static readonly string InvalidPatternOptions = $"Value cannot contain both {PatternOptions.CSharpLiteral.ToString()} and {PatternOptions.VisualBasicLiteral.ToString()} flags.";
+        public static readonly string InvalidPatternOptions = $"Value cannot contain both {PatternOptions.CSharpLiteral} and {PatternOptions.VisualBasicLiteral} flags.";
     }
 }

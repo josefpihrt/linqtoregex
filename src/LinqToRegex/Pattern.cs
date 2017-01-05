@@ -31,7 +31,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public Pattern AppendIf(bool condition, object content)
         {
-            return condition
+            return (condition)
                 ? Append(content)
                 : this;
         }

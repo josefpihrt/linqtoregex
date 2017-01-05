@@ -158,7 +158,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             if (charCode <= 0xFF)
             {
-                return inCharGroup
+                return (inCharGroup)
                     ? _charGroupEscapeModes[charCode]
                     : _escapeModes[charCode];
             }
@@ -170,7 +170,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             if (charCode <= 0xFF)
             {
-                return inCharGroup
+                return (inCharGroup)
                     ? _charGroupEscapeModes[charCode]
                     : _escapeModes[charCode];
             }
@@ -219,34 +219,52 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                         switch (mode)
                         {
                             case CharEscapeMode.AsciiHexadecimal:
-                                sb.Append(Syntax.AsciiHexadecimalStart);
-                                sb.Append(((int)ch).ToString("X2", CultureInfo.InvariantCulture));
-                                break;
+                                {
+                                    sb.Append(Syntax.AsciiHexadecimalStart);
+                                    sb.Append(((int)ch).ToString("X2", CultureInfo.InvariantCulture));
+                                    break;
+                                }
                             case CharEscapeMode.Backslash:
-                                sb.Append('\\');
-                                sb.Append(ch);
-                                break;
+                                {
+                                    sb.Append('\\');
+                                    sb.Append(ch);
+                                    break;
+                                }
                             case CharEscapeMode.Bell:
-                                sb.Append(Syntax.Bell);
-                                break;
+                                {
+                                    sb.Append(Syntax.Bell);
+                                    break;
+                                }
                             case CharEscapeMode.CarriageReturn:
-                                sb.Append(Syntax.CarriageReturn);
-                                break;
+                                {
+                                    sb.Append(Syntax.CarriageReturn);
+                                    break;
+                                }
                             case CharEscapeMode.Escape:
-                                sb.Append(Syntax.Escape);
-                                break;
+                                {
+                                    sb.Append(Syntax.Escape);
+                                    break;
+                                }
                             case CharEscapeMode.FormFeed:
-                                sb.Append(Syntax.FormFeed);
-                                break;
+                                {
+                                    sb.Append(Syntax.FormFeed);
+                                    break;
+                                }
                             case CharEscapeMode.Linefeed:
-                                sb.Append(Syntax.Linefeed);
-                                break;
+                                {
+                                    sb.Append(Syntax.Linefeed);
+                                    break;
+                                }
                             case CharEscapeMode.VerticalTab:
-                                sb.Append(Syntax.VerticalTab);
-                                break;
+                                {
+                                    sb.Append(Syntax.VerticalTab);
+                                    break;
+                                }
                             case CharEscapeMode.Tab:
-                                sb.Append(Syntax.Tab);
-                                break;
+                                {
+                                    sb.Append(Syntax.Tab);
+                                    break;
+                                }
                         }
 
                         i++;
@@ -460,8 +478,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 case GeneralCategory.SymbolOther:
                     return "Symbol, Other";
                 default:
-                    Debug.Assert(false, category.ToString());
-                    return "";
+                    {
+                        Debug.Assert(false, category.ToString());
+                        return "";
+                    }
             }
         }
 
@@ -691,8 +711,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 case NamedBlock.YiSyllables:
                     return "A000 - A48F";
                 default:
-                    Debug.Assert(false, block.ToString());
-                    return "";
+                    {
+                        Debug.Assert(false, block.ToString());
+                        return "";
+                    }
             }
         }
 

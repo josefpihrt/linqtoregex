@@ -66,22 +66,22 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             return new Dictionary<RegexOptions, string>()
             {
-                [RegexOptions.None] = options.IsNone() ? string.Empty : " ",
-                [RegexOptions.IgnoreCase] = options.HasIgnoreCase() ? " " : string.Empty,
-                [RegexOptions.Multiline] = options.HasMultiline() ? " " : string.Empty,
-                [RegexOptions.ExplicitCapture] = options.HasExplicitCapture() ? " " : string.Empty,
-                [RegexOptions.Singleline] = options.HasSingleline() ? " " : string.Empty,
-                [RegexOptions.IgnorePatternWhitespace] = options.HasIgnorePatternWhitespace() ? " " : string.Empty,
+                [RegexOptions.None] = (options.IsNone()) ? string.Empty : " ",
+                [RegexOptions.IgnoreCase] = (options.HasIgnoreCase()) ? " " : string.Empty,
+                [RegexOptions.Multiline] = (options.HasMultiline()) ? " " : string.Empty,
+                [RegexOptions.ExplicitCapture] = (options.HasExplicitCapture()) ? " " : string.Empty,
+                [RegexOptions.Singleline] = (options.HasSingleline()) ? " " : string.Empty,
+                [RegexOptions.IgnorePatternWhitespace] = (options.HasIgnorePatternWhitespace()) ? " " : string.Empty,
             };
         }
 
         private void AppendOptionsChars(RegexOptions options)
         {
-            _sb.Append(options.HasIgnoreCase() ? "i" : _spaces[RegexOptions.IgnoreCase]);
-            _sb.Append(options.HasMultiline() ? "m" : _spaces[RegexOptions.Multiline]);
-            _sb.Append(options.HasExplicitCapture() ? "n" : _spaces[RegexOptions.ExplicitCapture]);
-            _sb.Append(options.HasSingleline() ? "s" : _spaces[RegexOptions.Singleline]);
-            _sb.Append(options.HasIgnorePatternWhitespace() ? "x" : _spaces[RegexOptions.IgnorePatternWhitespace]);
+            _sb.Append((options.HasIgnoreCase()) ? "i" : _spaces[RegexOptions.IgnoreCase]);
+            _sb.Append((options.HasMultiline()) ? "m" : _spaces[RegexOptions.Multiline]);
+            _sb.Append((options.HasExplicitCapture()) ? "n" : _spaces[RegexOptions.ExplicitCapture]);
+            _sb.Append((options.HasSingleline()) ? "s" : _spaces[RegexOptions.Singleline]);
+            _sb.Append((options.HasIgnorePatternWhitespace()) ? "x" : _spaces[RegexOptions.IgnorePatternWhitespace]);
             _sb.Append(_spaces[RegexOptions.None]);
         }
 
@@ -151,7 +151,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         public void AddInfo(GeneralCategory category, bool negative)
         {
-            Lines.Add(new GeneralCategoryLineInfo(negative ? SyntaxKind.NotGeneralCategory : SyntaxKind.GeneralCategory, category, CurrentOptions));
+            Lines.Add(new GeneralCategoryLineInfo((negative) ? SyntaxKind.NotGeneralCategory : SyntaxKind.GeneralCategory, category, CurrentOptions));
         }
 
         public void AddInfo(string value)

@@ -25,7 +25,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         public static IEnumerable<string> EnumerateValues(Regex regex, string input, int count, SplitOptions options)
         {
-            return EnumerateValues(regex, input, count, regex.RightToLeft ? input.Length : 0, options);
+            return EnumerateValues(regex, input, count, (regex.RightToLeft) ? input.Length : 0, options);
         }
 
         public static IEnumerable<string> EnumerateValues(Regex regex, string input, int count, int startAt)
