@@ -86,5 +86,35 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 _coreNewLine = value.ToCharArray();
             }
         }
+
+        internal char OpenIdentifierBoundaryChar
+        {
+            get
+            {
+                if (IdentifierBoundary == IdentifierBoundary.Apostrophe)
+                {
+                    return '\'';
+                }
+                else
+                {
+                    return '<';
+                }
+            }
+        }
+
+        internal char CloseIdentifierBoundaryChar
+        {
+            get
+            {
+                if (IdentifierBoundary == IdentifierBoundary.Apostrophe)
+                {
+                    return '\'';
+                }
+                else
+                {
+                    return '>';
+                }
+            }
+        }
     }
 }

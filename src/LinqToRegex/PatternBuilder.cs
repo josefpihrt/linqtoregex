@@ -857,9 +857,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         internal void AppendNamedGroupInternal(string groupName, object content)
         {
             AppendGroupStart();
-            AppendDirect((Settings.IdentifierBoundary == IdentifierBoundary.Apostrophe) ? '\'' : '<');
+            AppendDirect(Settings.OpenIdentifierBoundaryChar);
             AppendDirect(groupName);
-            AppendDirect((Settings.IdentifierBoundary == IdentifierBoundary.Apostrophe) ? '\'' : '>');
+            AppendDirect(Settings.CloseIdentifierBoundaryChar);
 
             if (_fBuilder)
                 _builder.AddInfo(SyntaxKind.NamedGroup);
@@ -918,11 +918,11 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 throw new ArgumentNullException(nameof(content));
 
             AppendGroupStart();
-            AppendDirect((Settings.IdentifierBoundary == IdentifierBoundary.Apostrophe) ? '\'' : '<');
+            AppendDirect(Settings.OpenIdentifierBoundaryChar);
             AppendDirect(name1);
             AppendDirect('-');
             AppendDirect(name2);
-            AppendDirect((Settings.IdentifierBoundary == IdentifierBoundary.Apostrophe) ? '\'' : '>');
+            AppendDirect(Settings.CloseIdentifierBoundaryChar);
 
             if (_fBuilder)
                 _builder.AddInfo(SyntaxKind.BalancingGroup);
@@ -1675,9 +1675,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         internal void AppendGroupReferenceInternal(string groupName)
         {
             AppendBackslash('k');
-            AppendDirect((Settings.IdentifierBoundary == IdentifierBoundary.Apostrophe) ? '\'' : '<');
+            AppendDirect(Settings.OpenIdentifierBoundaryChar);
             AppendDirect(groupName);
-            AppendDirect((Settings.IdentifierBoundary == IdentifierBoundary.Apostrophe) ? '\'' : '>');
+            AppendDirect(Settings.CloseIdentifierBoundaryChar);
 
             if (_fBuilder)
                 _builder.AddInfo(SyntaxKind.GroupReference);
