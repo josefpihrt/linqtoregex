@@ -106,7 +106,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         internal static string EscapeInternal(int charCode, bool inCharGroup)
         {
-            switch (GetEscapeModeInternal(charCode, inCharGroup))
+            switch (GetEscapeMode(charCode, inCharGroup))
             {
                 case CharEscapeMode.None:
                     return ((char)charCode).ToString();
@@ -166,18 +166,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return CharEscapeMode.None;
         }
 
-        internal static CharEscapeMode GetEscapeModeInternal(int charCode, bool inCharGroup)
-        {
-            if (charCode <= 0xFF)
-            {
-                return (inCharGroup)
-                    ? _charGroupEscapeModes[charCode]
-                    : _escapeModes[charCode];
-            }
-
-            return CharEscapeMode.None;
-        }
-
         /// <summary>
         /// Converts a specified text to the <see cref="string"/> object that represents each character as a literal rather than a metacharacter.
         /// The text is considered not to be in the character group.
@@ -206,7 +194,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
             for (int i = 0; i < input.Length; i++)
             {
-                mode = GetEscapeModeInternal((int)input[i], inCharGroup);
+                mode = GetEscapeMode((int)input[i], inCharGroup);
                 if (mode != CharEscapeMode.None)
                 {
                     var sb = new StringBuilder();
@@ -273,7 +261,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                         while (i < input.Length)
                         {
                             ch = input[i];
-                            mode = GetEscapeModeInternal((int)input[i], inCharGroup);
+                            mode = GetEscapeMode((int)input[i], inCharGroup);
 
                             if (mode != CharEscapeMode.None)
                                 break;
