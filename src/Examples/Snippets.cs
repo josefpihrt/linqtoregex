@@ -1,6 +1,5 @@
 ﻿// Copyright (c) Josef Pihrt. All rights reserved. Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
-using System.Diagnostics.CodeAnalysis;
 using static Pihrtsoft.Text.RegularExpressions.Linq.Patterns;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
@@ -121,8 +120,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
         /// Returns a pattern that matches a line that contains at least one non-whitespace character. New line characters are not included in the match.
         /// </summary>
         /// <returns></returns>
-        [SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", MessageId = "NonWhite")]
-        [SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", MessageId = "NonEmpty")]
         public static QuantifiablePattern NonEmptyOrWhiteSpaceLine()
         {
             return NonEmptyOrWhiteSpaceLine(false);
@@ -133,8 +130,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
         /// </summary>
         /// <param name="includeNewLine">Indicates whether new line characters should be included in the match.</param>
         /// <returns></returns>
-        [SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", MessageId = "NonWhite")]
-        [SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", MessageId = "NonEmpty")]
         public static QuantifiablePattern NonEmptyOrWhiteSpaceLine(bool includeNewLine)
         {
             return NoncapturingGroup(
@@ -149,7 +144,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
         /// Returns a pattern that matches a line that contains at least one character.  New line characters are not included in the match.
         /// </summary>
         /// <returns></returns>
-        [SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", MessageId = "NonEmpty")]
         public static QuantifiablePattern NonEmptyLine()
         {
             return NonEmptyLine(false);
@@ -160,7 +154,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
         /// </summary>
         /// <param name="includeNewLine">Indicates whether new line characters should be included in the match.</param>
         /// <returns></returns>
-        [SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", MessageId = "NonEmpty")]
         public static QuantifiablePattern NonEmptyLine(bool includeNewLine)
         {
             return NoncapturingGroup(

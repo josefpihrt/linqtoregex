@@ -3,7 +3,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -1825,7 +1824,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendDirect(charCode.ToString("X2", CultureInfo.InvariantCulture));
         }
 
-        [SuppressMessage("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal void AppendUnicodeHexadecimal(int charCode)
         {
             if (charCode < 0 || charCode > 0xFFFF)
