@@ -8,7 +8,7 @@ using static Pihrtsoft.Text.RegularExpressions.Linq.Patterns;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
 {
-    internal class Program
+    internal static class Program
     {
         [SuppressMessage("Microsoft.Usage", "CA1801:ReviewUnusedParameters", MessageId = "args")]
         internal static void Main(string[] args)
