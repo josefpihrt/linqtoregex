@@ -42,6 +42,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public bool HasOptions(PatternOptions options) => (Options & options) == options;
 
+        internal bool HasOption(PatternOptions options) => (Options & options) != 0;
+
         /// <summary>
         /// Gets or sets the options of this instance.
         /// </summary>
