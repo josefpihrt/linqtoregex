@@ -655,7 +655,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (groupNumber < 0)
                 throw new ArgumentOutOfRangeException(nameof(groupNumber));
 
-            AppendIfGroup(TextUtility.NumberToString(groupNumber), trueContent, falseContent);
+            AppendIfGroup(Convert.ToString(groupNumber, CultureInfo.InvariantCulture), trueContent, falseContent);
         }
 
         /// <summary>
@@ -1837,7 +1837,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         internal void AppendDirect(int number)
         {
-            _sb.Append(TextUtility.NumberToString(number));
+            _sb.Append(Convert.ToString(number, CultureInfo.InvariantCulture));
         }
 
         internal void AppendDirect(char value)

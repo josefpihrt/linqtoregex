@@ -120,7 +120,6 @@
     <Compile Include="SplitOptions.cs" />
     <Compile Include="Substitution\NumberedGroupSubstitution.cs" />
     <Compile Include="Substitution\CharSubstitution.cs" />
-    <Compile Include="TextUtility.cs" />
     <Compile Include="Substitution\NamedGroupSubstitution.cs" />
     <Compile Include="Substitution\BeforeMatchSubstitution.cs" />
     <Compile Include="Substitution\AfterMatchSubstitution.cs" />
