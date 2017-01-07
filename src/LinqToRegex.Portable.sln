@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqToRegex.Portable", "src\LinqToRegex\LinqToRegex.Portable.csproj", "{AE9ECE3E-BF5D-4AEE-AB1A-C85733EE5230}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqToRegex.Portable", "LinqToRegex\LinqToRegex.Portable.csproj", "{AE9ECE3E-BF5D-4AEE-AB1A-C85733EE5230}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
