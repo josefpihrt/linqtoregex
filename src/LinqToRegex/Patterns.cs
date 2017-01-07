@@ -2099,7 +2099,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return Count(exactCount, NotSlash());
         }
 
-#if DEBUG
         /// <summary>
         /// Returns a pattern that matches a slash or a backslash.
         /// </summary>
@@ -2139,7 +2138,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             return Count(exactCount, NotSlashOrBackslash());
         }
-#endif
 
         /// <summary>
         /// Returns a pattern that matches a colon.

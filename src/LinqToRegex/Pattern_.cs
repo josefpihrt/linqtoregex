@@ -2776,7 +2776,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return AppendInternal(Patterns.NotSlash(exactCount));
         }
 
-#if DEBUG
         /// <summary>
         /// Appends a pattern that matches a slash or a backslash.
         /// </summary>
@@ -2816,7 +2815,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             return AppendInternal(Patterns.NotSlashOrBackslash(exactCount));
         }
-#endif
+
         /// <summary>
         /// Appends a pattern that matches a colon.
         /// </summary>

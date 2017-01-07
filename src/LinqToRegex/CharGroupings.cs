@@ -438,12 +438,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static CharGrouping CurlyBracket() => LeftCurlyBracket().RightCurlyBracket();
 
-#if DEBUG
         /// <summary>
         /// Returns a pattern that matches slash or backslash.
         /// </summary>
         /// <returns></returns>
         public static CharGrouping SlashOrBackslash() => Character(@"\/");
-#endif
     }
 }

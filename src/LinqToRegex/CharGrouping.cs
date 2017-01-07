@@ -680,12 +680,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         internal CharGrouping Previous { get; set; }
 
-#if DEBUG
         /// <summary>
         /// Appends a pattern that matches slash or backslash.
         /// </summary>
         /// <returns></returns>
         public CharGrouping SlashOrBackslash() => Append(Chars.SlashOrBackslash());
-#endif
     }
 }
