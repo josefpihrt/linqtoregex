@@ -15,19 +15,29 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         }
 
         internal static CharPattern Create(char value)
-            => new CharCharPattern(value);
+        {
+            return new CharCharPattern(value);
+        }
 
         internal static CharPattern Create(AsciiChar value)
-            => new AsciiCharCharPattern(value);
+        {
+            return new AsciiCharCharPattern(value);
+        }
 
         internal static CharPattern Create(CharClass value)
-            => new CharClassCharPattern(value);
+        {
+            return new CharClassCharPattern(value);
+        }
 
         internal static CharPattern Create(GeneralCategory category, bool negative)
-            => new GeneralCategoryCharPattern(category, negative);
+        {
+            return new GeneralCategoryCharPattern(category, negative);
+        }
 
         internal static CharPattern Create(NamedBlock block, bool negative)
-            => new NamedBlockCharPattern(block, negative);
+        {
+            return new NamedBlockCharPattern(block, negative);
+        }
 
         /// <summary>
         /// Returns a patterns that matches what is not matched by the current instance.
@@ -97,7 +107,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="baseGroup"/> or <paramref name="excludedGroup"/> is <c>null</c>.</exception>
         public static CharSubtraction operator -(CharPattern baseGroup, CharPattern excludedGroup)
-            => new CharSubtraction(baseGroup, excludedGroup);
+        {
+            return new CharSubtraction(baseGroup, excludedGroup);
+        }
 
         /// <summary>
         /// Returns a pattern that matches a character from a specified base group except characters from a specified excluded group.
@@ -107,7 +119,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="baseGroup"/> or <paramref name="excludedGroup"/> is <c>null</c>.</exception>
         public static CharSubtraction operator -(CharPattern baseGroup, CharGroup excludedGroup)
-            => new CharSubtraction(baseGroup, excludedGroup);
+        {
+            return new CharSubtraction(baseGroup, excludedGroup);
+        }
 
         /// <summary>
         /// Returns a pattern that matches a character from a specified base group except characters from a specified excluded group.
@@ -117,6 +131,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="baseGroup"/> or <paramref name="excludedGroup"/> is <c>null</c>.</exception>
         public static CharSubtraction operator -(CharPattern baseGroup, CharGrouping excludedGroup)
-            => new CharSubtraction(baseGroup, excludedGroup);
+        {
+            return new CharSubtraction(baseGroup, excludedGroup);
+        }
     }
 }

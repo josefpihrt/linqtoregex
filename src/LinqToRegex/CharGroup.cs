@@ -17,25 +17,55 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
         }
 
-        internal static CharGroup Create(char value, bool negative) => new CharCharGroup(value, negative);
+        internal static CharGroup Create(char value, bool negative)
+        {
+            return new CharCharGroup(value, negative);
+        }
 
-        internal static CharGroup Create(AsciiChar value, bool negative) => new AsciiCharCharGroup(value, negative);
+        internal static CharGroup Create(AsciiChar value, bool negative)
+        {
+            return new AsciiCharCharGroup(value, negative);
+        }
 
-        internal static CharGroup Create(string characters, bool negative) => new TextCharGroup(characters, negative);
+        internal static CharGroup Create(string characters, bool negative)
+        {
+            return new TextCharGroup(characters, negative);
+        }
 
-        internal static CharGroup Create(char[] characters, bool negative) => new CharactersCharGroup(characters, negative);
+        internal static CharGroup Create(char[] characters, bool negative)
+        {
+            return new CharactersCharGroup(characters, negative);
+        }
 
-        internal static CharGroup Create(char firstChar, char lastChar, bool negative) => new CharRangeCharGroup(firstChar, lastChar, negative);
+        internal static CharGroup Create(char firstChar, char lastChar, bool negative)
+        {
+            return new CharRangeCharGroup(firstChar, lastChar, negative);
+        }
 
-        internal static CharGroup Create(GeneralCategory category, bool negative) => new GeneralCategoryCharGroup(category, negative);
+        internal static CharGroup Create(GeneralCategory category, bool negative)
+        {
+            return new GeneralCategoryCharGroup(category, negative);
+        }
 
-        internal static CharGroup Create(NamedBlock block, bool negative) => new NamedBlockCharGroup(block, negative);
+        internal static CharGroup Create(NamedBlock block, bool negative)
+        {
+            return new NamedBlockCharGroup(block, negative);
+        }
 
-        internal static CharGroup Create(CharClass value) => new CharClassCharGroup(value);
+        internal static CharGroup Create(CharClass value)
+        {
+            return new CharClassCharGroup(value);
+        }
 
-        internal static CharGroup Create(CharGrouping value, bool negative) => new CharGroupingCharGroup(value, negative);
+        internal static CharGroup Create(CharGrouping value, bool negative)
+        {
+            return new CharGroupingCharGroup(value, negative);
+        }
 
-        internal static CharGroup Create(CharGroup value, bool negative) => new CharGroupCharGroup(value, negative);
+        internal static CharGroup Create(CharGroup value, bool negative)
+        {
+            return new CharGroupCharGroup(value, negative);
+        }
 
         internal abstract void AppendContentTo(PatternBuilder builder);
 
