@@ -95,7 +95,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             {
                 int ch = ((CharLineInfo)CurrentLine).CharNumber;
                 if (ch >= 0 && ch < 128)
-                    return TextUtility.GetAsciiCharName((AsciiChar)ch);
+                    return AsciiCharNames.GetName((AsciiChar)ch);
             }
             else if (CurrentLine.Kind == SyntaxKind.GeneralCategory || CurrentLine.Kind == SyntaxKind.NotGeneralCategory)
             {
@@ -107,7 +107,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 if (ch >= 0)
                 {
                     if (ch < 128)
-                        return "not " + TextUtility.GetAsciiCharName((AsciiChar)ch);
+                        return "not " + AsciiCharNames.GetName((AsciiChar)ch);
                     else
                         return "not character";
                 }
