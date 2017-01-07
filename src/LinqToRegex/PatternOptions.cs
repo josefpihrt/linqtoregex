@@ -31,27 +31,27 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         Format = 4,
 
         /// <summary>
-        /// Specifies that a comment will be added to the end of each line. This options is relevant only in combination with <see cref="PatternOptions.Format"/> option.
+        /// Specifies that a comment will be added to the end of each line. This options is relevant only in combination with <see cref="Format"/> option.
         /// </summary>
         Comment = 8,
 
         /// <summary>
-        /// Indicates that the <see cref="PatternOptions.Format"/> and <see cref="PatternOptions.Comment"/> options are used. This is a composite options.
+        /// Indicates that the <see cref="Format"/> and <see cref="Comment"/> options are used. This is a composite options.
         /// </summary>
         FormatAndComment = 12,
 
         /// <summary>
-        /// Specifies that a pattern will be converted to C# multiline literal. This option cannot be used in a combination with <see cref="PatternOptions.VisualBasicLiteral"/>.
+        /// Specifies that a pattern will be converted to C# multiline literal. This option cannot be used in a combination with <see cref="VisualBasicLiteral"/>.
         /// </summary>
         CSharpLiteral = 16,
 
         /// <summary>
-        /// Specifies that a pattern will be converted to Visual Basic multiline literal. This option cannot be used in a combination with <see cref="PatternOptions.CSharpLiteral"/>.
+        /// Specifies that a pattern will be converted to Visual Basic multiline literal. This option cannot be used in a combination with <see cref="CSharpLiteral"/>.
         /// </summary>
         VisualBasicLiteral = 32,
 
         /// <summary>
-        /// Specifies that current inline options will be added to each line. This options is relevant only in combination with <see cref="PatternOptions.Format"/> option.
+        /// Specifies that current inline options will be added to each line. This options is relevant only in combination with <see cref="Format"/> option.
         /// </summary>
         InlineOptions = 64
     }
