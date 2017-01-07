@@ -57,17 +57,25 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public override string ToString()
         {
             if (Settings.HasOption(PatternOptions.CSharpLiteral | PatternOptions.VisualBasicLiteral))
+            {
                 return GetLiteral();
+            }
             else
+            {
                 return GetPattern();
+            }
         }
 
         private string GetPattern()
         {
             if (_builder != null)
+            {
                 return _builder.AddComments(_sb.ToString(), Settings);
+            }
             else
+            {
                 return _sb.ToString();
+            }
         }
 
         private string GetLiteral()

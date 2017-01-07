@@ -36,9 +36,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             get
             {
                 if (string.IsNullOrEmpty(_text))
+                {
                     return string.Empty;
+                }
                 else
+                {
                     return RegexUtility.EscapeSubstitution(_text);
+                }
             }
         }
     }

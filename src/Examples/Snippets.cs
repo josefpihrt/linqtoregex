@@ -108,9 +108,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
         public static QuantifiablePattern EmptyLine(bool includeNewLine)
         {
             if (includeNewLine)
+            {
                 return BeginLine().NewLine();
+            }
             else
+            {
                 return BeginLine().Assert(NewLine());
+            }
         }
 
         /// <summary>

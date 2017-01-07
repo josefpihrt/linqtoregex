@@ -30,9 +30,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             foreach (string split in splits)
             {
                 if (isFirst)
+                {
                     isFirst = false;
+                }
                 else
+                {
                     _sb.Append(settings.NewLine);
+                }
 
                 _sb.Append(split);
                 AppendComment(maxLength - split.Length + 1);
@@ -107,9 +111,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 if (ch >= 0)
                 {
                     if (ch < 128)
+                    {
                         return "not " + AsciiCharNames.GetName((AsciiChar)ch);
+                    }
                     else
+                    {
                         return "not character";
+                    }
                 }
             }
 
@@ -157,9 +165,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public void AddInfo(string value)
         {
             if (value.Length > 1)
+            {
                 AddInfo(SyntaxKind.Text);
+            }
             else
+            {
                 AddInfo(SyntaxKind.Character, value[0]);
+            }
         }
 
         public void AddInfo(string value, int count)
@@ -170,9 +182,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public void AddInfo(string value, int startIndex, int count)
         {
             if (count > 1)
+            {
                 AddInfo(SyntaxKind.Text);
+            }
             else
+            {
                 AddInfo(SyntaxKind.Character, value[startIndex]);
+            }
         }
 
         public LineInfoCollection Lines { get; } = new LineInfoCollection();

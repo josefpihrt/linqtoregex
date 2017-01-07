@@ -9,9 +9,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static string NumberToString(int number)
         {
             if (number >= 0 && number <= 9)
+            {
                 return _numbers[number];
+            }
             else
+            {
                 return number.ToString(CultureInfo.InvariantCulture);
+            }
         }
 
         private static readonly string[] _numbers = new string[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" };

@@ -32,9 +32,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         internal override void AppendTo(PatternBuilder builder)
         {
             if (AddGroup)
+            {
                 builder.AppendNoncapturingGroup(Content);
+            }
             else
+            {
                 builder.AppendGroupContent(Content);
+            }
 
             AppendQuantifierTo(builder);
         }

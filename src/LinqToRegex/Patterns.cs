@@ -446,9 +446,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static Pattern EndLine(bool beforeCarriageReturn)
         {
             if (beforeCarriageReturn)
+            {
                 return Assert(CarriageReturn().Maybe().EndLine());
+            }
             else
+            {
                 return EndLine();
+            }
         }
 
         /// <summary>
@@ -468,9 +472,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static QuantifiablePattern EndInputOrLine(bool beforeCarriageReturn)
         {
             if (beforeCarriageReturn)
+            {
                 return Assert(CarriageReturn().Maybe().EndInputOrLine());
+            }
             else
+            {
                 return EndInputOrLine();
+            }
         }
 
         /// <summary>
