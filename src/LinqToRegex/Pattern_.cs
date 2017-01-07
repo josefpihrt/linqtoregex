@@ -910,13 +910,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return AppendInternal(Patterns.WhileWhiteSpace());
         }
 
-#if DEBUG
-        public Pattern WhileWhiteSpace(object content)
-        {
-            return AppendInternal(Patterns.WhileWhiteSpace(content));
-        }
-#endif
-
         /// <summary>
         /// Appends a pattern that matches zero or more characters that are white-space characters but a neither carriage return nor a linefeed.
         /// </summary>

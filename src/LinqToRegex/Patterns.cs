@@ -54,31 +54,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             return new JoinContainer(separator, content);
         }
 
-#if DEBUG
-        /// <summary>
-        /// Concatenates and surrounds the elements in a specified <paramref name="content"/> using the specified separator between each element.
-        /// </summary>
-        /// <param name="separator">The pattern to use as a separator.</param>
-        /// <param name="content">An object that contains the elements to join.</param>
-        /// <returns></returns>
-        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
-        public static Pattern JoinAndSurround(object separator, object content)
-        {
-            return new JoinAndSurroundContainer(separator, content);
-        }
-
-        /// <summary>
-        /// Concatenates and surrounds the elements of an object array, using the specified separator between each element.
-        /// </summary>
-        /// <param name="separator">The pattern to use as a separator.</param>
-        /// <param name="content">An object array that contains the elements to join.</param>
-        /// <returns></returns>
-        /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
-        public static Pattern JoinAndSurround(object separator, params object[] content)
-        {
-            return new JoinAndSurroundContainer(separator, content);
-        }
-#endif
         /// <summary>
         /// Surrounds a specified pattern with another specified pattern.
         /// </summary>
@@ -3992,13 +3967,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             return WhiteSpace().MaybeMany();
         }
-
-#if DEBUG
-        public static Pattern WhileWhiteSpace(object content)
-        {
-            return new SurroundContainer(WhileWhiteSpace(), content, WhileWhiteSpace());
-        }
-#endif
 
         /// <summary>
         /// Returns a pattern that matches zero or more characters that are white-space characters but neither a carriage return nor a linefeed.
