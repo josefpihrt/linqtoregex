@@ -63,6 +63,7 @@
     <Compile Include="AnyChar.cs" />
     <Compile Include="AnyCharNative.cs" />
     <Compile Include="AsciiChar.cs" />
+    <Compile Include="AsciiCharNames.cs" />
     <Compile Include="AsciiCharSurroundContainer.cs" />
     <Compile Include="CaseAwareTextPattern.cs" />
     <Compile Include="CharClass.cs" />
@@ -104,7 +105,6 @@
     <Compile Include="IfAssert.cs" />
     <Compile Include="IfGroup.cs" />
     <Compile Include="INegateable.cs" />
-    <Compile Include="JoinAndSurroundContainer.cs" />
     <Compile Include="JoinContainer.cs" />
     <Compile Include="LazyQuantifier.cs" />
     <Compile Include="LineInfo.cs" />
@@ -148,7 +148,6 @@
     <Compile Include="Syntax.cs" />
     <Compile Include="SyntaxKind.cs" />
     <Compile Include="TextPattern.cs" />
-    <Compile Include="TextUtility.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
