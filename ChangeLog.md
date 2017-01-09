@@ -1,3 +1,8 @@
+#### LINQ to Regex 2.5.0 (2017-01-09)
+
+* Add support for .NET Standard 1.3
+* New patterns: CrawlLine, SlashOrBackslash, NotSlashOrBackslash
+
 #### LINQ to Regex 2.4.0 (2016-09-13)
 
 * Add support for Portable Class Library
