@@ -12,15 +12,26 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>LINQ to Regex library provides language integrated access to the .NET regular expressions.</description>
     <summary>LINQ to Regex library provides language integrated access to the .NET regular expressions.</summary>
-    <copyright>Copyright 2014-2016 Josef Pihrt</copyright>
+    <copyright>Copyright 2014-2017 Josef Pihrt</copyright>
     <tags>Regex RegularExpressions LINQ</tags>
     <dependencies>
       <group targetFramework=".NETFramework4.0" />
       <group targetFramework=".NETPortable4.5-Profile259" />
+      <group targetFramework=".NETStandard1.3">
+        <dependency id="System.Collections" version="4.3.0" />
+        <dependency id="System.Diagnostics.Debug" version="4.3.0" />
+        <dependency id="System.Globalization" version="4.3.0" />
+        <dependency id="System.Linq" version="4.3.0" />
+        <dependency id="System.Runtime" version="4.3.0" />
+        <dependency id="System.Runtime.Extensions" version="4.3.0" />
+        <dependency id="System.Text.RegularExpressions" version="4.3.0" />
+        <dependency id="System.Threading" version="4.3.0" />
+      </group>
     </dependencies>
   </metadata>
   <files>
-    <file src="Portable\*.dll;Portable\*.xml" target="lib\portable45-net45+win8+wp8+wpa81" exclude="*.pdb" />
     <file src="*.dll;*.xml" target="lib\net40" exclude="*.pdb" />
+    <file src="Portable\*.dll;Portable\*.xml" target="lib\portable45-net45+win8+wp8+wpa81" exclude="*.pdb" />
+    <file src="NETStandard\*.dll;NETStandard\*.xml" target="lib\netstandard1.3" exclude="*.pdb" />
   </files>
 </package>

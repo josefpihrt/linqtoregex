@@ -2,7 +2,6 @@
 
 using System;
 using System.Reflection;
-using System.Resources;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
@@ -22,7 +21,7 @@ using System.Runtime.InteropServices;
 // COM, set the ComVisible attribute to true on that type.
 [assembly: ComVisible(false)]
 
-#if !PORTABLE
+#if NETFRAMEWORK
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid("d4e649b7-41b3-41a6-83d8-5188960e668b")]
 #endif
@@ -39,5 +38,4 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("2.4.0.0")]
 //[assembly: AssemblyFileVersion("1.0.0.0")]
-[assembly: NeutralResourcesLanguage("en-US")]
 [assembly: CLSCompliant(true)]

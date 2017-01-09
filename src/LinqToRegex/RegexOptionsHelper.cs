@@ -9,7 +9,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public static RegexOptions GetInlineOptions(RegexOptions options)
         {
             return options & ~(
-#if !PORTABLE
+#if NETFRAMEWORK
                 RegexOptions.Compiled |
 #endif
                 RegexOptions.CultureInvariant | RegexOptions.ECMAScript | RegexOptions.RightToLeft);
