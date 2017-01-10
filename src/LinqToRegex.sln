@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{910EF5C5
 	ProjectSection(SolutionItems) = preProject
 		..\ChangeLog.md = ..\ChangeLog.md
 		..\LICENSE.txt = ..\LICENSE.txt
-		LinqToRegex.ruleset = LinqToRegex.ruleset
+		global.ruleset = global.ruleset
 		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
