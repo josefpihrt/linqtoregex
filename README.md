@@ -1,8 +1,22 @@
 # LINQ to Regex
+
 * LINQ to Regex library provides language integrated access to the .NET regular expressions.
 * It allows you to create and use regular expressions directly in your code and develop complex expressions while keeping its readability and maintainability.
 * Knowledge of the regular expression syntax is not required (but you should be familiar with basics).
 * The library is distributed via [NuGet](https://www.nuget.org/packages/LinqToRegex).
+
+## Supported Frameworks
+
+* .NET Framework 4.0
+* .NET Standard 1.3
+* Portable Class Library (Profile 259)
+  * .NET Framework 4.5
+  * Windows 8.0
+  * Windows Phone 8.1
+  * Windows Phone 8.0
+  * .NET Standard 1.0
+
+## Documentation
 
 The library contains two namespaces:
 ```c#
