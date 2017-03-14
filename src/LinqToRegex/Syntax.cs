@@ -189,7 +189,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         public const string AsciiControlStart = @"\c";
 
+        /// <summary>
         /// Specifies a start token of the hexadecimal Unicode character.
+        /// </summary>
         public const string UnicodeHexadecimalStart = @"\u";
 
         /// <summary>

@@ -727,13 +727,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         private string Value
         {
-            get
-            {
-                if (_value == null)
-                    _value = ToString();
-
-                return _value;
-            }
+            get { return _value ?? (_value = ToString()); }
         }
 
         internal Pattern Previous { get; set; }

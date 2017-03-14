@@ -370,8 +370,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
             if (pattern.Previous != null)
             {
-                if (_patterns == null)
-                    _patterns = new Stack<Pattern>();
+                _patterns = _patterns ?? new Stack<Pattern>();
 
                 int cnt = _patterns.Count;
                 Pattern item = pattern;
@@ -554,6 +553,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="testContent">The pattern to assert.</param>
         /// <param name="trueContent">The pattern to match if the assertion succeeds.</param>
         /// <param name="falseContent">The pattern to match if the assertion fails.</param>
+        /// <exception cref="ArgumentNullException"><paramref name="testContent"/> or <paramref name="trueContent"/> is <c>null</c>.</exception>
         public void AppendIfAssert(object testContent, object trueContent, object falseContent)
         {
             if (testContent == null)
@@ -1942,13 +1942,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         internal Stack<CharGrouping> CharGroupings
         {
-            get
-            {
-                if (_charGroupings == null)
-                    _charGroupings = new Stack<CharGrouping>();
-
-                return _charGroupings;
-            }
+            get { return _charGroupings ?? (_charGroupings = new Stack<CharGrouping>()); }
         }
 
         private RegexOptions CurrentOptions

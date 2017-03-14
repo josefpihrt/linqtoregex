@@ -31,6 +31,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="value">A value to negate.</param>
         /// <returns></returns>
+        /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public static NegativeBackAssertion operator !(BackAssertion value)
         {
             if (value == null)

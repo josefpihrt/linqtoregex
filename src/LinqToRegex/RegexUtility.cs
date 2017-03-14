@@ -15,9 +15,25 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     public static class RegexUtility
     {
         internal static readonly RegexOptions InlineOptions = RegexOptions.IgnoreCase | RegexOptions.Multiline | RegexOptions.ExplicitCapture | RegexOptions.Singleline | RegexOptions.IgnorePatternWhitespace;
-        internal static Regex ValidGroupNameRegex;
         private static readonly object _randomLock = new object();
         private static Random _random;
+        private static Regex _validGroupNameRegex;
+
+        internal static Regex ValidGroupNameRegex
+        {
+            get
+            {
+                if (_validGroupNameRegex == null)
+                {
+                    _validGroupNameRegex = EntireInput(
+                        Group(Range('1', '9') + MaybeMany(ArabicDigit())),
+                        (WordChar() - ArabicDigit()) + WhileWordChar()
+                    ).ToRegex();
+                }
+
+                return _validGroupNameRegex;
+            }
+        }
 
         /// <summary>
         /// Gets a value indicating whether the specified group name is a valid name of a regex group.
@@ -33,14 +49,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             if (!string.IsNullOrEmpty(groupName))
             {
-                if (ValidGroupNameRegex == null)
-                {
-                    ValidGroupNameRegex = EntireInput(
-                        Group(Range('1', '9') + MaybeMany(ArabicDigit())),
-                        (WordChar() - ArabicDigit()) + WhileWordChar()
-                    ).ToRegex();
-                }
-
                 Match match = ValidGroupNameRegex.Match(groupName);
                 if (match.Success)
                 {
@@ -557,7 +565,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 case NamedBlock.Georgian:
                     return "10A0 - 10FF";
                 case NamedBlock.Greek:
-                    return "0370 - 03FF";
                 case NamedBlock.GreekAndCoptic:
                     return "0370 - 03FF";
                 case NamedBlock.GreekExtended:
@@ -649,7 +656,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 case NamedBlock.PhoneticExtensions:
                     return "1D00 - 1D7F";
                 case NamedBlock.PrivateUse:
-                    return "E000 - F8FF";
                 case NamedBlock.PrivateUseArea:
                     return "E000 - F8FF";
                 case NamedBlock.Runic:

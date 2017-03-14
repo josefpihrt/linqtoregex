@@ -80,13 +80,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         public string NewLine
         {
             get { return new string(_coreNewLine); }
-            set
-            {
-                if (value == null)
-                    value = InitialNewLine;
-
-                _coreNewLine = value.ToCharArray();
-            }
+            set { _coreNewLine = (value ?? InitialNewLine).ToCharArray(); }
         }
 
         internal char OpenIdentifierBoundaryChar
