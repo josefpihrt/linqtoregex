@@ -10,51 +10,51 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// No escape mode.
         /// </summary>
-        None,
+        None = 0,
 
         /// <summary>
         /// Hexadecimal ASCII pattern.
         /// </summary>
-        AsciiHexadecimal,
+        AsciiHexadecimal = 1,
 
         /// <summary>
         /// Escape using backslash.
         /// </summary>
-        Backslash,
+        Backslash = 2,
 
         /// <summary>
         /// A bell character.
         /// </summary>
-        Bell,
+        Bell = 3,
 
         /// <summary>
         /// A carriage return character.
         /// </summary>
-        CarriageReturn,
+        CarriageReturn = 4,
 
         /// <summary>
         /// An escape character.
         /// </summary>
-        Escape,
+        Escape = 5,
 
         /// <summary>
         /// A form feed character.
         /// </summary>
-        FormFeed,
+        FormFeed = 6,
 
         /// <summary>
         /// A linefeed character.
         /// </summary>
-        Linefeed,
+        Linefeed = 7,
 
         /// <summary>
         /// A tab character.
         /// </summary>
-        Tab,
+        Tab = 8,
 
         /// <summary>
         /// A vertical tab character.
         /// </summary>
-        VerticalTab
+        VerticalTab = 9
     }
 }

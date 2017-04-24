@@ -10,186 +10,186 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// All control characters. This includes the Cc, Cf, Cs, Co, and Cn categories.
         /// </summary>
-        AllControlCharacters,
+        AllControlCharacters = 0,
 
         /// <summary>
         /// All diacritic marks. This includes the Mn, Mc, and Me categories.
         /// </summary>
-        AllDiacriticMarks,
+        AllDiacriticMarks = 1,
 
         /// <summary>
         /// All letter characters. This includes the Lu, Ll, Lt, Lm, and Lo characters.
         /// </summary>
-        AllLetterCharacters,
+        AllLetterCharacters = 2,
 
         /// <summary>
         /// All numbers. This includes the Nd, Nl, and No categories.
         /// </summary>
-        AllNumbers,
+        AllNumbers = 3,
 
         /// <summary>
         /// All punctuation characters. This includes the Pc, Pd, Ps, Pe, Pi, Pf, and Po categories.
         /// </summary>
-        AllPunctuationCharacters,
+        AllPunctuationCharacters = 4,
 
         /// <summary>
         /// All separator characters. This includes the Zs, Zl, and Zp categories.
         /// </summary>
-        AllSeparatorCharacters,
+        AllSeparatorCharacters = 5,
 
         /// <summary>
         /// All symbols. This includes the Sm, Sc, Sk, and So categories.
         /// </summary>
-        AllSymbols,
+        AllSymbols = 6,
 
         /// <summary>
         /// Letter, Lowercase
         /// </summary>
-        LetterLowercase,
+        LetterLowercase = 7,
 
         /// <summary>
         /// Letter, Modifier
         /// </summary>
-        LetterModifier,
+        LetterModifier = 8,
 
         /// <summary>
         /// Letter, Other
         /// </summary>
-        LetterOther,
+        LetterOther = 9,
 
         /// <summary>
         /// Letter, Titlecase
         /// </summary>
-        LetterTitlecase,
+        LetterTitlecase = 10,
 
         /// <summary>
         /// Letter, Uppercase
         /// </summary>
-        LetterUppercase,
+        LetterUppercase = 11,
 
         /// <summary>
         /// Mark, Enclosing
         /// </summary>
-        MarkEnclosing,
+        MarkEnclosing = 12,
 
         /// <summary>
         /// Mark, Nonspacing
         /// </summary>
-        MarkNonspacing,
+        MarkNonspacing = 13,
 
         /// <summary>
         /// Mark, Spacing Combining
         /// </summary>
-        MarkSpacingCombining,
+        MarkSpacingCombining = 14,
 
         /// <summary>
         /// Number, Decimal Digit
         /// </summary>
-        NumberDecimalDigit,
+        NumberDecimalDigit = 15,
 
         /// <summary>
         /// Number, Letter
         /// </summary>
-        NumberLetter,
+        NumberLetter = 16,
 
         /// <summary>
         /// Number, Other
         /// </summary>
-        NumberOther,
+        NumberOther = 17,
 
         /// <summary>
         /// Other, Control
         /// </summary>
-        OtherControl,
+        OtherControl = 18,
 
         /// <summary>
         /// Other, Format
         /// </summary>
-        OtherFormat,
+        OtherFormat = 19,
 
         /// <summary>
         /// Other, Not Assigned (no characters have this property)
         /// </summary>
-        OtherNotAssigned,
+        OtherNotAssigned = 20,
 
         /// <summary>
         /// Other, Private Use
         /// </summary>
-        OtherPrivateUse,
+        OtherPrivateUse = 21,
 
         /// <summary>
         /// Other, Surrogate
         /// </summary>
-        OtherSurrogate,
+        OtherSurrogate = 22,
 
         /// <summary>
         /// Punctuation, Close
         /// </summary>
-        PunctuationClose,
+        PunctuationClose = 23,
 
         /// <summary>
         /// Punctuation, Connector
         /// </summary>
-        PunctuationConnector,
+        PunctuationConnector = 24,
 
         /// <summary>
         /// Punctuation, Dash
         /// </summary>
-        PunctuationDash,
+        PunctuationDash = 25,
 
         /// <summary>
         /// Punctuation, Final quote (may behave like Ps or Pe depending on usage)
         /// </summary>
-        PunctuationFinalQuote,
+        PunctuationFinalQuote = 26,
 
         /// <summary>
         /// Punctuation, Initial quote (may behave like Ps or Pe depending on usage)
         /// </summary>
-        PunctuationInitialQuote,
+        PunctuationInitialQuote = 27,
 
         /// <summary>
         /// Punctuation, Open
         /// </summary>
-        PunctuationOpen,
+        PunctuationOpen = 28,
 
         /// <summary>
         /// Punctuation, Other
         /// </summary>
-        PunctuationOther,
+        PunctuationOther = 29,
 
         /// <summary>
         /// Separator, Line
         /// </summary>
-        SeparatorLine,
+        SeparatorLine = 30,
 
         /// <summary>
         /// Separator, Paragraph
         /// </summary>
-        SeparatorParagraph,
+        SeparatorParagraph = 31,
 
         /// <summary>
         /// Separator, Space
         /// </summary>
-        SeparatorSpace,
+        SeparatorSpace = 32,
 
         /// <summary>
         /// Symbol, Currency
         /// </summary>
-        SymbolCurrency,
+        SymbolCurrency = 33,
 
         /// <summary>
         /// Symbol, Math
         /// </summary>
-        SymbolMath,
+        SymbolMath = 34,
 
         /// <summary>
         /// Symbol, Modifier
         /// </summary>
-        SymbolModifier,
+        SymbolModifier = 35,
 
         /// <summary>
         /// Symbol, Other
         /// </summary>
-        SymbolOther,
+        SymbolOther = 36,
     }
 }

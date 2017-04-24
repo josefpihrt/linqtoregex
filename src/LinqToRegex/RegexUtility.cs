@@ -365,8 +365,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             {
                 lock (_randomLock)
                 {
-                    if (_random == null)
-                        _random = new Random();
+                    _random = _random ?? new Random();
                 }
             }
 
@@ -475,7 +474,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                     return "Symbol, Other";
                 default:
                     {
-                        Debug.Assert(false, category.ToString());
+                        Debug.Fail(category.ToString());
                         return "";
                     }
             }
@@ -706,7 +705,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                     return "A000 - A48F";
                 default:
                     {
-                        Debug.Assert(false, block.ToString());
+                        Debug.Fail(block.ToString());
                         return "";
                     }
             }

@@ -10,16 +10,16 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Specifies that a content will not be enclosed in the group.
         /// </summary>
-        None,
+        None = 0,
 
         /// <summary>
         /// Specifies that a content will be enclosed in the group.
         /// </summary>
-        Group,
+        Group = 1,
 
         /// <summary>
         /// Specifies that a content will be enclosed in the noncapturing group.
         /// </summary>
-        NoncapturingGroup
+        NoncapturingGroup = 2
     }
 }

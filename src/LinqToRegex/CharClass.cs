@@ -8,33 +8,38 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     internal enum CharClass
     {
         /// <summary>
+        /// None character class.
+        /// </summary>
+        None = 0,
+
+        /// <summary>
         /// Digit character class.
         /// </summary>
-        Digit,
+        Digit = 1,
 
         /// <summary>
         /// Word character class.
         /// </summary>
-        WordChar,
+        WordChar = 2,
 
         /// <summary>
         /// White-space character class.
         /// </summary>
-        WhiteSpace,
+        WhiteSpace = 3,
 
         /// <summary>
         /// Non-digit character class.
         /// </summary>
-        NotDigit,
+        NotDigit = 4,
 
         /// <summary>
         /// Non-word character class.
         /// </summary>
-        NotWordChar,
+        NotWordChar = 5,
 
         /// <summary>
         /// Non-whitespace character class.
         /// </summary>
-        NotWhiteSpace
+        NotWhiteSpace = 6
     }
 }

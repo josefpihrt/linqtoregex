@@ -10,11 +10,11 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Group name will be surrounded with less-than character on the left side and greater-than character on the right side.
         /// </summary>
-        AngleBrackets,
+        AngleBrackets = 0,
 
         /// <summary>
         /// Group name will be surrounded with apostrophes.
         /// </summary>
-        Apostrophe
+        Apostrophe = 1
     }
 }

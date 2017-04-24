@@ -4,13 +4,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
     internal enum QuantifierKind
     {
-        None,
-        Maybe,
-        MaybeMany,
-        OneMany,
-        Count,
-        CountRange,
-        CountFrom,
-        MaybeCount
+        None = 0,
+        Maybe = 1,
+        MaybeMany = 2,
+        OneMany = 3,
+        Count = 4,
+        CountRange = 5,
+        CountFrom = 6,
+        MaybeCount = 7
     }
 }
