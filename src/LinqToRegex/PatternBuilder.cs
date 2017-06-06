@@ -370,7 +370,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
             if (pattern.Previous != null)
             {
-                _patterns = _patterns ?? new Stack<Pattern>();
+                if (_patterns == null)
+                    _patterns = new Stack<Pattern>();
 
                 int cnt = _patterns.Count;
                 Pattern item = pattern;
@@ -422,15 +423,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (value == null)
                 return;
 
-            var pattern = value as Pattern;
-            if (pattern != null)
+            if (value is Pattern pattern)
             {
                 Append(pattern);
                 return;
             }
 
-            var text = value as string;
-            if (text != null)
+            if (value is string text)
             {
                 Append(text);
                 return;
@@ -442,22 +441,19 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 return;
             }
 
-            var charGrouping = value as CharGrouping;
-            if (charGrouping != null)
+            if (value is CharGrouping charGrouping)
             {
                 Append(charGrouping);
                 return;
             }
 
-            var values = value as object[];
-            if (values != null)
+            if (value is object[] values)
             {
                 Append(values, mode);
                 return;
             }
 
-            var items = value as IEnumerable;
-            if (items != null)
+            if (value is IEnumerable items)
                 Append(items, mode);
         }
 

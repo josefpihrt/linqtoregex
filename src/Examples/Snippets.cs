@@ -201,7 +201,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
 
         public static Pattern CSharpVerbatimTextLiteral()
         {
-            string q = "\"";
+            const string q = "\"";
 
             return "@" + q + WhileNotChar(q) + MaybeMany(q + q + WhileNotChar(q)) + q;
         }

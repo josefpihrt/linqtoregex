@@ -47,14 +47,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             get
             {
-                Pattern exp = Content as QuantifiablePattern;
+                if (Content is QuantifiablePattern pattern)
+                    return pattern.Previous != null;
 
-                if (exp != null)
-                    return exp.Previous != null;
-
-                var s = Content as string;
-
-                if (s != null)
+                if (Content is string s)
                     return s.Length == 0 || s.Length > 1;
 
                 return !(Content is CharGrouping);

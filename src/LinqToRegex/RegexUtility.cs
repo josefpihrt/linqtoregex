@@ -52,11 +52,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 Match match = ValidGroupNameRegex.Match(groupName);
                 if (match.Success)
                 {
-                    Group g = match.Groups[1];
-                    if (g.Success && g.Value.Length > 9)
+                    Group group = match.Groups[1];
+                    if (group.Success && group.Value.Length > 9)
                     {
-                        int result;
-                        return int.TryParse(g.Value, out result);
+                        return int.TryParse(group.Value, out int result);
                     }
 
                     return true;
@@ -365,7 +364,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             {
                 lock (_randomLock)
                 {
-                    _random = _random ?? new Random();
+                    if (_random == null)
+                        _random = new Random();
                 }
             }
 

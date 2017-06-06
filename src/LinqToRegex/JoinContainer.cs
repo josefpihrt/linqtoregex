@@ -19,8 +19,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         internal override void AppendTo(PatternBuilder builder)
         {
-            var values = Content as object[];
-            if (values != null)
+            if (Content is object[] values)
             {
                 if (values.Length > 0)
                 {

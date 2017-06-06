@@ -20,20 +20,15 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         internal override void AppendTo(PatternBuilder builder)
         {
-            var values = _content as object[];
-            if (values != null)
+            if (_content is object[] values)
             {
                 for (int i = 0; i < values.Length; i++)
                     builder.Append(values[i]);
             }
-            else
+            else if (_content is IEnumerable items)
             {
-                var items = _content as IEnumerable;
-                if (items != null)
-                {
-                    foreach (object item in items)
-                        builder.Append(item);
-                }
+                foreach (object item in items)
+                    builder.Append(item);
             }
         }
     }

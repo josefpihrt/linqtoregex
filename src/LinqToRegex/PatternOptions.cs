@@ -38,7 +38,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Indicates that the <see cref="Format"/> and <see cref="Comment"/> options are used. This is a composite options.
         /// </summary>
-        FormatAndComment = 12,
+        FormatAndComment = Format | Comment,
 
         /// <summary>
         /// Specifies that a pattern will be converted to C# multiline literal. This option cannot be used in a combination with <see cref="VisualBasicLiteral"/>.

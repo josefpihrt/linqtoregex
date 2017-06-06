@@ -33,16 +33,16 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
 
             Dump("invalid file name chars", Any(Path.GetInvalidFileNameChars()));
 
-            Pattern exp = BeginInput()
+            Pattern pattern = BeginInput()
                 .Assert(Crawl().SurroundWordBoundary("word1"))
                 .Assert(Crawl().SurroundWordBoundary("word2"))
                 .Any().MaybeMany();
 
-            Dump("all words anywhere", exp);
+            Dump("all words anywhere", pattern);
 
             var words = new string[] { "one", "two", "three" };
 
-            exp = WordBoundary()
+            pattern = WordBoundary()
                 .CountFrom(3,
                     Any(words.Select(f => Group(Patterns.Text(f))))
                     .WordBoundary()
@@ -51,14 +51,14 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
                 .GroupReference(2)
                 .GroupReference(3);
 
-            Dump("words in sequence in any order", exp);
+            Dump("words in sequence in any order", pattern);
 
-            exp = Group(Word())
+            pattern = Group(Word())
                 .NotWordChars()
                 .GroupReference(1)
                 .WordBoundary();
 
-            Dump("repeated word", exp);
+            Dump("repeated word", pattern);
 
             Console.ReadKey();
         }
