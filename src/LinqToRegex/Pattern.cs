@@ -471,7 +471,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
         public string Replace(string input)
         {
-            return Replace(input, string.Empty);
+            return Replace(input, "");
         }
 
         /// <summary>

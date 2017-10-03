@@ -134,7 +134,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             "vertical bar",
             "right curly bracket",
             "tilde",
-            "delete",
+            "delete"
         };
     }
 }

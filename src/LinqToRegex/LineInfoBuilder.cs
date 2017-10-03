@@ -70,12 +70,12 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             return new Dictionary<RegexOptions, string>()
             {
-                [RegexOptions.None] = (options.IsNone()) ? string.Empty : " ",
-                [RegexOptions.IgnoreCase] = (options.HasIgnoreCase()) ? " " : string.Empty,
-                [RegexOptions.Multiline] = (options.HasMultiline()) ? " " : string.Empty,
-                [RegexOptions.ExplicitCapture] = (options.HasExplicitCapture()) ? " " : string.Empty,
-                [RegexOptions.Singleline] = (options.HasSingleline()) ? " " : string.Empty,
-                [RegexOptions.IgnorePatternWhitespace] = (options.HasIgnorePatternWhitespace()) ? " " : string.Empty,
+                [RegexOptions.None] = (options.IsNone()) ? "" : " ",
+                [RegexOptions.IgnoreCase] = (options.HasIgnoreCase()) ? " " : "",
+                [RegexOptions.Multiline] = (options.HasMultiline()) ? " " : "",
+                [RegexOptions.ExplicitCapture] = (options.HasExplicitCapture()) ? " " : "",
+                [RegexOptions.Singleline] = (options.HasSingleline()) ? " " : "",
+                [RegexOptions.IgnorePatternWhitespace] = (options.HasIgnorePatternWhitespace()) ? " " : ""
             };
         }
 
@@ -245,7 +245,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             "text",
             "white-space",
             "word boundary",
-            "word character",
+            "word character"
         };
     }
 }

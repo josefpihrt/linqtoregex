@@ -572,7 +572,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern Group()
         {
-            return new NumberedGroup(string.Empty);
+            return new NumberedGroup("");
         }
 
         /// <summary>
@@ -3989,7 +3989,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             switch (value.Length)
             {
                 case 0:
-                    return Text(string.Empty);
+                    return Text("");
                 case 1:
                     return WhileNotChar(value[0]);
                 default:
@@ -4163,7 +4163,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             switch (value.Length)
             {
                 case 0:
-                    return Text(string.Empty);
+                    return Text("");
                 case 1:
                     return UntilChar(value[0]);
                 default:
@@ -4222,7 +4222,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <returns></returns>
         public static QuantifiablePattern Never()
         {
-            return NotAssert(string.Empty);
+            return NotAssert("");
         }
 
         /// <summary>
@@ -4320,7 +4320,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
         public static Pattern RequireGroup(string groupName)
         {
-            return IfGroup(groupName, string.Empty, Never());
+            return IfGroup(groupName, "", Never());
         }
 
         /// <summary>
@@ -4331,7 +4331,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="groupNumber"/> is less than zero.</exception>
         public static Pattern RequireGroup(int groupNumber)
         {
-            return IfGroup(groupNumber, string.Empty, Never());
+            return IfGroup(groupNumber, "", Never());
         }
 
         /// <summary>

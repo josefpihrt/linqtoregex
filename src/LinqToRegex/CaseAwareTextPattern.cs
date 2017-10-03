@@ -18,16 +18,16 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         internal override void AppendTo(PatternBuilder builder)
         {
-            if (!string.IsNullOrEmpty(_text))
+            if (string.IsNullOrEmpty(_text))
+                return;
+
+            if (_ignoreCase)
             {
-                if (_ignoreCase)
-                {
-                    builder.AppendOptions(RegexOptions.IgnoreCase, _text);
-                }
-                else
-                {
-                    builder.AppendOptions(RegexOptions.None, RegexOptions.IgnoreCase, _text);
-                }
+                builder.AppendOptions(RegexOptions.IgnoreCase, _text);
+            }
+            else
+            {
+                builder.AppendOptions(RegexOptions.None, RegexOptions.IgnoreCase, _text);
             }
         }
     }

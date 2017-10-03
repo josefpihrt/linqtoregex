@@ -129,69 +129,69 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         internal void Append(string value, bool inCharGroup)
         {
-            if (!string.IsNullOrEmpty(value))
+            if (string.IsNullOrEmpty(value))
+                return;
+
+            var mode = CharEscapeMode.None;
+
+            for (int i = 0; i < value.Length; i++)
             {
-                var mode = CharEscapeMode.None;
-
-                for (int i = 0; i < value.Length; i++)
+                mode = RegexUtility.GetEscapeMode((int)value[i], inCharGroup);
+                if (mode != CharEscapeMode.None)
                 {
-                    mode = RegexUtility.GetEscapeMode((int)value[i], inCharGroup);
-                    if (mode != CharEscapeMode.None)
+                    char ch = value[i];
+                    int lastPos;
+
+                    if (i > 0)
                     {
-                        char ch = value[i];
-                        int lastPos;
+                        Append();
+                        AppendDirect(value, 0, i);
 
-                        if (i > 0)
+                        if (_builder != null && !inCharGroup)
+                            _builder.AddInfo(value, i);
+                    }
+
+                    do
+                    {
+                        Append(ch, mode);
+
+                        if (_builder != null && !inCharGroup)
+                            _builder.AddInfo(SyntaxKind.Character, ch);
+
+                        i++;
+                        lastPos = i;
+
+                        while (i < value.Length)
                         {
-                            Append();
-                            AppendDirect(value, 0, i);
+                            ch = value[i];
+                            mode = RegexUtility.GetEscapeMode((int)ch, inCharGroup);
 
-                            if (_builder != null && !inCharGroup)
-                                _builder.AddInfo(value, i);
-                        }
-
-                        do
-                        {
-                            Append(ch, mode);
-
-                            if (_builder != null && !inCharGroup)
-                                _builder.AddInfo(SyntaxKind.Character, ch);
+                            if (mode != CharEscapeMode.None)
+                                break;
 
                             i++;
-                            lastPos = i;
+                        }
 
-                            while (i < value.Length)
-                            {
-                                ch = value[i];
-                                mode = RegexUtility.GetEscapeMode((int)ch, inCharGroup);
+                        if ((i - lastPos) > 0)
+                        {
+                            Append();
+                            AppendDirect(value, lastPos, i - lastPos);
 
-                                if (mode != CharEscapeMode.None)
-                                    break;
+                            if (_builder != null && !inCharGroup)
+                                _builder.AddInfo(value, lastPos, i - lastPos);
+                        }
 
-                                i++;
-                            }
+                    } while (i < value.Length);
 
-                            if ((i - lastPos) > 0)
-                            {
-                                Append();
-                                AppendDirect(value, lastPos, i - lastPos);
-
-                                if (_builder != null && !inCharGroup)
-                                    _builder.AddInfo(value, lastPos, i - lastPos);
-                            }
-
-                        } while (i < value.Length);
-
-                        return;
-                    }
+                    return;
                 }
-
-                Append();
-                AppendDirect(value);
-
-                if (_builder != null && !inCharGroup)
-                    _builder.AddInfo(value);
             }
+
+            Append();
+            AppendDirect(value);
+
+            if (_builder != null && !inCharGroup)
+                _builder.AddInfo(value);
         }
 
         private void Append(char ch, CharEscapeMode mode)
@@ -459,65 +459,65 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         private void Append(object[] values, GroupMode mode)
         {
-            if (values.Length > 0)
+            if (values.Length == 0)
+                return;
+
+            if (mode == GroupMode.Group)
             {
-                if (mode == GroupMode.Group)
-                {
-                    AppendNumberedGroupStart();
-                }
-                else if (mode == GroupMode.NoncapturingGroup)
-                {
-                    AppendNoncapturingGroupStart();
-                }
-
-                _pendingOr = false;
-                int length = Length;
-
-                for (int i = 0; i < values.Length; i++)
-                {
-                    _pendingOr = _pendingOr || (Length > length);
-                    length = Length;
-                    Append(values[i]);
-                }
-
-                _pendingOr = false;
-
-                if (mode != GroupMode.None)
-                    AppendGroupEnd();
+                AppendNumberedGroupStart();
             }
+            else if (mode == GroupMode.NoncapturingGroup)
+            {
+                AppendNoncapturingGroupStart();
+            }
+
+            _pendingOr = false;
+            int length = Length;
+
+            for (int i = 0; i < values.Length; i++)
+            {
+                _pendingOr = _pendingOr || (Length > length);
+                length = Length;
+                Append(values[i]);
+            }
+
+            _pendingOr = false;
+
+            if (mode != GroupMode.None)
+                AppendGroupEnd();
         }
 
         private void Append(IEnumerable items, GroupMode mode)
         {
             IEnumerator en = items.GetEnumerator();
 
-            if (en.MoveNext())
+            if (!en.MoveNext())
+                return;
+
+            if (mode == GroupMode.Group)
             {
-                if (mode == GroupMode.Group)
-                {
-                    AppendNumberedGroupStart();
-                }
-                else if (mode == GroupMode.NoncapturingGroup)
-                {
-                    AppendNoncapturingGroupStart();
-                }
-
-                _pendingOr = false;
-                int length = Length;
-                Append(en.Current);
-
-                while (en.MoveNext())
-                {
-                    _pendingOr = _pendingOr || (Length > length);
-                    length = Length;
-                    Append(en.Current);
-                }
-
-                _pendingOr = false;
-
-                if (mode != GroupMode.None)
-                    AppendGroupEnd();
+                AppendNumberedGroupStart();
             }
+            else if (mode == GroupMode.NoncapturingGroup)
+            {
+                AppendNoncapturingGroupStart();
+            }
+
+            _pendingOr = false;
+            int length = Length;
+            Append(en.Current);
+
+            while (en.MoveNext())
+            {
+                _pendingOr = _pendingOr || (Length > length);
+                length = Length;
+                Append(en.Current);
+            }
+
+            _pendingOr = false;
+
+            if (mode != GroupMode.None)
+                AppendGroupEnd();
         }
 
         private void AppendGroupStart()
@@ -1680,23 +1680,26 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentException"><paramref name="applyOptions"/> or <paramref name="disableOptions"/> value is not convertible to inline chars.</exception>
         public void AppendOptions(RegexOptions applyOptions, RegexOptions disableOptions)
         {
-            if (applyOptions != RegexOptions.None || disableOptions != RegexOptions.None)
+            if (applyOptions == RegexOptions.None
+                && disableOptions == RegexOptions.None)
             {
-                if (!RegexUtility.IsValidInlineOptions(applyOptions))
-                    throw new ArgumentException(ExceptionHelper.RegexOptionsNotConvertibleToInlineChars, nameof(applyOptions));
-
-                if (!RegexUtility.IsValidInlineOptions(disableOptions))
-                    throw new ArgumentException(ExceptionHelper.RegexOptionsNotConvertibleToInlineChars, nameof(disableOptions));
-
-                AppendGroupStart(false);
-                AppendOptionsChars(applyOptions, disableOptions);
-                AppendGroupEnd(false);
-
-                _builder?.AddInfo(SyntaxKind.Options);
-
-                CurrentOptions |= applyOptions;
-                CurrentOptions &= ~disableOptions;
+                return;
             }
+
+            if (!RegexUtility.IsValidInlineOptions(applyOptions))
+                throw new ArgumentException(ExceptionHelper.RegexOptionsNotConvertibleToInlineChars, nameof(applyOptions));
+
+            if (!RegexUtility.IsValidInlineOptions(disableOptions))
+                throw new ArgumentException(ExceptionHelper.RegexOptionsNotConvertibleToInlineChars, nameof(disableOptions));
+
+            AppendGroupStart(false);
+            AppendOptionsChars(applyOptions, disableOptions);
+            AppendGroupEnd(false);
+
+            _builder?.AddInfo(SyntaxKind.Options);
+
+            CurrentOptions |= applyOptions;
+            CurrentOptions &= ~disableOptions;
         }
 
         /// <summary>

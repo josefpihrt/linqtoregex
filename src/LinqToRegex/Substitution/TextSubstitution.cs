@@ -16,19 +16,19 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         internal override void AppendTo(StringBuilder builder)
         {
-            if (!string.IsNullOrEmpty(_text))
-            {
-                for (int i = 0; i < _text.Length; i++)
-                {
-                    if (_text[i] == '$')
-                    {
-                        RegexUtility.EscapeSubstitution(_text, i, builder);
-                        return;
-                    }
-                }
+            if (string.IsNullOrEmpty(_text))
+                return;
 
-                builder.Append(_text);
+            for (int i = 0; i < _text.Length; i++)
+            {
+                if (_text[i] == '$')
+                {
+                    RegexUtility.EscapeSubstitution(_text, i, builder);
+                    return;
+                }
             }
+
+            builder.Append(_text);
         }
 
         internal override string Value
@@ -37,7 +37,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             {
                 if (string.IsNullOrEmpty(_text))
                 {
-                    return string.Empty;
+                    return "";
                 }
                 else
                 {

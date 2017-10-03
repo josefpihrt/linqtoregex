@@ -14,7 +14,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     /// </summary>
     public static class RegexUtility
     {
-        internal static readonly RegexOptions InlineOptions = RegexOptions.IgnoreCase | RegexOptions.Multiline | RegexOptions.ExplicitCapture | RegexOptions.Singleline | RegexOptions.IgnorePatternWhitespace;
+        internal const RegexOptions InlineOptions = RegexOptions.IgnoreCase | RegexOptions.Multiline | RegexOptions.ExplicitCapture | RegexOptions.Singleline | RegexOptions.IgnorePatternWhitespace;
         private static readonly object _randomLock = new object();
         private static Random _random;
         private static Regex _validGroupNameRegex;
@@ -47,22 +47,21 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         internal static bool IsValidGroupNameInternal(string groupName)
         {
-            if (!string.IsNullOrEmpty(groupName))
-            {
-                Match match = ValidGroupNameRegex.Match(groupName);
-                if (match.Success)
-                {
-                    Group group = match.Groups[1];
-                    if (group.Success && group.Value.Length > 9)
-                    {
-                        return int.TryParse(group.Value, out int result);
-                    }
+            if (string.IsNullOrEmpty(groupName))
+                return false;
 
-                    return true;
-                }
+            Match match = ValidGroupNameRegex.Match(groupName);
+
+            if (!match.Success)
+                return false;
+
+            Group group = match.Groups[1];
+            if (group.Success && group.Value.Length > 9)
+            {
+                return int.TryParse(group.Value, out int result);
             }
 
-            return false;
+            return true;
         }
 
         internal static void CheckGroupName(string groupName)
@@ -1223,7 +1222,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             // 254 0xFE þ
             CharEscapeMode.None,
             // 255 0xFF ÿ
-            CharEscapeMode.None,
+            CharEscapeMode.None
         };
 
         private static readonly CharEscapeMode[] _charGroupEscapeModes = new CharEscapeMode[] {
@@ -1738,7 +1737,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             // 254 0xFE þ
             CharEscapeMode.None,
             // 255 0xFF ÿ
-            CharEscapeMode.None,
+            CharEscapeMode.None
         };
 
         internal static readonly string[] CategoryDesignations = new string[]

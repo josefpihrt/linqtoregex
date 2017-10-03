@@ -6,7 +6,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         : GroupingPattern
     {
         public NumberedGroup()
-            : this(string.Empty)
+            : this("")
         {
         }
 
