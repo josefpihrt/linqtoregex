@@ -16,18 +16,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         internal NegativeSurroundAssertion(object backAssertion, object content, object assertion)
         {
-            if (backAssertion == null)
-                throw new ArgumentNullException(nameof(backAssertion));
-
-            if (content == null)
-                throw new ArgumentNullException(nameof(content));
-
-            if (assertion == null)
-                throw new ArgumentNullException(nameof(assertion));
-
-            _backAssertion = backAssertion;
-            _content = content;
-            _assertion = assertion;
+            _backAssertion = backAssertion ?? throw new ArgumentNullException(nameof(backAssertion));
+            _content = content ?? throw new ArgumentNullException(nameof(content));
+            _assertion = assertion ?? throw new ArgumentNullException(nameof(assertion));
         }
 
         internal override void AppendTo(PatternBuilder builder)

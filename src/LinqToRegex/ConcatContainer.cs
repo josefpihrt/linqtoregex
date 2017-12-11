@@ -12,10 +12,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         public ConcatContainer(object content)
         {
-            if (content == null)
-                throw new ArgumentNullException(nameof(content));
-
-            _content = content;
+            _content = content ?? throw new ArgumentNullException(nameof(content));
         }
 
         internal override void AppendTo(PatternBuilder builder)

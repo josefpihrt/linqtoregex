@@ -13,11 +13,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         public AsciiCharSurroundContainer(AsciiChar charBefore, object content, AsciiChar charAfter)
         {
-            if (content == null)
-                throw new ArgumentNullException(nameof(content));
-
             _charBefore = charBefore;
-            _content = content;
+            _content = content ?? throw new ArgumentNullException(nameof(content));
             _charAfter = charAfter;
         }
 

@@ -234,10 +234,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
             public CharGroupingCharGroup(CharGrouping value, bool negative)
             {
-                if (value == null)
-                    throw new ArgumentNullException(nameof(value));
-
-                _item = value;
+                _item = value ?? throw new ArgumentNullException(nameof(value));
                 Negative = negative;
             }
 
@@ -261,10 +258,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
             internal CharGroupCharGroup(CharGroup group, bool negative)
             {
-                if (group == null)
-                    throw new ArgumentNullException(nameof(group));
-
-                _group = group;
+                _group = group ?? throw new ArgumentNullException(nameof(group));
                 Negative = negative;
             }
 

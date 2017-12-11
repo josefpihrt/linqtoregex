@@ -163,10 +163,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
             public CharGroupingCharGrouping(CharGrouping value)
             {
-                if (value == null)
-                    throw new ArgumentNullException(nameof(value));
-
-                _value = value;
+                _value = value ?? throw new ArgumentNullException(nameof(value));
             }
 
             protected override void AppendItemContentTo(PatternBuilder builder)

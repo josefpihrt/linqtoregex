@@ -10,11 +10,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     {
         public JoinContainer(object separator, object content)
         {
-            if (content == null)
-                throw new ArgumentNullException(nameof(content));
-
             Separator = separator;
-            Content = content;
+            Content = content ?? throw new ArgumentNullException(nameof(content));
         }
 
         internal override void AppendTo(PatternBuilder builder)

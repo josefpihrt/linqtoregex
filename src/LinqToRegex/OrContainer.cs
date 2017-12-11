@@ -14,12 +14,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         private static object Combine(object first, object second)
         {
-            var x = first as OrContainer;
-            var y = second as OrContainer;
-
-            if (x != null)
+            if (first is OrContainer x)
             {
-                if (y != null)
+                if (second is OrContainer y)
                 {
                     return Combine(x.Content as object[], y.Content as object[]);
                 }
@@ -28,7 +25,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                     return Combine(x.Content as object[], second);
                 }
             }
-            else if (y != null)
+            else if (second is OrContainer y)
             {
                 return Combine(first, y.Content as object[]);
             }

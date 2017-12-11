@@ -15,14 +15,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         internal CharSubtraction(IBaseGroup baseGroup, IExcludedGroup excludedGroup)
         {
-            if (baseGroup == null)
-                throw new ArgumentNullException(nameof(baseGroup));
-
-            if (excludedGroup == null)
-                throw new ArgumentNullException(nameof(excludedGroup));
-
-            _baseGroup = baseGroup;
-            _excludedGroup = excludedGroup;
+            _baseGroup = baseGroup ?? throw new ArgumentNullException(nameof(baseGroup));
+            _excludedGroup = excludedGroup ?? throw new ArgumentNullException(nameof(excludedGroup));
         }
 
         /// <summary>

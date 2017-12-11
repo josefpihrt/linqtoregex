@@ -13,18 +13,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         public SurroundContainer(object contentBefore, object content, object contentAfter)
         {
-            if (contentBefore == null)
-                throw new ArgumentNullException(nameof(contentBefore));
-
-            if (content == null)
-                throw new ArgumentNullException(nameof(content));
-
-            if (contentAfter == null)
-                throw new ArgumentNullException(nameof(contentAfter));
-
-            _contentBefore = contentBefore;
-            _content = content;
-            _contentAfter = contentAfter;
+            _contentBefore = contentBefore ?? throw new ArgumentNullException(nameof(contentBefore));
+            _content = content ?? throw new ArgumentNullException(nameof(content));
+            _contentAfter = contentAfter ?? throw new ArgumentNullException(nameof(contentAfter));
         }
 
         internal override void AppendTo(PatternBuilder builder)

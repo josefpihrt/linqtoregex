@@ -36,12 +36,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         internal PatternBuilder(PatternSettings settings, RegexOptions options)
         {
-            if (settings == null)
-                throw new ArgumentNullException(nameof(settings));
+            Settings = settings ?? throw new ArgumentNullException(nameof(settings));
 
             _sb = new StringBuilder();
-
-            Settings = settings;
 
             if (settings.HasOptions(PatternOptions.Format) && settings.HasOption(PatternOptions.Comment | PatternOptions.InlineOptions))
                 _builder = new LineInfoBuilder();

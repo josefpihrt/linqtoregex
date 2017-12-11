@@ -25,10 +25,12 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             {
                 if (_validGroupNameRegex == null)
                 {
-                    _validGroupNameRegex = EntireInput(
+                    Pattern pattern = EntireInput(
                         Group(Range('1', '9') + MaybeMany(ArabicDigit())),
                         (WordChar() - ArabicDigit()) + WhileWordChar()
-                    ).ToRegex();
+                    );
+
+                    _validGroupNameRegex = pattern.ToRegex();
                 }
 
                 return _validGroupNameRegex;

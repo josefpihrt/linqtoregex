@@ -24,10 +24,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         protected GroupingPattern(object content)
         {
-            if (content == null)
-                throw new ArgumentNullException(nameof(content));
-
-            Content = content;
+            Content = content ?? throw new ArgumentNullException(nameof(content));
         }
 
         /// <summary>

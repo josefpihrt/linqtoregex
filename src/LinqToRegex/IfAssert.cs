@@ -13,14 +13,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         public IfAssert(object testContent, object trueContent, object falseContent)
         {
-            if (testContent == null)
-                throw new ArgumentNullException(nameof(testContent));
-
-            if (trueContent == null)
-                throw new ArgumentNullException(nameof(trueContent));
-
-            _testContent = testContent;
-            _trueContent = trueContent;
+            _testContent = testContent ?? throw new ArgumentNullException(nameof(testContent));
+            _trueContent = trueContent ?? throw new ArgumentNullException(nameof(trueContent));
             _falseContent = falseContent;
         }
 
