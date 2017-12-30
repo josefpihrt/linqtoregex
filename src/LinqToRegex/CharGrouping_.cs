@@ -131,7 +131,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 builder.AppendGeneralCategory(_category, Negative);
             }
 
-            public virtual bool Negative { get; }
+            public bool Negative { get; }
         }
 
         internal class NamedBlockCharGrouping
@@ -153,7 +153,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 builder.AppendNamedBlock(_block, Negative);
             }
 
-            public virtual bool Negative { get; }
+            public bool Negative { get; }
         }
 
         internal class CharGroupingCharGrouping

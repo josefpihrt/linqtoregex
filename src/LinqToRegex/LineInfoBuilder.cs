@@ -103,7 +103,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             }
             else if (CurrentLine.Kind == SyntaxKind.GeneralCategory || CurrentLine.Kind == SyntaxKind.NotGeneralCategory)
             {
-                return _comments[(int)CurrentLine.Kind] + " " + ((GeneralCategoryLineInfo)CurrentLine).Category;
+                return _comments[(int)CurrentLine.Kind] + " " + ((GeneralCategoryLineInfo)CurrentLine).Category.ToString();
             }
             else if (CurrentLine.Kind == SyntaxKind.NegativeCharGroup)
             {

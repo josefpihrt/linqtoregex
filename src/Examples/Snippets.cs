@@ -1,5 +1,9 @@
 ﻿// Copyright (c) Josef Pihrt. All rights reserved. Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
+#pragma warning disable IDE0005
+using System.Text.RegularExpressions;
+#pragma warning restore IDE0005
+
 using static Pihrtsoft.Text.RegularExpressions.Linq.Patterns;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples

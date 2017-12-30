@@ -314,7 +314,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         internal static void EscapeSubstitution(string input, int i, StringBuilder sb)
         {
-            char ch = input[i];
+            char ch;
             int lastPos;
             sb.Append(input, 0, i);
 
