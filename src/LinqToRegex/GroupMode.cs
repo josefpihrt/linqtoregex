@@ -20,6 +20,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Specifies that a content will be enclosed in the noncapturing group.
         /// </summary>
-        NoncapturingGroup = 2
+        NoncapturingGroup = 2,
     }
 }

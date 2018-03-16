@@ -15,6 +15,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Group name will be surrounded with apostrophes.
         /// </summary>
-        Apostrophe = 1
+        Apostrophe = 1,
     }
 }

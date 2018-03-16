@@ -40,6 +40,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Non-whitespace character class.
         /// </summary>
-        NotWhiteSpace = 6
+        NotWhiteSpace = 6,
     }
 }

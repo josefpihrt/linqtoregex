@@ -53,6 +53,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Specifies that current inline options will be added to each line. This options is relevant only in combination with <see cref="Format"/> option.
         /// </summary>
-        InlineOptions = 64
+        InlineOptions = 64,
     }
 }

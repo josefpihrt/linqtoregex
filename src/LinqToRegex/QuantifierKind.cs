@@ -11,6 +11,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         Count = 4,
         CountRange = 5,
         CountFrom = 6,
-        MaybeCount = 7
+        MaybeCount = 7,
     }
 }

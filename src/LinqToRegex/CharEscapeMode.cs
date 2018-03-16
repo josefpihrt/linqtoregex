@@ -55,6 +55,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// A vertical tab character.
         /// </summary>
-        VerticalTab = 9
+        VerticalTab = 9,
     }
 }
