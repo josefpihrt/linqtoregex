@@ -432,9 +432,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 return;
             }
 
-            if (value is char)
+            if (value is char ch)
             {
-                Append((char)value);
+                Append(ch);
                 return;
             }
 
