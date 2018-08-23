@@ -11,7 +11,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that is a negation of the current instance.
         /// </summary>
-        /// <returns></returns>
         TPattern Negate();
     }
 }

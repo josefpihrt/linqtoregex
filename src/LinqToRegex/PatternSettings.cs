@@ -39,7 +39,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Determines whether specified options are set in the options of the current instance.
         /// </summary>
         /// <param name="options">A bitwise combination of the enumeration values.</param>
-        /// <returns></returns>
         public bool HasOptions(PatternOptions options) => (Options & options) == options;
 
         internal bool HasOption(PatternOptions options) => (Options & options) != 0;

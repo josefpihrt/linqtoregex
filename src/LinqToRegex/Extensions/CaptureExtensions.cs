@@ -14,7 +14,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// Returns a sum of index and length of a specified <paramref name="capture"/>.
         /// </summary>
         /// <param name="capture">A regular expression capture.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="capture"/> is <c>null</c>.</exception>
         public static int EndIndex(this Capture capture)
         {

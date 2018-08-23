@@ -14,7 +14,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Concatenates the elements in a specified <paramref name="content"/>.
         /// </summary>
         /// <param name="content">An object that contains the elements to concatenate.</param>
-        /// <returns></returns>
         public static Pattern Concat(object content)
         {
             return new ConcatContainer(content);
@@ -24,7 +23,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Concatenates the elements in a specified object array.
         /// </summary>
         /// <param name="content">An object array that contains the elements to concatenate.</param>
-        /// <returns></returns>
         public static Pattern Concat(params object[] content)
         {
             return new ConcatContainer(content);
@@ -35,7 +33,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="separator">The pattern to use as a separator.</param>
         /// <param name="content">An object that contains the elements to join.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern Join(object separator, object content)
         {
@@ -47,7 +44,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="separator">The pattern to use as a separator.</param>
         /// <param name="content">An object array that contains the elements to join.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern Join(object separator, params object[] content)
         {
@@ -59,7 +55,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="surroundContent">A pattern to be surrounding the base pattern.</param>
         /// <param name="content">A base pattern to be surrounded.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="surroundContent"/> or <paramref name="content"/> is <c>null</c>.</exception>
         internal static Pattern Surround(object surroundContent, object content)
         {
@@ -72,7 +67,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="contentBefore">A pattern to be placed before the base pattern.</param>
         /// <param name="content">A base pattern to be surrounded.</param>
         /// <param name="contentAfter">A pattern to be placed after the base pattern.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="contentBefore"/> or <paramref name="content"/> or <paramref name="contentAfter"/> is <c>null</c>.</exception>
         internal static Pattern Surround(object contentBefore, object content, object contentAfter)
         {
@@ -84,7 +78,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="surroundChar">A character to be surrounding the base pattern.</param>
         /// <param name="value">A base pattern to be surrounded.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         internal static Pattern Surround(AsciiChar surroundChar, object value)
         {
@@ -97,7 +90,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="charBefore">A character to be placed before the base pattern.</param>
         /// <param name="value">A base pattern to be surrounded.</param>
         /// <param name="charAfter">A character to be placed after the base pattern.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         internal static Pattern Surround(AsciiChar charBefore, object value, AsciiChar charAfter)
         {
@@ -108,7 +100,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified text.
         /// </summary>
         /// <param name="value">A text to append.</param>
-        /// <returns></returns>
         public static Pattern Text(string value)
         {
             return new TextPattern(value);
@@ -119,7 +110,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="value">A text to append.</param>
         /// <param name="ignoreCase">true to ignore case during the matching; otherwise, false.</param>
-        /// <returns></returns>
         public static QuantifiablePattern Text(string value, bool ignoreCase)
         {
             return new CaseAwareTextPattern(value, ignoreCase);
@@ -130,7 +120,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <typeparam name="TPattern">The type of the pattern.</typeparam>
         /// <param name="value">A pattern to be negated.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public static TPattern Not<TPattern>(INegateable<TPattern> value) where TPattern : Pattern
         {
@@ -156,7 +145,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="testContent">The content to assert.</param>
         /// <param name="trueContent">The content to be matched if the assertion succeeds.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="testContent"/> or <paramref name="trueContent"/> is <c>null</c>.</exception>
         public static QuantifiablePattern IfAssert(object testContent, object trueContent)
         {
@@ -169,7 +157,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="testContent">The content to assert.</param>
         /// <param name="trueContent">The content to be matched if the assertion succeeds.</param>
         /// <param name="falseContent">The content to be matched if the assertion fails.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="testContent"/> or <paramref name="trueContent"/> is <c>null</c>.</exception>
         public static QuantifiablePattern IfAssert(object testContent, object trueContent, object falseContent)
         {
@@ -181,7 +168,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="groupName">A name of the group.</param>
         /// <param name="trueContent">The content to be matched if the named group is matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="groupName"/> or <paramref name="trueContent"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
         public static QuantifiablePattern IfGroup(string groupName, object trueContent)
@@ -195,7 +181,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="groupName">A name of the group.</param>
         /// <param name="trueContent">The content to be matched if the named group is matched.</param>
         /// <param name="falseContent">The content to be matched if the named group is not matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="groupName"/> or <paramref name="trueContent"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
         public static QuantifiablePattern IfGroup(string groupName, object trueContent, object falseContent)
@@ -208,7 +193,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="groupNumber">A number of the group.</param>
         /// <param name="trueContent">The content to be matched if the numbered group is matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="trueContent"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="groupNumber"/> is less than zero.</exception>
         public static QuantifiablePattern IfGroup(int groupNumber, object trueContent)
@@ -222,7 +206,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="groupNumber">A number of the group.</param>
         /// <param name="trueContent">The content to be matched if the numbered group is matched.</param>
         /// <param name="falseContent">The content to be matched if the numbered group is not matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="trueContent"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="groupNumber"/> is less than zero.</exception>
         public static QuantifiablePattern IfGroup(int groupNumber, object trueContent, object falseContent)
@@ -234,7 +217,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a zero-width positive lookahead assertion with a specified content to be matched.
         /// </summary>
         /// <param name="content">A content to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Assertion Assert(object content)
         {
@@ -245,7 +227,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a zero-width positive lookahead assertion that matches any one pattern specified in the object array.
         /// </summary>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Assertion Assert(params object[] content)
         {
@@ -256,7 +237,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a zero-width negative lookahead assertion with a specified content not to be matched.
         /// </summary>
         /// <param name="content">A content not to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern NotAssert(object content)
         {
@@ -267,7 +247,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a zero-width negative lookahead assertion that matches none of patterns specified in the object array.
         /// </summary>
         /// <param name="content">An object array that contains zero or more patterns none of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern NotAssert(params object[] content)
         {
@@ -278,7 +257,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a zero-width positive lookbehind assertion with a specified content to be matched.
         /// </summary>
         /// <param name="content">A content to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static BackAssertion AssertBack(object content)
         {
@@ -289,7 +267,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a zero-width positive lookbehind assertion that matches any one pattern specified in the object array.
         /// </summary>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static BackAssertion AssertBack(params object[] content)
         {
@@ -300,7 +277,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a zero-width negative lookbehind assertion with a specified content not to be matched.
         /// </summary>
         /// <param name="content">A content not to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern NotAssertBack(object content)
         {
@@ -311,7 +287,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a zero-width negative lookbehind assertion that matches none of patterns specified in the object array.
         /// </summary>
         /// <param name="content">An object array that contains zero or more patterns none of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern NotAssertBack(params object[] content)
         {
@@ -323,7 +298,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="assertion">A content of the assertions.</param>
         /// <param name="content">The content to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="assertion"/> <paramref name="content"/> is <c>null</c>.</exception>
         public static SurroundAssertion AssertSurround(object assertion, object content)
         {
@@ -336,7 +310,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="backAssertion">A content of the lookbehind assertion.</param>
         /// <param name="content">The content to be matched.</param>
         /// <param name="assertion">A content of the lookahead assertion.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="backAssertion"/> or <paramref name="content"/> or <paramref name="assertion"/> is <c>null</c>.</exception>
         public static SurroundAssertion AssertSurround(object backAssertion, object content, object assertion)
         {
@@ -348,7 +321,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="assertion">A content of the negative assertions.</param>
         /// <param name="content">The content to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="assertion"/> <paramref name="content"/> is <c>null</c>.</exception>
         public static NegativeSurroundAssertion NotAssertSurround(object assertion, object content)
         {
@@ -361,7 +333,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="backAssertion">A content of the negative lookbehind assertion.</param>
         /// <param name="content">The content to be matched.</param>
         /// <param name="assertion">A content of the negative lookahead assertion.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="backAssertion"/> or <paramref name="content"/> or <paramref name="assertion"/> is <c>null</c>.</exception>
         public static NegativeSurroundAssertion NotAssertSurround(object backAssertion, object content, object assertion)
         {
@@ -371,7 +342,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that is matched at the beginning of the string.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern BeginInput()
         {
             return new StartOfInput();
@@ -380,7 +350,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that is matched at the end of the string.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern EndInput()
         {
             return new EndOfInput();
@@ -389,7 +358,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that is matched at the beginning of the line.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern BeginLine()
         {
             return Options(RegexOptions.Multiline, BeginInputOrLine());
@@ -398,7 +366,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that is matched at the beginning of the string (or line if the <see cref="RegexOptions.Multiline"/> option is applied).
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern BeginInputOrLine()
         {
             return new StartOfLine();
@@ -407,7 +374,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that is matched at the end of the string or line. End of line is defined as the position before a linefeed.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern EndLine()
         {
             return Options(RegexOptions.Multiline, EndInputOrLine());
@@ -417,7 +383,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that is matched (before carriage return) at the end of the string or line. End of line is defined as the position before a linefeed.
         /// </summary>
         /// <param name="beforeCarriageReturn">Indicates whether a position of the match should be before a carriage return if present and not already consumed by regex engine</param>
-        /// <returns></returns>
         public static Pattern EndLine(bool beforeCarriageReturn)
         {
             if (beforeCarriageReturn)
@@ -433,7 +398,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that is matched at the end of the string (or line if the <see cref="RegexOptions.Multiline"/> option is applied). End of line is defined as the position before a linefeed.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern EndInputOrLine()
         {
             return new EndOfLine();
@@ -443,7 +407,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that is matched (before carriage return) at the end of the string (or (before carriage return) at the end of line if the <see cref="RegexOptions.Multiline"/> option is applied). End of line is defined as the position before a linefeed.
         /// </summary>
         /// <param name="beforeCarriageReturn">Indicates whether a position of the match should be before a carriage return if present and not already consumed by regex engine</param>
-        /// <returns></returns>
         public static QuantifiablePattern EndInputOrLine(bool beforeCarriageReturn)
         {
             if (beforeCarriageReturn)
@@ -459,7 +422,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that is matched at the end of the string or before linefeed at the end of the string.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern EndInputOrBeforeEndingLinefeed()
         {
             return new EndOfInputOrBeforeEndingLinefeed();
@@ -468,7 +430,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that is matched at the position where the previous match ended.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern PreviousMatchEnd()
         {
             return new PreviousMatchEnd();
@@ -477,7 +438,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that is matched on a boundary between a word character and a non-word character. The pattern may be also matched on a word boundary at the beginning or end of the string.
         /// </summary>
-        /// <returns></returns>
         public static WordBoundary WordBoundary()
         {
             return new WordBoundary();
@@ -486,7 +446,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that is not matched on a boundary between a word character and a non-word character.
         /// </summary>
-        /// <returns></returns>
         public static NegativeWordBoundary NotWordBoundary()
         {
             return new NegativeWordBoundary();
@@ -495,7 +454,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches one or more word characters surrounded with a word boundary.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern Word()
         {
             return Surround(WordBoundary(), WordChars()).AsNoncapturingGroup();
@@ -505,7 +463,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches spefified pattern surrounded with a word boundary.
         /// </summary>
         /// <param name="content">A text to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern SurroundWordBoundary(object content)
         {
@@ -516,7 +473,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches specified content surrounded with a word boundary.
         /// </summary>
         /// <param name="content">An object array that contains zero or more values any one of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern SurroundWordBoundary(params object[] content)
         {
@@ -527,7 +483,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified content surrounded with the beginning and the end of the string.
         /// </summary>
         /// <param name="content">The content to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern EntireInput(object content)
         {
@@ -538,7 +493,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches any one pattern surrounded with the beginning and the end of the string.
         /// </summary>
         /// <param name="content">An object array that contains zero or more values any one of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern EntireInput(params object[] content)
         {
@@ -549,7 +503,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a noncapturing group with a specified content.
         /// </summary>
         /// <param name="content">The content to be matched.</param>
-        /// <returns></returns>
         public static QuantifiablePattern Any(object content)
         {
             return NoncapturingGroup(content);
@@ -559,7 +512,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches any one of the patterns specified in the object array.
         /// </summary>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern Any(params object[] content)
         {
@@ -569,7 +521,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns an empty numbered group.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern Group()
         {
             return new NumberedGroup("");
@@ -579,7 +530,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a numbered group with a specified content.
         /// </summary>
         /// <param name="content">The content to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern Group(object content)
         {
@@ -590,7 +540,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a numbered group with a specified content.
         /// </summary>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern Group(params object[] content)
         {
@@ -602,7 +551,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="name">A name of the group.</param>
         /// <param name="content">The content to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="name"/> <paramref name="content"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"><paramref name="name"/> is not a valid regex group name.</exception>
         public static QuantifiablePattern NamedGroup(string name, object content)
@@ -615,7 +563,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="name">A name of the group.</param>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="name"/> <paramref name="content"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"><paramref name="name"/> is not a valid regex group name.</exception>
         public static QuantifiablePattern NamedGroup(string name, params object[] content)
@@ -627,7 +574,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a noncapturing group with a specified content.
         /// </summary>
         /// <param name="content">The content to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern NoncapturingGroup(object content)
         {
@@ -638,7 +584,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a noncapturing group with a specified content.
         /// </summary>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern NoncapturingGroup(params object[] content)
         {
@@ -651,7 +596,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="name1">Current group name.</param>
         /// <param name="name2">Previously defined group name.</param>
         /// <param name="content">The content to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="name1"/> or <paramref name="name2"/> or <paramref name="content"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"><paramref name="name1"/> or <paramref name="name2"/> is not a valid regex group name.</exception>
         public static QuantifiablePattern BalancingGroup(string name1, string name2, object content)
@@ -665,7 +609,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="name1">Current group name.</param>
         /// <param name="name2">Previously defined group name.</param>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="name1"/> or <paramref name="name2"/> or <paramref name="content"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"><paramref name="name1"/> or <paramref name="name2"/> is not a valid regex group name.</exception>
         public static QuantifiablePattern BalancingGroup(string name1, string name2, params object[] content)
@@ -677,7 +620,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a nonbacktracking group with a specified content.
         /// </summary>
         /// <param name="content">The content to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern NonbacktrackingGroup(object content)
         {
@@ -688,7 +630,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a nonbacktracking group with a specified content.
         /// </summary>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern NonbacktrackingGroup(params object[] content)
         {
@@ -699,7 +640,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches specified content zero or one time.
         /// </summary>
         /// <param name="content">The content to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiedGroup Maybe(object content)
         {
@@ -711,7 +651,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="first">First element of a sequence that contains patterns any one of which has to be matched.</param>
         /// <param name="others">Other elements of a sequence that contains patterns any one of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="first"/> is <c>null</c>.</exception>
         public static QuantifiedGroup Maybe(object first, params object[] others)
         {
@@ -735,7 +674,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches specified content zero or more times.
         /// </summary>
         /// <param name="content">The content to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiedGroup MaybeMany(object content)
         {
@@ -747,7 +685,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="first">First element of a sequence that contains patterns any one of which has to be matched.</param>
         /// <param name="others">Other elements of a sequence that contains patterns any one of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="first"/> is <c>null</c>.</exception>
         public static QuantifiedGroup MaybeMany(object first, params object[] others)
         {
@@ -771,7 +708,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches specified content one or more times.
         /// </summary>
         /// <param name="content">The content to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiedGroup OneMany(object content)
         {
@@ -783,7 +719,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="first">First element of a sequence that contains patterns any one of which has to be matched.</param>
         /// <param name="others">Other elements of a sequence that contains patterns any one of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="first"/> is <c>null</c>.</exception>
         public static QuantifiedGroup OneMany(object first, params object[] others)
         {
@@ -808,7 +743,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="exactCount">A number of times the pattern has to be matched.</param>
         /// <param name="content">The content to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup Count(int exactCount, object content)
@@ -822,7 +756,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="exactCount">A number of times the pattern has to be matched.</param>
         /// <param name="first">First element of a sequence that contains patterns any one of which has to be matched.</param>
         /// <param name="others">Other elements of a sequence that contains patterns any one of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="first"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup Count(int exactCount, object first, params object[] others)
@@ -849,7 +782,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="minCount">A minimal number of times the pattern must be matched.</param>
         /// <param name="maxCount">A maximum number of times the pattern can be matched.</param>
         /// <param name="content">The content to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="minCount"/> is less than zero or <paramref name="maxCount"/> is less than <paramref name="minCount"/>.</exception>
         public static QuantifiedGroup Count(int minCount, int maxCount, object content)
@@ -864,7 +796,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="maxCount">A maximum number of times the pattern can be matched.</param>
         /// <param name="first">First element of a sequence that contains patterns any one of which has to be matched.</param>
         /// <param name="others">Other elements of a sequence that contains patterns any one of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="first"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="minCount"/> is less than zero or <paramref name="maxCount"/> is less than <paramref name="minCount"/>.</exception>
         public static QuantifiedGroup Count(int minCount, int maxCount, object first, params object[] others)
@@ -890,7 +821,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="minCount">A minimal number of times the pattern must be matched.</param>
         /// <param name="content">The content to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="minCount"/> is less than zero.</exception>
         public static QuantifiedGroup CountFrom(int minCount, object content)
@@ -904,7 +834,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="minCount">A minimal number of times the pattern must be matched.</param>
         /// <param name="first">First element of a sequence that contains patterns any one of which has to be matched.</param>
         /// <param name="others">Other elements of a sequence that contains patterns any one of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="first"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="minCount"/> is less than zero.</exception>
         public static QuantifiedGroup CountFrom(int minCount, object first, params object[] others)
@@ -930,7 +859,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="maxCount">A maximum number of times the pattern can be matched.</param>
         /// <param name="content">The content to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="maxCount"/> is less than zero.</exception>
         public static QuantifiedGroup MaybeCount(int maxCount, object content)
@@ -944,7 +872,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="maxCount">A maximum number of times the pattern can be matched.</param>
         /// <param name="first">First element of a sequence that contains patterns any one of which has to be matched.</param>
         /// <param name="others">Other elements of a sequence that contains patterns any one of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="first"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="maxCount"/> is less than zero.</exception>
         public static QuantifiedGroup MaybeCount(int maxCount, object first, params object[] others)
@@ -969,7 +896,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches previously defined numbered group.
         /// </summary>
         /// <param name="groupNumber">A number of the group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="groupNumber"/> is less than zero.</exception>
         public static QuantifiablePattern GroupReference(int groupNumber)
         {
@@ -980,7 +906,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches previously defined named group.
         /// </summary>
         /// <param name="groupName">A name of the group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="groupName"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
         public static QuantifiablePattern GroupReference(string groupName)
@@ -992,7 +917,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that applies specified options.
         /// </summary>
         /// <param name="applyOptions">A bitwise combination of the enumeration values that are applied.</param>
-        /// <returns></returns>
         public static Pattern Options(RegexOptions applyOptions)
         {
             return new Options(applyOptions);
@@ -1003,7 +927,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="applyOptions">A bitwise combination of the enumeration values that are applied.</param>
         /// <param name="content">The content to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern Options(RegexOptions applyOptions, object content)
         {
@@ -1015,7 +938,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="applyOptions">A bitwise combination of the enumeration values that are applied.</param>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern Options(RegexOptions applyOptions, params object[] content)
         {
@@ -1027,7 +949,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="applyOptions">A bitwise combination of the enumeration values that are applied.</param>
         /// <param name="disableOptions">A bitwise combination of the enumeration values that are disabled.</param>
-        /// <returns></returns>
         public static Pattern Options(RegexOptions applyOptions, RegexOptions disableOptions)
         {
             return new Options(applyOptions, disableOptions);
@@ -1039,7 +960,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="applyOptions">A bitwise combination of the enumeration values that are applied.</param>
         /// <param name="disableOptions">A bitwise combination of the enumeration values that are disabled.</param>
         /// <param name="content">The content to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern Options(RegexOptions applyOptions, RegexOptions disableOptions, object content)
         {
@@ -1052,7 +972,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="applyOptions">A bitwise combination of the enumeration values that are applied.</param>
         /// <param name="disableOptions">A bitwise combination of the enumeration values that are disabled.</param>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern Options(RegexOptions applyOptions, RegexOptions disableOptions, params object[] content)
         {
@@ -1063,7 +982,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that disables specified options.
         /// </summary>
         /// <param name="options">A bitwise combination of the enumeration values that are disabled.</param>
-        /// <returns></returns>
         public static Pattern DisableOptions(RegexOptions options)
         {
             return new Options(RegexOptions.None, options);
@@ -1074,7 +992,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="options">A bitwise combination of the enumeration values that are disabled.</param>
         /// <param name="content">The content to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern DisableOptions(RegexOptions options, object content)
         {
@@ -1086,7 +1003,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="options">A bitwise combination of the enumeration values that are disabled.</param>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern DisableOptions(RegexOptions options, params object[] content)
         {
@@ -1097,7 +1013,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified character.
         /// </summary>
         /// <param name="value">A Unicode character.</param>
-        /// <returns></returns>
         public static CharPattern Character(char value)
         {
             return CharPattern.Create(value);
@@ -1107,7 +1022,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified character.
         /// </summary>
         /// <param name="value">An enumerated constant that identifies ASCII character.</param>
-        /// <returns></returns>
         public static CharPattern Character(AsciiChar value)
         {
             return CharPattern.Create(value);
@@ -1117,7 +1031,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a character from a specified Unicode block.
         /// </summary>
         /// <param name="block">An enumerated constant that identifies Unicode block.</param>
-        /// <returns></returns>
         public static CharPattern Character(NamedBlock block)
         {
             return CharPattern.Create(block, false);
@@ -1127,7 +1040,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a character from a specified Unicode category.
         /// </summary>
         /// <param name="category">An enumerated constant that identifies Unicode category.</param>
-        /// <returns></returns>
         public static CharPattern Character(GeneralCategory category)
         {
             return CharPattern.Create(category, false);
@@ -1137,7 +1049,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a character from a specified <see cref="string"/>.
         /// </summary>
         /// <param name="characters">A set of characters any one of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="characters"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"><paramref name="characters"/> length is equal to zero.</exception>
         public static CharGroup Character(string characters)
@@ -1149,7 +1060,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a character from a specified <see cref="CharGrouping"/>.
         /// </summary>
         /// <param name="value">A content of a character group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public static CharGroup Character(CharGrouping value)
         {
@@ -1160,7 +1070,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified character one or more times.
         /// </summary>
         /// <param name="value">A Unicode character.</param>
-        /// <returns></returns>
         public static QuantifiedGroup Characters(char value)
         {
             return OneMany(Character(value));
@@ -1170,7 +1079,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified character one or more times.
         /// </summary>
         /// <param name="value">An enumerated constant that identifies ASCII character.</param>
-        /// <returns></returns>
         public static QuantifiedGroup Characters(AsciiChar value)
         {
             return OneMany(Character(value));
@@ -1180,7 +1088,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches one or more characters from a specified Unicode block.
         /// </summary>
         /// <param name="block">An enumerated constant that identifies Unicode block.</param>
-        /// <returns></returns>
         public static QuantifiedGroup Characters(NamedBlock block)
         {
             return OneMany(Character(block));
@@ -1190,7 +1097,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches one or more characters from a specified Unicode category.
         /// </summary>
         /// <param name="category">An enumerated constant that identifies Unicode category.</param>
-        /// <returns></returns>
         public static QuantifiedGroup Characters(GeneralCategory category)
         {
             return OneMany(Character(category));
@@ -1200,7 +1106,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches one or more characters from a specified <see cref="string"/>.
         /// </summary>
         /// <param name="value">A set of characters any one of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"><paramref name="value"/> length is equal to zero.</exception>
         public static QuantifiedGroup Characters(string value)
@@ -1212,7 +1117,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches one or more characters from a specified <see cref="CharGrouping"/>.
         /// </summary>
         /// <param name="value">A content of a character group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public static QuantifiedGroup Characters(CharGrouping value)
         {
@@ -1223,7 +1127,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a character that is not a specified character.
         /// </summary>
         /// <param name="value">A Unicode character.</param>
-        /// <returns></returns>
         public static CharGroup NotChar(char value)
         {
             return CharGroup.Create(value, true);
@@ -1233,7 +1136,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a character that is not a specified character.
         /// </summary>
         /// <param name="value">An enumerated constant that identifies ASCII character.</param>
-        /// <returns></returns>
         public static CharGroup NotChar(AsciiChar value)
         {
             return CharGroup.Create(value, true);
@@ -1243,7 +1145,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a character that is not from a specified Unicode block.
         /// </summary>
         /// <param name="block">An enumerated constant that identifies Unicode block.</param>
-        /// <returns></returns>
         public static CharPattern NotChar(NamedBlock block)
         {
             return CharPattern.Create(block, true);
@@ -1253,7 +1154,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a character that is not from a specified Unicode category.
         /// </summary>
         /// <param name="category">An enumerated constant that identifies Unicode category.</param>
-        /// <returns></returns>
         public static CharPattern NotChar(GeneralCategory category)
         {
             return CharPattern.Create(category, true);
@@ -1263,7 +1163,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches any character that is not contained in the specified <see cref="string"/>.
         /// </summary>
         /// <param name="characters">Unicode characters.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="characters"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"><paramref name="characters"/> length is equal to zero.</exception>
         public static CharGroup NotChar(string characters)
@@ -1275,7 +1174,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches any character that is not contained in the specified characters.
         /// </summary>
         /// <param name="characters">Unicode characters.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="characters"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"><paramref name="characters"/> is empty.</exception>
         public static CharGroup NotChar(params char[] characters)
@@ -1287,7 +1185,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a negative character group containing specified <see cref="CharGrouping"/>.
         /// </summary>
         /// <param name="value">A content of a character group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public static CharGroup NotChar(CharGrouping value)
         {
@@ -1299,7 +1196,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="first">The first character of the range.</param>
         /// <param name="last">The last character of the range.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="last"/> character number is less than <paramref name="first"/> character number.</exception>
         public static CharGroup Range(char first, char last)
         {
@@ -1311,7 +1207,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="first">The first character of the range.</param>
         /// <param name="last">The last character of the range.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="last"/> character number is less than <paramref name="first"/> character number.</exception>
         public static CharGroup NotRange(char first, char last)
         {
@@ -1323,7 +1218,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="baseGroup">A base group.</param>
         /// <param name="excludedGroup">An excluded group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="baseGroup"/> or <paramref name="excludedGroup"/> is <c>null</c>.</exception>
         public static CharSubtraction Except(IBaseGroup baseGroup, IExcludedGroup excludedGroup)
         {
@@ -1333,7 +1227,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a tab.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern Tab()
         {
             return Character(AsciiChar.Tab);
@@ -1343,7 +1236,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of tabs.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup Tab(int exactCount)
         {
@@ -1353,7 +1245,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a tab.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotTab()
         {
             return NotChar(AsciiChar.Tab);
@@ -1363,7 +1254,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not a tab.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotTab(int exactCount)
         {
@@ -1373,7 +1263,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a linefeed.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern Linefeed()
         {
             return Character(AsciiChar.Linefeed);
@@ -1383,7 +1272,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of linefeeds.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup Linefeed(int exactCount)
         {
@@ -1393,7 +1281,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a linefeed.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotLinefeed()
         {
             return NotChar(AsciiChar.Linefeed);
@@ -1403,7 +1290,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not a linefeed.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotLinefeed(int exactCount)
         {
@@ -1413,7 +1299,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a carriage return.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern CarriageReturn()
         {
             return Character(AsciiChar.CarriageReturn);
@@ -1423,7 +1308,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of carriage returns.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup CarriageReturn(int exactCount)
         {
@@ -1433,7 +1317,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a carriage return.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotCarriageReturn()
         {
             return NotChar(AsciiChar.CarriageReturn);
@@ -1443,7 +1326,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not a carriage return.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotCarriageReturn(int exactCount)
         {
@@ -1453,7 +1335,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a space.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern Space()
         {
             return Character(AsciiChar.Space);
@@ -1462,7 +1343,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches one or more spaces.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiedPattern Spaces()
         {
             return Space().OneMany();
@@ -1472,7 +1352,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of spaces.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup Space(int exactCount)
         {
@@ -1482,7 +1361,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a space.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotSpace()
         {
             return NotChar(AsciiChar.Space);
@@ -1492,7 +1370,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not a space.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotSpace(int exactCount)
         {
@@ -1502,7 +1379,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches an exclamation mark.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern ExclamationMark()
         {
             return Character(AsciiChar.ExclamationMark);
@@ -1512,7 +1388,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of exclamation marks.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup ExclamationMark(int exactCount)
         {
@@ -1522,7 +1397,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not an exclamation mark.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotExclamationMark()
         {
             return NotChar(AsciiChar.ExclamationMark);
@@ -1532,7 +1406,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not an exclamation mark.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotExclamationMark(int exactCount)
         {
@@ -1542,7 +1415,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a quote mark.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern QuoteMark()
         {
             return Character(AsciiChar.QuoteMark);
@@ -1552,7 +1424,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of quote marks.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup QuoteMark(int exactCount)
         {
@@ -1562,7 +1433,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a quote mark.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotQuoteMark()
         {
             return NotChar(AsciiChar.QuoteMark);
@@ -1572,7 +1442,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not a quote mark.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotQuoteMark(int exactCount)
         {
@@ -1582,7 +1451,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a number sign.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern NumberSign()
         {
             return Character(AsciiChar.NumberSign);
@@ -1592,7 +1460,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of number signs.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NumberSign(int exactCount)
         {
@@ -1602,7 +1469,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a number sign.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotNumberSign()
         {
             return NotChar(AsciiChar.NumberSign);
@@ -1612,7 +1478,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not a number sign.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotNumberSign(int exactCount)
         {
@@ -1622,7 +1487,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a dollar.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern Dollar()
         {
             return Character(AsciiChar.Dollar);
@@ -1632,7 +1496,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of dollars.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup Dollar(int exactCount)
         {
@@ -1642,7 +1505,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a dollar.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotDollar()
         {
             return NotChar(AsciiChar.Dollar);
@@ -1652,7 +1514,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not a dollar.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotDollar(int exactCount)
         {
@@ -1662,7 +1523,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a percent.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern Percent()
         {
             return Character(AsciiChar.Percent);
@@ -1672,7 +1532,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of percents.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup Percent(int exactCount)
         {
@@ -1682,7 +1541,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a percent.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotPercent()
         {
             return NotChar(AsciiChar.Percent);
@@ -1692,7 +1550,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not a percent.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotPercent(int exactCount)
         {
@@ -1702,7 +1559,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches an ampersand.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern Ampersand()
         {
             return Character(AsciiChar.Ampersand);
@@ -1712,7 +1568,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of ampersands.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup Ampersand(int exactCount)
         {
@@ -1722,7 +1577,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not an ampersand.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotAmpersand()
         {
             return NotChar(AsciiChar.Ampersand);
@@ -1732,7 +1586,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not an ampersand.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotAmpersand(int exactCount)
         {
@@ -1742,7 +1595,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches an apostrophe.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern Apostrophe()
         {
             return Character(AsciiChar.Apostrophe);
@@ -1752,7 +1604,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of apostrophes.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup Apostrophe(int exactCount)
         {
@@ -1762,7 +1613,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not an apostrophe.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotApostrophe()
         {
             return NotChar(AsciiChar.Apostrophe);
@@ -1772,7 +1622,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not an apostrophe.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotApostrophe(int exactCount)
         {
@@ -1782,7 +1631,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a left parenthesis.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern LeftParenthesis()
         {
             return Character(AsciiChar.LeftParenthesis);
@@ -1792,7 +1640,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of left parentheses.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup LeftParenthesis(int exactCount)
         {
@@ -1802,7 +1649,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a left parenthesis.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotLeftParenthesis()
         {
             return NotChar(AsciiChar.LeftParenthesis);
@@ -1812,7 +1658,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not a left parenthesis.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotLeftParenthesis(int exactCount)
         {
@@ -1822,7 +1667,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a right parenthesis.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern RightParenthesis()
         {
             return Character(AsciiChar.RightParenthesis);
@@ -1832,7 +1676,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of right parentheses.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup RightParenthesis(int exactCount)
         {
@@ -1842,7 +1685,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a right parenthesis.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotRightParenthesis()
         {
             return NotChar(AsciiChar.RightParenthesis);
@@ -1852,7 +1694,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not a right parenthesis.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotRightParenthesis(int exactCount)
         {
@@ -1862,7 +1703,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches an asterisk.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern Asterisk()
         {
             return Character(AsciiChar.Asterisk);
@@ -1872,7 +1712,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of asterisks.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup Asterisk(int exactCount)
         {
@@ -1882,7 +1721,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not an asterisk.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotAsterisk()
         {
             return NotChar(AsciiChar.Asterisk);
@@ -1892,7 +1730,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not an asterisk.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotAsterisk(int exactCount)
         {
@@ -1902,7 +1739,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a plus.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern Plus()
         {
             return Character(AsciiChar.Plus);
@@ -1912,7 +1748,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of pluses.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup Plus(int exactCount)
         {
@@ -1922,7 +1757,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a plus.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotPlus()
         {
             return NotChar(AsciiChar.Plus);
@@ -1932,7 +1766,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not a plus.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotPlus(int exactCount)
         {
@@ -1942,7 +1775,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a comma.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern Comma()
         {
             return Character(AsciiChar.Comma);
@@ -1952,7 +1784,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of commas.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup Comma(int exactCount)
         {
@@ -1962,7 +1793,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a comma.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotComma()
         {
             return NotChar(AsciiChar.Comma);
@@ -1972,7 +1802,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not a comma.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotComma(int exactCount)
         {
@@ -1982,7 +1811,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a hyphen.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern Hyphen()
         {
             return Character(AsciiChar.Hyphen);
@@ -1992,7 +1820,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of hyphens.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup Hyphen(int exactCount)
         {
@@ -2002,7 +1829,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a hyphen.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotHyphen()
         {
             return NotChar(AsciiChar.Hyphen);
@@ -2012,7 +1838,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not a hyphen.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotHyphen(int exactCount)
         {
@@ -2022,7 +1847,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a dot.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern Dot()
         {
             return Character(AsciiChar.Dot);
@@ -2032,7 +1856,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of dots.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup Dot(int exactCount)
         {
@@ -2042,7 +1865,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a dot.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotDot()
         {
             return NotChar(AsciiChar.Dot);
@@ -2052,7 +1874,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not a dot.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotDot(int exactCount)
         {
@@ -2062,7 +1883,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a slash.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern Slash()
         {
             return Character(AsciiChar.Slash);
@@ -2072,7 +1892,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of slashes.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup Slash(int exactCount)
         {
@@ -2082,7 +1901,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a slash.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotSlash()
         {
             return NotChar(AsciiChar.Slash);
@@ -2092,7 +1910,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not a slash.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotSlash(int exactCount)
         {
@@ -2102,7 +1919,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a slash or a backslash.
         /// </summary>
-        /// <returns></returns>
         public static CharGroup SlashOrBackslash()
         {
             return Character(@"\/");
@@ -2112,7 +1928,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are slash or backslash.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup SlashOrBackslash(int exactCount)
         {
@@ -2122,7 +1937,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a slash or backslash.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotSlashOrBackslash()
         {
             return NotChar(@"\/");
@@ -2132,7 +1946,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not a slash or backslash
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotSlashOrBackslash(int exactCount)
         {
@@ -2142,7 +1955,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a colon.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern Colon()
         {
             return Character(AsciiChar.Colon);
@@ -2152,7 +1964,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of colons.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup Colon(int exactCount)
         {
@@ -2162,7 +1973,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a colon.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotColon()
         {
             return NotChar(AsciiChar.Colon);
@@ -2172,7 +1982,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not a colon.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotColon(int exactCount)
         {
@@ -2182,7 +1991,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a semicolon.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern Semicolon()
         {
             return Character(AsciiChar.Semicolon);
@@ -2192,7 +2000,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of semicolons.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup Semicolon(int exactCount)
         {
@@ -2202,7 +2009,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a semicolon.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotSemicolon()
         {
             return NotChar(AsciiChar.Semicolon);
@@ -2212,7 +2018,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not a semicolon.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotSemicolon(int exactCount)
         {
@@ -2222,7 +2027,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a left angle bracket (less-than sign).
         /// </summary>
-        /// <returns></returns>
         public static CharPattern LeftAngleBracket()
         {
             return Character(AsciiChar.LeftAngleBracket);
@@ -2232,7 +2036,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of left angle brackets (less-than signs).
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup LeftAngleBracket(int exactCount)
         {
@@ -2242,7 +2045,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a left angle bracket (less-than sign).
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotLeftAngleBracket()
         {
             return NotChar(AsciiChar.LeftAngleBracket);
@@ -2252,7 +2054,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not a left angle bracket (less-than sign).
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotLeftAngleBracket(int exactCount)
         {
@@ -2262,7 +2063,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches an equals sign.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern EqualsSign()
         {
             return Character(AsciiChar.EqualsSign);
@@ -2272,7 +2072,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of equals signs.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup EqualsSign(int exactCount)
         {
@@ -2282,7 +2081,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not an equals sign.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotEqualsSign()
         {
             return NotChar(AsciiChar.EqualsSign);
@@ -2292,7 +2090,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not an equals sign.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotEqualsSign(int exactCount)
         {
@@ -2302,7 +2099,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a right angle bracket (greater-than sign).
         /// </summary>
-        /// <returns></returns>
         public static CharPattern RightAngleBracket()
         {
             return Character(AsciiChar.RightAngleBracket);
@@ -2312,7 +2108,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of right angle brackets (greater-than signs).
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup RightAngleBracket(int exactCount)
         {
@@ -2322,7 +2117,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a right angle bracket (greater-than sign).
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotRightAngleBracket()
         {
             return NotChar(AsciiChar.RightAngleBracket);
@@ -2332,7 +2126,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not a right angle bracket (greater-than sign).
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotRightAngleBracket(int exactCount)
         {
@@ -2342,7 +2135,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a question mark.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern QuestionMark()
         {
             return Character(AsciiChar.QuestionMark);
@@ -2352,7 +2144,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of question marks.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup QuestionMark(int exactCount)
         {
@@ -2362,7 +2153,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a question mark.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotQuestionMark()
         {
             return NotChar(AsciiChar.QuestionMark);
@@ -2372,7 +2162,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not a question mark.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotQuestionMark(int exactCount)
         {
@@ -2382,7 +2171,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches an at sign.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern AtSign()
         {
             return Character(AsciiChar.AtSign);
@@ -2392,7 +2180,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of at signs.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup AtSign(int exactCount)
         {
@@ -2402,7 +2189,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not an at sign.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotAtSign()
         {
             return NotChar(AsciiChar.AtSign);
@@ -2412,7 +2198,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not an at sign.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotAtSign(int exactCount)
         {
@@ -2422,7 +2207,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a left square bracket.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern LeftSquareBracket()
         {
             return Character(AsciiChar.LeftSquareBracket);
@@ -2432,7 +2216,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of left square brackets.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup LeftSquareBracket(int exactCount)
         {
@@ -2442,7 +2225,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a left square bracket.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotLeftSquareBracket()
         {
             return NotChar(AsciiChar.LeftSquareBracket);
@@ -2452,7 +2234,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not a left square bracket.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotLeftSquareBracket(int exactCount)
         {
@@ -2462,7 +2243,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a backslash.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern Backslash()
         {
             return Character(AsciiChar.Backslash);
@@ -2472,7 +2252,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of backslashes.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup Backslash(int exactCount)
         {
@@ -2482,7 +2261,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a backslash.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotBackslash()
         {
             return NotChar(AsciiChar.Backslash);
@@ -2492,7 +2270,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not a backslash.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotBackslash(int exactCount)
         {
@@ -2502,7 +2279,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a right square bracket.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern RightSquareBracket()
         {
             return Character(AsciiChar.RightSquareBracket);
@@ -2512,7 +2288,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of right square brackets.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup RightSquareBracket(int exactCount)
         {
@@ -2522,7 +2297,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a right square bracket.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotRightSquareBracket()
         {
             return NotChar(AsciiChar.RightSquareBracket);
@@ -2532,7 +2306,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not a right square bracket.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotRightSquareBracket(int exactCount)
         {
@@ -2542,7 +2315,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a circumflex accent.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern CircumflexAccent()
         {
             return Character(AsciiChar.CircumflexAccent);
@@ -2552,7 +2324,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of circumflex accents.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup CircumflexAccent(int exactCount)
         {
@@ -2562,7 +2333,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a circumflex accent.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotCircumflexAccent()
         {
             return NotChar(AsciiChar.CircumflexAccent);
@@ -2572,7 +2342,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not a circumflex accent.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotCircumflexAccent(int exactCount)
         {
@@ -2582,7 +2351,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches an underscore.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern Underscore()
         {
             return Character(AsciiChar.Underscore);
@@ -2592,7 +2360,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of underscores.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup Underscore(int exactCount)
         {
@@ -2602,7 +2369,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not an underscore.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotUnderscore()
         {
             return NotChar(AsciiChar.Underscore);
@@ -2612,7 +2378,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not an underscore.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotUnderscore(int exactCount)
         {
@@ -2622,7 +2387,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a grave accent.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern GraveAccent()
         {
             return Character(AsciiChar.GraveAccent);
@@ -2632,7 +2396,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of grave accents.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup GraveAccent(int exactCount)
         {
@@ -2642,7 +2405,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a grave accent.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotGraveAccent()
         {
             return NotChar(AsciiChar.GraveAccent);
@@ -2652,7 +2414,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not a grave accent.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotGraveAccent(int exactCount)
         {
@@ -2662,7 +2423,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a left curly bracket.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern LeftCurlyBracket()
         {
             return Character(AsciiChar.LeftCurlyBracket);
@@ -2672,7 +2432,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of left curly brackets.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup LeftCurlyBracket(int exactCount)
         {
@@ -2682,7 +2441,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a left curly bracket.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotLeftCurlyBracket()
         {
             return NotChar(AsciiChar.LeftCurlyBracket);
@@ -2692,7 +2450,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not a left curly bracket.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotLeftCurlyBracket(int exactCount)
         {
@@ -2702,7 +2459,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a vertical bar.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern VerticalBar()
         {
             return Character(AsciiChar.VerticalBar);
@@ -2712,7 +2468,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of vertical bars.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup VerticalBar(int exactCount)
         {
@@ -2722,7 +2477,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a vertical bar.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotVerticalBar()
         {
             return NotChar(AsciiChar.VerticalBar);
@@ -2732,7 +2486,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not a vertical bar.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotVerticalBar(int exactCount)
         {
@@ -2742,7 +2495,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a right curly bracket.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern RightCurlyBracket()
         {
             return Character(AsciiChar.RightCurlyBracket);
@@ -2752,7 +2504,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of right curly brackets.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup RightCurlyBracket(int exactCount)
         {
@@ -2762,7 +2513,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a right curly bracket.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotRightCurlyBracket()
         {
             return NotChar(AsciiChar.RightCurlyBracket);
@@ -2772,7 +2522,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not a right curly bracket.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotRightCurlyBracket(int exactCount)
         {
@@ -2782,7 +2531,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a tilde.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern Tilde()
         {
             return Character(AsciiChar.Tilde);
@@ -2792,7 +2540,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of tildes.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup Tilde(int exactCount)
         {
@@ -2802,7 +2549,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a tilde.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotTilde()
         {
             return NotChar(AsciiChar.Tilde);
@@ -2812,7 +2558,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of characters that are not a tilde.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotTilde(int exactCount)
         {
@@ -2822,7 +2567,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches any character.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern Any()
         {
             return new AnyChar();
@@ -2832,7 +2576,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches any character specified number of times.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup Any(int exactCount)
         {
@@ -2842,7 +2585,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches any character except linefeed.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern AnyExceptLinefeed()
         {
             return DisableOptions(RegexOptions.Singleline, new AnyCharNative());
@@ -2852,7 +2594,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches any character except linefeed specified number of times.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup AnyExceptLinefeed(int exactCount)
         {
@@ -2862,7 +2603,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches any character except linefeed (or any character if the <see cref="RegexOptions.Singleline"/> option is applied).
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern AnyNative()
         {
             return new AnyCharNative();
@@ -2872,7 +2612,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches any character except linefeed (or any character if the <see cref="RegexOptions.Singleline"/> option is applied) specified number of times.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup AnyNative(int exactCount)
         {
@@ -2882,7 +2621,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a digit character.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern Digit()
         {
             return CharPattern.Create(CharClass.Digit);
@@ -2892,7 +2630,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of digit characters.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup Digit(int exactCount)
         {
@@ -2902,7 +2639,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches one or more digit characters.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiedGroup Digits()
         {
             return OneMany(Digit());
@@ -2911,7 +2647,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a digit character.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern NotDigit()
         {
             return CharPattern.Create(CharClass.NotDigit);
@@ -2921,7 +2656,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a character that is not a digit character specified number of times.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotDigit(int exactCount)
         {
@@ -2931,7 +2665,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches one or more characters that are not a digit character.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiedGroup NotDigits()
         {
             return OneMany(NotDigit());
@@ -2940,7 +2673,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a white-space character.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern WhiteSpace()
         {
             return CharPattern.Create(CharClass.WhiteSpace);
@@ -2950,7 +2682,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of white-space characters.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup WhiteSpace(int exactCount)
         {
@@ -2960,7 +2691,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches one or more white-space characters.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiedGroup WhiteSpaces()
         {
             return OneMany(WhiteSpace());
@@ -2969,7 +2699,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a white-space character.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern NotWhiteSpace()
         {
             return CharPattern.Create(CharClass.NotWhiteSpace);
@@ -2979,7 +2708,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a character that is not a white-space character specified number of times.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotWhiteSpace(int exactCount)
         {
@@ -2989,7 +2717,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches one or more characters that are not a white-space character.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiedGroup NotWhiteSpaces()
         {
             return OneMany(NotWhiteSpace());
@@ -2998,7 +2725,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a word character.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern WordChar()
         {
             return CharPattern.Create(CharClass.WordChar);
@@ -3008,7 +2734,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of word characters.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup WordChar(int exactCount)
         {
@@ -3018,7 +2743,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches one or more word characters.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiedGroup WordChars()
         {
             return OneMany(WordChar());
@@ -3027,7 +2751,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a word character.
         /// </summary>
-        /// <returns></returns>
         public static CharPattern NotWordChar()
         {
             return CharPattern.Create(CharClass.NotWordChar);
@@ -3037,7 +2760,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a character that is not a word character specified number of times.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotWordChar(int exactCount)
         {
@@ -3047,7 +2769,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches one or more characters that are not a word character.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiedGroup NotWordChars()
         {
             return OneMany(NotWordChar());
@@ -3056,7 +2777,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a newline character. Newline character is a carriage return or a linefeed.
         /// </summary>
-        /// <returns></returns>
         public static CharGroup NewLineChar()
         {
             return Character("\r\n");
@@ -3066,7 +2786,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of newline characters. Newline character is a carriage return or a linefeed.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NewLineChar(int exactCount)
         {
@@ -3076,7 +2795,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a newline character. Newline character is a carriage return or a linefeed.
         /// </summary>
-        /// <returns></returns>
         public static CharGroup NotNewLineChar()
         {
             return NotChar("\r\n");
@@ -3086,7 +2804,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a character that is not a newline character specified number of times. Newline character is a carriage return or a linefeed.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotNewLineChar(int exactCount)
         {
@@ -3096,7 +2813,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches an alphanumeric character. Alphanumeric character is a latin alphabet letter or an arabic digit.
         /// </summary>
-        /// <returns></returns>
         public static CharGroup Alphanumeric()
         {
             return Character(Chars.Alphanumeric());
@@ -3106,7 +2822,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of alphanumeric characters. Alphanumeric character is a latin alphabet letter or an arabic digit.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup Alphanumeric(int exactCount)
         {
@@ -3116,7 +2831,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not an alphanumeric character. Alphanumeric character is a latin alphabet letter or an arabic digit.
         /// </summary>
-        /// <returns></returns>
         public static CharGroup NotAlphanumeric()
         {
             return NotChar(Chars.Alphanumeric());
@@ -3126,7 +2840,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a character that is not an alphanumeric character specified number of times. Alphanumeric character is a latin alphabet letter or an arabic digit.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotAlphanumeric(int exactCount)
         {
@@ -3136,7 +2849,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a lower-case alphanumeric character. Alphanumeric character is a latin alphabet lower-case letter or an arabic digit.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern AlphanumericLower()
         {
             return DisableOptions(RegexOptions.IgnoreCase, Chars.Range('a', 'z').ArabicDigit());
@@ -3146,7 +2858,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of lower-case alphanumeric characters. Alphanumeric character is a latin alphabet lower-case letter or an arabic digit.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup AlphanumericLower(int exactCount)
         {
@@ -3156,7 +2867,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a lower-case alphanumeric character. Alphanumeric character is a latin alphabet lower-case letter or an arabic digit.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotAlphanumericLower()
         {
             return DisableOptions(RegexOptions.IgnoreCase, !Chars.Range('a', 'z').ArabicDigit());
@@ -3166,7 +2876,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a character that is not a lower-case alphanumeric character specified number of times. Alphanumeric character is a latin alphabet lower-case letter or an arabic digit.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotAlphanumericLower(int exactCount)
         {
@@ -3176,7 +2885,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches an upper-case alphanumeric character. Alphanumeric character is a latin alphabet upper-case letter or an arabic digit.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern AlphanumericUpper()
         {
             return DisableOptions(RegexOptions.IgnoreCase, Chars.Range('A', 'Z').ArabicDigit());
@@ -3186,7 +2894,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of upper-case alphanumeric characters. Alphanumeric character is a latin alphabet upper-case letter or an arabic digit.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup AlphanumericUpper(int exactCount)
         {
@@ -3196,7 +2903,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not an upper-case alphanumeric character. Alphanumeric character is a latin alphabet upper-case letter or an arabic digit.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotAlphanumericUpper()
         {
             return DisableOptions(RegexOptions.IgnoreCase, !Chars.Range('A', 'Z').ArabicDigit());
@@ -3206,7 +2912,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a character that is not an upper-case alphanumeric character specified number of times. Alphanumeric character is a latin alphabet upper-case letter or an arabic digit.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotAlphanumericUpper(int exactCount)
         {
@@ -3216,7 +2921,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches an alphanumeric character or an underscore. Alphanumeric character is a latin alphabet letter or an arabic digit.
         /// </summary>
-        /// <returns></returns>
         public static CharGroup AlphanumericUnderscore()
         {
             return Character(Chars.AlphanumericUnderscore());
@@ -3226,7 +2930,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches an alphanumeric character or an underscore specified number of times. Alphanumeric character is a latin alphabet letter or an arabic digit.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup AlphanumericUnderscore(int exactCount)
         {
@@ -3236,7 +2939,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is neither alphanumeric character nor underscore. Alphanumeric character is a latin alphabet letter or an arabic digit.
         /// </summary>
-        /// <returns></returns>
         public static CharGroup NotAlphanumericUnderscore()
         {
             return NotChar(Chars.AlphanumericUnderscore());
@@ -3246,7 +2948,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a character that is neither alphanumeric character nor underscore specified number of times. Alphanumeric character is a latin alphabet letter or an arabic digit.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotAlphanumericUnderscore(int exactCount)
         {
@@ -3256,7 +2957,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a latin alphabet letter.
         /// </summary>
-        /// <returns></returns>
         public static CharGroup LatinLetter()
         {
             return Character(Chars.LatinLetter());
@@ -3265,7 +2965,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches one or more latin alphabet letter.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiedPattern LatinLetters()
         {
             return LatinLetter().OneMany();
@@ -3275,7 +2974,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of latin alphabet letters.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup LatinLetter(int exactCount)
         {
@@ -3285,7 +2983,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a latin alphabet letter.
         /// </summary>
-        /// <returns></returns>
         public static CharGroup NotLatinLetter()
         {
             return NotChar(Chars.LatinLetter());
@@ -3295,7 +2992,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a character that is not a latin alphabet letter specified number of times.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotLatinLetter(int exactCount)
         {
@@ -3305,7 +3001,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a latin alphabet lower-case letter.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern LatinLetterLower()
         {
             return DisableOptions(RegexOptions.IgnoreCase, Range('a', 'z'));
@@ -3315,7 +3010,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of latin alphabet lower-case letters.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup LatinLetterLower(int exactCount)
         {
@@ -3325,7 +3019,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a latin alphabet lower-case letter.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotLatinLetterLower()
         {
             return DisableOptions(RegexOptions.IgnoreCase, NotRange('a', 'z'));
@@ -3335,7 +3028,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a character that is not a latin alphabet lower-case letter specified number of times.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotLatinLetterLower(int exactCount)
         {
@@ -3345,7 +3037,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a latin alphabet upper-case letter.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern LatinLetterUpper()
         {
             return DisableOptions(RegexOptions.IgnoreCase, Range('A', 'Z'));
@@ -3355,7 +3046,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of latin alphabet upper-case letters.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup LatinLetterUpper(int exactCount)
         {
@@ -3365,7 +3055,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a latin alphabet upper-case letter.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotLatinLetterUpper()
         {
             return DisableOptions(RegexOptions.IgnoreCase, NotRange('A', 'Z'));
@@ -3375,7 +3064,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a character that is not a latin alphabet upper-case letter specified number of times.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotLatinLetterUpper(int exactCount)
         {
@@ -3385,7 +3073,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character from <see cref="GeneralCategory.LetterLowercase"/>.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern LetterLower()
         {
             return DisableOptions(RegexOptions.IgnoreCase, Character(GeneralCategory.LetterLowercase));
@@ -3395,7 +3082,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of letters from <see cref="GeneralCategory.LetterLowercase"/>.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup LetterLower(int exactCount)
         {
@@ -3405,7 +3091,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a character from <see cref="GeneralCategory.LetterLowercase"/>.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotLetterLower()
         {
             return DisableOptions(RegexOptions.IgnoreCase, NotChar(GeneralCategory.LetterLowercase));
@@ -3415,7 +3100,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a character that is not a character from <see cref="GeneralCategory.LetterLowercase"/> specified number of times.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotLetterLower(int exactCount)
         {
@@ -3425,7 +3109,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character from <see cref="GeneralCategory.LetterUppercase"/>.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern LetterUpper()
         {
             return DisableOptions(RegexOptions.IgnoreCase, Character(GeneralCategory.LetterUppercase));
@@ -3435,7 +3118,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of letters from <see cref="GeneralCategory.LetterUppercase"/>.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup LetterUpper(int exactCount)
         {
@@ -3445,7 +3127,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a character from <see cref="GeneralCategory.LetterUppercase"/>.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NotLetterUpper()
         {
             return DisableOptions(RegexOptions.IgnoreCase, NotChar(GeneralCategory.LetterUppercase));
@@ -3455,7 +3136,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a character that is not a character from <see cref="GeneralCategory.LetterUppercase"/> specified number of times.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotLetterUpper(int exactCount)
         {
@@ -3465,7 +3145,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches an arabic digit.
         /// </summary>
-        /// <returns></returns>
         public static CharGroup ArabicDigit()
         {
             return Character(Chars.ArabicDigit());
@@ -3474,7 +3153,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches one or more arabic digits.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiedPattern ArabicDigits()
         {
             return ArabicDigit().OneMany();
@@ -3484,7 +3162,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of arabic digits.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup ArabicDigit(int exactCount)
         {
@@ -3494,7 +3171,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not an arabic digit.
         /// </summary>
-        /// <returns></returns>
         public static CharGroup NotArabicDigit()
         {
             return NotChar(Chars.ArabicDigit());
@@ -3504,7 +3180,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a character that is not an arabic digit specified number of times.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotArabicDigit(int exactCount)
         {
@@ -3514,7 +3189,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a hexadecimal digit.
         /// </summary>
-        /// <returns></returns>
         public static CharGroup HexadecimalDigit()
         {
             return Character(Chars.HexadecimalDigit());
@@ -3524,7 +3198,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified number of hexadecimal digits.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup HexadecimalDigit(int exactCount)
         {
@@ -3534,7 +3207,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is not a hexadecimal digit.
         /// </summary>
-        /// <returns></returns>
         public static CharGroup NotHexadecimalDigit()
         {
             return NotChar(Chars.HexadecimalDigit());
@@ -3544,7 +3216,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a character that is not a hexadecimal digit specified number of times.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotHexadecimalDigit(int exactCount)
         {
@@ -3554,7 +3225,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches left or right parenthesis.
         /// </summary>
-        /// <returns></returns>
         public static CharGroup Parenthesis()
         {
             return Character(Chars.Parenthesis());
@@ -3564,7 +3234,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches left or right parenthesis specified number of times.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup Parenthesis(int exactCount)
         {
@@ -3574,7 +3243,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is neither left nor right parenthesis.
         /// </summary>
-        /// <returns></returns>
         public static CharGroup NotParenthesis()
         {
             return NotChar(Chars.Parenthesis());
@@ -3584,7 +3252,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a character that is neither left nor right parenthesis specified number of times.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotParenthesis(int exactCount)
         {
@@ -3594,7 +3261,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches left or right curly bracket.
         /// </summary>
-        /// <returns></returns>
         public static CharGroup CurlyBracket()
         {
             return Character(Chars.CurlyBracket());
@@ -3604,7 +3270,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches left or right curly bracket specified number of times.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup CurlyBracket(int exactCount)
         {
@@ -3614,7 +3279,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is neither left nor right curly bracket.
         /// </summary>
-        /// <returns></returns>
         public static CharGroup NotCurlyBracket()
         {
             return NotChar(Chars.CurlyBracket());
@@ -3624,7 +3288,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a character that is neither left nor right curly bracket specified number of times.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotCurlyBracket(int exactCount)
         {
@@ -3634,7 +3297,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches left or right square bracket.
         /// </summary>
-        /// <returns></returns>
         public static CharGroup SquareBracket()
         {
             return Character(Chars.SquareBracket());
@@ -3644,7 +3306,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches left or right square bracket specified number of times.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup SquareBracket(int exactCount)
         {
@@ -3654,7 +3315,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a character that is neither left nor right square bracket.
         /// </summary>
-        /// <returns></returns>
         public static CharGroup NotSquareBracket()
         {
             return NotChar(Chars.SquareBracket());
@@ -3664,7 +3324,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a character that is neither left nor right square bracket specified number of times.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup NotSquareBracket(int exactCount)
         {
@@ -3674,7 +3333,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a white-space character except carriage return and linefeed.
         /// </summary>
-        /// <returns></returns>
         public static CharSubtraction WhiteSpaceExceptNewLine()
         {
             return WhiteSpace().Except(NewLineChar());
@@ -3684,7 +3342,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a white-space character except carriage return and linefeed. The character has to be matched specified number of times.
         /// </summary>
         /// <param name="exactCount">A number of times a character has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup WhiteSpaceExceptNewLine(int exactCount)
         {
@@ -3694,7 +3351,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches two apostrophes, allowing zero or more characters that are not an apostrophe between the apostrophes.
         /// </summary>
-        /// <returns></returns>
         public static Pattern SurroundApostrophes()
         {
             return SurroundApostrophes(WhileNotChar('\''));
@@ -3704,7 +3360,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches specified pattern surrounded with apostrophes.
         /// </summary>
         /// <param name="content">The content to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern SurroundApostrophes(object content)
         {
@@ -3715,7 +3370,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches specified content surrounded with apostrophes.
         /// </summary>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern SurroundApostrophes(params object[] content)
         {
@@ -3725,7 +3379,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches two quotation marks, allowing zero or more characters that are not a quotation mark between the quotation marks.
         /// </summary>
-        /// <returns></returns>
         public static Pattern SurroundQuoteMarks()
         {
             return SurroundQuoteMarks(WhileNotChar('"'));
@@ -3735,7 +3388,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches specified pattern surrounded with quotation marks.
         /// </summary>
         /// <param name="content">The content to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern SurroundQuoteMarks(object content)
         {
@@ -3746,7 +3398,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches specified content surrounded with quotation marks.
         /// </summary>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern SurroundQuoteMarks(params object[] content)
         {
@@ -3756,7 +3407,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches two quotation marks (apostrophes), allowing zero or more characters that are not a quotation mark (apostrophe) between the quotation marks (apostrophes).
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern SurroundQuoteMarksOrApostrophes()
         {
             return SurroundQuoteMarks() | SurroundApostrophes();
@@ -3766,7 +3416,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches specified pattern surrounded with quotation marks or apostrophes.
         /// </summary>
         /// <param name="content">The content to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern SurroundQuoteMarksOrApostrophes(object content)
         {
@@ -3777,7 +3426,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches specified content surrounded with quotation marks or apostrophes.
         /// </summary>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static QuantifiablePattern SurroundQuoteMarksOrApostrophes(params object[] content)
         {
@@ -3787,7 +3435,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a text consisting of a left parenthesis and a right parenthesis, allowing zero or more characters that are not a right parenthesis between the parentheses.
         /// </summary>
-        /// <returns></returns>
         public static Pattern SurroundParentheses()
         {
             return SurroundParentheses(WhileNotChar(')'));
@@ -3797,7 +3444,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches specified pattern surrounded with left and right parenthesis.
         /// </summary>
         /// <param name="content">The content to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern SurroundParentheses(object content)
         {
@@ -3808,7 +3454,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches specified content surrounded with left and right parenthesis.
         /// </summary>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern SurroundParentheses(params object[] content)
         {
@@ -3818,7 +3463,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a text consisting of left and right curly bracket, allowing zero or more characters that are not a right curly bracket between the brackets.
         /// </summary>
-        /// <returns></returns>
         public static Pattern SurroundCurlyBrackets()
         {
             return SurroundCurlyBrackets(WhileNotChar('}'));
@@ -3828,7 +3472,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches specified pattern surrounded with left and right curly bracket.
         /// </summary>
         /// <param name="content">The content to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern SurroundCurlyBrackets(object content)
         {
@@ -3839,7 +3482,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches specified content surrounded with left and right curly bracket.
         /// </summary>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern SurroundCurlyBrackets(params object[] content)
         {
@@ -3849,7 +3491,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a text consisting of left and right square bracket, allowing zero or more characters that are not a right square bracket between the brackets.
         /// </summary>
-        /// <returns></returns>
         public static Pattern SurroundSquareBrackets()
         {
             return SurroundSquareBrackets(WhileNotChar(']'));
@@ -3859,7 +3500,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches specified pattern surrounded with left and right square bracket.
         /// </summary>
         /// <param name="content">The content to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern SurroundSquareBrackets(object content)
         {
@@ -3870,7 +3510,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches specified content surrounded with left and right square bracket.
         /// </summary>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern SurroundSquareBrackets(params object[] content)
         {
@@ -3880,7 +3519,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a text consisting of left and right angle bracket, allowing zero or more characters that are not a right angle bracket between the brackets.
         /// </summary>
-        /// <returns></returns>
         public static Pattern SurroundAngleBrackets()
         {
             return SurroundAngleBrackets(WhileNotChar('>'));
@@ -3890,7 +3528,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches specified pattern surrounded with left and right angle bracket.
         /// </summary>
         /// <param name="content">The content to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern SurroundAngleBrackets(object content)
         {
@@ -3901,7 +3538,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches specified content surrounded with left and right angle bracket.
         /// </summary>
         /// <param name="content">An object array that contains zero or more patterns any one of which has to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public static Pattern SurroundAngleBrackets(params object[] content)
         {
@@ -3912,7 +3548,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified character zero or more times.
         /// </summary>
         /// <param name="value">A Unicode character.</param>
-        /// <returns></returns>
         public static QuantifiedPattern WhileChar(char value)
         {
             return Character(value).MaybeMany();
@@ -3922,7 +3557,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified character zero or more times.
         /// </summary>
         /// <param name="value">An enumerated constant that identifies ASCII character.</param>
-        /// <returns></returns>
         public static QuantifiedPattern WhileChar(AsciiChar value)
         {
             return Character(value).MaybeMany();
@@ -3932,7 +3566,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches a specified character zero or more times.
         /// </summary>
         /// <param name="value">A set of Unicode characters.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public static QuantifiedPattern WhileChar(CharGrouping value)
         {
@@ -3942,7 +3575,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a digit character zero or more times.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiedPattern WhileDigit()
         {
             return Digit().MaybeMany();
@@ -3951,7 +3583,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a word character zero or more times.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiedPattern WhileWordChar()
         {
             return WordChar().MaybeMany();
@@ -3960,7 +3591,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a white-space character zero or more times.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiedPattern WhileWhiteSpace()
         {
             return WhiteSpace().MaybeMany();
@@ -3969,7 +3599,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches zero or more characters that are white-space characters but neither a carriage return nor a linefeed.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiedPattern WhileWhiteSpaceExceptNewLine()
         {
             return WhiteSpaceExceptNewLine().MaybeMany();
@@ -3979,7 +3608,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches zero or more characters that are not followed with a specified <paramref name="value"/>.
         /// </summary>
         /// <param name="value">A text to find but not to match.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public static Pattern WhileNot(string value)
         {
@@ -4009,7 +3637,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches zero or more characters that are not a specified character.
         /// </summary>
         /// <param name="value">A Unicode character.</param>
-        /// <returns></returns>
         public static QuantifiedPattern WhileNotChar(char value)
         {
             return NotChar(value).MaybeMany();
@@ -4019,7 +3646,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches zero or more characters that are not contained in the specified characters
         /// </summary>
         /// <param name="characters">Unicode characters.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="characters"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"><paramref name="characters"/> is empty.</exception>
         public static QuantifiedPattern WhileNotChar(params char[] characters)
@@ -4031,7 +3657,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches zero or more characters that are not contained in the specified <see cref="string"/>.
         /// </summary>
         /// <param name="characters">Unicode characters.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="characters"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"><paramref name="characters"/> length is equal to zero.</exception>
         public static QuantifiedPattern WhileNotChar(string characters)
@@ -4043,7 +3668,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches zero or more characters that are not a specified character.
         /// </summary>
         /// <param name="value">An enumerated constant that identifies ASCII character.</param>
-        /// <returns></returns>
         public static QuantifiedPattern WhileNotChar(AsciiChar value)
         {
             return NotChar(value).MaybeMany();
@@ -4053,7 +3677,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches zero or more characters that are not matched by a specified <see cref="CharGrouping"/>.
         /// </summary>
         /// <param name="value">A set of Unicode characters.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public static QuantifiedPattern WhileNotChar(CharGrouping value)
         {
@@ -4063,7 +3686,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches zero or more characters that are neither a carriage return nor a linefeed.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiedPattern WhileNotNewLineChar()
         {
             return WhileNotChar("\r\n");
@@ -4072,7 +3694,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches zero or more characters that are not a digit.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiedPattern WhileNotDigit()
         {
             return WhileNotChar(Chars.Digit());
@@ -4081,7 +3702,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches zero or more characters that are not a white-space.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiedPattern WhileNotWhiteSpace()
         {
             return WhileNotChar(Chars.WhiteSpace());
@@ -4090,7 +3710,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches zero or more characters that are not a word character.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiedPattern WhileNotWordChar()
         {
             return WhileNotChar(Chars.WordChar());
@@ -4100,7 +3719,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches zero or more characters until it reaches a specified character.
         /// </summary>
         /// <param name="value">A Unicode character.</param>
-        /// <returns></returns>
         public static QuantifiablePattern UntilChar(char value)
         {
             return WhileNotChar(value).Character(value).AsNoncapturingGroup();
@@ -4110,7 +3728,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches zero or more characters until it reaches a specified character.
         /// </summary>
         /// <param name="value">An enumerated constant that identifies ASCII character.</param>
-        /// <returns></returns>
         public static QuantifiablePattern UntilChar(AsciiChar value)
         {
             return WhileNotChar(value).Character(value).AsNoncapturingGroup();
@@ -4120,7 +3737,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches zero or more characters until it reaches a character that is matched by a specified <see cref="CharGrouping"/>.
         /// </summary>
         /// <param name="value">A content of a character group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public static QuantifiablePattern UntilChar(CharGrouping value)
         {
@@ -4131,10 +3747,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches zero or more characters until it reaches any one of the specified characters.
         /// </summary>
         /// <param name="characters">Unicode characters.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="characters"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"><paramref name="characters"/> length is equal to zero.</exception>
-        /// <returns></returns>
         public static QuantifiablePattern UntilChar(string characters)
         {
             return WhileNotChar(characters).Character(characters).AsNoncapturingGroup();
@@ -4143,7 +3757,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches zero or more characters until it reaches a linefeed.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern UntilNewLine()
         {
             return UntilChar(AsciiChar.Linefeed);
@@ -4153,7 +3766,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that matches zero or more characters until it reaches a specified <paramref name="value"/>.
         /// </summary>
         /// <param name="value">A text to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public static Pattern Until(string value)
         {
@@ -4183,7 +3795,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches any character zero or more times but as few times as possible.
         /// </summary>
-        /// <returns></returns>
         public static Pattern Crawl()
         {
             return Any().MaybeMany().Lazy();
@@ -4192,7 +3803,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches any character except linefeed and carriage return zero or more times but as few times as possible.
         /// </summary>
-        /// <returns></returns>
         public static Pattern CrawlLine()
         {
             return WhileNotNewLineChar().Lazy();
@@ -4201,7 +3811,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches any character except linefeed (or any character if the <see cref="RegexOptions.Singleline"/> option is applied) zero or more times but as few times as possible.
         /// </summary>
-        /// <returns></returns>
         public static Pattern CrawlNative()
         {
             return AnyNative().MaybeMany().Lazy();
@@ -4210,7 +3819,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a pattern that matches a combination of an optional carriage return and a linefeed.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern NewLine()
         {
             return CarriageReturn().Maybe().Linefeed().AsNoncapturingGroup();
@@ -4219,7 +3827,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns an empty negative lookahead assertion. This pattern is never matched.
         /// </summary>
-        /// <returns></returns>
         public static QuantifiablePattern Never()
         {
             return NotAssert("");
@@ -4232,7 +3839,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <param name="openingCharacter">Opening Unicode character to balance.</param>
         /// <param name="closingCharacter">Closing Unicode character to balance.</param>
         /// <param name="groupName">A name of the group that contains balanced content of the opening and closing character.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="groupName"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
         public static Pattern BalanceChar(char openingCharacter, char closingCharacter, string groupName)
@@ -4247,7 +3853,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Between the characters can be zero or many characters that are neither left nor right parenthesis.
         /// </summary>
         /// <param name="groupName">A name of the group that contains balanced content between left and right parenthesis.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="groupName"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
         public static Pattern BalanceParentheses(string groupName)
@@ -4260,7 +3865,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Between the characters can be zero or many characters that are neither left nor right square bracket.
         /// </summary>
         /// <param name="groupName">A name of the group that contains balanced content between left and right square bracket.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="groupName"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
         public static Pattern BalanceSquareBrackets(string groupName)
@@ -4273,7 +3877,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Between the characters can be zero or many characters that are neither left nor right curly bracket.
         /// </summary>
         /// <param name="groupName">A name of the group that contains balanced content between left and right curly bracket.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="groupName"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
         public static Pattern BalanceCurlyBrackets(string groupName)
@@ -4286,7 +3889,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Between the characters can be zero or many characters that are neither left nor right angle bracket.
         /// </summary>
         /// <param name="groupName">A name of the group that contains balanced content between left and right angle bracket.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="groupName"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
         public static Pattern BalanceAngleBrackets(string groupName)
@@ -4315,7 +3917,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that requires previously defined group with a specified name to be matched. Otherwise, a match will fail.
         /// </summary>
         /// <param name="groupName">A name of the group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="groupName"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
         public static Pattern RequireGroup(string groupName)
@@ -4327,7 +3928,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that requires previously defined group with a specified number to be matched. Otherwise, a match will fail.
         /// </summary>
         /// <param name="groupNumber">A number of the group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="groupNumber"/> is less than zero.</exception>
         public static Pattern RequireGroup(int groupNumber)
         {
@@ -4338,7 +3938,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that requires previously defined group with a specified name not to be matched. Otherwise, a match will fail.
         /// </summary>
         /// <param name="groupName">A name of the group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="groupName"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
         public static Pattern DisallowGroup(string groupName)
@@ -4350,7 +3949,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a pattern that requires previously defined group with a specified number not to be matched. Otherwise, a match will fail.
         /// </summary>
         /// <param name="groupNumber">A number of the group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="groupNumber"/> is less than zero.</exception>
         public static Pattern DisallowGroup(int groupNumber)
         {

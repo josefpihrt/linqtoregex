@@ -42,7 +42,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a patterns that matches what is not matched by the current instance.
         /// </summary>
-        /// <returns></returns>
         public abstract CharGroup Negate();
 
         /// <summary>
@@ -90,7 +89,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a patterns that matches what is not matched by the current instance.
         /// </summary>
         /// <param name="value">A value to negate.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public static CharGroup operator !(CharPattern value)
         {
@@ -105,7 +103,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="baseGroup">A base group.</param>
         /// <param name="excludedGroup">An excluded group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="baseGroup"/> or <paramref name="excludedGroup"/> is <c>null</c>.</exception>
         public static CharSubtraction operator -(CharPattern baseGroup, CharPattern excludedGroup)
         {
@@ -117,7 +114,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="baseGroup">A base group.</param>
         /// <param name="excludedGroup">An excluded group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="baseGroup"/> or <paramref name="excludedGroup"/> is <c>null</c>.</exception>
         public static CharSubtraction operator -(CharPattern baseGroup, CharGroup excludedGroup)
         {
@@ -129,7 +125,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="baseGroup">A base group.</param>
         /// <param name="excludedGroup">An excluded group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="baseGroup"/> or <paramref name="excludedGroup"/> is <c>null</c>.</exception>
         public static CharSubtraction operator -(CharPattern baseGroup, CharGrouping excludedGroup)
         {

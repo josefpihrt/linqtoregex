@@ -27,7 +27,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Converts the value of this instance to a <see cref="string"/>.
         /// </summary>
-        /// <returns></returns>
         public override string ToString()
         {
             if (Previous != null)
@@ -63,7 +62,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Appends a substitution pattern that substitutes the last substring matched by the numbered or named group.
         /// </summary>
         /// <param name="groupNumber">A number of the group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="groupNumber"/> is less than zero.</exception>
         public Substitution Group(int groupNumber) => Append(Substitutions.Group(groupNumber));
 
@@ -71,7 +69,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Appends a substitution pattern that substitutes the last substring matched by the named group.
         /// </summary>
         /// <param name="groupName">Valid regex group name.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="groupName"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
         public Substitution NamedGroup(string groupName) => Append(Substitutions.NamedGroup(groupName));
@@ -79,45 +76,38 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Appends a substitution pattern that substitutes the last captured group.
         /// </summary>
-        /// <returns></returns>
         public Substitution LastCapturedGroup() => Append(Substitutions.LastCapturedGroup());
 
         /// <summary>
         /// Appends a substitution pattern that substitutes the entire input string.
         /// </summary>
-        /// <returns></returns>
         public Substitution EntireInput() => Append(Substitutions.EntireInput());
 
         /// <summary>
         /// Appends a substitution pattern that substitutes the entire match.
         /// </summary>
-        /// <returns></returns>
         public Substitution EntireMatch() => Append(Substitutions.EntireMatch());
 
         /// <summary>
         /// Appends a substitution pattern that substitutes all the text of the input string after the match.
         /// </summary>
-        /// <returns></returns>
         public Substitution AfterMatch() => Append(Substitutions.AfterMatch());
 
         /// <summary>
         /// Appends a substitution pattern that substitutes all the text of the input string before the match.
         /// </summary>
-        /// <returns></returns>
         public Substitution BeforeMatch() => Append(Substitutions.BeforeMatch());
 
         /// <summary>
         /// Appends a specified text to the substitution pattern.
         /// </summary>
         /// <param name="value">A text to append.</param>
-        /// <returns></returns>
         public Substitution Text(string value) => Append(Substitutions.Text(value));
 
         /// <summary>
         /// Appends a specified character to the substitution pattern.
         /// </summary>
         /// <param name="value">A Unicode character to append.</param>
-        /// <returns></returns>
         public Substitution Text(char value) => Append(Substitutions.Text(value));
 
         /// <summary>
@@ -125,7 +115,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="left">The first element to concatenate.</param>
         /// <param name="right">The second element to concatenate.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="left"/> or <paramref name="right"/> is <c>null</c>.</exception>
         public static Substitution operator +(Substitution left, Substitution right)
         {
@@ -143,7 +132,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="left">The first element to concatenate.</param>
         /// <param name="right">The second element to concatenate.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="left"/> or <paramref name="right"/> is <c>null</c>.</exception>
         public static Substitution operator +(Substitution left, string right)
         {
@@ -161,7 +149,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="left">The first element to concatenate.</param>
         /// <param name="right">The second element to concatenate.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="left"/> or <paramref name="right"/> is <c>null</c>.</exception>
         public static Substitution operator +(string left, Substitution right)
         {
@@ -179,7 +166,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="left">The first element to concatenate.</param>
         /// <param name="right">The second element to concatenate.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="left"/> is <c>null</c>.</exception>
         public static Substitution operator +(Substitution left, char right)
         {
@@ -194,7 +180,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="left">The first element to concatenate.</param>
         /// <param name="right">The second element to concatenate.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="right"/> is <c>null</c>.</exception>
         public static Substitution operator +(char left, Substitution right)
         {

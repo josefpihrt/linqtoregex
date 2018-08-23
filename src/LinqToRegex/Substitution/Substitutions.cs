@@ -13,21 +13,18 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a substitution pattern with a specified text.
         /// </summary>
         /// <param name="value">A content of the substitution pattern.</param>
-        /// <returns></returns>
         public static Substitution Text(string value) => new TextSubstitution(value);
 
         /// <summary>
         /// Returns a substitution pattern with a specified character.
         /// </summary>
         /// <param name="value">A Unicode character.</param>
-        /// <returns></returns>
         public static Substitution Text(char value) => new CharSubstitution(value);
 
         /// <summary>
         /// Returns a substitution pattern that substitutes the last substring matched by the numbered or named group.
         /// </summary>
         /// <param name="groupNumber">A number of the group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="groupNumber"/> is less than zero.</exception>
         public static Substitution Group(int groupNumber) => new NumberedGroupSubstitution(groupNumber);
 
@@ -35,7 +32,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns a substitution pattern that substitutes the last substring matched by the named group.
         /// </summary>
         /// <param name="groupName">Valid regex group name.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="groupName"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
         public static Substitution NamedGroup(string groupName) => new NamedGroupSubstitution(groupName);
@@ -43,31 +39,26 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a substitution pattern that substitutes the last captured group.
         /// </summary>
-        /// <returns></returns>
         public static Substitution LastCapturedGroup() => new LastCapturedGroupSubstitution();
 
         /// <summary>
         /// Returns a substitution pattern that substitutes the entire input string.
         /// </summary>
-        /// <returns></returns>
         public static Substitution EntireInput() => new EntireInputSubstitution();
 
         /// <summary>
         /// Returns a substitution pattern that substitutes the entire match.
         /// </summary>
-        /// <returns></returns>
         public static Substitution EntireMatch() => new EntireMatchSubstitution();
 
         /// <summary>
         /// Returns a substitution pattern that substitutes all the text of the input string after the match.
         /// </summary>
-        /// <returns></returns>
         public static Substitution AfterMatch() => new AfterMatchSubstitution();
 
         /// <summary>
         /// Returns a substitution pattern that substitutes all the text of the input string before the match.
         /// </summary>
-        /// <returns></returns>
         public static Substitution BeforeMatch() => new BeforeMatchSubstitution();
     }
 }

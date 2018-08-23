@@ -16,7 +16,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// </summary>
         /// <param name="regex">The regular expression to be matched.</param>
         /// <param name="input">The string to search for a match.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         public static IEnumerable<Match> EnumerateMatches(this Regex regex, string input)
         {
@@ -40,7 +39,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="regex">The regular expression to be matched.</param>
         /// <param name="input">The string to search for a match.</param>
         /// <param name="startAt">The position at which to start the search.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="startAt"/> is less than zero or greater that the length of <paramref name="input"/>.</exception>
         public static IEnumerable<Match> EnumerateMatches(this Regex regex, string input, int startAt)
@@ -66,7 +64,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="input">The string to search for a match.</param>
         /// <param name="beginning">The position at which to start the search.</param>
         /// <param name="length">A number of characters to be searched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="beginning"/> is less than zero or greater than the length of input.
         /// <para><paramref name="length"/> is less than zero or greater then the length of input.</para>
@@ -93,7 +90,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// </summary>
         /// <param name="regex">The regular expression to be matched.</param>
         /// <param name="input">The string to search for a match.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         public static IEnumerable<Group> EnumerateGroups(this Regex regex, string input)
         {
@@ -110,7 +106,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="regex">The regular expression to be matched.</param>
         /// <param name="input">The string to search for a match.</param>
         /// <param name="groupName">A name of the group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> or <paramref name="groupName"/> is <c>null</c>.</exception>
         public static IEnumerable<Group> EnumerateGroups(this Regex regex, string input, string groupName)
         {
@@ -124,7 +119,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="regex">The regular expression to be matched.</param>
         /// <param name="input">The string to search for a match.</param>
         /// <param name="groupNumber">A number of the group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         public static IEnumerable<Group> EnumerateGroups(this Regex regex, string input, int groupNumber)
         {
@@ -137,7 +131,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// </summary>
         /// <param name="regex">The regular expression to be matched.</param>
         /// <param name="input">The string to search for a match.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         public static IEnumerable<Group> EnumerateSuccessGroups(this Regex regex, string input)
         {
@@ -159,7 +152,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="regex">The regular expression to be matched.</param>
         /// <param name="input">The string to search for a match.</param>
         /// <param name="groupName">A name of the group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> or <paramref name="groupName"/> is <c>null</c>.</exception>
         public static IEnumerable<Group> EnumerateSuccessGroups(this Regex regex, string input, string groupName)
         {
@@ -178,7 +170,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="regex">The regular expression to be matched.</param>
         /// <param name="input">The string to search for a match.</param>
         /// <param name="groupNumber">A number of the group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         public static IEnumerable<Group> EnumerateSuccessGroups(this Regex regex, string input, int groupNumber)
         {
@@ -196,7 +187,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// </summary>
         /// <param name="regex">The regular expression to be matched.</param>
         /// <param name="input">The string to search for a match.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         public static IEnumerable<Capture> EnumerateCaptures(this Regex regex, string input)
         {
@@ -220,7 +210,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="regex">The regular expression to be matched.</param>
         /// <param name="input">The string to search for a match.</param>
         /// <param name="groupName">A name of the group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> or <paramref name="groupName"/> is <c>null</c>.</exception>
         public static IEnumerable<Capture> EnumerateCaptures(this Regex regex, string input, string groupName)
         {
@@ -241,7 +230,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="regex">The regular expression to be matched.</param>
         /// <param name="input">The string to search for a match.</param>
         /// <param name="groupNumber">A number of the group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         public static IEnumerable<Capture> EnumerateCaptures(this Regex regex, string input, int groupNumber)
         {
@@ -262,7 +250,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="regex">The regular expression to be matched.</param>
         /// <param name="input">The string to search for a match.</param>
         /// <param name="replacementChar">The replacement char.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         public static string ReplaceMatchChar(this Regex regex, string input, char replacementChar)
         {
@@ -279,7 +266,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="input">The string to search for a match.</param>
         /// <param name="replacementChar">The replacement char.</param>
         /// <param name="groupName">A name of the group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         public static string ReplaceGroupChar(this Regex regex, string input, char replacementChar, string groupName)
         {
@@ -299,7 +285,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="input">The string to search for a match.</param>
         /// <param name="replacementChar">The replacement char.</param>
         /// <param name="groupNumber">A number of the group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         public static string ReplaceGroupChar(this Regex regex, string input, char replacementChar, int groupNumber)
         {
@@ -317,7 +302,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// </summary>
         /// <param name="regex">The regular expression to be matched.</param>
         /// <param name="input">The string to split.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         public static IEnumerable<string> EnumerateSplit(this Regex regex, string input)
         {
@@ -330,7 +314,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="regex">The regular expression to be matched.</param>
         /// <param name="input">The string to split.</param>
         /// <param name="splitOptions">A bitwise combination of the enumeration values that specify options.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         public static IEnumerable<string> EnumerateSplit(this Regex regex, string input, SplitOptions splitOptions)
         {
@@ -343,7 +326,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="regex">The regular expression to be matched.</param>
         /// <param name="input">The string to split.</param>
         /// <param name="count">The maximum number of times the input can be split.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="count"/> is less than zero.</exception>
         public static IEnumerable<string> EnumerateSplit(this Regex regex, string input, int count)
@@ -358,7 +340,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="input">The string to split.</param>
         /// <param name="count">The maximum number of times the input can be split.</param>
         /// <param name="splitOptions">A bitwise combination of the enumeration values that specify options.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="count"/> is less than zero.</exception>
         public static IEnumerable<string> EnumerateSplit(this Regex regex, string input, int count, SplitOptions splitOptions)
@@ -374,7 +355,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="input">The string to split.</param>
         /// <param name="count">The maximum number of times the input can be split.</param>
         /// <param name="startAt">The position in the input string where the search starts.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="count"/> is less than zero.
         /// <para><paramref name="startAt"/> is less than zero or greater than the length of <paramref name="input"/>.</para>
@@ -393,7 +373,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <param name="count">The maximum number of times the input can be split.</param>
         /// <param name="startAt">The position in the input string where the search starts.</param>
         /// <param name="splitOptions">A bitwise combination of the enumeration values that specify options.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="count"/> is less than zero.
         /// <para><paramref name="startAt"/> is less than zero or greater than the length of <paramref name="input"/>.</para>
@@ -408,7 +387,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// </summary>
         /// <param name="regex">The regular expression to be matched.</param>
         /// <param name="input">The string to search for a match.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         public static IEnumerable<int> EnumerateIndexes(this Regex regex, string input)
         {
@@ -424,7 +402,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// </summary>
         /// <param name="regex">The regular expression to be matched.</param>
         /// <param name="input">The string to search for a match.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         public static IEnumerable<int> EnumerateLengths(this Regex regex, string input)
         {
@@ -440,7 +417,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// </summary>
         /// <param name="regex">The regular expression to be matched.</param>
         /// <param name="input">The string to search for a match.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         public static IEnumerable<string> EnumerateValues(this Regex regex, string input)
         {

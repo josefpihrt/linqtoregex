@@ -20,7 +20,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Specifies that previous element must be matched zero or one time.
         /// </summary>
-        /// <returns></returns>
         public QuantifiedPattern Maybe()
         {
             return AppendInternal(new QuantifiedPattern.MaybeQuantifiedPattern());
@@ -29,7 +28,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Specifies that previous element must be matched zero or more times.
         /// </summary>
-        /// <returns></returns>
         public QuantifiedPattern MaybeMany()
         {
             return AppendInternal(new QuantifiedPattern.MaybeManyQuantifiedPattern());
@@ -38,7 +36,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Specifies that previous element must be matched one or more times.
         /// </summary>
-        /// <returns></returns>
         public QuantifiedPattern OneMany()
         {
             return AppendInternal(new QuantifiedPattern.OneManyQuantifiedPattern());
@@ -48,7 +45,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Specifies that previous element must be matched a specified number of times.
         /// </summary>
         /// <param name="exactCount">A number of times the pattern must be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public QuantifiedPattern Count(int exactCount)
         {
@@ -60,7 +56,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="minCount">A minimal number of times the pattern must be matched.</param>
         /// <param name="maxCount">A maximum number of times the pattern can be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="minCount"/> is less than zero or <paramref name="maxCount"/> is less than <paramref name="minCount"/>.</exception>
         public QuantifiedPattern Count(int minCount, int maxCount)
         {
@@ -71,7 +66,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Specifies that previous element must be matched at least specified number of times.
         /// </summary>
         /// <param name="minCount">A minimal number of times the pattern must be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="minCount"/> is less than zero.</exception>
         public QuantifiedPattern CountFrom(int minCount)
         {
@@ -82,7 +76,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Specifies that previous element must be matched at most specified number of times.
         /// </summary>
         /// <param name="maxCount">A maximum number of times the pattern can be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="maxCount"/> is less than zero.</exception>
         public QuantifiedPattern MaybeCount(int maxCount)
         {

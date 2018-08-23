@@ -49,7 +49,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Converts the value of this instance to a <see cref="string"/>.
         /// </summary>
-        /// <returns></returns>
         public override string ToString()
         {
             if (Settings.HasOption(PatternOptions.CSharpLiteral | PatternOptions.VisualBasicLiteral))
@@ -800,7 +799,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Appends a numbered group with a specified content.
         /// </summary>
         /// <param name="content">The content to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public void AppendNumberedGroup(object content)
         {
@@ -825,7 +823,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="name">A name of the group.</param>
         /// <param name="content">The content to be matched.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="name"/> or <paramref name="content"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"><paramref name="name"/> is not a valid regex group name.</exception>
         public void AppendNamedGroup(string name, object content)
@@ -1370,7 +1367,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Appends a pattern that matches a character from a specified Unicode block.
         /// </summary>
         /// <param name="block">An enumerated constant that identifies Unicode block.</param>
-        /// <returns></returns>
         public void AppendNamedBlock(NamedBlock block)
         {
             AppendNamedBlock(block, false);
@@ -1380,7 +1376,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Appends a pattern that matches a character that is not from a specified Unicode block.
         /// </summary>
         /// <param name="block">An enumerated constant that identifies Unicode block.</param>
-        /// <returns></returns>
         public void AppendNotNamedBlock(NamedBlock block)
         {
             AppendNamedBlock(block, true);

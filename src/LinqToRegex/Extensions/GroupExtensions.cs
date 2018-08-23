@@ -15,7 +15,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// Returns enumerable collection of captures of a specified group.
         /// </summary>
         /// <param name="group">A regular expression group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="group"/> is <c>null</c>.</exception>
         public static IEnumerable<Capture> EnumerateCaptures(this Group group)
         {

@@ -107,7 +107,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// If the current instance is a positive character group, it returns a negative character group. Otherwise, it returns a positive character group. Newly created group has the same content as the current instance.
         /// </summary>
         /// <param name="value">A value to negate.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public static CharGroup operator !(CharGroup value)
         {
@@ -121,7 +120,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Converts specified characters to an instance of the <see cref="CharGroup"/> class.
         /// </summary>
         /// <param name="characters">A set of Unicode characters.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="characters"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"><paramref name="characters"/> length is equal to zero.</exception>
         public static explicit operator CharGroup(string characters)
@@ -133,7 +131,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Converts specified <see cref="CharGrouping"/> to an instance of the <see cref="CharGroup"/> class.
         /// </summary>
         /// <param name="value">An instance of the <see cref="CharGrouping"/> class.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public static explicit operator CharGroup(CharGrouping value)
         {
@@ -145,7 +142,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="baseGroup">A base group.</param>
         /// <param name="excludedGroup">An excluded group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="baseGroup"/> or <paramref name="excludedGroup"/> is <c>null</c>.</exception>
         public static CharSubtraction operator -(CharGroup baseGroup, CharGroup excludedGroup)
         {
@@ -157,7 +153,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="baseGroup">A base group.</param>
         /// <param name="excludedGroup">An excluded group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="baseGroup"/> or <paramref name="excludedGroup"/> is <c>null</c>.</exception>
         public static CharSubtraction operator -(CharGroup baseGroup, CharGrouping excludedGroup)
         {
@@ -169,7 +164,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="baseGroup">A base group.</param>
         /// <param name="excludedGroup">An excluded group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="baseGroup"/> or <paramref name="excludedGroup"/> is <c>null</c>.</exception>
         public static CharSubtraction operator -(CharGroup baseGroup, CharPattern excludedGroup)
         {

@@ -14,7 +14,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns an instance of the <see cref="NegativeWordBoundary"/> class.
         /// </summary>
-        /// <returns></returns>
         public NegativeWordBoundary Negate() => new NegativeWordBoundary();
 
         internal override void AppendTo(PatternBuilder builder)
@@ -26,7 +25,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns an instance of the <see cref="NegativeWordBoundary"/> class.
         /// </summary>
         /// <param name="value">A value to negate.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public static NegativeWordBoundary operator !(WordBoundary value)
         {

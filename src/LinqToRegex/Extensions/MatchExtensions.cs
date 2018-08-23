@@ -16,7 +16,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// </summary>
         /// <param name="match">A regular expression match.</param>
         /// <param name="groupName">A name of the group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="match"/> is <c>null</c>.</exception>
         public static Group Group(this Match match, string groupName)
         {
@@ -31,7 +30,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// </summary>
         /// <param name="match">A regular expression match.</param>
         /// <param name="groupNumber">A number of the group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="match"/> is <c>null</c>.</exception>
         public static Group Group(this Match match, int groupNumber)
         {
@@ -45,7 +43,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// Returns enumerable collection of group of a specified match.
         /// </summary>
         /// <param name="match">A regular expression match.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="match"/> is <c>null</c>.</exception>
         public static IEnumerable<Group> EnumerateGroups(this Match match)
         {
@@ -60,7 +57,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// Enumerates through groups of a specified match and returns each capture from each group.
         /// </summary>
         /// <param name="match">A regular expression match.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="match"/> is <c>null</c>.</exception>
         public static IEnumerable<Capture> EnumerateCaptures(this Match match)
         {
@@ -83,7 +79,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// </summary>
         /// <param name="match">A regular expression match.</param>
         /// <param name="groupName">A name of the group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="match"/> or <paramref name="groupName"/> is <c>null</c>.</exception>
         public static IEnumerable<Capture> EnumerateCaptures(this Match match, string groupName)
         {
@@ -103,7 +98,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// </summary>
         /// <param name="match">A regular expression match.</param>
         /// <param name="groupNumber">A number of the group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="match"/> is <c>null</c>.</exception>
         public static IEnumerable<Capture> EnumerateCaptures(this Match match, int groupNumber)
         {

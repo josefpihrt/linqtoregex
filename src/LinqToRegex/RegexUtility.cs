@@ -41,7 +41,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Gets a value indicating whether the specified group name is a valid name of a regex group.
         /// </summary>
         /// <param name="groupName">A group name to examine.</param>
-        /// <returns></returns>
         public static bool IsValidGroupName(string groupName)
         {
             return IsValidGroupNameInternal(groupName);
@@ -84,7 +83,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Gets a value indicating whether the <paramref name="options"/> can be expressed as inline char(s).
         /// </summary>
         /// <param name="options">A bitwise combination of the enumeration values.</param>
-        /// <returns></returns>
         public static bool IsValidInlineOptions(RegexOptions options)
         {
             return (options & ~InlineOptions) == RegexOptions.None;
@@ -95,7 +93,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// The character is considered not to be in the character group.
         /// </summary>
         /// <param name="value">A Unicode character.</param>
-        /// <returns></returns>
         public static string Escape(char value)
         {
             return Escape(value, false);
@@ -106,7 +103,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="value">A Unicode character.</param>
         /// <param name="inCharGroup">Indicates whether the character is considered to be inside or outside of the character group.</param>
-        /// <returns></returns>
         public static string Escape(char value, bool inCharGroup)
         {
             return EscapeInternal((int)value, inCharGroup);
@@ -145,7 +141,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Gets a value indicating how a specified character is represented in the regular expression pattern.
         /// </summary>
         /// <param name="value">A Unicode character.</param>
-        /// <returns></returns>
         public static CharEscapeMode GetEscapeMode(char value)
         {
             return GetEscapeMode(value, false);
@@ -156,7 +151,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="value">A Unicode character.</param>
         /// <param name="inCharGroup">Indicates whether the character is inside or outside of the character group.</param>
-        /// <returns></returns>
         public static CharEscapeMode GetEscapeMode(char value, bool inCharGroup)
         {
             return GetEscapeMode((int)value, inCharGroup);
@@ -179,7 +173,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// The text is considered not to be in the character group.
         /// </summary>
         /// <param name="input">The text to be converted.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
         public static string Escape(string input)
         {
@@ -191,7 +184,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         /// <param name="input">The text to be converted.</param>
         /// <param name="inCharGroup">Indicates whether the text is considered to be inside or outside of the character group.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
         public static string Escape(string input, bool inCharGroup)
         {
@@ -292,7 +284,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Escapes all dollar signs by doubling them.
         /// </summary>
         /// <param name="input">The substitution pattern to be escaped.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
         public static string EscapeSubstitution(string input)
         {
@@ -342,7 +333,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns randomly generated group name.
         /// </summary>
-        /// <returns></returns>
         public static string GetRandomGroupName()
         {
             return GetRandomGroupName(8);
@@ -352,7 +342,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Returns randomly generated group name with a specified length.
         /// </summary>
         /// <param name="length">Length of a group name.</param>
-        /// <returns></returns>
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="length"/> is less than one.</exception>
         public static string GetRandomGroupName(int length)
         {
@@ -380,21 +369,18 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Gets a designation of the specified Unicode category.
         /// </summary>
         /// <param name="category">An enumerated constant that identifies Unicode category.</param>
-        /// <returns></returns>
         public static string GetCategoryDesignation(GeneralCategory category) => CategoryDesignations[(int)category];
 
         /// <summary>
         /// Gets a designation of the specified Unicode block.
         /// </summary>
         /// <param name="block">An enumerated constant that identifies Unicode block.</param>
-        /// <returns></returns>
         public static string GetBlockDesignation(NamedBlock block) => BlockDesignations[(int)block];
 
         /// <summary>
         /// Gets a description of the specified Unicode category.
         /// </summary>
         /// <param name="category">An enumerated constant that identifies Unicode category.</param>
-        /// <returns></returns>
         public static string GetCategoryDescription(GeneralCategory category)
         {
             switch (category)
@@ -485,7 +471,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// Gets a description of the specified Unicode block.
         /// </summary>
         /// <param name="block">An enumerated constant that identifies Unicode block.</param>
-        /// <returns></returns>
         public static string GetBlockDescription(NamedBlock block)
         {
             switch (block)
