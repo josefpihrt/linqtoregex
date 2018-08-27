@@ -3,7 +3,7 @@
 * LINQ to Regex library provides language integrated access to the .NET regular expressions.
 * It allows you to create and use regular expressions directly in your code and develop complex expressions while keeping its readability and maintainability.
 * Knowledge of the regular expression syntax is not required (but you should be familiar with basics).
-* The library is distributed via [NuGet](https://www.nuget.org/packages/LinqToRegex).
+* The library is distributed as&ensp;[![NuGet](https://img.shields.io/nuget/v/LinqToRegex.svg)](https://nuget.org/packages/LinqToRegex)
 
 ## Supported Frameworks
 
