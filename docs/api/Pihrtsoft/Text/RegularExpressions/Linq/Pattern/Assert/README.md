@@ -1,0 +1,67 @@
+# Pattern\.Assert Method
+
+[Home](../../../../../../README.md)
+
+**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+
+**Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
+
+## Overloads
+
+| Method | Summary |
+| ------ | ------- |
+| [Assert(Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Assert_System_Object_) | Appends a zero\-width positive lookahead assertion with a specified content to be matched\. |
+| [Assert(Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Assert_System_Object___) | Appends a zero\-width positive lookahead assertion that matches any one pattern specified in the object array\. |
+
+## Assert\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Assert_System_Object_"></a>
+
+### Summary
+
+Appends a zero\-width positive lookahead assertion with a specified content to be matched\.
+
+```csharp
+public QuantifiablePattern Assert(object content)
+```
+
+### Parameters
+
+**content**
+
+A content to be matched\.
+
+### Returns
+
+Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../QuantifiablePattern/README.md)
+
+### Exceptions
+
+System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+
+**content** is `null`\.
+
+## Assert\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Assert_System_Object___"></a>
+
+### Summary
+
+Appends a zero\-width positive lookahead assertion that matches any one pattern specified in the object array\.
+
+```csharp
+public QuantifiablePattern Assert(params object[] content)
+```
+
+### Parameters
+
+**content**
+
+An object array that contains zero or more patterns any one of which has to be matched\.
+
+### Returns
+
+Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../QuantifiablePattern/README.md)
+
+### Exceptions
+
+System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+
+**content** is `null`\.
+

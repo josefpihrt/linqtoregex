@@ -16,6 +16,10 @@
   * Windows Phone 8.0
   * .NET Standard 1.0
 
+## Documentation
+
+* [LINQ to Regex API Reference](docs/api/README.md#_top)
+
 ## How to Use LINQ to Regex with C\# Interactive
 
 It is necessary to reference LINQ to Regex assembly using `#r` directive.
