@@ -2,6 +2,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text.RegularExpressions;
 using Pihrtsoft.Text.RegularExpressions.Linq.Extensions;
 
@@ -10,6 +11,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     /// <summary>
     /// Represents an immutable regular expression pattern. This class is abstract.
     /// </summary>
+    [DebuggerDisplay("{DebuggerDisplay,nq}")]
     public abstract partial class Pattern
     {
         private string _value;
@@ -674,5 +676,11 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         }
 
         internal Pattern Previous { get; set; }
+
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private string DebuggerDisplay
+        {
+            get { return ToString(); }
+        }
     }
 }

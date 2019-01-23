@@ -3,6 +3,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Globalization;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -12,6 +13,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     /// <summary>
     /// Represents a class that enables to create a text representation of the <see cref="Pattern"/>. This class cannot be inherited.
     /// </summary>
+    [DebuggerDisplay("{DebuggerDisplay,nq}")]
     public sealed class PatternBuilder
     {
         private readonly StringBuilder _sb;
@@ -1928,6 +1930,12 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
                 _currentOptions = value;
             }
+        }
+
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private string DebuggerDisplay
+        {
+            get { return ToString(); }
         }
     }
 }

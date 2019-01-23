@@ -2,12 +2,14 @@
 
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
     /// <summary>
     /// Represents an immutable content of the character group. Content can be a base group or an excluded group. This class is abstract.
     /// </summary>
+    [DebuggerDisplay("{DebuggerDisplay,nq}")]
     public abstract partial class CharGrouping
         : IBaseGroup, IExcludedGroup
     {
@@ -602,6 +604,12 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         }
 
         internal CharGrouping Previous { get; set; }
+
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private string DebuggerDisplay
+        {
+            get { return ToString(); }
+        }
 
         /// <summary>
         /// Appends a pattern that matches slash or backslash.

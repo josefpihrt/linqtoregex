@@ -2,6 +2,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
@@ -9,6 +10,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     /// <summary>
     /// Represents a base class for a substitution in the replacement pattern. This class is abstract.
     /// </summary>
+    [DebuggerDisplay("{DebuggerDisplay,nq}")]
     public abstract class Substitution
     {
         /// <summary>
@@ -192,5 +194,11 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         internal virtual string Value => null;
 
         internal Substitution Previous { get; set; }
+
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private string DebuggerDisplay
+        {
+            get { return ToString(); }
+        }
     }
 }
