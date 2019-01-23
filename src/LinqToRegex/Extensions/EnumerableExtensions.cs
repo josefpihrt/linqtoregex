@@ -21,10 +21,15 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             if (matches == null)
                 throw new ArgumentNullException(nameof(matches));
 
-            foreach (Match match in matches)
+            return EnumerateGroups();
+
+            IEnumerable<Group> EnumerateGroups()
             {
-                for (int i = 0; i < match.Groups.Count; i++)
-                    yield return match.Groups[i];
+                foreach (Match match in matches)
+                {
+                    for (int i = 0; i < match.Groups.Count; i++)
+                        yield return match.Groups[i];
+                }
             }
         }
 
@@ -42,8 +47,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             if (groupName == null)
                 throw new ArgumentNullException(nameof(groupName));
 
-            foreach (Match match in matches)
-                yield return match.Groups[groupName];
+            return EnumerateGroups();
+
+            IEnumerable<Group> EnumerateGroups()
+            {
+                foreach (Match match in matches)
+                    yield return match.Groups[groupName];
+            }
         }
 
         /// <summary>
@@ -57,8 +67,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             if (matches == null)
                 throw new ArgumentNullException(nameof(matches));
 
-            foreach (Match match in matches)
-                yield return match.Groups[groupNumber];
+            return EnumerateGroups();
+
+            IEnumerable<Group> EnumerateGroups()
+            {
+                foreach (Match match in matches)
+                    yield return match.Groups[groupNumber];
+            }
         }
 
         /// <summary>
@@ -183,10 +198,15 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             if (groups == null)
                 throw new ArgumentNullException(nameof(groups));
 
-            foreach (Group group in groups)
+            return EnumerateCaptures();
+
+            IEnumerable<Capture> EnumerateCaptures()
             {
-                for (int i = 0; i < group.Captures.Count; i++)
-                    yield return group.Captures[i];
+                foreach (Group group in groups)
+                {
+                    for (int i = 0; i < group.Captures.Count; i++)
+                        yield return group.Captures[i];
+                }
             }
         }
 
@@ -200,8 +220,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             if (captures == null)
                 throw new ArgumentNullException(nameof(captures));
 
-            foreach (Capture capture in captures)
-                yield return capture.Index;
+            return EnumerateIndexes();
+
+            IEnumerable<int> EnumerateIndexes()
+            {
+                foreach (Capture capture in captures)
+                    yield return capture.Index;
+            }
         }
 
         /// <summary>
@@ -214,8 +239,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             if (captures == null)
                 throw new ArgumentNullException(nameof(captures));
 
-            foreach (Capture capture in captures)
-                yield return capture.Length;
+            return EnumerateLengths();
+
+            IEnumerable<int> EnumerateLengths()
+            {
+                foreach (Capture capture in captures)
+                    yield return capture.Length;
+            }
         }
 
         /// <summary>
@@ -228,8 +258,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             if (captures == null)
                 throw new ArgumentNullException(nameof(captures));
 
-            foreach (Capture capture in captures)
-                yield return capture.Value;
+            return EnumerateValues();
+
+            IEnumerable<string> EnumerateValues()
+            {
+                foreach (Capture capture in captures)
+                    yield return capture.Value;
+            }
         }
     }
 }

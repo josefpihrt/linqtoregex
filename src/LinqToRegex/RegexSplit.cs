@@ -47,44 +47,49 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (startAt < 0 || startAt > input.Length)
                 throw new ArgumentOutOfRangeException(nameof(startAt));
 
-            if (count == 1)
+            return EnumerateValues();
+
+            IEnumerable<string> EnumerateValues()
             {
-                yield return input;
-                yield break;
-            }
-
-            Match firstMatch = regex.Match(input, startAt);
-
-            if (!firstMatch.Success)
-            {
-                yield return input;
-                yield break;
-            }
-
-            bool omitGroupValues = (options & SplitOptions.OmitGroupValues) != 0;
-            bool omitEmptyValues = (options & SplitOptions.OmitEmptyValues) != 0;
-            int prevIndex = 0;
-
-            count--;
-
-            foreach (Match match in (regex.RightToLeft) ? EnumerateMatchesRightToLeft(firstMatch, count) : EnumerateMatches(firstMatch, count))
-            {
-                if (!omitEmptyValues || ((match.Index - prevIndex) > 0))
-                    yield return input.Substring(prevIndex, match.Index - prevIndex);
-
-                prevIndex = match.Index + match.Length;
-
-                if (!omitGroupValues)
+                if (count == 1)
                 {
-                    foreach (Group group in (regex.RightToLeft) ? EnumerateGroupsRightToLeft(match) : EnumerateGroups(match))
+                    yield return input;
+                    yield break;
+                }
+
+                Match firstMatch = regex.Match(input, startAt);
+
+                if (!firstMatch.Success)
+                {
+                    yield return input;
+                    yield break;
+                }
+
+                bool omitGroupValues = (options & SplitOptions.OmitGroupValues) != 0;
+                bool omitEmptyValues = (options & SplitOptions.OmitEmptyValues) != 0;
+                int prevIndex = 0;
+
+                count--;
+
+                foreach (Match match in (regex.RightToLeft) ? EnumerateMatchesRightToLeft(firstMatch, count) : EnumerateMatches(firstMatch, count))
+                {
+                    if (!omitEmptyValues || ((match.Index - prevIndex) > 0))
+                        yield return input.Substring(prevIndex, match.Index - prevIndex);
+
+                    prevIndex = match.Index + match.Length;
+
+                    if (!omitGroupValues)
                     {
-                        if (group.Success && (!omitEmptyValues || group.Length > 0))
-                            yield return group.Value;
+                        foreach (Group group in (regex.RightToLeft) ? EnumerateGroupsRightToLeft(match) : EnumerateGroups(match))
+                        {
+                            if (group.Success && (!omitEmptyValues || group.Length > 0))
+                                yield return group.Value;
+                        }
                     }
                 }
-            }
 
-            yield return input.Substring(prevIndex, input.Length - prevIndex);
+                yield return input.Substring(prevIndex, input.Length - prevIndex);
+            }
         }
 
         private static IEnumerable<Group> EnumerateGroups(Match match)

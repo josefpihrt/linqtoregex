@@ -49,8 +49,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             if (match == null)
                 throw new ArgumentNullException(nameof(match));
 
-            for (int i = 0; i < match.Groups.Count; i++)
-                yield return match.Groups[i];
+            return EnumerateGroups();
+
+            IEnumerable<Group> EnumerateGroups()
+            {
+                for (int i = 0; i < match.Groups.Count; i++)
+                    yield return match.Groups[i];
+            }
         }
 
         /// <summary>
@@ -63,13 +68,18 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             if (match == null)
                 throw new ArgumentNullException(nameof(match));
 
-            for (int i = 0; i < match.Groups.Count; i++)
+            return EnumerateCaptures();
+
+            IEnumerable<Capture> EnumerateCaptures()
             {
-                Group group = match.Groups[i];
-                if (group.Success)
+                for (int i = 0; i < match.Groups.Count; i++)
                 {
-                    for (int j = 0; j < group.Captures.Count; j++)
-                        yield return group.Captures[j];
+                    Group group = match.Groups[i];
+                    if (group.Success)
+                    {
+                        for (int j = 0; j < group.Captures.Count; j++)
+                            yield return group.Captures[j];
+                    }
                 }
             }
         }
@@ -85,11 +95,16 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             if (match == null)
                 throw new ArgumentNullException(nameof(match));
 
-            Group group = match.Groups[groupName];
-            if (group.Success)
+            return EnumerateCaptures();
+
+            IEnumerable<Capture> EnumerateCaptures()
             {
-                for (int i = 0; i < group.Captures.Count; i++)
-                    yield return group.Captures[i];
+                Group group = match.Groups[groupName];
+                if (group.Success)
+                {
+                    for (int i = 0; i < group.Captures.Count; i++)
+                        yield return group.Captures[i];
+                }
             }
         }
 
@@ -104,11 +119,16 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             if (match == null)
                 throw new ArgumentNullException(nameof(match));
 
-            Group group = match.Groups[groupNumber];
-            if (group.Success)
+            return EnumerateCaptures();
+
+            IEnumerable<Capture> EnumerateCaptures()
             {
-                for (int i = 0; i < group.Captures.Count; i++)
-                    yield return group.Captures[i];
+                Group group = match.Groups[groupNumber];
+                if (group.Success)
+                {
+                    for (int i = 0; i < group.Captures.Count; i++)
+                        yield return group.Captures[i];
+                }
             }
         }
     }

@@ -25,11 +25,16 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             if (input == null)
                 throw new ArgumentNullException(nameof(input));
 
-            Match match = regex.Match(input);
-            while (match.Success)
+            return EnumerateMatches();
+
+            IEnumerable<Match> EnumerateMatches()
             {
-                yield return match;
-                match = match.NextMatch();
+                Match match = regex.Match(input);
+                while (match.Success)
+                {
+                    yield return match;
+                    match = match.NextMatch();
+                }
             }
         }
 
@@ -49,11 +54,16 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             if (input == null)
                 throw new ArgumentNullException(nameof(input));
 
-            Match match = regex.Match(input, startAt);
-            while (match.Success)
+            return EnumerateMatches();
+
+            IEnumerable<Match> EnumerateMatches()
             {
-                yield return match;
-                match = match.NextMatch();
+                Match match = regex.Match(input, startAt);
+                while (match.Success)
+                {
+                    yield return match;
+                    match = match.NextMatch();
+                }
             }
         }
 
@@ -77,11 +87,16 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             if (input == null)
                 throw new ArgumentNullException(nameof(input));
 
-            Match match = regex.Match(input, beginning, length);
-            while (match.Success)
+            return EnumerateMatches();
+
+            IEnumerable<Match> EnumerateMatches()
             {
-                yield return match;
-                match = match.NextMatch();
+                Match match = regex.Match(input, beginning, length);
+                while (match.Success)
+                {
+                    yield return match;
+                    match = match.NextMatch();
+                }
             }
         }
 
@@ -393,8 +408,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             if (regex == null)
                 throw new ArgumentNullException(nameof(regex));
 
-            foreach (Match match in regex.EnumerateMatches(input))
-                yield return match.Index;
+            return EnumerateIndexes();
+
+            IEnumerable<int> EnumerateIndexes()
+            {
+                foreach (Match match in regex.EnumerateMatches(input))
+                    yield return match.Index;
+            }
         }
 
         /// <summary>
@@ -408,8 +428,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             if (regex == null)
                 throw new ArgumentNullException(nameof(regex));
 
-            foreach (Match match in regex.EnumerateMatches(input))
-                yield return match.Length;
+            return EnumerateLengths();
+
+            IEnumerable<int> EnumerateLengths()
+            {
+                foreach (Match match in regex.EnumerateMatches(input))
+                    yield return match.Length;
+            }
         }
 
         /// <summary>
@@ -423,8 +448,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
             if (regex == null)
                 throw new ArgumentNullException(nameof(regex));
 
-            foreach (Match match in regex.EnumerateMatches(input))
-                yield return match.Value;
+            return EnumerateValues();
+
+            IEnumerable<string> EnumerateValues()
+            {
+                foreach (Match match in regex.EnumerateMatches(input))
+                    yield return match.Value;
+            }
         }
     }
 }
