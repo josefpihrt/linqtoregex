@@ -28,7 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern operator +(char lef
 
 ### Parameters
 
-**left** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**left** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The first element to concatenate\.
 
@@ -42,7 +42,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **right** is `null`\.
 
@@ -62,7 +62,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern operator +(Pihrtsof
 
 The first element to concatenate\.
 
-**right** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**right** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The second element to concatenate\.
 
@@ -72,7 +72,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **left** is `null`\.
 
@@ -102,7 +102,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **left** or **right** is `null`\.
 
@@ -122,7 +122,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern operator +(Pihrtsof
 
 The first element to concatenate\.
 
-**right** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**right** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The second element to concatenate\.
 
@@ -132,7 +132,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **left** or **right** is `null`\.
 
@@ -148,7 +148,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern operator +(string l
 
 ### Parameters
 
-**left** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**left** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The first element to concatenate\.
 
@@ -162,7 +162,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **left** or **right** is `null`\.
 

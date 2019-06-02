@@ -40,7 +40,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharSubtraction](../../CharSubtracti
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **baseGroup** or **excludedGroup** is `null`\.
 
@@ -70,7 +70,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharSubtraction](../../CharSubtracti
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **baseGroup** or **excludedGroup** is `null`\.
 
@@ -100,7 +100,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharSubtraction](../../CharSubtracti
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **baseGroup** or **excludedGroup** is `null`\.
 

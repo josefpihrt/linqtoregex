@@ -26,7 +26,7 @@ The builder to use for appending the text\.
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **builder** is `null`\.
 

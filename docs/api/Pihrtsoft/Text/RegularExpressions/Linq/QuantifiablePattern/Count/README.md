@@ -25,7 +25,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern Count(int exactC
 
 ### Parameters
 
-**exactCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+**exactCount** &emsp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of times the pattern must be matched\.
 
@@ -35,7 +35,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedPattern](../../QuantifiedP
 
 ### Exceptions
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **exactCount** is less than zero\.
 
@@ -51,11 +51,11 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern Count(int minCou
 
 ### Parameters
 
-**minCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+**minCount** &emsp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A minimal number of times the pattern must be matched\.
 
-**maxCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+**maxCount** &emsp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A maximum number of times the pattern can be matched\.
 
@@ -65,7 +65,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedPattern](../../QuantifiedP
 
 ### Exceptions
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **minCount** is less than zero or **maxCount** is less than **minCount**\.
 

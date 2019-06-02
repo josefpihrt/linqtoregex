@@ -25,7 +25,7 @@ public static string GetRandomGroupName()
 
 ### Returns
 
-System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 ## GetRandomGroupName\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_GetRandomGroupName_System_Int32_"></a>
 
@@ -39,17 +39,17 @@ public static string GetRandomGroupName(int length)
 
 ### Parameters
 
-**length** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+**length** &emsp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 Length of a group name\.
 
 ### Returns
 
-System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 ### Exceptions
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **length** is less than one\.
 

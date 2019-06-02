@@ -16,7 +16,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.Pattern Or(object content)
 
 ### Parameters
 
-**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**content** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 Alternate content to match if the current instance if not matched\.
 
@@ -26,7 +26,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **content** is `null`\.
 

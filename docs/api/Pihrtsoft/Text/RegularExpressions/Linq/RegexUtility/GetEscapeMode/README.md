@@ -25,7 +25,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharEscapeMode GetEscapeMod
 
 ### Parameters
 
-**value** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**value** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 A Unicode character\.
 
@@ -45,11 +45,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharEscapeMode GetEscapeMod
 
 ### Parameters
 
-**value** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**value** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 A Unicode character\.
 
-**inCharGroup** &emsp; System\.[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+**inCharGroup** &emsp; [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
 Indicates whether the character is inside or outside of the character group\.
 

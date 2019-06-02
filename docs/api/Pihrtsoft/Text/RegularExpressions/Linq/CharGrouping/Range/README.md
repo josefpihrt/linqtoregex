@@ -16,11 +16,11 @@ public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Range(char first, cha
 
 ### Parameters
 
-**first** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**first** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The first character of the range\.
 
-**last** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**last** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The last character of the range\.
 

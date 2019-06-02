@@ -11,7 +11,7 @@
 Provides enumerated values to use when splitting a text\.
 
 ```csharp
-[System.Flags]
+[Flags]
 public enum SplitOptions
 ```
 
@@ -21,7 +21,7 @@ public enum SplitOptions
 
 ### Attributes
 
-* System\.[FlagsAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.flagsattribute)
+* [FlagsAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.flagsattribute)
 
 ## Fields
 

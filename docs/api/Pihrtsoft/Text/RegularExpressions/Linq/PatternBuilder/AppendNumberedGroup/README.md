@@ -16,13 +16,13 @@ public void AppendNumberedGroup(object content)
 
 ### Parameters
 
-**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**content** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched\.
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **content** is `null`\.
 

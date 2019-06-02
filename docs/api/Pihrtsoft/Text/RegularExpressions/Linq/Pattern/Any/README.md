@@ -41,7 +41,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Any(int exactCount
 
 ### Parameters
 
-**exactCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+**exactCount** &emsp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of times a character has to be matched\.
 
@@ -51,7 +51,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGro
 
 ### Exceptions
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **exactCount** is less than zero\.
 
@@ -67,7 +67,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Any(object con
 
 ### Parameters
 
-**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**content** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched\.
 
@@ -87,7 +87,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Any(params obj
 
 ### Parameters
 
-**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
+**content** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
 
 An object array that contains zero or more patterns any one of which has to be matched\.
 
@@ -97,7 +97,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **content** is `null`\.
 

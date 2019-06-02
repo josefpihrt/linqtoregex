@@ -48,7 +48,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileNotC
 
 ### Parameters
 
-**value** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**value** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 A Unicode character\.
 
@@ -68,7 +68,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileNotC
 
 ### Parameters
 
-**characters** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)\[\]
+**characters** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)\[\]
 
 Unicode characters\.
 
@@ -78,11 +78,11 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedPattern](../../QuantifiedP
 
 ### Exceptions
 
-System\.[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
+[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
 
 **characters** is empty\.
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **characters** is `null`\.
 
@@ -108,7 +108,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedPattern](../../QuantifiedP
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **value** is `null`\.
 
@@ -124,7 +124,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileNotC
 
 ### Parameters
 
-**characters** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**characters** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Unicode characters\.
 
@@ -134,11 +134,11 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedPattern](../../QuantifiedP
 
 ### Exceptions
 
-System\.[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
+[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
 
 **characters** length is equal to zero\.
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **characters** is `null`\.
 

@@ -25,13 +25,13 @@ public void AppendMaybeCount(int maxCount)
 
 ### Parameters
 
-**maxCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+**maxCount** &emsp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A maximum number of times the pattern can be matched\.
 
 ### Exceptions
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **maxCount** is less than zero\.
 
@@ -47,17 +47,17 @@ public void AppendMaybeCount(int maxCount, bool lazy)
 
 ### Parameters
 
-**maxCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+**maxCount** &emsp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A maximum number of times the pattern can be matched\.
 
-**lazy** &emsp; System\.[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+**lazy** &emsp; [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
 Indicates whether the quantifier will be greedy or lazy\.
 
 ### Exceptions
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **maxCount** is less than zero\.
 

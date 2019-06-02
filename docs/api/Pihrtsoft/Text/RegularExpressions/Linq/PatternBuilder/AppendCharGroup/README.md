@@ -61,17 +61,17 @@ public void AppendCharGroup(char first, char last)
 
 ### Parameters
 
-**first** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**first** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The first character of the range\.
 
-**last** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**last** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The last character of the range\.
 
 ### Exceptions
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **last** character number is less than **first** character number\.
 
@@ -93,7 +93,7 @@ A content of a character group\.
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **value** is `null`\.
 
@@ -125,17 +125,17 @@ public void AppendCharGroup(string characters)
 
 ### Parameters
 
-**characters** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**characters** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A set of characters any one of which has to be matched\.
 
 ### Exceptions
 
-System\.[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
+[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
 
 **characters** length is equal to zero\.
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **characters** is `null`\.
 

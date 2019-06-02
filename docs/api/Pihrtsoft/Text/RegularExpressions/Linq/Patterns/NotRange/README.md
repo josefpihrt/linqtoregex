@@ -16,11 +16,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotRange(char fir
 
 ### Parameters
 
-**first** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**first** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The first character of the range\.
 
-**last** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**last** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The last character of the range\.
 
@@ -30,7 +30,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../../CharGroup/README.md
 
 ### Exceptions
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **last** character number is less than **first** character number\.
 

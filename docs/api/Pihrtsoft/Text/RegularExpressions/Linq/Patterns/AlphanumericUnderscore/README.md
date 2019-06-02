@@ -39,7 +39,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Alphanumeri
 
 ### Parameters
 
-**exactCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+**exactCount** &emsp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of times a character has to be matched\.
 
@@ -49,7 +49,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGro
 
 ### Exceptions
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **exactCount** is less than zero\.
 

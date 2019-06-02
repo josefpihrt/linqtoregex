@@ -20,17 +20,17 @@ public static System.Collections.Generic.IEnumerable<string> EnumerateValues(thi
 
 The regular expression to be matched\.
 
-**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**input** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **regex** or **input** is `null`\.
 

@@ -27,15 +27,15 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Count(int m
 
 ### Parameters
 
-**minCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+**minCount** &emsp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A minimal number of times the pattern must be matched\.
 
-**maxCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+**maxCount** &emsp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A maximum number of times the pattern can be matched\.
 
-**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**content** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched\.
 
@@ -45,11 +45,11 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGro
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **content** is `null`\.
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **minCount** is less than zero or **maxCount** is less than **minCount**\.
 
@@ -65,19 +65,19 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Count(int m
 
 ### Parameters
 
-**minCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+**minCount** &emsp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A minimal number of times the pattern must be matched\.
 
-**maxCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+**maxCount** &emsp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A maximum number of times the pattern can be matched\.
 
-**first** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**first** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 First element of a sequence that contains patterns any one of which has to be matched\.
 
-**others** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
+**others** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
 
 Other elements of a sequence that contains patterns any one of which has to be matched\.
 
@@ -87,11 +87,11 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGro
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **first** is `null`\.
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **minCount** is less than zero or **maxCount** is less than **minCount**\.
 
@@ -107,11 +107,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Count(int e
 
 ### Parameters
 
-**exactCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+**exactCount** &emsp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of times the pattern has to be matched\.
 
-**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**content** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched\.
 
@@ -121,11 +121,11 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGro
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **content** is `null`\.
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **exactCount** is less than zero\.
 
@@ -141,15 +141,15 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Count(int e
 
 ### Parameters
 
-**exactCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+**exactCount** &emsp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of times the pattern has to be matched\.
 
-**first** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**first** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 First element of a sequence that contains patterns any one of which has to be matched\.
 
-**others** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
+**others** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
 
 Other elements of a sequence that contains patterns any one of which has to be matched\.
 
@@ -159,11 +159,11 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGro
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **first** is `null`\.
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **exactCount** is less than zero\.
 

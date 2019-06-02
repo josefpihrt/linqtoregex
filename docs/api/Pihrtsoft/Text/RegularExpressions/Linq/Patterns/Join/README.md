@@ -25,11 +25,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern Join(object separat
 
 ### Parameters
 
-**separator** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**separator** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to use as a separator\.
 
-**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**content** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 An object that contains the elements to join\.
 
@@ -39,7 +39,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../../Pattern/README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **content** is `null`\.
 
@@ -55,11 +55,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern Join(object separat
 
 ### Parameters
 
-**separator** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**separator** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to use as a separator\.
 
-**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
+**content** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
 
 An object array that contains the elements to join\.
 
@@ -69,7 +69,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../../Pattern/README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **content** is `null`\.
 

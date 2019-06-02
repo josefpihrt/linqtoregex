@@ -22,11 +22,11 @@ A regular expression capture\.
 
 ### Returns
 
-System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **capture** is `null`\.
 

@@ -17,7 +17,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern BalanceCurlyBracket
 
 ### Parameters
 
-**groupName** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**groupName** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A name of the group that contains balanced content between left and right curly bracket\.
 
@@ -27,11 +27,11 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../../Pattern/README.md)
 
 ### Exceptions
 
-System\.[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
+[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
 
 **groupName** is not a valid regex group name\.
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **groupName** is `null`\.
 

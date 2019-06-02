@@ -69,7 +69,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Characters(
 
 ### Parameters
 
-**value** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**value** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 A Unicode character\.
 
@@ -99,7 +99,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGro
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **value** is `null`\.
 
@@ -135,7 +135,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Characters(
 
 ### Parameters
 
-**value** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**value** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A set of characters any one of which has to be matched\.
 
@@ -145,11 +145,11 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGro
 
 ### Exceptions
 
-System\.[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
+[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
 
 **value** length is equal to zero\.
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **value** is `null`\.
 

@@ -39,7 +39,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern EndInputOrLine
 
 ### Parameters
 
-**beforeCarriageReturn** &emsp; System\.[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+**beforeCarriageReturn** &emsp; [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
 Indicates whether a position of the match should be before a carriage return if present and not already consumed by regex engine
 

@@ -47,7 +47,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern UntilCh
 
 ### Parameters
 
-**value** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**value** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 A Unicode character\.
 
@@ -77,7 +77,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **value** is `null`\.
 
@@ -93,7 +93,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern UntilCh
 
 ### Parameters
 
-**characters** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**characters** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Unicode characters\.
 
@@ -103,11 +103,11 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 
 ### Exceptions
 
-System\.[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
+[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
 
 **characters** length is equal to zero\.
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **characters** is `null`\.
 

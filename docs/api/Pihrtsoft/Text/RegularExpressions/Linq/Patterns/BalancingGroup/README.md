@@ -25,15 +25,15 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Balanci
 
 ### Parameters
 
-**name1** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**name1** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Current group name\.
 
-**name2** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**name2** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Previously defined group name\.
 
-**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**content** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched\.
 
@@ -43,11 +43,11 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 
 ### Exceptions
 
-System\.[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
+[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
 
 **name1** or **name2** is not a valid regex group name\.
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **name1** or **name2** or **content** is `null`\.
 
@@ -63,15 +63,15 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Balanci
 
 ### Parameters
 
-**name1** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**name1** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Current group name\.
 
-**name2** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**name2** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Previously defined group name\.
 
-**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
+**content** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
 
 An object array that contains zero or more patterns any one of which has to be matched\.
 
@@ -81,11 +81,11 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 
 ### Exceptions
 
-System\.[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
+[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
 
 **name1** or **name2** is not a valid regex group name\.
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **name1** or **name2** or **content** is `null`\.
 

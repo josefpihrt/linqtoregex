@@ -30,7 +30,7 @@ public static System.Collections.Generic.IEnumerable<System.Text.RegularExpressi
 
 The regular expression to be matched\.
 
-**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**input** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
@@ -40,7 +40,7 @@ System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dot
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **regex** or **input** is `null`\.
 
@@ -60,11 +60,11 @@ public static System.Collections.Generic.IEnumerable<System.Text.RegularExpressi
 
 The regular expression to be matched\.
 
-**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**input** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
-**startAt** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+**startAt** &emsp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 The position at which to start the search\.
 
@@ -74,11 +74,11 @@ System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dot
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **regex** or **input** is `null`\.
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **startAt** is less than zero or greater that the length of **input**\.
 
@@ -98,15 +98,15 @@ public static System.Collections.Generic.IEnumerable<System.Text.RegularExpressi
 
 The regular expression to be matched\.
 
-**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**input** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
-**beginning** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+**beginning** &emsp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 The position at which to start the search\.
 
-**length** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+**length** &emsp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of characters to be searched\.
 
@@ -116,11 +116,11 @@ System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dot
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **regex** or **input** is `null`\.
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **beginning** is less than zero or greater than the length of input\.
 

@@ -25,7 +25,7 @@ public static explicit operator Pihrtsoft.Text.RegularExpressions.Linq.Pattern(c
 
 ### Parameters
 
-**value** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**value** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The Unicode character to convert\.
 
@@ -45,7 +45,7 @@ public static explicit operator Pihrtsoft.Text.RegularExpressions.Linq.Pattern(s
 
 ### Parameters
 
-**text** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**text** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A text to convert\.
 

@@ -25,7 +25,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern Concat(object conte
 
 ### Parameters
 
-**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**content** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 An object that contains the elements to concatenate\.
 
@@ -45,7 +45,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern Concat(params objec
 
 ### Parameters
 
-**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
+**content** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
 
 An object array that contains the elements to concatenate\.
 

@@ -25,13 +25,13 @@ public string[] Split(string input)
 
 ### Parameters
 
-**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**input** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to split\.
 
 ### Returns
 
-System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)\[\]
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)\[\]
 
 ## Split\(String, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Split_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
 
@@ -45,7 +45,7 @@ public string[] Split(string input, System.Text.RegularExpressions.RegexOptions 
 
 ### Parameters
 
-**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**input** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to split\.
 
@@ -55,5 +55,5 @@ A bitwise combination of the enumeration values that specify options for matchin
 
 ### Returns
 
-System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)\[\]
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)\[\]
 

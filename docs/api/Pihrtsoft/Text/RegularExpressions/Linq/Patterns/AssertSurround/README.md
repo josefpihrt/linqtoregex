@@ -25,11 +25,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.SurroundAssertion AssertSur
 
 ### Parameters
 
-**assertion** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**assertion** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 A content of the assertions\.
 
-**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**content** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched\.
 
@@ -39,7 +39,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[SurroundAssertion](../../SurroundAss
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **assertion** **content** is `null`\.
 
@@ -55,15 +55,15 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.SurroundAssertion AssertSur
 
 ### Parameters
 
-**backAssertion** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**backAssertion** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 A content of the lookbehind assertion\.
 
-**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**content** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched\.
 
-**assertion** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**assertion** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 A content of the lookahead assertion\.
 
@@ -73,7 +73,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[SurroundAssertion](../../SurroundAss
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **backAssertion** or **content** or **assertion** is `null`\.
 

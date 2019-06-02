@@ -16,17 +16,17 @@ public static string EscapeSubstitution(string input)
 
 ### Parameters
 
-**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**input** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The substitution pattern to be escaped\.
 
 ### Returns
 
-System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **input** is `null`\.
 

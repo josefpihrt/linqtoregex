@@ -16,7 +16,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.Pattern WhileNot(string value)
 
 ### Parameters
 
-**value** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**value** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A text to find but not to match\.
 
@@ -26,7 +26,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **value** is `null`\.
 

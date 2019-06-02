@@ -25,7 +25,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Substitution Text(char valu
 
 ### Parameters
 
-**value** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**value** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 A Unicode character\.
 
@@ -45,7 +45,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Substitution Text(string va
 
 ### Parameters
 
-**value** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**value** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A content of the substitution pattern\.
 

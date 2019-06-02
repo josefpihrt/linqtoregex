@@ -20,21 +20,21 @@ public static string ReplaceMatchChar(this System.Text.RegularExpressions.Regex 
 
 The regular expression to be matched\.
 
-**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**input** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
-**replacementChar** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**replacementChar** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The replacement char\.
 
 ### Returns
 
-System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **regex** or **input** is `null`\.
 

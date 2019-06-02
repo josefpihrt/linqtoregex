@@ -25,7 +25,7 @@ public System.Collections.Generic.IEnumerable<System.Text.RegularExpressions.Mat
 
 ### Parameters
 
-**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**input** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
@@ -35,7 +35,7 @@ System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dot
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **input** is `null`\.
 
@@ -51,7 +51,7 @@ public System.Collections.Generic.IEnumerable<System.Text.RegularExpressions.Mat
 
 ### Parameters
 
-**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**input** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
@@ -65,7 +65,7 @@ System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dot
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **input** is `null`\.
 

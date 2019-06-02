@@ -26,7 +26,7 @@ System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dot
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **match** is `null`\.
 

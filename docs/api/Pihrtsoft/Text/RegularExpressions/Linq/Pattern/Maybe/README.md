@@ -25,7 +25,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Maybe(object conte
 
 ### Parameters
 
-**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**content** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched\.
 
@@ -35,7 +35,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGro
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **content** is `null`\.
 
@@ -51,11 +51,11 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Maybe(object first
 
 ### Parameters
 
-**first** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**first** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 First element of a sequence that contains patterns any one of which has to be matched\.
 
-**others** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
+**others** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
 
 Other elements of a sequence that contains patterns any one of which has to be matched\.
 
@@ -65,7 +65,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGro
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **first** is `null`\.
 

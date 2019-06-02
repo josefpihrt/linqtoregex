@@ -28,17 +28,17 @@ public string Replace(string input)
 
 ### Parameters
 
-**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**input** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
 ### Returns
 
-System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **input** is `null`\.
 
@@ -54,7 +54,7 @@ public string Replace(string input, System.Text.RegularExpressions.MatchEvaluato
 
 ### Parameters
 
-**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**input** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
@@ -64,11 +64,11 @@ A method that examines each match and returns a replacement string\.
 
 ### Returns
 
-System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **input** or **evaluator** is `null`\.
 
@@ -84,7 +84,7 @@ public string Replace(string input, System.Text.RegularExpressions.MatchEvaluato
 
 ### Parameters
 
-**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**input** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
@@ -98,11 +98,11 @@ A bitwise combination of the enumeration values that specify options for matchin
 
 ### Returns
 
-System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **input** or **evaluator** is `null`\.
 
@@ -118,17 +118,17 @@ public string Replace(string input, string replacement)
 
 ### Parameters
 
-**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**input** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
-**replacement** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**replacement** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The replacement string\.
 
 ### Returns
 
-System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 ## Replace\(String, String, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Replace_System_String_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
 
@@ -142,11 +142,11 @@ public string Replace(string input, string replacement, System.Text.RegularExpre
 
 ### Parameters
 
-**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**input** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
-**replacement** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**replacement** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The replacement string\.
 
@@ -156,5 +156,5 @@ A bitwise combination of the enumeration values that specify options for matchin
 
 ### Returns
 
-System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 

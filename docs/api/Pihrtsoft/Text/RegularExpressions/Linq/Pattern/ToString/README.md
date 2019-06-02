@@ -26,7 +26,7 @@ public override string ToString()
 
 ### Returns
 
-System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 ## ToString\(PatternOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_ToString_Pihrtsoft_Text_RegularExpressions_Linq_PatternOptions_"></a>
 
@@ -46,7 +46,7 @@ A bitwise combination of the enumeration values that modify the pattern\.
 
 ### Returns
 
-System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 ## ToString\(PatternSettings\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_ToString_Pihrtsoft_Text_RegularExpressions_Linq_PatternSettings_"></a>
 
@@ -66,5 +66,5 @@ A settings that modify the pattern\.
 
 ### Returns
 
-System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 

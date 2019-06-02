@@ -25,25 +25,25 @@ public void AppendIfGroup(int groupNumber, object trueContent, object falseConte
 
 ### Parameters
 
-**groupNumber** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+**groupNumber** &emsp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of the group\.
 
-**trueContent** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**trueContent** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to match if the named group is matched\.
 
-**falseContent** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**falseContent** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to match if the named group is not matched\.
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **trueContent** is `null`\.
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **groupNumber** is less than zero\.
 
@@ -59,25 +59,25 @@ public void AppendIfGroup(string groupName, object trueContent, object falseCont
 
 ### Parameters
 
-**groupName** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**groupName** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A name of the group\.
 
-**trueContent** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**trueContent** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to match if the named group is matched\.
 
-**falseContent** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**falseContent** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to match if the named group is not matched\.
 
 ### Exceptions
 
-System\.[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
+[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
 
 **groupName** is not a valid regex group name\.
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **groupName** or **trueContent** is `null`\.
 

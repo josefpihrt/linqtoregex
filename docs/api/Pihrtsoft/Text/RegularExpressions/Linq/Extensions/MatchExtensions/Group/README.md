@@ -29,7 +29,7 @@ public static System.Text.RegularExpressions.Group Group(this System.Text.Regula
 
 A regular expression match\.
 
-**groupNumber** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+**groupNumber** &emsp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of the group\.
 
@@ -39,7 +39,7 @@ System\.Text\.RegularExpressions\.[Group](https://docs.microsoft.com/en-us/dotne
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **match** is `null`\.
 
@@ -59,7 +59,7 @@ public static System.Text.RegularExpressions.Group Group(this System.Text.Regula
 
 A regular expression match\.
 
-**groupName** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**groupName** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A name of the group\.
 
@@ -69,7 +69,7 @@ System\.Text\.RegularExpressions\.[Group](https://docs.microsoft.com/en-us/dotne
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **match** is `null`\.
 

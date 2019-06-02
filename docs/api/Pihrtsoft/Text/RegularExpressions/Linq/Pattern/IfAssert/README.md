@@ -25,11 +25,11 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern IfAssert(objec
 
 ### Parameters
 
-**testContent** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**testContent** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to assert\.
 
-**trueContent** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**trueContent** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched if the assertion succeeds\.
 
@@ -39,7 +39,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **testContent** or **trueContent** is `null`\.
 
@@ -55,15 +55,15 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern IfAssert(objec
 
 ### Parameters
 
-**testContent** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**testContent** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to assert\.
 
-**trueContent** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**trueContent** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched if the assertion succeeds\.
 
-**falseContent** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**falseContent** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched if the assertion fails\.
 
@@ -73,7 +73,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **testContent** or **trueContent** is `null`\.
 

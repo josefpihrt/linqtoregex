@@ -25,7 +25,7 @@ public static explicit operator Pihrtsoft.Text.RegularExpressions.Linq.CharGroup
 
 ### Parameters
 
-**value** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**value** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 A Unicode character\.
 
@@ -45,7 +45,7 @@ public static explicit operator Pihrtsoft.Text.RegularExpressions.Linq.CharGroup
 
 ### Parameters
 
-**characters** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**characters** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A set of Unicode characters\.
 
@@ -55,11 +55,11 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../README.md)
 
 ### Exceptions
 
-System\.[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
+[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
 
 **characters** length is equal to zero\.
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **characters** is `null`\.
 

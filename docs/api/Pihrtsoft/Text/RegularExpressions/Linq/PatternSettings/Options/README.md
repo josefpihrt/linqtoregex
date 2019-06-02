@@ -20,7 +20,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[PatternOptions](../../PatternOptions
 
 ### Exceptions
 
-System\.[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
+[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
 
 **value** has both [PatternOptions.CSharpLiteral](../../PatternOptions/CSharpLiteral/README.md) flag and [PatternOptions.VisualBasicLiteral](../../PatternOptions/VisualBasicLiteral/README.md) flag set\.
 

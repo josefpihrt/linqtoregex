@@ -25,7 +25,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern AssertBack(obj
 
 ### Parameters
 
-**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**content** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 A content to be matched\.
 
@@ -35,7 +35,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **content** is `null`\.
 
@@ -51,7 +51,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern AssertBack(par
 
 ### Parameters
 
-**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
+**content** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
 
 An object array that contains zero or more patterns any one of which has to be matched\.
 
@@ -61,7 +61,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **content** is `null`\.
 

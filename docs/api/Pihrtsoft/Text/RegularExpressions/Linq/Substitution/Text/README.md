@@ -25,7 +25,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.Substitution Text(char value)
 
 ### Parameters
 
-**value** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**value** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 A Unicode character to append\.
 
@@ -45,7 +45,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.Substitution Text(string value)
 
 ### Parameters
 
-**value** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**value** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A text to append\.
 

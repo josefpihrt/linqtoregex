@@ -16,11 +16,11 @@ public static bool IsValidGroupName(string groupName)
 
 ### Parameters
 
-**groupName** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**groupName** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A group name to examine\.
 
 ### Returns
 
-System\.[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 

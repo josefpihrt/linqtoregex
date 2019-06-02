@@ -17,15 +17,15 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern BalanceChar(char op
 
 ### Parameters
 
-**openingCharacter** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**openingCharacter** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 Opening Unicode character to balance\.
 
-**closingCharacter** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**closingCharacter** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 Closing Unicode character to balance\.
 
-**groupName** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**groupName** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A name of the group that contains balanced content of the opening and closing character\.
 
@@ -35,11 +35,11 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../../Pattern/README.md)
 
 ### Exceptions
 
-System\.[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
+[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
 
 **groupName** is not a valid regex group name\.
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **groupName** is `null`\.
 

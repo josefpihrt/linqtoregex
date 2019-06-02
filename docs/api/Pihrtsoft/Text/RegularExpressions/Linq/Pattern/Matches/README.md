@@ -25,7 +25,7 @@ public System.Text.RegularExpressions.MatchCollection Matches(string input)
 
 ### Parameters
 
-**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**input** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
@@ -35,7 +35,7 @@ System\.Text\.RegularExpressions\.[MatchCollection](https://docs.microsoft.com/e
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **input** is `null`\.
 
@@ -51,7 +51,7 @@ public System.Text.RegularExpressions.MatchCollection Matches(string input, Syst
 
 ### Parameters
 
-**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**input** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
@@ -65,7 +65,7 @@ System\.Text\.RegularExpressions\.[MatchCollection](https://docs.microsoft.com/e
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **input** is `null`\.
 

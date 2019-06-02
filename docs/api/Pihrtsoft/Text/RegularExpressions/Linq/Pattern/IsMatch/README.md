@@ -25,17 +25,17 @@ public bool IsMatch(string input)
 
 ### Parameters
 
-**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**input** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
 ### Returns
 
-System\.[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **input** is `null`\.
 
@@ -51,7 +51,7 @@ public bool IsMatch(string input, System.Text.RegularExpressions.RegexOptions op
 
 ### Parameters
 
-**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**input** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
@@ -61,11 +61,11 @@ A bitwise combination of the enumeration values that specify options for matchin
 
 ### Returns
 
-System\.[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **input** is `null`\.
 

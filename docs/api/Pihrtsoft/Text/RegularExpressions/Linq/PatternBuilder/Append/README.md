@@ -47,7 +47,7 @@ public void Append(char value)
 
 ### Parameters
 
-**value** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**value** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The character to append\.
 
@@ -63,13 +63,13 @@ public void Append(char[] characters)
 
 ### Parameters
 
-**characters** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)\[\]
+**characters** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)\[\]
 
 Unicode characters\.
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **characters** is `null`\.
 
@@ -91,7 +91,7 @@ The pattern to append\.
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **value** is `null`\.
 
@@ -107,7 +107,7 @@ public void Append(int value)
 
 ### Parameters
 
-**value** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+**value** &emsp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A code of the character to append\.
 
@@ -123,7 +123,7 @@ public void Append(object value)
 
 ### Parameters
 
-**value** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**value** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The object to append\.
 
@@ -145,7 +145,7 @@ The pattern to append\.
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **pattern** is `null`\.
 
@@ -161,6 +161,6 @@ public void Append(string value)
 
 ### Parameters
 
-**value** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**value** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The text to append\.

@@ -16,21 +16,21 @@ public void AppendIfAssert(object testContent, object trueContent, object falseC
 
 ### Parameters
 
-**testContent** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**testContent** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to assert\.
 
-**trueContent** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**trueContent** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to match if the assertion succeeds\.
 
-**falseContent** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**falseContent** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to match if the assertion fails\.
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **testContent** or **trueContent** is `null`\.
 

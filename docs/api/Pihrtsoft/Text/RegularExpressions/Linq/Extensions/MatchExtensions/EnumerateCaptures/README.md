@@ -36,7 +36,7 @@ System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dot
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **match** is `null`\.
 
@@ -56,7 +56,7 @@ public static System.Collections.Generic.IEnumerable<System.Text.RegularExpressi
 
 A regular expression match\.
 
-**groupNumber** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+**groupNumber** &emsp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of the group\.
 
@@ -66,7 +66,7 @@ System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dot
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **match** is `null`\.
 
@@ -86,7 +86,7 @@ public static System.Collections.Generic.IEnumerable<System.Text.RegularExpressi
 
 A regular expression match\.
 
-**groupName** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**groupName** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A name of the group\.
 
@@ -96,7 +96,7 @@ System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dot
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **match** or **groupName** is `null`\.
 
