@@ -27,7 +27,7 @@ public static System.Collections.Generic.IEnumerable<System.Text.RegularExpressi
 
 ### Parameters
 
-**groups**
+**groups** &emsp; System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.Text\.RegularExpressions\.[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)>
 
 The sequence to enumerate\.
 
@@ -53,7 +53,7 @@ public static System.Collections.Generic.IEnumerable<System.Text.RegularExpressi
 
 ### Parameters
 
-**matches**
+**matches** &emsp; System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.Text\.RegularExpressions\.[Match](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.match)>
 
 The sequence to enumerate\.
 
@@ -79,11 +79,11 @@ public static System.Collections.Generic.IEnumerable<System.Text.RegularExpressi
 
 ### Parameters
 
-**matches**
+**matches** &emsp; System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.Text\.RegularExpressions\.[Match](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.match)>
 
 The sequence to enumerate\.
 
-**groupNumber**
+**groupNumber** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of the group\.
 
@@ -109,11 +109,11 @@ public static System.Collections.Generic.IEnumerable<System.Text.RegularExpressi
 
 ### Parameters
 
-**matches**
+**matches** &emsp; System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.Text\.RegularExpressions\.[Match](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.match)>
 
 The sequence to enumerate\.
 
-**groupName**
+**groupName** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A name of the group\.
 

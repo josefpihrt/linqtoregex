@@ -25,7 +25,7 @@ public string[] Split(string input)
 
 ### Parameters
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to split\.
 
@@ -45,11 +45,11 @@ public string[] Split(string input, System.Text.RegularExpressions.RegexOptions 
 
 ### Parameters
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to split\.
 
-**options**
+**options** &emsp; System\.Text\.RegularExpressions\.[RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that specify options for matching\.
 

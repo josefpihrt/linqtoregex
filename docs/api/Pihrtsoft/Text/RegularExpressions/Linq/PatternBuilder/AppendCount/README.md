@@ -27,7 +27,7 @@ public void AppendCount(int exactCount)
 
 ### Parameters
 
-**exactCount**
+**exactCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of times the pattern must be matched\.
 
@@ -49,11 +49,11 @@ public void AppendCount(int exactCount, bool lazy)
 
 ### Parameters
 
-**exactCount**
+**exactCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of times the pattern must be matched\.
 
-**lazy**
+**lazy** &emsp; System\.[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
 Indicates whether the quantifier will be greedy or lazy\.
 
@@ -75,11 +75,11 @@ public void AppendCount(int minCount, int maxCount)
 
 ### Parameters
 
-**minCount**
+**minCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A minimal number of times the pattern must be matched\.
 
-**maxCount**
+**maxCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A maximum number of times the pattern can be matched\.
 
@@ -101,15 +101,15 @@ public void AppendCount(int minCount, int maxCount, bool lazy)
 
 ### Parameters
 
-**minCount**
+**minCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A minimal number of times the pattern must be matched\.
 
-**maxCount**
+**maxCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A maximum number of times the pattern can be matched\.
 
-**lazy**
+**lazy** &emsp; System\.[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
 Indicates whether the quantifier will be greedy or lazy\.
 

@@ -25,7 +25,7 @@ public System.Text.RegularExpressions.MatchCollection Matches(string input)
 
 ### Parameters
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
@@ -51,11 +51,11 @@ public System.Text.RegularExpressions.MatchCollection Matches(string input, Syst
 
 ### Parameters
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
-**options**
+**options** &emsp; System\.Text\.RegularExpressions\.[RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that specify options for matching\.
 

@@ -30,11 +30,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern operato
 
 ### Parameters
 
-**left**
+**left** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The first element to match\.
 
-**right**
+**right** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
 
 The second element to match\.
 
@@ -60,11 +60,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern operato
 
 ### Parameters
 
-**left**
+**left** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../../CharGrouping/README.md)
 
 The first element to match\.
 
-**right**
+**right** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
 
 The second element to match\.
 
@@ -90,11 +90,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern operato
 
 ### Parameters
 
-**left**
+**left** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
 
 The first element to match\.
 
-**right**
+**right** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The second element to match\.
 
@@ -120,11 +120,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern operato
 
 ### Parameters
 
-**left**
+**left** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
 
 The first element to match\.
 
-**right**
+**right** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../../CharGrouping/README.md)
 
 The second element to match\.
 
@@ -150,11 +150,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern operato
 
 ### Parameters
 
-**left**
+**left** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
 
 The first element to match\.
 
-**right**
+**right** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
 
 The second element to match\.
 
@@ -180,11 +180,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern operato
 
 ### Parameters
 
-**left**
+**left** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
 
 The first element to match\.
 
-**right**
+**right** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The second element to match\.
 
@@ -210,11 +210,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern operato
 
 ### Parameters
 
-**left**
+**left** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The first element to match\.
 
-**right**
+**right** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
 
 The second element to match\.
 

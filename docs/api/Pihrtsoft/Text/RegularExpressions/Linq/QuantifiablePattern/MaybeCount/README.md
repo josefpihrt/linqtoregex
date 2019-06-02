@@ -16,7 +16,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern MaybeCount(int m
 
 ### Parameters
 
-**maxCount**
+**maxCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A maximum number of times the pattern can be matched\.
 

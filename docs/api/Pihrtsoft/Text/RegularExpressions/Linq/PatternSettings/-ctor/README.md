@@ -35,7 +35,7 @@ public PatternSettings(Pihrtsoft.Text.RegularExpressions.Linq.PatternOptions opt
 
 ### Parameters
 
-**options**
+**options** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[PatternOptions](../../PatternOptions/README.md)
 
 A bitwise combination of the enumeration values\.
 

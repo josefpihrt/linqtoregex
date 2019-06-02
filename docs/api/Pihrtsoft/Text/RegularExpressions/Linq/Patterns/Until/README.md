@@ -16,7 +16,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern Until(string value)
 
 ### Parameters
 
-**value**
+**value** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A text to be matched\.
 

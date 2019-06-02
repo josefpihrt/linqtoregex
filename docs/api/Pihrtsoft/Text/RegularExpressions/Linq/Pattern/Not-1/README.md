@@ -20,7 +20,7 @@ public TPattern Not<TPattern>(Pihrtsoft.Text.RegularExpressions.Linq.INegateable
 
 ### Parameters
 
-**value**
+**value** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[INegateable](../../INegateable-1/README.md)\<TPattern>
 
 A pattern to be negated\.
 

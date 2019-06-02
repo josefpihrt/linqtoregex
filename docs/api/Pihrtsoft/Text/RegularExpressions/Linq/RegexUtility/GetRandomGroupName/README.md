@@ -39,7 +39,7 @@ public static string GetRandomGroupName(int length)
 
 ### Parameters
 
-**length**
+**length** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 Length of a group name\.
 

@@ -22,7 +22,7 @@ The type of the pattern\.
 
 ### Parameters
 
-**value**
+**value** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[INegateable](../../INegateable-1/README.md)\<TPattern>
 
 A pattern to be negated\.
 

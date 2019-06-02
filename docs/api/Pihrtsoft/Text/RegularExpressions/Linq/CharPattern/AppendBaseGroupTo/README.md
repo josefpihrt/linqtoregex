@@ -16,7 +16,7 @@ public void AppendBaseGroupTo(Pihrtsoft.Text.RegularExpressions.Linq.PatternBuil
 
 ### Parameters
 
-**builder**
+**builder** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[PatternBuilder](../../PatternBuilder/README.md)
 
 The builder to use for appending the text\.
 

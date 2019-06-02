@@ -16,7 +16,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.Pattern Or(object content)
 
 ### Parameters
 
-**content**
+**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 Alternate content to match if the current instance if not matched\.
 

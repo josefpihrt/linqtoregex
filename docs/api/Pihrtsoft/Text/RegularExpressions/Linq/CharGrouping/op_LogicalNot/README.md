@@ -16,7 +16,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup operator !(Pihrts
 
 ### Parameters
 
-**value**
+**value** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../README.md)
 
 A value
 

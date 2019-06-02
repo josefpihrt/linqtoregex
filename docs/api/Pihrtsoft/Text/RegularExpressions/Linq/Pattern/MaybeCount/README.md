@@ -25,11 +25,11 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup MaybeCount(int max
 
 ### Parameters
 
-**maxCount**
+**maxCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A maximum number of times the pattern can be matched\.
 
-**content**
+**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched\.
 
@@ -59,15 +59,15 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup MaybeCount(int max
 
 ### Parameters
 
-**maxCount**
+**maxCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A maximum number of times the pattern can be matched\.
 
-**first**
+**first** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 First element of a sequence that contains patterns any one of which has to be matched\.
 
-**others**
+**others** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
 
 Other elements of a sequence that contains patterns any one of which has to be matched\.
 

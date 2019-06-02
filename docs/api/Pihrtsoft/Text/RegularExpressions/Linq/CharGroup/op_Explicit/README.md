@@ -25,7 +25,7 @@ public static explicit operator Pihrtsoft.Text.RegularExpressions.Linq.CharGroup
 
 ### Parameters
 
-**value**
+**value** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../../CharGrouping/README.md)
 
 An instance of the [CharGrouping](../../CharGrouping/README.md) class\.
 
@@ -51,7 +51,7 @@ public static explicit operator Pihrtsoft.Text.RegularExpressions.Linq.CharGroup
 
 ### Parameters
 
-**characters**
+**characters** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A set of Unicode characters\.
 

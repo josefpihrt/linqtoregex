@@ -28,7 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.Pattern WhileNotChar(Pihrtsoft.Tex
 
 ### Parameters
 
-**value**
+**value** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[AsciiChar](../../AsciiChar/README.md)
 
 An enumerated constant that identifies ASCII character\.
 
@@ -48,7 +48,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.Pattern WhileNotChar(char value)
 
 ### Parameters
 
-**value**
+**value** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 A Unicode character\.
 
@@ -68,7 +68,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileNotChar(par
 
 ### Parameters
 
-**characters**
+**characters** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)\[\]
 
 Unicode characters\.
 
@@ -98,7 +98,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.Pattern WhileNotChar(Pihrtsoft.Tex
 
 ### Parameters
 
-**value**
+**value** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../../CharGrouping/README.md)
 
 A set of Unicode characters\.
 
@@ -124,7 +124,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileNotChar(str
 
 ### Parameters
 
-**characters**
+**characters** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Unicode characters\.
 

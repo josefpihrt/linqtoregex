@@ -28,11 +28,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Substitution operator +(cha
 
 ### Parameters
 
-**left**
+**left** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The first element to concatenate\.
 
-**right**
+**right** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Substitution](../README.md)
 
 The second element to concatenate\.
 
@@ -58,11 +58,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Substitution operator +(str
 
 ### Parameters
 
-**left**
+**left** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The first element to concatenate\.
 
-**right**
+**right** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Substitution](../README.md)
 
 The second element to concatenate\.
 
@@ -88,11 +88,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Substitution operator +(Pih
 
 ### Parameters
 
-**left**
+**left** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Substitution](../README.md)
 
 The first element to concatenate\.
 
-**right**
+**right** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The second element to concatenate\.
 
@@ -118,11 +118,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Substitution operator +(Pih
 
 ### Parameters
 
-**left**
+**left** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Substitution](../README.md)
 
 The first element to concatenate\.
 
-**right**
+**right** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The second element to concatenate\.
 
@@ -148,11 +148,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Substitution operator +(Pih
 
 ### Parameters
 
-**left**
+**left** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Substitution](../README.md)
 
 The first element to concatenate\.
 
-**right**
+**right** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Substitution](../README.md)
 
 The second element to concatenate\.
 

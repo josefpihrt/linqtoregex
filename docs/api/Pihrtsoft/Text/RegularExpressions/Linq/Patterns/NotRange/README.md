@@ -16,11 +16,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotRange(char fir
 
 ### Parameters
 
-**first**
+**first** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The first character of the range\.
 
-**last**
+**last** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The last character of the range\.
 

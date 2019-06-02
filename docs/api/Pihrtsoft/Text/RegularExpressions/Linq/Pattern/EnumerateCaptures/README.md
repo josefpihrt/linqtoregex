@@ -29,7 +29,7 @@ public System.Collections.Generic.IEnumerable<System.Text.RegularExpressions.Cap
 
 ### Parameters
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
@@ -55,11 +55,11 @@ public System.Collections.Generic.IEnumerable<System.Text.RegularExpressions.Cap
 
 ### Parameters
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
-**groupNumber**
+**groupNumber** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A valid number of the group\.
 
@@ -85,15 +85,15 @@ public System.Collections.Generic.IEnumerable<System.Text.RegularExpressions.Cap
 
 ### Parameters
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
-**groupNumber**
+**groupNumber** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A valid number of the group\.
 
-**options**
+**options** &emsp; System\.Text\.RegularExpressions\.[RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that specify options for matching\.
 
@@ -119,11 +119,11 @@ public System.Collections.Generic.IEnumerable<System.Text.RegularExpressions.Cap
 
 ### Parameters
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
-**options**
+**options** &emsp; System\.Text\.RegularExpressions\.[RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that specify options for matching\.
 
@@ -149,11 +149,11 @@ public System.Collections.Generic.IEnumerable<System.Text.RegularExpressions.Cap
 
 ### Parameters
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
-**groupName**
+**groupName** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A name of the group\.
 
@@ -179,15 +179,15 @@ public System.Collections.Generic.IEnumerable<System.Text.RegularExpressions.Cap
 
 ### Parameters
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
-**groupName**
+**groupName** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A name of the group\.
 
-**options**
+**options** &emsp; System\.Text\.RegularExpressions\.[RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that specify options for matching\.
 

@@ -16,7 +16,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.NegativeWordBoundary operat
 
 ### Parameters
 
-**value**
+**value** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[WordBoundary](../README.md)
 
 A value to negate\.
 

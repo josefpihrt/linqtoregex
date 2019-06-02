@@ -16,6 +16,6 @@ protected abstract void AppendQuantifierTo(Pihrtsoft.Text.RegularExpressions.Lin
 
 ### Parameters
 
-**builder**
+**builder** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[PatternBuilder](../../PatternBuilder/README.md)
 
 The builder to use for appending the text\.

@@ -16,7 +16,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup operator !(Pihrts
 
 ### Parameters
 
-**value**
+**value** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../README.md)
 
 A value to negate\.
 

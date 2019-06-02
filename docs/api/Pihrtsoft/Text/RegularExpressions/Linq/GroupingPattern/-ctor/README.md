@@ -36,7 +36,7 @@ protected GroupingPattern(Pihrtsoft.Text.RegularExpressions.Linq.GroupingPattern
 
 ### Parameters
 
-**content**
+**content** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[GroupingPattern](../README.md)
 
 A content of the grouping\.
 
@@ -58,7 +58,7 @@ protected GroupingPattern(object content)
 
 ### Parameters
 
-**content**
+**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 A content of the grouping\.
 

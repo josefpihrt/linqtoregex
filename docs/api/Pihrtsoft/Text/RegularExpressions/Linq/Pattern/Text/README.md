@@ -25,7 +25,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.Pattern Text(string value)
 
 ### Parameters
 
-**value**
+**value** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A text to append\.
 
@@ -45,11 +45,11 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Text(string va
 
 ### Parameters
 
-**value**
+**value** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A text to append\.
 
-**ignoreCase**
+**ignoreCase** &emsp; System\.[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
 true to ignore case during the matching; otherwise, false\.
 

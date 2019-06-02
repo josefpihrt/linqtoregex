@@ -25,11 +25,11 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern IfAssert(objec
 
 ### Parameters
 
-**testContent**
+**testContent** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to assert\.
 
-**trueContent**
+**trueContent** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched if the assertion succeeds\.
 
@@ -55,15 +55,15 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern IfAssert(objec
 
 ### Parameters
 
-**testContent**
+**testContent** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to assert\.
 
-**trueContent**
+**trueContent** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched if the assertion succeeds\.
 
-**falseContent**
+**falseContent** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched if the assertion fails\.
 

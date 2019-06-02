@@ -16,7 +16,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping NamedBlock(Pih
 
 ### Parameters
 
-**block**
+**block** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[NamedBlock](../../NamedBlock/README.md)
 
 An enumerated constant that identifies Unicode block\.
 

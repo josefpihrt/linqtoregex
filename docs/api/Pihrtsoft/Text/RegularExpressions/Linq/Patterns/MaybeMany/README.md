@@ -25,7 +25,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup MaybeMany(o
 
 ### Parameters
 
-**content**
+**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched\.
 
@@ -51,11 +51,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup MaybeMany(o
 
 ### Parameters
 
-**first**
+**first** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 First element of a sequence that contains patterns any one of which has to be matched\.
 
-**others**
+**others** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
 
 Other elements of a sequence that contains patterns any one of which has to be matched\.
 

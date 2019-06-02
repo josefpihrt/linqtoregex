@@ -26,11 +26,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharSubtraction operator -(
 
 ### Parameters
 
-**baseGroup**
+**baseGroup** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../README.md)
 
 A base group\.
 
-**excludedGroup**
+**excludedGroup** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../README.md)
 
 An excluded group\.
 
@@ -56,11 +56,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharSubtraction operator -(
 
 ### Parameters
 
-**baseGroup**
+**baseGroup** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../README.md)
 
 A base group\.
 
-**excludedGroup**
+**excludedGroup** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../../CharGrouping/README.md)
 
 An excluded group\.
 
@@ -86,11 +86,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharSubtraction operator -(
 
 ### Parameters
 
-**baseGroup**
+**baseGroup** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../README.md)
 
 A base group\.
 
-**excludedGroup**
+**excludedGroup** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/README.md)
 
 An excluded group\.
 

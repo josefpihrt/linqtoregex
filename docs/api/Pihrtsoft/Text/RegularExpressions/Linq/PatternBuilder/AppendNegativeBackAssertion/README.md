@@ -16,6 +16,6 @@ public void AppendNegativeBackAssertion(object content)
 
 ### Parameters
 
-**content**
+**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 An assertion content\.

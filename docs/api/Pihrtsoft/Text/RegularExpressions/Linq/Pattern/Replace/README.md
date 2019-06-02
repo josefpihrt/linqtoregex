@@ -28,7 +28,7 @@ public string Replace(string input)
 
 ### Parameters
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
@@ -54,11 +54,11 @@ public string Replace(string input, System.Text.RegularExpressions.MatchEvaluato
 
 ### Parameters
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
-**evaluator**
+**evaluator** &emsp; System\.Text\.RegularExpressions\.[MatchEvaluator](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.matchevaluator)
 
 A method that examines each match and returns a replacement string\.
 
@@ -84,15 +84,15 @@ public string Replace(string input, System.Text.RegularExpressions.MatchEvaluato
 
 ### Parameters
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
-**evaluator**
+**evaluator** &emsp; System\.Text\.RegularExpressions\.[MatchEvaluator](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.matchevaluator)
 
 A method that examines each match and returns a replacement string\.
 
-**options**
+**options** &emsp; System\.Text\.RegularExpressions\.[RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that specify options for matching\.
 
@@ -118,11 +118,11 @@ public string Replace(string input, string replacement)
 
 ### Parameters
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
-**replacement**
+**replacement** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The replacement string\.
 
@@ -142,15 +142,15 @@ public string Replace(string input, string replacement, System.Text.RegularExpre
 
 ### Parameters
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
-**replacement**
+**replacement** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The replacement string\.
 
-**options**
+**options** &emsp; System\.Text\.RegularExpressions\.[RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that specify options for matching\.
 

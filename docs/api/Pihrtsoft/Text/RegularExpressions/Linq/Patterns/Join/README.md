@@ -25,11 +25,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern Join(object separat
 
 ### Parameters
 
-**separator**
+**separator** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to use as a separator\.
 
-**content**
+**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 An object that contains the elements to join\.
 
@@ -55,11 +55,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern Join(object separat
 
 ### Parameters
 
-**separator**
+**separator** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to use as a separator\.
 
-**content**
+**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
 
 An object array that contains the elements to join\.
 

@@ -41,7 +41,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Any(int exa
 
 ### Parameters
 
-**exactCount**
+**exactCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of times a character has to be matched\.
 
@@ -67,7 +67,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Any(obj
 
 ### Parameters
 
-**content**
+**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched\.
 
@@ -87,7 +87,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Any(par
 
 ### Parameters
 
-**content**
+**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
 
 An object array that contains zero or more patterns any one of which has to be matched\.
 

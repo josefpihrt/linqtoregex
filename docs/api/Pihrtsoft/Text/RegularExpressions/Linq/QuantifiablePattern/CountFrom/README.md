@@ -16,7 +16,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern CountFrom(int mi
 
 ### Parameters
 
-**minCount**
+**minCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A minimal number of times the pattern must be matched\.
 

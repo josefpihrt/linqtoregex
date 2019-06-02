@@ -16,7 +16,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.Substitution NamedGroup(string gro
 
 ### Parameters
 
-**groupName**
+**groupName** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Valid regex group name\.
 

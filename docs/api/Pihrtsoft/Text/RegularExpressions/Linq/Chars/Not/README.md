@@ -25,7 +25,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Not(Pihrtsoft.
 
 ### Parameters
 
-**category**
+**category** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[GeneralCategory](../../GeneralCategory/README.md)
 
 An enumerated constant that identifies Unicode category\.
 
@@ -45,7 +45,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Not(Pihrtsoft.
 
 ### Parameters
 
-**block**
+**block** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[NamedBlock](../../NamedBlock/README.md)
 
 An enumerated constant that identifies Unicode block\.
 

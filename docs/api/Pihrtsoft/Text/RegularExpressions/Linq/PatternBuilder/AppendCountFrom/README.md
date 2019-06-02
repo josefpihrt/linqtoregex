@@ -25,7 +25,7 @@ public void AppendCountFrom(int minCount)
 
 ### Parameters
 
-**minCount**
+**minCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A minimal number of times the pattern must be matched\.
 
@@ -47,11 +47,11 @@ public void AppendCountFrom(int minCount, bool lazy)
 
 ### Parameters
 
-**minCount**
+**minCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A minimal number of times the pattern must be matched\.
 
-**lazy**
+**lazy** &emsp; System\.[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
 Indicates whether the quantifier will be greedy or lazy\.
 

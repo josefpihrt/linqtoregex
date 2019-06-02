@@ -16,7 +16,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.Pattern Append(object content)
 
 ### Parameters
 
-**content**
+**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched\.
 

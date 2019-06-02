@@ -16,7 +16,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping GeneralCategor
 
 ### Parameters
 
-**category**
+**category** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[GeneralCategory](../../GeneralCategory/README.md)
 
 An enumerated constant that identifies Unicode category\.
 

@@ -27,11 +27,11 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern IfGroup(int gr
 
 ### Parameters
 
-**groupNumber**
+**groupNumber** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of the group\.
 
-**trueContent**
+**trueContent** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched if the numbered group is matched\.
 
@@ -61,15 +61,15 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern IfGroup(int gr
 
 ### Parameters
 
-**groupNumber**
+**groupNumber** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of the group\.
 
-**trueContent**
+**trueContent** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched if the numbered group is matched\.
 
-**falseContent**
+**falseContent** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched if the numbered group is not matched\.
 
@@ -99,11 +99,11 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern IfGroup(string
 
 ### Parameters
 
-**groupName**
+**groupName** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A name of the group\.
 
-**trueContent**
+**trueContent** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched if the named group is matched\.
 
@@ -133,15 +133,15 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern IfGroup(string
 
 ### Parameters
 
-**groupName**
+**groupName** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A name of the group\.
 
-**trueContent**
+**trueContent** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched if the named group is matched\.
 
-**falseContent**
+**falseContent** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched if the named group is not matched\.
 

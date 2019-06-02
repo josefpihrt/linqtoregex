@@ -25,7 +25,7 @@ public void AppendMaybeCount(int maxCount)
 
 ### Parameters
 
-**maxCount**
+**maxCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A maximum number of times the pattern can be matched\.
 
@@ -47,11 +47,11 @@ public void AppendMaybeCount(int maxCount, bool lazy)
 
 ### Parameters
 
-**maxCount**
+**maxCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A maximum number of times the pattern can be matched\.
 
-**lazy**
+**lazy** &emsp; System\.[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
 Indicates whether the quantifier will be greedy or lazy\.
 

@@ -17,15 +17,15 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern BalanceChar(char op
 
 ### Parameters
 
-**openingCharacter**
+**openingCharacter** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 Opening Unicode character to balance\.
 
-**closingCharacter**
+**closingCharacter** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 Closing Unicode character to balance\.
 
-**groupName**
+**groupName** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A name of the group that contains balanced content of the opening and closing character\.
 

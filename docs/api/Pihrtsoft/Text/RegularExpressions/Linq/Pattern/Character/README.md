@@ -29,7 +29,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Character(Pihr
 
 ### Parameters
 
-**value**
+**value** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[AsciiChar](../../AsciiChar/README.md)
 
 An enumerated constant that identifies ASCII character\.
 
@@ -49,7 +49,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Character(Pihr
 
 ### Parameters
 
-**category**
+**category** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[GeneralCategory](../../GeneralCategory/README.md)
 
 An enumerated constant that identifies Unicode category\.
 
@@ -69,7 +69,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Character(char
 
 ### Parameters
 
-**value**
+**value** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 A Unicode character\.
 
@@ -89,7 +89,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Character(Pihr
 
 ### Parameters
 
-**value**
+**value** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../../CharGrouping/README.md)
 
 A content of a character group\.
 
@@ -115,7 +115,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Character(Pihr
 
 ### Parameters
 
-**block**
+**block** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[NamedBlock](../../NamedBlock/README.md)
 
 An enumerated constant that identifies Unicode block\.
 
@@ -135,7 +135,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Character(stri
 
 ### Parameters
 
-**characters**
+**characters** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A set of characters any one of which has to be matched\.
 

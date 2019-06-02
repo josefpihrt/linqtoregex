@@ -30,7 +30,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotChar(Pihrts
 
 ### Parameters
 
-**value**
+**value** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[AsciiChar](../../AsciiChar/README.md)
 
 An enumerated constant that identifies ASCII character\.
 
@@ -50,7 +50,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotChar(Pihrts
 
 ### Parameters
 
-**category**
+**category** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[GeneralCategory](../../GeneralCategory/README.md)
 
 An enumerated constant that identifies Unicode category\.
 
@@ -70,7 +70,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotChar(char v
 
 ### Parameters
 
-**value**
+**value** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 A Unicode character\.
 
@@ -90,7 +90,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotChar(params char[] ch
 
 ### Parameters
 
-**characters**
+**characters** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)\[\]
 
 Unicode characters\.
 
@@ -120,7 +120,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotChar(Pihrts
 
 ### Parameters
 
-**value**
+**value** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../../CharGrouping/README.md)
 
 A content of a character group\.
 
@@ -146,7 +146,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotChar(Pihrts
 
 ### Parameters
 
-**block**
+**block** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[NamedBlock](../../NamedBlock/README.md)
 
 An enumerated constant that identifies Unicode block\.
 
@@ -166,7 +166,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotChar(string
 
 ### Parameters
 
-**characters**
+**characters** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Unicode characters\.
 

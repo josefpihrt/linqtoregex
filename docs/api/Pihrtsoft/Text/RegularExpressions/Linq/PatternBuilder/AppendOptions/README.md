@@ -26,7 +26,7 @@ public void AppendOptions(System.Text.RegularExpressions.RegexOptions applyOptio
 
 ### Parameters
 
-**applyOptions**
+**applyOptions** &emsp; System\.Text\.RegularExpressions\.[RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that are applied\.
 
@@ -48,11 +48,11 @@ public void AppendOptions(System.Text.RegularExpressions.RegexOptions applyOptio
 
 ### Parameters
 
-**applyOptions**
+**applyOptions** &emsp; System\.Text\.RegularExpressions\.[RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that are applied\.
 
-**content**
+**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to match\.
 
@@ -78,11 +78,11 @@ public void AppendOptions(System.Text.RegularExpressions.RegexOptions applyOptio
 
 ### Parameters
 
-**applyOptions**
+**applyOptions** &emsp; System\.Text\.RegularExpressions\.[RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that are applied\.
 
-**disableOptions**
+**disableOptions** &emsp; System\.Text\.RegularExpressions\.[RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that are disabled\.
 

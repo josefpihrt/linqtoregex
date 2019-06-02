@@ -25,15 +25,15 @@ public void AppendIfGroup(int groupNumber, object trueContent, object falseConte
 
 ### Parameters
 
-**groupNumber**
+**groupNumber** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of the group\.
 
-**trueContent**
+**trueContent** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to match if the named group is matched\.
 
-**falseContent**
+**falseContent** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to match if the named group is not matched\.
 
@@ -59,15 +59,15 @@ public void AppendIfGroup(string groupName, object trueContent, object falseCont
 
 ### Parameters
 
-**groupName**
+**groupName** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A name of the group\.
 
-**trueContent**
+**trueContent** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to match if the named group is matched\.
 
-**falseContent**
+**falseContent** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to match if the named group is not matched\.
 

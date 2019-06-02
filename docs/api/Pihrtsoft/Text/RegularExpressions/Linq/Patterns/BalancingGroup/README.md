@@ -25,15 +25,15 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Balanci
 
 ### Parameters
 
-**name1**
+**name1** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Current group name\.
 
-**name2**
+**name2** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Previously defined group name\.
 
-**content**
+**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched\.
 
@@ -63,15 +63,15 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Balanci
 
 ### Parameters
 
-**name1**
+**name1** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Current group name\.
 
-**name2**
+**name2** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Previously defined group name\.
 
-**content**
+**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
 
 An object array that contains zero or more patterns any one of which has to be matched\.
 

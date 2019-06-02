@@ -40,7 +40,7 @@ public string ToString(Pihrtsoft.Text.RegularExpressions.Linq.PatternOptions opt
 
 ### Parameters
 
-**options**
+**options** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[PatternOptions](../../PatternOptions/README.md)
 
 A bitwise combination of the enumeration values that modify the pattern\.
 
@@ -60,7 +60,7 @@ public string ToString(Pihrtsoft.Text.RegularExpressions.Linq.PatternSettings se
 
 ### Parameters
 
-**settings**
+**settings** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[PatternSettings](../../PatternSettings/README.md)
 
 A settings that modify the pattern\.
 

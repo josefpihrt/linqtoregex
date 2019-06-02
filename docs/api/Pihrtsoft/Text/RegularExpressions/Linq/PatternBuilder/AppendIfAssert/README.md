@@ -16,15 +16,15 @@ public void AppendIfAssert(object testContent, object trueContent, object falseC
 
 ### Parameters
 
-**testContent**
+**testContent** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to assert\.
 
-**trueContent**
+**trueContent** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to match if the assertion succeeds\.
 
-**falseContent**
+**falseContent** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to match if the assertion fails\.
 

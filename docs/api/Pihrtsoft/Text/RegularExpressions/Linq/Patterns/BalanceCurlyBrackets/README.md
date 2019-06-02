@@ -17,7 +17,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern BalanceCurlyBracket
 
 ### Parameters
 
-**groupName**
+**groupName** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A name of the group that contains balanced content between left and right curly bracket\.
 

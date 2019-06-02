@@ -16,11 +16,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharSubtraction Except(Pihr
 
 ### Parameters
 
-**baseGroup**
+**baseGroup** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[IBaseGroup](../../IBaseGroup/README.md)
 
 A base group\.
 
-**excludedGroup**
+**excludedGroup** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[IExcludedGroup](../../IExcludedGroup/README.md)
 
 An excluded group\.
 

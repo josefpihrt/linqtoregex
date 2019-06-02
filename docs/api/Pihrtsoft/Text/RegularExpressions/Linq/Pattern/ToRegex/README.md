@@ -39,7 +39,7 @@ public System.Text.RegularExpressions.Regex ToRegex(System.Text.RegularExpressio
 
 ### Parameters
 
-**options**
+**options** &emsp; System\.Text\.RegularExpressions\.[RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that modify the regular expression\.
 

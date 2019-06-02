@@ -29,7 +29,7 @@ public void AppendNegativeCharGroup(Pihrtsoft.Text.RegularExpressions.Linq.Ascii
 
 ### Parameters
 
-**value**
+**value** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[AsciiChar](../../AsciiChar/README.md)
 
 An enumerated constant that identifies ASCII character\.
 
@@ -45,7 +45,7 @@ public void AppendNegativeCharGroup(Pihrtsoft.Text.RegularExpressions.Linq.Gener
 
 ### Parameters
 
-**category**
+**category** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[GeneralCategory](../../GeneralCategory/README.md)
 
 An enumerated constant that identifies Unicode category\.
 
@@ -61,11 +61,11 @@ public void AppendNegativeCharGroup(char first, char last)
 
 ### Parameters
 
-**first**
+**first** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The first character of the range\.
 
-**last**
+**last** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The last character of the range\.
 
@@ -87,7 +87,7 @@ public void AppendNegativeCharGroup(Pihrtsoft.Text.RegularExpressions.Linq.CharG
 
 ### Parameters
 
-**value**
+**value** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../../CharGrouping/README.md)
 
 A content of a character group\.
 
@@ -109,7 +109,7 @@ public void AppendNegativeCharGroup(Pihrtsoft.Text.RegularExpressions.Linq.Named
 
 ### Parameters
 
-**block**
+**block** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[NamedBlock](../../NamedBlock/README.md)
 
 An enumerated constant that identifies Unicode block\.
 
@@ -125,7 +125,7 @@ public void AppendNegativeCharGroup(string characters)
 
 ### Parameters
 
-**characters**
+**characters** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Unicode characters\.
 

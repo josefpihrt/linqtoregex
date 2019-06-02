@@ -26,7 +26,7 @@ public static System.Collections.Generic.IEnumerable<System.Text.RegularExpressi
 
 ### Parameters
 
-**match**
+**match** &emsp; System\.Text\.RegularExpressions\.[Match](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.match)
 
 A regular expression match\.
 
@@ -52,11 +52,11 @@ public static System.Collections.Generic.IEnumerable<System.Text.RegularExpressi
 
 ### Parameters
 
-**match**
+**match** &emsp; System\.Text\.RegularExpressions\.[Match](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.match)
 
 A regular expression match\.
 
-**groupNumber**
+**groupNumber** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of the group\.
 
@@ -82,11 +82,11 @@ public static System.Collections.Generic.IEnumerable<System.Text.RegularExpressi
 
 ### Parameters
 
-**match**
+**match** &emsp; System\.Text\.RegularExpressions\.[Match](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.match)
 
 A regular expression match\.
 
-**groupName**
+**groupName** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A name of the group\.
 

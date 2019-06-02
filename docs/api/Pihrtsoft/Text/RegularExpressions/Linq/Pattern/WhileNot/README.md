@@ -16,7 +16,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.Pattern WhileNot(string value)
 
 ### Parameters
 
-**value**
+**value** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A text to find but not to match\.
 

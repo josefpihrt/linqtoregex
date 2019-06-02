@@ -16,7 +16,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.NegativeBackAssertion opera
 
 ### Parameters
 
-**value**
+**value** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[BackAssertion](../README.md)
 
 A value to negate\.
 

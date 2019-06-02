@@ -16,7 +16,7 @@ public static bool IsValidInlineOptions(System.Text.RegularExpressions.RegexOpti
 
 ### Parameters
 
-**options**
+**options** &emsp; System\.Text\.RegularExpressions\.[RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values\.
 

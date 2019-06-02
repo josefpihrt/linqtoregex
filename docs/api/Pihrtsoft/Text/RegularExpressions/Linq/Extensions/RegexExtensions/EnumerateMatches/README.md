@@ -26,11 +26,11 @@ public static System.Collections.Generic.IEnumerable<System.Text.RegularExpressi
 
 ### Parameters
 
-**regex**
+**regex** &emsp; System\.Text\.RegularExpressions\.[Regex](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex)
 
 The regular expression to be matched\.
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
@@ -56,15 +56,15 @@ public static System.Collections.Generic.IEnumerable<System.Text.RegularExpressi
 
 ### Parameters
 
-**regex**
+**regex** &emsp; System\.Text\.RegularExpressions\.[Regex](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex)
 
 The regular expression to be matched\.
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
-**startAt**
+**startAt** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 The position at which to start the search\.
 
@@ -94,19 +94,19 @@ public static System.Collections.Generic.IEnumerable<System.Text.RegularExpressi
 
 ### Parameters
 
-**regex**
+**regex** &emsp; System\.Text\.RegularExpressions\.[Regex](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex)
 
 The regular expression to be matched\.
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
-**beginning**
+**beginning** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 The position at which to start the search\.
 
-**length**
+**length** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of characters to be searched\.
 

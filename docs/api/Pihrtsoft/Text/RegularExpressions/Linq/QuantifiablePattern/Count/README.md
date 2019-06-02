@@ -25,7 +25,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern Count(int exactC
 
 ### Parameters
 
-**exactCount**
+**exactCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of times the pattern must be matched\.
 
@@ -51,11 +51,11 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern Count(int minCou
 
 ### Parameters
 
-**minCount**
+**minCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A minimal number of times the pattern must be matched\.
 
-**maxCount**
+**maxCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A maximum number of times the pattern can be matched\.
 

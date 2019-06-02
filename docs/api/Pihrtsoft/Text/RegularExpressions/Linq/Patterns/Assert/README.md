@@ -25,7 +25,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Assertion Assert(object con
 
 ### Parameters
 
-**content**
+**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 A content to be matched\.
 
@@ -51,7 +51,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Assertion Assert(params obj
 
 ### Parameters
 
-**content**
+**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
 
 An object array that contains zero or more patterns any one of which has to be matched\.
 

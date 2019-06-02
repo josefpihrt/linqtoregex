@@ -16,11 +16,11 @@ public void AppendNamedGroup(string name, object content)
 
 ### Parameters
 
-**name**
+**name** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A name of the group\.
 
-**content**
+**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched\.
 

@@ -29,11 +29,11 @@ public static System.Collections.Generic.IEnumerable<string> EnumerateSplit(this
 
 ### Parameters
 
-**regex**
+**regex** &emsp; System\.Text\.RegularExpressions\.[Regex](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex)
 
 The regular expression to be matched\.
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to split\.
 
@@ -59,15 +59,15 @@ public static System.Collections.Generic.IEnumerable<string> EnumerateSplit(this
 
 ### Parameters
 
-**regex**
+**regex** &emsp; System\.Text\.RegularExpressions\.[Regex](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex)
 
 The regular expression to be matched\.
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to split\.
 
-**count**
+**count** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 The maximum number of times the input can be split\.
 
@@ -98,19 +98,19 @@ public static System.Collections.Generic.IEnumerable<string> EnumerateSplit(this
 
 ### Parameters
 
-**regex**
+**regex** &emsp; System\.Text\.RegularExpressions\.[Regex](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex)
 
 The regular expression to be matched\.
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to split\.
 
-**count**
+**count** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 The maximum number of times the input can be split\.
 
-**startAt**
+**startAt** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 The position in the input string where the search starts\.
 
@@ -146,23 +146,23 @@ public static System.Collections.Generic.IEnumerable<string> EnumerateSplit(this
 
 ### Parameters
 
-**regex**
+**regex** &emsp; System\.Text\.RegularExpressions\.[Regex](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex)
 
 The regular expression to be matched\.
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to split\.
 
-**count**
+**count** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 The maximum number of times the input can be split\.
 
-**startAt**
+**startAt** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 The position in the input string where the search starts\.
 
-**splitOptions**
+**splitOptions** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[SplitOptions](../../../SplitOptions/README.md)
 
 A bitwise combination of the enumeration values that specify options\.
 
@@ -197,19 +197,19 @@ public static System.Collections.Generic.IEnumerable<string> EnumerateSplit(this
 
 ### Parameters
 
-**regex**
+**regex** &emsp; System\.Text\.RegularExpressions\.[Regex](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex)
 
 The regular expression to be matched\.
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to split\.
 
-**count**
+**count** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 The maximum number of times the input can be split\.
 
-**splitOptions**
+**splitOptions** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[SplitOptions](../../../SplitOptions/README.md)
 
 A bitwise combination of the enumeration values that specify options\.
 
@@ -239,15 +239,15 @@ public static System.Collections.Generic.IEnumerable<string> EnumerateSplit(this
 
 ### Parameters
 
-**regex**
+**regex** &emsp; System\.Text\.RegularExpressions\.[Regex](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex)
 
 The regular expression to be matched\.
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to split\.
 
-**splitOptions**
+**splitOptions** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[SplitOptions](../../../SplitOptions/README.md)
 
 A bitwise combination of the enumeration values that specify options\.
 

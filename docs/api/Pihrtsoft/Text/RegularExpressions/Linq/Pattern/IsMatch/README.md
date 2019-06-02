@@ -25,7 +25,7 @@ public bool IsMatch(string input)
 
 ### Parameters
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
@@ -51,11 +51,11 @@ public bool IsMatch(string input, System.Text.RegularExpressions.RegexOptions op
 
 ### Parameters
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
-**options**
+**options** &emsp; System\.Text\.RegularExpressions\.[RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that specify options for matching\.
 

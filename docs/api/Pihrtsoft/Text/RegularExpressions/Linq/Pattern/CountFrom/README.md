@@ -25,11 +25,11 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup CountFrom(int minC
 
 ### Parameters
 
-**minCount**
+**minCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A minimal number of times the pattern must be matched\.
 
-**content**
+**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched\.
 
@@ -59,15 +59,15 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup CountFrom(int minC
 
 ### Parameters
 
-**minCount**
+**minCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A minimal number of times the pattern must be matched\.
 
-**first**
+**first** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 First element of a sequence that contains patterns any one of which has to be matched\.
 
-**others**
+**others** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
 
 Other elements of a sequence that contains patterns any one of which has to be matched\.
 

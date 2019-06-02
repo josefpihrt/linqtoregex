@@ -16,6 +16,6 @@ public void AppendNamedBlock(Pihrtsoft.Text.RegularExpressions.Linq.NamedBlock b
 
 ### Parameters
 
-**block**
+**block** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[NamedBlock](../../NamedBlock/README.md)
 
 An enumerated constant that identifies Unicode block\.

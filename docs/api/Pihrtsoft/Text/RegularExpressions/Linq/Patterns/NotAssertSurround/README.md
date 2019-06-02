@@ -25,11 +25,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.NegativeSurroundAssertion N
 
 ### Parameters
 
-**assertion**
+**assertion** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 A content of the negative assertions\.
 
-**content**
+**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched\.
 
@@ -55,15 +55,15 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.NegativeSurroundAssertion N
 
 ### Parameters
 
-**backAssertion**
+**backAssertion** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 A content of the negative lookbehind assertion\.
 
-**content**
+**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched\.
 
-**assertion**
+**assertion** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 A content of the negative lookahead assertion\.
 

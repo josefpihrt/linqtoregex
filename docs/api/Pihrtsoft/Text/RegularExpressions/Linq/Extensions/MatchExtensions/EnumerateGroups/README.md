@@ -16,7 +16,7 @@ public static System.Collections.Generic.IEnumerable<System.Text.RegularExpressi
 
 ### Parameters
 
-**match**
+**match** &emsp; System\.Text\.RegularExpressions\.[Match](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.match)
 
 A regular expression match\.
 

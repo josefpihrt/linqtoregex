@@ -29,7 +29,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern Options(System.Text
 
 ### Parameters
 
-**applyOptions**
+**applyOptions** &emsp; System\.Text\.RegularExpressions\.[RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that are applied\.
 
@@ -49,11 +49,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Options
 
 ### Parameters
 
-**applyOptions**
+**applyOptions** &emsp; System\.Text\.RegularExpressions\.[RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that are applied\.
 
-**content**
+**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched\.
 
@@ -79,11 +79,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Options
 
 ### Parameters
 
-**applyOptions**
+**applyOptions** &emsp; System\.Text\.RegularExpressions\.[RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that are applied\.
 
-**content**
+**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
 
 An object array that contains zero or more patterns any one of which has to be matched\.
 
@@ -109,11 +109,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern Options(System.Text
 
 ### Parameters
 
-**applyOptions**
+**applyOptions** &emsp; System\.Text\.RegularExpressions\.[RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that are applied\.
 
-**disableOptions**
+**disableOptions** &emsp; System\.Text\.RegularExpressions\.[RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that are disabled\.
 
@@ -133,15 +133,15 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Options
 
 ### Parameters
 
-**applyOptions**
+**applyOptions** &emsp; System\.Text\.RegularExpressions\.[RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that are applied\.
 
-**disableOptions**
+**disableOptions** &emsp; System\.Text\.RegularExpressions\.[RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that are disabled\.
 
-**content**
+**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched\.
 
@@ -167,15 +167,15 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Options
 
 ### Parameters
 
-**applyOptions**
+**applyOptions** &emsp; System\.Text\.RegularExpressions\.[RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that are applied\.
 
-**disableOptions**
+**disableOptions** &emsp; System\.Text\.RegularExpressions\.[RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that are disabled\.
 
-**content**
+**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
 
 An object array that contains zero or more patterns any one of which has to be matched\.
 

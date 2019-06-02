@@ -16,15 +16,15 @@ public static string ReplaceMatchChar(this System.Text.RegularExpressions.Regex 
 
 ### Parameters
 
-**regex**
+**regex** &emsp; System\.Text\.RegularExpressions\.[Regex](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex)
 
 The regular expression to be matched\.
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
-**replacementChar**
+**replacementChar** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The replacement char\.
 

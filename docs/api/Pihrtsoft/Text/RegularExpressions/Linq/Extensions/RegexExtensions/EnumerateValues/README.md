@@ -16,11 +16,11 @@ public static System.Collections.Generic.IEnumerable<string> EnumerateValues(thi
 
 ### Parameters
 
-**regex**
+**regex** &emsp; System\.Text\.RegularExpressions\.[Regex](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex)
 
 The regular expression to be matched\.
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 

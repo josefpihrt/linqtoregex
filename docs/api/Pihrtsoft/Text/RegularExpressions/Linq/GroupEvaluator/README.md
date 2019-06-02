@@ -16,7 +16,7 @@ public delegate string GroupEvaluator(System.Text.RegularExpressions.Group group
 
 ### Parameters
 
-**group**
+**group** &emsp; System\.Text\.RegularExpressions\.[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)
 
 ### Return Value
 

@@ -16,7 +16,7 @@ public static System.Collections.Generic.IEnumerable<int> EnumerateLengths(this 
 
 ### Parameters
 
-**captures**
+**captures** &emsp; System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.Text\.RegularExpressions\.[Capture](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.capture)>
 
 The sequence to enumerate\.
 

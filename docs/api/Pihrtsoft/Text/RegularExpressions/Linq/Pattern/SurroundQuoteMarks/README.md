@@ -40,7 +40,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.Pattern SurroundQuoteMarks(object 
 
 ### Parameters
 
-**content**
+**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched\.
 
@@ -66,7 +66,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.Pattern SurroundQuoteMarks(params 
 
 ### Parameters
 
-**content**
+**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
 
 An object array that contains zero or more patterns any one of which has to be matched\.
 

@@ -25,7 +25,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern DisallowGroup(int g
 
 ### Parameters
 
-**groupNumber**
+**groupNumber** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of the group\.
 
@@ -51,7 +51,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern DisallowGroup(strin
 
 ### Parameters
 
-**groupName**
+**groupName** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A name of the group\.
 

@@ -28,7 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Append(Pihrtsoft.Text
 
 ### Parameters
 
-**value**
+**value** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[AsciiChar](../../AsciiChar/README.md)
 
 An enumerated constant that identifies ASCII character\.
 
@@ -48,7 +48,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Append(Pihrtsoft.Text
 
 ### Parameters
 
-**category**
+**category** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[GeneralCategory](../../GeneralCategory/README.md)
 
 An enumerated constant that identifies Unicode category\.
 
@@ -68,7 +68,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Append(char value)
 
 ### Parameters
 
-**value**
+**value** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 A Unicode character\.
 
@@ -88,7 +88,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Append(Pihrtsoft.Text
 
 ### Parameters
 
-**block**
+**block** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[NamedBlock](../../NamedBlock/README.md)
 
 An enumerated constant that identifies Unicode block\.
 
@@ -108,7 +108,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Append(string charact
 
 ### Parameters
 
-**characters**
+**characters** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A set of Unicode characters\.
 

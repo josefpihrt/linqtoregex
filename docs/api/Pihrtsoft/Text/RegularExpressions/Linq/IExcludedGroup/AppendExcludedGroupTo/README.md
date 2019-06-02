@@ -16,6 +16,6 @@ void AppendExcludedGroupTo(Pihrtsoft.Text.RegularExpressions.Linq.PatternBuilder
 
 ### Parameters
 
-**builder**
+**builder** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[PatternBuilder](../../PatternBuilder/README.md)
 
 The builder to use for appending the text\.

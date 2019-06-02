@@ -35,6 +35,6 @@ public void AppendOneMany(bool lazy)
 
 ### Parameters
 
-**lazy**
+**lazy** &emsp; System\.[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
 Indicates whether the quantifier will be greedy or lazy\.

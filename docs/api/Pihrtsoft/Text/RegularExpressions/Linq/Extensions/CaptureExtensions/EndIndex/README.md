@@ -16,7 +16,7 @@ public static int EndIndex(this System.Text.RegularExpressions.Capture capture)
 
 ### Parameters
 
-**capture**
+**capture** &emsp; System\.Text\.RegularExpressions\.[Capture](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.capture)
 
 A regular expression capture\.
 

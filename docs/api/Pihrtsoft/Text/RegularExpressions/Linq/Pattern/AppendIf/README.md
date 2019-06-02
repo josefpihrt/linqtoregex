@@ -16,11 +16,11 @@ public Pihrtsoft.Text.RegularExpressions.Linq.Pattern AppendIf(bool condition, o
 
 ### Parameters
 
-**condition**
+**condition** &emsp; System\.[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
 The condition expression to evaluate\.
 
-**content**
+**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched\.
 

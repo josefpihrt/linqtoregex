@@ -16,7 +16,7 @@ public static string GetCategoryDescription(Pihrtsoft.Text.RegularExpressions.Li
 
 ### Parameters
 
-**category**
+**category** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[GeneralCategory](../../GeneralCategory/README.md)
 
 An enumerated constant that identifies Unicode category\.
 

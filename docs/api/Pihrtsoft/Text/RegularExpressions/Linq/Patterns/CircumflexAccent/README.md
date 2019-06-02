@@ -39,7 +39,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup CircumflexA
 
 ### Parameters
 
-**exactCount**
+**exactCount** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of times a character has to be matched\.
 

@@ -28,7 +28,7 @@ public static string Escape(char value)
 
 ### Parameters
 
-**value**
+**value** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 A Unicode character\.
 
@@ -48,11 +48,11 @@ public static string Escape(char value, bool inCharGroup)
 
 ### Parameters
 
-**value**
+**value** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 A Unicode character\.
 
-**inCharGroup**
+**inCharGroup** &emsp; System\.[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
 Indicates whether the character is considered to be inside or outside of the character group\.
 
@@ -73,7 +73,7 @@ public static string Escape(string input)
 
 ### Parameters
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The text to be converted\.
 
@@ -99,11 +99,11 @@ public static string Escape(string input, bool inCharGroup)
 
 ### Parameters
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The text to be converted\.
 
-**inCharGroup**
+**inCharGroup** &emsp; System\.[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
 Indicates whether the text is considered to be inside or outside of the character group\.
 

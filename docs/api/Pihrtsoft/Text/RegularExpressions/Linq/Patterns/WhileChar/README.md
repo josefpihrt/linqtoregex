@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileChar
 
 ### Parameters
 
-**value**
+**value** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[AsciiChar](../../AsciiChar/README.md)
 
 An enumerated constant that identifies ASCII character\.
 
@@ -46,7 +46,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileChar
 
 ### Parameters
 
-**value**
+**value** &emsp; System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 A Unicode character\.
 
@@ -66,7 +66,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileChar
 
 ### Parameters
 
-**value**
+**value** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../../CharGrouping/README.md)
 
 A set of Unicode characters\.
 

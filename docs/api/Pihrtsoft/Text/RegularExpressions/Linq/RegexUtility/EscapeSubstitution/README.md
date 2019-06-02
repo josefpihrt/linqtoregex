@@ -16,7 +16,7 @@ public static string EscapeSubstitution(string input)
 
 ### Parameters
 
-**input**
+**input** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The substitution pattern to be escaped\.
 

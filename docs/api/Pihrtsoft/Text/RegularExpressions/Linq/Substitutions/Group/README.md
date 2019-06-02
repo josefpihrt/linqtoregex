@@ -16,7 +16,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Substitution Group(int grou
 
 ### Parameters
 
-**groupNumber**
+**groupNumber** &emsp; System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of the group\.
 

@@ -16,7 +16,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.NegativeAssertion operator 
 
 ### Parameters
 
-**value**
+**value** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Assertion](../README.md)
 
 A value to negate\.
 

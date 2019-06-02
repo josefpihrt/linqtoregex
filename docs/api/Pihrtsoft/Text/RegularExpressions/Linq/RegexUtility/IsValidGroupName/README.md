@@ -16,7 +16,7 @@ public static bool IsValidGroupName(string groupName)
 
 ### Parameters
 
-**groupName**
+**groupName** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A group name to examine\.
 
