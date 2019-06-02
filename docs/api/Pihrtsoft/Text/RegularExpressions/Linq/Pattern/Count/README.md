@@ -22,7 +22,7 @@
 Appends a pattern that matches specified pattern from minimal to maximum number of times\.
 
 ```csharp
-public QuantifiedGroup Count(int minCount, int maxCount, object content)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Count(int minCount, int maxCount, object content)
 ```
 
 ### Parameters
@@ -60,7 +60,7 @@ System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/ap
 Appends a pattern that matches any one specified pattern from minimal to maximum number of times\.
 
 ```csharp
-public QuantifiedGroup Count(int minCount, int maxCount, object first, params object[] others)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Count(int minCount, int maxCount, object first, params object[] others)
 ```
 
 ### Parameters
@@ -102,7 +102,7 @@ System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/ap
 Appends a pattern that matches specified pattern specified number of times\.
 
 ```csharp
-public QuantifiedGroup Count(int exactCount, object content)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Count(int exactCount, object content)
 ```
 
 ### Parameters
@@ -136,7 +136,7 @@ System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/ap
 Appends a pattern that matches any one specified pattern specified number of times\.
 
 ```csharp
-public QuantifiedGroup Count(int exactCount, object first, params object[] others)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Count(int exactCount, object first, params object[] others)
 ```
 
 ### Parameters

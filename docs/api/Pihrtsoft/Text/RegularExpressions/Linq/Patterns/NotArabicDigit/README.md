@@ -20,7 +20,7 @@
 Returns a pattern that matches a character that is not an arabic digit\.
 
 ```csharp
-public static CharGroup NotArabicDigit()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotArabicDigit()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../../CharGroup/README.md
 Returns a pattern that matches a character that is not an arabic digit specified number of times\.
 
 ```csharp
-public static QuantifiedGroup NotArabicDigit(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotArabicDigit(int exactCount)
 ```
 
 ### Parameters

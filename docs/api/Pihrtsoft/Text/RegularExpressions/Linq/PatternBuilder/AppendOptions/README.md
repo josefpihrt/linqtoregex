@@ -21,7 +21,7 @@
 Appends a pattern that applies specified options\.
 
 ```csharp
-public void AppendOptions(RegexOptions applyOptions)
+public void AppendOptions(System.Text.RegularExpressions.RegexOptions applyOptions)
 ```
 
 ### Parameters
@@ -43,7 +43,7 @@ System\.[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.a
 Appends a pattern that applies specified options to a specified pattern\.
 
 ```csharp
-public void AppendOptions(RegexOptions applyOptions, object content)
+public void AppendOptions(System.Text.RegularExpressions.RegexOptions applyOptions, object content)
 ```
 
 ### Parameters
@@ -73,7 +73,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Appends a pattern that applies and disables specified options to a specified pattern\.
 
 ```csharp
-public void AppendOptions(RegexOptions applyOptions, RegexOptions disableOptions)
+public void AppendOptions(System.Text.RegularExpressions.RegexOptions applyOptions, System.Text.RegularExpressions.RegexOptions disableOptions)
 ```
 
 ### Parameters

@@ -20,7 +20,7 @@
 Appends a pattern that matches a newline character\. Newline character is a carriage return or a linefeed\.
 
 ```csharp
-public QuantifiablePattern NewLineChar()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NewLineChar()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of newline characters\. Newline character is a carriage return or a linefeed\.
 
 ```csharp
-public QuantifiedGroup NewLineChar(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NewLineChar(int exactCount)
 ```
 
 ### Parameters

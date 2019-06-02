@@ -20,7 +20,7 @@
 Returns a pattern that matches a character that is not a grave accent\.
 
 ```csharp
-public static QuantifiablePattern NotGraveAccent()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotGraveAccent()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Returns a pattern that matches a specified number of characters that are not a grave accent\.
 
 ```csharp
-public static QuantifiedGroup NotGraveAccent(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotGraveAccent(int exactCount)
 ```
 
 ### Parameters

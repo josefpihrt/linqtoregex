@@ -20,7 +20,7 @@
 Appends a pattern that matches specified content one or more times\.
 
 ```csharp
-public QuantifiedGroup OneMany(object content)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup OneMany(object content)
 ```
 
 ### Parameters
@@ -46,7 +46,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Appends a pattern that matches any one specified element one or more times\.
 
 ```csharp
-public QuantifiedGroup OneMany(object first, params object[] others)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup OneMany(object first, params object[] others)
 ```
 
 ### Parameters

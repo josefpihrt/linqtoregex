@@ -20,7 +20,7 @@
 Returns a pattern that matches an apostrophe\.
 
 ```csharp
-public static CharPattern Apostrophe()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Apostrophe()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of apostrophes\.
 
 ```csharp
-public static QuantifiedGroup Apostrophe(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Apostrophe(int exactCount)
 ```
 
 ### Parameters

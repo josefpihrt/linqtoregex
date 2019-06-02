@@ -20,7 +20,7 @@
 Returns a pattern that matches a backslash\.
 
 ```csharp
-public static CharPattern Backslash()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Backslash()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of backslashes\.
 
 ```csharp
-public static QuantifiedGroup Backslash(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Backslash(int exactCount)
 ```
 
 ### Parameters

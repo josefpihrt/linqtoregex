@@ -20,7 +20,7 @@
 Appends a pattern that matches a hyphen\.
 
 ```csharp
-public QuantifiablePattern Hyphen()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Hyphen()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of hyphens\.
 
 ```csharp
-public QuantifiedGroup Hyphen(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Hyphen(int exactCount)
 ```
 
 ### Parameters

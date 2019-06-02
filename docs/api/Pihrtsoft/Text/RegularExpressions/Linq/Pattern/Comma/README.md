@@ -20,7 +20,7 @@
 Appends a pattern that matches a comma\.
 
 ```csharp
-public QuantifiablePattern Comma()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Comma()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of commas\.
 
 ```csharp
-public QuantifiedGroup Comma(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Comma(int exactCount)
 ```
 
 ### Parameters

@@ -23,7 +23,7 @@
 Appends a pattern that matches zero or more characters that are not a specified character\.
 
 ```csharp
-public Pattern WhileNotChar(AsciiChar value)
+public Pihrtsoft.Text.RegularExpressions.Linq.Pattern WhileNotChar(Pihrtsoft.Text.RegularExpressions.Linq.AsciiChar value)
 ```
 
 ### Parameters
@@ -43,7 +43,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
 Appends a pattern that matches zero or more characters that are not a specified character\.
 
 ```csharp
-public Pattern WhileNotChar(char value)
+public Pihrtsoft.Text.RegularExpressions.Linq.Pattern WhileNotChar(char value)
 ```
 
 ### Parameters
@@ -63,7 +63,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
 Appends a pattern that matches zero or more characters that are not contained in the specified characters
 
 ```csharp
-public QuantifiedPattern WhileNotChar(params char[] characters)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileNotChar(params char[] characters)
 ```
 
 ### Parameters
@@ -93,7 +93,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Appends a pattern that matches zero or more characters that are not matched by a specified [CharGrouping](../../CharGrouping/README.md)\.
 
 ```csharp
-public Pattern WhileNotChar(CharGrouping value)
+public Pihrtsoft.Text.RegularExpressions.Linq.Pattern WhileNotChar(Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping value)
 ```
 
 ### Parameters
@@ -119,7 +119,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Appends a pattern that matches zero or more characters that are not contained in the specified [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)\.
 
 ```csharp
-public QuantifiedPattern WhileNotChar(string characters)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileNotChar(string characters)
 ```
 
 ### Parameters

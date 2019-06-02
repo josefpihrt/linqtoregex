@@ -20,7 +20,7 @@
 Returns a pattern that matches an alphanumeric character\. Alphanumeric character is a latin alphabet letter or an arabic digit\.
 
 ```csharp
-public static CharGroup Alphanumeric()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup Alphanumeric()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../../CharGroup/README.md
 Returns a pattern that matches a specified number of alphanumeric characters\. Alphanumeric character is a latin alphabet letter or an arabic digit\.
 
 ```csharp
-public static QuantifiedGroup Alphanumeric(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Alphanumeric(int exactCount)
 ```
 
 ### Parameters

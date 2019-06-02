@@ -20,7 +20,7 @@
 Returns a pattern that matches a latin alphabet upper\-case letter\.
 
 ```csharp
-public static QuantifiablePattern LatinLetterUpper()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern LatinLetterUpper()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Returns a pattern that matches a specified number of latin alphabet upper\-case letters\.
 
 ```csharp
-public static QuantifiedGroup LatinLetterUpper(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup LatinLetterUpper(int exactCount)
 ```
 
 ### Parameters

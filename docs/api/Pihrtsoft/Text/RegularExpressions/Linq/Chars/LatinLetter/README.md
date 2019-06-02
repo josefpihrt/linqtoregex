@@ -11,7 +11,7 @@
 Returns a pattern that matches a latin alphabet letter\.
 
 ```csharp
-public static CharGrouping LatinLetter()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping LatinLetter()
 ```
 
 ### Returns

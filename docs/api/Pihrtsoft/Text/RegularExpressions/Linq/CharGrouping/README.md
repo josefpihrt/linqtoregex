@@ -11,8 +11,8 @@
 Represents an immutable content of the character group\. Content can be a base group or an excluded group\. This class is abstract\.
 
 ```csharp
-public abstract class CharGrouping : IBaseGroup,
-    IExcludedGroup
+public abstract class CharGrouping : Pihrtsoft.Text.RegularExpressions.Linq.IBaseGroup,
+    Pihrtsoft.Text.RegularExpressions.Linq.IExcludedGroup
 ```
 
 ### Inheritance

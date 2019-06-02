@@ -20,7 +20,7 @@
 Returns a nonbacktracking group with a specified content\.
 
 ```csharp
-public static QuantifiablePattern NonbacktrackingGroup(object content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NonbacktrackingGroup(object content)
 ```
 
 ### Parameters
@@ -46,7 +46,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns a nonbacktracking group with a specified content\.
 
 ```csharp
-public static QuantifiablePattern NonbacktrackingGroup(params object[] content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NonbacktrackingGroup(params object[] content)
 ```
 
 ### Parameters

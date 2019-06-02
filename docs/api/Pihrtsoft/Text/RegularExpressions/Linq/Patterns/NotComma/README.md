@@ -20,7 +20,7 @@
 Returns a pattern that matches a character that is not a comma\.
 
 ```csharp
-public static QuantifiablePattern NotComma()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotComma()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Returns a pattern that matches a specified number of characters that are not a comma\.
 
 ```csharp
-public static QuantifiedGroup NotComma(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotComma(int exactCount)
 ```
 
 ### Parameters

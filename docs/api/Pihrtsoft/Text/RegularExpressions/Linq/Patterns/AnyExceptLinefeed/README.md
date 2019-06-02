@@ -20,7 +20,7 @@
 Returns a pattern that matches any character except linefeed\.
 
 ```csharp
-public static QuantifiablePattern AnyExceptLinefeed()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern AnyExceptLinefeed()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Returns a pattern that matches any character except linefeed specified number of times\.
 
 ```csharp
-public static QuantifiedGroup AnyExceptLinefeed(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup AnyExceptLinefeed(int exactCount)
 ```
 
 ### Parameters

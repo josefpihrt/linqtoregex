@@ -20,7 +20,7 @@
 Appends a pattern that matches a character that is not a colon\.
 
 ```csharp
-public QuantifiablePattern NotColon()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotColon()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of characters that are not a colon\.
 
 ```csharp
-public QuantifiedGroup NotColon(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotColon(int exactCount)
 ```
 
 ### Parameters

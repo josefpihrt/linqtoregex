@@ -11,7 +11,7 @@
 Appends a pattern that matches a word character zero or more times\.
 
 ```csharp
-public QuantifiedPattern WhileWordChar()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileWordChar()
 ```
 
 ### Returns

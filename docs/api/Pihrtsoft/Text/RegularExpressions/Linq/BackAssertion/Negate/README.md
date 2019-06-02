@@ -11,7 +11,7 @@
 Returns a new instance of the [NegativeBackAssertion](../../NegativeBackAssertion/README.md) class\.
 
 ```csharp
-public NegativeBackAssertion Negate()
+public Pihrtsoft.Text.RegularExpressions.Linq.NegativeBackAssertion Negate()
 ```
 
 ### Returns

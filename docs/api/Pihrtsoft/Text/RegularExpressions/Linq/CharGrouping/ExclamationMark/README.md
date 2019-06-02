@@ -11,7 +11,7 @@
 Appends a pattern that matches an exclamation mark\.
 
 ```csharp
-public CharGrouping ExclamationMark()
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping ExclamationMark()
 ```
 
 ### Returns

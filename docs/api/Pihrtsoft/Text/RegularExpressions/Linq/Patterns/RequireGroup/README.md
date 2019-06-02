@@ -20,7 +20,7 @@
 Returns a pattern that requires previously defined group with a specified number to be matched\. Otherwise, a match will fail\.
 
 ```csharp
-public static Pattern RequireGroup(int groupNumber)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern RequireGroup(int groupNumber)
 ```
 
 ### Parameters
@@ -46,7 +46,7 @@ System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/ap
 Returns a pattern that requires previously defined group with a specified name to be matched\. Otherwise, a match will fail\.
 
 ```csharp
-public static Pattern RequireGroup(string groupName)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern RequireGroup(string groupName)
 ```
 
 ### Parameters

@@ -11,7 +11,7 @@
 Returns a pattern that matches zero or more characters that are white\-space characters but neither a carriage return nor a linefeed\.
 
 ```csharp
-public static QuantifiedPattern WhileWhiteSpaceExceptNewLine()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileWhiteSpaceExceptNewLine()
 ```
 
 ### Returns

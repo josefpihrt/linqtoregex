@@ -20,7 +20,7 @@
 Returns a pattern that matches a carriage return\.
 
 ```csharp
-public static CharPattern CarriageReturn()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern CarriageReturn()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of carriage returns\.
 
 ```csharp
-public static QuantifiedGroup CarriageReturn(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup CarriageReturn(int exactCount)
 ```
 
 ### Parameters

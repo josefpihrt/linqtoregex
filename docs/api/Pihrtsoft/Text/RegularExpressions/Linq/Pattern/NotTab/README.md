@@ -20,7 +20,7 @@
 Appends a pattern that matches a character that is not a tab\.
 
 ```csharp
-public QuantifiablePattern NotTab()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotTab()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of characters that are not a tab\.
 
 ```csharp
-public QuantifiedGroup NotTab(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotTab(int exactCount)
 ```
 
 ### Parameters

@@ -11,7 +11,7 @@
 Returns a substitution pattern that substitutes the last captured group\.
 
 ```csharp
-public static Substitution LastCapturedGroup()
+public static Pihrtsoft.Text.RegularExpressions.Linq.Substitution LastCapturedGroup()
 ```
 
 ### Returns

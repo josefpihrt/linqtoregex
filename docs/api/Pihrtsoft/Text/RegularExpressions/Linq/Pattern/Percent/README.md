@@ -20,7 +20,7 @@
 Appends a pattern that matches a percent\.
 
 ```csharp
-public QuantifiablePattern Percent()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Percent()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of percents\.
 
 ```csharp
-public QuantifiedGroup Percent(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Percent(int exactCount)
 ```
 
 ### Parameters

@@ -20,7 +20,7 @@
 Appends a pattern that matches a dot\.
 
 ```csharp
-public QuantifiablePattern Dot()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Dot()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of dots\.
 
 ```csharp
-public QuantifiedGroup Dot(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Dot(int exactCount)
 ```
 
 ### Parameters

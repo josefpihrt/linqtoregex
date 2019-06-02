@@ -11,7 +11,7 @@
 Appends a pattern that matches a percent sign\.
 
 ```csharp
-public CharGrouping Percent()
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Percent()
 ```
 
 ### Returns

@@ -21,7 +21,7 @@
 Appends a pattern that matches a text consisting of a left parenthesis and a right parenthesis, allowing zero or more characters that are not a right parenthesis between the parentheses\.
 
 ```csharp
-public Pattern SurroundParentheses()
+public Pihrtsoft.Text.RegularExpressions.Linq.Pattern SurroundParentheses()
 ```
 
 ### Returns
@@ -35,7 +35,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
 Appends a pattern that matches specified pattern surrounded with left and right parenthesis\.
 
 ```csharp
-public Pattern SurroundParentheses(object content)
+public Pihrtsoft.Text.RegularExpressions.Linq.Pattern SurroundParentheses(object content)
 ```
 
 ### Parameters
@@ -61,7 +61,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Appends a pattern that matches specified content surrounded with left and right parenthesis\.
 
 ```csharp
-public Pattern SurroundParentheses(params object[] content)
+public Pihrtsoft.Text.RegularExpressions.Linq.Pattern SurroundParentheses(params object[] content)
 ```
 
 ### Parameters

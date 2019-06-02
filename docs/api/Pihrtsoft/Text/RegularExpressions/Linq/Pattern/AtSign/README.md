@@ -20,7 +20,7 @@
 Appends a pattern that matches an at sign\.
 
 ```csharp
-public QuantifiablePattern AtSign()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern AtSign()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of at signs\.
 
 ```csharp
-public QuantifiedGroup AtSign(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup AtSign(int exactCount)
 ```
 
 ### Parameters

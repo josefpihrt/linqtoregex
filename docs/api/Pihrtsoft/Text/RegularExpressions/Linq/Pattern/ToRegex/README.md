@@ -20,7 +20,7 @@
 Compiles a new instance of the [Regex](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex) class for the current instance\.
 
 ```csharp
-public Regex ToRegex()
+public System.Text.RegularExpressions.Regex ToRegex()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ System\.Text\.RegularExpressions\.[Regex](https://docs.microsoft.com/en-us/dotne
 Compiles a new instance of the [Regex](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex) class for the current instance, with options that modify the pattern\.
 
 ```csharp
-public Regex ToRegex(RegexOptions options)
+public System.Text.RegularExpressions.Regex ToRegex(System.Text.RegularExpressions.RegexOptions options)
 ```
 
 ### Parameters

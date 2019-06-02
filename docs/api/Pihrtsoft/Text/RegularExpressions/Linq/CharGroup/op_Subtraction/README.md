@@ -21,7 +21,7 @@
 Returns a pattern that matches a character from a specified base group except characters from a specified excluded group\.
 
 ```csharp
-public static CharSubtraction operator -(CharGroup baseGroup, CharGroup excludedGroup)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharSubtraction operator -(Pihrtsoft.Text.RegularExpressions.Linq.CharGroup baseGroup, Pihrtsoft.Text.RegularExpressions.Linq.CharGroup excludedGroup)
 ```
 
 ### Parameters
@@ -51,7 +51,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns a pattern that matches a character from a specified base group except characters from a specified excluded group\.
 
 ```csharp
-public static CharSubtraction operator -(CharGroup baseGroup, CharGrouping excludedGroup)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharSubtraction operator -(Pihrtsoft.Text.RegularExpressions.Linq.CharGroup baseGroup, Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping excludedGroup)
 ```
 
 ### Parameters
@@ -81,7 +81,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns a pattern that matches a character from a specified base group except characters from a specified excluded group\.
 
 ```csharp
-public static CharSubtraction operator -(CharGroup baseGroup, CharPattern excludedGroup)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharSubtraction operator -(Pihrtsoft.Text.RegularExpressions.Linq.CharGroup baseGroup, Pihrtsoft.Text.RegularExpressions.Linq.CharPattern excludedGroup)
 ```
 
 ### Parameters

@@ -20,7 +20,7 @@
 Appends a pattern that matches a character that is not a percent\.
 
 ```csharp
-public QuantifiablePattern NotPercent()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotPercent()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of characters that are not a percent\.
 
 ```csharp
-public QuantifiedGroup NotPercent(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotPercent(int exactCount)
 ```
 
 ### Parameters

@@ -20,7 +20,7 @@
 Appends a zero\-width positive lookbehind assertion with a specified content to be matched\.
 
 ```csharp
-public QuantifiablePattern AssertBack(object content)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern AssertBack(object content)
 ```
 
 ### Parameters
@@ -46,7 +46,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Appends a zero\-width positive lookbehind assertion that matches any one pattern specified in the object array\.
 
 ```csharp
-public QuantifiablePattern AssertBack(params object[] content)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern AssertBack(params object[] content)
 ```
 
 ### Parameters

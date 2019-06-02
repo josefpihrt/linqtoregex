@@ -11,7 +11,7 @@
 Returns a patterns that matches what is not matched by the current instance\.
 
 ```csharp
-public abstract CharGroup Negate()
+public abstract Pihrtsoft.Text.RegularExpressions.Linq.CharGroup Negate()
 ```
 
 ### Returns

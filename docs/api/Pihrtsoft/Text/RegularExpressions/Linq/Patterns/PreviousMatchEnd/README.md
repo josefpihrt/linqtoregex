@@ -11,7 +11,7 @@
 Returns a pattern that is matched at the position where the previous match ended\.
 
 ```csharp
-public static QuantifiablePattern PreviousMatchEnd()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern PreviousMatchEnd()
 ```
 
 ### Returns

@@ -11,7 +11,7 @@
 Returns a substitution pattern that substitutes the entire input string\.
 
 ```csharp
-public static Substitution EntireInput()
+public static Pihrtsoft.Text.RegularExpressions.Linq.Substitution EntireInput()
 ```
 
 ### Returns

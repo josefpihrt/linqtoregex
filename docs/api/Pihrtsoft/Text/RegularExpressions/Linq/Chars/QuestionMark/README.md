@@ -11,7 +11,7 @@
 Returns a pattern that matches a question mark\.
 
 ```csharp
-public static CharGrouping QuestionMark()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping QuestionMark()
 ```
 
 ### Returns

@@ -11,7 +11,7 @@
 Appends a pattern that matches a character from the digit character class\.
 
 ```csharp
-public CharGrouping Digit()
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Digit()
 ```
 
 ### Returns

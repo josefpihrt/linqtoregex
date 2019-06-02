@@ -20,7 +20,7 @@
 Returns a pattern that matches a latin alphabet letter\.
 
 ```csharp
-public static CharGroup LatinLetter()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup LatinLetter()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../../CharGroup/README.md
 Returns a pattern that matches a specified number of latin alphabet letters\.
 
 ```csharp
-public static QuantifiedGroup LatinLetter(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup LatinLetter(int exactCount)
 ```
 
 ### Parameters

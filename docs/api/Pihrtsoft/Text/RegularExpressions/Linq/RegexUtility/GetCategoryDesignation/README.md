@@ -11,7 +11,7 @@
 Gets a designation of the specified Unicode category\.
 
 ```csharp
-public static string GetCategoryDesignation(GeneralCategory category)
+public static string GetCategoryDesignation(Pihrtsoft.Text.RegularExpressions.Linq.GeneralCategory category)
 ```
 
 ### Parameters

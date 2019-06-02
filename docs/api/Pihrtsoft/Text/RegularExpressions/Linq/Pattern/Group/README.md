@@ -21,7 +21,7 @@
 Appends an empty numbered group\.
 
 ```csharp
-public QuantifiablePattern Group()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Group()
 ```
 
 ### Returns
@@ -35,7 +35,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a numbered group with a specified content\.
 
 ```csharp
-public QuantifiablePattern Group(object content)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Group(object content)
 ```
 
 ### Parameters
@@ -61,7 +61,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Appends a numbered group with a specified content\.
 
 ```csharp
-public QuantifiablePattern Group(params object[] content)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Group(params object[] content)
 ```
 
 ### Parameters

@@ -20,7 +20,7 @@
 Returns a pattern that matches a percent\.
 
 ```csharp
-public static CharPattern Percent()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Percent()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of percents\.
 
 ```csharp
-public static QuantifiedGroup Percent(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Percent(int exactCount)
 ```
 
 ### Parameters

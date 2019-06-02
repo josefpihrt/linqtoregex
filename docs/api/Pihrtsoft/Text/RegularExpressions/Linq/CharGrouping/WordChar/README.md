@@ -11,7 +11,7 @@
 Appends a pattern that matches a character from the word character class\.
 
 ```csharp
-public CharGrouping WordChar()
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping WordChar()
 ```
 
 ### Returns

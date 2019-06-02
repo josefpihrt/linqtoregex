@@ -20,7 +20,7 @@
 Appends a pattern that matches a question mark\.
 
 ```csharp
-public QuantifiablePattern QuestionMark()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern QuestionMark()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of question marks\.
 
 ```csharp
-public QuantifiedGroup QuestionMark(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup QuestionMark(int exactCount)
 ```
 
 ### Parameters

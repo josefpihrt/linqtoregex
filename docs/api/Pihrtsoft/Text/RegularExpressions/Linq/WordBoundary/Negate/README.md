@@ -11,7 +11,7 @@
 Returns an instance of the [NegativeWordBoundary](../../NegativeWordBoundary/README.md) class\.
 
 ```csharp
-public NegativeWordBoundary Negate()
+public Pihrtsoft.Text.RegularExpressions.Linq.NegativeWordBoundary Negate()
 ```
 
 ### Returns

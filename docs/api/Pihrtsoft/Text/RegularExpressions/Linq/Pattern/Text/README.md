@@ -20,7 +20,7 @@
 Appends a pattern that matches a specified text\.
 
 ```csharp
-public Pattern Text(string value)
+public Pihrtsoft.Text.RegularExpressions.Linq.Pattern Text(string value)
 ```
 
 ### Parameters
@@ -40,7 +40,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
 Appends a pattern that matches a specified text, ignoring or honoring its case\.
 
 ```csharp
-public QuantifiablePattern Text(string value, bool ignoreCase)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Text(string value, bool ignoreCase)
 ```
 
 ### Parameters

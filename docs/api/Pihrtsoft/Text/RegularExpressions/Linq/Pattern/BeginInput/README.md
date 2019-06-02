@@ -11,7 +11,7 @@
 Appends a pattern that is matched at the beginning of the string\.
 
 ```csharp
-public QuantifiablePattern BeginInput()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern BeginInput()
 ```
 
 ### Returns

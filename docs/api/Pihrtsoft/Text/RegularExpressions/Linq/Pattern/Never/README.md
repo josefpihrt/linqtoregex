@@ -11,7 +11,7 @@
 Appends an empty negative lookahead assertion\. This pattern is never matched\.
 
 ```csharp
-public Pattern Never()
+public Pihrtsoft.Text.RegularExpressions.Linq.Pattern Never()
 ```
 
 ### Returns

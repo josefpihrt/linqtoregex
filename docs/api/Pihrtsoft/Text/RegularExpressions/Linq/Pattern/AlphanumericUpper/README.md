@@ -20,7 +20,7 @@
 Appends a pattern that matches an upper\-case alphanumeric character\. Alphanumeric character is a latin alphabet upper\-case letter or an arabic digit\.
 
 ```csharp
-public QuantifiablePattern AlphanumericUpper()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern AlphanumericUpper()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of upper\-case alphanumeric characters\. Alphanumeric character is a latin alphabet upper\-case letter or an arabic digit\.
 
 ```csharp
-public QuantifiedGroup AlphanumericUpper(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup AlphanumericUpper(int exactCount)
 ```
 
 ### Parameters

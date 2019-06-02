@@ -20,7 +20,7 @@
 Returns a pattern that matches a tab\.
 
 ```csharp
-public static CharPattern Tab()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Tab()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of tabs\.
 
 ```csharp
-public static QuantifiedGroup Tab(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Tab(int exactCount)
 ```
 
 ### Parameters

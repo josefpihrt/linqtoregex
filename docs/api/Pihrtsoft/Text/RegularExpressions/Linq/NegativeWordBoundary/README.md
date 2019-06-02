@@ -11,7 +11,7 @@
 Represents a pattern that is matched not on a boundary between a word character and a non\-word character\. This class cannot be inherited\.
 
 ```csharp
-public sealed class NegativeWordBoundary : QuantifiablePattern
+public sealed class NegativeWordBoundary : Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern
 ```
 
 ### Inheritance

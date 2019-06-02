@@ -20,7 +20,7 @@
 Appends a balancing group with specified group names and a content\.
 
 ```csharp
-public QuantifiablePattern BalancingGroup(string name1, string name2, object content)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern BalancingGroup(string name1, string name2, object content)
 ```
 
 ### Parameters
@@ -58,7 +58,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Appends a balancing group with specified group names and a content\.
 
 ```csharp
-public QuantifiablePattern BalancingGroup(string name1, string name2, params object[] content)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern BalancingGroup(string name1, string name2, params object[] content)
 ```
 
 ### Parameters

@@ -20,7 +20,7 @@
 Appends a pattern that matches an exclamation mark\.
 
 ```csharp
-public QuantifiablePattern ExclamationMark()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern ExclamationMark()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of exclamation marks\.
 
 ```csharp
-public QuantifiedGroup ExclamationMark(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup ExclamationMark(int exactCount)
 ```
 
 ### Parameters

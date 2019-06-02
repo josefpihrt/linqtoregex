@@ -11,7 +11,7 @@
 Appends a pattern that matches an at sign\.
 
 ```csharp
-public CharGrouping AtSign()
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping AtSign()
 ```
 
 ### Returns

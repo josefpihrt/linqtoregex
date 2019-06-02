@@ -11,7 +11,7 @@
 Appends a pattern that matches a new line character, i\.e\. a linefeed character or a carriage return character\.
 
 ```csharp
-public CharGrouping NewLineChar()
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping NewLineChar()
 ```
 
 ### Returns

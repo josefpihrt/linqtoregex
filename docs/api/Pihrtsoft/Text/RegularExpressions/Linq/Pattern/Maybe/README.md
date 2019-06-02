@@ -20,7 +20,7 @@
 Appends a pattern that matches specified content zero or one time\.
 
 ```csharp
-public QuantifiedGroup Maybe(object content)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Maybe(object content)
 ```
 
 ### Parameters
@@ -46,7 +46,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Appends a pattern that matches any one specified element zero or one time\.
 
 ```csharp
-public QuantifiedGroup Maybe(object first, params object[] others)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Maybe(object first, params object[] others)
 ```
 
 ### Parameters

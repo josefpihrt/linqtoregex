@@ -24,7 +24,7 @@
 Splits the specified input string at the positions defined by the regular expression into an enumerable collection of strings\.
 
 ```csharp
-public static IEnumerable<string> EnumerateSplit(this Regex regex, string input)
+public static System.Collections.Generic.IEnumerable<string> EnumerateSplit(this System.Text.RegularExpressions.Regex regex, string input)
 ```
 
 ### Parameters
@@ -39,7 +39,7 @@ The string to split\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 
 ### Exceptions
 
@@ -54,7 +54,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Splits the specified input string a specified number of times at the positions defined by the regular expression into an enumerable collection of strings\.
 
 ```csharp
-public static IEnumerable<string> EnumerateSplit(this Regex regex, string input, int count)
+public static System.Collections.Generic.IEnumerable<string> EnumerateSplit(this System.Text.RegularExpressions.Regex regex, string input, int count)
 ```
 
 ### Parameters
@@ -73,7 +73,7 @@ The maximum number of times the input can be split\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 
 ### Exceptions
 
@@ -93,7 +93,7 @@ Splits the specified input string a specified number of times at the positions d
 The search starts at a specified position in the input string\.
 
 ```csharp
-public static IEnumerable<string> EnumerateSplit(this Regex regex, string input, int count, int startAt)
+public static System.Collections.Generic.IEnumerable<string> EnumerateSplit(this System.Text.RegularExpressions.Regex regex, string input, int count, int startAt)
 ```
 
 ### Parameters
@@ -116,7 +116,7 @@ The position in the input string where the search starts\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 
 ### Exceptions
 
@@ -141,7 +141,7 @@ Splits the specified input string a specified number of times at the positions d
 The search starts at a specified position in the input string\.
 
 ```csharp
-public static IEnumerable<string> EnumerateSplit(this Regex regex, string input, int count, int startAt, SplitOptions splitOptions)
+public static System.Collections.Generic.IEnumerable<string> EnumerateSplit(this System.Text.RegularExpressions.Regex regex, string input, int count, int startAt, Pihrtsoft.Text.RegularExpressions.Linq.SplitOptions splitOptions)
 ```
 
 ### Parameters
@@ -168,7 +168,7 @@ A bitwise combination of the enumeration values that specify options\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 
 ### Exceptions
 
@@ -192,7 +192,7 @@ System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/ap
 Splits the specified input string a specified number of times at the positions defined by the regular expression into an enumerable collection of strings, using the specified split options\.
 
 ```csharp
-public static IEnumerable<string> EnumerateSplit(this Regex regex, string input, int count, SplitOptions splitOptions)
+public static System.Collections.Generic.IEnumerable<string> EnumerateSplit(this System.Text.RegularExpressions.Regex regex, string input, int count, Pihrtsoft.Text.RegularExpressions.Linq.SplitOptions splitOptions)
 ```
 
 ### Parameters
@@ -215,7 +215,7 @@ A bitwise combination of the enumeration values that specify options\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 
 ### Exceptions
 
@@ -234,7 +234,7 @@ System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/ap
 Splits the specified input string at the positions defined by the regular expression into an enumerable collection of strings, using the specified split options\.
 
 ```csharp
-public static IEnumerable<string> EnumerateSplit(this Regex regex, string input, SplitOptions splitOptions)
+public static System.Collections.Generic.IEnumerable<string> EnumerateSplit(this System.Text.RegularExpressions.Regex regex, string input, Pihrtsoft.Text.RegularExpressions.Linq.SplitOptions splitOptions)
 ```
 
 ### Parameters
@@ -253,7 +253,7 @@ A bitwise combination of the enumeration values that specify options\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 
 ### Exceptions
 

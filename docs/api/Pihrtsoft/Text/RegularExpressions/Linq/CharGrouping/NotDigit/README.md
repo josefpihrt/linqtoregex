@@ -11,7 +11,7 @@
 Appends a pattern that matches a character that is not from the digit character class\.
 
 ```csharp
-public CharGrouping NotDigit()
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping NotDigit()
 ```
 
 ### Returns

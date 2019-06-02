@@ -49,7 +49,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Within a specified input string, replaces all strings that match the current instance with a string returned by a [MatchEvaluator](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.matchevaluator) delegate\.
 
 ```csharp
-public string Replace(string input, MatchEvaluator evaluator)
+public string Replace(string input, System.Text.RegularExpressions.MatchEvaluator evaluator)
 ```
 
 ### Parameters
@@ -79,7 +79,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Within a specified input string, replaces all strings that match the current instance with a string returned by a [MatchEvaluator](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.matchevaluator) delegate\. Specified options modify the matching operation\.
 
 ```csharp
-public string Replace(string input, MatchEvaluator evaluator, RegexOptions options)
+public string Replace(string input, System.Text.RegularExpressions.MatchEvaluator evaluator, System.Text.RegularExpressions.RegexOptions options)
 ```
 
 ### Parameters
@@ -137,7 +137,7 @@ System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 Within a specified input string, replaces all strings that match the current instance with a specified replacement string\. Specified options modify the matching operation\.
 
 ```csharp
-public string Replace(string input, string replacement, RegexOptions options)
+public string Replace(string input, string replacement, System.Text.RegularExpressions.RegexOptions options)
 ```
 
 ### Parameters

@@ -11,7 +11,7 @@
 Returns a pattern that matches a hyphen\.
 
 ```csharp
-public static CharGrouping Hyphen()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Hyphen()
 ```
 
 ### Returns

@@ -20,7 +20,7 @@
 Returns a zero\-width positive lookahead assertion with a specified content to be matched\.
 
 ```csharp
-public static Assertion Assert(object content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Assertion Assert(object content)
 ```
 
 ### Parameters
@@ -46,7 +46,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns a zero\-width positive lookahead assertion that matches any one pattern specified in the object array\.
 
 ```csharp
-public static Assertion Assert(params object[] content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Assertion Assert(params object[] content)
 ```
 
 ### Parameters

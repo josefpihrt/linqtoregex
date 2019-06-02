@@ -11,7 +11,7 @@
 Returns a pattern that matches one or more word characters surrounded with a word boundary\.
 
 ```csharp
-public static QuantifiablePattern Word()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Word()
 ```
 
 ### Returns

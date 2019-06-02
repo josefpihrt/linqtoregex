@@ -11,7 +11,7 @@
 Appends the current instance to a specified [PatternBuilder](../../PatternBuilder/README.md)\. The current instance is interpreted as a part of the character group\.
 
 ```csharp
-protected virtual void AppendGroupContentTo(PatternBuilder builder)
+protected virtual void AppendGroupContentTo(Pihrtsoft.Text.RegularExpressions.Linq.PatternBuilder builder)
 ```
 
 ### Parameters

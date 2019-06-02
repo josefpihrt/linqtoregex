@@ -11,7 +11,7 @@
 Appends a pattern that matches a character that is not in the specified range\.
 
 ```csharp
-public QuantifiablePattern NotRange(char first, char last)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotRange(char first, char last)
 ```
 
 ### Parameters

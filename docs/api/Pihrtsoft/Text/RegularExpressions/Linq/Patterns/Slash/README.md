@@ -20,7 +20,7 @@
 Returns a pattern that matches a slash\.
 
 ```csharp
-public static CharPattern Slash()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Slash()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of slashes\.
 
 ```csharp
-public static QuantifiedGroup Slash(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Slash(int exactCount)
 ```
 
 ### Parameters

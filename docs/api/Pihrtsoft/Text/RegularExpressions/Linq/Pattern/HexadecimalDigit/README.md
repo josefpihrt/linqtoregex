@@ -20,7 +20,7 @@
 Appends a pattern that matches a hexadecimal digit\.
 
 ```csharp
-public QuantifiablePattern HexadecimalDigit()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern HexadecimalDigit()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of hexadecimal digits\.
 
 ```csharp
-public QuantifiedGroup HexadecimalDigit(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup HexadecimalDigit(int exactCount)
 ```
 
 ### Parameters

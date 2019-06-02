@@ -12,8 +12,8 @@ Represents a pattern that is matched on a boundary between a word character and 
 The pattern may be also matched on a word boundary at the beginning or end of the string\. This class cannot be inherited\.
 
 ```csharp
-public sealed class WordBoundary : QuantifiablePattern,
-    INegateable<NegativeWordBoundary>
+public sealed class WordBoundary : Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern,
+    Pihrtsoft.Text.RegularExpressions.Linq.INegateable<Pihrtsoft.Text.RegularExpressions.Linq.NegativeWordBoundary>
 ```
 
 ### Inheritance
@@ -22,7 +22,7 @@ public sealed class WordBoundary : QuantifiablePattern,
 
 ### Implements
 
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[INegateable](../INegateable-1/README.md)\<[NegativeWordBoundary](../NegativeWordBoundary/README.md)>
+* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[INegateable](../INegateable-1/README.md)\<Pihrtsoft\.Text\.RegularExpressions\.Linq\.[NegativeWordBoundary](../NegativeWordBoundary/README.md)>
 
 ## Constructors
 

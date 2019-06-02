@@ -20,7 +20,7 @@
 Concatenates the elements in a specified **content** using the specified separator between each element\.
 
 ```csharp
-public static Pattern Join(object separator, object content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern Join(object separator, object content)
 ```
 
 ### Parameters
@@ -50,7 +50,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Concatenates the elements of an object array, using the specified separator between each element\.
 
 ```csharp
-public static Pattern Join(object separator, params object[] content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern Join(object separator, params object[] content)
 ```
 
 ### Parameters

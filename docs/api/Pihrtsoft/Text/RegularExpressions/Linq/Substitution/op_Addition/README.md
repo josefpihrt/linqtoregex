@@ -23,7 +23,7 @@
 Concatenate two elements into a new [Substitution](../README.md)\.
 
 ```csharp
-public static Substitution operator +(char left, Substitution right)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Substitution operator +(char left, Pihrtsoft.Text.RegularExpressions.Linq.Substitution right)
 ```
 
 ### Parameters
@@ -53,7 +53,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Concatenate two elements into a new [Substitution](../README.md)\.
 
 ```csharp
-public static Substitution operator +(string left, Substitution right)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Substitution operator +(string left, Pihrtsoft.Text.RegularExpressions.Linq.Substitution right)
 ```
 
 ### Parameters
@@ -83,7 +83,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Concatenate two elements into a new [Substitution](../README.md)\.
 
 ```csharp
-public static Substitution operator +(Substitution left, char right)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Substitution operator +(Pihrtsoft.Text.RegularExpressions.Linq.Substitution left, char right)
 ```
 
 ### Parameters
@@ -113,7 +113,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Concatenate two elements into a new [Substitution](../README.md)\.
 
 ```csharp
-public static Substitution operator +(Substitution left, string right)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Substitution operator +(Pihrtsoft.Text.RegularExpressions.Linq.Substitution left, string right)
 ```
 
 ### Parameters
@@ -143,7 +143,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Concatenate two elements into a new [Substitution](../README.md)\.
 
 ```csharp
-public static Substitution operator +(Substitution left, Substitution right)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Substitution operator +(Pihrtsoft.Text.RegularExpressions.Linq.Substitution left, Pihrtsoft.Text.RegularExpressions.Linq.Substitution right)
 ```
 
 ### Parameters

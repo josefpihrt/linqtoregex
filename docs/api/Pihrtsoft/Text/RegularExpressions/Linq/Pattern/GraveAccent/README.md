@@ -20,7 +20,7 @@
 Appends a pattern that matches a grave accent\.
 
 ```csharp
-public QuantifiablePattern GraveAccent()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern GraveAccent()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of grave accents\.
 
 ```csharp
-public QuantifiedGroup GraveAccent(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup GraveAccent(int exactCount)
 ```
 
 ### Parameters

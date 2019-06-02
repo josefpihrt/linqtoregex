@@ -11,7 +11,7 @@
 Returns a pattern that matches a character from the specified Unicode block\.
 
 ```csharp
-public static CharGrouping NamedBlock(NamedBlock block)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping NamedBlock(Pihrtsoft.Text.RegularExpressions.Linq.NamedBlock block)
 ```
 
 ### Parameters

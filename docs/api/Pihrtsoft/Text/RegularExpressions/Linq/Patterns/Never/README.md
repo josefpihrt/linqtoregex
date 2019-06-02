@@ -11,7 +11,7 @@
 Returns an empty negative lookahead assertion\. This pattern is never matched\.
 
 ```csharp
-public static QuantifiablePattern Never()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Never()
 ```
 
 ### Returns

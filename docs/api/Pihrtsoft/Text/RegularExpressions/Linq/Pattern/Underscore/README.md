@@ -20,7 +20,7 @@
 Appends a pattern that matches an underscore\.
 
 ```csharp
-public QuantifiablePattern Underscore()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Underscore()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of underscores\.
 
 ```csharp
-public QuantifiedGroup Underscore(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Underscore(int exactCount)
 ```
 
 ### Parameters

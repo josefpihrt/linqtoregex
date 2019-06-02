@@ -21,7 +21,7 @@
 Returns an empty numbered group\.
 
 ```csharp
-public static QuantifiablePattern Group()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Group()
 ```
 
 ### Returns
@@ -35,7 +35,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Returns a numbered group with a specified content\.
 
 ```csharp
-public static QuantifiablePattern Group(object content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Group(object content)
 ```
 
 ### Parameters
@@ -61,7 +61,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns a numbered group with a specified content\.
 
 ```csharp
-public static QuantifiablePattern Group(params object[] content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Group(params object[] content)
 ```
 
 ### Parameters

@@ -12,7 +12,7 @@ Appends a pattern that matches one or many left parenthesis balanced with one or
 Between the characters can be zero or many characters that are neither left nor right parenthesis\.
 
 ```csharp
-public Pattern BalanceParentheses(string groupName)
+public Pihrtsoft.Text.RegularExpressions.Linq.Pattern BalanceParentheses(string groupName)
 ```
 
 ### Parameters

@@ -21,7 +21,7 @@
 Appends a pattern that matches a specified character zero or more times\.
 
 ```csharp
-public Pattern WhileChar(AsciiChar value)
+public Pihrtsoft.Text.RegularExpressions.Linq.Pattern WhileChar(Pihrtsoft.Text.RegularExpressions.Linq.AsciiChar value)
 ```
 
 ### Parameters
@@ -41,7 +41,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
 Appends a pattern that matches a specified character zero or more times\.
 
 ```csharp
-public Pattern WhileChar(char value)
+public Pihrtsoft.Text.RegularExpressions.Linq.Pattern WhileChar(char value)
 ```
 
 ### Parameters
@@ -61,7 +61,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
 Appends a pattern that matches a specified character zero or more times\.
 
 ```csharp
-public Pattern WhileChar(CharGrouping value)
+public Pihrtsoft.Text.RegularExpressions.Linq.Pattern WhileChar(Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping value)
 ```
 
 ### Parameters

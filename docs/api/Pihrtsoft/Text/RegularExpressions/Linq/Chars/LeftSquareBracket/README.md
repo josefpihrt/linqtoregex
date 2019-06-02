@@ -11,7 +11,7 @@
 Returns a pattern that matches left square bracket\.
 
 ```csharp
-public static CharGrouping LeftSquareBracket()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping LeftSquareBracket()
 ```
 
 ### Returns

@@ -11,7 +11,7 @@
 Gets a description of the specified Unicode category\.
 
 ```csharp
-public static string GetCategoryDescription(GeneralCategory category)
+public static string GetCategoryDescription(Pihrtsoft.Text.RegularExpressions.Linq.GeneralCategory category)
 ```
 
 ### Parameters

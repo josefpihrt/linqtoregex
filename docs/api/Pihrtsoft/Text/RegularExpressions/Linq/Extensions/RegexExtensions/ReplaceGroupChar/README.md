@@ -20,7 +20,7 @@
 Within a specified input string, replaces all groups with the specified number that match the regular expression with a string where each character is replaced with the specified character\.
 
 ```csharp
-public static string ReplaceGroupChar(this Regex regex, string input, char replacementChar, int groupNumber)
+public static string ReplaceGroupChar(this System.Text.RegularExpressions.Regex regex, string input, char replacementChar, int groupNumber)
 ```
 
 ### Parameters
@@ -58,7 +58,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Within a specified input string, replaces all groups with the specified name that match the regular expression with a string where each character is replaced with the specified character\.
 
 ```csharp
-public static string ReplaceGroupChar(this Regex regex, string input, char replacementChar, string groupName)
+public static string ReplaceGroupChar(this System.Text.RegularExpressions.Regex regex, string input, char replacementChar, string groupName)
 ```
 
 ### Parameters

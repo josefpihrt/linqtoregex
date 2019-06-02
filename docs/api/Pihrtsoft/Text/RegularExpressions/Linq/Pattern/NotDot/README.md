@@ -20,7 +20,7 @@
 Appends a pattern that matches a character that is not a dot\.
 
 ```csharp
-public QuantifiablePattern NotDot()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotDot()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of characters that are not a dot\.
 
 ```csharp
-public QuantifiedGroup NotDot(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotDot(int exactCount)
 ```
 
 ### Parameters

@@ -20,7 +20,7 @@
 Returns a pattern that matches a character that is not a number sign\.
 
 ```csharp
-public static QuantifiablePattern NotNumberSign()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotNumberSign()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Returns a pattern that matches a specified number of characters that are not a number sign\.
 
 ```csharp
-public static QuantifiedGroup NotNumberSign(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotNumberSign(int exactCount)
 ```
 
 ### Parameters

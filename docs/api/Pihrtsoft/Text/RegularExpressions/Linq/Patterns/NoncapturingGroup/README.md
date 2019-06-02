@@ -20,7 +20,7 @@
 Returns a noncapturing group with a specified content\.
 
 ```csharp
-public static QuantifiablePattern NoncapturingGroup(object content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NoncapturingGroup(object content)
 ```
 
 ### Parameters
@@ -46,7 +46,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns a noncapturing group with a specified content\.
 
 ```csharp
-public static QuantifiablePattern NoncapturingGroup(params object[] content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NoncapturingGroup(params object[] content)
 ```
 
 ### Parameters

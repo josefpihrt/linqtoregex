@@ -11,7 +11,7 @@
 Represents a zero\-width negative lookahead assertion\. This class cannot be inherited\.
 
 ```csharp
-public sealed class NegativeAssertion : GroupingPattern
+public sealed class NegativeAssertion : Pihrtsoft.Text.RegularExpressions.Linq.GroupingPattern
 ```
 
 ### Inheritance

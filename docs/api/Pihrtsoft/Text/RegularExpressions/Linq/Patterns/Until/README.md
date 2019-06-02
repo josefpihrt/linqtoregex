@@ -11,7 +11,7 @@
 Returns a pattern that matches zero or more characters until it reaches a specified **value**\.
 
 ```csharp
-public static Pattern Until(string value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern Until(string value)
 ```
 
 ### Parameters

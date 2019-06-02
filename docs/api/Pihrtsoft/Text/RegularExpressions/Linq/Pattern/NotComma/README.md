@@ -20,7 +20,7 @@
 Appends a pattern that matches a character that is not a comma\.
 
 ```csharp
-public QuantifiablePattern NotComma()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotComma()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of characters that are not a comma\.
 
 ```csharp
-public QuantifiedGroup NotComma(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotComma(int exactCount)
 ```
 
 ### Parameters

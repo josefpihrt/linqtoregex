@@ -12,7 +12,7 @@ Returns a pattern that matches one or many left angle bracket balanced with one 
 Between the characters can be zero or many characters that are neither left nor right angle bracket\.
 
 ```csharp
-public static Pattern BalanceAngleBrackets(string groupName)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern BalanceAngleBrackets(string groupName)
 ```
 
 ### Parameters

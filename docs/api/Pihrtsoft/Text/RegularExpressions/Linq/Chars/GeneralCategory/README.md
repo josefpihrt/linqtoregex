@@ -11,7 +11,7 @@
 Returns a pattern that matches a character from the specified Unicode category\.
 
 ```csharp
-public static CharGrouping GeneralCategory(GeneralCategory category)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping GeneralCategory(Pihrtsoft.Text.RegularExpressions.Linq.GeneralCategory category)
 ```
 
 ### Parameters

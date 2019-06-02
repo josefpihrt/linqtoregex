@@ -23,7 +23,7 @@
 Returns a pattern that matches specified Unicode character\.
 
 ```csharp
-public static CharGrouping Character(AsciiChar value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Character(Pihrtsoft.Text.RegularExpressions.Linq.AsciiChar value)
 ```
 
 ### Parameters
@@ -43,7 +43,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../../CharGrouping/REA
 Returns a pattern that matches a character from the specified Unicode category\.
 
 ```csharp
-public static CharGrouping Character(GeneralCategory category)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Character(Pihrtsoft.Text.RegularExpressions.Linq.GeneralCategory category)
 ```
 
 ### Parameters
@@ -63,7 +63,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../../CharGrouping/REA
 Returns a pattern that matches specified Unicode character\.
 
 ```csharp
-public static CharGrouping Character(char value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Character(char value)
 ```
 
 ### Parameters
@@ -83,7 +83,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../../CharGrouping/REA
 Returns a pattern that matches a character from the specified Unicode block\.
 
 ```csharp
-public static CharGrouping Character(NamedBlock block)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Character(Pihrtsoft.Text.RegularExpressions.Linq.NamedBlock block)
 ```
 
 ### Parameters
@@ -103,7 +103,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../../CharGrouping/REA
 Returns a pattern that matches any one of the specified characters\.
 
 ```csharp
-public static CharGrouping Character(string characters)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Character(string characters)
 ```
 
 ### Parameters

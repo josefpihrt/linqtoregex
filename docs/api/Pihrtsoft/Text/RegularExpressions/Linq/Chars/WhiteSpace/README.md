@@ -11,7 +11,7 @@
 Returns a pattern that matches a character from the white\-space character class\.
 
 ```csharp
-public static CharGrouping WhiteSpace()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping WhiteSpace()
 ```
 
 ### Returns

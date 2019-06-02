@@ -11,7 +11,7 @@
 Appends a pattern that matches a character from a specified Unicode category\.
 
 ```csharp
-public void AppendGeneralCategory(GeneralCategory category)
+public void AppendGeneralCategory(Pihrtsoft.Text.RegularExpressions.Linq.GeneralCategory category)
 ```
 
 ### Parameters

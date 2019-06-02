@@ -11,7 +11,7 @@
 Appends a pattern that matches one or more characters that are not a word character\.
 
 ```csharp
-public QuantifiedGroup NotWordChars()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotWordChars()
 ```
 
 ### Returns

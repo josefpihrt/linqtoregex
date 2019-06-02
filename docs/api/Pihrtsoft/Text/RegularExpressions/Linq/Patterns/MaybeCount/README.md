@@ -20,7 +20,7 @@
 Returns a pattern that matches specified pattern at most specified number of times\.
 
 ```csharp
-public static QuantifiedGroup MaybeCount(int maxCount, object content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup MaybeCount(int maxCount, object content)
 ```
 
 ### Parameters
@@ -54,7 +54,7 @@ System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/ap
 Returns a pattern that matches any one specified pattern at most specified number of times\.
 
 ```csharp
-public static QuantifiedGroup MaybeCount(int maxCount, object first, params object[] others)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup MaybeCount(int maxCount, object first, params object[] others)
 ```
 
 ### Parameters

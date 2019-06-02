@@ -11,7 +11,7 @@
 Appends a pattern that matches a character that is not from the word character class\.
 
 ```csharp
-public CharGrouping NotWordChar()
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping NotWordChar()
 ```
 
 ### Returns

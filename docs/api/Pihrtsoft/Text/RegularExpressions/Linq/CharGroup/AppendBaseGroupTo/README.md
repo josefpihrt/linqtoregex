@@ -11,7 +11,7 @@
 Appends the text representation of the content of the current instance to the specified [PatternBuilder](../../PatternBuilder/README.md)\.
 
 ```csharp
-public void AppendBaseGroupTo(PatternBuilder builder)
+public void AppendBaseGroupTo(Pihrtsoft.Text.RegularExpressions.Linq.PatternBuilder builder)
 ```
 
 ### Parameters

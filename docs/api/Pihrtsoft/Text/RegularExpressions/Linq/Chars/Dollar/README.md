@@ -11,7 +11,7 @@
 Returns a pattern that matches a dollar character\.
 
 ```csharp
-public static CharGrouping Dollar()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Dollar()
 ```
 
 ### Returns

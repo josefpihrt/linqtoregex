@@ -20,7 +20,7 @@
 Returns a pattern that matches an underscore\.
 
 ```csharp
-public static CharPattern Underscore()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Underscore()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of underscores\.
 
 ```csharp
-public static QuantifiedGroup Underscore(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Underscore(int exactCount)
 ```
 
 ### Parameters

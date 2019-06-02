@@ -11,7 +11,7 @@
 Appends a pattern that matches a linefeed\.
 
 ```csharp
-public CharGrouping Linefeed()
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Linefeed()
 ```
 
 ### Returns

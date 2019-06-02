@@ -11,7 +11,7 @@
 Returns a pattern that matches slash or backslash\.
 
 ```csharp
-public static CharGrouping SlashOrBackslash()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping SlashOrBackslash()
 ```
 
 ### Returns

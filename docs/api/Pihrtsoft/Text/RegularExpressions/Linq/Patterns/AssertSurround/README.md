@@ -20,7 +20,7 @@
 Returns a pattern that matches a specified content with lookbehind assertion on the left side and lookahead assertion on the right side\.
 
 ```csharp
-public static SurroundAssertion AssertSurround(object assertion, object content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.SurroundAssertion AssertSurround(object assertion, object content)
 ```
 
 ### Parameters
@@ -50,7 +50,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns a pattern that matches a specified content with lookbehind assertion on the left side and lookahead assertion on the right side\.
 
 ```csharp
-public static SurroundAssertion AssertSurround(object backAssertion, object content, object assertion)
+public static Pihrtsoft.Text.RegularExpressions.Linq.SurroundAssertion AssertSurround(object backAssertion, object content, object assertion)
 ```
 
 ### Parameters

@@ -11,7 +11,7 @@
 Appends a substitution pattern that substitutes all the text of the input string after the match\.
 
 ```csharp
-public Substitution AfterMatch()
+public Pihrtsoft.Text.RegularExpressions.Linq.Substitution AfterMatch()
 ```
 
 ### Returns

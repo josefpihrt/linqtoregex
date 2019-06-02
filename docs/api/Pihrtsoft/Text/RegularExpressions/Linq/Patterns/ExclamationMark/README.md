@@ -20,7 +20,7 @@
 Returns a pattern that matches an exclamation mark\.
 
 ```csharp
-public static CharPattern ExclamationMark()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern ExclamationMark()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of exclamation marks\.
 
 ```csharp
-public static QuantifiedGroup ExclamationMark(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup ExclamationMark(int exactCount)
 ```
 
 ### Parameters

@@ -20,7 +20,7 @@
 Returns a pattern that matches a character that is not a hexadecimal digit\.
 
 ```csharp
-public static CharGroup NotHexadecimalDigit()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotHexadecimalDigit()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../../CharGroup/README.md
 Returns a pattern that matches a character that is not a hexadecimal digit specified number of times\.
 
 ```csharp
-public static QuantifiedGroup NotHexadecimalDigit(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotHexadecimalDigit(int exactCount)
 ```
 
 ### Parameters

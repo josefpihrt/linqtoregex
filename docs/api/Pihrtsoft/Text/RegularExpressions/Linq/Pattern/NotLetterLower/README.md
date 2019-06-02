@@ -20,7 +20,7 @@
 Appends a pattern that matches a character that is not a character from [GeneralCategory.LetterLowercase](../../GeneralCategory/LetterLowercase/README.md)\.
 
 ```csharp
-public QuantifiablePattern NotLetterLower()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotLetterLower()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a character that is not a character from [GeneralCategory.LetterLowercase](../../GeneralCategory/LetterLowercase/README.md) specified number of times\.
 
 ```csharp
-public QuantifiedGroup NotLetterLower(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotLetterLower(int exactCount)
 ```
 
 ### Parameters

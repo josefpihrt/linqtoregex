@@ -11,7 +11,7 @@
 Returns a pattern that matches a right angle bracket \(greater\-than sign\)\.
 
 ```csharp
-public static CharGrouping RightAngleBracket()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping RightAngleBracket()
 ```
 
 ### Returns

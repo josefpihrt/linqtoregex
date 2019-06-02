@@ -11,7 +11,7 @@
 Returns a pattern that matches right square bracket\.
 
 ```csharp
-public static CharGrouping RightSquareBracket()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping RightSquareBracket()
 ```
 
 ### Returns

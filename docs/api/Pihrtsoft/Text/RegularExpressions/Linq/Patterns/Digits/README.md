@@ -11,7 +11,7 @@
 Returns a pattern that matches one or more digit characters\.
 
 ```csharp
-public static QuantifiedGroup Digits()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Digits()
 ```
 
 ### Returns

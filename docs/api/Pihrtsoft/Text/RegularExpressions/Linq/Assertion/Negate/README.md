@@ -11,7 +11,7 @@
 Returns an instance of the [NegativeAssertion](../../NegativeAssertion/README.md) class\.
 
 ```csharp
-public NegativeAssertion Negate()
+public Pihrtsoft.Text.RegularExpressions.Linq.NegativeAssertion Negate()
 ```
 
 ### Returns

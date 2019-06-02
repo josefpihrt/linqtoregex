@@ -20,7 +20,7 @@
 Returns a pattern that matches a tilde\.
 
 ```csharp
-public static CharPattern Tilde()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Tilde()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of tildes\.
 
 ```csharp
-public static QuantifiedGroup Tilde(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Tilde(int exactCount)
 ```
 
 ### Parameters

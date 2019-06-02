@@ -11,7 +11,7 @@
 Provides enumerated values to use when creating a text representation of a pattern\.
 
 ```csharp
-[System.FlagsAttribute]
+[System.Flags]
 public enum PatternOptions
 ```
 

@@ -21,7 +21,7 @@
 Searches the specified input string and returns enumerable collection of regular expression matches\.
 
 ```csharp
-public static IEnumerable<Match> EnumerateMatches(this Regex regex, string input)
+public static System.Collections.Generic.IEnumerable<System.Text.RegularExpressions.Match> EnumerateMatches(this System.Text.RegularExpressions.Regex regex, string input)
 ```
 
 ### Parameters
@@ -36,7 +36,7 @@ The string to search for a match\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Match](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.match)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.Text\.RegularExpressions\.[Match](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.match)>
 
 ### Exceptions
 
@@ -51,7 +51,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Searches the specified input string beginning at the specified position and returns enumerable collection of regular expression matches\.
 
 ```csharp
-public static IEnumerable<Match> EnumerateMatches(this Regex regex, string input, int startAt)
+public static System.Collections.Generic.IEnumerable<System.Text.RegularExpressions.Match> EnumerateMatches(this System.Text.RegularExpressions.Regex regex, string input, int startAt)
 ```
 
 ### Parameters
@@ -70,7 +70,7 @@ The position at which to start the search\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Match](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.match)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.Text\.RegularExpressions\.[Match](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.match)>
 
 ### Exceptions
 
@@ -89,7 +89,7 @@ System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/ap
 Searches the specified input string beginning at the specified position and searching only the specified number of characters and returns enumerable collection of regular expression matches\.
 
 ```csharp
-public static IEnumerable<Match> EnumerateMatches(this Regex regex, string input, int beginning, int length)
+public static System.Collections.Generic.IEnumerable<System.Text.RegularExpressions.Match> EnumerateMatches(this System.Text.RegularExpressions.Regex regex, string input, int beginning, int length)
 ```
 
 ### Parameters
@@ -112,7 +112,7 @@ A number of characters to be searched\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Match](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.match)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.Text\.RegularExpressions\.[Match](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.match)>
 
 ### Exceptions
 

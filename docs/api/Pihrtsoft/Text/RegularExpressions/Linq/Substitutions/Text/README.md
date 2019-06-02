@@ -20,7 +20,7 @@
 Returns a substitution pattern with a specified character\.
 
 ```csharp
-public static Substitution Text(char value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Substitution Text(char value)
 ```
 
 ### Parameters
@@ -40,7 +40,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Substitution](../../Substitution/REA
 Returns a substitution pattern with a specified text\.
 
 ```csharp
-public static Substitution Text(string value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Substitution Text(string value)
 ```
 
 ### Parameters

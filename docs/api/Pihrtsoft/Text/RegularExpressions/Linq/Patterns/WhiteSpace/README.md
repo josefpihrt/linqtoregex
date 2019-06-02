@@ -20,7 +20,7 @@
 Returns a pattern that matches a white\-space character\.
 
 ```csharp
-public static CharPattern WhiteSpace()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern WhiteSpace()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of white\-space characters\.
 
 ```csharp
-public static QuantifiedGroup WhiteSpace(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup WhiteSpace(int exactCount)
 ```
 
 ### Parameters

@@ -20,7 +20,7 @@
 Appends a named group with a specified name and content\.
 
 ```csharp
-public QuantifiablePattern NamedGroup(string name, object content)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NamedGroup(string name, object content)
 ```
 
 ### Parameters
@@ -54,7 +54,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Appends a named group with a specified name and content\.
 
 ```csharp
-public QuantifiablePattern NamedGroup(string name, params object[] content)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NamedGroup(string name, params object[] content)
 ```
 
 ### Parameters

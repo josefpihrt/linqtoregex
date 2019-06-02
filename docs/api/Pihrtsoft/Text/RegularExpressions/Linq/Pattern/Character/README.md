@@ -24,7 +24,7 @@
 Appends a pattern that matches a specified character\.
 
 ```csharp
-public QuantifiablePattern Character(AsciiChar value)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Character(Pihrtsoft.Text.RegularExpressions.Linq.AsciiChar value)
 ```
 
 ### Parameters
@@ -44,7 +44,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a character from a specified Unicode category\.
 
 ```csharp
-public QuantifiablePattern Character(GeneralCategory category)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Character(Pihrtsoft.Text.RegularExpressions.Linq.GeneralCategory category)
 ```
 
 ### Parameters
@@ -64,7 +64,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified character\.
 
 ```csharp
-public QuantifiablePattern Character(char value)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Character(char value)
 ```
 
 ### Parameters
@@ -84,7 +84,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a character from a specified [CharGrouping](../../CharGrouping/README.md)\.
 
 ```csharp
-public QuantifiablePattern Character(CharGrouping value)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Character(Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping value)
 ```
 
 ### Parameters
@@ -110,7 +110,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Appends a pattern that matches a character from a specified Unicode block\.
 
 ```csharp
-public QuantifiablePattern Character(NamedBlock block)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Character(Pihrtsoft.Text.RegularExpressions.Linq.NamedBlock block)
 ```
 
 ### Parameters
@@ -130,7 +130,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a character from a specified [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)\.
 
 ```csharp
-public QuantifiablePattern Character(string characters)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Character(string characters)
 ```
 
 ### Parameters

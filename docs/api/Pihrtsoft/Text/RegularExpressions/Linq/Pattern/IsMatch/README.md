@@ -46,7 +46,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Indicates whether the current instance finds a match in the specified input string, using the specified matching options\.
 
 ```csharp
-public bool IsMatch(string input, RegexOptions options)
+public bool IsMatch(string input, System.Text.RegularExpressions.RegexOptions options)
 ```
 
 ### Parameters

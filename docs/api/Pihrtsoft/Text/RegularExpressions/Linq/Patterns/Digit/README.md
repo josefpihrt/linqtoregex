@@ -20,7 +20,7 @@
 Returns a pattern that matches a digit character\.
 
 ```csharp
-public static CharPattern Digit()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Digit()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of digit characters\.
 
 ```csharp
-public static QuantifiedGroup Digit(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Digit(int exactCount)
 ```
 
 ### Parameters

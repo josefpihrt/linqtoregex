@@ -11,7 +11,7 @@
 Specifies that previous element must be matched zero or more times\.
 
 ```csharp
-public QuantifiedPattern MaybeMany()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern MaybeMany()
 ```
 
 ### Returns

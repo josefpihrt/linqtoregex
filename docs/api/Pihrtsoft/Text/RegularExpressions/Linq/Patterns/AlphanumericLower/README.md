@@ -20,7 +20,7 @@
 Returns a pattern that matches a lower\-case alphanumeric character\. Alphanumeric character is a latin alphabet lower\-case letter or an arabic digit\.
 
 ```csharp
-public static QuantifiablePattern AlphanumericLower()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern AlphanumericLower()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Returns a pattern that matches a specified number of lower\-case alphanumeric characters\. Alphanumeric character is a latin alphabet lower\-case letter or an arabic digit\.
 
 ```csharp
-public static QuantifiedGroup AlphanumericLower(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup AlphanumericLower(int exactCount)
 ```
 
 ### Parameters

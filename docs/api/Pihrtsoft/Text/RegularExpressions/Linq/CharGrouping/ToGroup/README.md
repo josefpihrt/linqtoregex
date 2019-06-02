@@ -11,7 +11,7 @@
 Converts the current instance of the [CharGrouping](../README.md) to the positive character group\.
 
 ```csharp
-public CharGroup ToGroup()
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGroup ToGroup()
 ```
 
 ### Returns

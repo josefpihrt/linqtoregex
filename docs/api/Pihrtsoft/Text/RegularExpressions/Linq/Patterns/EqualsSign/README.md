@@ -20,7 +20,7 @@
 Returns a pattern that matches an equals sign\.
 
 ```csharp
-public static CharPattern EqualsSign()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern EqualsSign()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of equals signs\.
 
 ```csharp
-public static QuantifiedGroup EqualsSign(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup EqualsSign(int exactCount)
 ```
 
 ### Parameters

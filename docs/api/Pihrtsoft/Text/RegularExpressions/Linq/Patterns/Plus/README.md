@@ -20,7 +20,7 @@
 Returns a pattern that matches a plus\.
 
 ```csharp
-public static CharPattern Plus()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Plus()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of pluses\.
 
 ```csharp
-public static QuantifiedGroup Plus(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Plus(int exactCount)
 ```
 
 ### Parameters

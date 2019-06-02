@@ -24,7 +24,7 @@
 Appends a pattern that matches a specified character\.
 
 ```csharp
-public void AppendCharGroup(AsciiChar value)
+public void AppendCharGroup(Pihrtsoft.Text.RegularExpressions.Linq.AsciiChar value)
 ```
 
 ### Parameters
@@ -40,7 +40,7 @@ An enumerated constant that identifies ASCII character\.
 Appends a pattern that matches a character from a specified Unicode category\.
 
 ```csharp
-public void AppendCharGroup(GeneralCategory category)
+public void AppendCharGroup(Pihrtsoft.Text.RegularExpressions.Linq.GeneralCategory category)
 ```
 
 ### Parameters
@@ -82,7 +82,7 @@ System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/ap
 Appends a character group containing specified [CharGrouping](../../CharGrouping/README.md)\.
 
 ```csharp
-public void AppendCharGroup(CharGrouping value)
+public void AppendCharGroup(Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping value)
 ```
 
 ### Parameters
@@ -104,7 +104,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Appends a pattern that matches a character from a specified Unicode block\.
 
 ```csharp
-public void AppendCharGroup(NamedBlock block)
+public void AppendCharGroup(Pihrtsoft.Text.RegularExpressions.Linq.NamedBlock block)
 ```
 
 ### Parameters

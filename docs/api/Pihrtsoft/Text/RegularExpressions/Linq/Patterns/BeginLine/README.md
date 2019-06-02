@@ -11,7 +11,7 @@
 Returns a pattern that is matched at the beginning of the line\.
 
 ```csharp
-public static QuantifiablePattern BeginLine()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern BeginLine()
 ```
 
 ### Returns

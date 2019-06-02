@@ -20,7 +20,7 @@
 Appends a pattern that matches an arabic digit\.
 
 ```csharp
-public QuantifiablePattern ArabicDigit()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern ArabicDigit()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of arabic digits\.
 
 ```csharp
-public QuantifiedGroup ArabicDigit(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup ArabicDigit(int exactCount)
 ```
 
 ### Parameters

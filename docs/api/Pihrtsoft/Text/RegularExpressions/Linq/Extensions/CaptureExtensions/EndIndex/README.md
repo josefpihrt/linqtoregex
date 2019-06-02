@@ -11,7 +11,7 @@
 Returns a sum of index and length of a specified **capture**\.
 
 ```csharp
-public static int EndIndex(this Capture capture)
+public static int EndIndex(this System.Text.RegularExpressions.Capture capture)
 ```
 
 ### Parameters

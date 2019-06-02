@@ -11,7 +11,7 @@
 Appends a pattern that matches a character from a specified base group except characters from a specified excluded group\.
 
 ```csharp
-public void AppendSubtraction(IBaseGroup baseGroup, IExcludedGroup excludedGroup)
+public void AppendSubtraction(Pihrtsoft.Text.RegularExpressions.Linq.IBaseGroup baseGroup, Pihrtsoft.Text.RegularExpressions.Linq.IExcludedGroup excludedGroup)
 ```
 
 ### Parameters

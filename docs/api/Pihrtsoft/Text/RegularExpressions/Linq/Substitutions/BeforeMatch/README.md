@@ -11,7 +11,7 @@
 Returns a substitution pattern that substitutes all the text of the input string before the match\.
 
 ```csharp
-public static Substitution BeforeMatch()
+public static Pihrtsoft.Text.RegularExpressions.Linq.Substitution BeforeMatch()
 ```
 
 ### Returns

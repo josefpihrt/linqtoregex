@@ -31,7 +31,7 @@ The string to split\.
 
 ### Returns
 
-String\[\]
+System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)\[\]
 
 ## Split\(String, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Split_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
 
@@ -40,7 +40,7 @@ String\[\]
 Splits the specified input string at the positions defined by the current instance, using the specified matching options\.
 
 ```csharp
-public string[] Split(string input, RegexOptions options)
+public string[] Split(string input, System.Text.RegularExpressions.RegexOptions options)
 ```
 
 ### Parameters
@@ -55,5 +55,5 @@ A bitwise combination of the enumeration values that specify options for matchin
 
 ### Returns
 
-String\[\]
+System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)\[\]
 

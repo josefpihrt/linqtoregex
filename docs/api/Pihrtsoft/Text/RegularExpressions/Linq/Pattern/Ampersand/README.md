@@ -20,7 +20,7 @@
 Appends a pattern that matches an ampersand\.
 
 ```csharp
-public QuantifiablePattern Ampersand()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Ampersand()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of ampersands\.
 
 ```csharp
-public QuantifiedGroup Ampersand(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Ampersand(int exactCount)
 ```
 
 ### Parameters

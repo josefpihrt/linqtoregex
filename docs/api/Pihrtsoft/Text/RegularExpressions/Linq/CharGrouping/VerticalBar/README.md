@@ -11,7 +11,7 @@
 Appends a pattern that matches a vertical bar\.
 
 ```csharp
-public CharGrouping VerticalBar()
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping VerticalBar()
 ```
 
 ### Returns

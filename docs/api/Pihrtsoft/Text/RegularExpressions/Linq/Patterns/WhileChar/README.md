@@ -21,7 +21,7 @@
 Returns a pattern that matches a specified character zero or more times\.
 
 ```csharp
-public static QuantifiedPattern WhileChar(AsciiChar value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileChar(Pihrtsoft.Text.RegularExpressions.Linq.AsciiChar value)
 ```
 
 ### Parameters
@@ -41,7 +41,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedPattern](../../QuantifiedP
 Returns a pattern that matches a specified character zero or more times\.
 
 ```csharp
-public static QuantifiedPattern WhileChar(char value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileChar(char value)
 ```
 
 ### Parameters
@@ -61,7 +61,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedPattern](../../QuantifiedP
 Returns a pattern that matches a specified character zero or more times\.
 
 ```csharp
-public static QuantifiedPattern WhileChar(CharGrouping value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileChar(Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping value)
 ```
 
 ### Parameters

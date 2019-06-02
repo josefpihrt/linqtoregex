@@ -11,7 +11,7 @@
 Appends a pattern that matches a quotation mark\.
 
 ```csharp
-public CharGrouping QuoteMark()
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping QuoteMark()
 ```
 
 ### Returns

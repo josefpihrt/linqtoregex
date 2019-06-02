@@ -20,7 +20,7 @@
 Appends a pattern that matches a digit character\.
 
 ```csharp
-public QuantifiablePattern Digit()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Digit()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of digit characters\.
 
 ```csharp
-public QuantifiedGroup Digit(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Digit(int exactCount)
 ```
 
 ### Parameters

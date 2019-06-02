@@ -20,7 +20,7 @@
 Appends a pattern that matches a character that is not a plus\.
 
 ```csharp
-public QuantifiablePattern NotPlus()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotPlus()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of characters that are not a plus\.
 
 ```csharp
-public QuantifiedGroup NotPlus(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotPlus(int exactCount)
 ```
 
 ### Parameters

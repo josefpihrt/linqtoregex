@@ -20,7 +20,7 @@
 Appends a pattern that matches a vertical bar\.
 
 ```csharp
-public QuantifiablePattern VerticalBar()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern VerticalBar()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of vertical bars\.
 
 ```csharp
-public QuantifiedGroup VerticalBar(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup VerticalBar(int exactCount)
 ```
 
 ### Parameters

@@ -20,7 +20,7 @@
 Returns a pattern that matches a character from [GeneralCategory.LetterUppercase](../../GeneralCategory/LetterUppercase/README.md)\.
 
 ```csharp
-public static QuantifiablePattern LetterUpper()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern LetterUpper()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Returns a pattern that matches a specified number of letters from [GeneralCategory.LetterUppercase](../../GeneralCategory/LetterUppercase/README.md)\.
 
 ```csharp
-public static QuantifiedGroup LetterUpper(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup LetterUpper(int exactCount)
 ```
 
 ### Parameters

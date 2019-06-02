@@ -20,7 +20,7 @@
 Appends a pattern that matches a left angle bracket \(less\-than sign\)\.
 
 ```csharp
-public QuantifiablePattern LeftAngleBracket()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern LeftAngleBracket()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of left angle brackets \(less\-than signs\)\.
 
 ```csharp
-public QuantifiedGroup LeftAngleBracket(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup LeftAngleBracket(int exactCount)
 ```
 
 ### Parameters

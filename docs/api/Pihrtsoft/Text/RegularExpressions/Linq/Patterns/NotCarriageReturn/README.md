@@ -20,7 +20,7 @@
 Returns a pattern that matches a character that is not a carriage return\.
 
 ```csharp
-public static QuantifiablePattern NotCarriageReturn()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotCarriageReturn()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Returns a pattern that matches a specified number of characters that are not a carriage return\.
 
 ```csharp
-public static QuantifiedGroup NotCarriageReturn(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotCarriageReturn(int exactCount)
 ```
 
 ### Parameters

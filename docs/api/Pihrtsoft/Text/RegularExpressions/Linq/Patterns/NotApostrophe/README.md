@@ -20,7 +20,7 @@
 Returns a pattern that matches a character that is not an apostrophe\.
 
 ```csharp
-public static QuantifiablePattern NotApostrophe()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotApostrophe()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Returns a pattern that matches a specified number of characters that are not an apostrophe\.
 
 ```csharp
-public static QuantifiedGroup NotApostrophe(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotApostrophe(int exactCount)
 ```
 
 ### Parameters

@@ -20,7 +20,7 @@
 Returns a pattern that matches a dot\.
 
 ```csharp
-public static CharPattern Dot()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Dot()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of dots\.
 
 ```csharp
-public static QuantifiedGroup Dot(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Dot(int exactCount)
 ```
 
 ### Parameters

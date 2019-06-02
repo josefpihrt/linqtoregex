@@ -11,7 +11,7 @@
 Appends the text representation of the current instance of the character subtraction to the specified [PatternBuilder](../../PatternBuilder/README.md)\.
 
 ```csharp
-public void AppendExcludedGroupTo(PatternBuilder builder)
+public void AppendExcludedGroupTo(Pihrtsoft.Text.RegularExpressions.Linq.PatternBuilder builder)
 ```
 
 ### Parameters

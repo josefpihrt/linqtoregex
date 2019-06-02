@@ -20,7 +20,7 @@
 Appends a pattern that is matched at the end of the string \(or line if the [RegexOptions.Multiline](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions.multiline) option is applied\)\. End of line is defined as the position before a linefeed\.
 
 ```csharp
-public QuantifiablePattern EndInputOrLine()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern EndInputOrLine()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that is matched \(before carriage return\) at the end of the string \(or \(before carriage return\) at the end of line if the [RegexOptions.Multiline](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions.multiline) option is applied\)\. End of line is defined as the position before a linefeed\.
 
 ```csharp
-public QuantifiablePattern EndInputOrLine(bool beforeCarriageReturn)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern EndInputOrLine(bool beforeCarriageReturn)
 ```
 
 ### Parameters

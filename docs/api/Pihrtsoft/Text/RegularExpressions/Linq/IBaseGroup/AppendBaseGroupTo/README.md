@@ -11,7 +11,7 @@
 Appends the text representation of the base group to the specified [PatternBuilder](../../PatternBuilder/README.md)\.
 
 ```csharp
-void AppendBaseGroupTo(PatternBuilder builder)
+void AppendBaseGroupTo(Pihrtsoft.Text.RegularExpressions.Linq.PatternBuilder builder)
 ```
 
 ### Parameters

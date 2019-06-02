@@ -11,7 +11,7 @@
 Returns a pattern that matches a latin alphabet letter, an arabic digit or an underscore\.
 
 ```csharp
-public static CharGrouping AlphanumericUnderscore()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping AlphanumericUnderscore()
 ```
 
 ### Returns

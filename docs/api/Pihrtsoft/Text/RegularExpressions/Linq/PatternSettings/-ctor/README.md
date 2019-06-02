@@ -30,7 +30,7 @@ public PatternSettings()
 Initializes a new instance of the [PatternSettings](../README.md) class with a specified options\.
 
 ```csharp
-public PatternSettings(PatternOptions options)
+public PatternSettings(Pihrtsoft.Text.RegularExpressions.Linq.PatternOptions options)
 ```
 
 ### Parameters

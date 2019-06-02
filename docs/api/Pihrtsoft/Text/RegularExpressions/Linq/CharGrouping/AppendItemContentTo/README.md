@@ -11,7 +11,7 @@
 Appends a core content of the current instance to a specified [PatternBuilder](../../PatternBuilder/README.md)\.
 
 ```csharp
-protected abstract void AppendItemContentTo(PatternBuilder builder)
+protected abstract void AppendItemContentTo(Pihrtsoft.Text.RegularExpressions.Linq.PatternBuilder builder)
 ```
 
 ### Parameters

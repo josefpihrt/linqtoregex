@@ -20,7 +20,7 @@
 Returns a group that has a specified number and it is contained in a specified match\.
 
 ```csharp
-public static Group Group(this Match match, int groupNumber)
+public static System.Text.RegularExpressions.Group Group(this System.Text.RegularExpressions.Match match, int groupNumber)
 ```
 
 ### Parameters
@@ -50,7 +50,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns a group that has a specified name and it is contained in a specified match\.
 
 ```csharp
-public static Group Group(this Match match, string groupName)
+public static System.Text.RegularExpressions.Group Group(this System.Text.RegularExpressions.Match match, string groupName)
 ```
 
 ### Parameters

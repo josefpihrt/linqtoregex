@@ -11,7 +11,7 @@
 Gets the [PatternSettings](../../PatternSettings/README.md) object that modifies the pattern\.
 
 ```csharp
-public PatternSettings Settings { get; }
+public Pihrtsoft.Text.RegularExpressions.Linq.PatternSettings Settings { get; }
 ```
 
 ### Property Value

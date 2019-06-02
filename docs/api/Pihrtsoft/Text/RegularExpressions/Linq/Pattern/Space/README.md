@@ -20,7 +20,7 @@
 Appends a pattern that matches a space\.
 
 ```csharp
-public QuantifiablePattern Space()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Space()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of spaces\.
 
 ```csharp
-public QuantifiedGroup Space(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Space(int exactCount)
 ```
 
 ### Parameters

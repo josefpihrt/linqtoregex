@@ -11,7 +11,7 @@
 Returns a pattern that matches an ampersand\.
 
 ```csharp
-public static CharGrouping Ampersand()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Ampersand()
 ```
 
 ### Returns

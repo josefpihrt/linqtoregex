@@ -20,7 +20,7 @@
 Returns a pattern that matches a left curly bracket\.
 
 ```csharp
-public static CharPattern LeftCurlyBracket()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern LeftCurlyBracket()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of left curly brackets\.
 
 ```csharp
-public static QuantifiedGroup LeftCurlyBracket(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup LeftCurlyBracket(int exactCount)
 ```
 
 ### Parameters

@@ -11,7 +11,7 @@
 Returns enumerable collection of captures values\.
 
 ```csharp
-public static IEnumerable<string> EnumerateValues(this IEnumerable<Capture> captures)
+public static System.Collections.Generic.IEnumerable<string> EnumerateValues(this System.Collections.Generic.IEnumerable<System.Text.RegularExpressions.Capture> captures)
 ```
 
 ### Parameters
@@ -22,7 +22,7 @@ The sequence to enumerate\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 
 ### Exceptions
 

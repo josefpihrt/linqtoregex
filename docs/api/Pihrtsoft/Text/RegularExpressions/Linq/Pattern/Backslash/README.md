@@ -20,7 +20,7 @@
 Appends a pattern that matches a backslash\.
 
 ```csharp
-public QuantifiablePattern Backslash()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Backslash()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of backslashes\.
 
 ```csharp
-public QuantifiedGroup Backslash(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Backslash(int exactCount)
 ```
 
 ### Parameters

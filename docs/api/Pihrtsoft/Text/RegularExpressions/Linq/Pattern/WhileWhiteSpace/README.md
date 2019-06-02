@@ -11,7 +11,7 @@
 Appends a pattern that matches a white\-space character zero or more times\.
 
 ```csharp
-public QuantifiedPattern WhileWhiteSpace()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileWhiteSpace()
 ```
 
 ### Returns

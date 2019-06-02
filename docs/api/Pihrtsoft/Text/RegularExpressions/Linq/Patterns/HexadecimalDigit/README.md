@@ -20,7 +20,7 @@
 Returns a pattern that matches a hexadecimal digit\.
 
 ```csharp
-public static CharGroup HexadecimalDigit()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup HexadecimalDigit()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../../CharGroup/README.md
 Returns a pattern that matches a specified number of hexadecimal digits\.
 
 ```csharp
-public static QuantifiedGroup HexadecimalDigit(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup HexadecimalDigit(int exactCount)
 ```
 
 ### Parameters

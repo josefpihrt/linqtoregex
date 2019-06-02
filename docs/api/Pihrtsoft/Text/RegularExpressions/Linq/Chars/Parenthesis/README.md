@@ -11,7 +11,7 @@
 Returns a pattern that matches left or right parenthesis\.
 
 ```csharp
-public static CharGrouping Parenthesis()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Parenthesis()
 ```
 
 ### Returns

@@ -21,7 +21,7 @@
 Returns a pattern that matches two quotation marks \(apostrophes\), allowing zero or more characters that are not a quotation mark \(apostrophe\) between the quotation marks \(apostrophes\)\.
 
 ```csharp
-public static QuantifiablePattern SurroundQuoteMarksOrApostrophes()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern SurroundQuoteMarksOrApostrophes()
 ```
 
 ### Returns
@@ -35,7 +35,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Returns a pattern that matches specified pattern surrounded with quotation marks or apostrophes\.
 
 ```csharp
-public static QuantifiablePattern SurroundQuoteMarksOrApostrophes(object content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern SurroundQuoteMarksOrApostrophes(object content)
 ```
 
 ### Parameters
@@ -61,7 +61,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns a pattern that matches specified content surrounded with quotation marks or apostrophes\.
 
 ```csharp
-public static QuantifiablePattern SurroundQuoteMarksOrApostrophes(params object[] content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern SurroundQuoteMarksOrApostrophes(params object[] content)
 ```
 
 ### Parameters

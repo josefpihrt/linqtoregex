@@ -20,7 +20,7 @@
 Returns a pattern that matches any character except linefeed \(or any character if the [RegexOptions.Singleline](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions.singleline) option is applied\)\.
 
 ```csharp
-public static QuantifiablePattern AnyNative()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern AnyNative()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Returns a pattern that matches any character except linefeed \(or any character if the [RegexOptions.Singleline](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions.singleline) option is applied\) specified number of times\.
 
 ```csharp
-public static QuantifiedGroup AnyNative(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup AnyNative(int exactCount)
 ```
 
 ### Parameters

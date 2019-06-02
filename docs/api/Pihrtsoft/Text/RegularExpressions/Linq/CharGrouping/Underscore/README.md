@@ -11,7 +11,7 @@
 Appends a pattern that matches an underscore\.
 
 ```csharp
-public CharGrouping Underscore()
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Underscore()
 ```
 
 ### Returns

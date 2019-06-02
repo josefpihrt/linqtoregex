@@ -11,7 +11,7 @@
 Returns a patterns that matches what is not matched by the current instance\.
 
 ```csharp
-public static CharGroup operator !(CharPattern value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup operator !(Pihrtsoft.Text.RegularExpressions.Linq.CharPattern value)
 ```
 
 ### Parameters

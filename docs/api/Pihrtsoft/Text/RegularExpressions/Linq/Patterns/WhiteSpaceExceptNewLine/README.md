@@ -20,7 +20,7 @@
 Returns a pattern that matches a white\-space character except carriage return and linefeed\.
 
 ```csharp
-public static CharSubtraction WhiteSpaceExceptNewLine()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharSubtraction WhiteSpaceExceptNewLine()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharSubtraction](../../CharSubtracti
 Returns a pattern that matches a white\-space character except carriage return and linefeed\. The character has to be matched specified number of times\.
 
 ```csharp
-public static QuantifiedGroup WhiteSpaceExceptNewLine(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup WhiteSpaceExceptNewLine(int exactCount)
 ```
 
 ### Parameters

@@ -20,7 +20,7 @@
 Returns a pattern that matches a comma\.
 
 ```csharp
-public static CharPattern Comma()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Comma()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of commas\.
 
 ```csharp
-public static QuantifiedGroup Comma(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Comma(int exactCount)
 ```
 
 ### Parameters

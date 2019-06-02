@@ -12,7 +12,7 @@ Returns a pattern that matches one or many left curly bracket balanced with one 
 Between the characters can be zero or many characters that are neither left nor right curly bracket\.
 
 ```csharp
-public static Pattern BalanceCurlyBrackets(string groupName)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern BalanceCurlyBrackets(string groupName)
 ```
 
 ### Parameters

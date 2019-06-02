@@ -20,7 +20,7 @@
 Returns a pattern that matches a character from [GeneralCategory.LetterLowercase](../../GeneralCategory/LetterLowercase/README.md)\.
 
 ```csharp
-public static QuantifiablePattern LetterLower()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern LetterLower()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Returns a pattern that matches a specified number of letters from [GeneralCategory.LetterLowercase](../../GeneralCategory/LetterLowercase/README.md)\.
 
 ```csharp
-public static QuantifiedGroup LetterLower(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup LetterLower(int exactCount)
 ```
 
 ### Parameters

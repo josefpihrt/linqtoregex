@@ -20,7 +20,7 @@
 Returns a pattern that matches a character that is not an ampersand\.
 
 ```csharp
-public static QuantifiablePattern NotAmpersand()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotAmpersand()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Returns a pattern that matches a specified number of characters that are not an ampersand\.
 
 ```csharp
-public static QuantifiedGroup NotAmpersand(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotAmpersand(int exactCount)
 ```
 
 ### Parameters

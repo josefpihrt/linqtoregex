@@ -20,7 +20,7 @@
 Returns a pattern that matches a left parenthesis\.
 
 ```csharp
-public static CharPattern LeftParenthesis()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern LeftParenthesis()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of left parentheses\.
 
 ```csharp
-public static QuantifiedGroup LeftParenthesis(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup LeftParenthesis(int exactCount)
 ```
 
 ### Parameters

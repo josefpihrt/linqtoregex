@@ -20,7 +20,7 @@
 Returns a pattern that matches a vertical bar\.
 
 ```csharp
-public static CharPattern VerticalBar()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern VerticalBar()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of vertical bars\.
 
 ```csharp
-public static QuantifiedGroup VerticalBar(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup VerticalBar(int exactCount)
 ```
 
 ### Parameters

@@ -20,7 +20,7 @@
 Appends a pattern that matches a character that is not an exclamation mark\.
 
 ```csharp
-public QuantifiablePattern NotExclamationMark()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotExclamationMark()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of characters that are not an exclamation mark\.
 
 ```csharp
-public QuantifiedGroup NotExclamationMark(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotExclamationMark(int exactCount)
 ```
 
 ### Parameters

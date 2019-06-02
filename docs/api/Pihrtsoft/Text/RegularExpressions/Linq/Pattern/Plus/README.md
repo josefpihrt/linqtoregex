@@ -20,7 +20,7 @@
 Appends a pattern that matches a plus\.
 
 ```csharp
-public QuantifiablePattern Plus()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Plus()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of pluses\.
 
 ```csharp
-public QuantifiedGroup Plus(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Plus(int exactCount)
 ```
 
 ### Parameters

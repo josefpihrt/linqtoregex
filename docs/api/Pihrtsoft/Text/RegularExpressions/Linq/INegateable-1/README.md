@@ -11,7 +11,7 @@
 Supports negation of a pattern\.
 
 ```csharp
-public interface INegateable<TPattern> where TPattern : Pattern
+public interface INegateable<TPattern> where TPattern : Pihrtsoft.Text.RegularExpressions.Linq.Pattern
 ```
 
 ### Type Parameters

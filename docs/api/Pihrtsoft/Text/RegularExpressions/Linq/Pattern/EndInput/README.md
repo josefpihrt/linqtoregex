@@ -11,7 +11,7 @@
 Appends a pattern that is matched at the end of the string\.
 
 ```csharp
-public QuantifiablePattern EndInput()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern EndInput()
 ```
 
 ### Returns

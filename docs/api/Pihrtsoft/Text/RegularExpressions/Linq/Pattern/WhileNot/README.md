@@ -11,7 +11,7 @@
 Appends a pattern that matches zero or more characters that are not followed with a specified **value**\.
 
 ```csharp
-public Pattern WhileNot(string value)
+public Pihrtsoft.Text.RegularExpressions.Linq.Pattern WhileNot(string value)
 ```
 
 ### Parameters

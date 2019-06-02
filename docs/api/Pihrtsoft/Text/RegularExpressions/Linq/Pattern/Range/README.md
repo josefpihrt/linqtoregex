@@ -11,7 +11,7 @@
 Appends a pattern that matches a character in the specified range\.
 
 ```csharp
-public QuantifiablePattern Range(char first, char last)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Range(char first, char last)
 ```
 
 ### Parameters

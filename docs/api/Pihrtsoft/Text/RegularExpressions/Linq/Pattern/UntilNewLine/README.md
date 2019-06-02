@@ -11,7 +11,7 @@
 Appends a pattern that matches zero or more characters until it reaches a linefeed\.
 
 ```csharp
-public QuantifiablePattern UntilNewLine()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern UntilNewLine()
 ```
 
 ### Returns

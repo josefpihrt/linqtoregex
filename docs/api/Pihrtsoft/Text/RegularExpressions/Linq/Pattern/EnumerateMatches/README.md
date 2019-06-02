@@ -20,7 +20,7 @@
 Searches the specified input string and returns an enumerable collection of matches\.
 
 ```csharp
-public IEnumerable<Match> EnumerateMatches(string input)
+public System.Collections.Generic.IEnumerable<System.Text.RegularExpressions.Match> EnumerateMatches(string input)
 ```
 
 ### Parameters
@@ -31,7 +31,7 @@ The string to search for a match\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Match](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.match)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.Text\.RegularExpressions\.[Match](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.match)>
 
 ### Exceptions
 
@@ -46,7 +46,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Searches the specified input string and returns an enumerable collection of matches, using the specified matching options\.
 
 ```csharp
-public IEnumerable<Match> EnumerateMatches(string input, RegexOptions options)
+public System.Collections.Generic.IEnumerable<System.Text.RegularExpressions.Match> EnumerateMatches(string input, System.Text.RegularExpressions.RegexOptions options)
 ```
 
 ### Parameters
@@ -61,7 +61,7 @@ A bitwise combination of the enumeration values that specify options for matchin
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Match](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.match)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.Text\.RegularExpressions\.[Match](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.match)>
 
 ### Exceptions
 

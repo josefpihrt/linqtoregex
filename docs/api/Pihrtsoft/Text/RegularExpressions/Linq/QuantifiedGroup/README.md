@@ -11,7 +11,7 @@
 Represents a pattern that is quantified, i\.e\. the quantifier is applied on it\. If required, pattern will be enclosed in the \(noncapturing\) group\. This class is abstract\.
 
 ```csharp
-public abstract class QuantifiedGroup : QuantifiedPattern
+public abstract class QuantifiedGroup : Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern
 ```
 
 ### Inheritance

@@ -11,7 +11,7 @@
 Gets a designation of the specified Unicode block\.
 
 ```csharp
-public static string GetBlockDesignation(NamedBlock block)
+public static string GetBlockDesignation(Pihrtsoft.Text.RegularExpressions.Linq.NamedBlock block)
 ```
 
 ### Parameters

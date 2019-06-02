@@ -11,7 +11,7 @@
 Returns enumerable collection of group of a specified match\.
 
 ```csharp
-public static IEnumerable<Group> EnumerateGroups(this Match match)
+public static System.Collections.Generic.IEnumerable<System.Text.RegularExpressions.Group> EnumerateGroups(this System.Text.RegularExpressions.Match match)
 ```
 
 ### Parameters
@@ -22,7 +22,7 @@ A regular expression match\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.Text\.RegularExpressions\.[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)>
 
 ### Exceptions
 

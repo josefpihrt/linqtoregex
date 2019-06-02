@@ -11,7 +11,7 @@
 Matches an arabic digit\.
 
 ```csharp
-public CharGrouping ArabicDigit()
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping ArabicDigit()
 ```
 
 ### Returns

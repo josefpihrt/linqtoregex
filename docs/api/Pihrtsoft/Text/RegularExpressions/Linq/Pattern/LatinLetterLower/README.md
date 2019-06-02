@@ -20,7 +20,7 @@
 Appends a pattern that matches a latin alphabet lower\-case letter\.
 
 ```csharp
-public QuantifiablePattern LatinLetterLower()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern LatinLetterLower()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of latin alphabet lower\-case letters\.
 
 ```csharp
-public QuantifiedGroup LatinLetterLower(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup LatinLetterLower(int exactCount)
 ```
 
 ### Parameters

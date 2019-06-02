@@ -20,7 +20,7 @@
 Appends a pattern that matches a character that is not an right angle bracket \(greater\-than sign\)\.
 
 ```csharp
-public QuantifiablePattern NotRightAngleBracket()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotRightAngleBracket()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of characters that are not a right angle bracket \(greater\-than sign\)\.
 
 ```csharp
-public QuantifiedGroup NotRightAngleBracket(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotRightAngleBracket(int exactCount)
 ```
 
 ### Parameters

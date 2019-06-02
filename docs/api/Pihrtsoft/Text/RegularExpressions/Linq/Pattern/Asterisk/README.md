@@ -20,7 +20,7 @@
 Appends a pattern that matches an asterisk\.
 
 ```csharp
-public QuantifiablePattern Asterisk()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Asterisk()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of asterisks\.
 
 ```csharp
-public QuantifiedGroup Asterisk(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Asterisk(int exactCount)
 ```
 
 ### Parameters

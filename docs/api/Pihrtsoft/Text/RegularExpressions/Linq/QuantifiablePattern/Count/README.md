@@ -20,7 +20,7 @@
 Specifies that previous element must be matched a specified number of times\.
 
 ```csharp
-public QuantifiedPattern Count(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern Count(int exactCount)
 ```
 
 ### Parameters
@@ -46,7 +46,7 @@ System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/ap
 Specifies that previous element must be matched from minimal to maximum times\.
 
 ```csharp
-public QuantifiedPattern Count(int minCount, int maxCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern Count(int minCount, int maxCount)
 ```
 
 ### Parameters

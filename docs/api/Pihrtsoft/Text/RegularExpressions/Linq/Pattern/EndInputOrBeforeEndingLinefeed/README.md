@@ -11,7 +11,7 @@
 Appends a pattern that is matched at the end of the string or before linefeed at the end of the string\.
 
 ```csharp
-public QuantifiablePattern EndInputOrBeforeEndingLinefeed()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern EndInputOrBeforeEndingLinefeed()
 ```
 
 ### Returns

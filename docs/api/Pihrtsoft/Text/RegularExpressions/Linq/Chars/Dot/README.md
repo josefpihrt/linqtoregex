@@ -11,7 +11,7 @@
 Returns a pattern that matches a period\.
 
 ```csharp
-public static CharGrouping Dot()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Dot()
 ```
 
 ### Returns

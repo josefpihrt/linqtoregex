@@ -11,7 +11,7 @@
 Specifies that the quantifier is lazy\. Quantified pattern will be matched as few times as possible\.
 
 ```csharp
-public Pattern Lazy()
+public Pihrtsoft.Text.RegularExpressions.Linq.Pattern Lazy()
 ```
 
 ### Returns

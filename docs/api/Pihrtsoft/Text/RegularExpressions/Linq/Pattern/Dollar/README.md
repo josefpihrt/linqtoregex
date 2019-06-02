@@ -20,7 +20,7 @@
 Appends a pattern that matches a dollar\.
 
 ```csharp
-public QuantifiablePattern Dollar()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Dollar()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of dollars\.
 
 ```csharp
-public QuantifiedGroup Dollar(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Dollar(int exactCount)
 ```
 
 ### Parameters

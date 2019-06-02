@@ -26,7 +26,7 @@
 Appends specified character to this instance\.
 
 ```csharp
-public void Append(AsciiChar value)
+public void Append(Pihrtsoft.Text.RegularExpressions.Linq.AsciiChar value)
 ```
 
 ### Parameters
@@ -80,7 +80,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Appends the text representation of the pattern to this instance\.
 
 ```csharp
-public void Append(CharGrouping value)
+public void Append(Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping value)
 ```
 
 ### Parameters
@@ -134,7 +134,7 @@ The object to append\.
 Appends the text representation of the pattern to this instance\.
 
 ```csharp
-public void Append(Pattern pattern)
+public void Append(Pihrtsoft.Text.RegularExpressions.Linq.Pattern pattern)
 ```
 
 ### Parameters

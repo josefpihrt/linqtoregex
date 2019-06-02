@@ -20,7 +20,7 @@
 Appends a pattern that matches a white\-space character except carriage return and linefeed\.
 
 ```csharp
-public QuantifiablePattern WhiteSpaceExceptNewLine()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern WhiteSpaceExceptNewLine()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a white\-space character except carriage return and linefeed\. The character has to be matched specified number of times\.
 
 ```csharp
-public QuantifiedGroup WhiteSpaceExceptNewLine(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup WhiteSpaceExceptNewLine(int exactCount)
 ```
 
 ### Parameters

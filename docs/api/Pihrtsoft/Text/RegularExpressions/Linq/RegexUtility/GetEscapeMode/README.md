@@ -20,7 +20,7 @@
 Gets a value indicating how a specified character is represented in the regular expression pattern\.
 
 ```csharp
-public static CharEscapeMode GetEscapeMode(char value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharEscapeMode GetEscapeMode(char value)
 ```
 
 ### Parameters
@@ -40,7 +40,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharEscapeMode](../../CharEscapeMode
 Gets a value indicating how a specified character is represented in the regular expression pattern, specifying whether the character is inside or outside of the character group\.
 
 ```csharp
-public static CharEscapeMode GetEscapeMode(char value, bool inCharGroup)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharEscapeMode GetEscapeMode(char value, bool inCharGroup)
 ```
 
 ### Parameters

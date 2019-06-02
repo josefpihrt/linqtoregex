@@ -4,6 +4,7 @@
  /t:Clean,Build ^
  /p:Configuration=Release,TreatWarningsAsErrors=true,WarningsNotAsErrors=1591 ^
  /v:normal ^
+ /fl ^
  /m
 
 if errorlevel 1 (

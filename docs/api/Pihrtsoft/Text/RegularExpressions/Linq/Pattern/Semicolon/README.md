@@ -20,7 +20,7 @@
 Appends a pattern that matches a semicolon\.
 
 ```csharp
-public QuantifiablePattern Semicolon()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Semicolon()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of semicolons\.
 
 ```csharp
-public QuantifiedGroup Semicolon(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Semicolon(int exactCount)
 ```
 
 ### Parameters

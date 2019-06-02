@@ -20,7 +20,7 @@
 Returns a pattern that matches an ampersand\.
 
 ```csharp
-public static CharPattern Ampersand()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Ampersand()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of ampersands\.
 
 ```csharp
-public static QuantifiedGroup Ampersand(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Ampersand(int exactCount)
 ```
 
 ### Parameters

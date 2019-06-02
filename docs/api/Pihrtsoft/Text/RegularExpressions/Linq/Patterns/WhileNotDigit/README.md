@@ -11,7 +11,7 @@
 Returns a pattern that matches zero or more characters that are not a digit\.
 
 ```csharp
-public static QuantifiedPattern WhileNotDigit()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileNotDigit()
 ```
 
 ### Returns

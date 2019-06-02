@@ -20,7 +20,7 @@
 Appends a noncapturing group with a specified content\.
 
 ```csharp
-public QuantifiablePattern NoncapturingGroup(object content)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NoncapturingGroup(object content)
 ```
 
 ### Parameters
@@ -46,7 +46,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Appends a noncapturing group with a specified content\.
 
 ```csharp
-public QuantifiablePattern NoncapturingGroup(params object[] content)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NoncapturingGroup(params object[] content)
 ```
 
 ### Parameters

@@ -11,7 +11,7 @@
 Appends a pattern that matches a left angle bracket \(less\-than sign\)\.
 
 ```csharp
-public CharGrouping LeftAngleBracket()
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping LeftAngleBracket()
 ```
 
 ### Returns

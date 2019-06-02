@@ -24,7 +24,7 @@
 Searches the specified input string and returns an enumerable collection of groups that contain at least one capture\.
 
 ```csharp
-public IEnumerable<Group> EnumerateSuccessGroups(string input)
+public System.Collections.Generic.IEnumerable<System.Text.RegularExpressions.Group> EnumerateSuccessGroups(string input)
 ```
 
 ### Parameters
@@ -35,7 +35,7 @@ The string to search for a match\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.Text\.RegularExpressions\.[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)>
 
 ### Exceptions
 
@@ -50,7 +50,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Searches the specified input string and returns an enumerable collection of groups that have a specified number and contain at least one capture\.
 
 ```csharp
-public IEnumerable<Group> EnumerateSuccessGroups(string input, int groupNumber)
+public System.Collections.Generic.IEnumerable<System.Text.RegularExpressions.Group> EnumerateSuccessGroups(string input, int groupNumber)
 ```
 
 ### Parameters
@@ -65,7 +65,7 @@ A valid number of the group\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.Text\.RegularExpressions\.[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)>
 
 ### Exceptions
 
@@ -80,7 +80,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Searches the specified input string and returns an enumerable collection of groups that have a specified number and contain at least one capture, using the specified matching options\.
 
 ```csharp
-public IEnumerable<Group> EnumerateSuccessGroups(string input, int groupNumber, RegexOptions options)
+public System.Collections.Generic.IEnumerable<System.Text.RegularExpressions.Group> EnumerateSuccessGroups(string input, int groupNumber, System.Text.RegularExpressions.RegexOptions options)
 ```
 
 ### Parameters
@@ -99,7 +99,7 @@ A bitwise combination of the enumeration values that specify options for matchin
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.Text\.RegularExpressions\.[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)>
 
 ### Exceptions
 
@@ -114,7 +114,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Searches the specified input string and returns an enumerable collection of groups that contain at least one capture, using the specified matching options\.
 
 ```csharp
-public IEnumerable<Group> EnumerateSuccessGroups(string input, RegexOptions options)
+public System.Collections.Generic.IEnumerable<System.Text.RegularExpressions.Group> EnumerateSuccessGroups(string input, System.Text.RegularExpressions.RegexOptions options)
 ```
 
 ### Parameters
@@ -129,7 +129,7 @@ A bitwise combination of the enumeration values that specify options for matchin
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.Text\.RegularExpressions\.[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)>
 
 ### Exceptions
 
@@ -144,7 +144,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Searches the specified input string and returns an enumerable collection of groups that have a specified name and contain at least one capture\.
 
 ```csharp
-public IEnumerable<Group> EnumerateSuccessGroups(string input, string groupName)
+public System.Collections.Generic.IEnumerable<System.Text.RegularExpressions.Group> EnumerateSuccessGroups(string input, string groupName)
 ```
 
 ### Parameters
@@ -159,7 +159,7 @@ A name of the group\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.Text\.RegularExpressions\.[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)>
 
 ### Exceptions
 
@@ -174,7 +174,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Searches the specified input string and returns an enumerable collection of groups that have a specified name and contain at least one capture, using the specified matching options\.
 
 ```csharp
-public IEnumerable<Group> EnumerateSuccessGroups(string input, string groupName, RegexOptions options)
+public System.Collections.Generic.IEnumerable<System.Text.RegularExpressions.Group> EnumerateSuccessGroups(string input, string groupName, System.Text.RegularExpressions.RegexOptions options)
 ```
 
 ### Parameters
@@ -193,7 +193,7 @@ A bitwise combination of the enumeration values that specify options for matchin
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.Text\.RegularExpressions\.[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)>
 
 ### Exceptions
 

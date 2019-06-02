@@ -20,7 +20,7 @@
 Returns a pattern that matches an alphanumeric character or an underscore\. Alphanumeric character is a latin alphabet letter or an arabic digit\.
 
 ```csharp
-public static CharGroup AlphanumericUnderscore()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup AlphanumericUnderscore()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../../CharGroup/README.md
 Returns a pattern that matches an alphanumeric character or an underscore specified number of times\. Alphanumeric character is a latin alphabet letter or an arabic digit\.
 
 ```csharp
-public static QuantifiedGroup AlphanumericUnderscore(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup AlphanumericUnderscore(int exactCount)
 ```
 
 ### Parameters

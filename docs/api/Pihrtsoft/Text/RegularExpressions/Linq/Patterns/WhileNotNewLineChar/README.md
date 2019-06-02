@@ -11,7 +11,7 @@
 Returns a pattern that matches zero or more characters that are neither a carriage return nor a linefeed\.
 
 ```csharp
-public static QuantifiedPattern WhileNotNewLineChar()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileNotNewLineChar()
 ```
 
 ### Returns

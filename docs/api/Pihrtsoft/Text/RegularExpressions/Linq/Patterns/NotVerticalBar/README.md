@@ -20,7 +20,7 @@
 Returns a pattern that matches a character that is not a vertical bar\.
 
 ```csharp
-public static QuantifiablePattern NotVerticalBar()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotVerticalBar()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Returns a pattern that matches a specified number of characters that are not a vertical bar\.
 
 ```csharp
-public static QuantifiedGroup NotVerticalBar(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotVerticalBar(int exactCount)
 ```
 
 ### Parameters

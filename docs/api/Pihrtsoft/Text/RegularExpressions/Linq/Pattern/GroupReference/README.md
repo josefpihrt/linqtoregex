@@ -20,7 +20,7 @@
 Appends a pattern that matches previously defined numbered group\.
 
 ```csharp
-public QuantifiablePattern GroupReference(int groupNumber)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern GroupReference(int groupNumber)
 ```
 
 ### Parameters
@@ -46,7 +46,7 @@ System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/ap
 Appends a pattern that matches previously defined named group\.
 
 ```csharp
-public QuantifiablePattern GroupReference(string groupName)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern GroupReference(string groupName)
 ```
 
 ### Parameters

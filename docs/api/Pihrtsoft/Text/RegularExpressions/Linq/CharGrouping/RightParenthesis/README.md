@@ -11,7 +11,7 @@
 Appends a pattern that matches right parenthesis\.
 
 ```csharp
-public CharGrouping RightParenthesis()
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping RightParenthesis()
 ```
 
 ### Returns

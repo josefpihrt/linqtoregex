@@ -20,7 +20,7 @@
 Appends a pattern that matches an apostrophe\.
 
 ```csharp
-public QuantifiablePattern Apostrophe()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Apostrophe()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of apostrophes\.
 
 ```csharp
-public QuantifiedGroup Apostrophe(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Apostrophe(int exactCount)
 ```
 
 ### Parameters

@@ -20,7 +20,7 @@
 Returns a pattern that matches a colon\.
 
 ```csharp
-public static CharPattern Colon()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Colon()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of colons\.
 
 ```csharp
-public static QuantifiedGroup Colon(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Colon(int exactCount)
 ```
 
 ### Parameters

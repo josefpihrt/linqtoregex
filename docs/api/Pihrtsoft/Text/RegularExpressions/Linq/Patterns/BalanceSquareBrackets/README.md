@@ -12,7 +12,7 @@ Returns a pattern that matches one or many left square bracket balanced with one
 Between the characters can be zero or many characters that are neither left nor right square bracket\.
 
 ```csharp
-public static Pattern BalanceSquareBrackets(string groupName)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern BalanceSquareBrackets(string groupName)
 ```
 
 ### Parameters

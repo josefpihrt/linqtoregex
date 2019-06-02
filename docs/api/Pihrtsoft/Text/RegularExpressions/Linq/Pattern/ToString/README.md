@@ -35,7 +35,7 @@ System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 Constructs a pattern text that represents the current instance with options that modify the pattern\.
 
 ```csharp
-public string ToString(PatternOptions options)
+public string ToString(Pihrtsoft.Text.RegularExpressions.Linq.PatternOptions options)
 ```
 
 ### Parameters
@@ -55,7 +55,7 @@ System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 Constructs a pattern text that represents the current instance with settings that modify the pattern\.
 
 ```csharp
-public string ToString(PatternSettings settings)
+public string ToString(Pihrtsoft.Text.RegularExpressions.Linq.PatternSettings settings)
 ```
 
 ### Parameters

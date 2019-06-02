@@ -20,7 +20,7 @@
 Returns a pattern that matches a character that is not a hyphen\.
 
 ```csharp
-public static QuantifiablePattern NotHyphen()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotHyphen()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Returns a pattern that matches a specified number of characters that are not a hyphen\.
 
 ```csharp
-public static QuantifiedGroup NotHyphen(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotHyphen(int exactCount)
 ```
 
 ### Parameters

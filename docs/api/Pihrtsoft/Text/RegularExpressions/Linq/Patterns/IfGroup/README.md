@@ -22,7 +22,7 @@
 Returns an if construct with a content to match if the numbered group is matched\.
 
 ```csharp
-public static QuantifiablePattern IfGroup(int groupNumber, object trueContent)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern IfGroup(int groupNumber, object trueContent)
 ```
 
 ### Parameters
@@ -56,7 +56,7 @@ System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/ap
 Returns an if construct with a content to match if the numbered group is matched and a content to match if the numbered group is not matched\.
 
 ```csharp
-public static QuantifiablePattern IfGroup(int groupNumber, object trueContent, object falseContent)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern IfGroup(int groupNumber, object trueContent, object falseContent)
 ```
 
 ### Parameters
@@ -94,7 +94,7 @@ System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/ap
 Returns an if construct with a content to match if the named group is matched\.
 
 ```csharp
-public static QuantifiablePattern IfGroup(string groupName, object trueContent)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern IfGroup(string groupName, object trueContent)
 ```
 
 ### Parameters
@@ -128,7 +128,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns an if construct with a content to match if the named group is matched and a content to match if the named group is not matched\.
 
 ```csharp
-public static QuantifiablePattern IfGroup(string groupName, object trueContent, object falseContent)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern IfGroup(string groupName, object trueContent, object falseContent)
 ```
 
 ### Parameters

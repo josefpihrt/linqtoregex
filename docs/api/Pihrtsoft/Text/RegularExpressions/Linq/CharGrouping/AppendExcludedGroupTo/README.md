@@ -11,7 +11,7 @@
 Appends the text representation of the character group containing the current instance to the specified [PatternBuilder](../../PatternBuilder/README.md)\.
 
 ```csharp
-public void AppendExcludedGroupTo(PatternBuilder builder)
+public void AppendExcludedGroupTo(Pihrtsoft.Text.RegularExpressions.Linq.PatternBuilder builder)
 ```
 
 ### Parameters

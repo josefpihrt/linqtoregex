@@ -20,7 +20,7 @@
 Returns a pattern that matches a hyphen\.
 
 ```csharp
-public static CharPattern Hyphen()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Hyphen()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of hyphens\.
 
 ```csharp
-public static QuantifiedGroup Hyphen(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Hyphen(int exactCount)
 ```
 
 ### Parameters

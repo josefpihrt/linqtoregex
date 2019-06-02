@@ -20,7 +20,7 @@
 Appends a specified character to the substitution pattern\.
 
 ```csharp
-public Substitution Text(char value)
+public Pihrtsoft.Text.RegularExpressions.Linq.Substitution Text(char value)
 ```
 
 ### Parameters
@@ -40,7 +40,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Substitution](../README.md)
 Appends a specified text to the substitution pattern\.
 
 ```csharp
-public Substitution Text(string value)
+public Pihrtsoft.Text.RegularExpressions.Linq.Substitution Text(string value)
 ```
 
 ### Parameters

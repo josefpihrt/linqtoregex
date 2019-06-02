@@ -20,7 +20,7 @@
 Appends a pattern that matches a tab\.
 
 ```csharp
-public QuantifiablePattern Tab()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Tab()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of tabs\.
 
 ```csharp
-public QuantifiedGroup Tab(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Tab(int exactCount)
 ```
 
 ### Parameters

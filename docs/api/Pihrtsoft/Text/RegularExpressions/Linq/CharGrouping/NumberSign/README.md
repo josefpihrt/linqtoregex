@@ -11,7 +11,7 @@
 Appends a pattern that matches a number sign\.
 
 ```csharp
-public CharGrouping NumberSign()
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping NumberSign()
 ```
 
 ### Returns

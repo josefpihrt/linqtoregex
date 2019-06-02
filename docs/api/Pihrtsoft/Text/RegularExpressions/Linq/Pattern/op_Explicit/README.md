@@ -20,7 +20,7 @@
 Converts specified character to a pattern\.
 
 ```csharp
-public static explicit operator Pattern(char value)
+public static explicit operator Pihrtsoft.Text.RegularExpressions.Linq.Pattern(char value)
 ```
 
 ### Parameters
@@ -40,7 +40,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
 Converts specified text to a pattern\.
 
 ```csharp
-public static explicit operator Pattern(string text)
+public static explicit operator Pihrtsoft.Text.RegularExpressions.Linq.Pattern(string text)
 ```
 
 ### Parameters

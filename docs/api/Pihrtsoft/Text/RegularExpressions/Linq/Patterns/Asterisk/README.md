@@ -20,7 +20,7 @@
 Returns a pattern that matches an asterisk\.
 
 ```csharp
-public static CharPattern Asterisk()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Asterisk()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of asterisks\.
 
 ```csharp
-public static QuantifiedGroup Asterisk(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Asterisk(int exactCount)
 ```
 
 ### Parameters

@@ -11,7 +11,7 @@
 Specifies that previous element must be matched one or more times\.
 
 ```csharp
-public QuantifiedPattern OneMany()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern OneMany()
 ```
 
 ### Returns

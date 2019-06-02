@@ -11,7 +11,7 @@
 Appends the text representation of the excluded group to the specified [PatternBuilder](../../PatternBuilder/README.md)\.
 
 ```csharp
-void AppendExcludedGroupTo(PatternBuilder builder)
+void AppendExcludedGroupTo(Pihrtsoft.Text.RegularExpressions.Linq.PatternBuilder builder)
 ```
 
 ### Parameters

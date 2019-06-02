@@ -20,7 +20,7 @@
 Returns a pattern that matches a character that is not a latin alphabet letter\.
 
 ```csharp
-public static CharGroup NotLatinLetter()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotLatinLetter()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../../CharGroup/README.md
 Returns a pattern that matches a character that is not a latin alphabet letter specified number of times\.
 
 ```csharp
-public static QuantifiedGroup NotLatinLetter(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotLatinLetter(int exactCount)
 ```
 
 ### Parameters

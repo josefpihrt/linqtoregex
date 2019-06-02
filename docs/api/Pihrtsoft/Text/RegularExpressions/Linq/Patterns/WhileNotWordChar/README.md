@@ -11,7 +11,7 @@
 Returns a pattern that matches zero or more characters that are not a word character\.
 
 ```csharp
-public static QuantifiedPattern WhileNotWordChar()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileNotWordChar()
 ```
 
 ### Returns

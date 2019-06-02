@@ -20,7 +20,7 @@
 Returns a pattern that matches a character that is not a quote mark\.
 
 ```csharp
-public static QuantifiablePattern NotQuoteMark()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotQuoteMark()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Returns a pattern that matches a specified number of characters that are not a quote mark\.
 
 ```csharp
-public static QuantifiedGroup NotQuoteMark(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotQuoteMark(int exactCount)
 ```
 
 ### Parameters

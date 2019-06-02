@@ -20,7 +20,7 @@
 Returns a pattern that matches a dollar\.
 
 ```csharp
-public static CharPattern Dollar()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Dollar()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of dollars\.
 
 ```csharp
-public static QuantifiedGroup Dollar(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Dollar(int exactCount)
 ```
 
 ### Parameters

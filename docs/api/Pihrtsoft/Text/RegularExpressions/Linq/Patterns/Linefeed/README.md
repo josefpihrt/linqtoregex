@@ -20,7 +20,7 @@
 Returns a pattern that matches a linefeed\.
 
 ```csharp
-public static CharPattern Linefeed()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Linefeed()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of linefeeds\.
 
 ```csharp
-public static QuantifiedGroup Linefeed(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Linefeed(int exactCount)
 ```
 
 ### Parameters

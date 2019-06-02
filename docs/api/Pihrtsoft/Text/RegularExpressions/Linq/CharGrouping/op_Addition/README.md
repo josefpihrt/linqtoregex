@@ -23,7 +23,7 @@
 Concatenate two elements into a new [CharGrouping](../README.md)\.
 
 ```csharp
-public static CharGrouping operator +(char left, CharGrouping right)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping operator +(char left, Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping right)
 ```
 
 ### Parameters
@@ -53,7 +53,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Concatenate two elements into a new [CharGrouping](../README.md)\.
 
 ```csharp
-public static CharGrouping operator +(CharGrouping left, char right)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping operator +(Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping left, char right)
 ```
 
 ### Parameters
@@ -83,7 +83,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Concatenate two elements into a new [CharGrouping](../README.md)\.
 
 ```csharp
-public static CharGrouping operator +(CharGrouping left, CharGrouping right)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping operator +(Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping left, Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping right)
 ```
 
 ### Parameters
@@ -113,7 +113,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Concatenate two elements into a new [CharGrouping](../README.md)\.
 
 ```csharp
-public static CharGrouping operator +(CharGrouping left, string right)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping operator +(Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping left, string right)
 ```
 
 ### Parameters
@@ -143,7 +143,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Concatenate two elements into a new [CharGrouping](../README.md)\.
 
 ```csharp
-public static CharGrouping operator +(string left, CharGrouping right)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping operator +(string left, Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping right)
 ```
 
 ### Parameters

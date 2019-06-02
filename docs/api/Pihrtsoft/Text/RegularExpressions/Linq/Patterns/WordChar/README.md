@@ -20,7 +20,7 @@
 Returns a pattern that matches a word character\.
 
 ```csharp
-public static CharPattern WordChar()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern WordChar()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of word characters\.
 
 ```csharp
-public static QuantifiedGroup WordChar(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup WordChar(int exactCount)
 ```
 
 ### Parameters

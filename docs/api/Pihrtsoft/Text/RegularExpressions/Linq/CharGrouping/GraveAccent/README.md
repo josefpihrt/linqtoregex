@@ -11,7 +11,7 @@
 Appends a pattern that matches a grave accent\.
 
 ```csharp
-public CharGrouping GraveAccent()
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping GraveAccent()
 ```
 
 ### Returns

@@ -11,7 +11,7 @@
 Returns a pattern that matches zero or more characters that are not a white\-space\.
 
 ```csharp
-public static QuantifiedPattern WhileNotWhiteSpace()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileNotWhiteSpace()
 ```
 
 ### Returns

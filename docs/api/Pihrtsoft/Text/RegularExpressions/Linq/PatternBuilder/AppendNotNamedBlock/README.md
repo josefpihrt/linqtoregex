@@ -11,7 +11,7 @@
 Appends a pattern that matches a character that is not from a specified Unicode block\.
 
 ```csharp
-public void AppendNotNamedBlock(NamedBlock block)
+public void AppendNotNamedBlock(Pihrtsoft.Text.RegularExpressions.Linq.NamedBlock block)
 ```
 
 ### Parameters

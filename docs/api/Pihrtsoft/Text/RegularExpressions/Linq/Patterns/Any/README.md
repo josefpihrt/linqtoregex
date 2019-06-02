@@ -22,7 +22,7 @@
 Returns a pattern that matches any character\.
 
 ```csharp
-public static QuantifiablePattern Any()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Any()
 ```
 
 ### Returns
@@ -36,7 +36,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Returns a pattern that matches any character specified number of times\.
 
 ```csharp
-public static QuantifiedGroup Any(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Any(int exactCount)
 ```
 
 ### Parameters
@@ -62,7 +62,7 @@ System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/ap
 Returns a noncapturing group with a specified content\.
 
 ```csharp
-public static QuantifiablePattern Any(object content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Any(object content)
 ```
 
 ### Parameters
@@ -82,7 +82,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Returns a pattern that matches any one of the patterns specified in the object array\.
 
 ```csharp
-public static QuantifiablePattern Any(params object[] content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Any(params object[] content)
 ```
 
 ### Parameters

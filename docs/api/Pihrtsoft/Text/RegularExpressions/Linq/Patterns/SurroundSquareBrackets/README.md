@@ -21,7 +21,7 @@
 Returns a pattern that matches a text consisting of left and right square bracket, allowing zero or more characters that are not a right square bracket between the brackets\.
 
 ```csharp
-public static Pattern SurroundSquareBrackets()
+public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern SurroundSquareBrackets()
 ```
 
 ### Returns
@@ -35,7 +35,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../../Pattern/README.md)
 Returns a pattern that matches specified pattern surrounded with left and right square bracket\.
 
 ```csharp
-public static Pattern SurroundSquareBrackets(object content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern SurroundSquareBrackets(object content)
 ```
 
 ### Parameters
@@ -61,7 +61,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns a pattern that matches specified content surrounded with left and right square bracket\.
 
 ```csharp
-public static Pattern SurroundSquareBrackets(params object[] content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern SurroundSquareBrackets(params object[] content)
 ```
 
 ### Parameters

@@ -23,7 +23,7 @@
 Returns a pattern that matches zero or more characters that are not a specified character\.
 
 ```csharp
-public static QuantifiedPattern WhileNotChar(AsciiChar value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileNotChar(Pihrtsoft.Text.RegularExpressions.Linq.AsciiChar value)
 ```
 
 ### Parameters
@@ -43,7 +43,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedPattern](../../QuantifiedP
 Returns a pattern that matches zero or more characters that are not a specified character\.
 
 ```csharp
-public static QuantifiedPattern WhileNotChar(char value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileNotChar(char value)
 ```
 
 ### Parameters
@@ -63,7 +63,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedPattern](../../QuantifiedP
 Returns a pattern that matches zero or more characters that are not contained in the specified characters
 
 ```csharp
-public static QuantifiedPattern WhileNotChar(params char[] characters)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileNotChar(params char[] characters)
 ```
 
 ### Parameters
@@ -93,7 +93,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns a pattern that matches zero or more characters that are not matched by a specified [CharGrouping](../../CharGrouping/README.md)\.
 
 ```csharp
-public static QuantifiedPattern WhileNotChar(CharGrouping value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileNotChar(Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping value)
 ```
 
 ### Parameters
@@ -119,7 +119,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns a pattern that matches zero or more characters that are not contained in the specified [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)\.
 
 ```csharp
-public static QuantifiedPattern WhileNotChar(string characters)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileNotChar(string characters)
 ```
 
 ### Parameters

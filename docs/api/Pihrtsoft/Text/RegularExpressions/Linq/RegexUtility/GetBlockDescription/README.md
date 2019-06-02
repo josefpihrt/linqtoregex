@@ -11,7 +11,7 @@
 Gets a description of the specified Unicode block\.
 
 ```csharp
-public static string GetBlockDescription(NamedBlock block)
+public static string GetBlockDescription(Pihrtsoft.Text.RegularExpressions.Linq.NamedBlock block)
 ```
 
 ### Parameters

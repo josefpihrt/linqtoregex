@@ -25,7 +25,7 @@
 Appends a pattern that matches a character that is not a specified character\.
 
 ```csharp
-public QuantifiablePattern NotChar(AsciiChar value)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotChar(Pihrtsoft.Text.RegularExpressions.Linq.AsciiChar value)
 ```
 
 ### Parameters
@@ -45,7 +45,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a character that is not from a specified Unicode category\.
 
 ```csharp
-public QuantifiablePattern NotChar(GeneralCategory category)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotChar(Pihrtsoft.Text.RegularExpressions.Linq.GeneralCategory category)
 ```
 
 ### Parameters
@@ -65,7 +65,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a character that is not a specified character\.
 
 ```csharp
-public QuantifiablePattern NotChar(char value)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotChar(char value)
 ```
 
 ### Parameters
@@ -85,7 +85,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches any character that is not contained in the specified characters\.
 
 ```csharp
-public CharGroup NotChar(params char[] characters)
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotChar(params char[] characters)
 ```
 
 ### Parameters
@@ -115,7 +115,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Appends a negative character group containing specified [CharGrouping](../../CharGrouping/README.md)\.
 
 ```csharp
-public QuantifiablePattern NotChar(CharGrouping value)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotChar(Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping value)
 ```
 
 ### Parameters
@@ -141,7 +141,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Appends a pattern that matches a character that is not from a specified Unicode block\.
 
 ```csharp
-public QuantifiablePattern NotChar(NamedBlock block)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotChar(Pihrtsoft.Text.RegularExpressions.Linq.NamedBlock block)
 ```
 
 ### Parameters
@@ -161,7 +161,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches any character that is not contained in the specified [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)\.
 
 ```csharp
-public QuantifiablePattern NotChar(string characters)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotChar(string characters)
 ```
 
 ### Parameters

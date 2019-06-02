@@ -24,7 +24,7 @@
 Returns a pattern that applies specified options\.
 
 ```csharp
-public static Pattern Options(RegexOptions applyOptions)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern Options(System.Text.RegularExpressions.RegexOptions applyOptions)
 ```
 
 ### Parameters
@@ -44,7 +44,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../../Pattern/README.md)
 Returns a pattern that applies specified options to a specified pattern\.
 
 ```csharp
-public static QuantifiablePattern Options(RegexOptions applyOptions, object content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Options(System.Text.RegularExpressions.RegexOptions applyOptions, object content)
 ```
 
 ### Parameters
@@ -74,7 +74,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns a pattern that applies specified options to a specified pattern\.
 
 ```csharp
-public static QuantifiablePattern Options(RegexOptions applyOptions, params object[] content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Options(System.Text.RegularExpressions.RegexOptions applyOptions, params object[] content)
 ```
 
 ### Parameters
@@ -104,7 +104,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns a pattern that applies and disables specified options to a specified pattern\.
 
 ```csharp
-public static Pattern Options(RegexOptions applyOptions, RegexOptions disableOptions)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern Options(System.Text.RegularExpressions.RegexOptions applyOptions, System.Text.RegularExpressions.RegexOptions disableOptions)
 ```
 
 ### Parameters
@@ -128,7 +128,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../../Pattern/README.md)
 Returns a pattern that applies and disables specified options to a specified pattern\.
 
 ```csharp
-public static QuantifiablePattern Options(RegexOptions applyOptions, RegexOptions disableOptions, object content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Options(System.Text.RegularExpressions.RegexOptions applyOptions, System.Text.RegularExpressions.RegexOptions disableOptions, object content)
 ```
 
 ### Parameters
@@ -162,7 +162,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns a pattern that applies and disables specified options to a specified pattern\.
 
 ```csharp
-public static QuantifiablePattern Options(RegexOptions applyOptions, RegexOptions disableOptions, params object[] content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Options(System.Text.RegularExpressions.RegexOptions applyOptions, System.Text.RegularExpressions.RegexOptions disableOptions, params object[] content)
 ```
 
 ### Parameters

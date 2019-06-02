@@ -20,7 +20,7 @@
 Returns a zero\-width positive lookbehind assertion with a specified content to be matched\.
 
 ```csharp
-public static BackAssertion AssertBack(object content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.BackAssertion AssertBack(object content)
 ```
 
 ### Parameters
@@ -46,7 +46,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns a zero\-width positive lookbehind assertion that matches any one pattern specified in the object array\.
 
 ```csharp
-public static BackAssertion AssertBack(params object[] content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.BackAssertion AssertBack(params object[] content)
 ```
 
 ### Parameters

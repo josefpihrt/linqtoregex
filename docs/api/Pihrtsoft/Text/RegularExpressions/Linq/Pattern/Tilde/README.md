@@ -20,7 +20,7 @@
 Appends a pattern that matches a tilde\.
 
 ```csharp
-public QuantifiablePattern Tilde()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Tilde()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of tildes\.
 
 ```csharp
-public QuantifiedGroup Tilde(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Tilde(int exactCount)
 ```
 
 ### Parameters

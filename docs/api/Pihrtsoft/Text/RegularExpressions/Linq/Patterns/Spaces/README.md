@@ -11,7 +11,7 @@
 Returns a pattern that matches one or more spaces\.
 
 ```csharp
-public static QuantifiedPattern Spaces()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern Spaces()
 ```
 
 ### Returns

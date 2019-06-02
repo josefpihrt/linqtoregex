@@ -11,7 +11,7 @@
 Appends a pattern that matches a slash\.
 
 ```csharp
-public CharGrouping Slash()
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Slash()
 ```
 
 ### Returns

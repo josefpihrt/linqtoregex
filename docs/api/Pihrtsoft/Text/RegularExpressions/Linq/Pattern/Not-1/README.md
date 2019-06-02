@@ -11,7 +11,7 @@
 Appends a pattern that is a negation of the specified pattern\.
 
 ```csharp
-public TPattern Not<TPattern>(INegateable<TPattern> value) where TPattern : Pattern
+public TPattern Not<TPattern>(Pihrtsoft.Text.RegularExpressions.Linq.INegateable<TPattern> value) where TPattern : Pihrtsoft.Text.RegularExpressions.Linq.Pattern
 ```
 
 ### Type Parameters

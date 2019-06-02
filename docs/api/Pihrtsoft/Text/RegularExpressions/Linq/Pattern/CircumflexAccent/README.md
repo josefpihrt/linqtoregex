@@ -20,7 +20,7 @@
 Appends a pattern that matches a circumflex accent\.
 
 ```csharp
-public QuantifiablePattern CircumflexAccent()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern CircumflexAccent()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of circumflex accents\.
 
 ```csharp
-public QuantifiedGroup CircumflexAccent(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup CircumflexAccent(int exactCount)
 ```
 
 ### Parameters

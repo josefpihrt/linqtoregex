@@ -23,7 +23,7 @@
 Appends a pattern that matches specified Unicode character\.
 
 ```csharp
-public CharGrouping Append(AsciiChar value)
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Append(Pihrtsoft.Text.RegularExpressions.Linq.AsciiChar value)
 ```
 
 ### Parameters
@@ -43,7 +43,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../README.md)
 Appends a pattern that matches a character from the specified Unicode category\.
 
 ```csharp
-public CharGrouping Append(GeneralCategory category)
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Append(Pihrtsoft.Text.RegularExpressions.Linq.GeneralCategory category)
 ```
 
 ### Parameters
@@ -63,7 +63,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../README.md)
 Appends a pattern that matches specified Unicode character\.
 
 ```csharp
-public CharGrouping Append(char value)
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Append(char value)
 ```
 
 ### Parameters
@@ -83,7 +83,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../README.md)
 Appends a pattern that matches a character from the specified Unicode block\.
 
 ```csharp
-public CharGrouping Append(NamedBlock block)
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Append(Pihrtsoft.Text.RegularExpressions.Linq.NamedBlock block)
 ```
 
 ### Parameters
@@ -103,7 +103,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../README.md)
 Appends a pattern that matches any one of the specified characters\.
 
 ```csharp
-public CharGrouping Append(string characters)
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Append(string characters)
 ```
 
 ### Parameters

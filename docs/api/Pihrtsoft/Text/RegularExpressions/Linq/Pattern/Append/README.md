@@ -11,7 +11,7 @@
 Appends a pattern that matches a specified content\.
 
 ```csharp
-public Pattern Append(object content)
+public Pihrtsoft.Text.RegularExpressions.Linq.Pattern Append(object content)
 ```
 
 ### Parameters

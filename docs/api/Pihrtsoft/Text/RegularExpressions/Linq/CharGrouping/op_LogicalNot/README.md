@@ -11,7 +11,7 @@
 Converts the current instance to the negative character group\.
 
 ```csharp
-public static CharGroup operator !(CharGrouping value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup operator !(Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping value)
 ```
 
 ### Parameters

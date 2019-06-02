@@ -20,7 +20,7 @@
 Returns a pattern that matches an at sign\.
 
 ```csharp
-public static CharPattern AtSign()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern AtSign()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of at signs\.
 
 ```csharp
-public static QuantifiedGroup AtSign(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup AtSign(int exactCount)
 ```
 
 ### Parameters

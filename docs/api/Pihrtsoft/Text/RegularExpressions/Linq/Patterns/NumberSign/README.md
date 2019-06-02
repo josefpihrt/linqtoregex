@@ -20,7 +20,7 @@
 Returns a pattern that matches a number sign\.
 
 ```csharp
-public static CharPattern NumberSign()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern NumberSign()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of number signs\.
 
 ```csharp
-public static QuantifiedGroup NumberSign(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NumberSign(int exactCount)
 ```
 
 ### Parameters

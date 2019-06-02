@@ -20,7 +20,7 @@
 Appends a pattern that matches an equals sign\.
 
 ```csharp
-public QuantifiablePattern EqualsSign()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern EqualsSign()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of equals signs\.
 
 ```csharp
-public QuantifiedGroup EqualsSign(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup EqualsSign(int exactCount)
 ```
 
 ### Parameters

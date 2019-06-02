@@ -20,7 +20,7 @@
 Returns a pattern that matches a question mark\.
 
 ```csharp
-public static CharPattern QuestionMark()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern QuestionMark()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of question marks\.
 
 ```csharp
-public static QuantifiedGroup QuestionMark(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup QuestionMark(int exactCount)
 ```
 
 ### Parameters

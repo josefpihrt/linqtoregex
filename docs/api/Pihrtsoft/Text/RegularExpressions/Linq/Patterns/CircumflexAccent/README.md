@@ -20,7 +20,7 @@
 Returns a pattern that matches a circumflex accent\.
 
 ```csharp
-public static CharPattern CircumflexAccent()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern CircumflexAccent()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of circumflex accents\.
 
 ```csharp
-public static QuantifiedGroup CircumflexAccent(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup CircumflexAccent(int exactCount)
 ```
 
 ### Parameters

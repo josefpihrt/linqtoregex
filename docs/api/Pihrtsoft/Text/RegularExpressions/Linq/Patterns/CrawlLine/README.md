@@ -11,7 +11,7 @@
 Returns a pattern that matches any character except linefeed and carriage return zero or more times but as few times as possible\.
 
 ```csharp
-public static Pattern CrawlLine()
+public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern CrawlLine()
 ```
 
 ### Returns

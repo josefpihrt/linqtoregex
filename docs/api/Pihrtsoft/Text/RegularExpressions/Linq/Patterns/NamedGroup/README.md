@@ -20,7 +20,7 @@
 Returns a named group with a specified name and content\.
 
 ```csharp
-public static QuantifiablePattern NamedGroup(string name, object content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NamedGroup(string name, object content)
 ```
 
 ### Parameters
@@ -54,7 +54,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns a named group with a specified name and content\.
 
 ```csharp
-public static QuantifiablePattern NamedGroup(string name, params object[] content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NamedGroup(string name, params object[] content)
 ```
 
 ### Parameters

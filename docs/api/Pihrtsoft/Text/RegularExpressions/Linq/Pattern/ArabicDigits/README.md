@@ -11,7 +11,7 @@
 Appends a pattern that matches one or more arabic digits\.
 
 ```csharp
-public QuantifiedPattern ArabicDigits()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern ArabicDigits()
 ```
 
 ### Returns

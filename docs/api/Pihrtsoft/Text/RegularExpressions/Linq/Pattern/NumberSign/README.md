@@ -20,7 +20,7 @@
 Appends a pattern that matches a number sign\.
 
 ```csharp
-public QuantifiablePattern NumberSign()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NumberSign()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of number signs\.
 
 ```csharp
-public QuantifiedGroup NumberSign(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NumberSign(int exactCount)
 ```
 
 ### Parameters

@@ -11,7 +11,7 @@
 Appends a pattern that matches a backslash\.
 
 ```csharp
-public CharGrouping Backslash()
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Backslash()
 ```
 
 ### Returns

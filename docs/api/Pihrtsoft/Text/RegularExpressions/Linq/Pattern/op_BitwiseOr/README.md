@@ -25,7 +25,7 @@
 Creates a pattern that matches any one of the specified elements\.
 
 ```csharp
-public static QuantifiablePattern operator |(char left, Pattern right)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern operator |(char left, Pihrtsoft.Text.RegularExpressions.Linq.Pattern right)
 ```
 
 ### Parameters
@@ -55,7 +55,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Creates a pattern that matches any one of the specified elements\.
 
 ```csharp
-public static QuantifiablePattern operator |(CharGrouping left, Pattern right)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern operator |(Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping left, Pihrtsoft.Text.RegularExpressions.Linq.Pattern right)
 ```
 
 ### Parameters
@@ -85,7 +85,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Creates a pattern that matches any one of the specified elements\.
 
 ```csharp
-public static QuantifiablePattern operator |(Pattern left, char right)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern operator |(Pihrtsoft.Text.RegularExpressions.Linq.Pattern left, char right)
 ```
 
 ### Parameters
@@ -115,7 +115,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Creates a pattern that matches any one of the specified elements\.
 
 ```csharp
-public static QuantifiablePattern operator |(Pattern left, CharGrouping right)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern operator |(Pihrtsoft.Text.RegularExpressions.Linq.Pattern left, Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping right)
 ```
 
 ### Parameters
@@ -145,7 +145,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Creates a pattern that matches any one of the specified elements\.
 
 ```csharp
-public static QuantifiablePattern operator |(Pattern left, Pattern right)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern operator |(Pihrtsoft.Text.RegularExpressions.Linq.Pattern left, Pihrtsoft.Text.RegularExpressions.Linq.Pattern right)
 ```
 
 ### Parameters
@@ -175,7 +175,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Creates a pattern that matches any one of the specified elements\.
 
 ```csharp
-public static QuantifiablePattern operator |(Pattern left, string right)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern operator |(Pihrtsoft.Text.RegularExpressions.Linq.Pattern left, string right)
 ```
 
 ### Parameters
@@ -205,7 +205,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Creates a pattern that matches any one of the specified elements\.
 
 ```csharp
-public static QuantifiablePattern operator |(string left, Pattern right)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern operator |(string left, Pihrtsoft.Text.RegularExpressions.Linq.Pattern right)
 ```
 
 ### Parameters

@@ -20,7 +20,7 @@
 Returns a pattern that matches a newline character\. Newline character is a carriage return or a linefeed\.
 
 ```csharp
-public static CharGroup NewLineChar()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NewLineChar()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../../CharGroup/README.md
 Returns a pattern that matches a specified number of newline characters\. Newline character is a carriage return or a linefeed\.
 
 ```csharp
-public static QuantifiedGroup NewLineChar(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NewLineChar(int exactCount)
 ```
 
 ### Parameters

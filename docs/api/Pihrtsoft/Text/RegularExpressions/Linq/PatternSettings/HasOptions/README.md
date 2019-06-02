@@ -11,7 +11,7 @@
 Determines whether specified options are set in the options of the current instance\.
 
 ```csharp
-public bool HasOptions(PatternOptions options)
+public bool HasOptions(Pihrtsoft.Text.RegularExpressions.Linq.PatternOptions options)
 ```
 
 ### Parameters

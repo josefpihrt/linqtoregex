@@ -20,7 +20,7 @@
 Converts specified character to an instance of the [CharGrouping](../README.md) class\.
 
 ```csharp
-public static explicit operator CharGrouping(char value)
+public static explicit operator Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping(char value)
 ```
 
 ### Parameters
@@ -40,7 +40,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../README.md)
 Converts specified characters to an instance of the [CharGrouping](../README.md) class\.
 
 ```csharp
-public static explicit operator CharGrouping(string characters)
+public static explicit operator Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping(string characters)
 ```
 
 ### Parameters

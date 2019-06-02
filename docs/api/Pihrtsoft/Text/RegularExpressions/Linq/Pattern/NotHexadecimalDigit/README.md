@@ -20,7 +20,7 @@
 Appends a pattern that matches a character that is not a hexadecimal digit\.
 
 ```csharp
-public QuantifiablePattern NotHexadecimalDigit()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotHexadecimalDigit()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a character that is not a hexadecimal digit specified number of times\.
 
 ```csharp
-public QuantifiedGroup NotHexadecimalDigit(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotHexadecimalDigit(int exactCount)
 ```
 
 ### Parameters

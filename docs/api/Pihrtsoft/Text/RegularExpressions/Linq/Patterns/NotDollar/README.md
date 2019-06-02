@@ -20,7 +20,7 @@
 Returns a pattern that matches a character that is not a dollar\.
 
 ```csharp
-public static QuantifiablePattern NotDollar()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotDollar()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Returns a pattern that matches a specified number of characters that are not a dollar\.
 
 ```csharp
-public static QuantifiedGroup NotDollar(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotDollar(int exactCount)
 ```
 
 ### Parameters

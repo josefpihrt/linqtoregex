@@ -11,7 +11,7 @@
 Converts the current instance of the [CharGrouping](../README.md) to the negative character group\.
 
 ```csharp
-public CharGroup ToNegativeGroup()
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGroup ToNegativeGroup()
 ```
 
 ### Returns

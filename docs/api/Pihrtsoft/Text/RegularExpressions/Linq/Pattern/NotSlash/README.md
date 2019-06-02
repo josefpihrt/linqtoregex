@@ -20,7 +20,7 @@
 Appends a pattern that matches a character that is not a slash\.
 
 ```csharp
-public QuantifiablePattern NotSlash()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotSlash()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of characters that are not a slash\.
 
 ```csharp
-public QuantifiedGroup NotSlash(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotSlash(int exactCount)
 ```
 
 ### Parameters

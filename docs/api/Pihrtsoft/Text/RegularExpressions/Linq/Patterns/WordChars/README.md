@@ -11,7 +11,7 @@
 Returns a pattern that matches one or more word characters\.
 
 ```csharp
-public static QuantifiedGroup WordChars()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup WordChars()
 ```
 
 ### Returns

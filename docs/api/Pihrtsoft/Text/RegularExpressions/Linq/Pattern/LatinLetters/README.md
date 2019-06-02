@@ -11,7 +11,7 @@
 Appends a pattern that matches one or more latin alphabet letter\.
 
 ```csharp
-public QuantifiedPattern LatinLetters()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern LatinLetters()
 ```
 
 ### Returns

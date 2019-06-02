@@ -11,7 +11,7 @@
 Appends a pattern that matches a character that is not from a specified Unicode category\.
 
 ```csharp
-public void AppendNotGeneralCategory(GeneralCategory category)
+public void AppendNotGeneralCategory(Pihrtsoft.Text.RegularExpressions.Linq.GeneralCategory category)
 ```
 
 ### Parameters

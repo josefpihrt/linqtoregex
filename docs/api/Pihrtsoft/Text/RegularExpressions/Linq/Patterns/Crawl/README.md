@@ -11,7 +11,7 @@
 Returns a pattern that matches any character zero or more times but as few times as possible\.
 
 ```csharp
-public static Pattern Crawl()
+public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern Crawl()
 ```
 
 ### Returns

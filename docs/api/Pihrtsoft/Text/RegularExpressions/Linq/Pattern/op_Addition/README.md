@@ -23,7 +23,7 @@
 Concatenate two elements into a new [Pattern](../README.md)\.
 
 ```csharp
-public static Pattern operator +(char left, Pattern right)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern operator +(char left, Pihrtsoft.Text.RegularExpressions.Linq.Pattern right)
 ```
 
 ### Parameters
@@ -53,7 +53,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Concatenate two elements into a new [Pattern](../README.md)\.
 
 ```csharp
-public static Pattern operator +(Pattern left, char right)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern operator +(Pihrtsoft.Text.RegularExpressions.Linq.Pattern left, char right)
 ```
 
 ### Parameters
@@ -83,7 +83,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Concatenate two elements into a new [Pattern](../README.md)\.
 
 ```csharp
-public static Pattern operator +(Pattern left, Pattern right)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern operator +(Pihrtsoft.Text.RegularExpressions.Linq.Pattern left, Pihrtsoft.Text.RegularExpressions.Linq.Pattern right)
 ```
 
 ### Parameters
@@ -113,7 +113,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Concatenate two elements into a new [Pattern](../README.md)\.
 
 ```csharp
-public static Pattern operator +(Pattern left, string right)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern operator +(Pihrtsoft.Text.RegularExpressions.Linq.Pattern left, string right)
 ```
 
 ### Parameters
@@ -143,7 +143,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Concatenate two elements into a new [Pattern](../README.md)\.
 
 ```csharp
-public static Pattern operator +(string left, Pattern right)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern operator +(string left, Pihrtsoft.Text.RegularExpressions.Linq.Pattern right)
 ```
 
 ### Parameters

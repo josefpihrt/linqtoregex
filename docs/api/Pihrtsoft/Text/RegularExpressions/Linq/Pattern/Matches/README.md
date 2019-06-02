@@ -20,7 +20,7 @@
 Searches the specified input string for all matches\.
 
 ```csharp
-public MatchCollection Matches(string input)
+public System.Text.RegularExpressions.MatchCollection Matches(string input)
 ```
 
 ### Parameters
@@ -46,7 +46,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Searches the specified input string for all matches, using the specified matching options\.
 
 ```csharp
-public MatchCollection Matches(string input, RegexOptions options)
+public System.Text.RegularExpressions.MatchCollection Matches(string input, System.Text.RegularExpressions.RegexOptions options)
 ```
 
 ### Parameters

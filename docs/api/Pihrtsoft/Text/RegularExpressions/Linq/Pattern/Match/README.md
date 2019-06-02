@@ -20,7 +20,7 @@
 Searches a specified input string for the first occurrence of the current instance\.
 
 ```csharp
-public Match Match(string input)
+public System.Text.RegularExpressions.Match Match(string input)
 ```
 
 ### Parameters
@@ -46,7 +46,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Searches a specified input string for the first occurrence of the current instance, using the specified matching options\.
 
 ```csharp
-public Match Match(string input, RegexOptions options)
+public System.Text.RegularExpressions.Match Match(string input, System.Text.RegularExpressions.RegexOptions options)
 ```
 
 ### Parameters

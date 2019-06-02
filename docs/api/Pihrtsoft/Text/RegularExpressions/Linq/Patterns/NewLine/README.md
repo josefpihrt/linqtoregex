@@ -11,7 +11,7 @@
 Returns a pattern that matches a combination of an optional carriage return and a linefeed\.
 
 ```csharp
-public static QuantifiablePattern NewLine()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NewLine()
 ```
 
 ### Returns

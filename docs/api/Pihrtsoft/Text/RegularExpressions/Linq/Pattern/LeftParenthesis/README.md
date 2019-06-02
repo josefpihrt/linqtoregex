@@ -20,7 +20,7 @@
 Appends a pattern that matches a left parenthesis\.
 
 ```csharp
-public QuantifiablePattern LeftParenthesis()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern LeftParenthesis()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of left parentheses\.
 
 ```csharp
-public QuantifiedGroup LeftParenthesis(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup LeftParenthesis(int exactCount)
 ```
 
 ### Parameters

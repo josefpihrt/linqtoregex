@@ -11,7 +11,7 @@
 Returns a pattern that matches a tab\.
 
 ```csharp
-public static CharGrouping Tab()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Tab()
 ```
 
 ### Returns

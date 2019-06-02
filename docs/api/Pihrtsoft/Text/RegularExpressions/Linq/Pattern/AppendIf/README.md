@@ -11,7 +11,7 @@
 If a condition is true, appends a pattern that matches a specified content\.
 
 ```csharp
-public Pattern AppendIf(bool condition, object content)
+public Pihrtsoft.Text.RegularExpressions.Linq.Pattern AppendIf(bool condition, object content)
 ```
 
 ### Parameters

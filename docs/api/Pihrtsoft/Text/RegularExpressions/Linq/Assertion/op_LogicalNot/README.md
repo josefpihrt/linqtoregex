@@ -11,7 +11,7 @@
 Returns an instance of the [NegativeAssertion](../../NegativeAssertion/README.md) class\.
 
 ```csharp
-public static NegativeAssertion operator !(Assertion value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.NegativeAssertion operator !(Pihrtsoft.Text.RegularExpressions.Linq.Assertion value)
 ```
 
 ### Parameters

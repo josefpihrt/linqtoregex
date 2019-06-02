@@ -20,7 +20,7 @@
 Returns a zero\-width negative lookahead assertion with a specified content not to be matched\.
 
 ```csharp
-public static QuantifiablePattern NotAssert(object content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotAssert(object content)
 ```
 
 ### Parameters
@@ -46,7 +46,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns a zero\-width negative lookahead assertion that matches none of patterns specified in the object array\.
 
 ```csharp
-public static QuantifiablePattern NotAssert(params object[] content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotAssert(params object[] content)
 ```
 
 ### Parameters

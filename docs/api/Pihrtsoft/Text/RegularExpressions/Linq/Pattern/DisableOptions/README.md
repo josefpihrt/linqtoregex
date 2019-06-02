@@ -21,7 +21,7 @@
 Appends a pattern that disables specified options\.
 
 ```csharp
-public Pattern DisableOptions(RegexOptions options)
+public Pihrtsoft.Text.RegularExpressions.Linq.Pattern DisableOptions(System.Text.RegularExpressions.RegexOptions options)
 ```
 
 ### Parameters
@@ -41,7 +41,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
 Appends a pattern that disables specified options to a specified pattern\.
 
 ```csharp
-public QuantifiablePattern DisableOptions(RegexOptions options, object content)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern DisableOptions(System.Text.RegularExpressions.RegexOptions options, object content)
 ```
 
 ### Parameters
@@ -71,7 +71,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Appends a pattern that disables specified options to a specified pattern\.
 
 ```csharp
-public QuantifiablePattern DisableOptions(RegexOptions options, params object[] content)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern DisableOptions(System.Text.RegularExpressions.RegexOptions options, params object[] content)
 ```
 
 ### Parameters

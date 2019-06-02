@@ -20,7 +20,7 @@
 Returns a pattern that matches a space\.
 
 ```csharp
-public static CharPattern Space()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Space()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of spaces\.
 
 ```csharp
-public static QuantifiedGroup Space(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Space(int exactCount)
 ```
 
 ### Parameters

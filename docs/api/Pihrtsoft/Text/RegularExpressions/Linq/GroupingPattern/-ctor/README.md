@@ -31,7 +31,7 @@ protected GroupingPattern()
 Initializes a new instance of the [GroupingPattern](../README.md) class with a specified content\.
 
 ```csharp
-protected GroupingPattern(GroupingPattern content)
+protected GroupingPattern(Pihrtsoft.Text.RegularExpressions.Linq.GroupingPattern content)
 ```
 
 ### Parameters

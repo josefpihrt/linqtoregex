@@ -20,7 +20,7 @@
 Appends a pattern that matches a character that is not an asterisk\.
 
 ```csharp
-public QuantifiablePattern NotAsterisk()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotAsterisk()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of characters that are not an asterisk\.
 
 ```csharp
-public QuantifiedGroup NotAsterisk(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotAsterisk(int exactCount)
 ```
 
 ### Parameters

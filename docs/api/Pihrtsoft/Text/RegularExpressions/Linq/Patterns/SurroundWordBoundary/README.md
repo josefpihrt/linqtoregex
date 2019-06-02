@@ -20,7 +20,7 @@
 Returns a pattern that matches spefified pattern surrounded with a word boundary\.
 
 ```csharp
-public static QuantifiablePattern SurroundWordBoundary(object content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern SurroundWordBoundary(object content)
 ```
 
 ### Parameters
@@ -46,7 +46,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns a pattern that matches specified content surrounded with a word boundary\.
 
 ```csharp
-public static QuantifiablePattern SurroundWordBoundary(params object[] content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern SurroundWordBoundary(params object[] content)
 ```
 
 ### Parameters

@@ -11,7 +11,7 @@
 Returns a pattern that matches an asterisk\.
 
 ```csharp
-public static CharGrouping Asterisk()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Asterisk()
 ```
 
 ### Returns

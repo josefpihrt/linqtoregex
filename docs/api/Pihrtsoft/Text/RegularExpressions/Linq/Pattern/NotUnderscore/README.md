@@ -20,7 +20,7 @@
 Appends a pattern that matches a character that is not an underscore\.
 
 ```csharp
-public QuantifiablePattern NotUnderscore()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotUnderscore()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of characters that are not an underscore\.
 
 ```csharp
-public QuantifiedGroup NotUnderscore(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotUnderscore(int exactCount)
 ```
 
 ### Parameters

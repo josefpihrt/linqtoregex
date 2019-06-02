@@ -20,7 +20,7 @@
 Appends a pattern that matches a quote mark\.
 
 ```csharp
-public QuantifiablePattern QuoteMark()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern QuoteMark()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of quote marks\.
 
 ```csharp
-public QuantifiedGroup QuoteMark(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup QuoteMark(int exactCount)
 ```
 
 ### Parameters

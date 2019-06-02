@@ -11,7 +11,7 @@
 Appends a pattern that matches a digit character zero or more times\.
 
 ```csharp
-public QuantifiedPattern WhileDigit()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileDigit()
 ```
 
 ### Returns

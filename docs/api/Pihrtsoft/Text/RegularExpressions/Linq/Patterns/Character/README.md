@@ -24,7 +24,7 @@
 Returns a pattern that matches a specified character\.
 
 ```csharp
-public static CharPattern Character(AsciiChar value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Character(Pihrtsoft.Text.RegularExpressions.Linq.AsciiChar value)
 ```
 
 ### Parameters
@@ -44,7 +44,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a character from a specified Unicode category\.
 
 ```csharp
-public static CharPattern Character(GeneralCategory category)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Character(Pihrtsoft.Text.RegularExpressions.Linq.GeneralCategory category)
 ```
 
 ### Parameters
@@ -64,7 +64,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified character\.
 
 ```csharp
-public static CharPattern Character(char value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Character(char value)
 ```
 
 ### Parameters
@@ -84,7 +84,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a character from a specified [CharGrouping](../../CharGrouping/README.md)\.
 
 ```csharp
-public static CharGroup Character(CharGrouping value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup Character(Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping value)
 ```
 
 ### Parameters
@@ -110,7 +110,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns a pattern that matches a character from a specified Unicode block\.
 
 ```csharp
-public static CharPattern Character(NamedBlock block)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Character(Pihrtsoft.Text.RegularExpressions.Linq.NamedBlock block)
 ```
 
 ### Parameters
@@ -130,7 +130,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a character from a specified [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)\.
 
 ```csharp
-public static CharGroup Character(string characters)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup Character(string characters)
 ```
 
 ### Parameters

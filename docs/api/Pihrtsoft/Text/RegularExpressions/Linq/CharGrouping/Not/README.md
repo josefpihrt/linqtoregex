@@ -20,7 +20,7 @@
 Appends a pattern that matches a character that is not from the specified Unicode category\.
 
 ```csharp
-public CharGrouping Not(GeneralCategory category)
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Not(Pihrtsoft.Text.RegularExpressions.Linq.GeneralCategory category)
 ```
 
 ### Parameters
@@ -40,7 +40,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../README.md)
 Appends a pattern that matches a character that is not from the specified Unicode block\.
 
 ```csharp
-public CharGrouping Not(NamedBlock block)
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Not(Pihrtsoft.Text.RegularExpressions.Linq.NamedBlock block)
 ```
 
 ### Parameters

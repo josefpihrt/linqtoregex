@@ -20,7 +20,7 @@
 Returns a pattern that matches a grave accent\.
 
 ```csharp
-public static CharPattern GraveAccent()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern GraveAccent()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of grave accents\.
 
 ```csharp
-public static QuantifiedGroup GraveAccent(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup GraveAccent(int exactCount)
 ```
 
 ### Parameters

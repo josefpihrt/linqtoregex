@@ -20,7 +20,7 @@
 Appends a pattern that matches a character that is not a latin alphabet upper\-case letter\.
 
 ```csharp
-public QuantifiablePattern NotLatinLetterUpper()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotLatinLetterUpper()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a character that is not a latin alphabet upper\-case letter specified number of times\.
 
 ```csharp
-public QuantifiedGroup NotLatinLetterUpper(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotLatinLetterUpper(int exactCount)
 ```
 
 ### Parameters

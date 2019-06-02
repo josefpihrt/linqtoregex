@@ -20,7 +20,7 @@
 Returns a pattern that matches a specified text\.
 
 ```csharp
-public static Pattern Text(string value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern Text(string value)
 ```
 
 ### Parameters
@@ -40,7 +40,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../../Pattern/README.md)
 Returns a pattern that matches a specified text, ignoring or honoring its case\.
 
 ```csharp
-public static QuantifiablePattern Text(string value, bool ignoreCase)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Text(string value, bool ignoreCase)
 ```
 
 ### Parameters

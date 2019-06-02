@@ -20,7 +20,7 @@
 Returns a pattern that matches a character that is not a linefeed\.
 
 ```csharp
-public static QuantifiablePattern NotLinefeed()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotLinefeed()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Returns a pattern that matches a specified number of characters that are not a linefeed\.
 
 ```csharp
-public static QuantifiedGroup NotLinefeed(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotLinefeed(int exactCount)
 ```
 
 ### Parameters

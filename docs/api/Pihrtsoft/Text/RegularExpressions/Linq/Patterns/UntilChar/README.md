@@ -22,7 +22,7 @@
 Returns a pattern that matches zero or more characters until it reaches a specified character\.
 
 ```csharp
-public static QuantifiablePattern UntilChar(AsciiChar value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern UntilChar(Pihrtsoft.Text.RegularExpressions.Linq.AsciiChar value)
 ```
 
 ### Parameters
@@ -42,7 +42,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Returns a pattern that matches zero or more characters until it reaches a specified character\.
 
 ```csharp
-public static QuantifiablePattern UntilChar(char value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern UntilChar(char value)
 ```
 
 ### Parameters
@@ -62,7 +62,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Returns a pattern that matches zero or more characters until it reaches a character that is matched by a specified [CharGrouping](../../CharGrouping/README.md)\.
 
 ```csharp
-public static QuantifiablePattern UntilChar(CharGrouping value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern UntilChar(Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping value)
 ```
 
 ### Parameters
@@ -88,7 +88,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns a pattern that matches zero or more characters until it reaches any one of the specified characters\.
 
 ```csharp
-public static QuantifiablePattern UntilChar(string characters)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern UntilChar(string characters)
 ```
 
 ### Parameters

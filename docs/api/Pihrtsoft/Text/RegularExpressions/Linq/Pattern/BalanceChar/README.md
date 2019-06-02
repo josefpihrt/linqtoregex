@@ -12,7 +12,7 @@ Appends a pattern that matches one or many opening characters balanced with one 
 Between the characters can be zero or many characters that are neither opening nor closing character\.
 
 ```csharp
-public Pattern BalanceChar(char openingCharacter, char closingCharacter, string groupName)
+public Pihrtsoft.Text.RegularExpressions.Linq.Pattern BalanceChar(char openingCharacter, char closingCharacter, string groupName)
 ```
 
 ### Parameters

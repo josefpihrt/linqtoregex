@@ -11,8 +11,8 @@
 Represents a character subtraction pattern\. This pattern matches a character from a base group except characters from a excluded group\.
 
 ```csharp
-public class CharSubtraction : QuantifiablePattern,
-    IExcludedGroup
+public class CharSubtraction : Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern,
+    Pihrtsoft.Text.RegularExpressions.Linq.IExcludedGroup
 ```
 
 ### Inheritance

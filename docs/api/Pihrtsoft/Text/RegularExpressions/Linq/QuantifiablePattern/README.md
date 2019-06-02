@@ -11,7 +11,7 @@
 Represents a pattern that can be quantified, i\.e\. quantifier can be applied on it\. This class is abstract\.
 
 ```csharp
-public abstract class QuantifiablePattern : Pattern
+public abstract class QuantifiablePattern : Pihrtsoft.Text.RegularExpressions.Linq.Pattern
 ```
 
 ### Inheritance

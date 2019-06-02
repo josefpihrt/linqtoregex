@@ -11,7 +11,7 @@
 Gets or sets a value indicating whether a group name will be enclosed in angle brackets or apostrophes\.
 
 ```csharp
-public IdentifierBoundary IdentifierBoundary { get; set; }
+public Pihrtsoft.Text.RegularExpressions.Linq.IdentifierBoundary IdentifierBoundary { get; set; }
 ```
 
 ### Property Value

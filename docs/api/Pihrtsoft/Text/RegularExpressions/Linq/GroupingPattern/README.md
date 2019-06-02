@@ -11,7 +11,7 @@
 Represents a base class for all kind of grouping constructs including assertions\. This class is abstract\.
 
 ```csharp
-public abstract class GroupingPattern : QuantifiablePattern
+public abstract class GroupingPattern : Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern
 ```
 
 ### Inheritance

@@ -20,7 +20,7 @@
 Appends a pattern that matches a slash\.
 
 ```csharp
-public QuantifiablePattern Slash()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Slash()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of slashes\.
 
 ```csharp
-public QuantifiedGroup Slash(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Slash(int exactCount)
 ```
 
 ### Parameters

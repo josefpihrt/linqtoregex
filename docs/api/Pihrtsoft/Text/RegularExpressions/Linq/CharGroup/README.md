@@ -11,10 +11,10 @@
 Represents a positive or a negative character group pattern\. This class is abstract\.
 
 ```csharp
-public abstract class CharGroup : QuantifiablePattern,
-    IBaseGroup,
-    IExcludedGroup,
-    INegateable<CharGroup>
+public abstract class CharGroup : Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern,
+    Pihrtsoft.Text.RegularExpressions.Linq.IBaseGroup,
+    Pihrtsoft.Text.RegularExpressions.Linq.IExcludedGroup,
+    Pihrtsoft.Text.RegularExpressions.Linq.INegateable<Pihrtsoft.Text.RegularExpressions.Linq.CharGroup>
 ```
 
 ### Inheritance
@@ -25,7 +25,7 @@ public abstract class CharGroup : QuantifiablePattern,
 
 * Pihrtsoft\.Text\.RegularExpressions\.Linq\.[IBaseGroup](../IBaseGroup/README.md)
 * Pihrtsoft\.Text\.RegularExpressions\.Linq\.[IExcludedGroup](../IExcludedGroup/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[INegateable](../INegateable-1/README.md)\<[CharGroup](./README.md)>
+* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[INegateable](../INegateable-1/README.md)\<Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](./README.md)>
 
 ## Constructors
 

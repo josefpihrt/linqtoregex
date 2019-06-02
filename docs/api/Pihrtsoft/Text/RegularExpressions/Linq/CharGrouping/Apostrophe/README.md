@@ -11,7 +11,7 @@
 Appends a pattern that matches an apostrophe\.
 
 ```csharp
-public CharGrouping Apostrophe()
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Apostrophe()
 ```
 
 ### Returns

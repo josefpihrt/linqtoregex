@@ -24,7 +24,7 @@
 Appends a pattern that matches a specified character one or more times\.
 
 ```csharp
-public QuantifiedGroup Characters(AsciiChar value)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Characters(Pihrtsoft.Text.RegularExpressions.Linq.AsciiChar value)
 ```
 
 ### Parameters
@@ -44,7 +44,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGro
 Appends a pattern that matches one or more characters from a specified Unicode category\.
 
 ```csharp
-public QuantifiedGroup Characters(GeneralCategory category)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Characters(Pihrtsoft.Text.RegularExpressions.Linq.GeneralCategory category)
 ```
 
 ### Parameters
@@ -64,7 +64,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGro
 Appends a pattern that matches a specified character one or more times\.
 
 ```csharp
-public QuantifiedGroup Characters(char value)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Characters(char value)
 ```
 
 ### Parameters
@@ -84,7 +84,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGro
 Appends a pattern that matches one or more characters from a specified [CharGrouping](../../CharGrouping/README.md)\.
 
 ```csharp
-public QuantifiedGroup Characters(CharGrouping value)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Characters(Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping value)
 ```
 
 ### Parameters
@@ -110,7 +110,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Appends a pattern that matches one or more characters from a specified Unicode block\.
 
 ```csharp
-public QuantifiedGroup Characters(NamedBlock block)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Characters(Pihrtsoft.Text.RegularExpressions.Linq.NamedBlock block)
 ```
 
 ### Parameters
@@ -130,7 +130,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGro
 Appends a pattern that matches one or more characters from a specified [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)\.
 
 ```csharp
-public QuantifiedGroup Characters(string value)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Characters(string value)
 ```
 
 ### Parameters

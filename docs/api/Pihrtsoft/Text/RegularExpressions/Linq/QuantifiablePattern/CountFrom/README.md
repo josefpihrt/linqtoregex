@@ -11,7 +11,7 @@
 Specifies that previous element must be matched at least specified number of times\.
 
 ```csharp
-public QuantifiedPattern CountFrom(int minCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern CountFrom(int minCount)
 ```
 
 ### Parameters

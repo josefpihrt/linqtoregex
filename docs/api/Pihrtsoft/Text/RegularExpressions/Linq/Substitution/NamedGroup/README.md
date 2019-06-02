@@ -11,7 +11,7 @@
 Appends a substitution pattern that substitutes the last substring matched by the named group\.
 
 ```csharp
-public Substitution NamedGroup(string groupName)
+public Pihrtsoft.Text.RegularExpressions.Linq.Substitution NamedGroup(string groupName)
 ```
 
 ### Parameters

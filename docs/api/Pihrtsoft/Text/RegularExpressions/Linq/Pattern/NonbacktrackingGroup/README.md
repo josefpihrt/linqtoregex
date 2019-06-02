@@ -20,7 +20,7 @@
 Appends a nonbacktracking group with a specified content\.
 
 ```csharp
-public QuantifiablePattern NonbacktrackingGroup(object content)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NonbacktrackingGroup(object content)
 ```
 
 ### Parameters
@@ -46,7 +46,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Appends a nonbacktracking group with a specified content\.
 
 ```csharp
-public QuantifiablePattern NonbacktrackingGroup(params object[] content)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NonbacktrackingGroup(params object[] content)
 ```
 
 ### Parameters

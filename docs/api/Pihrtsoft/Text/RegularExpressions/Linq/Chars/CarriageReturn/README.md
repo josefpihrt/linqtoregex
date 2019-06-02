@@ -11,7 +11,7 @@
 Returns a pattern that matches a carriage return\.
 
 ```csharp
-public static CharGrouping CarriageReturn()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping CarriageReturn()
 ```
 
 ### Returns

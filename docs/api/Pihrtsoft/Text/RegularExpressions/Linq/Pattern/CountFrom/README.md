@@ -20,7 +20,7 @@
 Appends a pattern that matches specified pattern at least specified number of times\.
 
 ```csharp
-public QuantifiedGroup CountFrom(int minCount, object content)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup CountFrom(int minCount, object content)
 ```
 
 ### Parameters
@@ -54,7 +54,7 @@ System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/ap
 Appends a pattern that matches any one specified pattern at least specified number of times\.
 
 ```csharp
-public QuantifiedGroup CountFrom(int minCount, object first, params object[] others)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup CountFrom(int minCount, object first, params object[] others)
 ```
 
 ### Parameters

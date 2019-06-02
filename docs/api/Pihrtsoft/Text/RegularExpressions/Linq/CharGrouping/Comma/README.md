@@ -11,7 +11,7 @@
 Appends a pattern that matches a comma\.
 
 ```csharp
-public CharGrouping Comma()
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Comma()
 ```
 
 ### Returns

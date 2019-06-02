@@ -25,7 +25,7 @@
 Returns a pattern that matches a character that is not a specified character\.
 
 ```csharp
-public static CharGroup NotChar(AsciiChar value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotChar(Pihrtsoft.Text.RegularExpressions.Linq.AsciiChar value)
 ```
 
 ### Parameters
@@ -45,7 +45,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../../CharGroup/README.md
 Returns a pattern that matches a character that is not from a specified Unicode category\.
 
 ```csharp
-public static CharPattern NotChar(GeneralCategory category)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern NotChar(Pihrtsoft.Text.RegularExpressions.Linq.GeneralCategory category)
 ```
 
 ### Parameters
@@ -65,7 +65,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a character that is not a specified character\.
 
 ```csharp
-public static CharGroup NotChar(char value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotChar(char value)
 ```
 
 ### Parameters
@@ -85,7 +85,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../../CharGroup/README.md
 Returns a pattern that matches any character that is not contained in the specified characters\.
 
 ```csharp
-public static CharGroup NotChar(params char[] characters)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotChar(params char[] characters)
 ```
 
 ### Parameters
@@ -115,7 +115,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns a negative character group containing specified [CharGrouping](../../CharGrouping/README.md)\.
 
 ```csharp
-public static CharGroup NotChar(CharGrouping value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotChar(Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping value)
 ```
 
 ### Parameters
@@ -141,7 +141,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns a pattern that matches a character that is not from a specified Unicode block\.
 
 ```csharp
-public static CharPattern NotChar(NamedBlock block)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern NotChar(Pihrtsoft.Text.RegularExpressions.Linq.NamedBlock block)
 ```
 
 ### Parameters
@@ -161,7 +161,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches any character that is not contained in the specified [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)\.
 
 ```csharp
-public static CharGroup NotChar(string characters)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotChar(string characters)
 ```
 
 ### Parameters

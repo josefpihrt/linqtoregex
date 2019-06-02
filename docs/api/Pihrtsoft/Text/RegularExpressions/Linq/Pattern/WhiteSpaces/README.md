@@ -11,7 +11,7 @@
 Appends a pattern that matches one or more white\-space characters\.
 
 ```csharp
-public QuantifiedGroup WhiteSpaces()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup WhiteSpaces()
 ```
 
 ### Returns

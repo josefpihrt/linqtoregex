@@ -11,7 +11,7 @@
 Returns a pattern that matches a character from a specified base group except characters from a specified excluded group\.
 
 ```csharp
-public static CharSubtraction Except(this IBaseGroup baseGroup, IExcludedGroup excludedGroup)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharSubtraction Except(this Pihrtsoft.Text.RegularExpressions.Linq.IBaseGroup baseGroup, Pihrtsoft.Text.RegularExpressions.Linq.IExcludedGroup excludedGroup)
 ```
 
 ### Parameters

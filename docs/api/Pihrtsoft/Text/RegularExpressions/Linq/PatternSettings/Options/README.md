@@ -11,7 +11,7 @@
 Gets or sets the options of this instance\.
 
 ```csharp
-public PatternOptions Options { get; set; }
+public Pihrtsoft.Text.RegularExpressions.Linq.PatternOptions Options { get; set; }
 ```
 
 ### Property Value

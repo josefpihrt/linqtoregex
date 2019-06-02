@@ -20,7 +20,7 @@
 Appends a pattern that matches a carriage return\.
 
 ```csharp
-public QuantifiablePattern CarriageReturn()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern CarriageReturn()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of carriage returns\.
 
 ```csharp
-public QuantifiedGroup CarriageReturn(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup CarriageReturn(int exactCount)
 ```
 
 ### Parameters

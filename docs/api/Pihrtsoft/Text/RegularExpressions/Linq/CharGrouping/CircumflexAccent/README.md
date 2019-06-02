@@ -11,7 +11,7 @@
 Appends a pattern that matches a circumflex accent\.
 
 ```csharp
-public CharGrouping CircumflexAccent()
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping CircumflexAccent()
 ```
 
 ### Returns

@@ -11,7 +11,7 @@
 Returns a pattern that matches one or more characters that are not a digit character\.
 
 ```csharp
-public static QuantifiedGroup NotDigits()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotDigits()
 ```
 
 ### Returns

@@ -21,7 +21,7 @@
 Appends a pattern that matches two apostrophes, allowing zero or more characters that are not an apostrophe between the apostrophes\.
 
 ```csharp
-public Pattern SurroundApostrophes()
+public Pihrtsoft.Text.RegularExpressions.Linq.Pattern SurroundApostrophes()
 ```
 
 ### Returns
@@ -35,7 +35,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
 Appends a pattern that matches specified pattern surrounded with apostrophes\.
 
 ```csharp
-public Pattern SurroundApostrophes(object content)
+public Pihrtsoft.Text.RegularExpressions.Linq.Pattern SurroundApostrophes(object content)
 ```
 
 ### Parameters
@@ -61,7 +61,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Appends a pattern that matches specified content surrounded with apostrophes\.
 
 ```csharp
-public Pattern SurroundApostrophes(params object[] content)
+public Pihrtsoft.Text.RegularExpressions.Linq.Pattern SurroundApostrophes(params object[] content)
 ```
 
 ### Parameters

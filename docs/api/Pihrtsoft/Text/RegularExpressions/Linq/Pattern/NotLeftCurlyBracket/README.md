@@ -20,7 +20,7 @@
 Appends a pattern that matches a character that is not a left curly bracket\.
 
 ```csharp
-public QuantifiablePattern NotLeftCurlyBracket()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotLeftCurlyBracket()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of characters that are not a left curly bracket\.
 
 ```csharp
-public QuantifiedGroup NotLeftCurlyBracket(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotLeftCurlyBracket(int exactCount)
 ```
 
 ### Parameters

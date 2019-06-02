@@ -20,7 +20,7 @@
 Appends a pattern that matches a white\-space character\.
 
 ```csharp
-public QuantifiablePattern WhiteSpace()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern WhiteSpace()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of white\-space characters\.
 
 ```csharp
-public QuantifiedGroup WhiteSpace(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup WhiteSpace(int exactCount)
 ```
 
 ### Parameters

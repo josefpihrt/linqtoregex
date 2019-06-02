@@ -20,7 +20,7 @@
 Returns a pattern that is matched at the end of the string or line\. End of line is defined as the position before a linefeed\.
 
 ```csharp
-public static QuantifiablePattern EndLine()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern EndLine()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Returns a pattern that is matched \(before carriage return\) at the end of the string or line\. End of line is defined as the position before a linefeed\.
 
 ```csharp
-public static Pattern EndLine(bool beforeCarriageReturn)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern EndLine(bool beforeCarriageReturn)
 ```
 
 ### Parameters

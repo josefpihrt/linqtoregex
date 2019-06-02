@@ -11,7 +11,7 @@
 Specifies that previous element must be matched at most specified number of times\.
 
 ```csharp
-public QuantifiedPattern MaybeCount(int maxCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern MaybeCount(int maxCount)
 ```
 
 ### Parameters

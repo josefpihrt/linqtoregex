@@ -11,7 +11,7 @@
 Within a specified input string, replaces all strings that match the regular expression with a string where each character is replaced with the specified character\.
 
 ```csharp
-public static string ReplaceMatchChar(this Regex regex, string input, char replacementChar)
+public static string ReplaceMatchChar(this System.Text.RegularExpressions.Regex regex, string input, char replacementChar)
 ```
 
 ### Parameters

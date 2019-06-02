@@ -24,7 +24,7 @@
 Returns a pattern that matches a specified character one or more times\.
 
 ```csharp
-public static QuantifiedGroup Characters(AsciiChar value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Characters(Pihrtsoft.Text.RegularExpressions.Linq.AsciiChar value)
 ```
 
 ### Parameters
@@ -44,7 +44,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGro
 Returns a pattern that matches one or more characters from a specified Unicode category\.
 
 ```csharp
-public static QuantifiedGroup Characters(GeneralCategory category)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Characters(Pihrtsoft.Text.RegularExpressions.Linq.GeneralCategory category)
 ```
 
 ### Parameters
@@ -64,7 +64,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGro
 Returns a pattern that matches a specified character one or more times\.
 
 ```csharp
-public static QuantifiedGroup Characters(char value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Characters(char value)
 ```
 
 ### Parameters
@@ -84,7 +84,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGro
 Returns a pattern that matches one or more characters from a specified [CharGrouping](../../CharGrouping/README.md)\.
 
 ```csharp
-public static QuantifiedGroup Characters(CharGrouping value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Characters(Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping value)
 ```
 
 ### Parameters
@@ -110,7 +110,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns a pattern that matches one or more characters from a specified Unicode block\.
 
 ```csharp
-public static QuantifiedGroup Characters(NamedBlock block)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Characters(Pihrtsoft.Text.RegularExpressions.Linq.NamedBlock block)
 ```
 
 ### Parameters
@@ -130,7 +130,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGro
 Returns a pattern that matches one or more characters from a specified [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)\.
 
 ```csharp
-public static QuantifiedGroup Characters(string value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Characters(string value)
 ```
 
 ### Parameters

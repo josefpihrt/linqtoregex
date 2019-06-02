@@ -11,7 +11,7 @@
 Returns a pattern that matches a hexadecimal digit\.
 
 ```csharp
-public static CharGrouping HexadecimalDigit()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping HexadecimalDigit()
 ```
 
 ### Returns

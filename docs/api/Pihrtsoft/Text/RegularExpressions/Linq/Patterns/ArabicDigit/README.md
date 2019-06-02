@@ -20,7 +20,7 @@
 Returns a pattern that matches an arabic digit\.
 
 ```csharp
-public static CharGroup ArabicDigit()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup ArabicDigit()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../../CharGroup/README.md
 Returns a pattern that matches a specified number of arabic digits\.
 
 ```csharp
-public static QuantifiedGroup ArabicDigit(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup ArabicDigit(int exactCount)
 ```
 
 ### Parameters

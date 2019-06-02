@@ -11,7 +11,7 @@
 Represents a pattern that matches a specified content with negative lookbehind assertion on the left side and negative lookahead assertion on the right side\. This class cannot be inherited\.
 
 ```csharp
-public sealed class NegativeSurroundAssertion : Pattern
+public sealed class NegativeSurroundAssertion : Pihrtsoft.Text.RegularExpressions.Linq.Pattern
 ```
 
 ### Inheritance

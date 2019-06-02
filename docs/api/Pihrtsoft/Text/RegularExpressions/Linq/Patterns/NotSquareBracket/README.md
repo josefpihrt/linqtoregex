@@ -20,7 +20,7 @@
 Returns a pattern that matches a character that is neither left nor right square bracket\.
 
 ```csharp
-public static CharGroup NotSquareBracket()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotSquareBracket()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../../CharGroup/README.md
 Returns a pattern that matches a character that is neither left nor right square bracket specified number of times\.
 
 ```csharp
-public static QuantifiedGroup NotSquareBracket(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotSquareBracket(int exactCount)
 ```
 
 ### Parameters

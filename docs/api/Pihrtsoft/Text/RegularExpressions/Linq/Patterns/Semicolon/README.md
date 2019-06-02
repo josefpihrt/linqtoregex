@@ -20,7 +20,7 @@
 Returns a pattern that matches a semicolon\.
 
 ```csharp
-public static CharPattern Semicolon()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Semicolon()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/READM
 Returns a pattern that matches a specified number of semicolons\.
 
 ```csharp
-public static QuantifiedGroup Semicolon(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Semicolon(int exactCount)
 ```
 
 ### Parameters

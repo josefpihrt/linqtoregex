@@ -20,7 +20,7 @@
 Appends a pattern that matches a character that is not a circumflex accent\.
 
 ```csharp
-public QuantifiablePattern NotCircumflexAccent()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotCircumflexAccent()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of characters that are not a circumflex accent\.
 
 ```csharp
-public QuantifiedGroup NotCircumflexAccent(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotCircumflexAccent(int exactCount)
 ```
 
 ### Parameters

@@ -20,7 +20,7 @@
 Appends a pattern that matches a colon\.
 
 ```csharp
-public QuantifiablePattern Colon()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Colon()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of colons\.
 
 ```csharp
-public QuantifiedGroup Colon(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Colon(int exactCount)
 ```
 
 ### Parameters

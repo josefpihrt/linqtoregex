@@ -20,7 +20,7 @@
 Appends a pattern that matches a character that is not an at sign\.
 
 ```csharp
-public QuantifiablePattern NotAtSign()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotAtSign()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of characters that are not an at sign\.
 
 ```csharp
-public QuantifiedGroup NotAtSign(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotAtSign(int exactCount)
 ```
 
 ### Parameters

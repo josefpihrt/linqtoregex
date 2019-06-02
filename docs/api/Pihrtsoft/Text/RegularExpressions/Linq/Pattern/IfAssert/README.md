@@ -20,7 +20,7 @@
 Appends an if construct with the specified content to assert and a content to match if the assertion succeeds\.
 
 ```csharp
-public QuantifiablePattern IfAssert(object testContent, object trueContent)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern IfAssert(object testContent, object trueContent)
 ```
 
 ### Parameters
@@ -50,7 +50,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Appends an if construct with the specified content to assert and a content to match if the assertion succeeds and a content to match if the assertion fails\.
 
 ```csharp
-public QuantifiablePattern IfAssert(object testContent, object trueContent, object falseContent)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern IfAssert(object testContent, object trueContent, object falseContent)
 ```
 
 ### Parameters

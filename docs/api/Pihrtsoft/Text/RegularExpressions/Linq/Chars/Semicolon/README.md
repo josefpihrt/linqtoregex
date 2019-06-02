@@ -11,7 +11,7 @@
 Returns a pattern that matches a semicolon\.
 
 ```csharp
-public static CharGrouping Semicolon()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Semicolon()
 ```
 
 ### Returns

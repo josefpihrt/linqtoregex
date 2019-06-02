@@ -11,7 +11,7 @@
 Appends a pattern that matches an equals sign\.
 
 ```csharp
-public CharGrouping EqualsSign()
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping EqualsSign()
 ```
 
 ### Returns

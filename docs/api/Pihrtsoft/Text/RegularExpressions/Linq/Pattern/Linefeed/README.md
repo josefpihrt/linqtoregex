@@ -20,7 +20,7 @@
 Appends a pattern that matches a linefeed\.
 
 ```csharp
-public QuantifiablePattern Linefeed()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Linefeed()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of linefeeds\.
 
 ```csharp
-public QuantifiedGroup Linefeed(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Linefeed(int exactCount)
 ```
 
 ### Parameters

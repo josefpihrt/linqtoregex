@@ -21,7 +21,7 @@
 Returns a pattern that matches two quotation marks, allowing zero or more characters that are not a quotation mark between the quotation marks\.
 
 ```csharp
-public static Pattern SurroundQuoteMarks()
+public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern SurroundQuoteMarks()
 ```
 
 ### Returns
@@ -35,7 +35,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../../Pattern/README.md)
 Returns a pattern that matches specified pattern surrounded with quotation marks\.
 
 ```csharp
-public static Pattern SurroundQuoteMarks(object content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern SurroundQuoteMarks(object content)
 ```
 
 ### Parameters
@@ -61,7 +61,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns a pattern that matches specified content surrounded with quotation marks\.
 
 ```csharp
-public static Pattern SurroundQuoteMarks(params object[] content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern SurroundQuoteMarks(params object[] content)
 ```
 
 ### Parameters

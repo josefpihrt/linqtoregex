@@ -11,7 +11,7 @@
 Returns a pattern that matches a character in the specified range\.
 
 ```csharp
-public static CharGroup Range(char first, char last)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup Range(char first, char last)
 ```
 
 ### Parameters

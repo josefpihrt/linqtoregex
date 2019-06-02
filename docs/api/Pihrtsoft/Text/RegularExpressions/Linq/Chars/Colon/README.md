@@ -11,7 +11,7 @@
 Returns a pattern that matches a colon\.
 
 ```csharp
-public static CharGrouping Colon()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Colon()
 ```
 
 ### Returns

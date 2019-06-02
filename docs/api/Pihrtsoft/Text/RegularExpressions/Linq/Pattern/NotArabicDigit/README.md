@@ -20,7 +20,7 @@
 Appends a pattern that matches a character that is not an arabic digit\.
 
 ```csharp
-public QuantifiablePattern NotArabicDigit()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotArabicDigit()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a character that is not an arabic digit specified number of times\.
 
 ```csharp
-public QuantifiedGroup NotArabicDigit(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotArabicDigit(int exactCount)
 ```
 
 ### Parameters

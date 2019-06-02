@@ -11,7 +11,7 @@
 If the current instance is a positive character group, it returns a negative character group\. Otherwise, it returns a positive character group\. Newly created group has the same content as the current instance\.
 
 ```csharp
-public static CharGroup operator !(CharGroup value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup operator !(Pihrtsoft.Text.RegularExpressions.Linq.CharGroup value)
 ```
 
 ### Parameters

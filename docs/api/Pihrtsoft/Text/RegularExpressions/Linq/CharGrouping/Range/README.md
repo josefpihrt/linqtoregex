@@ -11,7 +11,7 @@
 Appends a pattern that matches any one character from the specified range\.
 
 ```csharp
-public CharGrouping Range(char first, char last)
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Range(char first, char last)
 ```
 
 ### Parameters

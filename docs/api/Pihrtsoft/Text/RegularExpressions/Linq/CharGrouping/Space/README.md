@@ -11,7 +11,7 @@
 Appends a pattern that matches a space character\.
 
 ```csharp
-public CharGrouping Space()
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Space()
 ```
 
 ### Returns

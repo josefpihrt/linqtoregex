@@ -20,7 +20,7 @@
 Appends a pattern that matches a word character\.
 
 ```csharp
-public QuantifiablePattern WordChar()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern WordChar()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of word characters\.
 
 ```csharp
-public QuantifiedGroup WordChar(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup WordChar(int exactCount)
 ```
 
 ### Parameters

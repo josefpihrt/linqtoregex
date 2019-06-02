@@ -11,7 +11,7 @@
 Appends a pattern that is not matched on a boundary between a word character and a non\-word character\.
 
 ```csharp
-public QuantifiablePattern NotWordBoundary()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotWordBoundary()
 ```
 
 ### Returns

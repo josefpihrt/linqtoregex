@@ -20,7 +20,7 @@
 Appends a pattern that matches a right curly bracket\.
 
 ```csharp
-public QuantifiablePattern RightCurlyBracket()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern RightCurlyBracket()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of right curly brackets\.
 
 ```csharp
-public QuantifiedGroup RightCurlyBracket(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup RightCurlyBracket(int exactCount)
 ```
 
 ### Parameters

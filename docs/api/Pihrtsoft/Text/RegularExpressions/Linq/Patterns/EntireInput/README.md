@@ -20,7 +20,7 @@
 Returns a pattern that matches a specified content surrounded with the beginning and the end of the string\.
 
 ```csharp
-public static QuantifiablePattern EntireInput(object content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern EntireInput(object content)
 ```
 
 ### Parameters
@@ -46,7 +46,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns a pattern that matches any one pattern surrounded with the beginning and the end of the string\.
 
 ```csharp
-public static QuantifiablePattern EntireInput(params object[] content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern EntireInput(params object[] content)
 ```
 
 ### Parameters

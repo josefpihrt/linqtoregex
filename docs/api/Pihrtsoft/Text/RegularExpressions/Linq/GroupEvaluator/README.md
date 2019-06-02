@@ -11,7 +11,7 @@
 Represents the method that is called each time a regular expression group is found during a Replace method operation\.
 
 ```csharp
-public delegate string GroupEvaluator(Group group)
+public delegate string GroupEvaluator(System.Text.RegularExpressions.Group group)
 ```
 
 ### Parameters

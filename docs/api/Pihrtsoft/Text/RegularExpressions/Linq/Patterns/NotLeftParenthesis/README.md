@@ -20,7 +20,7 @@
 Returns a pattern that matches a character that is not a left parenthesis\.
 
 ```csharp
-public static QuantifiablePattern NotLeftParenthesis()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotLeftParenthesis()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Returns a pattern that matches a specified number of characters that are not a left parenthesis\.
 
 ```csharp
-public static QuantifiedGroup NotLeftParenthesis(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotLeftParenthesis(int exactCount)
 ```
 
 ### Parameters

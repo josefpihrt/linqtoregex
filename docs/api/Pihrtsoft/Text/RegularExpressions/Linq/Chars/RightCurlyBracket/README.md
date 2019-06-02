@@ -11,7 +11,7 @@
 Returns a pattern that matches right curly bracket\.
 
 ```csharp
-public static CharGrouping RightCurlyBracket()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping RightCurlyBracket()
 ```
 
 ### Returns

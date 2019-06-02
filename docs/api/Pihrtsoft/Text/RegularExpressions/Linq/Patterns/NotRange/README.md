@@ -11,7 +11,7 @@
 Returns a pattern that matches a character that is not in the specified range\.
 
 ```csharp
-public static CharGroup NotRange(char first, char last)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotRange(char first, char last)
 ```
 
 ### Parameters

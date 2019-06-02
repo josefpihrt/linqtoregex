@@ -20,7 +20,7 @@
 Appends a pattern that matches a character that is not a tilde\.
 
 ```csharp
-public QuantifiablePattern NotTilde()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotTilde()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a specified number of characters that are not a tilde\.
 
 ```csharp
-public QuantifiedGroup NotTilde(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotTilde(int exactCount)
 ```
 
 ### Parameters

@@ -11,7 +11,7 @@
 Appends a pattern that matches the current instance or a specified content\.
 
 ```csharp
-public Pattern Or(object content)
+public Pihrtsoft.Text.RegularExpressions.Linq.Pattern Or(object content)
 ```
 
 ### Parameters

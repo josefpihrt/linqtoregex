@@ -20,7 +20,7 @@
 Concatenates the elements in a specified **content**\.
 
 ```csharp
-public static Pattern Concat(object content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern Concat(object content)
 ```
 
 ### Parameters
@@ -40,7 +40,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../../Pattern/README.md)
 Concatenates the elements in a specified object array\.
 
 ```csharp
-public static Pattern Concat(params object[] content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern Concat(params object[] content)
 ```
 
 ### Parameters

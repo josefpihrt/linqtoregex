@@ -11,7 +11,7 @@
 Returns an enumerable collection of captures indexes\.
 
 ```csharp
-public static IEnumerable<int> EnumerateIndexes(this IEnumerable<Capture> captures)
+public static System.Collections.Generic.IEnumerable<int> EnumerateIndexes(this System.Collections.Generic.IEnumerable<System.Text.RegularExpressions.Capture> captures)
 ```
 
 ### Parameters
@@ -22,7 +22,7 @@ The sequence to enumerate\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)>
 
 ### Exceptions
 

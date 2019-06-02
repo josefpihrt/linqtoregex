@@ -20,7 +20,7 @@
 Returns a pattern that matches a character that is neither left nor right parenthesis\.
 
 ```csharp
-public static CharGroup NotParenthesis()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotParenthesis()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../../CharGroup/README.md
 Returns a pattern that matches a character that is neither left nor right parenthesis specified number of times\.
 
 ```csharp
-public static QuantifiedGroup NotParenthesis(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotParenthesis(int exactCount)
 ```
 
 ### Parameters

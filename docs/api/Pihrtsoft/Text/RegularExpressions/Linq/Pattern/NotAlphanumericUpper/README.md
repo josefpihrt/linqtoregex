@@ -20,7 +20,7 @@
 Appends a pattern that matches a character that is not an upper\-case alphanumeric character\. Alphanumeric character is a latin alphabet upper\-case letter or an arabic digit\.
 
 ```csharp
-public QuantifiablePattern NotAlphanumericUpper()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotAlphanumericUpper()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../Quantifia
 Appends a pattern that matches a character that is not an upper\-case alphanumeric character specified number of times\. Alphanumeric character is a latin alphabet upper\-case letter or an arabic digit\.
 
 ```csharp
-public QuantifiedGroup NotAlphanumericUpper(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotAlphanumericUpper(int exactCount)
 ```
 
 ### Parameters

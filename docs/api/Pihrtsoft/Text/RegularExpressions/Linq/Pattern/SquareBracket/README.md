@@ -20,7 +20,7 @@
 Appends a pattern that matches left or right square bracket\.
 
 ```csharp
-public CharGroup SquareBracket()
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGroup SquareBracket()
 ```
 
 ### Returns
@@ -34,7 +34,7 @@ Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../../CharGroup/README.md
 Appends a pattern that matches left or right square bracket specified number of times\.
 
 ```csharp
-public QuantifiedGroup SquareBracket(int exactCount)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup SquareBracket(int exactCount)
 ```
 
 ### Parameters

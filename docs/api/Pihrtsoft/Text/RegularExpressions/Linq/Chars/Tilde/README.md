@@ -11,7 +11,7 @@
 Returns a pattern that matches a tilde\.
 
 ```csharp
-public static CharGrouping Tilde()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Tilde()
 ```
 
 ### Returns

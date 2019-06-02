@@ -11,7 +11,7 @@
 Appends a quantifier to a specified [PatternBuilder](../../PatternBuilder/README.md)\.
 
 ```csharp
-protected abstract void AppendQuantifierTo(PatternBuilder builder)
+protected abstract void AppendQuantifierTo(Pihrtsoft.Text.RegularExpressions.Linq.PatternBuilder builder)
 ```
 
 ### Parameters

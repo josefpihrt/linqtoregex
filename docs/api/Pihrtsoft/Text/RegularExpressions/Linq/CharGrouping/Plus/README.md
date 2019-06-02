@@ -11,7 +11,7 @@
 Appends a pattern that matches a plus sign\.
 
 ```csharp
-public CharGrouping Plus()
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Plus()
 ```
 
 ### Returns
