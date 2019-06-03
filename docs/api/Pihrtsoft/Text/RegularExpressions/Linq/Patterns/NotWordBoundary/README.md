@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Patterns](../README.md)
+**Containing Type**: [Patterns](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -16,5 +16,5 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.NegativeWordBoundary NotWor
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[NegativeWordBoundary](../../NegativeWordBoundary/README.md)
+[NegativeWordBoundary](../../NegativeWordBoundary/README.md)
 

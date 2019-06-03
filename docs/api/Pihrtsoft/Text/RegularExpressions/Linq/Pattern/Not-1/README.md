@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+**Containing Type**: [Pattern](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -20,7 +20,7 @@ public TPattern Not<TPattern>(Pihrtsoft.Text.RegularExpressions.Linq.INegateable
 
 ### Parameters
 
-**value** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[INegateable](../../INegateable-1/README.md)\<TPattern>
+**value** &ensp; [INegateable](../../INegateable-1/README.md)\<TPattern>
 
 A pattern to be negated\.
 

@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[RegexUtility](../README.md)
+**Containing Type**: [RegexUtility](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -16,7 +16,7 @@ public static bool IsValidGroupName(string groupName)
 
 ### Parameters
 
-**groupName** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**groupName** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A group name to examine\.
 

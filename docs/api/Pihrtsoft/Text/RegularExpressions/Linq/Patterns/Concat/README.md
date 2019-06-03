@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Patterns](../README.md)
+**Containing Type**: [Patterns](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -25,13 +25,13 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern Concat(object conte
 
 ### Parameters
 
-**content** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**content** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 An object that contains the elements to concatenate\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../../Pattern/README.md)
+[Pattern](../../Pattern/README.md)
 
 ## Concat\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Concat_System_Object___"></a>
 
@@ -45,11 +45,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern Concat(params objec
 
 ### Parameters
 
-**content** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
+**content** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
 
 An object array that contains the elements to concatenate\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../../Pattern/README.md)
+[Pattern](../../Pattern/README.md)
 

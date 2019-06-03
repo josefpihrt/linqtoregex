@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Patterns](../README.md)
+**Containing Type**: [Patterns](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -29,13 +29,13 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Characters(
 
 ### Parameters
 
-**value** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[AsciiChar](../../AsciiChar/README.md)
+**value** &ensp; [AsciiChar](../../AsciiChar/README.md)
 
 An enumerated constant that identifies ASCII character\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGroup/README.md)
+[QuantifiedGroup](../../QuantifiedGroup/README.md)
 
 ## Characters\(GeneralCategory\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Characters_Pihrtsoft_Text_RegularExpressions_Linq_GeneralCategory_"></a>
 
@@ -49,13 +49,13 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Characters(
 
 ### Parameters
 
-**category** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[GeneralCategory](../../GeneralCategory/README.md)
+**category** &ensp; [GeneralCategory](../../GeneralCategory/README.md)
 
 An enumerated constant that identifies Unicode category\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGroup/README.md)
+[QuantifiedGroup](../../QuantifiedGroup/README.md)
 
 ## Characters\(Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Characters_System_Char_"></a>
 
@@ -69,13 +69,13 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Characters(
 
 ### Parameters
 
-**value** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**value** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 A Unicode character\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGroup/README.md)
+[QuantifiedGroup](../../QuantifiedGroup/README.md)
 
 ## Characters\(CharGrouping\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Characters_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
 
@@ -89,13 +89,13 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Characters(
 
 ### Parameters
 
-**value** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../../CharGrouping/README.md)
+**value** &ensp; [CharGrouping](../../CharGrouping/README.md)
 
 A content of a character group\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGroup/README.md)
+[QuantifiedGroup](../../QuantifiedGroup/README.md)
 
 ### Exceptions
 
@@ -115,13 +115,13 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Characters(
 
 ### Parameters
 
-**block** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[NamedBlock](../../NamedBlock/README.md)
+**block** &ensp; [NamedBlock](../../NamedBlock/README.md)
 
 An enumerated constant that identifies Unicode block\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGroup/README.md)
+[QuantifiedGroup](../../QuantifiedGroup/README.md)
 
 ## Characters\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Characters_System_String_"></a>
 
@@ -135,13 +135,13 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Characters(
 
 ### Parameters
 
-**value** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**value** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A set of characters any one of which has to be matched\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGroup/README.md)
+[QuantifiedGroup](../../QuantifiedGroup/README.md)
 
 ### Exceptions
 

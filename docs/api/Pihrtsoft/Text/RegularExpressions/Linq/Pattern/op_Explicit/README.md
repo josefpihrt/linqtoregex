@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+**Containing Type**: [Pattern](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -25,13 +25,13 @@ public static explicit operator Pihrtsoft.Text.RegularExpressions.Linq.Pattern(c
 
 ### Parameters
 
-**value** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**value** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The Unicode character to convert\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+[Pattern](../README.md)
 
 ## Explicit\(String to Pattern\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_Explicit_System_String__Pihrtsoft_Text_RegularExpressions_Linq_Pattern"></a>
 
@@ -45,11 +45,11 @@ public static explicit operator Pihrtsoft.Text.RegularExpressions.Linq.Pattern(s
 
 ### Parameters
 
-**text** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**text** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A text to convert\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+[Pattern](../README.md)
 

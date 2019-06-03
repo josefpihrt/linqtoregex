@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[PatternBuilder](../README.md)
+**Containing Type**: [PatternBuilder](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -16,11 +16,11 @@ public void AppendSubtraction(Pihrtsoft.Text.RegularExpressions.Linq.IBaseGroup 
 
 ### Parameters
 
-**baseGroup** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[IBaseGroup](../../IBaseGroup/README.md)
+**baseGroup** &ensp; [IBaseGroup](../../IBaseGroup/README.md)
 
 A base group\.
 
-**excludedGroup** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[IExcludedGroup](../../IExcludedGroup/README.md)
+**excludedGroup** &ensp; [IExcludedGroup](../../IExcludedGroup/README.md)
 
 An excluded group\.
 

@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+**Containing Type**: [Pattern](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -25,13 +25,13 @@ public Pihrtsoft.Text.RegularExpressions.Linq.Pattern RequireGroup(int groupNumb
 
 ### Parameters
 
-**groupNumber** &emsp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+**groupNumber** &ensp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of the group\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+[Pattern](../README.md)
 
 ### Exceptions
 
@@ -51,13 +51,13 @@ public Pihrtsoft.Text.RegularExpressions.Linq.Pattern RequireGroup(string groupN
 
 ### Parameters
 
-**groupName** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**groupName** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A name of the group\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+[Pattern](../README.md)
 
 ### Exceptions
 

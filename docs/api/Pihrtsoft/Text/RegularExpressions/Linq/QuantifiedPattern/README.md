@@ -20,7 +20,7 @@ public abstract class QuantifiedPattern : Pihrtsoft.Text.RegularExpressions.Linq
 
 ### Derived
 
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../QuantifiedGroup/README.md)
+* [QuantifiedGroup](../QuantifiedGroup/README.md)
 
 ## Constructors
 

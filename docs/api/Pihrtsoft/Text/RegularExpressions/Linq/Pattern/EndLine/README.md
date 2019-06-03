@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+**Containing Type**: [Pattern](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -25,7 +25,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern EndLine()
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../QuantifiablePattern/README.md)
+[QuantifiablePattern](../../QuantifiablePattern/README.md)
 
 ## EndLine\(Boolean\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EndLine_System_Boolean_"></a>
 
@@ -39,11 +39,11 @@ public Pihrtsoft.Text.RegularExpressions.Linq.Pattern EndLine(bool beforeCarriag
 
 ### Parameters
 
-**beforeCarriageReturn** &emsp; [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+**beforeCarriageReturn** &ensp; [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
 Indicates whether a position of the match should be before a carriage return if present and not already consumed by regex engine\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+[Pattern](../README.md)
 

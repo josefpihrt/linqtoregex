@@ -22,7 +22,7 @@ public sealed class WordBoundary : Pihrtsoft.Text.RegularExpressions.Linq.Quanti
 
 ### Implements
 
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[INegateable](../INegateable-1/README.md)\<Pihrtsoft\.Text\.RegularExpressions\.Linq\.[NegativeWordBoundary](../NegativeWordBoundary/README.md)>
+* [INegateable](../INegateable-1/README.md)\<[NegativeWordBoundary](../NegativeWordBoundary/README.md)>
 
 ## Constructors
 

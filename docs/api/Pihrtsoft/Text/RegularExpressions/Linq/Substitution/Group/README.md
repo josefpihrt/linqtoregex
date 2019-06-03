@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Substitution](../README.md)
+**Containing Type**: [Substitution](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -16,13 +16,13 @@ public Pihrtsoft.Text.RegularExpressions.Linq.Substitution Group(int groupNumber
 
 ### Parameters
 
-**groupNumber** &emsp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+**groupNumber** &ensp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of the group\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Substitution](../README.md)
+[Substitution](../README.md)
 
 ### Exceptions
 

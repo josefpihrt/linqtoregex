@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+**Containing Type**: [Pattern](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -17,13 +17,13 @@ public Pihrtsoft.Text.RegularExpressions.Linq.Pattern BalanceCurlyBrackets(strin
 
 ### Parameters
 
-**groupName** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**groupName** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A name of the group that contains balanced content between left and right curly bracket\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+[Pattern](../README.md)
 
 ### Exceptions
 

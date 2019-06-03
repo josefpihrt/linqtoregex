@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Patterns](../README.md)
+**Containing Type**: [Patterns](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -25,17 +25,17 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern Join(object separat
 
 ### Parameters
 
-**separator** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**separator** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to use as a separator\.
 
-**content** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**content** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 An object that contains the elements to join\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../../Pattern/README.md)
+[Pattern](../../Pattern/README.md)
 
 ### Exceptions
 
@@ -55,17 +55,17 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern Join(object separat
 
 ### Parameters
 
-**separator** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**separator** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to use as a separator\.
 
-**content** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
+**content** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
 
 An object array that contains the elements to join\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../../Pattern/README.md)
+[Pattern](../../Pattern/README.md)
 
 ### Exceptions
 

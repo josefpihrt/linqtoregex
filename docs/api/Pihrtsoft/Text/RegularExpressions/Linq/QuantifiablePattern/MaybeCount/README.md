@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../README.md)
+**Containing Type**: [QuantifiablePattern](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -16,13 +16,13 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern MaybeCount(int m
 
 ### Parameters
 
-**maxCount** &emsp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+**maxCount** &ensp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A maximum number of times the pattern can be matched\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedPattern](../../QuantifiedPattern/README.md)
+[QuantifiedPattern](../../QuantifiedPattern/README.md)
 
 ### Exceptions
 

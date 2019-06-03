@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+**Containing Type**: [Pattern](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -28,17 +28,17 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern operator +(char lef
 
 ### Parameters
 
-**left** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**left** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The first element to concatenate\.
 
-**right** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+**right** &ensp; [Pattern](../README.md)
 
 The second element to concatenate\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+[Pattern](../README.md)
 
 ### Exceptions
 
@@ -58,17 +58,17 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern operator +(Pihrtsof
 
 ### Parameters
 
-**left** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+**left** &ensp; [Pattern](../README.md)
 
 The first element to concatenate\.
 
-**right** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**right** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The second element to concatenate\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+[Pattern](../README.md)
 
 ### Exceptions
 
@@ -88,17 +88,17 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern operator +(Pihrtsof
 
 ### Parameters
 
-**left** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+**left** &ensp; [Pattern](../README.md)
 
 The first element to concatenate\.
 
-**right** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+**right** &ensp; [Pattern](../README.md)
 
 The second element to concatenate\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+[Pattern](../README.md)
 
 ### Exceptions
 
@@ -118,17 +118,17 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern operator +(Pihrtsof
 
 ### Parameters
 
-**left** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+**left** &ensp; [Pattern](../README.md)
 
 The first element to concatenate\.
 
-**right** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**right** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The second element to concatenate\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+[Pattern](../README.md)
 
 ### Exceptions
 
@@ -148,17 +148,17 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern operator +(string l
 
 ### Parameters
 
-**left** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**left** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The first element to concatenate\.
 
-**right** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+**right** &ensp; [Pattern](../README.md)
 
 The second element to concatenate\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+[Pattern](../README.md)
 
 ### Exceptions
 

@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Patterns](../README.md)
+**Containing Type**: [Patterns](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -16,17 +16,17 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharSubtraction Except(Pihr
 
 ### Parameters
 
-**baseGroup** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[IBaseGroup](../../IBaseGroup/README.md)
+**baseGroup** &ensp; [IBaseGroup](../../IBaseGroup/README.md)
 
 A base group\.
 
-**excludedGroup** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[IExcludedGroup](../../IExcludedGroup/README.md)
+**excludedGroup** &ensp; [IExcludedGroup](../../IExcludedGroup/README.md)
 
 An excluded group\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharSubtraction](../../CharSubtraction/README.md)
+[CharSubtraction](../../CharSubtraction/README.md)
 
 ### Exceptions
 

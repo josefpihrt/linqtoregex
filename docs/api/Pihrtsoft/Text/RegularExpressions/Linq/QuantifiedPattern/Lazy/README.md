@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedPattern](../README.md)
+**Containing Type**: [QuantifiedPattern](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -16,5 +16,5 @@ public Pihrtsoft.Text.RegularExpressions.Linq.Pattern Lazy()
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../../Pattern/README.md)
+[Pattern](../../Pattern/README.md)
 

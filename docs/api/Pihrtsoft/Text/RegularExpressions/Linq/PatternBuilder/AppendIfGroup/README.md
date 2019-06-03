@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[PatternBuilder](../README.md)
+**Containing Type**: [PatternBuilder](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -25,15 +25,15 @@ public void AppendIfGroup(int groupNumber, object trueContent, object falseConte
 
 ### Parameters
 
-**groupNumber** &emsp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+**groupNumber** &ensp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of the group\.
 
-**trueContent** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**trueContent** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to match if the named group is matched\.
 
-**falseContent** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**falseContent** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to match if the named group is not matched\.
 
@@ -59,15 +59,15 @@ public void AppendIfGroup(string groupName, object trueContent, object falseCont
 
 ### Parameters
 
-**groupName** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**groupName** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A name of the group\.
 
-**trueContent** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**trueContent** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to match if the named group is matched\.
 
-**falseContent** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**falseContent** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to match if the named group is not matched\.
 

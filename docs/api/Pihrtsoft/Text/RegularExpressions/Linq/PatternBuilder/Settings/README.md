@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[PatternBuilder](../README.md)
+**Containing Type**: [PatternBuilder](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -16,5 +16,5 @@ public Pihrtsoft.Text.RegularExpressions.Linq.PatternSettings Settings { get; }
 
 ### Property Value
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[PatternSettings](../../PatternSettings/README.md)
+[PatternSettings](../../PatternSettings/README.md)
 

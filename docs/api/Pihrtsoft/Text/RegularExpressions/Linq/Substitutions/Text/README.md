@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Substitutions](../README.md)
+**Containing Type**: [Substitutions](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -25,13 +25,13 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Substitution Text(char valu
 
 ### Parameters
 
-**value** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**value** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 A Unicode character\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Substitution](../../Substitution/README.md)
+[Substitution](../../Substitution/README.md)
 
 ## Text\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Substitutions_Text_System_String_"></a>
 
@@ -45,11 +45,11 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Substitution Text(string va
 
 ### Parameters
 
-**value** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**value** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A content of the substitution pattern\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Substitution](../../Substitution/README.md)
+[Substitution](../../Substitution/README.md)
 

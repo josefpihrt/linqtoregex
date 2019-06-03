@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Patterns](../README.md)
+**Containing Type**: [Patterns](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -28,13 +28,13 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileNotC
 
 ### Parameters
 
-**value** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[AsciiChar](../../AsciiChar/README.md)
+**value** &ensp; [AsciiChar](../../AsciiChar/README.md)
 
 An enumerated constant that identifies ASCII character\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedPattern](../../QuantifiedPattern/README.md)
+[QuantifiedPattern](../../QuantifiedPattern/README.md)
 
 ## WhileNotChar\(Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_WhileNotChar_System_Char_"></a>
 
@@ -48,13 +48,13 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileNotC
 
 ### Parameters
 
-**value** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**value** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 A Unicode character\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedPattern](../../QuantifiedPattern/README.md)
+[QuantifiedPattern](../../QuantifiedPattern/README.md)
 
 ## WhileNotChar\(Char\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_WhileNotChar_System_Char___"></a>
 
@@ -68,13 +68,13 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileNotC
 
 ### Parameters
 
-**characters** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)\[\]
+**characters** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)\[\]
 
 Unicode characters\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedPattern](../../QuantifiedPattern/README.md)
+[QuantifiedPattern](../../QuantifiedPattern/README.md)
 
 ### Exceptions
 
@@ -98,13 +98,13 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileNotC
 
 ### Parameters
 
-**value** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../../CharGrouping/README.md)
+**value** &ensp; [CharGrouping](../../CharGrouping/README.md)
 
 A set of Unicode characters\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedPattern](../../QuantifiedPattern/README.md)
+[QuantifiedPattern](../../QuantifiedPattern/README.md)
 
 ### Exceptions
 
@@ -124,13 +124,13 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileNotC
 
 ### Parameters
 
-**characters** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**characters** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Unicode characters\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedPattern](../../QuantifiedPattern/README.md)
+[QuantifiedPattern](../../QuantifiedPattern/README.md)
 
 ### Exceptions
 

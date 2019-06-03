@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[RegexUtility](../README.md)
+**Containing Type**: [RegexUtility](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -39,7 +39,7 @@ public static string GetRandomGroupName(int length)
 
 ### Parameters
 
-**length** &emsp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+**length** &ensp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 Length of a group name\.
 

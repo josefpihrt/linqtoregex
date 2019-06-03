@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../README.md)
+**Containing Type**: [CharGrouping](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -16,6 +16,6 @@ protected abstract void AppendItemContentTo(Pihrtsoft.Text.RegularExpressions.Li
 
 ### Parameters
 
-**builder** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[PatternBuilder](../../PatternBuilder/README.md)
+**builder** &ensp; [PatternBuilder](../../PatternBuilder/README.md)
 
 The builder to use for appending the text\.

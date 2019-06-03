@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[PatternBuilder](../README.md)
+**Containing Type**: [PatternBuilder](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -31,7 +31,7 @@ public void Append(Pihrtsoft.Text.RegularExpressions.Linq.AsciiChar value)
 
 ### Parameters
 
-**value** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[AsciiChar](../../AsciiChar/README.md)
+**value** &ensp; [AsciiChar](../../AsciiChar/README.md)
 
 An enumerated constant that identifies an ASCII character to append\.
 
@@ -47,7 +47,7 @@ public void Append(char value)
 
 ### Parameters
 
-**value** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**value** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The character to append\.
 
@@ -63,7 +63,7 @@ public void Append(char[] characters)
 
 ### Parameters
 
-**characters** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)\[\]
+**characters** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)\[\]
 
 Unicode characters\.
 
@@ -85,7 +85,7 @@ public void Append(Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping value)
 
 ### Parameters
 
-**value** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../../CharGrouping/README.md)
+**value** &ensp; [CharGrouping](../../CharGrouping/README.md)
 
 The pattern to append\.
 
@@ -107,7 +107,7 @@ public void Append(int value)
 
 ### Parameters
 
-**value** &emsp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+**value** &ensp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A code of the character to append\.
 
@@ -123,7 +123,7 @@ public void Append(object value)
 
 ### Parameters
 
-**value** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**value** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The object to append\.
 
@@ -139,7 +139,7 @@ public void Append(Pihrtsoft.Text.RegularExpressions.Linq.Pattern pattern)
 
 ### Parameters
 
-**pattern** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../../Pattern/README.md)
+**pattern** &ensp; [Pattern](../../Pattern/README.md)
 
 The pattern to append\.
 
@@ -161,6 +161,6 @@ public void Append(string value)
 
 ### Parameters
 
-**value** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**value** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The text to append\.

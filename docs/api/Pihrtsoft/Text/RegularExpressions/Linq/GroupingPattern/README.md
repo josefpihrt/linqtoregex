@@ -20,10 +20,10 @@ public abstract class GroupingPattern : Pihrtsoft.Text.RegularExpressions.Linq.Q
 
 ### Derived
 
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Assertion](../Assertion/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[BackAssertion](../BackAssertion/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[NegativeAssertion](../NegativeAssertion/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[NegativeBackAssertion](../NegativeBackAssertion/README.md)
+* [Assertion](../Assertion/README.md)
+* [BackAssertion](../BackAssertion/README.md)
+* [NegativeAssertion](../NegativeAssertion/README.md)
+* [NegativeBackAssertion](../NegativeBackAssertion/README.md)
 
 ## Constructors
 

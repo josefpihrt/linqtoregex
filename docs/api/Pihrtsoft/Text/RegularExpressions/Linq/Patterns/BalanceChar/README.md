@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Patterns](../README.md)
+**Containing Type**: [Patterns](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -17,21 +17,21 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern BalanceChar(char op
 
 ### Parameters
 
-**openingCharacter** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**openingCharacter** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 Opening Unicode character to balance\.
 
-**closingCharacter** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**closingCharacter** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 Closing Unicode character to balance\.
 
-**groupName** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**groupName** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A name of the group that contains balanced content of the opening and closing character\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../../Pattern/README.md)
+[Pattern](../../Pattern/README.md)
 
 ### Exceptions
 

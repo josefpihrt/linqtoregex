@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Patterns](../README.md)
+**Containing Type**: [Patterns](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -27,17 +27,17 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern IfGroup
 
 ### Parameters
 
-**groupNumber** &emsp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+**groupNumber** &ensp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of the group\.
 
-**trueContent** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**trueContent** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched if the numbered group is matched\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../QuantifiablePattern/README.md)
+[QuantifiablePattern](../../QuantifiablePattern/README.md)
 
 ### Exceptions
 
@@ -61,21 +61,21 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern IfGroup
 
 ### Parameters
 
-**groupNumber** &emsp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+**groupNumber** &ensp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of the group\.
 
-**trueContent** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**trueContent** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched if the numbered group is matched\.
 
-**falseContent** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**falseContent** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched if the numbered group is not matched\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../QuantifiablePattern/README.md)
+[QuantifiablePattern](../../QuantifiablePattern/README.md)
 
 ### Exceptions
 
@@ -99,17 +99,17 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern IfGroup
 
 ### Parameters
 
-**groupName** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**groupName** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A name of the group\.
 
-**trueContent** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**trueContent** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched if the named group is matched\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../QuantifiablePattern/README.md)
+[QuantifiablePattern](../../QuantifiablePattern/README.md)
 
 ### Exceptions
 
@@ -133,21 +133,21 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern IfGroup
 
 ### Parameters
 
-**groupName** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**groupName** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A name of the group\.
 
-**trueContent** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**trueContent** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched if the named group is matched\.
 
-**falseContent** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**falseContent** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched if the named group is not matched\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../QuantifiablePattern/README.md)
+[QuantifiablePattern](../../QuantifiablePattern/README.md)
 
 ### Exceptions
 

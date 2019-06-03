@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../README.md)
+**Containing Type**: [CharGroup](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -26,17 +26,17 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharSubtraction operator -(
 
 ### Parameters
 
-**baseGroup** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../README.md)
+**baseGroup** &ensp; [CharGroup](../README.md)
 
 A base group\.
 
-**excludedGroup** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../README.md)
+**excludedGroup** &ensp; [CharGroup](../README.md)
 
 An excluded group\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharSubtraction](../../CharSubtraction/README.md)
+[CharSubtraction](../../CharSubtraction/README.md)
 
 ### Exceptions
 
@@ -56,17 +56,17 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharSubtraction operator -(
 
 ### Parameters
 
-**baseGroup** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../README.md)
+**baseGroup** &ensp; [CharGroup](../README.md)
 
 A base group\.
 
-**excludedGroup** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../../CharGrouping/README.md)
+**excludedGroup** &ensp; [CharGrouping](../../CharGrouping/README.md)
 
 An excluded group\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharSubtraction](../../CharSubtraction/README.md)
+[CharSubtraction](../../CharSubtraction/README.md)
 
 ### Exceptions
 
@@ -86,17 +86,17 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharSubtraction operator -(
 
 ### Parameters
 
-**baseGroup** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../README.md)
+**baseGroup** &ensp; [CharGroup](../README.md)
 
 A base group\.
 
-**excludedGroup** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/README.md)
+**excludedGroup** &ensp; [CharPattern](../../CharPattern/README.md)
 
 An excluded group\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharSubtraction](../../CharSubtraction/README.md)
+[CharSubtraction](../../CharSubtraction/README.md)
 
 ### Exceptions
 

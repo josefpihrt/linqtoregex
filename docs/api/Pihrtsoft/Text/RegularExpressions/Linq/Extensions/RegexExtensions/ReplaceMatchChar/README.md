@@ -2,7 +2,7 @@
 
 [Home](../../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.Extensions\.[RegexExtensions](../README.md)
+**Containing Type**: [RegexExtensions](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -16,15 +16,15 @@ public static string ReplaceMatchChar(this System.Text.RegularExpressions.Regex 
 
 ### Parameters
 
-**regex** &emsp; System\.Text\.RegularExpressions\.[Regex](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex)
+**regex** &ensp; [Regex](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex)
 
 The regular expression to be matched\.
 
-**input** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**input** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
-**replacementChar** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**replacementChar** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The replacement char\.
 

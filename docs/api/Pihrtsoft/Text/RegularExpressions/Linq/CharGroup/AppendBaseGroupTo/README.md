@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../README.md)
+**Containing Type**: [CharGroup](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -16,13 +16,13 @@ public void AppendBaseGroupTo(Pihrtsoft.Text.RegularExpressions.Linq.PatternBuil
 
 ### Parameters
 
-**builder** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[PatternBuilder](../../PatternBuilder/README.md)
+**builder** &ensp; [PatternBuilder](../../PatternBuilder/README.md)
 
 The builder to use for appending the text\.
 
 ### Implements
 
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[IBaseGroup.AppendBaseGroupTo](../../IBaseGroup/AppendBaseGroupTo/README.md)
+* [IBaseGroup.AppendBaseGroupTo](../../IBaseGroup/AppendBaseGroupTo/README.md)
 
 ### Exceptions
 

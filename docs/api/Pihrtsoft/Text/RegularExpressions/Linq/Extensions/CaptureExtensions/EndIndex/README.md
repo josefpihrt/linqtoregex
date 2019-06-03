@@ -2,7 +2,7 @@
 
 [Home](../../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.Extensions\.[CaptureExtensions](../README.md)
+**Containing Type**: [CaptureExtensions](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -16,7 +16,7 @@ public static int EndIndex(this System.Text.RegularExpressions.Capture capture)
 
 ### Parameters
 
-**capture** &emsp; System\.Text\.RegularExpressions\.[Capture](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.capture)
+**capture** &ensp; [Capture](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.capture)
 
 A regular expression capture\.
 

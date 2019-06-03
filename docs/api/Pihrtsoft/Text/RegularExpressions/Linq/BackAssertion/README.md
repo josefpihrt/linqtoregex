@@ -21,7 +21,7 @@ public sealed class BackAssertion : Pihrtsoft.Text.RegularExpressions.Linq.Group
 
 ### Implements
 
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[INegateable](../INegateable-1/README.md)\<Pihrtsoft\.Text\.RegularExpressions\.Linq\.[NegativeBackAssertion](../NegativeBackAssertion/README.md)>
+* [INegateable](../INegateable-1/README.md)\<[NegativeBackAssertion](../NegativeBackAssertion/README.md)>
 
 ## Methods
 

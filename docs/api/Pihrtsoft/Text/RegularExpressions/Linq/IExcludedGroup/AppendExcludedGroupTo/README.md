@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[IExcludedGroup](../README.md)
+**Containing Type**: [IExcludedGroup](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -16,6 +16,6 @@ void AppendExcludedGroupTo(Pihrtsoft.Text.RegularExpressions.Linq.PatternBuilder
 
 ### Parameters
 
-**builder** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[PatternBuilder](../../PatternBuilder/README.md)
+**builder** &ensp; [PatternBuilder](../../PatternBuilder/README.md)
 
 The builder to use for appending the text\.

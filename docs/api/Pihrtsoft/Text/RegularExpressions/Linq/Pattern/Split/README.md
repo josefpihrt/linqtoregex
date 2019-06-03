@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+**Containing Type**: [Pattern](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -25,7 +25,7 @@ public string[] Split(string input)
 
 ### Parameters
 
-**input** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**input** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to split\.
 
@@ -45,11 +45,11 @@ public string[] Split(string input, System.Text.RegularExpressions.RegexOptions 
 
 ### Parameters
 
-**input** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**input** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to split\.
 
-**options** &emsp; System\.Text\.RegularExpressions\.[RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
+**options** &ensp; [RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that specify options for matching\.
 

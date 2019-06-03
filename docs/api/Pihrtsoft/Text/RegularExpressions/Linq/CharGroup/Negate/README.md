@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../README.md)
+**Containing Type**: [CharGroup](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -16,8 +16,8 @@ public Pihrtsoft.Text.RegularExpressions.Linq.CharGroup Negate()
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../README.md)
+[CharGroup](../README.md)
 
 ### Implements
 
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[INegateable\<CharGroup>.Negate](../../INegateable-1/Negate/README.md)
+* [INegateable\<CharGroup>.Negate](../../INegateable-1/Negate/README.md)

@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[PatternSettings](../README.md)
+**Containing Type**: [PatternSettings](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -16,7 +16,7 @@ public bool HasOptions(Pihrtsoft.Text.RegularExpressions.Linq.PatternOptions opt
 
 ### Parameters
 
-**options** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[PatternOptions](../../PatternOptions/README.md)
+**options** &ensp; [PatternOptions](../../PatternOptions/README.md)
 
 A bitwise combination of the enumeration values\.
 

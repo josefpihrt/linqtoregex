@@ -21,8 +21,8 @@ public abstract class CharGrouping : Pihrtsoft.Text.RegularExpressions.Linq.IBas
 
 ### Implements
 
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[IBaseGroup](../IBaseGroup/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[IExcludedGroup](../IExcludedGroup/README.md)
+* [IBaseGroup](../IBaseGroup/README.md)
+* [IExcludedGroup](../IExcludedGroup/README.md)
 
 ## Constructors
 

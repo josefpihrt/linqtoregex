@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[PatternBuilder](../README.md)
+**Containing Type**: [PatternBuilder](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -16,15 +16,15 @@ public void AppendIfAssert(object testContent, object trueContent, object falseC
 
 ### Parameters
 
-**testContent** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**testContent** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to assert\.
 
-**trueContent** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**trueContent** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to match if the assertion succeeds\.
 
-**falseContent** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**falseContent** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to match if the assertion fails\.
 

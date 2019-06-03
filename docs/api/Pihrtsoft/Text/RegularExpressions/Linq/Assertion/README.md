@@ -21,7 +21,7 @@ public sealed class Assertion : Pihrtsoft.Text.RegularExpressions.Linq.GroupingP
 
 ### Implements
 
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[INegateable](../INegateable-1/README.md)\<Pihrtsoft\.Text\.RegularExpressions\.Linq\.[NegativeAssertion](../NegativeAssertion/README.md)>
+* [INegateable](../INegateable-1/README.md)\<[NegativeAssertion](../NegativeAssertion/README.md)>
 
 ## Methods
 

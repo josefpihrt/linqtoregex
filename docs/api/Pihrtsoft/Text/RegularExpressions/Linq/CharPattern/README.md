@@ -23,9 +23,9 @@ public abstract class CharPattern : Pihrtsoft.Text.RegularExpressions.Linq.Quant
 
 ### Implements
 
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[IBaseGroup](../IBaseGroup/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[IExcludedGroup](../IExcludedGroup/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[INegateable](../INegateable-1/README.md)\<Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../CharGroup/README.md)>
+* [IBaseGroup](../IBaseGroup/README.md)
+* [IExcludedGroup](../IExcludedGroup/README.md)
+* [INegateable](../INegateable-1/README.md)\<[CharGroup](../CharGroup/README.md)>
 
 ## Methods
 

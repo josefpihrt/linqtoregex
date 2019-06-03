@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+**Containing Type**: [Pattern](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -40,7 +40,7 @@ public string ToString(Pihrtsoft.Text.RegularExpressions.Linq.PatternOptions opt
 
 ### Parameters
 
-**options** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[PatternOptions](../../PatternOptions/README.md)
+**options** &ensp; [PatternOptions](../../PatternOptions/README.md)
 
 A bitwise combination of the enumeration values that modify the pattern\.
 
@@ -60,7 +60,7 @@ public string ToString(Pihrtsoft.Text.RegularExpressions.Linq.PatternSettings se
 
 ### Parameters
 
-**settings** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[PatternSettings](../../PatternSettings/README.md)
+**settings** &ensp; [PatternSettings](../../PatternSettings/README.md)
 
 A settings that modify the pattern\.
 

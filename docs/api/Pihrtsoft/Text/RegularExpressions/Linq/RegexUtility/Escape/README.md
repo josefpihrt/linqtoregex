@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[RegexUtility](../README.md)
+**Containing Type**: [RegexUtility](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -28,7 +28,7 @@ public static string Escape(char value)
 
 ### Parameters
 
-**value** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**value** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 A Unicode character\.
 
@@ -48,11 +48,11 @@ public static string Escape(char value, bool inCharGroup)
 
 ### Parameters
 
-**value** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**value** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 A Unicode character\.
 
-**inCharGroup** &emsp; [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+**inCharGroup** &ensp; [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
 Indicates whether the character is considered to be inside or outside of the character group\.
 
@@ -73,7 +73,7 @@ public static string Escape(string input)
 
 ### Parameters
 
-**input** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**input** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The text to be converted\.
 
@@ -99,11 +99,11 @@ public static string Escape(string input, bool inCharGroup)
 
 ### Parameters
 
-**input** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**input** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The text to be converted\.
 
-**inCharGroup** &emsp; [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+**inCharGroup** &ensp; [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
 Indicates whether the text is considered to be inside or outside of the character group\.
 

@@ -21,7 +21,7 @@ public class CharSubtraction : Pihrtsoft.Text.RegularExpressions.Linq.Quantifiab
 
 ### Implements
 
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[IExcludedGroup](../IExcludedGroup/README.md)
+* [IExcludedGroup](../IExcludedGroup/README.md)
 
 ## Methods
 

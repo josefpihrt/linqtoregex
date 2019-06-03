@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Assertion](../README.md)
+**Containing Type**: [Assertion](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -16,13 +16,13 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.NegativeAssertion operator 
 
 ### Parameters
 
-**value** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Assertion](../README.md)
+**value** &ensp; [Assertion](../README.md)
 
 A value to negate\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[NegativeAssertion](../../NegativeAssertion/README.md)
+[NegativeAssertion](../../NegativeAssertion/README.md)
 
 ### Exceptions
 

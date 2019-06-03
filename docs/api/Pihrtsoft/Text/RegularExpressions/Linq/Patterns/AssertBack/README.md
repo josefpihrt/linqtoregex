@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Patterns](../README.md)
+**Containing Type**: [Patterns](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -25,13 +25,13 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.BackAssertion AssertBack(ob
 
 ### Parameters
 
-**content** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**content** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 A content to be matched\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[BackAssertion](../../BackAssertion/README.md)
+[BackAssertion](../../BackAssertion/README.md)
 
 ### Exceptions
 
@@ -51,13 +51,13 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.BackAssertion AssertBack(pa
 
 ### Parameters
 
-**content** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
+**content** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
 
 An object array that contains zero or more patterns any one of which has to be matched\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[BackAssertion](../../BackAssertion/README.md)
+[BackAssertion](../../BackAssertion/README.md)
 
 ### Exceptions
 

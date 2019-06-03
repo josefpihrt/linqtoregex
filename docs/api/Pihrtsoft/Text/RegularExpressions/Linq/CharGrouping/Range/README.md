@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../README.md)
+**Containing Type**: [CharGrouping](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -16,15 +16,15 @@ public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Range(char first, cha
 
 ### Parameters
 
-**first** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**first** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The first character of the range\.
 
-**last** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**last** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The last character of the range\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../README.md)
+[CharGrouping](../README.md)
 

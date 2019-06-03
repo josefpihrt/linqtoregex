@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[PatternSettings](../README.md)
+**Containing Type**: [PatternSettings](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -16,5 +16,5 @@ public Pihrtsoft.Text.RegularExpressions.Linq.IdentifierBoundary IdentifierBound
 
 ### Property Value
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[IdentifierBoundary](../../IdentifierBoundary/README.md)
+[IdentifierBoundary](../../IdentifierBoundary/README.md)
 

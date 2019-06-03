@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[PatternBuilder](../README.md)
+**Containing Type**: [PatternBuilder](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -29,7 +29,7 @@ public void AppendNegativeCharGroup(Pihrtsoft.Text.RegularExpressions.Linq.Ascii
 
 ### Parameters
 
-**value** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[AsciiChar](../../AsciiChar/README.md)
+**value** &ensp; [AsciiChar](../../AsciiChar/README.md)
 
 An enumerated constant that identifies ASCII character\.
 
@@ -45,7 +45,7 @@ public void AppendNegativeCharGroup(Pihrtsoft.Text.RegularExpressions.Linq.Gener
 
 ### Parameters
 
-**category** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[GeneralCategory](../../GeneralCategory/README.md)
+**category** &ensp; [GeneralCategory](../../GeneralCategory/README.md)
 
 An enumerated constant that identifies Unicode category\.
 
@@ -61,11 +61,11 @@ public void AppendNegativeCharGroup(char first, char last)
 
 ### Parameters
 
-**first** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**first** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The first character of the range\.
 
-**last** &emsp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+**last** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The last character of the range\.
 
@@ -87,7 +87,7 @@ public void AppendNegativeCharGroup(Pihrtsoft.Text.RegularExpressions.Linq.CharG
 
 ### Parameters
 
-**value** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../../CharGrouping/README.md)
+**value** &ensp; [CharGrouping](../../CharGrouping/README.md)
 
 A content of a character group\.
 
@@ -109,7 +109,7 @@ public void AppendNegativeCharGroup(Pihrtsoft.Text.RegularExpressions.Linq.Named
 
 ### Parameters
 
-**block** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[NamedBlock](../../NamedBlock/README.md)
+**block** &ensp; [NamedBlock](../../NamedBlock/README.md)
 
 An enumerated constant that identifies Unicode block\.
 
@@ -125,7 +125,7 @@ public void AppendNegativeCharGroup(string characters)
 
 ### Parameters
 
-**characters** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**characters** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Unicode characters\.
 

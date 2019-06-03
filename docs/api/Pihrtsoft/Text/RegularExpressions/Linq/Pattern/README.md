@@ -20,10 +20,10 @@ public abstract class Pattern
 
 ### Derived
 
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[NegativeSurroundAssertion](../NegativeSurroundAssertion/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../QuantifiablePattern/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedPattern](../QuantifiedPattern/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[SurroundAssertion](../SurroundAssertion/README.md)
+* [NegativeSurroundAssertion](../NegativeSurroundAssertion/README.md)
+* [QuantifiablePattern](../QuantifiablePattern/README.md)
+* [QuantifiedPattern](../QuantifiedPattern/README.md)
+* [SurroundAssertion](../SurroundAssertion/README.md)
 
 ## Constructors
 

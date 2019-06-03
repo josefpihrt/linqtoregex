@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Patterns](../README.md)
+**Containing Type**: [Patterns](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -25,17 +25,17 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.SurroundAssertion AssertSur
 
 ### Parameters
 
-**assertion** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**assertion** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 A content of the assertions\.
 
-**content** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**content** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[SurroundAssertion](../../SurroundAssertion/README.md)
+[SurroundAssertion](../../SurroundAssertion/README.md)
 
 ### Exceptions
 
@@ -55,21 +55,21 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.SurroundAssertion AssertSur
 
 ### Parameters
 
-**backAssertion** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**backAssertion** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 A content of the lookbehind assertion\.
 
-**content** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**content** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched\.
 
-**assertion** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**assertion** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 A content of the lookahead assertion\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[SurroundAssertion](../../SurroundAssertion/README.md)
+[SurroundAssertion](../../SurroundAssertion/README.md)
 
 ### Exceptions
 

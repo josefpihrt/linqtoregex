@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+**Containing Type**: [Pattern](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -25,17 +25,17 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern IfAssert(objec
 
 ### Parameters
 
-**testContent** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**testContent** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to assert\.
 
-**trueContent** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**trueContent** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched if the assertion succeeds\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../QuantifiablePattern/README.md)
+[QuantifiablePattern](../../QuantifiablePattern/README.md)
 
 ### Exceptions
 
@@ -55,21 +55,21 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern IfAssert(objec
 
 ### Parameters
 
-**testContent** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**testContent** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to assert\.
 
-**trueContent** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**trueContent** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched if the assertion succeeds\.
 
-**falseContent** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**falseContent** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched if the assertion fails\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../QuantifiablePattern/README.md)
+[QuantifiablePattern](../../QuantifiablePattern/README.md)
 
 ### Exceptions
 

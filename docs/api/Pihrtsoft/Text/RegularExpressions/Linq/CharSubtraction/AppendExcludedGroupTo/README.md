@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharSubtraction](../README.md)
+**Containing Type**: [CharSubtraction](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -16,13 +16,13 @@ public void AppendExcludedGroupTo(Pihrtsoft.Text.RegularExpressions.Linq.Pattern
 
 ### Parameters
 
-**builder** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[PatternBuilder](../../PatternBuilder/README.md)
+**builder** &ensp; [PatternBuilder](../../PatternBuilder/README.md)
 
 The builder to use for appending the text\.
 
 ### Implements
 
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[IExcludedGroup.AppendExcludedGroupTo](../../IExcludedGroup/AppendExcludedGroupTo/README.md)
+* [IExcludedGroup.AppendExcludedGroupTo](../../IExcludedGroup/AppendExcludedGroupTo/README.md)
 
 ### Exceptions
 

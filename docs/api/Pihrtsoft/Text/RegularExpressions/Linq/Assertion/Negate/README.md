@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Assertion](../README.md)
+**Containing Type**: [Assertion](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -16,8 +16,8 @@ public Pihrtsoft.Text.RegularExpressions.Linq.NegativeAssertion Negate()
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[NegativeAssertion](../../NegativeAssertion/README.md)
+[NegativeAssertion](../../NegativeAssertion/README.md)
 
 ### Implements
 
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[INegateable\<NegativeAssertion>.Negate](../../INegateable-1/Negate/README.md)
+* [INegateable\<NegativeAssertion>.Negate](../../INegateable-1/Negate/README.md)

@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../README.md)
+**Containing Type**: [CharGroup](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -25,13 +25,13 @@ public static explicit operator Pihrtsoft.Text.RegularExpressions.Linq.CharGroup
 
 ### Parameters
 
-**value** &emsp; Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../../CharGrouping/README.md)
+**value** &ensp; [CharGrouping](../../CharGrouping/README.md)
 
 An instance of the [CharGrouping](../../CharGrouping/README.md) class\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../README.md)
+[CharGroup](../README.md)
 
 ### Exceptions
 
@@ -51,13 +51,13 @@ public static explicit operator Pihrtsoft.Text.RegularExpressions.Linq.CharGroup
 
 ### Parameters
 
-**characters** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**characters** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A set of Unicode characters\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../README.md)
+[CharGroup](../README.md)
 
 ### Exceptions
 

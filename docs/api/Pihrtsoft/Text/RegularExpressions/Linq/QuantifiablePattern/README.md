@@ -20,11 +20,11 @@ public abstract class QuantifiablePattern : Pihrtsoft.Text.RegularExpressions.Li
 
 ### Derived
 
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[GroupingPattern](../GroupingPattern/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../CharGroup/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../CharPattern/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharSubtraction](../CharSubtraction/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[NegativeWordBoundary](../NegativeWordBoundary/README.md)
+* [GroupingPattern](../GroupingPattern/README.md)
+* [CharGroup](../CharGroup/README.md)
+* [CharPattern](../CharPattern/README.md)
+* [CharSubtraction](../CharSubtraction/README.md)
+* [NegativeWordBoundary](../NegativeWordBoundary/README.md)
 * [...](#derived-all "See all derived types")
 
 ## Constructors
@@ -478,11 +478,11 @@ public abstract class QuantifiablePattern : Pihrtsoft.Text.RegularExpressions.Li
 
 ## Derived \(All\)
 
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[GroupingPattern](../GroupingPattern/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../CharGroup/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../CharPattern/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharSubtraction](../CharSubtraction/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[NegativeWordBoundary](../NegativeWordBoundary/README.md)
+* [GroupingPattern](../GroupingPattern/README.md)
+* [CharGroup](../CharGroup/README.md)
+* [CharPattern](../CharPattern/README.md)
+* [CharSubtraction](../CharSubtraction/README.md)
+* [NegativeWordBoundary](../NegativeWordBoundary/README.md)
 * &mdash;&mdash;&mdash;&mdash;&mdash;
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[WordBoundary](../WordBoundary/README.md)
+* [WordBoundary](../WordBoundary/README.md)
 
