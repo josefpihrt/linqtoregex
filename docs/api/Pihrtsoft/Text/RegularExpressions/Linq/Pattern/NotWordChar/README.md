@@ -15,8 +15,7 @@
 
 ## NotWordChar\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotWordChar"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a character that is not a word character\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotWordChar()
 
 ## NotWordChar\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotWordChar_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a character that is not a word character specified number of times\.
 
 ```csharp

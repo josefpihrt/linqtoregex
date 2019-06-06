@@ -15,8 +15,7 @@
 
 ## Underscore\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Underscore"></a>
 
-### Summary
-
+\
 Returns a pattern that matches an underscore\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Underscore()
 
 ## Underscore\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Underscore_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of underscores\.
 
 ```csharp

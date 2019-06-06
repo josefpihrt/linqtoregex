@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Appends a substitution pattern that substitutes the last substring matched by the numbered or named group\.
 
 ```csharp

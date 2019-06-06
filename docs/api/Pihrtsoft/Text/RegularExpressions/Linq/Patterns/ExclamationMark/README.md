@@ -15,8 +15,7 @@
 
 ## ExclamationMark\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_ExclamationMark"></a>
 
-### Summary
-
+\
 Returns a pattern that matches an exclamation mark\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern ExclamationMark
 
 ## ExclamationMark\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_ExclamationMark_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of exclamation marks\.
 
 ```csharp

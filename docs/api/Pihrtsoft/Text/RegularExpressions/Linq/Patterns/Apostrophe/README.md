@@ -15,8 +15,7 @@
 
 ## Apostrophe\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Apostrophe"></a>
 
-### Summary
-
+\
 Returns a pattern that matches an apostrophe\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Apostrophe()
 
 ## Apostrophe\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Apostrophe_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of apostrophes\.
 
 ```csharp

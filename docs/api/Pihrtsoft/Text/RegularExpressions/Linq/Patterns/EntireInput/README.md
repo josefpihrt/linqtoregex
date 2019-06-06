@@ -15,8 +15,7 @@
 
 ## EntireInput\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_EntireInput_System_Object_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified content surrounded with the beginning and the end of the string\.
 
 ```csharp
@@ -41,8 +40,7 @@ The content to be matched\.
 
 ## EntireInput\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_EntireInput_System_Object___"></a>
 
-### Summary
-
+\
 Returns a pattern that matches any one pattern surrounded with the beginning and the end of the string\.
 
 ```csharp

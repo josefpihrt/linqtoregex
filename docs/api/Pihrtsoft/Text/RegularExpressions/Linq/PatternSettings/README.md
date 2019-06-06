@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Specifies a set of features to support on the [PatternBuilder](../PatternBuilder/README.md) object\. This class cannot be inherited\.
 
 ```csharp

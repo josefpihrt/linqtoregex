@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Exposes static methods that returns instance of [CharGrouping](../CharGrouping/README.md) class\. [CharGrouping](../CharGrouping/README.md) class represents a character group content\.
 
 ```csharp

@@ -15,8 +15,7 @@
 
 ## Group\(Match, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_MatchExtensions_Group_System_Text_RegularExpressions_Match_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a group that has a specified number and it is contained in a specified match\.
 
 ```csharp
@@ -45,8 +44,7 @@ A number of the group\.
 
 ## Group\(Match, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_MatchExtensions_Group_System_Text_RegularExpressions_Match_System_String_"></a>
 
-### Summary
-
+\
 Returns a group that has a specified name and it is contained in a specified match\.
 
 ```csharp

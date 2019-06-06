@@ -15,8 +15,7 @@
 
 ## NotNumberSign\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotNumberSign"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a character that is not a number sign\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotNumberSign(
 
 ## NotNumberSign\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotNumberSign_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a specified number of characters that are not a number sign\.
 
 ```csharp

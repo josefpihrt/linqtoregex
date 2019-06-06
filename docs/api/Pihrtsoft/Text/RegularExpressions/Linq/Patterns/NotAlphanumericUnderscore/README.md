@@ -15,8 +15,7 @@
 
 ## NotAlphanumericUnderscore\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAlphanumericUnderscore"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is neither alphanumeric character nor underscore\. Alphanumeric character is a latin alphabet letter or an arabic digit\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotAlphanumericUn
 
 ## NotAlphanumericUnderscore\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAlphanumericUnderscore_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is neither alphanumeric character nor underscore specified number of times\. Alphanumeric character is a latin alphabet letter or an arabic digit\.
 
 ```csharp

@@ -17,8 +17,7 @@
 
 ## Count\(Int32, Int32, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Count_System_Int32_System_Int32_System_Object_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches specified pattern from minimal to maximum number of times\.
 
 ```csharp
@@ -55,8 +54,7 @@ The content to be matched\.
 
 ## Count\(Int32, Int32, Object, Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Count_System_Int32_System_Int32_System_Object_System_Object___"></a>
 
-### Summary
-
+\
 Appends a pattern that matches any one specified pattern from minimal to maximum number of times\.
 
 ```csharp
@@ -97,8 +95,7 @@ Other elements of a sequence that contains patterns any one of which has to be m
 
 ## Count\(Int32, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Count_System_Int32_System_Object_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches specified pattern specified number of times\.
 
 ```csharp
@@ -131,8 +128,7 @@ The content to be matched\.
 
 ## Count\(Int32, Object, Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Count_System_Int32_System_Object_System_Object___"></a>
 
-### Summary
-
+\
 Appends a pattern that matches any one specified pattern specified number of times\.
 
 ```csharp

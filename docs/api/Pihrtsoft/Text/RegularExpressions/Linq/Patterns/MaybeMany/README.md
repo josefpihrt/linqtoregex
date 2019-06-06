@@ -15,8 +15,7 @@
 
 ## MaybeMany\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_MaybeMany_System_Object_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches specified content zero or more times\.
 
 ```csharp
@@ -41,8 +40,7 @@ The content to be matched\.
 
 ## MaybeMany\(Object, Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_MaybeMany_System_Object_System_Object___"></a>
 
-### Summary
-
+\
 Returns a pattern that matches any one specified element zero or more times\.
 
 ```csharp

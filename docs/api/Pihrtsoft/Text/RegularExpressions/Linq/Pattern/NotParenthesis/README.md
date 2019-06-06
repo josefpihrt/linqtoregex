@@ -15,8 +15,7 @@
 
 ## NotParenthesis\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotParenthesis"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a character that is neither left nor right parenthesis\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotParenthesis()
 
 ## NotParenthesis\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotParenthesis_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a character that is neither left nor right parenthesis specified number of times\.
 
 ```csharp

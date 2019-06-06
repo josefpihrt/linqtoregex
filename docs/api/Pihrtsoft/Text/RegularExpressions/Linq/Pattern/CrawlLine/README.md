@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Appends a pattern that matches any character except linefeed and carriage return zero or more times but as few times as possible\.
 
 ```csharp

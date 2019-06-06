@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Converts the value of this instance to a [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)\.
 
 ```csharp

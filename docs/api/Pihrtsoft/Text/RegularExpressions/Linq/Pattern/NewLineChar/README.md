@@ -15,8 +15,7 @@
 
 ## NewLineChar\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NewLineChar"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a newline character\. Newline character is a carriage return or a linefeed\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NewLineChar()
 
 ## NewLineChar\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NewLineChar_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a specified number of newline characters\. Newline character is a carriage return or a linefeed\.
 
 ```csharp

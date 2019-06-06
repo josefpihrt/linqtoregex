@@ -15,8 +15,7 @@
 
 ## Text\(Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Substitution_Text_System_Char_"></a>
 
-### Summary
-
+\
 Appends a specified character to the substitution pattern\.
 
 ```csharp
@@ -35,8 +34,7 @@ A Unicode character to append\.
 
 ## Text\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Substitution_Text_System_String_"></a>
 
-### Summary
-
+\
 Appends a specified text to the substitution pattern\.
 
 ```csharp

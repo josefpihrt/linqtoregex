@@ -15,8 +15,7 @@
 
 ## GraveAccent\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_GraveAccent"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a grave accent\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern GraveAccent()
 
 ## GraveAccent\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_GraveAccent_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a specified number of grave accents\.
 
 ```csharp

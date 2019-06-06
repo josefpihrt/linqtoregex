@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Represents a pattern that is quantified, i\.e\. the quantifier is applied on it\. If required, pattern will be enclosed in the \(noncapturing\) group\. This class is abstract\.
 
 ```csharp

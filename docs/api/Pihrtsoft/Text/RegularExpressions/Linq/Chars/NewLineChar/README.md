@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Returns a pattern that matches a new line character, i\.e\. a linefeed character or a carriage return character\.
 
 ```csharp

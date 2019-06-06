@@ -15,8 +15,7 @@
 
 ## Linefeed\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Linefeed"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a linefeed\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Linefeed()
 
 ## Linefeed\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Linefeed_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of linefeeds\.
 
 ```csharp

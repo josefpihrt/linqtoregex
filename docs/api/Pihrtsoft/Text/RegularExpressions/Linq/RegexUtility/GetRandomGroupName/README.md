@@ -15,8 +15,7 @@
 
 ## GetRandomGroupName\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_GetRandomGroupName"></a>
 
-### Summary
-
+\
 Returns randomly generated group name\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static string GetRandomGroupName()
 
 ## GetRandomGroupName\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_GetRandomGroupName_System_Int32_"></a>
 
-### Summary
-
+\
 Returns randomly generated group name with a specified length\.
 
 ```csharp

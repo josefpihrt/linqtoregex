@@ -15,8 +15,7 @@
 
 ## AppendMaybeMany\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendMaybeMany"></a>
 
-### Summary
-
+\
 Appends a quantifier that matches previous element zero or more times\.
 
 ```csharp
@@ -25,8 +24,7 @@ public void AppendMaybeMany()
 
 ## AppendMaybeMany\(Boolean\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendMaybeMany_System_Boolean_"></a>
 
-### Summary
-
+\
 Appends a quantifier that matches previous element zero or more times\.
 
 ```csharp

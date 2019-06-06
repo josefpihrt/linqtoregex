@@ -15,8 +15,7 @@
 
 ## NotAtSign\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAtSign"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not an at sign\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotAtSi
 
 ## NotAtSign\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAtSign_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of characters that are not an at sign\.
 
 ```csharp

@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Appends a quantifier to a specified [PatternBuilder](../../PatternBuilder/README.md)\.
 
 ```csharp

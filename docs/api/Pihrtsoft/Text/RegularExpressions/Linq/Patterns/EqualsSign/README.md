@@ -15,8 +15,7 @@
 
 ## EqualsSign\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_EqualsSign"></a>
 
-### Summary
-
+\
 Returns a pattern that matches an equals sign\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern EqualsSign()
 
 ## EqualsSign\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_EqualsSign_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of equals signs\.
 
 ```csharp

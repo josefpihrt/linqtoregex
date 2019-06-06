@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Appends a pattern that matches one or many left angle bracket balanced with one or many right angle bracket\.
 Between the characters can be zero or many characters that are neither left nor right angle bracket\.
 

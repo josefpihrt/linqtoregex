@@ -15,8 +15,7 @@
 
 ## Semicolon\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Semicolon"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a semicolon\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Semicolon()
 
 ## Semicolon\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Semicolon_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of semicolons\.
 
 ```csharp

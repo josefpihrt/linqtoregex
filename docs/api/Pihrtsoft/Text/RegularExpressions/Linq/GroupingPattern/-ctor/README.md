@@ -16,8 +16,7 @@
 
 ## GroupingPattern\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_GroupingPattern__ctor"></a>
 
-### Summary
-
+\
 Initializes a new instance of the [GroupingPattern](../README.md) class\.
 
 ```csharp
@@ -26,8 +25,7 @@ protected GroupingPattern()
 
 ## GroupingPattern\(GroupingPattern\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_GroupingPattern__ctor_Pihrtsoft_Text_RegularExpressions_Linq_GroupingPattern_"></a>
 
-### Summary
-
+\
 Initializes a new instance of the [GroupingPattern](../README.md) class with a specified content\.
 
 ```csharp
@@ -48,8 +46,7 @@ A content of the grouping\.
 
 ## GroupingPattern\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_GroupingPattern__ctor_System_Object_"></a>
 
-### Summary
-
+\
 Initializes a new instance of the [GroupingPattern](../README.md) class with a specified content\.
 
 ```csharp

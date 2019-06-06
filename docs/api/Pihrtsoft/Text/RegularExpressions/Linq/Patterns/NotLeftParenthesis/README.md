@@ -15,8 +15,7 @@
 
 ## NotLeftParenthesis\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotLeftParenthesis"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not a left parenthesis\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotLeft
 
 ## NotLeftParenthesis\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotLeftParenthesis_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of characters that are not a left parenthesis\.
 
 ```csharp

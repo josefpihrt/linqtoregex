@@ -16,8 +16,7 @@
 
 ## SurroundApostrophes\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundApostrophes"></a>
 
-### Summary
-
+\
 Returns a pattern that matches two apostrophes, allowing zero or more characters that are not an apostrophe between the apostrophes\.
 
 ```csharp
@@ -30,8 +29,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern SurroundApostrophes
 
 ## SurroundApostrophes\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundApostrophes_System_Object_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches specified pattern surrounded with apostrophes\.
 
 ```csharp
@@ -56,8 +54,7 @@ The content to be matched\.
 
 ## SurroundApostrophes\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundApostrophes_System_Object___"></a>
 
-### Summary
-
+\
 Returns a pattern that matches specified content surrounded with apostrophes\.
 
 ```csharp

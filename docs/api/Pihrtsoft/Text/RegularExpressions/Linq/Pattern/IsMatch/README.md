@@ -15,8 +15,7 @@
 
 ## IsMatch\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_IsMatch_System_String_"></a>
 
-### Summary
-
+\
 Indicates whether the current instance finds a match in the specified input string\.
 
 ```csharp
@@ -41,8 +40,7 @@ The string to search for a match\.
 
 ## IsMatch\(String, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_IsMatch_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
 
-### Summary
-
+\
 Indicates whether the current instance finds a match in the specified input string, using the specified matching options\.
 
 ```csharp

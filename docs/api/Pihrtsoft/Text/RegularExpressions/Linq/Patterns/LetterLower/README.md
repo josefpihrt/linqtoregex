@@ -15,8 +15,7 @@
 
 ## LetterLower\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_LetterLower"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character from [GeneralCategory.LetterLowercase](../../GeneralCategory/LetterLowercase/README.md)\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern LetterL
 
 ## LetterLower\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_LetterLower_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of letters from [GeneralCategory.LetterLowercase](../../GeneralCategory/LetterLowercase/README.md)\.
 
 ```csharp

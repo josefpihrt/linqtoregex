@@ -15,8 +15,7 @@
 
 ## Join\(Object, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Join_System_Object_System_Object_"></a>
 
-### Summary
-
+\
 Concatenates the elements in a specified **content** using the specified separator between each element\.
 
 ```csharp
@@ -45,8 +44,7 @@ An object that contains the elements to join\.
 
 ## Join\(Object, Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Join_System_Object_System_Object___"></a>
 
-### Summary
-
+\
 Concatenates the elements of an object array, using the specified separator between each element\.
 
 ```csharp

@@ -15,8 +15,7 @@
 
 ## RightCurlyBracket\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_RightCurlyBracket"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a right curly bracket\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern RightCurlyBrack
 
 ## RightCurlyBracket\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_RightCurlyBracket_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of right curly brackets\.
 
 ```csharp

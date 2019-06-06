@@ -15,8 +15,7 @@
 
 ## Slash\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Slash"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a slash\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Slash()
 
 ## Slash\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Slash_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a specified number of slashes\.
 
 ```csharp

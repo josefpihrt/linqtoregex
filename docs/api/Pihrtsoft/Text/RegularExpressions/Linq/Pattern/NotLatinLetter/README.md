@@ -15,8 +15,7 @@
 
 ## NotLatinLetter\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotLatinLetter"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a character that is not a latin alphabet letter\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotLatinLetter()
 
 ## NotLatinLetter\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotLatinLetter_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a character that is not a latin alphabet letter specified number of times\.
 
 ```csharp

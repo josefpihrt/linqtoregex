@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Represents a zero\-width negative lookbehind assertion\. This class cannot be inherited\.
 
 ```csharp

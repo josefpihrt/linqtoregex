@@ -15,8 +15,7 @@
 
 ## EndLine\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_EndLine"></a>
 
-### Summary
-
+\
 Returns a pattern that is matched at the end of the string or line\. End of line is defined as the position before a linefeed\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern EndLine
 
 ## EndLine\(Boolean\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_EndLine_System_Boolean_"></a>
 
-### Summary
-
+\
 Returns a pattern that is matched \(before carriage return\) at the end of the string or line\. End of line is defined as the position before a linefeed\.
 
 ```csharp

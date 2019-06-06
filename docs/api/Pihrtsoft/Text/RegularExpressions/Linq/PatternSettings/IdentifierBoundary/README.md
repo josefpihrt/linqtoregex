@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Gets or sets a value indicating whether a group name will be enclosed in angle brackets or apostrophes\.
 
 ```csharp

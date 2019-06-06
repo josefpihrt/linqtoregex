@@ -15,8 +15,7 @@
 
 ## ToRegex\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_ToRegex"></a>
 
-### Summary
-
+\
 Compiles a new instance of the [Regex](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex) class for the current instance\.
 
 ```csharp
@@ -29,8 +28,7 @@ public System.Text.RegularExpressions.Regex ToRegex()
 
 ## ToRegex\(RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_ToRegex_System_Text_RegularExpressions_RegexOptions_"></a>
 
-### Summary
-
+\
 Compiles a new instance of the [Regex](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex) class for the current instance, with options that modify the pattern\.
 
 ```csharp

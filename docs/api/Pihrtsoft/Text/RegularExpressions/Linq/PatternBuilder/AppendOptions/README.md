@@ -16,8 +16,7 @@
 
 ## AppendOptions\(RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendOptions_System_Text_RegularExpressions_RegexOptions_"></a>
 
-### Summary
-
+\
 Appends a pattern that applies specified options\.
 
 ```csharp
@@ -38,8 +37,7 @@ A bitwise combination of the enumeration values that are applied\.
 
 ## AppendOptions\(RegexOptions, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendOptions_System_Text_RegularExpressions_RegexOptions_System_Object_"></a>
 
-### Summary
-
+\
 Appends a pattern that applies specified options to a specified pattern\.
 
 ```csharp
@@ -68,8 +66,7 @@ The pattern to match\.
 
 ## AppendOptions\(RegexOptions, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendOptions_System_Text_RegularExpressions_RegexOptions_System_Text_RegularExpressions_RegexOptions_"></a>
 
-### Summary
-
+\
 Appends a pattern that applies and disables specified options to a specified pattern\.
 
 ```csharp

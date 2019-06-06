@@ -15,8 +15,7 @@
 
 ## Plus\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Plus"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a plus\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Plus()
 
 ## Plus\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Plus_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of pluses\.
 
 ```csharp

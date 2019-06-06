@@ -15,8 +15,7 @@
 
 ## Matches\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Matches_System_String_"></a>
 
-### Summary
-
+\
 Searches the specified input string for all matches\.
 
 ```csharp
@@ -41,8 +40,7 @@ The string to search for a match\.
 
 ## Matches\(String, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Matches_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
 
-### Summary
-
+\
 Searches the specified input string for all matches, using the specified matching options\.
 
 ```csharp

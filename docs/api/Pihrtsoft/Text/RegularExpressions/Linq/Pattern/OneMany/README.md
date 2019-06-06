@@ -15,8 +15,7 @@
 
 ## OneMany\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_OneMany_System_Object_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches specified content one or more times\.
 
 ```csharp
@@ -41,8 +40,7 @@ The content to be matched\.
 
 ## OneMany\(Object, Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_OneMany_System_Object_System_Object___"></a>
 
-### Summary
-
+\
 Appends a pattern that matches any one specified element one or more times\.
 
 ```csharp

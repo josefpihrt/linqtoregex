@@ -15,8 +15,7 @@
 
 ## NotDot\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotDot"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a character that is not a dot\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotDot()
 
 ## NotDot\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotDot_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a specified number of characters that are not a dot\.
 
 ```csharp

@@ -15,8 +15,7 @@
 
 ## EndInputOrLine\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_EndInputOrLine"></a>
 
-### Summary
-
+\
 Returns a pattern that is matched at the end of the string \(or line if the [RegexOptions.Multiline](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions.multiline) option is applied\)\. End of line is defined as the position before a linefeed\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern EndInpu
 
 ## EndInputOrLine\(Boolean\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_EndInputOrLine_System_Boolean_"></a>
 
-### Summary
-
+\
 Returns a pattern that is matched \(before carriage return\) at the end of the string \(or \(before carriage return\) at the end of line if the [RegexOptions.Multiline](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions.multiline) option is applied\)\. End of line is defined as the position before a linefeed\.
 
 ```csharp

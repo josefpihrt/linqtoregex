@@ -15,8 +15,7 @@
 
 ## AnyExceptLinefeed\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AnyExceptLinefeed"></a>
 
-### Summary
-
+\
 Returns a pattern that matches any character except linefeed\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern AnyExce
 
 ## AnyExceptLinefeed\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AnyExceptLinefeed_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches any character except linefeed specified number of times\.
 
 ```csharp

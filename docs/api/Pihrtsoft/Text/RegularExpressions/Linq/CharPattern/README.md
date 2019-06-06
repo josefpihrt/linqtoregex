@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Represents a pattern that matches a single character\. This includes Unicode category, Unicode block or character class \(\(non\-\)digit, \(non\-\)white\-space, \(non\-\)word\)\. This class is abstract\.
 
 ```csharp

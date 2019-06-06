@@ -16,8 +16,7 @@
 
 ## ToString\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_ToString"></a>
 
-### Summary
-
+\
 Constructs a pattern text that represents the current instance\.
 
 ```csharp
@@ -30,8 +29,7 @@ public override string ToString()
 
 ## ToString\(PatternOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_ToString_Pihrtsoft_Text_RegularExpressions_Linq_PatternOptions_"></a>
 
-### Summary
-
+\
 Constructs a pattern text that represents the current instance with options that modify the pattern\.
 
 ```csharp
@@ -50,8 +48,7 @@ A bitwise combination of the enumeration values that modify the pattern\.
 
 ## ToString\(PatternSettings\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_ToString_Pihrtsoft_Text_RegularExpressions_Linq_PatternSettings_"></a>
 
-### Summary
-
+\
 Constructs a pattern text that represents the current instance with settings that modify the pattern\.
 
 ```csharp

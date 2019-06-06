@@ -15,8 +15,7 @@
 
 ## Match\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Match_System_String_"></a>
 
-### Summary
-
+\
 Searches a specified input string for the first occurrence of the current instance\.
 
 ```csharp
@@ -41,8 +40,7 @@ The string to search for a match\.
 
 ## Match\(String, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Match_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
 
-### Summary
-
+\
 Searches a specified input string for the first occurrence of the current instance, using the specified matching options\.
 
 ```csharp

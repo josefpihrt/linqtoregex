@@ -15,8 +15,7 @@
 
 ## SlashOrBackslash\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SlashOrBackslash"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a slash or a backslash\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup SlashOrBackslash(
 
 ## SlashOrBackslash\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SlashOrBackslash_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of characters that are slash or backslash\.
 
 ```csharp

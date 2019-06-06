@@ -15,8 +15,7 @@
 
 ## Not\(GeneralCategory\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Not_Pihrtsoft_Text_RegularExpressions_Linq_GeneralCategory_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a character that is not from the specified Unicode category\.
 
 ```csharp
@@ -35,8 +34,7 @@ An enumerated constant that identifies Unicode category\.
 
 ## Not\(NamedBlock\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Not_Pihrtsoft_Text_RegularExpressions_Linq_NamedBlock_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a character that is not from the specified Unicode block\.
 
 ```csharp

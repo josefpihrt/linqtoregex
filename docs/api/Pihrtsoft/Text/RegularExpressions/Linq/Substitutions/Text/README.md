@@ -15,8 +15,7 @@
 
 ## Text\(Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Substitutions_Text_System_Char_"></a>
 
-### Summary
-
+\
 Returns a substitution pattern with a specified character\.
 
 ```csharp
@@ -35,8 +34,7 @@ A Unicode character\.
 
 ## Text\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Substitutions_Text_System_String_"></a>
 
-### Summary
-
+\
 Returns a substitution pattern with a specified text\.
 
 ```csharp

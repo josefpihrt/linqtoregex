@@ -15,8 +15,7 @@
 
 ## NotNewLineChar\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotNewLineChar"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not a newline character\. Newline character is a carriage return or a linefeed\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotNewLineChar()
 
 ## NotNewLineChar\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotNewLineChar_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not a newline character specified number of times\. Newline character is a carriage return or a linefeed\.
 
 ```csharp

@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Represents a pattern that can be quantified, i\.e\. quantifier can be applied on it\. This class is abstract\.
 
 ```csharp
@@ -20,10 +19,10 @@ public abstract class QuantifiablePattern : Pihrtsoft.Text.RegularExpressions.Li
 
 ### Derived
 
-* [GroupingPattern](../GroupingPattern/README.md)
 * [CharGroup](../CharGroup/README.md)
 * [CharPattern](../CharPattern/README.md)
 * [CharSubtraction](../CharSubtraction/README.md)
+* [GroupingPattern](../GroupingPattern/README.md)
 * [NegativeWordBoundary](../NegativeWordBoundary/README.md)
 * [...](#derived-all "See all derived types")
 
@@ -478,10 +477,10 @@ public abstract class QuantifiablePattern : Pihrtsoft.Text.RegularExpressions.Li
 
 ## Derived \(All\)
 
-* [GroupingPattern](../GroupingPattern/README.md)
 * [CharGroup](../CharGroup/README.md)
 * [CharPattern](../CharPattern/README.md)
 * [CharSubtraction](../CharSubtraction/README.md)
+* [GroupingPattern](../GroupingPattern/README.md)
 * [NegativeWordBoundary](../NegativeWordBoundary/README.md)
 * &mdash;&mdash;&mdash;&mdash;&mdash;
 * [WordBoundary](../WordBoundary/README.md)

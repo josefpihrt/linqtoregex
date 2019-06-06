@@ -16,8 +16,7 @@
 
 ## DisableOptions\(RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_DisableOptions_System_Text_RegularExpressions_RegexOptions_"></a>
 
-### Summary
-
+\
 Appends a pattern that disables specified options\.
 
 ```csharp
@@ -36,8 +35,7 @@ A bitwise combination of the enumeration values that are disabled\.
 
 ## DisableOptions\(RegexOptions, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_DisableOptions_System_Text_RegularExpressions_RegexOptions_System_Object_"></a>
 
-### Summary
-
+\
 Appends a pattern that disables specified options to a specified pattern\.
 
 ```csharp
@@ -66,8 +64,7 @@ The content to be matched\.
 
 ## DisableOptions\(RegexOptions, Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_DisableOptions_System_Text_RegularExpressions_RegexOptions_System_Object___"></a>
 
-### Summary
-
+\
 Appends a pattern that disables specified options to a specified pattern\.
 
 ```csharp

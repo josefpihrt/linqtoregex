@@ -15,8 +15,7 @@
 
 ## RightSquareBracket\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_RightSquareBracket"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a right square bracket\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern RightSquareBrac
 
 ## RightSquareBracket\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_RightSquareBracket_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of right square brackets\.
 
 ```csharp

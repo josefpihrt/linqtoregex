@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Represents a base class for all kind of grouping constructs including assertions\. This class is abstract\.
 
 ```csharp

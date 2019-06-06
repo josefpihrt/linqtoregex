@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Within a specified input string, replaces all strings that match the regular expression with a string where each character is replaced with the specified character\.
 
 ```csharp

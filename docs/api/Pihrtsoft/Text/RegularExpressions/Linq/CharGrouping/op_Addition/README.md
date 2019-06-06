@@ -18,8 +18,7 @@
 
 ## Addition\(Char, CharGrouping\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Addition_System_Char_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
 
-### Summary
-
+\
 Concatenate two elements into a new [CharGrouping](../README.md)\.
 
 ```csharp
@@ -48,8 +47,7 @@ The second element to concatenate\.
 
 ## Addition\(CharGrouping, Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_System_Char_"></a>
 
-### Summary
-
+\
 Concatenate two elements into a new [CharGrouping](../README.md)\.
 
 ```csharp
@@ -78,8 +76,7 @@ The second element to concatenate\.
 
 ## Addition\(CharGrouping, CharGrouping\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
 
-### Summary
-
+\
 Concatenate two elements into a new [CharGrouping](../README.md)\.
 
 ```csharp
@@ -108,8 +105,7 @@ The second element to concatenate\.
 
 ## Addition\(CharGrouping, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_System_String_"></a>
 
-### Summary
-
+\
 Concatenate two elements into a new [CharGrouping](../README.md)\.
 
 ```csharp
@@ -138,8 +134,7 @@ The second element to concatenate\.
 
 ## Addition\(String, CharGrouping\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Addition_System_String_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
 
-### Summary
-
+\
 Concatenate two elements into a new [CharGrouping](../README.md)\.
 
 ```csharp

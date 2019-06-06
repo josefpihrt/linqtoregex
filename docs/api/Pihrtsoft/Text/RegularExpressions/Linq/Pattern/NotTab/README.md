@@ -15,8 +15,7 @@
 
 ## NotTab\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotTab"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a character that is not a tab\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotTab()
 
 ## NotTab\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotTab_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a specified number of characters that are not a tab\.
 
 ```csharp

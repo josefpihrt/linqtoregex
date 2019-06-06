@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Gets a value indicating whether the specified group name is a valid name of a regex group\.
 
 ```csharp

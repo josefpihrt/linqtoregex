@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Appends the text representation of the base group to the specified [PatternBuilder](../../PatternBuilder/README.md)\.
 
 ```csharp

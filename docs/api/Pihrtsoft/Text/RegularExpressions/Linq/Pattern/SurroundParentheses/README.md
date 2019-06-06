@@ -16,8 +16,7 @@
 
 ## SurroundParentheses\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundParentheses"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a text consisting of a left parenthesis and a right parenthesis, allowing zero or more characters that are not a right parenthesis between the parentheses\.
 
 ```csharp
@@ -30,8 +29,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.Pattern SurroundParentheses()
 
 ## SurroundParentheses\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundParentheses_System_Object_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches specified pattern surrounded with left and right parenthesis\.
 
 ```csharp
@@ -56,8 +54,7 @@ The content to be matched\.
 
 ## SurroundParentheses\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundParentheses_System_Object___"></a>
 
-### Summary
-
+\
 Appends a pattern that matches specified content surrounded with left and right parenthesis\.
 
 ```csharp

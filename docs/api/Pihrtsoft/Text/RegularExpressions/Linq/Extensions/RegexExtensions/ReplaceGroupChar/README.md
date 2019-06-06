@@ -15,8 +15,7 @@
 
 ## ReplaceGroupChar\(Regex, String, Char, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_ReplaceGroupChar_System_Text_RegularExpressions_Regex_System_String_System_Char_System_Int32_"></a>
 
-### Summary
-
+\
 Within a specified input string, replaces all groups with the specified number that match the regular expression with a string where each character is replaced with the specified character\.
 
 ```csharp
@@ -53,8 +52,7 @@ A number of the group\.
 
 ## ReplaceGroupChar\(Regex, String, Char, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_ReplaceGroupChar_System_Text_RegularExpressions_Regex_System_String_System_Char_System_String_"></a>
 
-### Summary
-
+\
 Within a specified input string, replaces all groups with the specified name that match the regular expression with a string where each character is replaced with the specified character\.
 
 ```csharp

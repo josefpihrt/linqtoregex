@@ -15,8 +15,7 @@
 
 ## CountFrom\(Int32, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_CountFrom_System_Int32_System_Object_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches specified pattern at least specified number of times\.
 
 ```csharp
@@ -49,8 +48,7 @@ The content to be matched\.
 
 ## CountFrom\(Int32, Object, Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_CountFrom_System_Int32_System_Object_System_Object___"></a>
 
-### Summary
-
+\
 Returns a pattern that matches any one specified pattern at least specified number of times\.
 
 ```csharp

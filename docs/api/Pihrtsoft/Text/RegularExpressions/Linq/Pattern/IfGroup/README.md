@@ -17,8 +17,7 @@
 
 ## IfGroup\(Int32, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_IfGroup_System_Int32_System_Object_"></a>
 
-### Summary
-
+\
 Appends an if construct with a content to match if the numbered group is matched\.
 
 ```csharp
@@ -51,8 +50,7 @@ The content to be matched if the numbered group is matched\.
 
 ## IfGroup\(Int32, Object, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_IfGroup_System_Int32_System_Object_System_Object_"></a>
 
-### Summary
-
+\
 Appends an if construct with a content to match if the numbered group is matched and a content to match if the numbered group is not matched\.
 
 ```csharp
@@ -89,8 +87,7 @@ The content to be matched if the numbered group is not matched\.
 
 ## IfGroup\(String, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_IfGroup_System_String_System_Object_"></a>
 
-### Summary
-
+\
 Appends an if construct with a content to match if the named group is matched\.
 
 ```csharp
@@ -123,8 +120,7 @@ The content to be matched if the named group is matched\.
 
 ## IfGroup\(String, Object, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_IfGroup_System_String_System_Object_System_Object_"></a>
 
-### Summary
-
+\
 Appends an if construct with a content to match if the named group is matched and a content to match if the named group is not matched\.
 
 ```csharp

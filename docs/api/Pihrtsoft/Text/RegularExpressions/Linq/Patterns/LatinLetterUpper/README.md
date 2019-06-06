@@ -15,8 +15,7 @@
 
 ## LatinLetterUpper\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_LatinLetterUpper"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a latin alphabet upper\-case letter\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern LatinLe
 
 ## LatinLetterUpper\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_LatinLetterUpper_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of latin alphabet upper\-case letters\.
 
 ```csharp

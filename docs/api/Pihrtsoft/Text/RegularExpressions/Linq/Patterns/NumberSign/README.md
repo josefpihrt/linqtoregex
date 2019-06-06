@@ -15,8 +15,7 @@
 
 ## NumberSign\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NumberSign"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a number sign\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern NumberSign()
 
 ## NumberSign\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NumberSign_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of number signs\.
 
 ```csharp

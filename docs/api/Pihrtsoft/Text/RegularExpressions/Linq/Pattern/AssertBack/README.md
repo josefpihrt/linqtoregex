@@ -15,8 +15,7 @@
 
 ## AssertBack\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_AssertBack_System_Object_"></a>
 
-### Summary
-
+\
 Appends a zero\-width positive lookbehind assertion with a specified content to be matched\.
 
 ```csharp
@@ -41,8 +40,7 @@ A content to be matched\.
 
 ## AssertBack\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_AssertBack_System_Object___"></a>
 
-### Summary
-
+\
 Appends a zero\-width positive lookbehind assertion that matches any one pattern specified in the object array\.
 
 ```csharp

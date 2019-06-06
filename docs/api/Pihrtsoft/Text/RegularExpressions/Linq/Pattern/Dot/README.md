@@ -15,8 +15,7 @@
 
 ## Dot\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Dot"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a dot\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Dot()
 
 ## Dot\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Dot_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a specified number of dots\.
 
 ```csharp

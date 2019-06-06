@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Searches the specified input string for occurrence of the specified regular expression and returns an enumerable collection of matches values\.
 
 ```csharp

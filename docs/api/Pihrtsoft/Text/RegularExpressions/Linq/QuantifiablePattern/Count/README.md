@@ -15,8 +15,7 @@
 
 ## Count\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_QuantifiablePattern_Count_System_Int32_"></a>
 
-### Summary
-
+\
 Specifies that previous element must be matched a specified number of times\.
 
 ```csharp
@@ -41,8 +40,7 @@ A number of times the pattern must be matched\.
 
 ## Count\(Int32, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_QuantifiablePattern_Count_System_Int32_System_Int32_"></a>
 
-### Summary
-
+\
 Specifies that previous element must be matched from minimal to maximum times\.
 
 ```csharp

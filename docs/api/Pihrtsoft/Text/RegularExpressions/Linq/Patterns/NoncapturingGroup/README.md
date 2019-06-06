@@ -15,8 +15,7 @@
 
 ## NoncapturingGroup\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NoncapturingGroup_System_Object_"></a>
 
-### Summary
-
+\
 Returns a noncapturing group with a specified content\.
 
 ```csharp
@@ -41,8 +40,7 @@ The content to be matched\.
 
 ## NoncapturingGroup\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NoncapturingGroup_System_Object___"></a>
 
-### Summary
-
+\
 Returns a noncapturing group with a specified content\.
 
 ```csharp

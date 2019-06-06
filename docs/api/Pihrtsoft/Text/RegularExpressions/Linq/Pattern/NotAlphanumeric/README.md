@@ -15,8 +15,7 @@
 
 ## NotAlphanumeric\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotAlphanumeric"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a character that is not an alphanumeric character\. Alphanumeric character is a latin alphabet letter or an arabic digit\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotAlphanumeric()
 
 ## NotAlphanumeric\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotAlphanumeric_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a character that is not an alphanumeric character specified number of times\. Alphanumeric character is a latin alphabet letter or an arabic digit\.
 
 ```csharp

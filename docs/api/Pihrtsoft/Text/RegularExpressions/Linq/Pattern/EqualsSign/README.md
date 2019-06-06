@@ -15,8 +15,7 @@
 
 ## EqualsSign\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EqualsSign"></a>
 
-### Summary
-
+\
 Appends a pattern that matches an equals sign\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern EqualsSign()
 
 ## EqualsSign\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EqualsSign_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a specified number of equals signs\.
 
 ```csharp

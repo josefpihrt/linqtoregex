@@ -15,8 +15,7 @@
 
 ## Concat\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Concat_System_Object_"></a>
 
-### Summary
-
+\
 Concatenates the elements in a specified **content**\.
 
 ```csharp
@@ -35,8 +34,7 @@ An object that contains the elements to concatenate\.
 
 ## Concat\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Concat_System_Object___"></a>
 
-### Summary
-
+\
 Concatenates the elements in a specified object array\.
 
 ```csharp

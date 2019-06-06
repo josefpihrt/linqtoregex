@@ -15,8 +15,7 @@
 
 ## AtSign\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_AtSign"></a>
 
-### Summary
-
+\
 Appends a pattern that matches an at sign\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern AtSign()
 
 ## AtSign\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_AtSign_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a specified number of at signs\.
 
 ```csharp

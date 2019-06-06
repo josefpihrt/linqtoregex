@@ -15,8 +15,7 @@
 
 ## NonbacktrackingGroup\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NonbacktrackingGroup_System_Object_"></a>
 
-### Summary
-
+\
 Returns a nonbacktracking group with a specified content\.
 
 ```csharp
@@ -41,8 +40,7 @@ The content to be matched\.
 
 ## NonbacktrackingGroup\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NonbacktrackingGroup_System_Object___"></a>
 
-### Summary
-
+\
 Returns a nonbacktracking group with a specified content\.
 
 ```csharp

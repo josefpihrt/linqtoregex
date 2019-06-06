@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 If a condition is true, appends a pattern that matches a specified content\.
 
 ```csharp

@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Appends a substitution pattern that substitutes all the text of the input string after the match\.
 
 ```csharp

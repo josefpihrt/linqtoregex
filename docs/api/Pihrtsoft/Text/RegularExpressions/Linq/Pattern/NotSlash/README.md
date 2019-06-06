@@ -15,8 +15,7 @@
 
 ## NotSlash\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotSlash"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a character that is not a slash\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotSlash()
 
 ## NotSlash\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotSlash_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a specified number of characters that are not a slash\.
 
 ```csharp

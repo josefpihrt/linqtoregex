@@ -19,8 +19,7 @@
 
 ## EnumerateCaptures\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateCaptures_System_String_"></a>
 
-### Summary
-
+\
 Searches the specified input string and returns an enumerable collection of captures\.
 
 ```csharp
@@ -45,8 +44,7 @@ The string to search for a match\.
 
 ## EnumerateCaptures\(String, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateCaptures_System_String_System_Int32_"></a>
 
-### Summary
-
+\
 Searches the specified input string and returns an enumerable collection of captures from groups that have a specified number\.
 
 ```csharp
@@ -75,8 +73,7 @@ A valid number of the group\.
 
 ## EnumerateCaptures\(String, Int32, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateCaptures_System_String_System_Int32_System_Text_RegularExpressions_RegexOptions_"></a>
 
-### Summary
-
+\
 Searches the specified input string and returns an enumerable collection of captures from groups that have a specified number, using the specified matching options\.
 
 ```csharp
@@ -109,8 +106,7 @@ A bitwise combination of the enumeration values that specify options for matchin
 
 ## EnumerateCaptures\(String, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateCaptures_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
 
-### Summary
-
+\
 Searches the specified input string and returns an enumerable collection of captures, using the specified matching options\.
 
 ```csharp
@@ -139,8 +135,7 @@ A bitwise combination of the enumeration values that specify options for matchin
 
 ## EnumerateCaptures\(String, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateCaptures_System_String_System_String_"></a>
 
-### Summary
-
+\
 Searches the specified input string and returns an enumerable collection of captures from groups that have a specified name\.
 
 ```csharp
@@ -169,8 +164,7 @@ A name of the group\.
 
 ## EnumerateCaptures\(String, String, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateCaptures_System_String_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
 
-### Summary
-
+\
 Searches the specified input string and returns an enumerable collection of captures from groups that have a specified name, using the specified matching options\.
 
 ```csharp

@@ -15,8 +15,7 @@
 
 ## Tilde\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Tilde"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a tilde\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Tilde()
 
 ## Tilde\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Tilde_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a specified number of tildes\.
 
 ```csharp

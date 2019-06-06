@@ -15,8 +15,7 @@
 
 ## NotWhiteSpace\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotWhiteSpace"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not a white\-space character\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern NotWhiteSpace()
 
 ## NotWhiteSpace\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotWhiteSpace_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not a white\-space character specified number of times\.
 
 ```csharp

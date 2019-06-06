@@ -15,8 +15,7 @@
 
 ## Backslash\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Backslash"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a backslash\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Backslash()
 
 ## Backslash\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Backslash_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of backslashes\.
 
 ```csharp

@@ -15,8 +15,7 @@
 
 ## AlphanumericLower\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AlphanumericLower"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a lower\-case alphanumeric character\. Alphanumeric character is a latin alphabet lower\-case letter or an arabic digit\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Alphanu
 
 ## AlphanumericLower\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AlphanumericLower_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of lower\-case alphanumeric characters\. Alphanumeric character is a latin alphabet lower\-case letter or an arabic digit\.
 
 ```csharp

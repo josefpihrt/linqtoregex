@@ -15,8 +15,7 @@
 
 ## LatinLetter\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LatinLetter"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a latin alphabet letter\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.CharGroup LatinLetter()
 
 ## LatinLetter\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LatinLetter_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a specified number of latin alphabet letters\.
 
 ```csharp

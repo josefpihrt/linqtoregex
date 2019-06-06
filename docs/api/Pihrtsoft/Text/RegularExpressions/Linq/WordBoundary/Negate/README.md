@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Returns an instance of the [NegativeWordBoundary](../../NegativeWordBoundary/README.md) class\.
 
 ```csharp

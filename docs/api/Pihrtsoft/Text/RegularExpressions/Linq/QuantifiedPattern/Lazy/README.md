@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Specifies that the quantifier is lazy\. Quantified pattern will be matched as few times as possible\.
 
 ```csharp

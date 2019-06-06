@@ -15,8 +15,7 @@
 
 ## NotAmpersand\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAmpersand"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not an ampersand\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotAmpe
 
 ## NotAmpersand\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAmpersand_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of characters that are not an ampersand\.
 
 ```csharp

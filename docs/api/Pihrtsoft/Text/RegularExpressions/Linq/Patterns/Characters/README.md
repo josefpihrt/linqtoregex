@@ -19,8 +19,7 @@
 
 ## Characters\(AsciiChar\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Characters_Pihrtsoft_Text_RegularExpressions_Linq_AsciiChar_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified character one or more times\.
 
 ```csharp
@@ -39,8 +38,7 @@ An enumerated constant that identifies ASCII character\.
 
 ## Characters\(GeneralCategory\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Characters_Pihrtsoft_Text_RegularExpressions_Linq_GeneralCategory_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches one or more characters from a specified Unicode category\.
 
 ```csharp
@@ -59,8 +57,7 @@ An enumerated constant that identifies Unicode category\.
 
 ## Characters\(Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Characters_System_Char_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified character one or more times\.
 
 ```csharp
@@ -79,8 +76,7 @@ A Unicode character\.
 
 ## Characters\(CharGrouping\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Characters_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches one or more characters from a specified [CharGrouping](../../CharGrouping/README.md)\.
 
 ```csharp
@@ -105,8 +101,7 @@ A content of a character group\.
 
 ## Characters\(NamedBlock\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Characters_Pihrtsoft_Text_RegularExpressions_Linq_NamedBlock_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches one or more characters from a specified Unicode block\.
 
 ```csharp
@@ -125,8 +120,7 @@ An enumerated constant that identifies Unicode block\.
 
 ## Characters\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Characters_System_String_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches one or more characters from a specified [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)\.
 
 ```csharp

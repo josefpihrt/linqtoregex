@@ -15,8 +15,7 @@
 
 ## WhiteSpaceExceptNewLine\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_WhiteSpaceExceptNewLine"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a white\-space character except carriage return and linefeed\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharSubtraction WhiteSpaceE
 
 ## WhiteSpaceExceptNewLine\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_WhiteSpaceExceptNewLine_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a white\-space character except carriage return and linefeed\. The character has to be matched specified number of times\.
 
 ```csharp

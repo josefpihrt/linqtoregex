@@ -15,8 +15,7 @@
 
 ## NotColon\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotColon"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not a colon\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotColo
 
 ## NotColon\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotColon_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of characters that are not a colon\.
 
 ```csharp

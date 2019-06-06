@@ -15,8 +15,7 @@
 
 ## NotDigit\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotDigit"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not a digit character\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern NotDigit()
 
 ## NotDigit\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotDigit_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not a digit character specified number of times\.
 
 ```csharp

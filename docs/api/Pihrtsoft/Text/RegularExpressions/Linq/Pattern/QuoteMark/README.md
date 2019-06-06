@@ -15,8 +15,7 @@
 
 ## QuoteMark\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_QuoteMark"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a quote mark\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern QuoteMark()
 
 ## QuoteMark\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_QuoteMark_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a specified number of quote marks\.
 
 ```csharp

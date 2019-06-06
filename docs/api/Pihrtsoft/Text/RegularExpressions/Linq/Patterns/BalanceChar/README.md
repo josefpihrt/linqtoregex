@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Returns a pattern that matches one or many opening characters balanced with one or many closing characters\.
 Between the characters can be zero or many characters that are neither opening nor closing character\.
 

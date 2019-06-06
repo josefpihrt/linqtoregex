@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Creates and returns a new instance of the [Pattern](../README.md) class\.
 
 ```csharp

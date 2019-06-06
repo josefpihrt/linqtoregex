@@ -15,8 +15,7 @@
 
 ## AnyNative\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AnyNative"></a>
 
-### Summary
-
+\
 Returns a pattern that matches any character except linefeed \(or any character if the [RegexOptions.Singleline](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions.singleline) option is applied\)\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern AnyNati
 
 ## AnyNative\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AnyNative_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches any character except linefeed \(or any character if the [RegexOptions.Singleline](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions.singleline) option is applied\) specified number of times\.
 
 ```csharp

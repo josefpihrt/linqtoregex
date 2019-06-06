@@ -15,8 +15,7 @@
 
 ## NotAssert\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotAssert_System_Object_"></a>
 
-### Summary
-
+\
 Appends a zero\-width negative lookahead assertion with a specified content not to be matched\.
 
 ```csharp
@@ -41,8 +40,7 @@ A content not to be matched\.
 
 ## NotAssert\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotAssert_System_Object___"></a>
 
-### Summary
-
+\
 Appends a zero\-width negative lookahead assertion that matches none of patterns specified in the object array\.
 
 ```csharp

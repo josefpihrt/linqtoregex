@@ -16,8 +16,7 @@
 
 ## EnumerateGroups\(Regex, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateGroups_System_Text_RegularExpressions_Regex_System_String_"></a>
 
-### Summary
-
+\
 Searches the specified input string and returns enumerable collection of groups\.
 
 ```csharp
@@ -46,8 +45,7 @@ The string to search for a match\.
 
 ## EnumerateGroups\(Regex, String, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateGroups_System_Text_RegularExpressions_Regex_System_String_System_Int32_"></a>
 
-### Summary
-
+\
 Searches the specified input string and returns enumerable collection of groups that have a specified number\.
 
 ```csharp
@@ -80,8 +78,7 @@ A number of the group\.
 
 ## EnumerateGroups\(Regex, String, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateGroups_System_Text_RegularExpressions_Regex_System_String_System_String_"></a>
 
-### Summary
-
+\
 Searches the specified input string and returns enumerable collection of groups with a specified name\.
 
 ```csharp

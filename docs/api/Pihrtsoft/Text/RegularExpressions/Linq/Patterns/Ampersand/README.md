@@ -15,8 +15,7 @@
 
 ## Ampersand\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Ampersand"></a>
 
-### Summary
-
+\
 Returns a pattern that matches an ampersand\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Ampersand()
 
 ## Ampersand\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Ampersand_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of ampersands\.
 
 ```csharp

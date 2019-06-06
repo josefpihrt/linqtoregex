@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Returns an instance of the [NegativeAssertion](../../NegativeAssertion/README.md) class\.
 
 ```csharp

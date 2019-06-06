@@ -15,8 +15,7 @@
 
 ## Slash\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Slash"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a slash\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Slash()
 
 ## Slash\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Slash_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of slashes\.
 
 ```csharp

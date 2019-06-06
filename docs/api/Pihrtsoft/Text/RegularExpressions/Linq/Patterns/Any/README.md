@@ -17,8 +17,7 @@
 
 ## Any\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Any"></a>
 
-### Summary
-
+\
 Returns a pattern that matches any character\.
 
 ```csharp
@@ -31,8 +30,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Any()
 
 ## Any\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Any_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches any character specified number of times\.
 
 ```csharp
@@ -57,8 +55,7 @@ A number of times a character has to be matched\.
 
 ## Any\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Any_System_Object_"></a>
 
-### Summary
-
+\
 Returns a noncapturing group with a specified content\.
 
 ```csharp
@@ -77,8 +74,7 @@ The content to be matched\.
 
 ## Any\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Any_System_Object___"></a>
 
-### Summary
-
+\
 Returns a pattern that matches any one of the patterns specified in the object array\.
 
 ```csharp

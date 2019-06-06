@@ -15,8 +15,7 @@
 
 ## DisallowGroup\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_DisallowGroup_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that requires previously defined group with a specified number not to be matched\. Otherwise, a match will fail\.
 
 ```csharp
@@ -41,8 +40,7 @@ A number of the group\.
 
 ## DisallowGroup\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_DisallowGroup_System_String_"></a>
 
-### Summary
-
+\
 Returns a pattern that requires previously defined group with a specified name not to be matched\. Otherwise, a match will fail\.
 
 ```csharp

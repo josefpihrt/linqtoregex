@@ -15,8 +15,7 @@
 
 ## RightParenthesis\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_RightParenthesis"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a right parenthesis\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern RightParenthesi
 
 ## RightParenthesis\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_RightParenthesis_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of right parentheses\.
 
 ```csharp

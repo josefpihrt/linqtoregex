@@ -15,8 +15,7 @@
 
 ## NotLeftAngleBracket\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotLeftAngleBracket"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not a left angle bracket \(less\-than sign\)\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotLeft
 
 ## NotLeftAngleBracket\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotLeftAngleBracket_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of characters that are not a left angle bracket \(less\-than sign\)\.
 
 ```csharp

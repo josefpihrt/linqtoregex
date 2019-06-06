@@ -15,8 +15,7 @@
 
 ## Maybe\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Maybe_System_Object_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches specified content zero or one time\.
 
 ```csharp
@@ -41,8 +40,7 @@ The content to be matched\.
 
 ## Maybe\(Object, Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Maybe_System_Object_System_Object___"></a>
 
-### Summary
-
+\
 Appends a pattern that matches any one specified element zero or one time\.
 
 ```csharp

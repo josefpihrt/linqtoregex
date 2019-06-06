@@ -16,8 +16,7 @@
 
 ## EnumerateCaptures\(Match\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_MatchExtensions_EnumerateCaptures_System_Text_RegularExpressions_Match_"></a>
 
-### Summary
-
+\
 Enumerates through groups of a specified match and returns each capture from each group\.
 
 ```csharp
@@ -42,8 +41,7 @@ A regular expression match\.
 
 ## EnumerateCaptures\(Match, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_MatchExtensions_EnumerateCaptures_System_Text_RegularExpressions_Match_System_Int32_"></a>
 
-### Summary
-
+\
 Returns an enumerable collection of captures of a group with a specified number that is from a specified match\.
 
 ```csharp
@@ -72,8 +70,7 @@ A number of the group\.
 
 ## EnumerateCaptures\(Match, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_MatchExtensions_EnumerateCaptures_System_Text_RegularExpressions_Match_System_String_"></a>
 
-### Summary
-
+\
 Returns an enumerable collection of captures of a group with a specified name that is from a specified match\.
 
 ```csharp

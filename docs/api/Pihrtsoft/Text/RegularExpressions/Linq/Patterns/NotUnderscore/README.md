@@ -15,8 +15,7 @@
 
 ## NotUnderscore\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotUnderscore"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not an underscore\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotUnde
 
 ## NotUnderscore\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotUnderscore_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of characters that are not an underscore\.
 
 ```csharp

@@ -20,8 +20,7 @@
 
 ## NotChar\(AsciiChar\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotChar_Pihrtsoft_Text_RegularExpressions_Linq_AsciiChar_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not a specified character\.
 
 ```csharp
@@ -40,8 +39,7 @@ An enumerated constant that identifies ASCII character\.
 
 ## NotChar\(GeneralCategory\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotChar_Pihrtsoft_Text_RegularExpressions_Linq_GeneralCategory_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not from a specified Unicode category\.
 
 ```csharp
@@ -60,8 +58,7 @@ An enumerated constant that identifies Unicode category\.
 
 ## NotChar\(Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotChar_System_Char_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not a specified character\.
 
 ```csharp
@@ -80,8 +77,7 @@ A Unicode character\.
 
 ## NotChar\(Char\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotChar_System_Char___"></a>
 
-### Summary
-
+\
 Returns a pattern that matches any character that is not contained in the specified characters\.
 
 ```csharp
@@ -110,8 +106,7 @@ Unicode characters\.
 
 ## NotChar\(CharGrouping\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotChar_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
 
-### Summary
-
+\
 Returns a negative character group containing specified [CharGrouping](../../CharGrouping/README.md)\.
 
 ```csharp
@@ -136,8 +131,7 @@ A content of a character group\.
 
 ## NotChar\(NamedBlock\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotChar_Pihrtsoft_Text_RegularExpressions_Linq_NamedBlock_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not from a specified Unicode block\.
 
 ```csharp
@@ -156,8 +150,7 @@ An enumerated constant that identifies Unicode block\.
 
 ## NotChar\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotChar_System_String_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches any character that is not contained in the specified [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)\.
 
 ```csharp

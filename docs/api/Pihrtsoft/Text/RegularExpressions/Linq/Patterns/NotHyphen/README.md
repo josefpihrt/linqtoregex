@@ -15,8 +15,7 @@
 
 ## NotHyphen\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotHyphen"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not a hyphen\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotHyph
 
 ## NotHyphen\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotHyphen_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of characters that are not a hyphen\.
 
 ```csharp

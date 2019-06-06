@@ -15,8 +15,7 @@
 
 ## Comma\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Comma"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a comma\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Comma()
 
 ## Comma\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Comma_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a specified number of commas\.
 
 ```csharp

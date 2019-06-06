@@ -15,8 +15,7 @@
 
 ## IfAssert\(Object, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_IfAssert_System_Object_System_Object_"></a>
 
-### Summary
-
+\
 Returns an if construct with the specified content to assert and a content to match if the assertion succeeds\.
 
 ```csharp
@@ -45,8 +44,7 @@ The content to be matched if the assertion succeeds\.
 
 ## IfAssert\(Object, Object, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_IfAssert_System_Object_System_Object_System_Object_"></a>
 
-### Summary
-
+\
 Returns an if construct with the specified content to assert and a content to match if the assertion succeeds and a content to match if the assertion fails\.
 
 ```csharp

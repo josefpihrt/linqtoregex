@@ -21,8 +21,7 @@
 
 ## Append\(AsciiChar\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_Append_Pihrtsoft_Text_RegularExpressions_Linq_AsciiChar_"></a>
 
-### Summary
-
+\
 Appends specified character to this instance\.
 
 ```csharp
@@ -37,8 +36,7 @@ An enumerated constant that identifies an ASCII character to append\.
 
 ## Append\(Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_Append_System_Char_"></a>
 
-### Summary
-
+\
 Appends specified character to this instance\.
 
 ```csharp
@@ -53,8 +51,7 @@ The character to append\.
 
 ## Append\(Char\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_Append_System_Char___"></a>
 
-### Summary
-
+\
 Appends specified characters to this instance\.
 
 ```csharp
@@ -75,8 +72,7 @@ Unicode characters\.
 
 ## Append\(CharGrouping\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_Append_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
 
-### Summary
-
+\
 Appends the text representation of the pattern to this instance\.
 
 ```csharp
@@ -97,8 +93,7 @@ The pattern to append\.
 
 ## Append\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_Append_System_Int32_"></a>
 
-### Summary
-
+\
 Appends specified character to this instance\.
 
 ```csharp
@@ -113,8 +108,7 @@ A code of the character to append\.
 
 ## Append\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_Append_System_Object_"></a>
 
-### Summary
-
+\
 Appends the pattern representation of an object\. The object must be convertible to [Pattern](../../Pattern/README.md), [CharGrouping](../../CharGrouping/README.md), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), object array or [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerable)\.
 
 ```csharp
@@ -129,8 +123,7 @@ The object to append\.
 
 ## Append\(Pattern\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_Append_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_"></a>
 
-### Summary
-
+\
 Appends the text representation of the pattern to this instance\.
 
 ```csharp
@@ -151,8 +144,7 @@ The pattern to append\.
 
 ## Append\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_Append_System_String_"></a>
 
-### Summary
-
+\
 Appends specified text to this instance\.
 
 ```csharp

@@ -15,8 +15,7 @@
 
 ## NotHexadecimalDigit\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotHexadecimalDigit"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a character that is not a hexadecimal digit\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotHexadecimal
 
 ## NotHexadecimalDigit\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotHexadecimalDigit_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a character that is not a hexadecimal digit specified number of times\.
 
 ```csharp

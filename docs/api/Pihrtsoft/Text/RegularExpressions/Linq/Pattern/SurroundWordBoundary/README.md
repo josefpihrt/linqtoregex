@@ -15,8 +15,7 @@
 
 ## SurroundWordBoundary\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundWordBoundary_System_Object_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches spefified pattern surrounded with a word boundary\.
 
 ```csharp
@@ -41,8 +40,7 @@ A text to surround\.
 
 ## SurroundWordBoundary\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundWordBoundary_System_Object___"></a>
 
-### Summary
-
+\
 Appends a pattern that matches specified content surrounded with a word boundary\.
 
 ```csharp

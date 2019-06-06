@@ -18,8 +18,7 @@
 
 ## Replace\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Replace_System_String_"></a>
 
-### Summary
-
+\
 Within a specified input string, replaces strings that match the current instance with an empty string\.
 
 ```csharp
@@ -44,8 +43,7 @@ The string to search for a match\.
 
 ## Replace\(String, MatchEvaluator\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Replace_System_String_System_Text_RegularExpressions_MatchEvaluator_"></a>
 
-### Summary
-
+\
 Within a specified input string, replaces all strings that match the current instance with a string returned by a [MatchEvaluator](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.matchevaluator) delegate\.
 
 ```csharp
@@ -74,8 +72,7 @@ A method that examines each match and returns a replacement string\.
 
 ## Replace\(String, MatchEvaluator, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Replace_System_String_System_Text_RegularExpressions_MatchEvaluator_System_Text_RegularExpressions_RegexOptions_"></a>
 
-### Summary
-
+\
 Within a specified input string, replaces all strings that match the current instance with a string returned by a [MatchEvaluator](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.matchevaluator) delegate\. Specified options modify the matching operation\.
 
 ```csharp
@@ -108,8 +105,7 @@ A bitwise combination of the enumeration values that specify options for matchin
 
 ## Replace\(String, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Replace_System_String_System_String_"></a>
 
-### Summary
-
+\
 Within a specified input string, replaces all strings that match the current instance with a specified replacement string\.
 
 ```csharp
@@ -132,8 +128,7 @@ The replacement string\.
 
 ## Replace\(String, String, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Replace_System_String_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
 
-### Summary
-
+\
 Within a specified input string, replaces all strings that match the current instance with a specified replacement string\. Specified options modify the matching operation\.
 
 ```csharp

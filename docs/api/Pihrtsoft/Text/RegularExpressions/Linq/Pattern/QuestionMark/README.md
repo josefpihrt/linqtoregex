@@ -15,8 +15,7 @@
 
 ## QuestionMark\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_QuestionMark"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a question mark\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern QuestionMark()
 
 ## QuestionMark\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_QuestionMark_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a specified number of question marks\.
 
 ```csharp

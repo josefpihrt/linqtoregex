@@ -15,8 +15,7 @@
 
 ## HexadecimalDigit\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_HexadecimalDigit"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a hexadecimal digit\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup HexadecimalDigit(
 
 ## HexadecimalDigit\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_HexadecimalDigit_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of hexadecimal digits\.
 
 ```csharp

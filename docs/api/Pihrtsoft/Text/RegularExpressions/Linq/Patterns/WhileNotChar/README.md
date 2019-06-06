@@ -18,8 +18,7 @@
 
 ## WhileNotChar\(AsciiChar\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_WhileNotChar_Pihrtsoft_Text_RegularExpressions_Linq_AsciiChar_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches zero or more characters that are not a specified character\.
 
 ```csharp
@@ -38,8 +37,7 @@ An enumerated constant that identifies ASCII character\.
 
 ## WhileNotChar\(Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_WhileNotChar_System_Char_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches zero or more characters that are not a specified character\.
 
 ```csharp
@@ -58,8 +56,7 @@ A Unicode character\.
 
 ## WhileNotChar\(Char\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_WhileNotChar_System_Char___"></a>
 
-### Summary
-
+\
 Returns a pattern that matches zero or more characters that are not contained in the specified characters
 
 ```csharp
@@ -88,8 +85,7 @@ Unicode characters\.
 
 ## WhileNotChar\(CharGrouping\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_WhileNotChar_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches zero or more characters that are not matched by a specified [CharGrouping](../../CharGrouping/README.md)\.
 
 ```csharp
@@ -114,8 +110,7 @@ A set of Unicode characters\.
 
 ## WhileNotChar\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_WhileNotChar_System_String_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches zero or more characters that are not contained in the specified [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)\.
 
 ```csharp

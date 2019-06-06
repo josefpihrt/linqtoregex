@@ -15,8 +15,7 @@
 
 ## Colon\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Colon"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a colon\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Colon()
 
 ## Colon\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Colon_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of colons\.
 
 ```csharp

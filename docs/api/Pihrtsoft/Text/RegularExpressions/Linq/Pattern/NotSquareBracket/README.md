@@ -15,8 +15,7 @@
 
 ## NotSquareBracket\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotSquareBracket"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a character that is neither left nor right square bracket\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotSquareBracket()
 
 ## NotSquareBracket\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotSquareBracket_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a character that is neither left nor right square bracket specified number of times\.
 
 ```csharp

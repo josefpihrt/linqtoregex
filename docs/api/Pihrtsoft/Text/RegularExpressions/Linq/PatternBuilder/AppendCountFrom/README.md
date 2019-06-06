@@ -15,8 +15,7 @@
 
 ## AppendCountFrom\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendCountFrom_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a quantifier that matches previous element at least specified number of times\.
 
 ```csharp
@@ -37,8 +36,7 @@ A minimal number of times the pattern must be matched\.
 
 ## AppendCountFrom\(Int32, Boolean\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendCountFrom_System_Int32_System_Boolean_"></a>
 
-### Summary
-
+\
 Appends a quantifier that matches previous element at least specified number of times\.
 
 ```csharp

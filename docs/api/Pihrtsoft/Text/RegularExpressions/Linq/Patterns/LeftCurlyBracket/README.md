@@ -15,8 +15,7 @@
 
 ## LeftCurlyBracket\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_LeftCurlyBracket"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a left curly bracket\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern LeftCurlyBracke
 
 ## LeftCurlyBracket\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_LeftCurlyBracket_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of left curly brackets\.
 
 ```csharp

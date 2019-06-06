@@ -15,8 +15,7 @@
 
 ## NotAlphanumericLower\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAlphanumericLower"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not a lower\-case alphanumeric character\. Alphanumeric character is a latin alphabet lower\-case letter or an arabic digit\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotAlph
 
 ## NotAlphanumericLower\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAlphanumericLower_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not a lower\-case alphanumeric character specified number of times\. Alphanumeric character is a latin alphabet lower\-case letter or an arabic digit\.
 
 ```csharp

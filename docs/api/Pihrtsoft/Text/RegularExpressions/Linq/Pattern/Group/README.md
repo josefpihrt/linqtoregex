@@ -16,8 +16,7 @@
 
 ## Group\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Group"></a>
 
-### Summary
-
+\
 Appends an empty numbered group\.
 
 ```csharp
@@ -30,8 +29,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Group()
 
 ## Group\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Group_System_Object_"></a>
 
-### Summary
-
+\
 Appends a numbered group with a specified content\.
 
 ```csharp
@@ -56,8 +54,7 @@ The content to be matched\.
 
 ## Group\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Group_System_Object___"></a>
 
-### Summary
-
+\
 Appends a numbered group with a specified content\.
 
 ```csharp

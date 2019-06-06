@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Gets a value that indicates whether the current instance is a positive or a negative character group\.
 
 ```csharp

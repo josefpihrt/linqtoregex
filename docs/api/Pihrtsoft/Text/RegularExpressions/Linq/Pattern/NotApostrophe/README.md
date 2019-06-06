@@ -15,8 +15,7 @@
 
 ## NotApostrophe\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotApostrophe"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a character that is not an apostrophe\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotApostrophe(
 
 ## NotApostrophe\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotApostrophe_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a specified number of characters that are not an apostrophe\.
 
 ```csharp

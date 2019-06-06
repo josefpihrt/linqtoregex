@@ -15,8 +15,7 @@
 
 ## NotRightCurlyBracket\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotRightCurlyBracket"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not a right curly bracket\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotRigh
 
 ## NotRightCurlyBracket\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotRightCurlyBracket_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of characters that are not a right curly bracket\.
 
 ```csharp

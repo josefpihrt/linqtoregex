@@ -15,8 +15,7 @@
 
 ## LeftAngleBracket\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LeftAngleBracket"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a left angle bracket \(less\-than sign\)\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern LeftAngleBrack
 
 ## LeftAngleBracket\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LeftAngleBracket_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a specified number of left angle brackets \(less\-than signs\)\.
 
 ```csharp

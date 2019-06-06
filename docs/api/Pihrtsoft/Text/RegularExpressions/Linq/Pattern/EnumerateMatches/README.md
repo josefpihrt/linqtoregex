@@ -15,8 +15,7 @@
 
 ## EnumerateMatches\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateMatches_System_String_"></a>
 
-### Summary
-
+\
 Searches the specified input string and returns an enumerable collection of matches\.
 
 ```csharp
@@ -41,8 +40,7 @@ The string to search for a match\.
 
 ## EnumerateMatches\(String, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateMatches_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
 
-### Summary
-
+\
 Searches the specified input string and returns an enumerable collection of matches, using the specified matching options\.
 
 ```csharp

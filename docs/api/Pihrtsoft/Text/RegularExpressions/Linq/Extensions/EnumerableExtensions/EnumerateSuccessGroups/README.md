@@ -16,8 +16,7 @@
 
 ## EnumerateSuccessGroups\(IEnumerable\<Match>\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_EnumerableExtensions_EnumerateSuccessGroups_System_Collections_Generic_IEnumerable_System_Text_RegularExpressions_Match__"></a>
 
-### Summary
-
+\
 Returns an enumerable collection of groups that have at least one capture\.
 
 ```csharp
@@ -42,8 +41,7 @@ The sequence to enumerate\.
 
 ## EnumerateSuccessGroups\(IEnumerable\<Match>, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_EnumerableExtensions_EnumerateSuccessGroups_System_Collections_Generic_IEnumerable_System_Text_RegularExpressions_Match__System_Int32_"></a>
 
-### Summary
-
+\
 Returns an enumerable collection of groups that have a specified name and have at least one capture\.
 
 ```csharp
@@ -72,8 +70,7 @@ A number of the group\.
 
 ## EnumerateSuccessGroups\(IEnumerable\<Match>, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_EnumerableExtensions_EnumerateSuccessGroups_System_Collections_Generic_IEnumerable_System_Text_RegularExpressions_Match__System_String_"></a>
 
-### Summary
-
+\
 Returns an enumerable collection of groups thas have a specified name and have at least one capture\.
 
 ```csharp

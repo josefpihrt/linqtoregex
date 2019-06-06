@@ -15,8 +15,7 @@
 
 ## WhiteSpace\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_WhiteSpace"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a white\-space character\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern WhiteSpace()
 
 ## WhiteSpace\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_WhiteSpace_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of white\-space characters\.
 
 ```csharp

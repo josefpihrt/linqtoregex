@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Gets the [PatternSettings](../../PatternSettings/README.md) object that modifies the pattern\.
 
 ```csharp

@@ -15,8 +15,7 @@
 
 ## QuestionMark\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_QuestionMark"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a question mark\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern QuestionMark()
 
 ## QuestionMark\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_QuestionMark_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of question marks\.
 
 ```csharp

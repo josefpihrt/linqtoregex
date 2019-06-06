@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Gets or sets the line terminator string used by the current [PatternSettings](../README.md)\.
 
 ```csharp

@@ -15,8 +15,7 @@
 
 ## Tab\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Tab"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a tab\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Tab()
 
 ## Tab\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Tab_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of tabs\.
 
 ```csharp

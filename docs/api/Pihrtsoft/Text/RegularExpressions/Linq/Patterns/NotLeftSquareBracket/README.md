@@ -15,8 +15,7 @@
 
 ## NotLeftSquareBracket\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotLeftSquareBracket"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not a left square bracket\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotLeft
 
 ## NotLeftSquareBracket\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotLeftSquareBracket_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of characters that are not a left square bracket\.
 
 ```csharp

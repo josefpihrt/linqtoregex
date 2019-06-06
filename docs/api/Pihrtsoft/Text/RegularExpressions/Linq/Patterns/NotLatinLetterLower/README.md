@@ -15,8 +15,7 @@
 
 ## NotLatinLetterLower\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotLatinLetterLower"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not a latin alphabet lower\-case letter\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotLati
 
 ## NotLatinLetterLower\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotLatinLetterLower_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not a latin alphabet lower\-case letter specified number of times\.
 
 ```csharp

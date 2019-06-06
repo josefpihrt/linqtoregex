@@ -16,8 +16,7 @@
 
 ## SurroundQuoteMarksOrApostrophes\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundQuoteMarksOrApostrophes"></a>
 
-### Summary
-
+\
 Returns a pattern that matches two quotation marks \(apostrophes\), allowing zero or more characters that are not a quotation mark \(apostrophe\) between the quotation marks \(apostrophes\)\.
 
 ```csharp
@@ -30,8 +29,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Surroun
 
 ## SurroundQuoteMarksOrApostrophes\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundQuoteMarksOrApostrophes_System_Object_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches specified pattern surrounded with quotation marks or apostrophes\.
 
 ```csharp
@@ -56,8 +54,7 @@ The content to be matched\.
 
 ## SurroundQuoteMarksOrApostrophes\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundQuoteMarksOrApostrophes_System_Object___"></a>
 
-### Summary
-
+\
 Returns a pattern that matches specified content surrounded with quotation marks or apostrophes\.
 
 ```csharp

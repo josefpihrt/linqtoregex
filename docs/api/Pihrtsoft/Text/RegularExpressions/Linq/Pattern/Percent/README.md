@@ -15,8 +15,7 @@
 
 ## Percent\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Percent"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a percent\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Percent()
 
 ## Percent\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Percent_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a specified number of percents\.
 
 ```csharp

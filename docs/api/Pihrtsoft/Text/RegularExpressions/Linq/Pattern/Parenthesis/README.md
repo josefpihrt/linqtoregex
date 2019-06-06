@@ -15,8 +15,7 @@
 
 ## Parenthesis\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Parenthesis"></a>
 
-### Summary
-
+\
 Appends a pattern that matches left or right parenthesis\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.CharGroup Parenthesis()
 
 ## Parenthesis\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Parenthesis_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches left or right parenthesis specified number of times\.
 
 ```csharp

@@ -16,8 +16,7 @@
 
 ## SurroundCurlyBrackets\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundCurlyBrackets"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a text consisting of left and right curly bracket, allowing zero or more characters that are not a right curly bracket between the brackets\.
 
 ```csharp
@@ -30,8 +29,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern SurroundCurlyBracke
 
 ## SurroundCurlyBrackets\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundCurlyBrackets_System_Object_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches specified pattern surrounded with left and right curly bracket\.
 
 ```csharp
@@ -56,8 +54,7 @@ The content to be matched\.
 
 ## SurroundCurlyBrackets\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundCurlyBrackets_System_Object___"></a>
 
-### Summary
-
+\
 Returns a pattern that matches specified content surrounded with left and right curly bracket\.
 
 ```csharp

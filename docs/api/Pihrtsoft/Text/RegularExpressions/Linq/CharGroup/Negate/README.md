@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 If the current instance is a positive character group, it returns a negative character group\. Otherwise, it returns a positive character group\. Newly created group has the same content as the current instance\.
 
 ```csharp

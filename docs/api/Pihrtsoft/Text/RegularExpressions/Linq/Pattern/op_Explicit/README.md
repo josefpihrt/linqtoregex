@@ -15,8 +15,7 @@
 
 ## Explicit\(Char to Pattern\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_Explicit_System_Char__Pihrtsoft_Text_RegularExpressions_Linq_Pattern"></a>
 
-### Summary
-
+\
 Converts specified character to a pattern\.
 
 ```csharp
@@ -35,8 +34,7 @@ The Unicode character to convert\.
 
 ## Explicit\(String to Pattern\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_Explicit_System_String__Pihrtsoft_Text_RegularExpressions_Linq_Pattern"></a>
 
-### Summary
-
+\
 Converts specified text to a pattern\.
 
 ```csharp

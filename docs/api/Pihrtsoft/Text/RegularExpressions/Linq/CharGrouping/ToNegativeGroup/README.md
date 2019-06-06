@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Converts the current instance of the [CharGrouping](../README.md) to the negative character group\.
 
 ```csharp

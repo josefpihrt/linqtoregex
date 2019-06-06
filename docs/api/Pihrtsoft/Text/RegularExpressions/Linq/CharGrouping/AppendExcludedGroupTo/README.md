@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Appends the text representation of the character group containing the current instance to the specified [PatternBuilder](../../PatternBuilder/README.md)\.
 
 ```csharp

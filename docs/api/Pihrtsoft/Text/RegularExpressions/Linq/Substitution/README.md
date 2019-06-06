@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Represents a base class for a substitution in the replacement pattern\. This class is abstract\.
 
 ```csharp

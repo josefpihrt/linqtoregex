@@ -17,8 +17,7 @@
 
 ## AppendCount\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendCount_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a quantifier that matches previous element specific number of times\.
 
 ```csharp
@@ -39,8 +38,7 @@ A number of times the pattern must be matched\.
 
 ## AppendCount\(Int32, Boolean\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendCount_System_Int32_System_Boolean_"></a>
 
-### Summary
-
+\
 Appends a quantifier that matches previous element specific number of times\.
 
 ```csharp
@@ -65,8 +63,7 @@ Indicates whether the quantifier will be greedy or lazy\.
 
 ## AppendCount\(Int32, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendCount_System_Int32_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a quantifier that matches previous element from minimal to maximum times\.
 
 ```csharp
@@ -91,8 +88,7 @@ A maximum number of times the pattern can be matched\.
 
 ## AppendCount\(Int32, Int32, Boolean\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendCount_System_Int32_System_Int32_System_Boolean_"></a>
 
-### Summary
-
+\
 Appends a quantifier that matches previous element from minimal to maximum times\.
 
 ```csharp

@@ -15,8 +15,7 @@
 
 ## NamedGroup\(String, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NamedGroup_System_String_System_Object_"></a>
 
-### Summary
-
+\
 Returns a named group with a specified name and content\.
 
 ```csharp
@@ -49,8 +48,7 @@ The content to be matched\.
 
 ## NamedGroup\(String, Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NamedGroup_System_String_System_Object___"></a>
 
-### Summary
-
+\
 Returns a named group with a specified name and content\.
 
 ```csharp

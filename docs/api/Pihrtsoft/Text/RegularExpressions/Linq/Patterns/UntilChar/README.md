@@ -17,8 +17,7 @@
 
 ## UntilChar\(AsciiChar\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_UntilChar_Pihrtsoft_Text_RegularExpressions_Linq_AsciiChar_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches zero or more characters until it reaches a specified character\.
 
 ```csharp
@@ -37,8 +36,7 @@ An enumerated constant that identifies ASCII character\.
 
 ## UntilChar\(Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_UntilChar_System_Char_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches zero or more characters until it reaches a specified character\.
 
 ```csharp
@@ -57,8 +55,7 @@ A Unicode character\.
 
 ## UntilChar\(CharGrouping\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_UntilChar_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches zero or more characters until it reaches a character that is matched by a specified [CharGrouping](../../CharGrouping/README.md)\.
 
 ```csharp
@@ -83,8 +80,7 @@ A content of a character group\.
 
 ## UntilChar\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_UntilChar_System_String_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches zero or more characters until it reaches any one of the specified characters\.
 
 ```csharp

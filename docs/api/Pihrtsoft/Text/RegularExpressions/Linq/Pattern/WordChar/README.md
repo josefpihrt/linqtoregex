@@ -15,8 +15,7 @@
 
 ## WordChar\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WordChar"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a word character\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern WordChar()
 
 ## WordChar\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WordChar_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a specified number of word characters\.
 
 ```csharp

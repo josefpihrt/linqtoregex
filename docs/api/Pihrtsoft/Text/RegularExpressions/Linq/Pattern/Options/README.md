@@ -19,8 +19,7 @@
 
 ## Options\(RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Options_System_Text_RegularExpressions_RegexOptions_"></a>
 
-### Summary
-
+\
 Appends a pattern that applies specified options\.
 
 ```csharp
@@ -39,8 +38,7 @@ A bitwise combination of the enumeration values that are applied\.
 
 ## Options\(RegexOptions, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Options_System_Text_RegularExpressions_RegexOptions_System_Object_"></a>
 
-### Summary
-
+\
 Appends a pattern that applies specified options to a specified pattern\.
 
 ```csharp
@@ -69,8 +67,7 @@ The content to be matched\.
 
 ## Options\(RegexOptions, Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Options_System_Text_RegularExpressions_RegexOptions_System_Object___"></a>
 
-### Summary
-
+\
 Appends a pattern that applies specified options to a specified pattern\.
 
 ```csharp
@@ -99,8 +96,7 @@ An object array that contains zero or more patterns any one of which has to be m
 
 ## Options\(RegexOptions, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Options_System_Text_RegularExpressions_RegexOptions_System_Text_RegularExpressions_RegexOptions_"></a>
 
-### Summary
-
+\
 Appends a pattern that applies and disables specified options to a specified pattern\.
 
 ```csharp
@@ -123,8 +119,7 @@ A bitwise combination of the enumeration values that are disabled\.
 
 ## Options\(RegexOptions, RegexOptions, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Options_System_Text_RegularExpressions_RegexOptions_System_Text_RegularExpressions_RegexOptions_System_Object_"></a>
 
-### Summary
-
+\
 Appends a pattern that applies and disables specified options to a specified pattern\.
 
 ```csharp
@@ -157,8 +152,7 @@ The content to be matched\.
 
 ## Options\(RegexOptions, RegexOptions, Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Options_System_Text_RegularExpressions_RegexOptions_System_Text_RegularExpressions_RegexOptions_System_Object___"></a>
 
-### Summary
-
+\
 Appends a pattern that applies and disables specified options to a specified pattern\.
 
 ```csharp

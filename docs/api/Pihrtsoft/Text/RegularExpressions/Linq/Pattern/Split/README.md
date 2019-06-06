@@ -15,8 +15,7 @@
 
 ## Split\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Split_System_String_"></a>
 
-### Summary
-
+\
 Splits the specified input string at the positions defined by the current instance\.
 
 ```csharp
@@ -35,8 +34,7 @@ The string to split\.
 
 ## Split\(String, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Split_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
 
-### Summary
-
+\
 Splits the specified input string at the positions defined by the current instance, using the specified matching options\.
 
 ```csharp

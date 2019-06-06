@@ -15,8 +15,7 @@
 
 ## Digit\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Digit"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a digit character\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Digit()
 
 ## Digit\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Digit_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a specified number of digit characters\.
 
 ```csharp

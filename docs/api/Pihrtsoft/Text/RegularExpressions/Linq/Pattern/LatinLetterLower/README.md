@@ -15,8 +15,7 @@
 
 ## LatinLetterLower\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LatinLetterLower"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a latin alphabet lower\-case letter\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern LatinLetterLow
 
 ## LatinLetterLower\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LatinLetterLower_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a specified number of latin alphabet lower\-case letters\.
 
 ```csharp

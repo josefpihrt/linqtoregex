@@ -15,8 +15,7 @@
 
 ## GroupReference\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_GroupReference_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches previously defined numbered group\.
 
 ```csharp
@@ -41,8 +40,7 @@ A number of the group\.
 
 ## GroupReference\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_GroupReference_System_String_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches previously defined named group\.
 
 ```csharp

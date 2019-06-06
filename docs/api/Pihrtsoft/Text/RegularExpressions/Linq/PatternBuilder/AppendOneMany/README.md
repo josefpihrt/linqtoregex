@@ -15,8 +15,7 @@
 
 ## AppendOneMany\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendOneMany"></a>
 
-### Summary
-
+\
 Appends a quantifier that matches previous element one or more times\.
 
 ```csharp
@@ -25,8 +24,7 @@ public void AppendOneMany()
 
 ## AppendOneMany\(Boolean\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendOneMany_System_Boolean_"></a>
 
-### Summary
-
+\
 Appends a quantifier that matches previous element one or more times\.
 
 ```csharp

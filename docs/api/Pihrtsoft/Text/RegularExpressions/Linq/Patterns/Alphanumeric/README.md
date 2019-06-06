@@ -15,8 +15,7 @@
 
 ## Alphanumeric\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Alphanumeric"></a>
 
-### Summary
-
+\
 Returns a pattern that matches an alphanumeric character\. Alphanumeric character is a latin alphabet letter or an arabic digit\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup Alphanumeric()
 
 ## Alphanumeric\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Alphanumeric_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of alphanumeric characters\. Alphanumeric character is a latin alphabet letter or an arabic digit\.
 
 ```csharp

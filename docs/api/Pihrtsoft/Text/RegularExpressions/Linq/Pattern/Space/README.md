@@ -15,8 +15,7 @@
 
 ## Space\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Space"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a space\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Space()
 
 ## Space\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Space_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a specified number of spaces\.
 
 ```csharp

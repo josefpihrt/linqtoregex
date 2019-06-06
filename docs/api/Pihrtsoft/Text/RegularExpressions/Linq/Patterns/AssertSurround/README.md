@@ -15,8 +15,7 @@
 
 ## AssertSurround\(Object, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AssertSurround_System_Object_System_Object_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified content with lookbehind assertion on the left side and lookahead assertion on the right side\.
 
 ```csharp
@@ -45,8 +44,7 @@ The content to be matched\.
 
 ## AssertSurround\(Object, Object, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AssertSurround_System_Object_System_Object_System_Object_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified content with lookbehind assertion on the left side and lookahead assertion on the right side\.
 
 ```csharp

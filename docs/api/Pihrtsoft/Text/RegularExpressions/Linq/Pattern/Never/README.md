@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Appends an empty negative lookahead assertion\. This pattern is never matched\.
 
 ```csharp

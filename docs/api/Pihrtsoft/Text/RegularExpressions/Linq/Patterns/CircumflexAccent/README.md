@@ -15,8 +15,7 @@
 
 ## CircumflexAccent\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_CircumflexAccent"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a circumflex accent\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern CircumflexAccen
 
 ## CircumflexAccent\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_CircumflexAccent_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of circumflex accents\.
 
 ```csharp

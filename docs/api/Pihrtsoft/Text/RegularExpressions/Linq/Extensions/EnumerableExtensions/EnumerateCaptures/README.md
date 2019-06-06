@@ -17,8 +17,7 @@
 
 ## EnumerateCaptures\(IEnumerable\<Group>\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_EnumerableExtensions_EnumerateCaptures_System_Collections_Generic_IEnumerable_System_Text_RegularExpressions_Group__"></a>
 
-### Summary
-
+\
 Returns an enumerable collection of captures\.
 
 ```csharp
@@ -43,8 +42,7 @@ The sequence to enumerate\.
 
 ## EnumerateCaptures\(IEnumerable\<Match>\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_EnumerableExtensions_EnumerateCaptures_System_Collections_Generic_IEnumerable_System_Text_RegularExpressions_Match__"></a>
 
-### Summary
-
+\
 Returns an enumerable collection of captures\.
 
 ```csharp
@@ -69,8 +67,7 @@ The sequence to enumerate\.
 
 ## EnumerateCaptures\(IEnumerable\<Match>, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_EnumerableExtensions_EnumerateCaptures_System_Collections_Generic_IEnumerable_System_Text_RegularExpressions_Match__System_Int32_"></a>
 
-### Summary
-
+\
 Returns an enumerable collection of captures from groups that have a specified number\.
 
 ```csharp
@@ -99,8 +96,7 @@ A number of the group\.
 
 ## EnumerateCaptures\(IEnumerable\<Match>, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_EnumerableExtensions_EnumerateCaptures_System_Collections_Generic_IEnumerable_System_Text_RegularExpressions_Match__System_String_"></a>
 
-### Summary
-
+\
 Returns an enumerable collection of captures from groups thas have a specified name\.
 
 ```csharp

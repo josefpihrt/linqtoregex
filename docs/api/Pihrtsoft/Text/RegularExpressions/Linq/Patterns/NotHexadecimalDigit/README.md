@@ -15,8 +15,7 @@
 
 ## NotHexadecimalDigit\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotHexadecimalDigit"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not a hexadecimal digit\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotHexadecimalDig
 
 ## NotHexadecimalDigit\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotHexadecimalDigit_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not a hexadecimal digit specified number of times\.
 
 ```csharp

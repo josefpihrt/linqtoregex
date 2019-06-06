@@ -15,8 +15,7 @@
 
 ## NotPlus\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotPlus"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not a plus\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotPlus
 
 ## NotPlus\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotPlus_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of characters that are not a plus\.
 
 ```csharp

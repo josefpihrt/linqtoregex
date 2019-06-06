@@ -15,8 +15,7 @@
 
 ## VerticalBar\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_VerticalBar"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a vertical bar\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern VerticalBar()
 
 ## VerticalBar\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_VerticalBar_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of vertical bars\.
 
 ```csharp

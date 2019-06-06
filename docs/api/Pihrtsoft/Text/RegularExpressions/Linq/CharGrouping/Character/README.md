@@ -18,8 +18,7 @@
 
 ## Character\(AsciiChar\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Character_Pihrtsoft_Text_RegularExpressions_Linq_AsciiChar_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches specified Unicode character\.
 
 ```csharp
@@ -38,8 +37,7 @@ An enumerated constant that identifies ASCII character\.
 
 ## Character\(GeneralCategory\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Character_Pihrtsoft_Text_RegularExpressions_Linq_GeneralCategory_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a character from the specified Unicode category\.
 
 ```csharp
@@ -58,8 +56,7 @@ An enumerated constant that identifies Unicode category\.
 
 ## Character\(Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Character_System_Char_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches specified Unicode character\.
 
 ```csharp
@@ -78,8 +75,7 @@ A Unicode character\.
 
 ## Character\(NamedBlock\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Character_Pihrtsoft_Text_RegularExpressions_Linq_NamedBlock_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a character from the specified Unicode block\.
 
 ```csharp
@@ -98,8 +94,7 @@ An enumerated constant that identifies Unicode block\.
 
 ## Character\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Character_System_String_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches any one of the specified characters\.
 
 ```csharp

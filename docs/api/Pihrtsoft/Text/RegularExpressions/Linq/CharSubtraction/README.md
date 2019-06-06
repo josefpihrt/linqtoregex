@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Represents a character subtraction pattern\. This pattern matches a character from a base group except characters from a excluded group\.
 
 ```csharp

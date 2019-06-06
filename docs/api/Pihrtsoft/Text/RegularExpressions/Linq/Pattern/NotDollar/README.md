@@ -15,8 +15,7 @@
 
 ## NotDollar\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotDollar"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a character that is not a dollar\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotDollar()
 
 ## NotDollar\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotDollar_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a specified number of characters that are not a dollar\.
 
 ```csharp

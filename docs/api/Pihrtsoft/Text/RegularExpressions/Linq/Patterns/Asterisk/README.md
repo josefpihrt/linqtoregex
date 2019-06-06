@@ -15,8 +15,7 @@
 
 ## Asterisk\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Asterisk"></a>
 
-### Summary
-
+\
 Returns a pattern that matches an asterisk\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Asterisk()
 
 ## Asterisk\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Asterisk_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of asterisks\.
 
 ```csharp

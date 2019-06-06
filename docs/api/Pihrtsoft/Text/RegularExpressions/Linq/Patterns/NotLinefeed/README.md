@@ -15,8 +15,7 @@
 
 ## NotLinefeed\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotLinefeed"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not a linefeed\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotLine
 
 ## NotLinefeed\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotLinefeed_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of characters that are not a linefeed\.
 
 ```csharp

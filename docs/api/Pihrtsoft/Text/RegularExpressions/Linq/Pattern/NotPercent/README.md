@@ -15,8 +15,7 @@
 
 ## NotPercent\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotPercent"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a character that is not a percent\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotPercent()
 
 ## NotPercent\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotPercent_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a specified number of characters that are not a percent\.
 
 ```csharp

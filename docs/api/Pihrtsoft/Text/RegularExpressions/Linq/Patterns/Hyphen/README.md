@@ -15,8 +15,7 @@
 
 ## Hyphen\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Hyphen"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a hyphen\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Hyphen()
 
 ## Hyphen\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Hyphen_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of hyphens\.
 
 ```csharp

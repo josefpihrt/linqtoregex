@@ -15,8 +15,7 @@
 
 ## Dollar\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Dollar"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a dollar\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Dollar()
 
 ## Dollar\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Dollar_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of dollars\.
 
 ```csharp

@@ -15,8 +15,7 @@
 
 ## LetterUpper\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LetterUpper"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a character from [GeneralCategory.LetterUppercase](../../GeneralCategory/LetterUppercase/README.md)\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern LetterUpper()
 
 ## LetterUpper\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LetterUpper_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a specified number of letters from [GeneralCategory.LetterUppercase](../../GeneralCategory/LetterUppercase/README.md)\.
 
 ```csharp

@@ -20,8 +20,7 @@
 
 ## BitwiseOr\(Char, Pattern\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_BitwiseOr_System_Char_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_"></a>
 
-### Summary
-
+\
 Creates a pattern that matches any one of the specified elements\.
 
 ```csharp
@@ -50,8 +49,7 @@ The second element to match\.
 
 ## BitwiseOr\(CharGrouping, Pattern\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_BitwiseOr_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_"></a>
 
-### Summary
-
+\
 Creates a pattern that matches any one of the specified elements\.
 
 ```csharp
@@ -80,8 +78,7 @@ The second element to match\.
 
 ## BitwiseOr\(Pattern, Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_BitwiseOr_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_System_Char_"></a>
 
-### Summary
-
+\
 Creates a pattern that matches any one of the specified elements\.
 
 ```csharp
@@ -110,8 +107,7 @@ The second element to match\.
 
 ## BitwiseOr\(Pattern, CharGrouping\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_BitwiseOr_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
 
-### Summary
-
+\
 Creates a pattern that matches any one of the specified elements\.
 
 ```csharp
@@ -140,8 +136,7 @@ The second element to match\.
 
 ## BitwiseOr\(Pattern, Pattern\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_BitwiseOr_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_"></a>
 
-### Summary
-
+\
 Creates a pattern that matches any one of the specified elements\.
 
 ```csharp
@@ -170,8 +165,7 @@ The second element to match\.
 
 ## BitwiseOr\(Pattern, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_BitwiseOr_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_System_String_"></a>
 
-### Summary
-
+\
 Creates a pattern that matches any one of the specified elements\.
 
 ```csharp
@@ -200,8 +194,7 @@ The second element to match\.
 
 ## BitwiseOr\(String, Pattern\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_BitwiseOr_System_String_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_"></a>
 
-### Summary
-
+\
 Creates a pattern that matches any one of the specified elements\.
 
 ```csharp

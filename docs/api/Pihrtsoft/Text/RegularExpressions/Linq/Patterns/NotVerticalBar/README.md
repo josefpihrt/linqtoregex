@@ -15,8 +15,7 @@
 
 ## NotVerticalBar\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotVerticalBar"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not a vertical bar\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotVert
 
 ## NotVerticalBar\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotVerticalBar_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of characters that are not a vertical bar\.
 
 ```csharp

@@ -15,8 +15,7 @@
 
 ## GetEscapeMode\(Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_GetEscapeMode_System_Char_"></a>
 
-### Summary
-
+\
 Gets a value indicating how a specified character is represented in the regular expression pattern\.
 
 ```csharp
@@ -35,8 +34,7 @@ A Unicode character\.
 
 ## GetEscapeMode\(Char, Boolean\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_GetEscapeMode_System_Char_System_Boolean_"></a>
 
-### Summary
-
+\
 Gets a value indicating how a specified character is represented in the regular expression pattern, specifying whether the character is inside or outside of the character group\.
 
 ```csharp

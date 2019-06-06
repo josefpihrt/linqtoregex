@@ -15,8 +15,7 @@
 
 ## NotAsterisk\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAsterisk"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not an asterisk\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotAste
 
 ## NotAsterisk\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAsterisk_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of characters that are not an asterisk\.
 
 ```csharp

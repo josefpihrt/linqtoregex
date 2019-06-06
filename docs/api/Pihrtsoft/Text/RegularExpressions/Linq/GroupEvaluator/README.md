@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Represents the method that is called each time a regular expression group is found during a Replace method operation\.
 
 ```csharp

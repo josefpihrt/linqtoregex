@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Represents an immutable content of the character group\. Content can be a base group or an excluded group\. This class is abstract\.
 
 ```csharp

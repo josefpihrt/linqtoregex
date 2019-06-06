@@ -16,8 +16,7 @@
 
 ## EnumerateMatches\(Regex, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateMatches_System_Text_RegularExpressions_Regex_System_String_"></a>
 
-### Summary
-
+\
 Searches the specified input string and returns enumerable collection of regular expression matches\.
 
 ```csharp
@@ -46,8 +45,7 @@ The string to search for a match\.
 
 ## EnumerateMatches\(Regex, String, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateMatches_System_Text_RegularExpressions_Regex_System_String_System_Int32_"></a>
 
-### Summary
-
+\
 Searches the specified input string beginning at the specified position and returns enumerable collection of regular expression matches\.
 
 ```csharp
@@ -84,8 +82,7 @@ The position at which to start the search\.
 
 ## EnumerateMatches\(Regex, String, Int32, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateMatches_System_Text_RegularExpressions_Regex_System_String_System_Int32_System_Int32_"></a>
 
-### Summary
-
+\
 Searches the specified input string beginning at the specified position and searching only the specified number of characters and returns enumerable collection of regular expression matches\.
 
 ```csharp

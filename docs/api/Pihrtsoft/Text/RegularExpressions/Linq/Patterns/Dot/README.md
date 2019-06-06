@@ -15,8 +15,7 @@
 
 ## Dot\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Dot"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a dot\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Dot()
 
 ## Dot\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Dot_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of dots\.
 
 ```csharp

@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Represents a class that enables to create a text representation of the [Pattern](../Pattern/README.md)\. This class cannot be inherited\.
 
 ```csharp

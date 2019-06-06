@@ -19,8 +19,7 @@
 
 ## EnumerateGroups\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateGroups_System_String_"></a>
 
-### Summary
-
+\
 Searches the specified input string and returns an enumerable collection of groups\.
 
 ```csharp
@@ -45,8 +44,7 @@ The string to search for a match\.
 
 ## EnumerateGroups\(String, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateGroups_System_String_System_Int32_"></a>
 
-### Summary
-
+\
 Searches the specified input string and returns an enumerable collection of groups with a specified number\.
 
 ```csharp
@@ -75,8 +73,7 @@ A valid number of the group\.
 
 ## EnumerateGroups\(String, Int32, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateGroups_System_String_System_Int32_System_Text_RegularExpressions_RegexOptions_"></a>
 
-### Summary
-
+\
 Searches the specified input string and returns an enumerable collection of groups with a specified number, using the specified matching options\.
 
 ```csharp
@@ -109,8 +106,7 @@ A bitwise combination of the enumeration values that specify options for matchin
 
 ## EnumerateGroups\(String, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateGroups_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
 
-### Summary
-
+\
 Searches the specified input string and returns an enumerable collection of groups, using the specified matching options\.
 
 ```csharp
@@ -139,8 +135,7 @@ A bitwise combination of the enumeration values that specify options for matchin
 
 ## EnumerateGroups\(String, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateGroups_System_String_System_String_"></a>
 
-### Summary
-
+\
 Searches the specified input string and returns an enumerable collection of groups with a specified name\.
 
 ```csharp
@@ -169,8 +164,7 @@ A name of the group\.
 
 ## EnumerateGroups\(String, String, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateGroups_System_String_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
 
-### Summary
-
+\
 Searches the specified input string and returns an enumerable collection of groups with a specified name, using the specified matching options\.
 
 ```csharp

@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Represents a pattern that matches a specified content with negative lookbehind assertion on the left side and negative lookahead assertion on the right side\. This class cannot be inherited\.
 
 ```csharp

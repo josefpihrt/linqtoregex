@@ -15,8 +15,7 @@
 
 ## Tilde\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Tilde"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a tilde\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Tilde()
 
 ## Tilde\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Tilde_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of tildes\.
 
 ```csharp

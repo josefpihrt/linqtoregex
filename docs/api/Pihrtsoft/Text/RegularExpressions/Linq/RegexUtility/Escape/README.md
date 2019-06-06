@@ -17,8 +17,7 @@
 
 ## Escape\(Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_Escape_System_Char_"></a>
 
-### Summary
-
+\
 Converts a specified character to the [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) object that represents the character as a literal rather than a metacharacter\.
 The character is considered not to be in the character group\.
 
@@ -38,8 +37,7 @@ A Unicode character\.
 
 ## Escape\(Char, Boolean\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_Escape_System_Char_System_Boolean_"></a>
 
-### Summary
-
+\
 Converts a specified character to the [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) object that represents the character as a literal rather than a metacharacter\.
 
 ```csharp
@@ -62,8 +60,7 @@ Indicates whether the character is considered to be inside or outside of the cha
 
 ## Escape\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_Escape_System_String_"></a>
 
-### Summary
-
+\
 Converts a specified text to the [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) object that represents each character as a literal rather than a metacharacter\.
 The text is considered not to be in the character group\.
 
@@ -89,8 +86,7 @@ The text to be converted\.
 
 ## Escape\(String, Boolean\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_Escape_System_String_System_Boolean_"></a>
 
-### Summary
-
+\
 Converts a specified input to the [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) object that represents each character as a literal rather than a metacharacter\.
 
 ```csharp

@@ -9,11 +9,11 @@
 
 ## Classes
 
-* System\.Text\.RegularExpressions\.[Capture](System/Text/RegularExpressions/Capture/README.md)
-* System\.Text\.RegularExpressions\.[Group](System/Text/RegularExpressions/Group/README.md)
-* System\.Text\.RegularExpressions\.[Match](System/Text/RegularExpressions/Match/README.md)
-* System\.Text\.RegularExpressions\.[Regex](System/Text/RegularExpressions/Regex/README.md)
+* [Capture](System/Text/RegularExpressions/Capture/README.md)
+* [Group](System/Text/RegularExpressions/Group/README.md)
+* [Match](System/Text/RegularExpressions/Match/README.md)
+* [Regex](System/Text/RegularExpressions/Regex/README.md)
 
 ## Interfaces
 
-* System\.Collections\.Generic\.[IEnumerable\<T>](System/Collections/Generic/IEnumerable-1/README.md)
+* [IEnumerable\<T>](System/Collections/Generic/IEnumerable-1/README.md)

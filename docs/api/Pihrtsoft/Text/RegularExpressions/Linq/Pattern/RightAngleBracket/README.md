@@ -15,8 +15,7 @@
 
 ## RightAngleBracket\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_RightAngleBracket"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a right angle bracket \(greater\-than sign\)\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern RightAngleBrac
 
 ## RightAngleBracket\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_RightAngleBracket_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a specified number of right angle brackets \(greater\-than signs\)\.
 
 ```csharp

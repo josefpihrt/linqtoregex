@@ -16,8 +16,7 @@
 
 ## WhileChar\(AsciiChar\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_WhileChar_Pihrtsoft_Text_RegularExpressions_Linq_AsciiChar_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified character zero or more times\.
 
 ```csharp
@@ -36,8 +35,7 @@ An enumerated constant that identifies ASCII character\.
 
 ## WhileChar\(Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_WhileChar_System_Char_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified character zero or more times\.
 
 ```csharp
@@ -56,8 +54,7 @@ A Unicode character\.
 
 ## WhileChar\(CharGrouping\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_WhileChar_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified character zero or more times\.
 
 ```csharp

@@ -15,8 +15,7 @@
 
 ## NotLatinLetterUpper\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotLatinLetterUpper"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a character that is not a latin alphabet upper\-case letter\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotLatinLetter
 
 ## NotLatinLetterUpper\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotLatinLetterUpper_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a character that is not a latin alphabet upper\-case letter specified number of times\.
 
 ```csharp

@@ -16,8 +16,7 @@
 
 ## EnumerateSuccessGroups\(Regex, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSuccessGroups_System_Text_RegularExpressions_Regex_System_String_"></a>
 
-### Summary
-
+\
 Searches the specified input string and returns enumerable collection of groups that have at least one capture\.
 
 ```csharp
@@ -46,8 +45,7 @@ The string to search for a match\.
 
 ## EnumerateSuccessGroups\(Regex, String, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSuccessGroups_System_Text_RegularExpressions_Regex_System_String_System_Int32_"></a>
 
-### Summary
-
+\
 Searches the specified input string and returns enumerable collection of groups that have a specified number and have at least one capture\.
 
 ```csharp
@@ -80,8 +78,7 @@ A number of the group\.
 
 ## EnumerateSuccessGroups\(Regex, String, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSuccessGroups_System_Text_RegularExpressions_Regex_System_String_System_String_"></a>
 
-### Summary
-
+\
 Searches the specified input string and returns enumerable collection of groups that have a specified name and have at least one capture\.
 
 ```csharp

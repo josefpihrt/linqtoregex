@@ -15,8 +15,7 @@
 
 ## ArabicDigit\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_ArabicDigit"></a>
 
-### Summary
-
+\
 Returns a pattern that matches an arabic digit\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup ArabicDigit()
 
 ## ArabicDigit\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_ArabicDigit_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of arabic digits\.
 
 ```csharp

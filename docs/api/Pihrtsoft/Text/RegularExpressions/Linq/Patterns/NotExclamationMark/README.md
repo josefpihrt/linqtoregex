@@ -15,8 +15,7 @@
 
 ## NotExclamationMark\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotExclamationMark"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not an exclamation mark\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotExcl
 
 ## NotExclamationMark\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotExclamationMark_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of characters that are not an exclamation mark\.
 
 ```csharp

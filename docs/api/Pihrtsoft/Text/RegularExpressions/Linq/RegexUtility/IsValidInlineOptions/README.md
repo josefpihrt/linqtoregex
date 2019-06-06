@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Gets a value indicating whether the **options** can be expressed as inline char\(s\)\.
 
 ```csharp

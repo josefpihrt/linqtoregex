@@ -15,8 +15,7 @@
 
 ## NotAssertSurround\(Object, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAssertSurround_System_Object_System_Object_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified content with negative lookbehind assertion on the left side and negative lookahead assertion on the right side\.
 
 ```csharp
@@ -45,8 +44,7 @@ The content to be matched\.
 
 ## NotAssertSurround\(Object, Object, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAssertSurround_System_Object_System_Object_System_Object_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified content with negative lookbehind assertion on the left side and negative lookahead assertion on the right side\.
 
 ```csharp

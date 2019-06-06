@@ -16,8 +16,7 @@
 
 ## SurroundQuoteMarks\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundQuoteMarks"></a>
 
-### Summary
-
+\
 Appends a pattern that matches two quotation marks, allowing zero or more characters that are not a quotation mark between the quotation marks\.
 
 ```csharp
@@ -30,8 +29,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.Pattern SurroundQuoteMarks()
 
 ## SurroundQuoteMarks\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundQuoteMarks_System_Object_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches specified pattern surrounded with quotation marks\.
 
 ```csharp
@@ -56,8 +54,7 @@ The content to be matched\.
 
 ## SurroundQuoteMarks\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundQuoteMarks_System_Object___"></a>
 
-### Summary
-
+\
 Appends a pattern that matches specified content surrounded with quotation marks\.
 
 ```csharp

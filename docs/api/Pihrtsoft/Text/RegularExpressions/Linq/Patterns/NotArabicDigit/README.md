@@ -15,8 +15,7 @@
 
 ## NotArabicDigit\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotArabicDigit"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not an arabic digit\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotArabicDigit()
 
 ## NotArabicDigit\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotArabicDigit_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not an arabic digit specified number of times\.
 
 ```csharp

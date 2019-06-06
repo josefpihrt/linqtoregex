@@ -15,8 +15,7 @@
 
 ## CurlyBracket\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_CurlyBracket"></a>
 
-### Summary
-
+\
 Appends a pattern that matches left or right curly bracket\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.CharGroup CurlyBracket()
 
 ## CurlyBracket\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_CurlyBracket_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches left or right curly bracket specified number of times\.
 
 ```csharp

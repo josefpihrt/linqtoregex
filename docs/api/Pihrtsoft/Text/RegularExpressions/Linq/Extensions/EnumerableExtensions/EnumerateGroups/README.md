@@ -16,8 +16,7 @@
 
 ## EnumerateGroups\(IEnumerable\<Match>\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_EnumerableExtensions_EnumerateGroups_System_Collections_Generic_IEnumerable_System_Text_RegularExpressions_Match__"></a>
 
-### Summary
-
+\
 Returns an enumerable collection of groups\.
 
 ```csharp
@@ -42,8 +41,7 @@ The sequence to enumerate\.
 
 ## EnumerateGroups\(IEnumerable\<Match>, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_EnumerableExtensions_EnumerateGroups_System_Collections_Generic_IEnumerable_System_Text_RegularExpressions_Match__System_Int32_"></a>
 
-### Summary
-
+\
 Returns an enumerable collection of groups with a specified number\.
 
 ```csharp
@@ -72,8 +70,7 @@ A number of the group\.
 
 ## EnumerateGroups\(IEnumerable\<Match>, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_EnumerableExtensions_EnumerateGroups_System_Collections_Generic_IEnumerable_System_Text_RegularExpressions_Match__System_String_"></a>
 
-### Summary
-
+\
 Returns an enumerable collection of groups with a specified name\.
 
 ```csharp

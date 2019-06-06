@@ -18,8 +18,7 @@
 
 ## Addition\(Char, Substitution\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Substitution_op_Addition_System_Char_Pihrtsoft_Text_RegularExpressions_Linq_Substitution_"></a>
 
-### Summary
-
+\
 Concatenate two elements into a new [Substitution](../README.md)\.
 
 ```csharp
@@ -48,8 +47,7 @@ The second element to concatenate\.
 
 ## Addition\(String, Substitution\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Substitution_op_Addition_System_String_Pihrtsoft_Text_RegularExpressions_Linq_Substitution_"></a>
 
-### Summary
-
+\
 Concatenate two elements into a new [Substitution](../README.md)\.
 
 ```csharp
@@ -78,8 +76,7 @@ The second element to concatenate\.
 
 ## Addition\(Substitution, Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Substitution_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_Substitution_System_Char_"></a>
 
-### Summary
-
+\
 Concatenate two elements into a new [Substitution](../README.md)\.
 
 ```csharp
@@ -108,8 +105,7 @@ The second element to concatenate\.
 
 ## Addition\(Substitution, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Substitution_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_Substitution_System_String_"></a>
 
-### Summary
-
+\
 Concatenate two elements into a new [Substitution](../README.md)\.
 
 ```csharp
@@ -138,8 +134,7 @@ The second element to concatenate\.
 
 ## Addition\(Substitution, Substitution\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Substitution_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_Substitution_Pihrtsoft_Text_RegularExpressions_Linq_Substitution_"></a>
 
-### Summary
-
+\
 Concatenate two elements into a new [Substitution](../README.md)\.
 
 ```csharp

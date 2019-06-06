@@ -15,8 +15,7 @@
 
 ## ArabicDigit\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_ArabicDigit"></a>
 
-### Summary
-
+\
 Appends a pattern that matches an arabic digit\.
 
 ```csharp
@@ -29,8 +28,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern ArabicDigit()
 
 ## ArabicDigit\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_ArabicDigit_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a specified number of arabic digits\.
 
 ```csharp

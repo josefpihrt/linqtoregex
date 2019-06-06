@@ -15,8 +15,7 @@
 
 ## AppendIfGroup\(Int32, Object, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendIfGroup_System_Int32_System_Object_System_Object_"></a>
 
-### Summary
-
+\
 Appends an if construct\.
 
 ```csharp
@@ -49,8 +48,7 @@ The pattern to match if the named group is not matched\.
 
 ## AppendIfGroup\(String, Object, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendIfGroup_System_String_System_Object_System_Object_"></a>
 
-### Summary
-
+\
 Appends an if construct\.
 
 ```csharp

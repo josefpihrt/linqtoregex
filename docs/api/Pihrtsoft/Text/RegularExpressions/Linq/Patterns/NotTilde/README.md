@@ -15,8 +15,7 @@
 
 ## NotTilde\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotTilde"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not a tilde\.
 
 ```csharp
@@ -29,8 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotTild
 
 ## NotTilde\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotTilde_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of characters that are not a tilde\.
 
 ```csharp

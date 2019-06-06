@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Appends a core content of the current instance to a specified [PatternBuilder](../../PatternBuilder/README.md)\.
 
 ```csharp

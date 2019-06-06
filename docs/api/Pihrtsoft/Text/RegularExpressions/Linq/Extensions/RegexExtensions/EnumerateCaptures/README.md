@@ -16,8 +16,7 @@
 
 ## EnumerateCaptures\(Regex, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateCaptures_System_Text_RegularExpressions_Regex_System_String_"></a>
 
-### Summary
-
+\
 Searches the specified input string and returns enumerable collection of captures\.
 
 ```csharp
@@ -46,8 +45,7 @@ The string to search for a match\.
 
 ## EnumerateCaptures\(Regex, String, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateCaptures_System_Text_RegularExpressions_Regex_System_String_System_Int32_"></a>
 
-### Summary
-
+\
 Searches the specified input string and returns enumerable collection of captures from groups that have a specified number\.
 
 ```csharp
@@ -80,8 +78,7 @@ A number of the group\.
 
 ## EnumerateCaptures\(Regex, String, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateCaptures_System_Text_RegularExpressions_Regex_System_String_System_String_"></a>
 
-### Summary
-
+\
 Searches the specified input string and returns enumerable collection of captures from groups that have a specified name\.
 
 ```csharp

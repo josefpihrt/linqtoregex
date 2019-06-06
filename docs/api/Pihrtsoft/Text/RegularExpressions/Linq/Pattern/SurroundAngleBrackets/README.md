@@ -16,8 +16,7 @@
 
 ## SurroundAngleBrackets\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundAngleBrackets"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a text consisting of left and right angle bracket, allowing zero or more characters that are not a right angle bracket between the brackets\.
 
 ```csharp
@@ -30,8 +29,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.Pattern SurroundAngleBrackets()
 
 ## SurroundAngleBrackets\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundAngleBrackets_System_Object_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches specified pattern surrounded with left and right angle bracket\.
 
 ```csharp
@@ -56,8 +54,7 @@ The content to be matched\.
 
 ## SurroundAngleBrackets\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundAngleBrackets_System_Object___"></a>
 
-### Summary
-
+\
 Appends a pattern that matches specified content surrounded with left and right angle bracket\.
 
 ```csharp

@@ -15,8 +15,7 @@
 
 ## AppendMaybeCount\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendMaybeCount_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a quantifier that matches previous element at most specified number of times\.
 
 ```csharp
@@ -37,8 +36,7 @@ A maximum number of times the pattern can be matched\.
 
 ## AppendMaybeCount\(Int32, Boolean\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendMaybeCount_System_Int32_System_Boolean_"></a>
 
-### Summary
-
+\
 Appends a quantifier that matches previous element at most specified number of times\.
 
 ```csharp

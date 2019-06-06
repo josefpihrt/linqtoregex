@@ -15,8 +15,7 @@
 
 ## RequireGroup\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_RequireGroup_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a pattern that requires previously defined group with a specified number to be matched\. Otherwise, a match will fail\.
 
 ```csharp
@@ -41,8 +40,7 @@ A number of the group\.
 
 ## RequireGroup\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_RequireGroup_System_String_"></a>
 
-### Summary
-
+\
 Appends a pattern that requires previously defined group with a specified name to be matched\. Otherwise, a match will fail\.
 
 ```csharp

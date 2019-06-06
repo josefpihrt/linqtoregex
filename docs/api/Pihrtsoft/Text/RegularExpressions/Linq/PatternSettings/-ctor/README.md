@@ -15,8 +15,7 @@
 
 ## PatternSettings\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternSettings__ctor"></a>
 
-### Summary
-
+\
 Initializes a new instance of the [PatternSettings](../README.md) class\.
 
 ```csharp
@@ -25,8 +24,7 @@ public PatternSettings()
 
 ## PatternSettings\(PatternOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternSettings__ctor_Pihrtsoft_Text_RegularExpressions_Linq_PatternOptions_"></a>
 
-### Summary
-
+\
 Initializes a new instance of the [PatternSettings](../README.md) class with a specified options\.
 
 ```csharp
