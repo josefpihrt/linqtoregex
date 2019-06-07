@@ -1,6 +1,6 @@
 # LINQ to Regex API Reference
 
-[Namespaces](#namespaces) &#x2022; [Classes](#classes) &#x2022; [Static Classes](#static-classes) &#x2022; [Interfaces](#interfaces) &#x2022; [Enums](#enums) &#x2022; [Delegates](#delegates) &#x2022; [Other](#other)
+[Namespaces](#namespaces) &#x2022; [Class Hierarchy](#class-hierarchy) &#x2022; [Other](#other)
 
 ## Namespaces
 
@@ -31,26 +31,43 @@
 * &emsp; [PatternSettings](Pihrtsoft/Text/RegularExpressions/Linq/PatternSettings/README.md)
 * &emsp; [Substitution](Pihrtsoft/Text/RegularExpressions/Linq/Substitution/README.md)
 
-## Static Classes
+## Pihrtsoft\.Text\.RegularExpressions\.Linq Namespace
 
+### Classes
+
+* [Assertion](Pihrtsoft/Text/RegularExpressions/Linq/Assertion/README.md)
+* [BackAssertion](Pihrtsoft/Text/RegularExpressions/Linq/BackAssertion/README.md)
 * [BaseGroupExtensions](Pihrtsoft/Text/RegularExpressions/Linq/BaseGroupExtensions/README.md)
-* [CaptureExtensions](Pihrtsoft/Text/RegularExpressions/Linq/Extensions/CaptureExtensions/README.md)
+* [CharGroup](Pihrtsoft/Text/RegularExpressions/Linq/CharGroup/README.md)
+* [CharGrouping](Pihrtsoft/Text/RegularExpressions/Linq/CharGrouping/README.md)
+* [CharPattern](Pihrtsoft/Text/RegularExpressions/Linq/CharPattern/README.md)
+* [CharSubtraction](Pihrtsoft/Text/RegularExpressions/Linq/CharSubtraction/README.md)
 * [Chars](Pihrtsoft/Text/RegularExpressions/Linq/Chars/README.md)
-* [EnumerableExtensions](Pihrtsoft/Text/RegularExpressions/Linq/Extensions/EnumerableExtensions/README.md)
-* [GroupExtensions](Pihrtsoft/Text/RegularExpressions/Linq/Extensions/GroupExtensions/README.md)
-* [MatchExtensions](Pihrtsoft/Text/RegularExpressions/Linq/Extensions/MatchExtensions/README.md)
+* [GroupingPattern](Pihrtsoft/Text/RegularExpressions/Linq/GroupingPattern/README.md)
+* [NegativeAssertion](Pihrtsoft/Text/RegularExpressions/Linq/NegativeAssertion/README.md)
+* [NegativeBackAssertion](Pihrtsoft/Text/RegularExpressions/Linq/NegativeBackAssertion/README.md)
+* [NegativeSurroundAssertion](Pihrtsoft/Text/RegularExpressions/Linq/NegativeSurroundAssertion/README.md)
+* [NegativeWordBoundary](Pihrtsoft/Text/RegularExpressions/Linq/NegativeWordBoundary/README.md)
+* [Pattern](Pihrtsoft/Text/RegularExpressions/Linq/Pattern/README.md)
+* [PatternBuilder](Pihrtsoft/Text/RegularExpressions/Linq/PatternBuilder/README.md)
+* [PatternSettings](Pihrtsoft/Text/RegularExpressions/Linq/PatternSettings/README.md)
 * [Patterns](Pihrtsoft/Text/RegularExpressions/Linq/Patterns/README.md)
-* [RegexExtensions](Pihrtsoft/Text/RegularExpressions/Linq/Extensions/RegexExtensions/README.md)
+* [QuantifiablePattern](Pihrtsoft/Text/RegularExpressions/Linq/QuantifiablePattern/README.md)
+* [QuantifiedGroup](Pihrtsoft/Text/RegularExpressions/Linq/QuantifiedGroup/README.md)
+* [QuantifiedPattern](Pihrtsoft/Text/RegularExpressions/Linq/QuantifiedPattern/README.md)
 * [RegexUtility](Pihrtsoft/Text/RegularExpressions/Linq/RegexUtility/README.md)
+* [Substitution](Pihrtsoft/Text/RegularExpressions/Linq/Substitution/README.md)
 * [Substitutions](Pihrtsoft/Text/RegularExpressions/Linq/Substitutions/README.md)
+* [SurroundAssertion](Pihrtsoft/Text/RegularExpressions/Linq/SurroundAssertion/README.md)
+* [WordBoundary](Pihrtsoft/Text/RegularExpressions/Linq/WordBoundary/README.md)
 
-## Interfaces
+### Interfaces
 
 * [IBaseGroup](Pihrtsoft/Text/RegularExpressions/Linq/IBaseGroup/README.md)
 * [IExcludedGroup](Pihrtsoft/Text/RegularExpressions/Linq/IExcludedGroup/README.md)
 * [INegateable\<TPattern>](Pihrtsoft/Text/RegularExpressions/Linq/INegateable-1/README.md)
 
-## Enums
+### Enums
 
 * [AsciiChar](Pihrtsoft/Text/RegularExpressions/Linq/AsciiChar/README.md)
 * [CharEscapeMode](Pihrtsoft/Text/RegularExpressions/Linq/CharEscapeMode/README.md)
@@ -60,9 +77,19 @@
 * [PatternOptions](Pihrtsoft/Text/RegularExpressions/Linq/PatternOptions/README.md)
 * [SplitOptions](Pihrtsoft/Text/RegularExpressions/Linq/SplitOptions/README.md)
 
-## Delegates
+### Delegates
 
 * [GroupEvaluator](Pihrtsoft/Text/RegularExpressions/Linq/GroupEvaluator/README.md)
+
+## Pihrtsoft\.Text\.RegularExpressions\.Linq\.Extensions Namespace
+
+### Classes
+
+* [CaptureExtensions](Pihrtsoft/Text/RegularExpressions/Linq/Extensions/CaptureExtensions/README.md)
+* [EnumerableExtensions](Pihrtsoft/Text/RegularExpressions/Linq/Extensions/EnumerableExtensions/README.md)
+* [GroupExtensions](Pihrtsoft/Text/RegularExpressions/Linq/Extensions/GroupExtensions/README.md)
+* [MatchExtensions](Pihrtsoft/Text/RegularExpressions/Linq/Extensions/MatchExtensions/README.md)
+* [RegexExtensions](Pihrtsoft/Text/RegularExpressions/Linq/Extensions/RegexExtensions/README.md)
 
 ## Other
 

@@ -484,4 +484,3 @@ public abstract class QuantifiablePattern : Pihrtsoft.Text.RegularExpressions.Li
 * [NegativeWordBoundary](../NegativeWordBoundary/README.md)
 * &mdash;&mdash;&mdash;&mdash;&mdash;
 * [WordBoundary](../WordBoundary/README.md)
-
