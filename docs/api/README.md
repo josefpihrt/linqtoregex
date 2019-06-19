@@ -12,26 +12,26 @@
 * \([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\)
 * &emsp; [CharGrouping](Pihrtsoft/Text/RegularExpressions/Linq/CharGrouping/README.md)
 * &emsp; [Pattern](Pihrtsoft/Text/RegularExpressions/Linq/Pattern/README.md)
-* &emsp; \| &emsp; [NegativeSurroundAssertion](Pihrtsoft/Text/RegularExpressions/Linq/NegativeSurroundAssertion/README.md)
-* &emsp; \| &emsp; [QuantifiablePattern](Pihrtsoft/Text/RegularExpressions/Linq/QuantifiablePattern/README.md)
-* &emsp; \| &emsp; \| &emsp; [CharGroup](Pihrtsoft/Text/RegularExpressions/Linq/CharGroup/README.md)
-* &emsp; \| &emsp; \| &emsp; [CharPattern](Pihrtsoft/Text/RegularExpressions/Linq/CharPattern/README.md)
-* &emsp; \| &emsp; \| &emsp; [CharSubtraction](Pihrtsoft/Text/RegularExpressions/Linq/CharSubtraction/README.md)
-* &emsp; \| &emsp; \| &emsp; [GroupingPattern](Pihrtsoft/Text/RegularExpressions/Linq/GroupingPattern/README.md)
-* &emsp; \| &emsp; \| &emsp; \| &emsp; [Assertion](Pihrtsoft/Text/RegularExpressions/Linq/Assertion/README.md)
-* &emsp; \| &emsp; \| &emsp; \| &emsp; [BackAssertion](Pihrtsoft/Text/RegularExpressions/Linq/BackAssertion/README.md)
-* &emsp; \| &emsp; \| &emsp; \| &emsp; [NegativeAssertion](Pihrtsoft/Text/RegularExpressions/Linq/NegativeAssertion/README.md)
-* &emsp; \| &emsp; \| &emsp; \| &emsp; [NegativeBackAssertion](Pihrtsoft/Text/RegularExpressions/Linq/NegativeBackAssertion/README.md)
-* &emsp; \| &emsp; \| &emsp; [NegativeWordBoundary](Pihrtsoft/Text/RegularExpressions/Linq/NegativeWordBoundary/README.md)
-* &emsp; \| &emsp; \| &emsp; [WordBoundary](Pihrtsoft/Text/RegularExpressions/Linq/WordBoundary/README.md)
-* &emsp; \| &emsp; [QuantifiedPattern](Pihrtsoft/Text/RegularExpressions/Linq/QuantifiedPattern/README.md)
-* &emsp; \| &emsp; \| &emsp; [QuantifiedGroup](Pihrtsoft/Text/RegularExpressions/Linq/QuantifiedGroup/README.md)
-* &emsp; \| &emsp; [SurroundAssertion](Pihrtsoft/Text/RegularExpressions/Linq/SurroundAssertion/README.md)
+* &emsp; &middot; &emsp; [NegativeSurroundAssertion](Pihrtsoft/Text/RegularExpressions/Linq/NegativeSurroundAssertion/README.md)
+* &emsp; &middot; &emsp; [QuantifiablePattern](Pihrtsoft/Text/RegularExpressions/Linq/QuantifiablePattern/README.md)
+* &emsp; &middot; &emsp; &middot; &emsp; [CharGroup](Pihrtsoft/Text/RegularExpressions/Linq/CharGroup/README.md)
+* &emsp; &middot; &emsp; &middot; &emsp; [CharPattern](Pihrtsoft/Text/RegularExpressions/Linq/CharPattern/README.md)
+* &emsp; &middot; &emsp; &middot; &emsp; [CharSubtraction](Pihrtsoft/Text/RegularExpressions/Linq/CharSubtraction/README.md)
+* &emsp; &middot; &emsp; &middot; &emsp; [GroupingPattern](Pihrtsoft/Text/RegularExpressions/Linq/GroupingPattern/README.md)
+* &emsp; &middot; &emsp; &middot; &emsp; &middot; &emsp; [Assertion](Pihrtsoft/Text/RegularExpressions/Linq/Assertion/README.md)
+* &emsp; &middot; &emsp; &middot; &emsp; &middot; &emsp; [BackAssertion](Pihrtsoft/Text/RegularExpressions/Linq/BackAssertion/README.md)
+* &emsp; &middot; &emsp; &middot; &emsp; &middot; &emsp; [NegativeAssertion](Pihrtsoft/Text/RegularExpressions/Linq/NegativeAssertion/README.md)
+* &emsp; &middot; &emsp; &middot; &emsp; &middot; &emsp; [NegativeBackAssertion](Pihrtsoft/Text/RegularExpressions/Linq/NegativeBackAssertion/README.md)
+* &emsp; &middot; &emsp; &middot; &emsp; [NegativeWordBoundary](Pihrtsoft/Text/RegularExpressions/Linq/NegativeWordBoundary/README.md)
+* &emsp; &middot; &emsp; &middot; &emsp; [WordBoundary](Pihrtsoft/Text/RegularExpressions/Linq/WordBoundary/README.md)
+* &emsp; &middot; &emsp; [QuantifiedPattern](Pihrtsoft/Text/RegularExpressions/Linq/QuantifiedPattern/README.md)
+* &emsp; &middot; &emsp; &middot; &emsp; [QuantifiedGroup](Pihrtsoft/Text/RegularExpressions/Linq/QuantifiedGroup/README.md)
+* &emsp; &middot; &emsp; [SurroundAssertion](Pihrtsoft/Text/RegularExpressions/Linq/SurroundAssertion/README.md)
 * &emsp; [PatternBuilder](Pihrtsoft/Text/RegularExpressions/Linq/PatternBuilder/README.md)
 * &emsp; [PatternSettings](Pihrtsoft/Text/RegularExpressions/Linq/PatternSettings/README.md)
 * &emsp; [Substitution](Pihrtsoft/Text/RegularExpressions/Linq/Substitution/README.md)
 
-## Pihrtsoft\.Text\.RegularExpressions\.Linq Namespace
+## [Pihrtsoft.Text.RegularExpressions.Linq](Pihrtsoft/Text/RegularExpressions/Linq/README.md) Namespace
 
 ### Classes
 
@@ -81,7 +81,7 @@
 
 * [GroupEvaluator](Pihrtsoft/Text/RegularExpressions/Linq/GroupEvaluator/README.md)
 
-## Pihrtsoft\.Text\.RegularExpressions\.Linq\.Extensions Namespace
+## [Pihrtsoft.Text.RegularExpressions.Linq.Extensions](Pihrtsoft/Text/RegularExpressions/Linq/Extensions/README.md) Namespace
 
 ### Classes
 

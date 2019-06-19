@@ -7,13 +7,13 @@
 * [System.Collections.Generic](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic)
 * [System.Text.RegularExpressions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions)
 
-## System\.Collections\.Generic Namespace
+## [System.Collections.Generic](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic) Namespace
 
 ### Interfaces
 
 * [IEnumerable\<T>](System/Collections/Generic/IEnumerable-1/README.md)
 
-## System\.Text\.RegularExpressions Namespace
+## [System.Text.RegularExpressions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions) Namespace
 
 ### Classes
 
