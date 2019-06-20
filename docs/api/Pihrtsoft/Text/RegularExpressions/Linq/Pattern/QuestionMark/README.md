@@ -13,7 +13,7 @@
 | [QuestionMark()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_QuestionMark) | Appends a pattern that matches a question mark\. |
 | [QuestionMark(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_QuestionMark_System_Int32_) | Appends a pattern that matches a specified number of question marks\. |
 
-## QuestionMark\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_QuestionMark"></a>
+## QuestionMark\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_QuestionMark"></a>
 
 \
 Appends a pattern that matches a question mark\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern QuestionMark()
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## QuestionMark\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_QuestionMark_System_Int32_"></a>
+## QuestionMark\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_QuestionMark_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of question marks\.

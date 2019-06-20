@@ -13,7 +13,7 @@
 | [SurroundWordBoundary(Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundWordBoundary_System_Object_) | Appends a pattern that matches spefified pattern surrounded with a word boundary\. |
 | [SurroundWordBoundary(Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundWordBoundary_System_Object___) | Appends a pattern that matches specified content surrounded with a word boundary\. |
 
-## SurroundWordBoundary\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundWordBoundary_System_Object_"></a>
+## SurroundWordBoundary\(Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundWordBoundary_System_Object_"></a>
 
 \
 Appends a pattern that matches spefified pattern surrounded with a word boundary\.
@@ -38,7 +38,7 @@ A text to surround\.
 
 **content** is `null`\.
 
-## SurroundWordBoundary\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundWordBoundary_System_Object___"></a>
+## SurroundWordBoundary\(Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundWordBoundary_System_Object___"></a>
 
 \
 Appends a pattern that matches specified content surrounded with a word boundary\.

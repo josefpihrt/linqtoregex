@@ -13,7 +13,7 @@
 | [Text(Char)](#Pihrtsoft_Text_RegularExpressions_Linq_Substitution_Text_System_Char_) | Appends a specified character to the substitution pattern\. |
 | [Text(String)](#Pihrtsoft_Text_RegularExpressions_Linq_Substitution_Text_System_String_) | Appends a specified text to the substitution pattern\. |
 
-## Text\(Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Substitution_Text_System_Char_"></a>
+## Text\(Char\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Substitution_Text_System_Char_"></a>
 
 \
 Appends a specified character to the substitution pattern\.
@@ -32,7 +32,7 @@ A Unicode character to append\.
 
 [Substitution](../README.md)
 
-## Text\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Substitution_Text_System_String_"></a>
+## Text\(String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Substitution_Text_System_String_"></a>
 
 \
 Appends a specified text to the substitution pattern\.

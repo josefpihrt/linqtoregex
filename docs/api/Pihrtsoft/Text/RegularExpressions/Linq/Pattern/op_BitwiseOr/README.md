@@ -18,7 +18,7 @@
 | [BitwiseOr(Pattern, String)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_BitwiseOr_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_System_String_) | Creates a pattern that matches any one of the specified elements\. |
 | [BitwiseOr(String, Pattern)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_BitwiseOr_System_String_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_) | Creates a pattern that matches any one of the specified elements\. |
 
-## BitwiseOr\(Char, Pattern\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_BitwiseOr_System_Char_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_"></a>
+## BitwiseOr\(Char, Pattern\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_BitwiseOr_System_Char_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_"></a>
 
 \
 Creates a pattern that matches any one of the specified elements\.
@@ -47,7 +47,7 @@ The second element to match\.
 
 **right** is `null`\.
 
-## BitwiseOr\(CharGrouping, Pattern\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_BitwiseOr_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_"></a>
+## BitwiseOr\(CharGrouping, Pattern\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_BitwiseOr_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_"></a>
 
 \
 Creates a pattern that matches any one of the specified elements\.
@@ -76,7 +76,7 @@ The second element to match\.
 
 **left** or **right** is `null`\.
 
-## BitwiseOr\(Pattern, Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_BitwiseOr_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_System_Char_"></a>
+## BitwiseOr\(Pattern, Char\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_BitwiseOr_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_System_Char_"></a>
 
 \
 Creates a pattern that matches any one of the specified elements\.
@@ -105,7 +105,7 @@ The second element to match\.
 
 **left** is `null`\.
 
-## BitwiseOr\(Pattern, CharGrouping\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_BitwiseOr_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
+## BitwiseOr\(Pattern, CharGrouping\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_BitwiseOr_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
 
 \
 Creates a pattern that matches any one of the specified elements\.
@@ -134,7 +134,7 @@ The second element to match\.
 
 **left** or **right** is `null`\.
 
-## BitwiseOr\(Pattern, Pattern\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_BitwiseOr_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_"></a>
+## BitwiseOr\(Pattern, Pattern\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_BitwiseOr_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_"></a>
 
 \
 Creates a pattern that matches any one of the specified elements\.
@@ -163,7 +163,7 @@ The second element to match\.
 
 **left** or **right** is `null`\.
 
-## BitwiseOr\(Pattern, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_BitwiseOr_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_System_String_"></a>
+## BitwiseOr\(Pattern, String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_BitwiseOr_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_System_String_"></a>
 
 \
 Creates a pattern that matches any one of the specified elements\.
@@ -192,7 +192,7 @@ The second element to match\.
 
 **left** or **right** is `null`\.
 
-## BitwiseOr\(String, Pattern\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_BitwiseOr_System_String_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_"></a>
+## BitwiseOr\(String, Pattern\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_BitwiseOr_System_String_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_"></a>
 
 \
 Creates a pattern that matches any one of the specified elements\.

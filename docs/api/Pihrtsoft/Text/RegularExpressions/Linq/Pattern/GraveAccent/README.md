@@ -13,7 +13,7 @@
 | [GraveAccent()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_GraveAccent) | Appends a pattern that matches a grave accent\. |
 | [GraveAccent(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_GraveAccent_System_Int32_) | Appends a pattern that matches a specified number of grave accents\. |
 
-## GraveAccent\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_GraveAccent"></a>
+## GraveAccent\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_GraveAccent"></a>
 
 \
 Appends a pattern that matches a grave accent\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern GraveAccent()
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## GraveAccent\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_GraveAccent_System_Int32_"></a>
+## GraveAccent\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_GraveAccent_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of grave accents\.

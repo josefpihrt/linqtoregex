@@ -15,7 +15,7 @@
 | [EnumerateCaptures(IEnumerable\<Match>, Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Extensions_EnumerableExtensions_EnumerateCaptures_System_Collections_Generic_IEnumerable_System_Text_RegularExpressions_Match__System_Int32_) | Returns an enumerable collection of captures from groups that have a specified number\. |
 | [EnumerateCaptures(IEnumerable\<Match>, String)](#Pihrtsoft_Text_RegularExpressions_Linq_Extensions_EnumerableExtensions_EnumerateCaptures_System_Collections_Generic_IEnumerable_System_Text_RegularExpressions_Match__System_String_) | Returns an enumerable collection of captures from groups thas have a specified name\. |
 
-## EnumerateCaptures\(IEnumerable\<Group>\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_EnumerableExtensions_EnumerateCaptures_System_Collections_Generic_IEnumerable_System_Text_RegularExpressions_Group__"></a>
+## EnumerateCaptures\(IEnumerable\<Group>\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_EnumerableExtensions_EnumerateCaptures_System_Collections_Generic_IEnumerable_System_Text_RegularExpressions_Group__"></a>
 
 \
 Returns an enumerable collection of captures\.
@@ -40,7 +40,7 @@ The sequence to enumerate\.
 
 **groups** is `null`\.
 
-## EnumerateCaptures\(IEnumerable\<Match>\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_EnumerableExtensions_EnumerateCaptures_System_Collections_Generic_IEnumerable_System_Text_RegularExpressions_Match__"></a>
+## EnumerateCaptures\(IEnumerable\<Match>\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_EnumerableExtensions_EnumerateCaptures_System_Collections_Generic_IEnumerable_System_Text_RegularExpressions_Match__"></a>
 
 \
 Returns an enumerable collection of captures\.
@@ -65,7 +65,7 @@ The sequence to enumerate\.
 
 **matches** is `null`\.
 
-## EnumerateCaptures\(IEnumerable\<Match>, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_EnumerableExtensions_EnumerateCaptures_System_Collections_Generic_IEnumerable_System_Text_RegularExpressions_Match__System_Int32_"></a>
+## EnumerateCaptures\(IEnumerable\<Match>, Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_EnumerableExtensions_EnumerateCaptures_System_Collections_Generic_IEnumerable_System_Text_RegularExpressions_Match__System_Int32_"></a>
 
 \
 Returns an enumerable collection of captures from groups that have a specified number\.
@@ -94,7 +94,7 @@ A number of the group\.
 
 **matches** is `null`\.
 
-## EnumerateCaptures\(IEnumerable\<Match>, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_EnumerableExtensions_EnumerateCaptures_System_Collections_Generic_IEnumerable_System_Text_RegularExpressions_Match__System_String_"></a>
+## EnumerateCaptures\(IEnumerable\<Match>, String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_EnumerableExtensions_EnumerateCaptures_System_Collections_Generic_IEnumerable_System_Text_RegularExpressions_Match__System_String_"></a>
 
 \
 Returns an enumerable collection of captures from groups thas have a specified name\.

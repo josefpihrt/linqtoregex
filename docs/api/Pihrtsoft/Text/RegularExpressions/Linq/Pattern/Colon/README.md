@@ -13,7 +13,7 @@
 | [Colon()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Colon) | Appends a pattern that matches a colon\. |
 | [Colon(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Colon_System_Int32_) | Appends a pattern that matches a specified number of colons\. |
 
-## Colon\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Colon"></a>
+## Colon\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Colon"></a>
 
 \
 Appends a pattern that matches a colon\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Colon()
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## Colon\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Colon_System_Int32_"></a>
+## Colon\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Colon_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of colons\.

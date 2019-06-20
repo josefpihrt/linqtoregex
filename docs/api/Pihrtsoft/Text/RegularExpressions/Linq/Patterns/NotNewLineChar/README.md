@@ -13,7 +13,7 @@
 | [NotNewLineChar()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotNewLineChar) | Returns a pattern that matches a character that is not a newline character\. Newline character is a carriage return or a linefeed\. |
 | [NotNewLineChar(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotNewLineChar_System_Int32_) | Returns a pattern that matches a character that is not a newline character specified number of times\. Newline character is a carriage return or a linefeed\. |
 
-## NotNewLineChar\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotNewLineChar"></a>
+## NotNewLineChar\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotNewLineChar"></a>
 
 \
 Returns a pattern that matches a character that is not a newline character\. Newline character is a carriage return or a linefeed\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotNewLineChar()
 
 [CharGroup](../../CharGroup/README.md)
 
-## NotNewLineChar\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotNewLineChar_System_Int32_"></a>
+## NotNewLineChar\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotNewLineChar_System_Int32_"></a>
 
 \
 Returns a pattern that matches a character that is not a newline character specified number of times\. Newline character is a carriage return or a linefeed\.

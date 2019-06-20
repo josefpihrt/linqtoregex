@@ -13,7 +13,7 @@
 | [Slash()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Slash) | Returns a pattern that matches a slash\. |
 | [Slash(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Slash_System_Int32_) | Returns a pattern that matches a specified number of slashes\. |
 
-## Slash\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Slash"></a>
+## Slash\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Slash"></a>
 
 \
 Returns a pattern that matches a slash\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Slash()
 
 [CharPattern](../../CharPattern/README.md)
 
-## Slash\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Slash_System_Int32_"></a>
+## Slash\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Slash_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of slashes\.

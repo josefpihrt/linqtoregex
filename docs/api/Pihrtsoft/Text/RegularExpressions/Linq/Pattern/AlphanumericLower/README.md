@@ -13,7 +13,7 @@
 | [AlphanumericLower()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_AlphanumericLower) | Appends a pattern that matches a lower\-case alphanumeric character\. Alphanumeric character is a latin alphabet lower\-case letter or an arabic digit\. |
 | [AlphanumericLower(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_AlphanumericLower_System_Int32_) | Appends a pattern that matches a specified number of lower\-case alphanumeric characters\. Alphanumeric character is a latin alphabet lower\-case letter or an arabic digit\. |
 
-## AlphanumericLower\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_AlphanumericLower"></a>
+## AlphanumericLower\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_AlphanumericLower"></a>
 
 \
 Appends a pattern that matches a lower\-case alphanumeric character\. Alphanumeric character is a latin alphabet lower\-case letter or an arabic digit\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern AlphanumericLo
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## AlphanumericLower\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_AlphanumericLower_System_Int32_"></a>
+## AlphanumericLower\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_AlphanumericLower_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of lower\-case alphanumeric characters\. Alphanumeric character is a latin alphabet lower\-case letter or an arabic digit\.

@@ -13,7 +13,7 @@
 | [LeftSquareBracket()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LeftSquareBracket) | Appends a pattern that matches a left square bracket\. |
 | [LeftSquareBracket(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LeftSquareBracket_System_Int32_) | Appends a pattern that matches a specified number of left square brackets\. |
 
-## LeftSquareBracket\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LeftSquareBracket"></a>
+## LeftSquareBracket\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LeftSquareBracket"></a>
 
 \
 Appends a pattern that matches a left square bracket\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern LeftSquareBrac
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## LeftSquareBracket\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LeftSquareBracket_System_Int32_"></a>
+## LeftSquareBracket\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LeftSquareBracket_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of left square brackets\.

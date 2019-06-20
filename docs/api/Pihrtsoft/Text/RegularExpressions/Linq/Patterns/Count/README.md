@@ -15,7 +15,7 @@
 | [Count(Int32, Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Count_System_Int32_System_Object_) | Returns a pattern that matches specified pattern specified number of times\. |
 | [Count(Int32, Object, Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Count_System_Int32_System_Object_System_Object___) | Returns a pattern that matches any one specified pattern specified number of times\. |
 
-## Count\(Int32, Int32, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Count_System_Int32_System_Int32_System_Object_"></a>
+## Count\(Int32, Int32, Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Count_System_Int32_System_Int32_System_Object_"></a>
 
 \
 Returns a pattern that matches specified pattern from minimal to maximum number of times\.
@@ -52,7 +52,7 @@ The content to be matched\.
 
 **minCount** is less than zero or **maxCount** is less than **minCount**\.
 
-## Count\(Int32, Int32, Object, Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Count_System_Int32_System_Int32_System_Object_System_Object___"></a>
+## Count\(Int32, Int32, Object, Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Count_System_Int32_System_Int32_System_Object_System_Object___"></a>
 
 \
 Returns a pattern that matches any one specified pattern from minimal to maximum number of times\.
@@ -93,7 +93,7 @@ Other elements of a sequence that contains patterns any one of which has to be m
 
 **minCount** is less than zero or **maxCount** is less than **minCount**\.
 
-## Count\(Int32, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Count_System_Int32_System_Object_"></a>
+## Count\(Int32, Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Count_System_Int32_System_Object_"></a>
 
 \
 Returns a pattern that matches specified pattern specified number of times\.
@@ -126,7 +126,7 @@ The content to be matched\.
 
 **exactCount** is less than zero\.
 
-## Count\(Int32, Object, Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Count_System_Int32_System_Object_System_Object___"></a>
+## Count\(Int32, Object, Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Count_System_Int32_System_Object_System_Object___"></a>
 
 \
 Returns a pattern that matches any one specified pattern specified number of times\.

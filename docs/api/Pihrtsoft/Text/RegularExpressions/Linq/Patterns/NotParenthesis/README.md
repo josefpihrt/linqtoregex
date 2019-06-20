@@ -13,7 +13,7 @@
 | [NotParenthesis()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotParenthesis) | Returns a pattern that matches a character that is neither left nor right parenthesis\. |
 | [NotParenthesis(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotParenthesis_System_Int32_) | Returns a pattern that matches a character that is neither left nor right parenthesis specified number of times\. |
 
-## NotParenthesis\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotParenthesis"></a>
+## NotParenthesis\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotParenthesis"></a>
 
 \
 Returns a pattern that matches a character that is neither left nor right parenthesis\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotParenthesis()
 
 [CharGroup](../../CharGroup/README.md)
 
-## NotParenthesis\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotParenthesis_System_Int32_"></a>
+## NotParenthesis\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotParenthesis_System_Int32_"></a>
 
 \
 Returns a pattern that matches a character that is neither left nor right parenthesis specified number of times\.

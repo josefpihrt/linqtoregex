@@ -13,7 +13,7 @@
 | [Semicolon()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Semicolon) | Appends a pattern that matches a semicolon\. |
 | [Semicolon(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Semicolon_System_Int32_) | Appends a pattern that matches a specified number of semicolons\. |
 
-## Semicolon\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Semicolon"></a>
+## Semicolon\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Semicolon"></a>
 
 \
 Appends a pattern that matches a semicolon\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Semicolon()
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## Semicolon\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Semicolon_System_Int32_"></a>
+## Semicolon\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Semicolon_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of semicolons\.

@@ -13,7 +13,7 @@
 | [Space()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Space) | Appends a pattern that matches a space\. |
 | [Space(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Space_System_Int32_) | Appends a pattern that matches a specified number of spaces\. |
 
-## Space\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Space"></a>
+## Space\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Space"></a>
 
 \
 Appends a pattern that matches a space\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Space()
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## Space\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Space_System_Int32_"></a>
+## Space\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Space_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of spaces\.

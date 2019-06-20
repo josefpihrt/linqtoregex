@@ -13,7 +13,7 @@
 | [AtSign()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AtSign) | Returns a pattern that matches an at sign\. |
 | [AtSign(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AtSign_System_Int32_) | Returns a pattern that matches a specified number of at signs\. |
 
-## AtSign\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AtSign"></a>
+## AtSign\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AtSign"></a>
 
 \
 Returns a pattern that matches an at sign\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern AtSign()
 
 [CharPattern](../../CharPattern/README.md)
 
-## AtSign\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AtSign_System_Int32_"></a>
+## AtSign\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AtSign_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of at signs\.

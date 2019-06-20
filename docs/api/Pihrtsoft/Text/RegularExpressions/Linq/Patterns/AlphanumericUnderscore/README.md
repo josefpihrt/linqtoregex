@@ -13,7 +13,7 @@
 | [AlphanumericUnderscore()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AlphanumericUnderscore) | Returns a pattern that matches an alphanumeric character or an underscore\. Alphanumeric character is a latin alphabet letter or an arabic digit\. |
 | [AlphanumericUnderscore(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AlphanumericUnderscore_System_Int32_) | Returns a pattern that matches an alphanumeric character or an underscore specified number of times\. Alphanumeric character is a latin alphabet letter or an arabic digit\. |
 
-## AlphanumericUnderscore\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AlphanumericUnderscore"></a>
+## AlphanumericUnderscore\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AlphanumericUnderscore"></a>
 
 \
 Returns a pattern that matches an alphanumeric character or an underscore\. Alphanumeric character is a latin alphabet letter or an arabic digit\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup AlphanumericUnder
 
 [CharGroup](../../CharGroup/README.md)
 
-## AlphanumericUnderscore\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AlphanumericUnderscore_System_Int32_"></a>
+## AlphanumericUnderscore\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AlphanumericUnderscore_System_Int32_"></a>
 
 \
 Returns a pattern that matches an alphanumeric character or an underscore specified number of times\. Alphanumeric character is a latin alphabet letter or an arabic digit\.

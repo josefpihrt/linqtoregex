@@ -13,7 +13,7 @@
 | [CircumflexAccent()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_CircumflexAccent) | Appends a pattern that matches a circumflex accent\. |
 | [CircumflexAccent(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_CircumflexAccent_System_Int32_) | Appends a pattern that matches a specified number of circumflex accents\. |
 
-## CircumflexAccent\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_CircumflexAccent"></a>
+## CircumflexAccent\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_CircumflexAccent"></a>
 
 \
 Appends a pattern that matches a circumflex accent\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern CircumflexAcce
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## CircumflexAccent\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_CircumflexAccent_System_Int32_"></a>
+## CircumflexAccent\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_CircumflexAccent_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of circumflex accents\.

@@ -13,7 +13,7 @@
 | [Assert(Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Assert_System_Object_) | Appends a zero\-width positive lookahead assertion with a specified content to be matched\. |
 | [Assert(Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Assert_System_Object___) | Appends a zero\-width positive lookahead assertion that matches any one pattern specified in the object array\. |
 
-## Assert\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Assert_System_Object_"></a>
+## Assert\(Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Assert_System_Object_"></a>
 
 \
 Appends a zero\-width positive lookahead assertion with a specified content to be matched\.
@@ -38,7 +38,7 @@ A content to be matched\.
 
 **content** is `null`\.
 
-## Assert\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Assert_System_Object___"></a>
+## Assert\(Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Assert_System_Object___"></a>
 
 \
 Appends a zero\-width positive lookahead assertion that matches any one pattern specified in the object array\.

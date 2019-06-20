@@ -13,7 +13,7 @@
 | [NotAlphanumericUpper()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAlphanumericUpper) | Returns a pattern that matches a character that is not an upper\-case alphanumeric character\. Alphanumeric character is a latin alphabet upper\-case letter or an arabic digit\. |
 | [NotAlphanumericUpper(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAlphanumericUpper_System_Int32_) | Returns a pattern that matches a character that is not an upper\-case alphanumeric character specified number of times\. Alphanumeric character is a latin alphabet upper\-case letter or an arabic digit\. |
 
-## NotAlphanumericUpper\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAlphanumericUpper"></a>
+## NotAlphanumericUpper\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAlphanumericUpper"></a>
 
 \
 Returns a pattern that matches a character that is not an upper\-case alphanumeric character\. Alphanumeric character is a latin alphabet upper\-case letter or an arabic digit\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotAlph
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotAlphanumericUpper\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAlphanumericUpper_System_Int32_"></a>
+## NotAlphanumericUpper\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAlphanumericUpper_System_Int32_"></a>
 
 \
 Returns a pattern that matches a character that is not an upper\-case alphanumeric character specified number of times\. Alphanumeric character is a latin alphabet upper\-case letter or an arabic digit\.

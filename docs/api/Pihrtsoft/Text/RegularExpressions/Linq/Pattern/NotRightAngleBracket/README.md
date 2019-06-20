@@ -13,7 +13,7 @@
 | [NotRightAngleBracket()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotRightAngleBracket) | Appends a pattern that matches a character that is not an right angle bracket \(greater\-than sign\)\. |
 | [NotRightAngleBracket(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotRightAngleBracket_System_Int32_) | Appends a pattern that matches a specified number of characters that are not a right angle bracket \(greater\-than sign\)\. |
 
-## NotRightAngleBracket\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotRightAngleBracket"></a>
+## NotRightAngleBracket\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotRightAngleBracket"></a>
 
 \
 Appends a pattern that matches a character that is not an right angle bracket \(greater\-than sign\)\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotRightAngleB
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotRightAngleBracket\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotRightAngleBracket_System_Int32_"></a>
+## NotRightAngleBracket\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotRightAngleBracket_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of characters that are not a right angle bracket \(greater\-than sign\)\.

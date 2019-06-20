@@ -13,7 +13,7 @@
 | [BalancingGroup(String, String, Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_BalancingGroup_System_String_System_String_System_Object_) | Returns a balancing group with specified group names and a content\. |
 | [BalancingGroup(String, String, Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_BalancingGroup_System_String_System_String_System_Object___) | Returns a balancing group with specified group names and a content\. |
 
-## BalancingGroup\(String, String, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_BalancingGroup_System_String_System_String_System_Object_"></a>
+## BalancingGroup\(String, String, Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_BalancingGroup_System_String_System_String_System_Object_"></a>
 
 \
 Returns a balancing group with specified group names and a content\.
@@ -50,7 +50,7 @@ The content to be matched\.
 
 **name1** or **name2** or **content** is `null`\.
 
-## BalancingGroup\(String, String, Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_BalancingGroup_System_String_System_String_System_Object___"></a>
+## BalancingGroup\(String, String, Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_BalancingGroup_System_String_System_String_System_Object___"></a>
 
 \
 Returns a balancing group with specified group names and a content\.

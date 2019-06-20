@@ -17,7 +17,7 @@
 | [AppendNegativeCharGroup(NamedBlock)](#Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendNegativeCharGroup_Pihrtsoft_Text_RegularExpressions_Linq_NamedBlock_) | Appends a pattern that matches a character that is not from a specified Unicode block\. |
 | [AppendNegativeCharGroup(String)](#Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendNegativeCharGroup_System_String_) | Appends a negative character group containing specified characters\. |
 
-## AppendNegativeCharGroup\(AsciiChar\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendNegativeCharGroup_Pihrtsoft_Text_RegularExpressions_Linq_AsciiChar_"></a>
+## AppendNegativeCharGroup\(AsciiChar\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendNegativeCharGroup_Pihrtsoft_Text_RegularExpressions_Linq_AsciiChar_"></a>
 
 \
 Appends a pattern that matches a character that is not a specified character\.
@@ -32,7 +32,7 @@ public void AppendNegativeCharGroup(Pihrtsoft.Text.RegularExpressions.Linq.Ascii
 
 An enumerated constant that identifies ASCII character\.
 
-## AppendNegativeCharGroup\(GeneralCategory\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendNegativeCharGroup_Pihrtsoft_Text_RegularExpressions_Linq_GeneralCategory_"></a>
+## AppendNegativeCharGroup\(GeneralCategory\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendNegativeCharGroup_Pihrtsoft_Text_RegularExpressions_Linq_GeneralCategory_"></a>
 
 \
 Appends a pattern that matches a character that is not from a specified Unicode category\.
@@ -47,7 +47,7 @@ public void AppendNegativeCharGroup(Pihrtsoft.Text.RegularExpressions.Linq.Gener
 
 An enumerated constant that identifies Unicode category\.
 
-## AppendNegativeCharGroup\(Char, Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendNegativeCharGroup_System_Char_System_Char_"></a>
+## AppendNegativeCharGroup\(Char, Char\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendNegativeCharGroup_System_Char_System_Char_"></a>
 
 \
 Appends a pattern that matches a character that is not in the specified range\.
@@ -72,7 +72,7 @@ The last character of the range\.
 
 **last** character number is less than **first** character number\.
 
-## AppendNegativeCharGroup\(CharGrouping\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendNegativeCharGroup_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
+## AppendNegativeCharGroup\(CharGrouping\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendNegativeCharGroup_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
 
 \
 Appends a negative character group containing specified [CharGrouping](../../CharGrouping/README.md)\.
@@ -93,7 +93,7 @@ A content of a character group\.
 
 **value** is `null`\.
 
-## AppendNegativeCharGroup\(NamedBlock\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendNegativeCharGroup_Pihrtsoft_Text_RegularExpressions_Linq_NamedBlock_"></a>
+## AppendNegativeCharGroup\(NamedBlock\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendNegativeCharGroup_Pihrtsoft_Text_RegularExpressions_Linq_NamedBlock_"></a>
 
 \
 Appends a pattern that matches a character that is not from a specified Unicode block\.
@@ -108,7 +108,7 @@ public void AppendNegativeCharGroup(Pihrtsoft.Text.RegularExpressions.Linq.Named
 
 An enumerated constant that identifies Unicode block\.
 
-## AppendNegativeCharGroup\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendNegativeCharGroup_System_String_"></a>
+## AppendNegativeCharGroup\(String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendNegativeCharGroup_System_String_"></a>
 
 \
 Appends a negative character group containing specified characters\.

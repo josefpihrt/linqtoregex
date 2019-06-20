@@ -13,7 +13,7 @@
 | [AppendMaybeCount(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendMaybeCount_System_Int32_) | Appends a quantifier that matches previous element at most specified number of times\. |
 | [AppendMaybeCount(Int32, Boolean)](#Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendMaybeCount_System_Int32_System_Boolean_) | Appends a quantifier that matches previous element at most specified number of times\. |
 
-## AppendMaybeCount\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendMaybeCount_System_Int32_"></a>
+## AppendMaybeCount\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendMaybeCount_System_Int32_"></a>
 
 \
 Appends a quantifier that matches previous element at most specified number of times\.
@@ -34,7 +34,7 @@ A maximum number of times the pattern can be matched\.
 
 **maxCount** is less than zero\.
 
-## AppendMaybeCount\(Int32, Boolean\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendMaybeCount_System_Int32_System_Boolean_"></a>
+## AppendMaybeCount\(Int32, Boolean\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendMaybeCount_System_Int32_System_Boolean_"></a>
 
 \
 Appends a quantifier that matches previous element at most specified number of times\.

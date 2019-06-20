@@ -13,7 +13,7 @@
 | [Underscore()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Underscore) | Returns a pattern that matches an underscore\. |
 | [Underscore(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Underscore_System_Int32_) | Returns a pattern that matches a specified number of underscores\. |
 
-## Underscore\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Underscore"></a>
+## Underscore\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Underscore"></a>
 
 \
 Returns a pattern that matches an underscore\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Underscore()
 
 [CharPattern](../../CharPattern/README.md)
 
-## Underscore\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Underscore_System_Int32_"></a>
+## Underscore\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Underscore_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of underscores\.

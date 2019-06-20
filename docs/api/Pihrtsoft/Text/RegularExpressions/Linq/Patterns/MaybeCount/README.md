@@ -13,7 +13,7 @@
 | [MaybeCount(Int32, Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_MaybeCount_System_Int32_System_Object_) | Returns a pattern that matches specified pattern at most specified number of times\. |
 | [MaybeCount(Int32, Object, Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_MaybeCount_System_Int32_System_Object_System_Object___) | Returns a pattern that matches any one specified pattern at most specified number of times\. |
 
-## MaybeCount\(Int32, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_MaybeCount_System_Int32_System_Object_"></a>
+## MaybeCount\(Int32, Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_MaybeCount_System_Int32_System_Object_"></a>
 
 \
 Returns a pattern that matches specified pattern at most specified number of times\.
@@ -46,7 +46,7 @@ The content to be matched\.
 
 **maxCount** is less than zero\.
 
-## MaybeCount\(Int32, Object, Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_MaybeCount_System_Int32_System_Object_System_Object___"></a>
+## MaybeCount\(Int32, Object, Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_MaybeCount_System_Int32_System_Object_System_Object___"></a>
 
 \
 Returns a pattern that matches any one specified pattern at most specified number of times\.

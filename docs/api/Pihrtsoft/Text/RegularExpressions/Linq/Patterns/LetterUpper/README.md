@@ -13,7 +13,7 @@
 | [LetterUpper()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_LetterUpper) | Returns a pattern that matches a character from [GeneralCategory.LetterUppercase](../../GeneralCategory/LetterUppercase/README.md)\. |
 | [LetterUpper(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_LetterUpper_System_Int32_) | Returns a pattern that matches a specified number of letters from [GeneralCategory.LetterUppercase](../../GeneralCategory/LetterUppercase/README.md)\. |
 
-## LetterUpper\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_LetterUpper"></a>
+## LetterUpper\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_LetterUpper"></a>
 
 \
 Returns a pattern that matches a character from [GeneralCategory.LetterUppercase](../../GeneralCategory/LetterUppercase/README.md)\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern LetterU
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## LetterUpper\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_LetterUpper_System_Int32_"></a>
+## LetterUpper\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_LetterUpper_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of letters from [GeneralCategory.LetterUppercase](../../GeneralCategory/LetterUppercase/README.md)\.

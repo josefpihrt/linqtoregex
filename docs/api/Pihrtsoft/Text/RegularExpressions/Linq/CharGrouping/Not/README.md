@@ -13,7 +13,7 @@
 | [Not(GeneralCategory)](#Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Not_Pihrtsoft_Text_RegularExpressions_Linq_GeneralCategory_) | Appends a pattern that matches a character that is not from the specified Unicode category\. |
 | [Not(NamedBlock)](#Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Not_Pihrtsoft_Text_RegularExpressions_Linq_NamedBlock_) | Appends a pattern that matches a character that is not from the specified Unicode block\. |
 
-## Not\(GeneralCategory\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Not_Pihrtsoft_Text_RegularExpressions_Linq_GeneralCategory_"></a>
+## Not\(GeneralCategory\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Not_Pihrtsoft_Text_RegularExpressions_Linq_GeneralCategory_"></a>
 
 \
 Appends a pattern that matches a character that is not from the specified Unicode category\.
@@ -32,7 +32,7 @@ An enumerated constant that identifies Unicode category\.
 
 [CharGrouping](../README.md)
 
-## Not\(NamedBlock\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Not_Pihrtsoft_Text_RegularExpressions_Linq_NamedBlock_"></a>
+## Not\(NamedBlock\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Not_Pihrtsoft_Text_RegularExpressions_Linq_NamedBlock_"></a>
 
 \
 Appends a pattern that matches a character that is not from the specified Unicode block\.

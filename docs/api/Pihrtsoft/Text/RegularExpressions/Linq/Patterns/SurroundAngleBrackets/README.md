@@ -14,7 +14,7 @@
 | [SurroundAngleBrackets(Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundAngleBrackets_System_Object_) | Returns a pattern that matches specified pattern surrounded with left and right angle bracket\. |
 | [SurroundAngleBrackets(Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundAngleBrackets_System_Object___) | Returns a pattern that matches specified content surrounded with left and right angle bracket\. |
 
-## SurroundAngleBrackets\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundAngleBrackets"></a>
+## SurroundAngleBrackets\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundAngleBrackets"></a>
 
 \
 Returns a pattern that matches a text consisting of left and right angle bracket, allowing zero or more characters that are not a right angle bracket between the brackets\.
@@ -27,7 +27,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern SurroundAngleBracke
 
 [Pattern](../../Pattern/README.md)
 
-## SurroundAngleBrackets\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundAngleBrackets_System_Object_"></a>
+## SurroundAngleBrackets\(Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundAngleBrackets_System_Object_"></a>
 
 \
 Returns a pattern that matches specified pattern surrounded with left and right angle bracket\.
@@ -52,7 +52,7 @@ The content to be matched\.
 
 **content** is `null`\.
 
-## SurroundAngleBrackets\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundAngleBrackets_System_Object___"></a>
+## SurroundAngleBrackets\(Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundAngleBrackets_System_Object___"></a>
 
 \
 Returns a pattern that matches specified content surrounded with left and right angle bracket\.

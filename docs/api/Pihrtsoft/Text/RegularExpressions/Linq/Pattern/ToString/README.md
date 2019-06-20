@@ -14,7 +14,7 @@
 | [ToString(PatternOptions)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_ToString_Pihrtsoft_Text_RegularExpressions_Linq_PatternOptions_) | Constructs a pattern text that represents the current instance with options that modify the pattern\. |
 | [ToString(PatternSettings)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_ToString_Pihrtsoft_Text_RegularExpressions_Linq_PatternSettings_) | Constructs a pattern text that represents the current instance with settings that modify the pattern\. |
 
-## ToString\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_ToString"></a>
+## ToString\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_ToString"></a>
 
 \
 Constructs a pattern text that represents the current instance\.
@@ -27,7 +27,7 @@ public override string ToString()
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
-## ToString\(PatternOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_ToString_Pihrtsoft_Text_RegularExpressions_Linq_PatternOptions_"></a>
+## ToString\(PatternOptions\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_ToString_Pihrtsoft_Text_RegularExpressions_Linq_PatternOptions_"></a>
 
 \
 Constructs a pattern text that represents the current instance with options that modify the pattern\.
@@ -46,7 +46,7 @@ A bitwise combination of the enumeration values that modify the pattern\.
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
-## ToString\(PatternSettings\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_ToString_Pihrtsoft_Text_RegularExpressions_Linq_PatternSettings_"></a>
+## ToString\(PatternSettings\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_ToString_Pihrtsoft_Text_RegularExpressions_Linq_PatternSettings_"></a>
 
 \
 Constructs a pattern text that represents the current instance with settings that modify the pattern\.

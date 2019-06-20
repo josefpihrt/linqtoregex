@@ -13,7 +13,7 @@
 | [Dollar()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Dollar) | Returns a pattern that matches a dollar\. |
 | [Dollar(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Dollar_System_Int32_) | Returns a pattern that matches a specified number of dollars\. |
 
-## Dollar\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Dollar"></a>
+## Dollar\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Dollar"></a>
 
 \
 Returns a pattern that matches a dollar\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Dollar()
 
 [CharPattern](../../CharPattern/README.md)
 
-## Dollar\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Dollar_System_Int32_"></a>
+## Dollar\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Dollar_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of dollars\.

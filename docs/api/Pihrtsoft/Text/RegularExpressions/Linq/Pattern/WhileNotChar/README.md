@@ -16,7 +16,7 @@
 | [WhileNotChar(CharGrouping)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileNotChar_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_) | Appends a pattern that matches zero or more characters that are not matched by a specified [CharGrouping](../../CharGrouping/README.md)\. |
 | [WhileNotChar(String)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileNotChar_System_String_) | Appends a pattern that matches zero or more characters that are not contained in the specified [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)\. |
 
-## WhileNotChar\(AsciiChar\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileNotChar_Pihrtsoft_Text_RegularExpressions_Linq_AsciiChar_"></a>
+## WhileNotChar\(AsciiChar\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileNotChar_Pihrtsoft_Text_RegularExpressions_Linq_AsciiChar_"></a>
 
 \
 Appends a pattern that matches zero or more characters that are not a specified character\.
@@ -35,7 +35,7 @@ An enumerated constant that identifies ASCII character\.
 
 [Pattern](../README.md)
 
-## WhileNotChar\(Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileNotChar_System_Char_"></a>
+## WhileNotChar\(Char\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileNotChar_System_Char_"></a>
 
 \
 Appends a pattern that matches zero or more characters that are not a specified character\.
@@ -54,7 +54,7 @@ A Unicode character\.
 
 [Pattern](../README.md)
 
-## WhileNotChar\(Char\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileNotChar_System_Char___"></a>
+## WhileNotChar\(Char\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileNotChar_System_Char___"></a>
 
 \
 Appends a pattern that matches zero or more characters that are not contained in the specified characters
@@ -83,7 +83,7 @@ Unicode characters\.
 
 **characters** is `null`\.
 
-## WhileNotChar\(CharGrouping\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileNotChar_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
+## WhileNotChar\(CharGrouping\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileNotChar_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
 
 \
 Appends a pattern that matches zero or more characters that are not matched by a specified [CharGrouping](../../CharGrouping/README.md)\.
@@ -108,7 +108,7 @@ A set of Unicode characters\.
 
 **value** is `null`\.
 
-## WhileNotChar\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileNotChar_System_String_"></a>
+## WhileNotChar\(String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileNotChar_System_String_"></a>
 
 \
 Appends a pattern that matches zero or more characters that are not contained in the specified [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)\.

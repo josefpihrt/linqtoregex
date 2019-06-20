@@ -14,7 +14,7 @@
 | [AppendOptions(RegexOptions, Object)](#Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendOptions_System_Text_RegularExpressions_RegexOptions_System_Object_) | Appends a pattern that applies specified options to a specified pattern\. |
 | [AppendOptions(RegexOptions, RegexOptions)](#Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendOptions_System_Text_RegularExpressions_RegexOptions_System_Text_RegularExpressions_RegexOptions_) | Appends a pattern that applies and disables specified options to a specified pattern\. |
 
-## AppendOptions\(RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendOptions_System_Text_RegularExpressions_RegexOptions_"></a>
+## AppendOptions\(RegexOptions\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendOptions_System_Text_RegularExpressions_RegexOptions_"></a>
 
 \
 Appends a pattern that applies specified options\.
@@ -35,7 +35,7 @@ A bitwise combination of the enumeration values that are applied\.
 
 **applyOptions** value is not convertible to inline chars\.
 
-## AppendOptions\(RegexOptions, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendOptions_System_Text_RegularExpressions_RegexOptions_System_Object_"></a>
+## AppendOptions\(RegexOptions, Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendOptions_System_Text_RegularExpressions_RegexOptions_System_Object_"></a>
 
 \
 Appends a pattern that applies specified options to a specified pattern\.
@@ -64,7 +64,7 @@ The pattern to match\.
 
 **content** is `null`\.
 
-## AppendOptions\(RegexOptions, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendOptions_System_Text_RegularExpressions_RegexOptions_System_Text_RegularExpressions_RegexOptions_"></a>
+## AppendOptions\(RegexOptions, RegexOptions\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendOptions_System_Text_RegularExpressions_RegexOptions_System_Text_RegularExpressions_RegexOptions_"></a>
 
 \
 Appends a pattern that applies and disables specified options to a specified pattern\.

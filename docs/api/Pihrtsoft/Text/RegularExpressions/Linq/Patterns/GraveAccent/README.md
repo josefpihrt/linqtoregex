@@ -13,7 +13,7 @@
 | [GraveAccent()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_GraveAccent) | Returns a pattern that matches a grave accent\. |
 | [GraveAccent(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_GraveAccent_System_Int32_) | Returns a pattern that matches a specified number of grave accents\. |
 
-## GraveAccent\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_GraveAccent"></a>
+## GraveAccent\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_GraveAccent"></a>
 
 \
 Returns a pattern that matches a grave accent\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern GraveAccent()
 
 [CharPattern](../../CharPattern/README.md)
 
-## GraveAccent\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_GraveAccent_System_Int32_"></a>
+## GraveAccent\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_GraveAccent_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of grave accents\.

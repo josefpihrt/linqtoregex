@@ -13,7 +13,7 @@
 | [CarriageReturn()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_CarriageReturn) | Appends a pattern that matches a carriage return\. |
 | [CarriageReturn(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_CarriageReturn_System_Int32_) | Appends a pattern that matches a specified number of carriage returns\. |
 
-## CarriageReturn\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_CarriageReturn"></a>
+## CarriageReturn\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_CarriageReturn"></a>
 
 \
 Appends a pattern that matches a carriage return\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern CarriageReturn
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## CarriageReturn\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_CarriageReturn_System_Int32_"></a>
+## CarriageReturn\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_CarriageReturn_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of carriage returns\.

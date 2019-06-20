@@ -13,7 +13,7 @@
 | [LetterLower()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LetterLower) | Appends a pattern that matches a character from [GeneralCategory.LetterLowercase](../../GeneralCategory/LetterLowercase/README.md)\. |
 | [LetterLower(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LetterLower_System_Int32_) | Appends a pattern that matches a specified number of letters from [GeneralCategory.LetterLowercase](../../GeneralCategory/LetterLowercase/README.md)\. |
 
-## LetterLower\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LetterLower"></a>
+## LetterLower\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LetterLower"></a>
 
 \
 Appends a pattern that matches a character from [GeneralCategory.LetterLowercase](../../GeneralCategory/LetterLowercase/README.md)\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern LetterLower()
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## LetterLower\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LetterLower_System_Int32_"></a>
+## LetterLower\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LetterLower_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of letters from [GeneralCategory.LetterLowercase](../../GeneralCategory/LetterLowercase/README.md)\.

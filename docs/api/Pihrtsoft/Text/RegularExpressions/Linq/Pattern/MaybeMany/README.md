@@ -13,7 +13,7 @@
 | [MaybeMany(Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_MaybeMany_System_Object_) | Appends a pattern that matches specified content zero or more times\. |
 | [MaybeMany(Object, Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_MaybeMany_System_Object_System_Object___) | Appends a pattern that matches any one specified element zero or more times\. |
 
-## MaybeMany\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_MaybeMany_System_Object_"></a>
+## MaybeMany\(Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_MaybeMany_System_Object_"></a>
 
 \
 Appends a pattern that matches specified content zero or more times\.
@@ -38,7 +38,7 @@ The content to be matched\.
 
 **content** is `null`\.
 
-## MaybeMany\(Object, Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_MaybeMany_System_Object_System_Object___"></a>
+## MaybeMany\(Object, Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_MaybeMany_System_Object_System_Object___"></a>
 
 \
 Appends a pattern that matches any one specified element zero or more times\.

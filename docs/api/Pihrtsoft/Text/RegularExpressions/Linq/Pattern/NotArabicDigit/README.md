@@ -13,7 +13,7 @@
 | [NotArabicDigit()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotArabicDigit) | Appends a pattern that matches a character that is not an arabic digit\. |
 | [NotArabicDigit(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotArabicDigit_System_Int32_) | Appends a pattern that matches a character that is not an arabic digit specified number of times\. |
 
-## NotArabicDigit\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotArabicDigit"></a>
+## NotArabicDigit\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotArabicDigit"></a>
 
 \
 Appends a pattern that matches a character that is not an arabic digit\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotArabicDigit
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotArabicDigit\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotArabicDigit_System_Int32_"></a>
+## NotArabicDigit\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotArabicDigit_System_Int32_"></a>
 
 \
 Appends a pattern that matches a character that is not an arabic digit specified number of times\.

@@ -13,7 +13,7 @@
 | [NotHexadecimalDigit()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotHexadecimalDigit) | Appends a pattern that matches a character that is not a hexadecimal digit\. |
 | [NotHexadecimalDigit(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotHexadecimalDigit_System_Int32_) | Appends a pattern that matches a character that is not a hexadecimal digit specified number of times\. |
 
-## NotHexadecimalDigit\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotHexadecimalDigit"></a>
+## NotHexadecimalDigit\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotHexadecimalDigit"></a>
 
 \
 Appends a pattern that matches a character that is not a hexadecimal digit\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotHexadecimal
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotHexadecimalDigit\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotHexadecimalDigit_System_Int32_"></a>
+## NotHexadecimalDigit\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotHexadecimalDigit_System_Int32_"></a>
 
 \
 Appends a pattern that matches a character that is not a hexadecimal digit specified number of times\.

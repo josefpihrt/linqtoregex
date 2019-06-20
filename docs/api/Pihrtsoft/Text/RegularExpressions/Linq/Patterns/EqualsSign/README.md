@@ -13,7 +13,7 @@
 | [EqualsSign()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_EqualsSign) | Returns a pattern that matches an equals sign\. |
 | [EqualsSign(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_EqualsSign_System_Int32_) | Returns a pattern that matches a specified number of equals signs\. |
 
-## EqualsSign\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_EqualsSign"></a>
+## EqualsSign\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_EqualsSign"></a>
 
 \
 Returns a pattern that matches an equals sign\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern EqualsSign()
 
 [CharPattern](../../CharPattern/README.md)
 
-## EqualsSign\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_EqualsSign_System_Int32_"></a>
+## EqualsSign\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_EqualsSign_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of equals signs\.

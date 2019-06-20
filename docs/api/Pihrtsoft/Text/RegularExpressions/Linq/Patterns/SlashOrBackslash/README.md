@@ -13,7 +13,7 @@
 | [SlashOrBackslash()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SlashOrBackslash) | Returns a pattern that matches a slash or a backslash\. |
 | [SlashOrBackslash(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SlashOrBackslash_System_Int32_) | Returns a pattern that matches a specified number of characters that are slash or backslash\. |
 
-## SlashOrBackslash\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SlashOrBackslash"></a>
+## SlashOrBackslash\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SlashOrBackslash"></a>
 
 \
 Returns a pattern that matches a slash or a backslash\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup SlashOrBackslash(
 
 [CharGroup](../../CharGroup/README.md)
 
-## SlashOrBackslash\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SlashOrBackslash_System_Int32_"></a>
+## SlashOrBackslash\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SlashOrBackslash_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of characters that are slash or backslash\.

@@ -14,7 +14,7 @@
 | [SurroundQuoteMarks(Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundQuoteMarks_System_Object_) | Returns a pattern that matches specified pattern surrounded with quotation marks\. |
 | [SurroundQuoteMarks(Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundQuoteMarks_System_Object___) | Returns a pattern that matches specified content surrounded with quotation marks\. |
 
-## SurroundQuoteMarks\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundQuoteMarks"></a>
+## SurroundQuoteMarks\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundQuoteMarks"></a>
 
 \
 Returns a pattern that matches two quotation marks, allowing zero or more characters that are not a quotation mark between the quotation marks\.
@@ -27,7 +27,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern SurroundQuoteMarks(
 
 [Pattern](../../Pattern/README.md)
 
-## SurroundQuoteMarks\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundQuoteMarks_System_Object_"></a>
+## SurroundQuoteMarks\(Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundQuoteMarks_System_Object_"></a>
 
 \
 Returns a pattern that matches specified pattern surrounded with quotation marks\.
@@ -52,7 +52,7 @@ The content to be matched\.
 
 **content** is `null`\.
 
-## SurroundQuoteMarks\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundQuoteMarks_System_Object___"></a>
+## SurroundQuoteMarks\(Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundQuoteMarks_System_Object___"></a>
 
 \
 Returns a pattern that matches specified content surrounded with quotation marks\.

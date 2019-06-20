@@ -13,7 +13,7 @@
 | [NoncapturingGroup(Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NoncapturingGroup_System_Object_) | Returns a noncapturing group with a specified content\. |
 | [NoncapturingGroup(Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NoncapturingGroup_System_Object___) | Returns a noncapturing group with a specified content\. |
 
-## NoncapturingGroup\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NoncapturingGroup_System_Object_"></a>
+## NoncapturingGroup\(Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NoncapturingGroup_System_Object_"></a>
 
 \
 Returns a noncapturing group with a specified content\.
@@ -38,7 +38,7 @@ The content to be matched\.
 
 **content** is `null`\.
 
-## NoncapturingGroup\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NoncapturingGroup_System_Object___"></a>
+## NoncapturingGroup\(Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NoncapturingGroup_System_Object___"></a>
 
 \
 Returns a noncapturing group with a specified content\.

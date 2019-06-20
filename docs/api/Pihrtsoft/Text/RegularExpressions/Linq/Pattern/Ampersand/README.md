@@ -13,7 +13,7 @@
 | [Ampersand()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Ampersand) | Appends a pattern that matches an ampersand\. |
 | [Ampersand(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Ampersand_System_Int32_) | Appends a pattern that matches a specified number of ampersands\. |
 
-## Ampersand\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Ampersand"></a>
+## Ampersand\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Ampersand"></a>
 
 \
 Appends a pattern that matches an ampersand\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Ampersand()
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## Ampersand\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Ampersand_System_Int32_"></a>
+## Ampersand\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Ampersand_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of ampersands\.

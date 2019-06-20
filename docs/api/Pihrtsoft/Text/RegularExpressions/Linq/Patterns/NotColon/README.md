@@ -13,7 +13,7 @@
 | [NotColon()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotColon) | Returns a pattern that matches a character that is not a colon\. |
 | [NotColon(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotColon_System_Int32_) | Returns a pattern that matches a specified number of characters that are not a colon\. |
 
-## NotColon\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotColon"></a>
+## NotColon\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotColon"></a>
 
 \
 Returns a pattern that matches a character that is not a colon\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotColo
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotColon\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotColon_System_Int32_"></a>
+## NotColon\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotColon_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of characters that are not a colon\.

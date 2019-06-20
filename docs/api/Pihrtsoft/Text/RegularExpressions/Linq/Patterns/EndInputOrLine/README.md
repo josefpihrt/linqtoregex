@@ -13,7 +13,7 @@
 | [EndInputOrLine()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_EndInputOrLine) | Returns a pattern that is matched at the end of the string \(or line if the [RegexOptions.Multiline](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions.multiline) option is applied\)\. End of line is defined as the position before a linefeed\. |
 | [EndInputOrLine(Boolean)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_EndInputOrLine_System_Boolean_) | Returns a pattern that is matched \(before carriage return\) at the end of the string \(or \(before carriage return\) at the end of line if the [RegexOptions.Multiline](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions.multiline) option is applied\)\. End of line is defined as the position before a linefeed\. |
 
-## EndInputOrLine\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_EndInputOrLine"></a>
+## EndInputOrLine\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_EndInputOrLine"></a>
 
 \
 Returns a pattern that is matched at the end of the string \(or line if the [RegexOptions.Multiline](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions.multiline) option is applied\)\. End of line is defined as the position before a linefeed\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern EndInpu
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## EndInputOrLine\(Boolean\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_EndInputOrLine_System_Boolean_"></a>
+## EndInputOrLine\(Boolean\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_EndInputOrLine_System_Boolean_"></a>
 
 \
 Returns a pattern that is matched \(before carriage return\) at the end of the string \(or \(before carriage return\) at the end of line if the [RegexOptions.Multiline](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions.multiline) option is applied\)\. End of line is defined as the position before a linefeed\.

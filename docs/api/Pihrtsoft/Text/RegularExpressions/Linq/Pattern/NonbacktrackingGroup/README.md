@@ -13,7 +13,7 @@
 | [NonbacktrackingGroup(Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NonbacktrackingGroup_System_Object_) | Appends a nonbacktracking group with a specified content\. |
 | [NonbacktrackingGroup(Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NonbacktrackingGroup_System_Object___) | Appends a nonbacktracking group with a specified content\. |
 
-## NonbacktrackingGroup\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NonbacktrackingGroup_System_Object_"></a>
+## NonbacktrackingGroup\(Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NonbacktrackingGroup_System_Object_"></a>
 
 \
 Appends a nonbacktracking group with a specified content\.
@@ -38,7 +38,7 @@ The content to be matched\.
 
 **content** is `null`\.
 
-## NonbacktrackingGroup\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NonbacktrackingGroup_System_Object___"></a>
+## NonbacktrackingGroup\(Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NonbacktrackingGroup_System_Object___"></a>
 
 \
 Appends a nonbacktracking group with a specified content\.

@@ -16,7 +16,7 @@
 | [Append(NamedBlock)](#Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Append_Pihrtsoft_Text_RegularExpressions_Linq_NamedBlock_) | Appends a pattern that matches a character from the specified Unicode block\. |
 | [Append(String)](#Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Append_System_String_) | Appends a pattern that matches any one of the specified characters\. |
 
-## Append\(AsciiChar\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Append_Pihrtsoft_Text_RegularExpressions_Linq_AsciiChar_"></a>
+## Append\(AsciiChar\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Append_Pihrtsoft_Text_RegularExpressions_Linq_AsciiChar_"></a>
 
 \
 Appends a pattern that matches specified Unicode character\.
@@ -35,7 +35,7 @@ An enumerated constant that identifies ASCII character\.
 
 [CharGrouping](../README.md)
 
-## Append\(GeneralCategory\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Append_Pihrtsoft_Text_RegularExpressions_Linq_GeneralCategory_"></a>
+## Append\(GeneralCategory\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Append_Pihrtsoft_Text_RegularExpressions_Linq_GeneralCategory_"></a>
 
 \
 Appends a pattern that matches a character from the specified Unicode category\.
@@ -54,7 +54,7 @@ An enumerated constant that identifies Unicode category\.
 
 [CharGrouping](../README.md)
 
-## Append\(Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Append_System_Char_"></a>
+## Append\(Char\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Append_System_Char_"></a>
 
 \
 Appends a pattern that matches specified Unicode character\.
@@ -73,7 +73,7 @@ A Unicode character\.
 
 [CharGrouping](../README.md)
 
-## Append\(NamedBlock\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Append_Pihrtsoft_Text_RegularExpressions_Linq_NamedBlock_"></a>
+## Append\(NamedBlock\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Append_Pihrtsoft_Text_RegularExpressions_Linq_NamedBlock_"></a>
 
 \
 Appends a pattern that matches a character from the specified Unicode block\.
@@ -92,7 +92,7 @@ An enumerated constant that identifies Unicode block\.
 
 [CharGrouping](../README.md)
 
-## Append\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Append_System_String_"></a>
+## Append\(String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Append_System_String_"></a>
 
 \
 Appends a pattern that matches any one of the specified characters\.

@@ -13,7 +13,7 @@
 | [NotNumberSign()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotNumberSign) | Appends a pattern that matches a character that is not a number sign\. |
 | [NotNumberSign(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotNumberSign_System_Int32_) | Appends a pattern that matches a specified number of characters that are not a number sign\. |
 
-## NotNumberSign\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotNumberSign"></a>
+## NotNumberSign\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotNumberSign"></a>
 
 \
 Appends a pattern that matches a character that is not a number sign\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotNumberSign(
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotNumberSign\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotNumberSign_System_Int32_"></a>
+## NotNumberSign\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotNumberSign_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of characters that are not a number sign\.

@@ -13,7 +13,7 @@
 | [AppendIfGroup(Int32, Object, Object)](#Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendIfGroup_System_Int32_System_Object_System_Object_) | Appends an if construct\. |
 | [AppendIfGroup(String, Object, Object)](#Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendIfGroup_System_String_System_Object_System_Object_) | Appends an if construct\. |
 
-## AppendIfGroup\(Int32, Object, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendIfGroup_System_Int32_System_Object_System_Object_"></a>
+## AppendIfGroup\(Int32, Object, Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendIfGroup_System_Int32_System_Object_System_Object_"></a>
 
 \
 Appends an if construct\.
@@ -46,7 +46,7 @@ The pattern to match if the named group is not matched\.
 
 **groupNumber** is less than zero\.
 
-## AppendIfGroup\(String, Object, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendIfGroup_System_String_System_Object_System_Object_"></a>
+## AppendIfGroup\(String, Object, Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendIfGroup_System_String_System_Object_System_Object_"></a>
 
 \
 Appends an if construct\.

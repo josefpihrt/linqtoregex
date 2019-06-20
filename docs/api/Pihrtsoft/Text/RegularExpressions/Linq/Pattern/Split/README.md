@@ -13,7 +13,7 @@
 | [Split(String)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Split_System_String_) | Splits the specified input string at the positions defined by the current instance\. |
 | [Split(String, RegexOptions)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Split_System_String_System_Text_RegularExpressions_RegexOptions_) | Splits the specified input string at the positions defined by the current instance, using the specified matching options\. |
 
-## Split\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Split_System_String_"></a>
+## Split\(String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Split_System_String_"></a>
 
 \
 Splits the specified input string at the positions defined by the current instance\.
@@ -32,7 +32,7 @@ The string to split\.
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)\[\]
 
-## Split\(String, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Split_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
+## Split\(String, RegexOptions\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Split_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
 
 \
 Splits the specified input string at the positions defined by the current instance, using the specified matching options\.

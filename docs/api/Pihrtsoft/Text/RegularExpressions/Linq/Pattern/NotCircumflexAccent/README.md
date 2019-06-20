@@ -13,7 +13,7 @@
 | [NotCircumflexAccent()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotCircumflexAccent) | Appends a pattern that matches a character that is not a circumflex accent\. |
 | [NotCircumflexAccent(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotCircumflexAccent_System_Int32_) | Appends a pattern that matches a specified number of characters that are not a circumflex accent\. |
 
-## NotCircumflexAccent\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotCircumflexAccent"></a>
+## NotCircumflexAccent\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotCircumflexAccent"></a>
 
 \
 Appends a pattern that matches a character that is not a circumflex accent\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotCircumflexA
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotCircumflexAccent\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotCircumflexAccent_System_Int32_"></a>
+## NotCircumflexAccent\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotCircumflexAccent_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of characters that are not a circumflex accent\.

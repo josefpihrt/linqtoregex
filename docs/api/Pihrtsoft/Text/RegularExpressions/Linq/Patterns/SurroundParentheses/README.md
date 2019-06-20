@@ -14,7 +14,7 @@
 | [SurroundParentheses(Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundParentheses_System_Object_) | Returns a pattern that matches specified pattern surrounded with left and right parenthesis\. |
 | [SurroundParentheses(Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundParentheses_System_Object___) | Returns a pattern that matches specified content surrounded with left and right parenthesis\. |
 
-## SurroundParentheses\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundParentheses"></a>
+## SurroundParentheses\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundParentheses"></a>
 
 \
 Returns a pattern that matches a text consisting of a left parenthesis and a right parenthesis, allowing zero or more characters that are not a right parenthesis between the parentheses\.
@@ -27,7 +27,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern SurroundParentheses
 
 [Pattern](../../Pattern/README.md)
 
-## SurroundParentheses\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundParentheses_System_Object_"></a>
+## SurroundParentheses\(Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundParentheses_System_Object_"></a>
 
 \
 Returns a pattern that matches specified pattern surrounded with left and right parenthesis\.
@@ -52,7 +52,7 @@ The content to be matched\.
 
 **content** is `null`\.
 
-## SurroundParentheses\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundParentheses_System_Object___"></a>
+## SurroundParentheses\(Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundParentheses_System_Object___"></a>
 
 \
 Returns a pattern that matches specified content surrounded with left and right parenthesis\.

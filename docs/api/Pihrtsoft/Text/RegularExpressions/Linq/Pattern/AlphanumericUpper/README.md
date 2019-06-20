@@ -13,7 +13,7 @@
 | [AlphanumericUpper()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_AlphanumericUpper) | Appends a pattern that matches an upper\-case alphanumeric character\. Alphanumeric character is a latin alphabet upper\-case letter or an arabic digit\. |
 | [AlphanumericUpper(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_AlphanumericUpper_System_Int32_) | Appends a pattern that matches a specified number of upper\-case alphanumeric characters\. Alphanumeric character is a latin alphabet upper\-case letter or an arabic digit\. |
 
-## AlphanumericUpper\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_AlphanumericUpper"></a>
+## AlphanumericUpper\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_AlphanumericUpper"></a>
 
 \
 Appends a pattern that matches an upper\-case alphanumeric character\. Alphanumeric character is a latin alphabet upper\-case letter or an arabic digit\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern AlphanumericUp
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## AlphanumericUpper\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_AlphanumericUpper_System_Int32_"></a>
+## AlphanumericUpper\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_AlphanumericUpper_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of upper\-case alphanumeric characters\. Alphanumeric character is a latin alphabet upper\-case letter or an arabic digit\.

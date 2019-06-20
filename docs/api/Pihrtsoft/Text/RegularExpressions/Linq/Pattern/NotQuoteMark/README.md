@@ -13,7 +13,7 @@
 | [NotQuoteMark()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotQuoteMark) | Appends a pattern that matches a character that is not a quote mark\. |
 | [NotQuoteMark(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotQuoteMark_System_Int32_) | Appends a pattern that matches a specified number of characters that are not a quote mark\. |
 
-## NotQuoteMark\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotQuoteMark"></a>
+## NotQuoteMark\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotQuoteMark"></a>
 
 \
 Appends a pattern that matches a character that is not a quote mark\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotQuoteMark()
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotQuoteMark\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotQuoteMark_System_Int32_"></a>
+## NotQuoteMark\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotQuoteMark_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of characters that are not a quote mark\.

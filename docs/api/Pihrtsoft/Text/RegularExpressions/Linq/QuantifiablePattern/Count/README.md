@@ -13,7 +13,7 @@
 | [Count(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_QuantifiablePattern_Count_System_Int32_) | Specifies that previous element must be matched a specified number of times\. |
 | [Count(Int32, Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_QuantifiablePattern_Count_System_Int32_System_Int32_) | Specifies that previous element must be matched from minimal to maximum times\. |
 
-## Count\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_QuantifiablePattern_Count_System_Int32_"></a>
+## Count\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_QuantifiablePattern_Count_System_Int32_"></a>
 
 \
 Specifies that previous element must be matched a specified number of times\.
@@ -38,7 +38,7 @@ A number of times the pattern must be matched\.
 
 **exactCount** is less than zero\.
 
-## Count\(Int32, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_QuantifiablePattern_Count_System_Int32_System_Int32_"></a>
+## Count\(Int32, Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_QuantifiablePattern_Count_System_Int32_System_Int32_"></a>
 
 \
 Specifies that previous element must be matched from minimal to maximum times\.

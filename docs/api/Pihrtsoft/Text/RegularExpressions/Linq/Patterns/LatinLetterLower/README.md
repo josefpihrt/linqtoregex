@@ -13,7 +13,7 @@
 | [LatinLetterLower()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_LatinLetterLower) | Returns a pattern that matches a latin alphabet lower\-case letter\. |
 | [LatinLetterLower(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_LatinLetterLower_System_Int32_) | Returns a pattern that matches a specified number of latin alphabet lower\-case letters\. |
 
-## LatinLetterLower\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_LatinLetterLower"></a>
+## LatinLetterLower\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_LatinLetterLower"></a>
 
 \
 Returns a pattern that matches a latin alphabet lower\-case letter\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern LatinLe
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## LatinLetterLower\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_LatinLetterLower_System_Int32_"></a>
+## LatinLetterLower\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_LatinLetterLower_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of latin alphabet lower\-case letters\.

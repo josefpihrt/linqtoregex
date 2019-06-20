@@ -13,7 +13,7 @@
 | [LatinLetter()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LatinLetter) | Appends a pattern that matches a latin alphabet letter\. |
 | [LatinLetter(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LatinLetter_System_Int32_) | Appends a pattern that matches a specified number of latin alphabet letters\. |
 
-## LatinLetter\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LatinLetter"></a>
+## LatinLetter\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LatinLetter"></a>
 
 \
 Appends a pattern that matches a latin alphabet letter\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.CharGroup LatinLetter()
 
 [CharGroup](../../CharGroup/README.md)
 
-## LatinLetter\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LatinLetter_System_Int32_"></a>
+## LatinLetter\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LatinLetter_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of latin alphabet letters\.

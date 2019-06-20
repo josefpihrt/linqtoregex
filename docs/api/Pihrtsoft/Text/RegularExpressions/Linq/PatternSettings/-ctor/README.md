@@ -13,7 +13,7 @@
 | [PatternSettings()](#Pihrtsoft_Text_RegularExpressions_Linq_PatternSettings__ctor) | Initializes a new instance of the [PatternSettings](../README.md) class\. |
 | [PatternSettings(PatternOptions)](#Pihrtsoft_Text_RegularExpressions_Linq_PatternSettings__ctor_Pihrtsoft_Text_RegularExpressions_Linq_PatternOptions_) | Initializes a new instance of the [PatternSettings](../README.md) class with a specified options\. |
 
-## PatternSettings\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternSettings__ctor"></a>
+## PatternSettings\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternSettings__ctor"></a>
 
 \
 Initializes a new instance of the [PatternSettings](../README.md) class\.
@@ -22,7 +22,7 @@ Initializes a new instance of the [PatternSettings](../README.md) class\.
 public PatternSettings()
 ```
 
-## PatternSettings\(PatternOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternSettings__ctor_Pihrtsoft_Text_RegularExpressions_Linq_PatternOptions_"></a>
+## PatternSettings\(PatternOptions\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternSettings__ctor_Pihrtsoft_Text_RegularExpressions_Linq_PatternOptions_"></a>
 
 \
 Initializes a new instance of the [PatternSettings](../README.md) class with a specified options\.

@@ -13,7 +13,7 @@
 | [NotDigit()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotDigit) | Returns a pattern that matches a character that is not a digit character\. |
 | [NotDigit(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotDigit_System_Int32_) | Returns a pattern that matches a character that is not a digit character specified number of times\. |
 
-## NotDigit\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotDigit"></a>
+## NotDigit\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotDigit"></a>
 
 \
 Returns a pattern that matches a character that is not a digit character\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern NotDigit()
 
 [CharPattern](../../CharPattern/README.md)
 
-## NotDigit\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotDigit_System_Int32_"></a>
+## NotDigit\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotDigit_System_Int32_"></a>
 
 \
 Returns a pattern that matches a character that is not a digit character specified number of times\.

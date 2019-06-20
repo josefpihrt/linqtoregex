@@ -13,7 +13,7 @@
 | [NotCurlyBracket()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotCurlyBracket) | Returns a pattern that matches a character that is neither left nor right curly bracket\. |
 | [NotCurlyBracket(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotCurlyBracket_System_Int32_) | Returns a pattern that matches a character that is neither left nor right curly bracket specified number of times\. |
 
-## NotCurlyBracket\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotCurlyBracket"></a>
+## NotCurlyBracket\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotCurlyBracket"></a>
 
 \
 Returns a pattern that matches a character that is neither left nor right curly bracket\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotCurlyBracket()
 
 [CharGroup](../../CharGroup/README.md)
 
-## NotCurlyBracket\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotCurlyBracket_System_Int32_"></a>
+## NotCurlyBracket\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotCurlyBracket_System_Int32_"></a>
 
 \
 Returns a pattern that matches a character that is neither left nor right curly bracket specified number of times\.

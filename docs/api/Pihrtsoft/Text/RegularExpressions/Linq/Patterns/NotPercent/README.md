@@ -13,7 +13,7 @@
 | [NotPercent()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotPercent) | Returns a pattern that matches a character that is not a percent\. |
 | [NotPercent(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotPercent_System_Int32_) | Returns a pattern that matches a specified number of characters that are not a percent\. |
 
-## NotPercent\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotPercent"></a>
+## NotPercent\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotPercent"></a>
 
 \
 Returns a pattern that matches a character that is not a percent\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotPerc
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotPercent\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotPercent_System_Int32_"></a>
+## NotPercent\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotPercent_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of characters that are not a percent\.

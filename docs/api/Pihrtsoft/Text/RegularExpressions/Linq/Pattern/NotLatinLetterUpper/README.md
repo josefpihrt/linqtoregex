@@ -13,7 +13,7 @@
 | [NotLatinLetterUpper()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotLatinLetterUpper) | Appends a pattern that matches a character that is not a latin alphabet upper\-case letter\. |
 | [NotLatinLetterUpper(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotLatinLetterUpper_System_Int32_) | Appends a pattern that matches a character that is not a latin alphabet upper\-case letter specified number of times\. |
 
-## NotLatinLetterUpper\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotLatinLetterUpper"></a>
+## NotLatinLetterUpper\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotLatinLetterUpper"></a>
 
 \
 Appends a pattern that matches a character that is not a latin alphabet upper\-case letter\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotLatinLetter
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotLatinLetterUpper\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotLatinLetterUpper_System_Int32_"></a>
+## NotLatinLetterUpper\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotLatinLetterUpper_System_Int32_"></a>
 
 \
 Appends a pattern that matches a character that is not a latin alphabet upper\-case letter specified number of times\.

@@ -13,7 +13,7 @@
 | [NotWordChar()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotWordChar) | Appends a pattern that matches a character that is not a word character\. |
 | [NotWordChar(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotWordChar_System_Int32_) | Appends a pattern that matches a character that is not a word character specified number of times\. |
 
-## NotWordChar\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotWordChar"></a>
+## NotWordChar\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotWordChar"></a>
 
 \
 Appends a pattern that matches a character that is not a word character\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotWordChar()
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotWordChar\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotWordChar_System_Int32_"></a>
+## NotWordChar\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotWordChar_System_Int32_"></a>
 
 \
 Appends a pattern that matches a character that is not a word character specified number of times\.

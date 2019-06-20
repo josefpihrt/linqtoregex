@@ -16,7 +16,7 @@
 | [Addition(CharGrouping, String)](#Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_System_String_) | Concatenate two elements into a new [CharGrouping](../README.md)\. |
 | [Addition(String, CharGrouping)](#Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Addition_System_String_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_) | Concatenate two elements into a new [CharGrouping](../README.md)\. |
 
-## Addition\(Char, CharGrouping\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Addition_System_Char_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
+## Addition\(Char, CharGrouping\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Addition_System_Char_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
 
 \
 Concatenate two elements into a new [CharGrouping](../README.md)\.
@@ -45,7 +45,7 @@ The second element to concatenate\.
 
 **right** is `null`\.
 
-## Addition\(CharGrouping, Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_System_Char_"></a>
+## Addition\(CharGrouping, Char\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_System_Char_"></a>
 
 \
 Concatenate two elements into a new [CharGrouping](../README.md)\.
@@ -74,7 +74,7 @@ The second element to concatenate\.
 
 **left** is `null`\.
 
-## Addition\(CharGrouping, CharGrouping\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
+## Addition\(CharGrouping, CharGrouping\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
 
 \
 Concatenate two elements into a new [CharGrouping](../README.md)\.
@@ -103,7 +103,7 @@ The second element to concatenate\.
 
 **left** or **right** is `null`\.
 
-## Addition\(CharGrouping, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_System_String_"></a>
+## Addition\(CharGrouping, String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_System_String_"></a>
 
 \
 Concatenate two elements into a new [CharGrouping](../README.md)\.
@@ -132,7 +132,7 @@ The second element to concatenate\.
 
 **left** or **right** is `null`\.
 
-## Addition\(String, CharGrouping\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Addition_System_String_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
+## Addition\(String, CharGrouping\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Addition_System_String_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
 
 \
 Concatenate two elements into a new [CharGrouping](../README.md)\.

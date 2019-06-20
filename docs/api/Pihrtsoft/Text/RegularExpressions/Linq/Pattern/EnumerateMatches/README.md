@@ -13,7 +13,7 @@
 | [EnumerateMatches(String)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateMatches_System_String_) | Searches the specified input string and returns an enumerable collection of matches\. |
 | [EnumerateMatches(String, RegexOptions)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateMatches_System_String_System_Text_RegularExpressions_RegexOptions_) | Searches the specified input string and returns an enumerable collection of matches, using the specified matching options\. |
 
-## EnumerateMatches\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateMatches_System_String_"></a>
+## EnumerateMatches\(String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateMatches_System_String_"></a>
 
 \
 Searches the specified input string and returns an enumerable collection of matches\.
@@ -38,7 +38,7 @@ The string to search for a match\.
 
 **input** is `null`\.
 
-## EnumerateMatches\(String, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateMatches_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
+## EnumerateMatches\(String, RegexOptions\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateMatches_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
 
 \
 Searches the specified input string and returns an enumerable collection of matches, using the specified matching options\.

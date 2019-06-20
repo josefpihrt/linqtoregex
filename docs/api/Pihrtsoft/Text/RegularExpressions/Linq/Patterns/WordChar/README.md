@@ -13,7 +13,7 @@
 | [WordChar()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_WordChar) | Returns a pattern that matches a word character\. |
 | [WordChar(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_WordChar_System_Int32_) | Returns a pattern that matches a specified number of word characters\. |
 
-## WordChar\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_WordChar"></a>
+## WordChar\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_WordChar"></a>
 
 \
 Returns a pattern that matches a word character\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern WordChar()
 
 [CharPattern](../../CharPattern/README.md)
 
-## WordChar\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_WordChar_System_Int32_"></a>
+## WordChar\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_WordChar_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of word characters\.

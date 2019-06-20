@@ -14,7 +14,7 @@
 | [SurroundQuoteMarksOrApostrophes(Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundQuoteMarksOrApostrophes_System_Object_) | Returns a pattern that matches specified pattern surrounded with quotation marks or apostrophes\. |
 | [SurroundQuoteMarksOrApostrophes(Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundQuoteMarksOrApostrophes_System_Object___) | Returns a pattern that matches specified content surrounded with quotation marks or apostrophes\. |
 
-## SurroundQuoteMarksOrApostrophes\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundQuoteMarksOrApostrophes"></a>
+## SurroundQuoteMarksOrApostrophes\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundQuoteMarksOrApostrophes"></a>
 
 \
 Returns a pattern that matches two quotation marks \(apostrophes\), allowing zero or more characters that are not a quotation mark \(apostrophe\) between the quotation marks \(apostrophes\)\.
@@ -27,7 +27,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Surroun
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## SurroundQuoteMarksOrApostrophes\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundQuoteMarksOrApostrophes_System_Object_"></a>
+## SurroundQuoteMarksOrApostrophes\(Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundQuoteMarksOrApostrophes_System_Object_"></a>
 
 \
 Returns a pattern that matches specified pattern surrounded with quotation marks or apostrophes\.
@@ -52,7 +52,7 @@ The content to be matched\.
 
 **content** is `null`\.
 
-## SurroundQuoteMarksOrApostrophes\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundQuoteMarksOrApostrophes_System_Object___"></a>
+## SurroundQuoteMarksOrApostrophes\(Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundQuoteMarksOrApostrophes_System_Object___"></a>
 
 \
 Returns a pattern that matches specified content surrounded with quotation marks or apostrophes\.

@@ -14,7 +14,7 @@
 | [Subtraction(CharGroup, CharGrouping)](#Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_op_Subtraction_Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_) | Returns a pattern that matches a character from a specified base group except characters from a specified excluded group\. |
 | [Subtraction(CharGroup, CharPattern)](#Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_op_Subtraction_Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_Pihrtsoft_Text_RegularExpressions_Linq_CharPattern_) | Returns a pattern that matches a character from a specified base group except characters from a specified excluded group\. |
 
-## Subtraction\(CharGroup, CharGroup\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_op_Subtraction_Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_"></a>
+## Subtraction\(CharGroup, CharGroup\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_op_Subtraction_Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_"></a>
 
 \
 Returns a pattern that matches a character from a specified base group except characters from a specified excluded group\.
@@ -43,7 +43,7 @@ An excluded group\.
 
 **baseGroup** or **excludedGroup** is `null`\.
 
-## Subtraction\(CharGroup, CharGrouping\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_op_Subtraction_Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
+## Subtraction\(CharGroup, CharGrouping\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_op_Subtraction_Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
 
 \
 Returns a pattern that matches a character from a specified base group except characters from a specified excluded group\.
@@ -72,7 +72,7 @@ An excluded group\.
 
 **baseGroup** or **excludedGroup** is `null`\.
 
-## Subtraction\(CharGroup, CharPattern\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_op_Subtraction_Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_Pihrtsoft_Text_RegularExpressions_Linq_CharPattern_"></a>
+## Subtraction\(CharGroup, CharPattern\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_op_Subtraction_Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_Pihrtsoft_Text_RegularExpressions_Linq_CharPattern_"></a>
 
 \
 Returns a pattern that matches a character from a specified base group except characters from a specified excluded group\.

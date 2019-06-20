@@ -13,7 +13,7 @@
 | [Alphanumeric()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Alphanumeric) | Returns a pattern that matches an alphanumeric character\. Alphanumeric character is a latin alphabet letter or an arabic digit\. |
 | [Alphanumeric(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Alphanumeric_System_Int32_) | Returns a pattern that matches a specified number of alphanumeric characters\. Alphanumeric character is a latin alphabet letter or an arabic digit\. |
 
-## Alphanumeric\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Alphanumeric"></a>
+## Alphanumeric\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Alphanumeric"></a>
 
 \
 Returns a pattern that matches an alphanumeric character\. Alphanumeric character is a latin alphabet letter or an arabic digit\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup Alphanumeric()
 
 [CharGroup](../../CharGroup/README.md)
 
-## Alphanumeric\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Alphanumeric_System_Int32_"></a>
+## Alphanumeric\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Alphanumeric_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of alphanumeric characters\. Alphanumeric character is a latin alphabet letter or an arabic digit\.

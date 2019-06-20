@@ -13,7 +13,7 @@
 | [QuestionMark()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_QuestionMark) | Returns a pattern that matches a question mark\. |
 | [QuestionMark(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_QuestionMark_System_Int32_) | Returns a pattern that matches a specified number of question marks\. |
 
-## QuestionMark\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_QuestionMark"></a>
+## QuestionMark\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_QuestionMark"></a>
 
 \
 Returns a pattern that matches a question mark\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern QuestionMark()
 
 [CharPattern](../../CharPattern/README.md)
 
-## QuestionMark\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_QuestionMark_System_Int32_"></a>
+## QuestionMark\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_QuestionMark_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of question marks\.

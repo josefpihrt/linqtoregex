@@ -15,7 +15,7 @@
 | [UntilChar(CharGrouping)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_UntilChar_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_) | Appends a pattern that matches zero or more characters until it reaches a character that is matched by a specified [CharGrouping](../../CharGrouping/README.md)\. |
 | [UntilChar(String)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_UntilChar_System_String_) | Appends a pattern that matches zero or more characters until it reaches any one of the specified characters\. |
 
-## UntilChar\(AsciiChar\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_UntilChar_Pihrtsoft_Text_RegularExpressions_Linq_AsciiChar_"></a>
+## UntilChar\(AsciiChar\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_UntilChar_Pihrtsoft_Text_RegularExpressions_Linq_AsciiChar_"></a>
 
 \
 Appends a pattern that matches zero or more characters until it reaches a specified character\.
@@ -34,7 +34,7 @@ An enumerated constant that identifies ASCII character\.
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## UntilChar\(Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_UntilChar_System_Char_"></a>
+## UntilChar\(Char\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_UntilChar_System_Char_"></a>
 
 \
 Appends a pattern that matches zero or more characters until it reaches a specified character\.
@@ -53,7 +53,7 @@ A Unicode character\.
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## UntilChar\(CharGrouping\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_UntilChar_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
+## UntilChar\(CharGrouping\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_UntilChar_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
 
 \
 Appends a pattern that matches zero or more characters until it reaches a character that is matched by a specified [CharGrouping](../../CharGrouping/README.md)\.
@@ -78,7 +78,7 @@ A content of a character group\.
 
 **value** is `null`\.
 
-## UntilChar\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_UntilChar_System_String_"></a>
+## UntilChar\(String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_UntilChar_System_String_"></a>
 
 \
 Appends a pattern that matches zero or more characters until it reaches any one of the specified characters\.

@@ -13,7 +13,7 @@
 | [NotAlphanumeric()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotAlphanumeric) | Appends a pattern that matches a character that is not an alphanumeric character\. Alphanumeric character is a latin alphabet letter or an arabic digit\. |
 | [NotAlphanumeric(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotAlphanumeric_System_Int32_) | Appends a pattern that matches a character that is not an alphanumeric character specified number of times\. Alphanumeric character is a latin alphabet letter or an arabic digit\. |
 
-## NotAlphanumeric\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotAlphanumeric"></a>
+## NotAlphanumeric\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotAlphanumeric"></a>
 
 \
 Appends a pattern that matches a character that is not an alphanumeric character\. Alphanumeric character is a latin alphabet letter or an arabic digit\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotAlphanumeric()
 
 [CharGroup](../../CharGroup/README.md)
 
-## NotAlphanumeric\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotAlphanumeric_System_Int32_"></a>
+## NotAlphanumeric\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotAlphanumeric_System_Int32_"></a>
 
 \
 Appends a pattern that matches a character that is not an alphanumeric character specified number of times\. Alphanumeric character is a latin alphabet letter or an arabic digit\.

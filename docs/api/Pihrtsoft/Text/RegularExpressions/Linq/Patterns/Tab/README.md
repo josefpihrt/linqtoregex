@@ -13,7 +13,7 @@
 | [Tab()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Tab) | Returns a pattern that matches a tab\. |
 | [Tab(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Tab_System_Int32_) | Returns a pattern that matches a specified number of tabs\. |
 
-## Tab\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Tab"></a>
+## Tab\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Tab"></a>
 
 \
 Returns a pattern that matches a tab\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Tab()
 
 [CharPattern](../../CharPattern/README.md)
 
-## Tab\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Tab_System_Int32_"></a>
+## Tab\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Tab_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of tabs\.

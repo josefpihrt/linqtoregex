@@ -13,7 +13,7 @@
 | [NotAssertSurround(Object, Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAssertSurround_System_Object_System_Object_) | Returns a pattern that matches a specified content with negative lookbehind assertion on the left side and negative lookahead assertion on the right side\. |
 | [NotAssertSurround(Object, Object, Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAssertSurround_System_Object_System_Object_System_Object_) | Returns a pattern that matches a specified content with negative lookbehind assertion on the left side and negative lookahead assertion on the right side\. |
 
-## NotAssertSurround\(Object, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAssertSurround_System_Object_System_Object_"></a>
+## NotAssertSurround\(Object, Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAssertSurround_System_Object_System_Object_"></a>
 
 \
 Returns a pattern that matches a specified content with negative lookbehind assertion on the left side and negative lookahead assertion on the right side\.
@@ -42,7 +42,7 @@ The content to be matched\.
 
 **assertion** **content** is `null`\.
 
-## NotAssertSurround\(Object, Object, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAssertSurround_System_Object_System_Object_System_Object_"></a>
+## NotAssertSurround\(Object, Object, Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAssertSurround_System_Object_System_Object_System_Object_"></a>
 
 \
 Returns a pattern that matches a specified content with negative lookbehind assertion on the left side and negative lookahead assertion on the right side\.

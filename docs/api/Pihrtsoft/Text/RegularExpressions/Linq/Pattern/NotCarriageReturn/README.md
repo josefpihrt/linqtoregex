@@ -13,7 +13,7 @@
 | [NotCarriageReturn()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotCarriageReturn) | Appends a pattern that matches a character that is not a carriage return\. |
 | [NotCarriageReturn(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotCarriageReturn_System_Int32_) | Appends a pattern that matches a specified number of characters that are not a carriage return\. |
 
-## NotCarriageReturn\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotCarriageReturn"></a>
+## NotCarriageReturn\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotCarriageReturn"></a>
 
 \
 Appends a pattern that matches a character that is not a carriage return\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotCarriageRet
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotCarriageReturn\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotCarriageReturn_System_Int32_"></a>
+## NotCarriageReturn\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotCarriageReturn_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of characters that are not a carriage return\.

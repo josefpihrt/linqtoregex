@@ -17,7 +17,7 @@
 | [EnumerateCaptures(String, String)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateCaptures_System_String_System_String_) | Searches the specified input string and returns an enumerable collection of captures from groups that have a specified name\. |
 | [EnumerateCaptures(String, String, RegexOptions)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateCaptures_System_String_System_String_System_Text_RegularExpressions_RegexOptions_) | Searches the specified input string and returns an enumerable collection of captures from groups that have a specified name, using the specified matching options\. |
 
-## EnumerateCaptures\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateCaptures_System_String_"></a>
+## EnumerateCaptures\(String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateCaptures_System_String_"></a>
 
 \
 Searches the specified input string and returns an enumerable collection of captures\.
@@ -42,7 +42,7 @@ The string to search for a match\.
 
 **input** is `null`\.
 
-## EnumerateCaptures\(String, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateCaptures_System_String_System_Int32_"></a>
+## EnumerateCaptures\(String, Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateCaptures_System_String_System_Int32_"></a>
 
 \
 Searches the specified input string and returns an enumerable collection of captures from groups that have a specified number\.
@@ -71,7 +71,7 @@ A valid number of the group\.
 
 **input** is `null`\.
 
-## EnumerateCaptures\(String, Int32, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateCaptures_System_String_System_Int32_System_Text_RegularExpressions_RegexOptions_"></a>
+## EnumerateCaptures\(String, Int32, RegexOptions\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateCaptures_System_String_System_Int32_System_Text_RegularExpressions_RegexOptions_"></a>
 
 \
 Searches the specified input string and returns an enumerable collection of captures from groups that have a specified number, using the specified matching options\.
@@ -104,7 +104,7 @@ A bitwise combination of the enumeration values that specify options for matchin
 
 **input** is `null`\.
 
-## EnumerateCaptures\(String, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateCaptures_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
+## EnumerateCaptures\(String, RegexOptions\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateCaptures_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
 
 \
 Searches the specified input string and returns an enumerable collection of captures, using the specified matching options\.
@@ -133,7 +133,7 @@ A bitwise combination of the enumeration values that specify options for matchin
 
 **input** is `null`\.
 
-## EnumerateCaptures\(String, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateCaptures_System_String_System_String_"></a>
+## EnumerateCaptures\(String, String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateCaptures_System_String_System_String_"></a>
 
 \
 Searches the specified input string and returns an enumerable collection of captures from groups that have a specified name\.
@@ -162,7 +162,7 @@ A name of the group\.
 
 **input** or **groupName** is `null`\.
 
-## EnumerateCaptures\(String, String, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateCaptures_System_String_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
+## EnumerateCaptures\(String, String, RegexOptions\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateCaptures_System_String_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
 
 \
 Searches the specified input string and returns an enumerable collection of captures from groups that have a specified name, using the specified matching options\.

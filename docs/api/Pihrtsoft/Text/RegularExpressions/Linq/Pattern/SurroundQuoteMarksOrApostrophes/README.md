@@ -14,7 +14,7 @@
 | [SurroundQuoteMarksOrApostrophes(Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundQuoteMarksOrApostrophes_System_Object_) | Appends a pattern that matches specified pattern surrounded with quotation marks or apostrophes\. |
 | [SurroundQuoteMarksOrApostrophes(Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundQuoteMarksOrApostrophes_System_Object___) | Appends a pattern that matches specified content surrounded with quotation marks or apostrophes\. |
 
-## SurroundQuoteMarksOrApostrophes\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundQuoteMarksOrApostrophes"></a>
+## SurroundQuoteMarksOrApostrophes\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundQuoteMarksOrApostrophes"></a>
 
 \
 Appends a pattern that matches two quotation marks \(apostrophes\), allowing zero or more characters that are not a quotation mark \(apostrophe\) between the quotation marks \(apostrophes\)\.
@@ -27,7 +27,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern SurroundQuoteM
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## SurroundQuoteMarksOrApostrophes\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundQuoteMarksOrApostrophes_System_Object_"></a>
+## SurroundQuoteMarksOrApostrophes\(Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundQuoteMarksOrApostrophes_System_Object_"></a>
 
 \
 Appends a pattern that matches specified pattern surrounded with quotation marks or apostrophes\.
@@ -52,7 +52,7 @@ The content to be matched\.
 
 **content** is `null`\.
 
-## SurroundQuoteMarksOrApostrophes\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundQuoteMarksOrApostrophes_System_Object___"></a>
+## SurroundQuoteMarksOrApostrophes\(Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundQuoteMarksOrApostrophes_System_Object___"></a>
 
 \
 Appends a pattern that matches specified content surrounded with quotation marks or apostrophes\.

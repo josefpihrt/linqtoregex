@@ -13,7 +13,7 @@
 | [Concat(Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Concat_System_Object_) | Concatenates the elements in a specified **content**\. |
 | [Concat(Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Concat_System_Object___) | Concatenates the elements in a specified object array\. |
 
-## Concat\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Concat_System_Object_"></a>
+## Concat\(Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Concat_System_Object_"></a>
 
 \
 Concatenates the elements in a specified **content**\.
@@ -32,7 +32,7 @@ An object that contains the elements to concatenate\.
 
 [Pattern](../../Pattern/README.md)
 
-## Concat\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Concat_System_Object___"></a>
+## Concat\(Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Concat_System_Object___"></a>
 
 \
 Concatenates the elements in a specified object array\.

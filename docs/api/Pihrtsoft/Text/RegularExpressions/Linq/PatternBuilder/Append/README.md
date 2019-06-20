@@ -19,7 +19,7 @@
 | [Append(Pattern)](#Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_Append_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_) | Appends the text representation of the pattern to this instance\. |
 | [Append(String)](#Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_Append_System_String_) | Appends specified text to this instance\. |
 
-## Append\(AsciiChar\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_Append_Pihrtsoft_Text_RegularExpressions_Linq_AsciiChar_"></a>
+## Append\(AsciiChar\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_Append_Pihrtsoft_Text_RegularExpressions_Linq_AsciiChar_"></a>
 
 \
 Appends specified character to this instance\.
@@ -34,7 +34,7 @@ public void Append(Pihrtsoft.Text.RegularExpressions.Linq.AsciiChar value)
 
 An enumerated constant that identifies an ASCII character to append\.
 
-## Append\(Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_Append_System_Char_"></a>
+## Append\(Char\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_Append_System_Char_"></a>
 
 \
 Appends specified character to this instance\.
@@ -49,7 +49,7 @@ public void Append(char value)
 
 The character to append\.
 
-## Append\(Char\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_Append_System_Char___"></a>
+## Append\(Char\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_Append_System_Char___"></a>
 
 \
 Appends specified characters to this instance\.
@@ -70,7 +70,7 @@ Unicode characters\.
 
 **characters** is `null`\.
 
-## Append\(CharGrouping\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_Append_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
+## Append\(CharGrouping\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_Append_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
 
 \
 Appends the text representation of the pattern to this instance\.
@@ -91,7 +91,7 @@ The pattern to append\.
 
 **value** is `null`\.
 
-## Append\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_Append_System_Int32_"></a>
+## Append\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_Append_System_Int32_"></a>
 
 \
 Appends specified character to this instance\.
@@ -106,7 +106,7 @@ public void Append(int value)
 
 A code of the character to append\.
 
-## Append\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_Append_System_Object_"></a>
+## Append\(Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_Append_System_Object_"></a>
 
 \
 Appends the pattern representation of an object\. The object must be convertible to [Pattern](../../Pattern/README.md), [CharGrouping](../../CharGrouping/README.md), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), object array or [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerable)\.
@@ -121,7 +121,7 @@ public void Append(object value)
 
 The object to append\.
 
-## Append\(Pattern\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_Append_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_"></a>
+## Append\(Pattern\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_Append_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_"></a>
 
 \
 Appends the text representation of the pattern to this instance\.
@@ -142,7 +142,7 @@ The pattern to append\.
 
 **pattern** is `null`\.
 
-## Append\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_Append_System_String_"></a>
+## Append\(String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_Append_System_String_"></a>
 
 \
 Appends specified text to this instance\.

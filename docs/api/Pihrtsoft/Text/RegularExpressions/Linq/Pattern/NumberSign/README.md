@@ -13,7 +13,7 @@
 | [NumberSign()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NumberSign) | Appends a pattern that matches a number sign\. |
 | [NumberSign(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NumberSign_System_Int32_) | Appends a pattern that matches a specified number of number signs\. |
 
-## NumberSign\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NumberSign"></a>
+## NumberSign\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NumberSign"></a>
 
 \
 Appends a pattern that matches a number sign\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NumberSign()
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NumberSign\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NumberSign_System_Int32_"></a>
+## NumberSign\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NumberSign_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of number signs\.

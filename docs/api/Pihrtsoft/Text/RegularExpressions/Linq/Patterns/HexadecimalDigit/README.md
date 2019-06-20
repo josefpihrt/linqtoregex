@@ -13,7 +13,7 @@
 | [HexadecimalDigit()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_HexadecimalDigit) | Returns a pattern that matches a hexadecimal digit\. |
 | [HexadecimalDigit(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_HexadecimalDigit_System_Int32_) | Returns a pattern that matches a specified number of hexadecimal digits\. |
 
-## HexadecimalDigit\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_HexadecimalDigit"></a>
+## HexadecimalDigit\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_HexadecimalDigit"></a>
 
 \
 Returns a pattern that matches a hexadecimal digit\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup HexadecimalDigit(
 
 [CharGroup](../../CharGroup/README.md)
 
-## HexadecimalDigit\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_HexadecimalDigit_System_Int32_"></a>
+## HexadecimalDigit\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_HexadecimalDigit_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of hexadecimal digits\.

@@ -13,7 +13,7 @@
 | [IsMatch(String)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_IsMatch_System_String_) | Indicates whether the current instance finds a match in the specified input string\. |
 | [IsMatch(String, RegexOptions)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_IsMatch_System_String_System_Text_RegularExpressions_RegexOptions_) | Indicates whether the current instance finds a match in the specified input string, using the specified matching options\. |
 
-## IsMatch\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_IsMatch_System_String_"></a>
+## IsMatch\(String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_IsMatch_System_String_"></a>
 
 \
 Indicates whether the current instance finds a match in the specified input string\.
@@ -38,7 +38,7 @@ The string to search for a match\.
 
 **input** is `null`\.
 
-## IsMatch\(String, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_IsMatch_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
+## IsMatch\(String, RegexOptions\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_IsMatch_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
 
 \
 Indicates whether the current instance finds a match in the specified input string, using the specified matching options\.

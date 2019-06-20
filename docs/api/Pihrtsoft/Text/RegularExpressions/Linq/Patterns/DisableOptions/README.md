@@ -14,7 +14,7 @@
 | [DisableOptions(RegexOptions, Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_DisableOptions_System_Text_RegularExpressions_RegexOptions_System_Object_) | Returns a pattern that disables specified options to a specified pattern\. |
 | [DisableOptions(RegexOptions, Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_DisableOptions_System_Text_RegularExpressions_RegexOptions_System_Object___) | Returns a pattern that disables specified options to a specified pattern\. |
 
-## DisableOptions\(RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_DisableOptions_System_Text_RegularExpressions_RegexOptions_"></a>
+## DisableOptions\(RegexOptions\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_DisableOptions_System_Text_RegularExpressions_RegexOptions_"></a>
 
 \
 Returns a pattern that disables specified options\.
@@ -33,7 +33,7 @@ A bitwise combination of the enumeration values that are disabled\.
 
 [Pattern](../../Pattern/README.md)
 
-## DisableOptions\(RegexOptions, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_DisableOptions_System_Text_RegularExpressions_RegexOptions_System_Object_"></a>
+## DisableOptions\(RegexOptions, Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_DisableOptions_System_Text_RegularExpressions_RegexOptions_System_Object_"></a>
 
 \
 Returns a pattern that disables specified options to a specified pattern\.
@@ -62,7 +62,7 @@ The content to be matched\.
 
 **content** is `null`\.
 
-## DisableOptions\(RegexOptions, Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_DisableOptions_System_Text_RegularExpressions_RegexOptions_System_Object___"></a>
+## DisableOptions\(RegexOptions, Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_DisableOptions_System_Text_RegularExpressions_RegexOptions_System_Object___"></a>
 
 \
 Returns a pattern that disables specified options to a specified pattern\.

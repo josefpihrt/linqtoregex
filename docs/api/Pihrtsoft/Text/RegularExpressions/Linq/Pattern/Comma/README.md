@@ -13,7 +13,7 @@
 | [Comma()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Comma) | Appends a pattern that matches a comma\. |
 | [Comma(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Comma_System_Int32_) | Appends a pattern that matches a specified number of commas\. |
 
-## Comma\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Comma"></a>
+## Comma\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Comma"></a>
 
 \
 Appends a pattern that matches a comma\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Comma()
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## Comma\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Comma_System_Int32_"></a>
+## Comma\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Comma_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of commas\.

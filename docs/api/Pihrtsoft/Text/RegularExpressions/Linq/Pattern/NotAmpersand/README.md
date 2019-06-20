@@ -13,7 +13,7 @@
 | [NotAmpersand()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotAmpersand) | Appends a pattern that matches a character that is not an ampersand\. |
 | [NotAmpersand(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotAmpersand_System_Int32_) | Appends a pattern that matches a specified number of characters that are not an ampersand\. |
 
-## NotAmpersand\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotAmpersand"></a>
+## NotAmpersand\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotAmpersand"></a>
 
 \
 Appends a pattern that matches a character that is not an ampersand\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotAmpersand()
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotAmpersand\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotAmpersand_System_Int32_"></a>
+## NotAmpersand\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotAmpersand_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of characters that are not an ampersand\.

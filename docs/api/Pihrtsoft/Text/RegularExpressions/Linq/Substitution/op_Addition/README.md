@@ -16,7 +16,7 @@
 | [Addition(Substitution, String)](#Pihrtsoft_Text_RegularExpressions_Linq_Substitution_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_Substitution_System_String_) | Concatenate two elements into a new [Substitution](../README.md)\. |
 | [Addition(Substitution, Substitution)](#Pihrtsoft_Text_RegularExpressions_Linq_Substitution_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_Substitution_Pihrtsoft_Text_RegularExpressions_Linq_Substitution_) | Concatenate two elements into a new [Substitution](../README.md)\. |
 
-## Addition\(Char, Substitution\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Substitution_op_Addition_System_Char_Pihrtsoft_Text_RegularExpressions_Linq_Substitution_"></a>
+## Addition\(Char, Substitution\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Substitution_op_Addition_System_Char_Pihrtsoft_Text_RegularExpressions_Linq_Substitution_"></a>
 
 \
 Concatenate two elements into a new [Substitution](../README.md)\.
@@ -45,7 +45,7 @@ The second element to concatenate\.
 
 **right** is `null`\.
 
-## Addition\(String, Substitution\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Substitution_op_Addition_System_String_Pihrtsoft_Text_RegularExpressions_Linq_Substitution_"></a>
+## Addition\(String, Substitution\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Substitution_op_Addition_System_String_Pihrtsoft_Text_RegularExpressions_Linq_Substitution_"></a>
 
 \
 Concatenate two elements into a new [Substitution](../README.md)\.
@@ -74,7 +74,7 @@ The second element to concatenate\.
 
 **left** or **right** is `null`\.
 
-## Addition\(Substitution, Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Substitution_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_Substitution_System_Char_"></a>
+## Addition\(Substitution, Char\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Substitution_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_Substitution_System_Char_"></a>
 
 \
 Concatenate two elements into a new [Substitution](../README.md)\.
@@ -103,7 +103,7 @@ The second element to concatenate\.
 
 **left** is `null`\.
 
-## Addition\(Substitution, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Substitution_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_Substitution_System_String_"></a>
+## Addition\(Substitution, String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Substitution_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_Substitution_System_String_"></a>
 
 \
 Concatenate two elements into a new [Substitution](../README.md)\.
@@ -132,7 +132,7 @@ The second element to concatenate\.
 
 **left** or **right** is `null`\.
 
-## Addition\(Substitution, Substitution\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Substitution_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_Substitution_Pihrtsoft_Text_RegularExpressions_Linq_Substitution_"></a>
+## Addition\(Substitution, Substitution\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Substitution_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_Substitution_Pihrtsoft_Text_RegularExpressions_Linq_Substitution_"></a>
 
 \
 Concatenate two elements into a new [Substitution](../README.md)\.

@@ -13,7 +13,7 @@
 | [EndLine()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EndLine) | Appends a pattern that is matched at the end of the string or line\. End of line is defined as the position before a linefeed\. |
 | [EndLine(Boolean)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EndLine_System_Boolean_) | Appends a pattern that is matched \(before carriage return\) at the end of the string or line\. End of line is defined as the position before a linefeed\. |
 
-## EndLine\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EndLine"></a>
+## EndLine\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EndLine"></a>
 
 \
 Appends a pattern that is matched at the end of the string or line\. End of line is defined as the position before a linefeed\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern EndLine()
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## EndLine\(Boolean\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EndLine_System_Boolean_"></a>
+## EndLine\(Boolean\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EndLine_System_Boolean_"></a>
 
 \
 Appends a pattern that is matched \(before carriage return\) at the end of the string or line\. End of line is defined as the position before a linefeed\.

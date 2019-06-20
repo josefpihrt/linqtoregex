@@ -13,7 +13,7 @@
 | [Slash()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Slash) | Appends a pattern that matches a slash\. |
 | [Slash(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Slash_System_Int32_) | Appends a pattern that matches a specified number of slashes\. |
 
-## Slash\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Slash"></a>
+## Slash\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Slash"></a>
 
 \
 Appends a pattern that matches a slash\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Slash()
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## Slash\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Slash_System_Int32_"></a>
+## Slash\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Slash_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of slashes\.

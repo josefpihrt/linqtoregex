@@ -13,7 +13,7 @@
 | [LatinLetterUpper()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LatinLetterUpper) | Appends a pattern that matches a latin alphabet upper\-case letter\. |
 | [LatinLetterUpper(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LatinLetterUpper_System_Int32_) | Appends a pattern that matches a specified number of latin alphabet upper\-case letters\. |
 
-## LatinLetterUpper\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LatinLetterUpper"></a>
+## LatinLetterUpper\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LatinLetterUpper"></a>
 
 \
 Appends a pattern that matches a latin alphabet upper\-case letter\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern LatinLetterUpp
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## LatinLetterUpper\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LatinLetterUpper_System_Int32_"></a>
+## LatinLetterUpper\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_LatinLetterUpper_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of latin alphabet upper\-case letters\.

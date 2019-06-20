@@ -13,7 +13,7 @@
 | [NamedGroup(String, Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NamedGroup_System_String_System_Object_) | Appends a named group with a specified name and content\. |
 | [NamedGroup(String, Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NamedGroup_System_String_System_Object___) | Appends a named group with a specified name and content\. |
 
-## NamedGroup\(String, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NamedGroup_System_String_System_Object_"></a>
+## NamedGroup\(String, Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NamedGroup_System_String_System_Object_"></a>
 
 \
 Appends a named group with a specified name and content\.
@@ -46,7 +46,7 @@ The content to be matched\.
 
 **name** or **content** is `null`\.
 
-## NamedGroup\(String, Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NamedGroup_System_String_System_Object___"></a>
+## NamedGroup\(String, Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NamedGroup_System_String_System_Object___"></a>
 
 \
 Appends a named group with a specified name and content\.

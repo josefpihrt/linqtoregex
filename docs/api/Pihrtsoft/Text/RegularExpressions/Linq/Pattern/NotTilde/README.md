@@ -13,7 +13,7 @@
 | [NotTilde()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotTilde) | Appends a pattern that matches a character that is not a tilde\. |
 | [NotTilde(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotTilde_System_Int32_) | Appends a pattern that matches a specified number of characters that are not a tilde\. |
 
-## NotTilde\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotTilde"></a>
+## NotTilde\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotTilde"></a>
 
 \
 Appends a pattern that matches a character that is not a tilde\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotTilde()
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotTilde\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotTilde_System_Int32_"></a>
+## NotTilde\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotTilde_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of characters that are not a tilde\.

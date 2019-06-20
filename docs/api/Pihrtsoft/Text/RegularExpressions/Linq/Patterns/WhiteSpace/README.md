@@ -13,7 +13,7 @@
 | [WhiteSpace()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_WhiteSpace) | Returns a pattern that matches a white\-space character\. |
 | [WhiteSpace(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_WhiteSpace_System_Int32_) | Returns a pattern that matches a specified number of white\-space characters\. |
 
-## WhiteSpace\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_WhiteSpace"></a>
+## WhiteSpace\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_WhiteSpace"></a>
 
 \
 Returns a pattern that matches a white\-space character\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern WhiteSpace()
 
 [CharPattern](../../CharPattern/README.md)
 
-## WhiteSpace\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_WhiteSpace_System_Int32_"></a>
+## WhiteSpace\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_WhiteSpace_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of white\-space characters\.

@@ -13,7 +13,7 @@
 | [Dot()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Dot) | Appends a pattern that matches a dot\. |
 | [Dot(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Dot_System_Int32_) | Appends a pattern that matches a specified number of dots\. |
 
-## Dot\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Dot"></a>
+## Dot\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Dot"></a>
 
 \
 Appends a pattern that matches a dot\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Dot()
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## Dot\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Dot_System_Int32_"></a>
+## Dot\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Dot_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of dots\.

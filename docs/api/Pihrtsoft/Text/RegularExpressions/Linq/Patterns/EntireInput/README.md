@@ -13,7 +13,7 @@
 | [EntireInput(Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_EntireInput_System_Object_) | Returns a pattern that matches a specified content surrounded with the beginning and the end of the string\. |
 | [EntireInput(Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_EntireInput_System_Object___) | Returns a pattern that matches any one pattern surrounded with the beginning and the end of the string\. |
 
-## EntireInput\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_EntireInput_System_Object_"></a>
+## EntireInput\(Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_EntireInput_System_Object_"></a>
 
 \
 Returns a pattern that matches a specified content surrounded with the beginning and the end of the string\.
@@ -38,7 +38,7 @@ The content to be matched\.
 
 **content** is `null`\.
 
-## EntireInput\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_EntireInput_System_Object___"></a>
+## EntireInput\(Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_EntireInput_System_Object___"></a>
 
 \
 Returns a pattern that matches any one pattern surrounded with the beginning and the end of the string\.

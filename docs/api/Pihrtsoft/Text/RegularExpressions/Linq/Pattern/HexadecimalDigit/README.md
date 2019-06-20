@@ -13,7 +13,7 @@
 | [HexadecimalDigit()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_HexadecimalDigit) | Appends a pattern that matches a hexadecimal digit\. |
 | [HexadecimalDigit(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_HexadecimalDigit_System_Int32_) | Appends a pattern that matches a specified number of hexadecimal digits\. |
 
-## HexadecimalDigit\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_HexadecimalDigit"></a>
+## HexadecimalDigit\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_HexadecimalDigit"></a>
 
 \
 Appends a pattern that matches a hexadecimal digit\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern HexadecimalDig
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## HexadecimalDigit\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_HexadecimalDigit_System_Int32_"></a>
+## HexadecimalDigit\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_HexadecimalDigit_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of hexadecimal digits\.

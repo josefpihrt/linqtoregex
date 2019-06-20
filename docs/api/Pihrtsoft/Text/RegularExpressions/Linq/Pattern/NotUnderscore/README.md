@@ -13,7 +13,7 @@
 | [NotUnderscore()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotUnderscore) | Appends a pattern that matches a character that is not an underscore\. |
 | [NotUnderscore(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotUnderscore_System_Int32_) | Appends a pattern that matches a specified number of characters that are not an underscore\. |
 
-## NotUnderscore\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotUnderscore"></a>
+## NotUnderscore\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotUnderscore"></a>
 
 \
 Appends a pattern that matches a character that is not an underscore\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotUnderscore(
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotUnderscore\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotUnderscore_System_Int32_"></a>
+## NotUnderscore\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotUnderscore_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of characters that are not an underscore\.

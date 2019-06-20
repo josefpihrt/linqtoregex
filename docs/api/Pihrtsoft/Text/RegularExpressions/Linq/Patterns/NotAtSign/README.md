@@ -13,7 +13,7 @@
 | [NotAtSign()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAtSign) | Returns a pattern that matches a character that is not an at sign\. |
 | [NotAtSign(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAtSign_System_Int32_) | Returns a pattern that matches a specified number of characters that are not an at sign\. |
 
-## NotAtSign\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAtSign"></a>
+## NotAtSign\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAtSign"></a>
 
 \
 Returns a pattern that matches a character that is not an at sign\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotAtSi
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotAtSign\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAtSign_System_Int32_"></a>
+## NotAtSign\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAtSign_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of characters that are not an at sign\.

@@ -13,7 +13,7 @@
 | [Space()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Space) | Returns a pattern that matches a space\. |
 | [Space(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Space_System_Int32_) | Returns a pattern that matches a specified number of spaces\. |
 
-## Space\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Space"></a>
+## Space\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Space"></a>
 
 \
 Returns a pattern that matches a space\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Space()
 
 [CharPattern](../../CharPattern/README.md)
 
-## Space\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Space_System_Int32_"></a>
+## Space\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Space_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of spaces\.

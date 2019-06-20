@@ -13,7 +13,7 @@
 | [NotPlus()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotPlus) | Returns a pattern that matches a character that is not a plus\. |
 | [NotPlus(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotPlus_System_Int32_) | Returns a pattern that matches a specified number of characters that are not a plus\. |
 
-## NotPlus\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotPlus"></a>
+## NotPlus\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotPlus"></a>
 
 \
 Returns a pattern that matches a character that is not a plus\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotPlus
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotPlus\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotPlus_System_Int32_"></a>
+## NotPlus\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotPlus_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of characters that are not a plus\.

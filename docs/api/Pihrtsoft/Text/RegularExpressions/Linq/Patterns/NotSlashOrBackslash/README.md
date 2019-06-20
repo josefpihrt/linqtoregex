@@ -13,7 +13,7 @@
 | [NotSlashOrBackslash()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotSlashOrBackslash) | Returns a pattern that matches a character that is not a slash or backslash\. |
 | [NotSlashOrBackslash(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotSlashOrBackslash_System_Int32_) | Returns a pattern that matches a specified number of characters that are not a slash or backslash |
 
-## NotSlashOrBackslash\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotSlashOrBackslash"></a>
+## NotSlashOrBackslash\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotSlashOrBackslash"></a>
 
 \
 Returns a pattern that matches a character that is not a slash or backslash\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotSlas
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotSlashOrBackslash\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotSlashOrBackslash_System_Int32_"></a>
+## NotSlashOrBackslash\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotSlashOrBackslash_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of characters that are not a slash or backslash

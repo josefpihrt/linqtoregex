@@ -13,7 +13,7 @@
 | [VerticalBar()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_VerticalBar) | Returns a pattern that matches a vertical bar\. |
 | [VerticalBar(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_VerticalBar_System_Int32_) | Returns a pattern that matches a specified number of vertical bars\. |
 
-## VerticalBar\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_VerticalBar"></a>
+## VerticalBar\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_VerticalBar"></a>
 
 \
 Returns a pattern that matches a vertical bar\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern VerticalBar()
 
 [CharPattern](../../CharPattern/README.md)
 
-## VerticalBar\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_VerticalBar_System_Int32_"></a>
+## VerticalBar\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_VerticalBar_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of vertical bars\.

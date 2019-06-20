@@ -13,7 +13,7 @@
 | [AtSign()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_AtSign) | Appends a pattern that matches an at sign\. |
 | [AtSign(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_AtSign_System_Int32_) | Appends a pattern that matches a specified number of at signs\. |
 
-## AtSign\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_AtSign"></a>
+## AtSign\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_AtSign"></a>
 
 \
 Appends a pattern that matches an at sign\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern AtSign()
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## AtSign\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_AtSign_System_Int32_"></a>
+## AtSign\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_AtSign_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of at signs\.

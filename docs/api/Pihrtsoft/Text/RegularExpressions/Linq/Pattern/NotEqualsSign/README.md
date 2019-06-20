@@ -13,7 +13,7 @@
 | [NotEqualsSign()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotEqualsSign) | Appends a pattern that matches a character that is not an equals sign\. |
 | [NotEqualsSign(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotEqualsSign_System_Int32_) | Appends a pattern that matches a specified number of characters that are not an equals sign\. |
 
-## NotEqualsSign\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotEqualsSign"></a>
+## NotEqualsSign\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotEqualsSign"></a>
 
 \
 Appends a pattern that matches a character that is not an equals sign\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotEqualsSign(
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotEqualsSign\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotEqualsSign_System_Int32_"></a>
+## NotEqualsSign\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotEqualsSign_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of characters that are not an equals sign\.

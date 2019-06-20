@@ -14,7 +14,7 @@
 | [WhileChar(Char)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileChar_System_Char_) | Appends a pattern that matches a specified character zero or more times\. |
 | [WhileChar(CharGrouping)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileChar_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_) | Appends a pattern that matches a specified character zero or more times\. |
 
-## WhileChar\(AsciiChar\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileChar_Pihrtsoft_Text_RegularExpressions_Linq_AsciiChar_"></a>
+## WhileChar\(AsciiChar\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileChar_Pihrtsoft_Text_RegularExpressions_Linq_AsciiChar_"></a>
 
 \
 Appends a pattern that matches a specified character zero or more times\.
@@ -33,7 +33,7 @@ An enumerated constant that identifies ASCII character\.
 
 [Pattern](../README.md)
 
-## WhileChar\(Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileChar_System_Char_"></a>
+## WhileChar\(Char\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileChar_System_Char_"></a>
 
 \
 Appends a pattern that matches a specified character zero or more times\.
@@ -52,7 +52,7 @@ A Unicode character\.
 
 [Pattern](../README.md)
 
-## WhileChar\(CharGrouping\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileChar_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
+## WhileChar\(CharGrouping\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileChar_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
 
 \
 Appends a pattern that matches a specified character zero or more times\.

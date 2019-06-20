@@ -13,7 +13,7 @@
 | [NotArabicDigit()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotArabicDigit) | Returns a pattern that matches a character that is not an arabic digit\. |
 | [NotArabicDigit(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotArabicDigit_System_Int32_) | Returns a pattern that matches a character that is not an arabic digit specified number of times\. |
 
-## NotArabicDigit\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotArabicDigit"></a>
+## NotArabicDigit\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotArabicDigit"></a>
 
 \
 Returns a pattern that matches a character that is not an arabic digit\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotArabicDigit()
 
 [CharGroup](../../CharGroup/README.md)
 
-## NotArabicDigit\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotArabicDigit_System_Int32_"></a>
+## NotArabicDigit\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotArabicDigit_System_Int32_"></a>
 
 \
 Returns a pattern that matches a character that is not an arabic digit specified number of times\.

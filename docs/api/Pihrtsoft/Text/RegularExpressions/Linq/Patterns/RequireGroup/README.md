@@ -13,7 +13,7 @@
 | [RequireGroup(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_RequireGroup_System_Int32_) | Returns a pattern that requires previously defined group with a specified number to be matched\. Otherwise, a match will fail\. |
 | [RequireGroup(String)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_RequireGroup_System_String_) | Returns a pattern that requires previously defined group with a specified name to be matched\. Otherwise, a match will fail\. |
 
-## RequireGroup\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_RequireGroup_System_Int32_"></a>
+## RequireGroup\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_RequireGroup_System_Int32_"></a>
 
 \
 Returns a pattern that requires previously defined group with a specified number to be matched\. Otherwise, a match will fail\.
@@ -38,7 +38,7 @@ A number of the group\.
 
 **groupNumber** is less than zero\.
 
-## RequireGroup\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_RequireGroup_System_String_"></a>
+## RequireGroup\(String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_RequireGroup_System_String_"></a>
 
 \
 Returns a pattern that requires previously defined group with a specified name to be matched\. Otherwise, a match will fail\.

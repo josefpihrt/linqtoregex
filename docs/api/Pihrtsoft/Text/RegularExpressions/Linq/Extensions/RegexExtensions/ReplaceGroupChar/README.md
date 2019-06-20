@@ -13,7 +13,7 @@
 | [ReplaceGroupChar(Regex, String, Char, Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_ReplaceGroupChar_System_Text_RegularExpressions_Regex_System_String_System_Char_System_Int32_) | Within a specified input string, replaces all groups with the specified number that match the regular expression with a string where each character is replaced with the specified character\. |
 | [ReplaceGroupChar(Regex, String, Char, String)](#Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_ReplaceGroupChar_System_Text_RegularExpressions_Regex_System_String_System_Char_System_String_) | Within a specified input string, replaces all groups with the specified name that match the regular expression with a string where each character is replaced with the specified character\. |
 
-## ReplaceGroupChar\(Regex, String, Char, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_ReplaceGroupChar_System_Text_RegularExpressions_Regex_System_String_System_Char_System_Int32_"></a>
+## ReplaceGroupChar\(Regex, String, Char, Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_ReplaceGroupChar_System_Text_RegularExpressions_Regex_System_String_System_Char_System_Int32_"></a>
 
 \
 Within a specified input string, replaces all groups with the specified number that match the regular expression with a string where each character is replaced with the specified character\.
@@ -50,7 +50,7 @@ A number of the group\.
 
 **regex** or **input** is `null`\.
 
-## ReplaceGroupChar\(Regex, String, Char, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_ReplaceGroupChar_System_Text_RegularExpressions_Regex_System_String_System_Char_System_String_"></a>
+## ReplaceGroupChar\(Regex, String, Char, String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_ReplaceGroupChar_System_Text_RegularExpressions_Regex_System_String_System_Char_System_String_"></a>
 
 \
 Within a specified input string, replaces all groups with the specified name that match the regular expression with a string where each character is replaced with the specified character\.

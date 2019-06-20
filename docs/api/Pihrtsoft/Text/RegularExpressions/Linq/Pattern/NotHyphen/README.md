@@ -13,7 +13,7 @@
 | [NotHyphen()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotHyphen) | Appends a pattern that matches a character that is not a hyphen\. |
 | [NotHyphen(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotHyphen_System_Int32_) | Appends a pattern that matches a specified number of characters that are not a hyphen\. |
 
-## NotHyphen\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotHyphen"></a>
+## NotHyphen\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotHyphen"></a>
 
 \
 Appends a pattern that matches a character that is not a hyphen\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotHyphen()
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotHyphen\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotHyphen_System_Int32_"></a>
+## NotHyphen\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotHyphen_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of characters that are not a hyphen\.

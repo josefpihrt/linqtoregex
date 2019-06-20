@@ -14,7 +14,7 @@
 | [SurroundSquareBrackets(Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundSquareBrackets_System_Object_) | Returns a pattern that matches specified pattern surrounded with left and right square bracket\. |
 | [SurroundSquareBrackets(Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundSquareBrackets_System_Object___) | Returns a pattern that matches specified content surrounded with left and right square bracket\. |
 
-## SurroundSquareBrackets\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundSquareBrackets"></a>
+## SurroundSquareBrackets\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundSquareBrackets"></a>
 
 \
 Returns a pattern that matches a text consisting of left and right square bracket, allowing zero or more characters that are not a right square bracket between the brackets\.
@@ -27,7 +27,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.Pattern SurroundSquareBrack
 
 [Pattern](../../Pattern/README.md)
 
-## SurroundSquareBrackets\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundSquareBrackets_System_Object_"></a>
+## SurroundSquareBrackets\(Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundSquareBrackets_System_Object_"></a>
 
 \
 Returns a pattern that matches specified pattern surrounded with left and right square bracket\.
@@ -52,7 +52,7 @@ The content to be matched\.
 
 **content** is `null`\.
 
-## SurroundSquareBrackets\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundSquareBrackets_System_Object___"></a>
+## SurroundSquareBrackets\(Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_SurroundSquareBrackets_System_Object___"></a>
 
 \
 Returns a pattern that matches specified content surrounded with left and right square bracket\.

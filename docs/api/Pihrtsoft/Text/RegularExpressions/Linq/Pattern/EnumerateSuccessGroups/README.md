@@ -17,7 +17,7 @@
 | [EnumerateSuccessGroups(String, String)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateSuccessGroups_System_String_System_String_) | Searches the specified input string and returns an enumerable collection of groups that have a specified name and contain at least one capture\. |
 | [EnumerateSuccessGroups(String, String, RegexOptions)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateSuccessGroups_System_String_System_String_System_Text_RegularExpressions_RegexOptions_) | Searches the specified input string and returns an enumerable collection of groups that have a specified name and contain at least one capture, using the specified matching options\. |
 
-## EnumerateSuccessGroups\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateSuccessGroups_System_String_"></a>
+## EnumerateSuccessGroups\(String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateSuccessGroups_System_String_"></a>
 
 \
 Searches the specified input string and returns an enumerable collection of groups that contain at least one capture\.
@@ -42,7 +42,7 @@ The string to search for a match\.
 
 **input** is `null`\.
 
-## EnumerateSuccessGroups\(String, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateSuccessGroups_System_String_System_Int32_"></a>
+## EnumerateSuccessGroups\(String, Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateSuccessGroups_System_String_System_Int32_"></a>
 
 \
 Searches the specified input string and returns an enumerable collection of groups that have a specified number and contain at least one capture\.
@@ -71,7 +71,7 @@ A valid number of the group\.
 
 **input** is `null`\.
 
-## EnumerateSuccessGroups\(String, Int32, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateSuccessGroups_System_String_System_Int32_System_Text_RegularExpressions_RegexOptions_"></a>
+## EnumerateSuccessGroups\(String, Int32, RegexOptions\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateSuccessGroups_System_String_System_Int32_System_Text_RegularExpressions_RegexOptions_"></a>
 
 \
 Searches the specified input string and returns an enumerable collection of groups that have a specified number and contain at least one capture, using the specified matching options\.
@@ -104,7 +104,7 @@ A bitwise combination of the enumeration values that specify options for matchin
 
 **input** is `null`\.
 
-## EnumerateSuccessGroups\(String, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateSuccessGroups_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
+## EnumerateSuccessGroups\(String, RegexOptions\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateSuccessGroups_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
 
 \
 Searches the specified input string and returns an enumerable collection of groups that contain at least one capture, using the specified matching options\.
@@ -133,7 +133,7 @@ A bitwise combination of the enumeration values that specify options for matchin
 
 **input** is `null`\.
 
-## EnumerateSuccessGroups\(String, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateSuccessGroups_System_String_System_String_"></a>
+## EnumerateSuccessGroups\(String, String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateSuccessGroups_System_String_System_String_"></a>
 
 \
 Searches the specified input string and returns an enumerable collection of groups that have a specified name and contain at least one capture\.
@@ -162,7 +162,7 @@ A name of the group\.
 
 **input** or **groupName** is `null`\.
 
-## EnumerateSuccessGroups\(String, String, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateSuccessGroups_System_String_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
+## EnumerateSuccessGroups\(String, String, RegexOptions\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateSuccessGroups_System_String_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
 
 \
 Searches the specified input string and returns an enumerable collection of groups that have a specified name and contain at least one capture, using the specified matching options\.

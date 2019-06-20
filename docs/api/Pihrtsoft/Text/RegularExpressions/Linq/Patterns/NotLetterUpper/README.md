@@ -13,7 +13,7 @@
 | [NotLetterUpper()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotLetterUpper) | Returns a pattern that matches a character that is not a character from [GeneralCategory.LetterUppercase](../../GeneralCategory/LetterUppercase/README.md)\. |
 | [NotLetterUpper(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotLetterUpper_System_Int32_) | Returns a pattern that matches a character that is not a character from [GeneralCategory.LetterUppercase](../../GeneralCategory/LetterUppercase/README.md) specified number of times\. |
 
-## NotLetterUpper\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotLetterUpper"></a>
+## NotLetterUpper\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotLetterUpper"></a>
 
 \
 Returns a pattern that matches a character that is not a character from [GeneralCategory.LetterUppercase](../../GeneralCategory/LetterUppercase/README.md)\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotLett
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotLetterUpper\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotLetterUpper_System_Int32_"></a>
+## NotLetterUpper\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotLetterUpper_System_Int32_"></a>
 
 \
 Returns a pattern that matches a character that is not a character from [GeneralCategory.LetterUppercase](../../GeneralCategory/LetterUppercase/README.md) specified number of times\.

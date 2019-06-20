@@ -13,7 +13,7 @@
 | [Join(Object, Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Join_System_Object_System_Object_) | Concatenates the elements in a specified **content** using the specified separator between each element\. |
 | [Join(Object, Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Join_System_Object_System_Object___) | Concatenates the elements of an object array, using the specified separator between each element\. |
 
-## Join\(Object, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Join_System_Object_System_Object_"></a>
+## Join\(Object, Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Join_System_Object_System_Object_"></a>
 
 \
 Concatenates the elements in a specified **content** using the specified separator between each element\.
@@ -42,7 +42,7 @@ An object that contains the elements to join\.
 
 **content** is `null`\.
 
-## Join\(Object, Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Join_System_Object_System_Object___"></a>
+## Join\(Object, Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Join_System_Object_System_Object___"></a>
 
 \
 Concatenates the elements of an object array, using the specified separator between each element\.

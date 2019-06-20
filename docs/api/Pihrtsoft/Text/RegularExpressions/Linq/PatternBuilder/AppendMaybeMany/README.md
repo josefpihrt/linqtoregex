@@ -13,7 +13,7 @@
 | [AppendMaybeMany()](#Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendMaybeMany) | Appends a quantifier that matches previous element zero or more times\. |
 | [AppendMaybeMany(Boolean)](#Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendMaybeMany_System_Boolean_) | Appends a quantifier that matches previous element zero or more times\. |
 
-## AppendMaybeMany\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendMaybeMany"></a>
+## AppendMaybeMany\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendMaybeMany"></a>
 
 \
 Appends a quantifier that matches previous element zero or more times\.
@@ -22,7 +22,7 @@ Appends a quantifier that matches previous element zero or more times\.
 public void AppendMaybeMany()
 ```
 
-## AppendMaybeMany\(Boolean\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendMaybeMany_System_Boolean_"></a>
+## AppendMaybeMany\(Boolean\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendMaybeMany_System_Boolean_"></a>
 
 \
 Appends a quantifier that matches previous element zero or more times\.

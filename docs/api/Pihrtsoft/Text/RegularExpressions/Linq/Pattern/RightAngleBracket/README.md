@@ -13,7 +13,7 @@
 | [RightAngleBracket()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_RightAngleBracket) | Appends a pattern that matches a right angle bracket \(greater\-than sign\)\. |
 | [RightAngleBracket(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_RightAngleBracket_System_Int32_) | Appends a pattern that matches a specified number of right angle brackets \(greater\-than signs\)\. |
 
-## RightAngleBracket\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_RightAngleBracket"></a>
+## RightAngleBracket\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_RightAngleBracket"></a>
 
 \
 Appends a pattern that matches a right angle bracket \(greater\-than sign\)\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern RightAngleBrac
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## RightAngleBracket\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_RightAngleBracket_System_Int32_"></a>
+## RightAngleBracket\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_RightAngleBracket_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of right angle brackets \(greater\-than signs\)\.

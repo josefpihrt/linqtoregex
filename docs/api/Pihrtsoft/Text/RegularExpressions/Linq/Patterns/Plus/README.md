@@ -13,7 +13,7 @@
 | [Plus()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Plus) | Returns a pattern that matches a plus\. |
 | [Plus(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Plus_System_Int32_) | Returns a pattern that matches a specified number of pluses\. |
 
-## Plus\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Plus"></a>
+## Plus\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Plus"></a>
 
 \
 Returns a pattern that matches a plus\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Plus()
 
 [CharPattern](../../CharPattern/README.md)
 
-## Plus\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Plus_System_Int32_"></a>
+## Plus\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Plus_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of pluses\.

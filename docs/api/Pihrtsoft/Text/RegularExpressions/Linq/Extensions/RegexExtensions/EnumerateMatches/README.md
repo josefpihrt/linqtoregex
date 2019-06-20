@@ -14,7 +14,7 @@
 | [EnumerateMatches(Regex, String, Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateMatches_System_Text_RegularExpressions_Regex_System_String_System_Int32_) | Searches the specified input string beginning at the specified position and returns enumerable collection of regular expression matches\. |
 | [EnumerateMatches(Regex, String, Int32, Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateMatches_System_Text_RegularExpressions_Regex_System_String_System_Int32_System_Int32_) | Searches the specified input string beginning at the specified position and searching only the specified number of characters and returns enumerable collection of regular expression matches\. |
 
-## EnumerateMatches\(Regex, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateMatches_System_Text_RegularExpressions_Regex_System_String_"></a>
+## EnumerateMatches\(Regex, String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateMatches_System_Text_RegularExpressions_Regex_System_String_"></a>
 
 \
 Searches the specified input string and returns enumerable collection of regular expression matches\.
@@ -43,7 +43,7 @@ The string to search for a match\.
 
 **regex** or **input** is `null`\.
 
-## EnumerateMatches\(Regex, String, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateMatches_System_Text_RegularExpressions_Regex_System_String_System_Int32_"></a>
+## EnumerateMatches\(Regex, String, Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateMatches_System_Text_RegularExpressions_Regex_System_String_System_Int32_"></a>
 
 \
 Searches the specified input string beginning at the specified position and returns enumerable collection of regular expression matches\.
@@ -80,7 +80,7 @@ The position at which to start the search\.
 
 **startAt** is less than zero or greater that the length of **input**\.
 
-## EnumerateMatches\(Regex, String, Int32, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateMatches_System_Text_RegularExpressions_Regex_System_String_System_Int32_System_Int32_"></a>
+## EnumerateMatches\(Regex, String, Int32, Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateMatches_System_Text_RegularExpressions_Regex_System_String_System_Int32_System_Int32_"></a>
 
 \
 Searches the specified input string beginning at the specified position and searching only the specified number of characters and returns enumerable collection of regular expression matches\.

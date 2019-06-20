@@ -13,7 +13,7 @@
 | [AppendCountFrom(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendCountFrom_System_Int32_) | Appends a quantifier that matches previous element at least specified number of times\. |
 | [AppendCountFrom(Int32, Boolean)](#Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendCountFrom_System_Int32_System_Boolean_) | Appends a quantifier that matches previous element at least specified number of times\. |
 
-## AppendCountFrom\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendCountFrom_System_Int32_"></a>
+## AppendCountFrom\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendCountFrom_System_Int32_"></a>
 
 \
 Appends a quantifier that matches previous element at least specified number of times\.
@@ -34,7 +34,7 @@ A minimal number of times the pattern must be matched\.
 
 **minCount** is less than zero\.
 
-## AppendCountFrom\(Int32, Boolean\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendCountFrom_System_Int32_System_Boolean_"></a>
+## AppendCountFrom\(Int32, Boolean\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendCountFrom_System_Int32_System_Boolean_"></a>
 
 \
 Appends a quantifier that matches previous element at least specified number of times\.

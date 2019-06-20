@@ -13,7 +13,7 @@
 | [GetRandomGroupName()](#Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_GetRandomGroupName) | Returns randomly generated group name\. |
 | [GetRandomGroupName(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_GetRandomGroupName_System_Int32_) | Returns randomly generated group name with a specified length\. |
 
-## GetRandomGroupName\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_GetRandomGroupName"></a>
+## GetRandomGroupName\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_GetRandomGroupName"></a>
 
 \
 Returns randomly generated group name\.
@@ -26,7 +26,7 @@ public static string GetRandomGroupName()
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
-## GetRandomGroupName\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_GetRandomGroupName_System_Int32_"></a>
+## GetRandomGroupName\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_GetRandomGroupName_System_Int32_"></a>
 
 \
 Returns randomly generated group name with a specified length\.

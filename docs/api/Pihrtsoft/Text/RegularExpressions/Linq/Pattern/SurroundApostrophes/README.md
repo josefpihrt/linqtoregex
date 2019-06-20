@@ -14,7 +14,7 @@
 | [SurroundApostrophes(Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundApostrophes_System_Object_) | Appends a pattern that matches specified pattern surrounded with apostrophes\. |
 | [SurroundApostrophes(Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundApostrophes_System_Object___) | Appends a pattern that matches specified content surrounded with apostrophes\. |
 
-## SurroundApostrophes\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundApostrophes"></a>
+## SurroundApostrophes\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundApostrophes"></a>
 
 \
 Appends a pattern that matches two apostrophes, allowing zero or more characters that are not an apostrophe between the apostrophes\.
@@ -27,7 +27,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.Pattern SurroundApostrophes()
 
 [Pattern](../README.md)
 
-## SurroundApostrophes\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundApostrophes_System_Object_"></a>
+## SurroundApostrophes\(Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundApostrophes_System_Object_"></a>
 
 \
 Appends a pattern that matches specified pattern surrounded with apostrophes\.
@@ -52,7 +52,7 @@ The content to be matched\.
 
 **content** is `null`\.
 
-## SurroundApostrophes\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundApostrophes_System_Object___"></a>
+## SurroundApostrophes\(Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_SurroundApostrophes_System_Object___"></a>
 
 \
 Appends a pattern that matches specified content surrounded with apostrophes\.

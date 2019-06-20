@@ -15,7 +15,7 @@
 | [Any(Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Any_System_Object_) | Returns a noncapturing group with a specified content\. |
 | [Any(Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Any_System_Object___) | Returns a pattern that matches any one of the patterns specified in the object array\. |
 
-## Any\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Any"></a>
+## Any\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Any"></a>
 
 \
 Returns a pattern that matches any character\.
@@ -28,7 +28,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Any()
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## Any\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Any_System_Int32_"></a>
+## Any\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Any_System_Int32_"></a>
 
 \
 Returns a pattern that matches any character specified number of times\.
@@ -53,7 +53,7 @@ A number of times a character has to be matched\.
 
 **exactCount** is less than zero\.
 
-## Any\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Any_System_Object_"></a>
+## Any\(Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Any_System_Object_"></a>
 
 \
 Returns a noncapturing group with a specified content\.
@@ -72,7 +72,7 @@ The content to be matched\.
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## Any\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Any_System_Object___"></a>
+## Any\(Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Any_System_Object___"></a>
 
 \
 Returns a pattern that matches any one of the patterns specified in the object array\.

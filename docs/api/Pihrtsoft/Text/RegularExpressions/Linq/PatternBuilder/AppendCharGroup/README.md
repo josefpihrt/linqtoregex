@@ -17,7 +17,7 @@
 | [AppendCharGroup(NamedBlock)](#Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendCharGroup_Pihrtsoft_Text_RegularExpressions_Linq_NamedBlock_) | Appends a pattern that matches a character from a specified Unicode block\. |
 | [AppendCharGroup(String)](#Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendCharGroup_System_String_) | Appends a character group containing specified characters\. |
 
-## AppendCharGroup\(AsciiChar\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendCharGroup_Pihrtsoft_Text_RegularExpressions_Linq_AsciiChar_"></a>
+## AppendCharGroup\(AsciiChar\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendCharGroup_Pihrtsoft_Text_RegularExpressions_Linq_AsciiChar_"></a>
 
 \
 Appends a pattern that matches a specified character\.
@@ -32,7 +32,7 @@ public void AppendCharGroup(Pihrtsoft.Text.RegularExpressions.Linq.AsciiChar val
 
 An enumerated constant that identifies ASCII character\.
 
-## AppendCharGroup\(GeneralCategory\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendCharGroup_Pihrtsoft_Text_RegularExpressions_Linq_GeneralCategory_"></a>
+## AppendCharGroup\(GeneralCategory\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendCharGroup_Pihrtsoft_Text_RegularExpressions_Linq_GeneralCategory_"></a>
 
 \
 Appends a pattern that matches a character from a specified Unicode category\.
@@ -47,7 +47,7 @@ public void AppendCharGroup(Pihrtsoft.Text.RegularExpressions.Linq.GeneralCatego
 
 An enumerated constant that identifies Unicode category\.
 
-## AppendCharGroup\(Char, Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendCharGroup_System_Char_System_Char_"></a>
+## AppendCharGroup\(Char, Char\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendCharGroup_System_Char_System_Char_"></a>
 
 \
 Appends a pattern that matches a character in the specified range\.
@@ -72,7 +72,7 @@ The last character of the range\.
 
 **last** character number is less than **first** character number\.
 
-## AppendCharGroup\(CharGrouping\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendCharGroup_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
+## AppendCharGroup\(CharGrouping\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendCharGroup_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
 
 \
 Appends a character group containing specified [CharGrouping](../../CharGrouping/README.md)\.
@@ -93,7 +93,7 @@ A content of a character group\.
 
 **value** is `null`\.
 
-## AppendCharGroup\(NamedBlock\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendCharGroup_Pihrtsoft_Text_RegularExpressions_Linq_NamedBlock_"></a>
+## AppendCharGroup\(NamedBlock\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendCharGroup_Pihrtsoft_Text_RegularExpressions_Linq_NamedBlock_"></a>
 
 \
 Appends a pattern that matches a character from a specified Unicode block\.
@@ -108,7 +108,7 @@ public void AppendCharGroup(Pihrtsoft.Text.RegularExpressions.Linq.NamedBlock bl
 
 An enumerated constant that identifies Unicode block\.
 
-## AppendCharGroup\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendCharGroup_System_String_"></a>
+## AppendCharGroup\(String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendCharGroup_System_String_"></a>
 
 \
 Appends a character group containing specified characters\.

@@ -13,7 +13,7 @@
 | [WordChar()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WordChar) | Appends a pattern that matches a word character\. |
 | [WordChar(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WordChar_System_Int32_) | Appends a pattern that matches a specified number of word characters\. |
 
-## WordChar\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WordChar"></a>
+## WordChar\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WordChar"></a>
 
 \
 Appends a pattern that matches a word character\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern WordChar()
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## WordChar\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WordChar_System_Int32_"></a>
+## WordChar\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WordChar_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of word characters\.

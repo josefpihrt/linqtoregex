@@ -13,7 +13,7 @@
 | [WhiteSpaceExceptNewLine()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhiteSpaceExceptNewLine) | Appends a pattern that matches a white\-space character except carriage return and linefeed\. |
 | [WhiteSpaceExceptNewLine(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhiteSpaceExceptNewLine_System_Int32_) | Appends a pattern that matches a white\-space character except carriage return and linefeed\. The character has to be matched specified number of times\. |
 
-## WhiteSpaceExceptNewLine\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhiteSpaceExceptNewLine"></a>
+## WhiteSpaceExceptNewLine\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhiteSpaceExceptNewLine"></a>
 
 \
 Appends a pattern that matches a white\-space character except carriage return and linefeed\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern WhiteSpaceExce
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## WhiteSpaceExceptNewLine\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhiteSpaceExceptNewLine_System_Int32_"></a>
+## WhiteSpaceExceptNewLine\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhiteSpaceExceptNewLine_System_Int32_"></a>
 
 \
 Appends a pattern that matches a white\-space character except carriage return and linefeed\. The character has to be matched specified number of times\.

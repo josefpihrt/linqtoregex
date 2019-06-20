@@ -13,7 +13,7 @@
 | [NotDot()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotDot) | Appends a pattern that matches a character that is not a dot\. |
 | [NotDot(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotDot_System_Int32_) | Appends a pattern that matches a specified number of characters that are not a dot\. |
 
-## NotDot\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotDot"></a>
+## NotDot\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotDot"></a>
 
 \
 Appends a pattern that matches a character that is not a dot\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotDot()
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotDot\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotDot_System_Int32_"></a>
+## NotDot\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotDot_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of characters that are not a dot\.

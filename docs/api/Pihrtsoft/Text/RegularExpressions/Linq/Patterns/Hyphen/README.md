@@ -13,7 +13,7 @@
 | [Hyphen()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Hyphen) | Returns a pattern that matches a hyphen\. |
 | [Hyphen(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Hyphen_System_Int32_) | Returns a pattern that matches a specified number of hyphens\. |
 
-## Hyphen\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Hyphen"></a>
+## Hyphen\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Hyphen"></a>
 
 \
 Returns a pattern that matches a hyphen\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Hyphen()
 
 [CharPattern](../../CharPattern/README.md)
 
-## Hyphen\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Hyphen_System_Int32_"></a>
+## Hyphen\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Hyphen_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of hyphens\.

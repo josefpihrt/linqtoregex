@@ -15,7 +15,7 @@
 | [IfGroup(String, Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_IfGroup_System_String_System_Object_) | Appends an if construct with a content to match if the named group is matched\. |
 | [IfGroup(String, Object, Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_IfGroup_System_String_System_Object_System_Object_) | Appends an if construct with a content to match if the named group is matched and a content to match if the named group is not matched\. |
 
-## IfGroup\(Int32, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_IfGroup_System_Int32_System_Object_"></a>
+## IfGroup\(Int32, Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_IfGroup_System_Int32_System_Object_"></a>
 
 \
 Appends an if construct with a content to match if the numbered group is matched\.
@@ -48,7 +48,7 @@ The content to be matched if the numbered group is matched\.
 
 **groupNumber** is less than zero\.
 
-## IfGroup\(Int32, Object, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_IfGroup_System_Int32_System_Object_System_Object_"></a>
+## IfGroup\(Int32, Object, Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_IfGroup_System_Int32_System_Object_System_Object_"></a>
 
 \
 Appends an if construct with a content to match if the numbered group is matched and a content to match if the numbered group is not matched\.
@@ -85,7 +85,7 @@ The content to be matched if the numbered group is not matched\.
 
 **groupNumber** is less than zero\.
 
-## IfGroup\(String, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_IfGroup_System_String_System_Object_"></a>
+## IfGroup\(String, Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_IfGroup_System_String_System_Object_"></a>
 
 \
 Appends an if construct with a content to match if the named group is matched\.
@@ -118,7 +118,7 @@ The content to be matched if the named group is matched\.
 
 **groupName** or **trueContent** is `null`\.
 
-## IfGroup\(String, Object, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_IfGroup_System_String_System_Object_System_Object_"></a>
+## IfGroup\(String, Object, Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_IfGroup_System_String_System_Object_System_Object_"></a>
 
 \
 Appends an if construct with a content to match if the named group is matched and a content to match if the named group is not matched\.

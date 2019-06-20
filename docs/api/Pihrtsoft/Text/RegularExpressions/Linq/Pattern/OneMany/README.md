@@ -13,7 +13,7 @@
 | [OneMany(Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_OneMany_System_Object_) | Appends a pattern that matches specified content one or more times\. |
 | [OneMany(Object, Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_OneMany_System_Object_System_Object___) | Appends a pattern that matches any one specified element one or more times\. |
 
-## OneMany\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_OneMany_System_Object_"></a>
+## OneMany\(Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_OneMany_System_Object_"></a>
 
 \
 Appends a pattern that matches specified content one or more times\.
@@ -38,7 +38,7 @@ The content to be matched\.
 
 **content** is `null`\.
 
-## OneMany\(Object, Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_OneMany_System_Object_System_Object___"></a>
+## OneMany\(Object, Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_OneMany_System_Object_System_Object___"></a>
 
 \
 Appends a pattern that matches any one specified element one or more times\.

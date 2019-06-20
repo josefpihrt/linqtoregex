@@ -13,7 +13,7 @@
 | [AnyExceptLinefeed()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AnyExceptLinefeed) | Returns a pattern that matches any character except linefeed\. |
 | [AnyExceptLinefeed(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AnyExceptLinefeed_System_Int32_) | Returns a pattern that matches any character except linefeed specified number of times\. |
 
-## AnyExceptLinefeed\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AnyExceptLinefeed"></a>
+## AnyExceptLinefeed\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AnyExceptLinefeed"></a>
 
 \
 Returns a pattern that matches any character except linefeed\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern AnyExce
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## AnyExceptLinefeed\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AnyExceptLinefeed_System_Int32_"></a>
+## AnyExceptLinefeed\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AnyExceptLinefeed_System_Int32_"></a>
 
 \
 Returns a pattern that matches any character except linefeed specified number of times\.

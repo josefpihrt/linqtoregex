@@ -13,7 +13,7 @@
 | [Percent()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Percent) | Returns a pattern that matches a percent\. |
 | [Percent(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Percent_System_Int32_) | Returns a pattern that matches a specified number of percents\. |
 
-## Percent\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Percent"></a>
+## Percent\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Percent"></a>
 
 \
 Returns a pattern that matches a percent\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Percent()
 
 [CharPattern](../../CharPattern/README.md)
 
-## Percent\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Percent_System_Int32_"></a>
+## Percent\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Percent_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of percents\.

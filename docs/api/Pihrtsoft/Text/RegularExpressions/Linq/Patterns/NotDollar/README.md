@@ -13,7 +13,7 @@
 | [NotDollar()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotDollar) | Returns a pattern that matches a character that is not a dollar\. |
 | [NotDollar(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotDollar_System_Int32_) | Returns a pattern that matches a specified number of characters that are not a dollar\. |
 
-## NotDollar\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotDollar"></a>
+## NotDollar\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotDollar"></a>
 
 \
 Returns a pattern that matches a character that is not a dollar\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotDoll
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotDollar\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotDollar_System_Int32_"></a>
+## NotDollar\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotDollar_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of characters that are not a dollar\.

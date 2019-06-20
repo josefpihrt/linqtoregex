@@ -14,7 +14,7 @@
 | [GroupingPattern(GroupingPattern)](#Pihrtsoft_Text_RegularExpressions_Linq_GroupingPattern__ctor_Pihrtsoft_Text_RegularExpressions_Linq_GroupingPattern_) | Initializes a new instance of the [GroupingPattern](../README.md) class with a specified content\. |
 | [GroupingPattern(Object)](#Pihrtsoft_Text_RegularExpressions_Linq_GroupingPattern__ctor_System_Object_) | Initializes a new instance of the [GroupingPattern](../README.md) class with a specified content\. |
 
-## GroupingPattern\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_GroupingPattern__ctor"></a>
+## GroupingPattern\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_GroupingPattern__ctor"></a>
 
 \
 Initializes a new instance of the [GroupingPattern](../README.md) class\.
@@ -23,7 +23,7 @@ Initializes a new instance of the [GroupingPattern](../README.md) class\.
 protected GroupingPattern()
 ```
 
-## GroupingPattern\(GroupingPattern\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_GroupingPattern__ctor_Pihrtsoft_Text_RegularExpressions_Linq_GroupingPattern_"></a>
+## GroupingPattern\(GroupingPattern\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_GroupingPattern__ctor_Pihrtsoft_Text_RegularExpressions_Linq_GroupingPattern_"></a>
 
 \
 Initializes a new instance of the [GroupingPattern](../README.md) class with a specified content\.
@@ -44,7 +44,7 @@ A content of the grouping\.
 
 **content** is `null`\.
 
-## GroupingPattern\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_GroupingPattern__ctor_System_Object_"></a>
+## GroupingPattern\(Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_GroupingPattern__ctor_System_Object_"></a>
 
 \
 Initializes a new instance of the [GroupingPattern](../README.md) class with a specified content\.

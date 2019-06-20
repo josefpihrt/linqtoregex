@@ -13,7 +13,7 @@
 | [NotApostrophe()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotApostrophe) | Returns a pattern that matches a character that is not an apostrophe\. |
 | [NotApostrophe(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotApostrophe_System_Int32_) | Returns a pattern that matches a specified number of characters that are not an apostrophe\. |
 
-## NotApostrophe\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotApostrophe"></a>
+## NotApostrophe\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotApostrophe"></a>
 
 \
 Returns a pattern that matches a character that is not an apostrophe\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotApos
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotApostrophe\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotApostrophe_System_Int32_"></a>
+## NotApostrophe\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotApostrophe_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of characters that are not an apostrophe\.

@@ -14,7 +14,7 @@
 | [EnumerateCaptures(Match, Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Extensions_MatchExtensions_EnumerateCaptures_System_Text_RegularExpressions_Match_System_Int32_) | Returns an enumerable collection of captures of a group with a specified number that is from a specified match\. |
 | [EnumerateCaptures(Match, String)](#Pihrtsoft_Text_RegularExpressions_Linq_Extensions_MatchExtensions_EnumerateCaptures_System_Text_RegularExpressions_Match_System_String_) | Returns an enumerable collection of captures of a group with a specified name that is from a specified match\. |
 
-## EnumerateCaptures\(Match\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_MatchExtensions_EnumerateCaptures_System_Text_RegularExpressions_Match_"></a>
+## EnumerateCaptures\(Match\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_MatchExtensions_EnumerateCaptures_System_Text_RegularExpressions_Match_"></a>
 
 \
 Enumerates through groups of a specified match and returns each capture from each group\.
@@ -39,7 +39,7 @@ A regular expression match\.
 
 **match** is `null`\.
 
-## EnumerateCaptures\(Match, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_MatchExtensions_EnumerateCaptures_System_Text_RegularExpressions_Match_System_Int32_"></a>
+## EnumerateCaptures\(Match, Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_MatchExtensions_EnumerateCaptures_System_Text_RegularExpressions_Match_System_Int32_"></a>
 
 \
 Returns an enumerable collection of captures of a group with a specified number that is from a specified match\.
@@ -68,7 +68,7 @@ A number of the group\.
 
 **match** is `null`\.
 
-## EnumerateCaptures\(Match, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_MatchExtensions_EnumerateCaptures_System_Text_RegularExpressions_Match_System_String_"></a>
+## EnumerateCaptures\(Match, String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_MatchExtensions_EnumerateCaptures_System_Text_RegularExpressions_Match_System_String_"></a>
 
 \
 Returns an enumerable collection of captures of a group with a specified name that is from a specified match\.

@@ -13,7 +13,7 @@
 | [QuoteMark()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_QuoteMark) | Appends a pattern that matches a quote mark\. |
 | [QuoteMark(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_QuoteMark_System_Int32_) | Appends a pattern that matches a specified number of quote marks\. |
 
-## QuoteMark\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_QuoteMark"></a>
+## QuoteMark\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_QuoteMark"></a>
 
 \
 Appends a pattern that matches a quote mark\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern QuoteMark()
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## QuoteMark\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_QuoteMark_System_Int32_"></a>
+## QuoteMark\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_QuoteMark_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of quote marks\.

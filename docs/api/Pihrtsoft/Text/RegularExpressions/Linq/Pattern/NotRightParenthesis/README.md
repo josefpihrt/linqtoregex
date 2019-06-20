@@ -13,7 +13,7 @@
 | [NotRightParenthesis()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotRightParenthesis) | Appends a pattern that matches a character that is not a right parenthesis\. |
 | [NotRightParenthesis(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotRightParenthesis_System_Int32_) | Appends a pattern that matches a specified number of characters that are not a right parenthesis\. |
 
-## NotRightParenthesis\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotRightParenthesis"></a>
+## NotRightParenthesis\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotRightParenthesis"></a>
 
 \
 Appends a pattern that matches a character that is not a right parenthesis\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotRightParent
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotRightParenthesis\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotRightParenthesis_System_Int32_"></a>
+## NotRightParenthesis\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotRightParenthesis_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of characters that are not a right parenthesis\.

@@ -13,7 +13,7 @@
 | [NotRightCurlyBracket()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotRightCurlyBracket) | Returns a pattern that matches a character that is not a right curly bracket\. |
 | [NotRightCurlyBracket(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotRightCurlyBracket_System_Int32_) | Returns a pattern that matches a specified number of characters that are not a right curly bracket\. |
 
-## NotRightCurlyBracket\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotRightCurlyBracket"></a>
+## NotRightCurlyBracket\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotRightCurlyBracket"></a>
 
 \
 Returns a pattern that matches a character that is not a right curly bracket\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotRigh
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotRightCurlyBracket\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotRightCurlyBracket_System_Int32_"></a>
+## NotRightCurlyBracket\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotRightCurlyBracket_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of characters that are not a right curly bracket\.

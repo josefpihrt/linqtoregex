@@ -16,7 +16,7 @@
 | [Addition(Pattern, String)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_System_String_) | Concatenate two elements into a new [Pattern](../README.md)\. |
 | [Addition(String, Pattern)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_Addition_System_String_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_) | Concatenate two elements into a new [Pattern](../README.md)\. |
 
-## Addition\(Char, Pattern\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_Addition_System_Char_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_"></a>
+## Addition\(Char, Pattern\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_Addition_System_Char_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_"></a>
 
 \
 Concatenate two elements into a new [Pattern](../README.md)\.
@@ -45,7 +45,7 @@ The second element to concatenate\.
 
 **right** is `null`\.
 
-## Addition\(Pattern, Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_System_Char_"></a>
+## Addition\(Pattern, Char\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_System_Char_"></a>
 
 \
 Concatenate two elements into a new [Pattern](../README.md)\.
@@ -74,7 +74,7 @@ The second element to concatenate\.
 
 **left** is `null`\.
 
-## Addition\(Pattern, Pattern\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_"></a>
+## Addition\(Pattern, Pattern\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_"></a>
 
 \
 Concatenate two elements into a new [Pattern](../README.md)\.
@@ -103,7 +103,7 @@ The second element to concatenate\.
 
 **left** or **right** is `null`\.
 
-## Addition\(Pattern, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_System_String_"></a>
+## Addition\(Pattern, String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_System_String_"></a>
 
 \
 Concatenate two elements into a new [Pattern](../README.md)\.
@@ -132,7 +132,7 @@ The second element to concatenate\.
 
 **left** or **right** is `null`\.
 
-## Addition\(String, Pattern\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_Addition_System_String_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_"></a>
+## Addition\(String, Pattern\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_Addition_System_String_Pihrtsoft_Text_RegularExpressions_Linq_Pattern_"></a>
 
 \
 Concatenate two elements into a new [Pattern](../README.md)\.

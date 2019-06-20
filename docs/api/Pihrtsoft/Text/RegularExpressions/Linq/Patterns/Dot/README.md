@@ -13,7 +13,7 @@
 | [Dot()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Dot) | Returns a pattern that matches a dot\. |
 | [Dot(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Dot_System_Int32_) | Returns a pattern that matches a specified number of dots\. |
 
-## Dot\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Dot"></a>
+## Dot\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Dot"></a>
 
 \
 Returns a pattern that matches a dot\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Dot()
 
 [CharPattern](../../CharPattern/README.md)
 
-## Dot\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Dot_System_Int32_"></a>
+## Dot\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Dot_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of dots\.

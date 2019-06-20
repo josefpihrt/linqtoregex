@@ -13,7 +13,7 @@
 | [Asterisk()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Asterisk) | Returns a pattern that matches an asterisk\. |
 | [Asterisk(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Asterisk_System_Int32_) | Returns a pattern that matches a specified number of asterisks\. |
 
-## Asterisk\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Asterisk"></a>
+## Asterisk\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Asterisk"></a>
 
 \
 Returns a pattern that matches an asterisk\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Asterisk()
 
 [CharPattern](../../CharPattern/README.md)
 
-## Asterisk\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Asterisk_System_Int32_"></a>
+## Asterisk\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Asterisk_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of asterisks\.

@@ -13,7 +13,7 @@
 | [Maybe(Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Maybe_System_Object_) | Returns a pattern that matches specified content zero or one time\. |
 | [Maybe(Object, Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Maybe_System_Object_System_Object___) | Returns a pattern that matches any one specified element zero or one time\. |
 
-## Maybe\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Maybe_System_Object_"></a>
+## Maybe\(Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Maybe_System_Object_"></a>
 
 \
 Returns a pattern that matches specified content zero or one time\.
@@ -38,7 +38,7 @@ The content to be matched\.
 
 **content** is `null`\.
 
-## Maybe\(Object, Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Maybe_System_Object_System_Object___"></a>
+## Maybe\(Object, Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Maybe_System_Object_System_Object___"></a>
 
 \
 Returns a pattern that matches any one specified element zero or one time\.

@@ -13,7 +13,7 @@
 | [ArabicDigit()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_ArabicDigit) | Appends a pattern that matches an arabic digit\. |
 | [ArabicDigit(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_ArabicDigit_System_Int32_) | Appends a pattern that matches a specified number of arabic digits\. |
 
-## ArabicDigit\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_ArabicDigit"></a>
+## ArabicDigit\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_ArabicDigit"></a>
 
 \
 Appends a pattern that matches an arabic digit\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern ArabicDigit()
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## ArabicDigit\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_ArabicDigit_System_Int32_"></a>
+## ArabicDigit\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_ArabicDigit_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of arabic digits\.

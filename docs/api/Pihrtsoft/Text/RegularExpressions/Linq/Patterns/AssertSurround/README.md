@@ -13,7 +13,7 @@
 | [AssertSurround(Object, Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AssertSurround_System_Object_System_Object_) | Returns a pattern that matches a specified content with lookbehind assertion on the left side and lookahead assertion on the right side\. |
 | [AssertSurround(Object, Object, Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AssertSurround_System_Object_System_Object_System_Object_) | Returns a pattern that matches a specified content with lookbehind assertion on the left side and lookahead assertion on the right side\. |
 
-## AssertSurround\(Object, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AssertSurround_System_Object_System_Object_"></a>
+## AssertSurround\(Object, Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AssertSurround_System_Object_System_Object_"></a>
 
 \
 Returns a pattern that matches a specified content with lookbehind assertion on the left side and lookahead assertion on the right side\.
@@ -42,7 +42,7 @@ The content to be matched\.
 
 **assertion** **content** is `null`\.
 
-## AssertSurround\(Object, Object, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AssertSurround_System_Object_System_Object_System_Object_"></a>
+## AssertSurround\(Object, Object, Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AssertSurround_System_Object_System_Object_System_Object_"></a>
 
 \
 Returns a pattern that matches a specified content with lookbehind assertion on the left side and lookahead assertion on the right side\.

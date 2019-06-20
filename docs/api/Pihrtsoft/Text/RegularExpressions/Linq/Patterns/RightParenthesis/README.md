@@ -13,7 +13,7 @@
 | [RightParenthesis()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_RightParenthesis) | Returns a pattern that matches a right parenthesis\. |
 | [RightParenthesis(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_RightParenthesis_System_Int32_) | Returns a pattern that matches a specified number of right parentheses\. |
 
-## RightParenthesis\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_RightParenthesis"></a>
+## RightParenthesis\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_RightParenthesis"></a>
 
 \
 Returns a pattern that matches a right parenthesis\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern RightParenthesi
 
 [CharPattern](../../CharPattern/README.md)
 
-## RightParenthesis\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_RightParenthesis_System_Int32_"></a>
+## RightParenthesis\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_RightParenthesis_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of right parentheses\.

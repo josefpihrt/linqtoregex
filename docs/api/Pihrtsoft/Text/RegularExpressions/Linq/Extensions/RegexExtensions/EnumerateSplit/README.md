@@ -17,7 +17,7 @@
 | [EnumerateSplit(Regex, String, Int32, SplitOptions)](#Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSplit_System_Text_RegularExpressions_Regex_System_String_System_Int32_Pihrtsoft_Text_RegularExpressions_Linq_SplitOptions_) | Splits the specified input string a specified number of times at the positions defined by the regular expression into an enumerable collection of strings, using the specified split options\. |
 | [EnumerateSplit(Regex, String, SplitOptions)](#Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSplit_System_Text_RegularExpressions_Regex_System_String_Pihrtsoft_Text_RegularExpressions_Linq_SplitOptions_) | Splits the specified input string at the positions defined by the regular expression into an enumerable collection of strings, using the specified split options\. |
 
-## EnumerateSplit\(Regex, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSplit_System_Text_RegularExpressions_Regex_System_String_"></a>
+## EnumerateSplit\(Regex, String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSplit_System_Text_RegularExpressions_Regex_System_String_"></a>
 
 \
 Splits the specified input string at the positions defined by the regular expression into an enumerable collection of strings\.
@@ -46,7 +46,7 @@ The string to split\.
 
 **regex** or **input** is `null`\.
 
-## EnumerateSplit\(Regex, String, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSplit_System_Text_RegularExpressions_Regex_System_String_System_Int32_"></a>
+## EnumerateSplit\(Regex, String, Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSplit_System_Text_RegularExpressions_Regex_System_String_System_Int32_"></a>
 
 \
 Splits the specified input string a specified number of times at the positions defined by the regular expression into an enumerable collection of strings\.
@@ -83,7 +83,7 @@ The maximum number of times the input can be split\.
 
 **count** is less than zero\.
 
-## EnumerateSplit\(Regex, String, Int32, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSplit_System_Text_RegularExpressions_Regex_System_String_System_Int32_System_Int32_"></a>
+## EnumerateSplit\(Regex, String, Int32, Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSplit_System_Text_RegularExpressions_Regex_System_String_System_Int32_System_Int32_"></a>
 
 \
 Splits the specified input string a specified number of times at the positions defined by the regular expression into an enumerable collection of strings\.
@@ -130,7 +130,7 @@ The position in the input string where the search starts\.
 
 
 
-## EnumerateSplit\(Regex, String, Int32, Int32, SplitOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSplit_System_Text_RegularExpressions_Regex_System_String_System_Int32_System_Int32_Pihrtsoft_Text_RegularExpressions_Linq_SplitOptions_"></a>
+## EnumerateSplit\(Regex, String, Int32, Int32, SplitOptions\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSplit_System_Text_RegularExpressions_Regex_System_String_System_Int32_System_Int32_Pihrtsoft_Text_RegularExpressions_Linq_SplitOptions_"></a>
 
 \
 Splits the specified input string a specified number of times at the positions defined by the regular expression into an enumerable collection of strings, using the specified split options\.
@@ -181,7 +181,7 @@ A bitwise combination of the enumeration values that specify options\.
 
 
 
-## EnumerateSplit\(Regex, String, Int32, SplitOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSplit_System_Text_RegularExpressions_Regex_System_String_System_Int32_Pihrtsoft_Text_RegularExpressions_Linq_SplitOptions_"></a>
+## EnumerateSplit\(Regex, String, Int32, SplitOptions\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSplit_System_Text_RegularExpressions_Regex_System_String_System_Int32_Pihrtsoft_Text_RegularExpressions_Linq_SplitOptions_"></a>
 
 \
 Splits the specified input string a specified number of times at the positions defined by the regular expression into an enumerable collection of strings, using the specified split options\.
@@ -222,7 +222,7 @@ A bitwise combination of the enumeration values that specify options\.
 
 **count** is less than zero\.
 
-## EnumerateSplit\(Regex, String, SplitOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSplit_System_Text_RegularExpressions_Regex_System_String_Pihrtsoft_Text_RegularExpressions_Linq_SplitOptions_"></a>
+## EnumerateSplit\(Regex, String, SplitOptions\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSplit_System_Text_RegularExpressions_Regex_System_String_Pihrtsoft_Text_RegularExpressions_Linq_SplitOptions_"></a>
 
 \
 Splits the specified input string at the positions defined by the regular expression into an enumerable collection of strings, using the specified split options\.

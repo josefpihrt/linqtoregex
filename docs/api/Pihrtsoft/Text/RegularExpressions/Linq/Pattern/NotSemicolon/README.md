@@ -13,7 +13,7 @@
 | [NotSemicolon()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotSemicolon) | Appends a pattern that matches a character that is not a semicolon\. |
 | [NotSemicolon(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotSemicolon_System_Int32_) | Appends a pattern that matches a specified number of characters that are not a semicolon\. |
 
-## NotSemicolon\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotSemicolon"></a>
+## NotSemicolon\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotSemicolon"></a>
 
 \
 Appends a pattern that matches a character that is not a semicolon\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotSemicolon()
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotSemicolon\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotSemicolon_System_Int32_"></a>
+## NotSemicolon\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotSemicolon_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of characters that are not a semicolon\.

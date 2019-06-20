@@ -13,7 +13,7 @@
 | [GroupReference(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_GroupReference_System_Int32_) | Appends a pattern that matches previously defined numbered group\. |
 | [GroupReference(String)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_GroupReference_System_String_) | Appends a pattern that matches previously defined named group\. |
 
-## GroupReference\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_GroupReference_System_Int32_"></a>
+## GroupReference\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_GroupReference_System_Int32_"></a>
 
 \
 Appends a pattern that matches previously defined numbered group\.
@@ -38,7 +38,7 @@ A number of the group\.
 
 **groupNumber** is less than zero\.
 
-## GroupReference\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_GroupReference_System_String_"></a>
+## GroupReference\(String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_GroupReference_System_String_"></a>
 
 \
 Appends a pattern that matches previously defined named group\.

@@ -13,7 +13,7 @@
 | [NotSpace()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotSpace) | Appends a pattern that matches a character that is not a space\. |
 | [NotSpace(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotSpace_System_Int32_) | Appends a pattern that matches a specified number of characters that are not a space\. |
 
-## NotSpace\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotSpace"></a>
+## NotSpace\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotSpace"></a>
 
 \
 Appends a pattern that matches a character that is not a space\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotSpace()
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotSpace\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotSpace_System_Int32_"></a>
+## NotSpace\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotSpace_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of characters that are not a space\.

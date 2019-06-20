@@ -13,7 +13,7 @@
 | [NotAsterisk()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAsterisk) | Returns a pattern that matches a character that is not an asterisk\. |
 | [NotAsterisk(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAsterisk_System_Int32_) | Returns a pattern that matches a specified number of characters that are not an asterisk\. |
 
-## NotAsterisk\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAsterisk"></a>
+## NotAsterisk\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAsterisk"></a>
 
 \
 Returns a pattern that matches a character that is not an asterisk\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotAste
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotAsterisk\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAsterisk_System_Int32_"></a>
+## NotAsterisk\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAsterisk_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of characters that are not an asterisk\.

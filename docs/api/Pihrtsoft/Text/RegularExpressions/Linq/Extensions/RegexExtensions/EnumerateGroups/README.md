@@ -14,7 +14,7 @@
 | [EnumerateGroups(Regex, String, Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateGroups_System_Text_RegularExpressions_Regex_System_String_System_Int32_) | Searches the specified input string and returns enumerable collection of groups that have a specified number\. |
 | [EnumerateGroups(Regex, String, String)](#Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateGroups_System_Text_RegularExpressions_Regex_System_String_System_String_) | Searches the specified input string and returns enumerable collection of groups with a specified name\. |
 
-## EnumerateGroups\(Regex, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateGroups_System_Text_RegularExpressions_Regex_System_String_"></a>
+## EnumerateGroups\(Regex, String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateGroups_System_Text_RegularExpressions_Regex_System_String_"></a>
 
 \
 Searches the specified input string and returns enumerable collection of groups\.
@@ -43,7 +43,7 @@ The string to search for a match\.
 
 **regex** or **input** is `null`\.
 
-## EnumerateGroups\(Regex, String, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateGroups_System_Text_RegularExpressions_Regex_System_String_System_Int32_"></a>
+## EnumerateGroups\(Regex, String, Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateGroups_System_Text_RegularExpressions_Regex_System_String_System_Int32_"></a>
 
 \
 Searches the specified input string and returns enumerable collection of groups that have a specified number\.
@@ -76,7 +76,7 @@ A number of the group\.
 
 **regex** or **input** is `null`\.
 
-## EnumerateGroups\(Regex, String, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateGroups_System_Text_RegularExpressions_Regex_System_String_System_String_"></a>
+## EnumerateGroups\(Regex, String, String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateGroups_System_Text_RegularExpressions_Regex_System_String_System_String_"></a>
 
 \
 Searches the specified input string and returns enumerable collection of groups with a specified name\.

@@ -13,7 +13,7 @@
 | [Tab()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Tab) | Appends a pattern that matches a tab\. |
 | [Tab(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Tab_System_Int32_) | Appends a pattern that matches a specified number of tabs\. |
 
-## Tab\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Tab"></a>
+## Tab\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Tab"></a>
 
 \
 Appends a pattern that matches a tab\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Tab()
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## Tab\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Tab_System_Int32_"></a>
+## Tab\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Tab_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of tabs\.

@@ -13,7 +13,7 @@
 | [Tilde()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Tilde) | Appends a pattern that matches a tilde\. |
 | [Tilde(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Tilde_System_Int32_) | Appends a pattern that matches a specified number of tildes\. |
 
-## Tilde\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Tilde"></a>
+## Tilde\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Tilde"></a>
 
 \
 Appends a pattern that matches a tilde\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Tilde()
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## Tilde\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Tilde_System_Int32_"></a>
+## Tilde\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Tilde_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of tildes\.

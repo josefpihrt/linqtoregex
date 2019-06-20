@@ -13,7 +13,7 @@
 | [AssertBack(Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AssertBack_System_Object_) | Returns a zero\-width positive lookbehind assertion with a specified content to be matched\. |
 | [AssertBack(Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AssertBack_System_Object___) | Returns a zero\-width positive lookbehind assertion that matches any one pattern specified in the object array\. |
 
-## AssertBack\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AssertBack_System_Object_"></a>
+## AssertBack\(Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AssertBack_System_Object_"></a>
 
 \
 Returns a zero\-width positive lookbehind assertion with a specified content to be matched\.
@@ -38,7 +38,7 @@ A content to be matched\.
 
 **content** is `null`\.
 
-## AssertBack\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AssertBack_System_Object___"></a>
+## AssertBack\(Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AssertBack_System_Object___"></a>
 
 \
 Returns a zero\-width positive lookbehind assertion that matches any one pattern specified in the object array\.

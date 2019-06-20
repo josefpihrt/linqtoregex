@@ -13,7 +13,7 @@
 | [NotSquareBracket()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotSquareBracket) | Appends a pattern that matches a character that is neither left nor right square bracket\. |
 | [NotSquareBracket(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotSquareBracket_System_Int32_) | Appends a pattern that matches a character that is neither left nor right square bracket specified number of times\. |
 
-## NotSquareBracket\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotSquareBracket"></a>
+## NotSquareBracket\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotSquareBracket"></a>
 
 \
 Appends a pattern that matches a character that is neither left nor right square bracket\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotSquareBracket()
 
 [CharGroup](../../CharGroup/README.md)
 
-## NotSquareBracket\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotSquareBracket_System_Int32_"></a>
+## NotSquareBracket\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotSquareBracket_System_Int32_"></a>
 
 \
 Appends a pattern that matches a character that is neither left nor right square bracket specified number of times\.

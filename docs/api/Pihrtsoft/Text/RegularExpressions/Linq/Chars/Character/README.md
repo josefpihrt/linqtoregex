@@ -16,7 +16,7 @@
 | [Character(NamedBlock)](#Pihrtsoft_Text_RegularExpressions_Linq_Chars_Character_Pihrtsoft_Text_RegularExpressions_Linq_NamedBlock_) | Returns a pattern that matches a character from the specified Unicode block\. |
 | [Character(String)](#Pihrtsoft_Text_RegularExpressions_Linq_Chars_Character_System_String_) | Returns a pattern that matches any one of the specified characters\. |
 
-## Character\(AsciiChar\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Chars_Character_Pihrtsoft_Text_RegularExpressions_Linq_AsciiChar_"></a>
+## Character\(AsciiChar\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Chars_Character_Pihrtsoft_Text_RegularExpressions_Linq_AsciiChar_"></a>
 
 \
 Returns a pattern that matches specified Unicode character\.
@@ -35,7 +35,7 @@ An enumerated constant that identifies ASCII character\.
 
 [CharGrouping](../../CharGrouping/README.md)
 
-## Character\(GeneralCategory\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Chars_Character_Pihrtsoft_Text_RegularExpressions_Linq_GeneralCategory_"></a>
+## Character\(GeneralCategory\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Chars_Character_Pihrtsoft_Text_RegularExpressions_Linq_GeneralCategory_"></a>
 
 \
 Returns a pattern that matches a character from the specified Unicode category\.
@@ -54,7 +54,7 @@ An enumerated constant that identifies Unicode category\.
 
 [CharGrouping](../../CharGrouping/README.md)
 
-## Character\(Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Chars_Character_System_Char_"></a>
+## Character\(Char\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Chars_Character_System_Char_"></a>
 
 \
 Returns a pattern that matches specified Unicode character\.
@@ -73,7 +73,7 @@ A Unicode character\.
 
 [CharGrouping](../../CharGrouping/README.md)
 
-## Character\(NamedBlock\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Chars_Character_Pihrtsoft_Text_RegularExpressions_Linq_NamedBlock_"></a>
+## Character\(NamedBlock\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Chars_Character_Pihrtsoft_Text_RegularExpressions_Linq_NamedBlock_"></a>
 
 \
 Returns a pattern that matches a character from the specified Unicode block\.
@@ -92,7 +92,7 @@ An enumerated constant that identifies Unicode block\.
 
 [CharGrouping](../../CharGrouping/README.md)
 
-## Character\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Chars_Character_System_String_"></a>
+## Character\(String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Chars_Character_System_String_"></a>
 
 \
 Returns a pattern that matches any one of the specified characters\.

@@ -13,7 +13,7 @@
 | [Text(String)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Text_System_String_) | Appends a pattern that matches a specified text\. |
 | [Text(String, Boolean)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Text_System_String_System_Boolean_) | Appends a pattern that matches a specified text, ignoring or honoring its case\. |
 
-## Text\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Text_System_String_"></a>
+## Text\(String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Text_System_String_"></a>
 
 \
 Appends a pattern that matches a specified text\.
@@ -32,7 +32,7 @@ A text to append\.
 
 [Pattern](../README.md)
 
-## Text\(String, Boolean\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Text_System_String_System_Boolean_"></a>
+## Text\(String, Boolean\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Text_System_String_System_Boolean_"></a>
 
 \
 Appends a pattern that matches a specified text, ignoring or honoring its case\.

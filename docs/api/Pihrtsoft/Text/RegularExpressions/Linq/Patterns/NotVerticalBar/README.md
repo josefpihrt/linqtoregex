@@ -13,7 +13,7 @@
 | [NotVerticalBar()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotVerticalBar) | Returns a pattern that matches a character that is not a vertical bar\. |
 | [NotVerticalBar(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotVerticalBar_System_Int32_) | Returns a pattern that matches a specified number of characters that are not a vertical bar\. |
 
-## NotVerticalBar\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotVerticalBar"></a>
+## NotVerticalBar\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotVerticalBar"></a>
 
 \
 Returns a pattern that matches a character that is not a vertical bar\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotVert
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotVerticalBar\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotVerticalBar_System_Int32_"></a>
+## NotVerticalBar\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotVerticalBar_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of characters that are not a vertical bar\.

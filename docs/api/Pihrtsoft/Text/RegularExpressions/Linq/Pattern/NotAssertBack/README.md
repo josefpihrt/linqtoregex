@@ -13,7 +13,7 @@
 | [NotAssertBack(Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotAssertBack_System_Object_) | Appends a zero\-width negative lookbehind assertion with a specified content not to be matched\. |
 | [NotAssertBack(Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotAssertBack_System_Object___) | Appends a zero\-width negative lookbehind assertion that matches none of patterns specified in the object array\. |
 
-## NotAssertBack\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotAssertBack_System_Object_"></a>
+## NotAssertBack\(Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotAssertBack_System_Object_"></a>
 
 \
 Appends a zero\-width negative lookbehind assertion with a specified content not to be matched\.
@@ -38,7 +38,7 @@ A content not to be matched\.
 
 **content** is `null`\.
 
-## NotAssertBack\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotAssertBack_System_Object___"></a>
+## NotAssertBack\(Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotAssertBack_System_Object___"></a>
 
 \
 Appends a zero\-width negative lookbehind assertion that matches none of patterns specified in the object array\.

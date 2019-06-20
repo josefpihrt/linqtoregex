@@ -13,7 +13,7 @@
 | [Digit()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Digit) | Returns a pattern that matches a digit character\. |
 | [Digit(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Digit_System_Int32_) | Returns a pattern that matches a specified number of digit characters\. |
 
-## Digit\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Digit"></a>
+## Digit\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Digit"></a>
 
 \
 Returns a pattern that matches a digit character\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Digit()
 
 [CharPattern](../../CharPattern/README.md)
 
-## Digit\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Digit_System_Int32_"></a>
+## Digit\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Digit_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of digit characters\.

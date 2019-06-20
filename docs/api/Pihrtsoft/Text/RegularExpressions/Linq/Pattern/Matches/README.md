@@ -13,7 +13,7 @@
 | [Matches(String)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Matches_System_String_) | Searches the specified input string for all matches\. |
 | [Matches(String, RegexOptions)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Matches_System_String_System_Text_RegularExpressions_RegexOptions_) | Searches the specified input string for all matches, using the specified matching options\. |
 
-## Matches\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Matches_System_String_"></a>
+## Matches\(String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Matches_System_String_"></a>
 
 \
 Searches the specified input string for all matches\.
@@ -38,7 +38,7 @@ The string to search for a match\.
 
 **input** is `null`\.
 
-## Matches\(String, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Matches_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
+## Matches\(String, RegexOptions\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Matches_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
 
 \
 Searches the specified input string for all matches, using the specified matching options\.

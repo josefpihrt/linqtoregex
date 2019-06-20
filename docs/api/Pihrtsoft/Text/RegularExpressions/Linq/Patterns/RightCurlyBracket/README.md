@@ -13,7 +13,7 @@
 | [RightCurlyBracket()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_RightCurlyBracket) | Returns a pattern that matches a right curly bracket\. |
 | [RightCurlyBracket(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_RightCurlyBracket_System_Int32_) | Returns a pattern that matches a specified number of right curly brackets\. |
 
-## RightCurlyBracket\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_RightCurlyBracket"></a>
+## RightCurlyBracket\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_RightCurlyBracket"></a>
 
 \
 Returns a pattern that matches a right curly bracket\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern RightCurlyBrack
 
 [CharPattern](../../CharPattern/README.md)
 
-## RightCurlyBracket\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_RightCurlyBracket_System_Int32_"></a>
+## RightCurlyBracket\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_RightCurlyBracket_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of right curly brackets\.

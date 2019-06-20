@@ -13,7 +13,7 @@
 | [ExclamationMark()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_ExclamationMark) | Appends a pattern that matches an exclamation mark\. |
 | [ExclamationMark(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_ExclamationMark_System_Int32_) | Appends a pattern that matches a specified number of exclamation marks\. |
 
-## ExclamationMark\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_ExclamationMark"></a>
+## ExclamationMark\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_ExclamationMark"></a>
 
 \
 Appends a pattern that matches an exclamation mark\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern ExclamationMar
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## ExclamationMark\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_ExclamationMark_System_Int32_"></a>
+## ExclamationMark\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_ExclamationMark_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of exclamation marks\.

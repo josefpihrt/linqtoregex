@@ -14,7 +14,7 @@
 | [EnumerateSuccessGroups(IEnumerable\<Match>, Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Extensions_EnumerableExtensions_EnumerateSuccessGroups_System_Collections_Generic_IEnumerable_System_Text_RegularExpressions_Match__System_Int32_) | Returns an enumerable collection of groups that have a specified name and have at least one capture\. |
 | [EnumerateSuccessGroups(IEnumerable\<Match>, String)](#Pihrtsoft_Text_RegularExpressions_Linq_Extensions_EnumerableExtensions_EnumerateSuccessGroups_System_Collections_Generic_IEnumerable_System_Text_RegularExpressions_Match__System_String_) | Returns an enumerable collection of groups thas have a specified name and have at least one capture\. |
 
-## EnumerateSuccessGroups\(IEnumerable\<Match>\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_EnumerableExtensions_EnumerateSuccessGroups_System_Collections_Generic_IEnumerable_System_Text_RegularExpressions_Match__"></a>
+## EnumerateSuccessGroups\(IEnumerable\<Match>\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_EnumerableExtensions_EnumerateSuccessGroups_System_Collections_Generic_IEnumerable_System_Text_RegularExpressions_Match__"></a>
 
 \
 Returns an enumerable collection of groups that have at least one capture\.
@@ -39,7 +39,7 @@ The sequence to enumerate\.
 
 **matches** is `null`\.
 
-## EnumerateSuccessGroups\(IEnumerable\<Match>, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_EnumerableExtensions_EnumerateSuccessGroups_System_Collections_Generic_IEnumerable_System_Text_RegularExpressions_Match__System_Int32_"></a>
+## EnumerateSuccessGroups\(IEnumerable\<Match>, Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_EnumerableExtensions_EnumerateSuccessGroups_System_Collections_Generic_IEnumerable_System_Text_RegularExpressions_Match__System_Int32_"></a>
 
 \
 Returns an enumerable collection of groups that have a specified name and have at least one capture\.
@@ -68,7 +68,7 @@ A number of the group\.
 
 **matches** is `null`\.
 
-## EnumerateSuccessGroups\(IEnumerable\<Match>, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_EnumerableExtensions_EnumerateSuccessGroups_System_Collections_Generic_IEnumerable_System_Text_RegularExpressions_Match__System_String_"></a>
+## EnumerateSuccessGroups\(IEnumerable\<Match>, String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_EnumerableExtensions_EnumerateSuccessGroups_System_Collections_Generic_IEnumerable_System_Text_RegularExpressions_Match__System_String_"></a>
 
 \
 Returns an enumerable collection of groups thas have a specified name and have at least one capture\.

@@ -13,7 +13,7 @@
 | [RightSquareBracket()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_RightSquareBracket) | Returns a pattern that matches a right square bracket\. |
 | [RightSquareBracket(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_RightSquareBracket_System_Int32_) | Returns a pattern that matches a specified number of right square brackets\. |
 
-## RightSquareBracket\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_RightSquareBracket"></a>
+## RightSquareBracket\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_RightSquareBracket"></a>
 
 \
 Returns a pattern that matches a right square bracket\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern RightSquareBrac
 
 [CharPattern](../../CharPattern/README.md)
 
-## RightSquareBracket\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_RightSquareBracket_System_Int32_"></a>
+## RightSquareBracket\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_RightSquareBracket_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of right square brackets\.

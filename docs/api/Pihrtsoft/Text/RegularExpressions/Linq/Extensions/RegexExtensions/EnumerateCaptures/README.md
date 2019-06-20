@@ -14,7 +14,7 @@
 | [EnumerateCaptures(Regex, String, Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateCaptures_System_Text_RegularExpressions_Regex_System_String_System_Int32_) | Searches the specified input string and returns enumerable collection of captures from groups that have a specified number\. |
 | [EnumerateCaptures(Regex, String, String)](#Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateCaptures_System_Text_RegularExpressions_Regex_System_String_System_String_) | Searches the specified input string and returns enumerable collection of captures from groups that have a specified name\. |
 
-## EnumerateCaptures\(Regex, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateCaptures_System_Text_RegularExpressions_Regex_System_String_"></a>
+## EnumerateCaptures\(Regex, String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateCaptures_System_Text_RegularExpressions_Regex_System_String_"></a>
 
 \
 Searches the specified input string and returns enumerable collection of captures\.
@@ -43,7 +43,7 @@ The string to search for a match\.
 
 **regex** or **input** is `null`\.
 
-## EnumerateCaptures\(Regex, String, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateCaptures_System_Text_RegularExpressions_Regex_System_String_System_Int32_"></a>
+## EnumerateCaptures\(Regex, String, Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateCaptures_System_Text_RegularExpressions_Regex_System_String_System_Int32_"></a>
 
 \
 Searches the specified input string and returns enumerable collection of captures from groups that have a specified number\.
@@ -76,7 +76,7 @@ A number of the group\.
 
 **regex** or **input** is `null`\.
 
-## EnumerateCaptures\(Regex, String, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateCaptures_System_Text_RegularExpressions_Regex_System_String_System_String_"></a>
+## EnumerateCaptures\(Regex, String, String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateCaptures_System_Text_RegularExpressions_Regex_System_String_System_String_"></a>
 
 \
 Searches the specified input string and returns enumerable collection of captures from groups that have a specified name\.

@@ -13,7 +13,7 @@
 | [Apostrophe()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Apostrophe) | Appends a pattern that matches an apostrophe\. |
 | [Apostrophe(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Apostrophe_System_Int32_) | Appends a pattern that matches a specified number of apostrophes\. |
 
-## Apostrophe\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Apostrophe"></a>
+## Apostrophe\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Apostrophe"></a>
 
 \
 Appends a pattern that matches an apostrophe\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Apostrophe()
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## Apostrophe\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Apostrophe_System_Int32_"></a>
+## Apostrophe\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Apostrophe_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of apostrophes\.

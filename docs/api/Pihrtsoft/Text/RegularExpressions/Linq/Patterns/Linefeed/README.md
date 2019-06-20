@@ -13,7 +13,7 @@
 | [Linefeed()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Linefeed) | Returns a pattern that matches a linefeed\. |
 | [Linefeed(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Linefeed_System_Int32_) | Returns a pattern that matches a specified number of linefeeds\. |
 
-## Linefeed\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Linefeed"></a>
+## Linefeed\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Linefeed"></a>
 
 \
 Returns a pattern that matches a linefeed\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Linefeed()
 
 [CharPattern](../../CharPattern/README.md)
 
-## Linefeed\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Linefeed_System_Int32_"></a>
+## Linefeed\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Linefeed_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of linefeeds\.

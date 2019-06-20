@@ -13,7 +13,7 @@
 | [Group(Match, Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Extensions_MatchExtensions_Group_System_Text_RegularExpressions_Match_System_Int32_) | Returns a group that has a specified number and it is contained in a specified match\. |
 | [Group(Match, String)](#Pihrtsoft_Text_RegularExpressions_Linq_Extensions_MatchExtensions_Group_System_Text_RegularExpressions_Match_System_String_) | Returns a group that has a specified name and it is contained in a specified match\. |
 
-## Group\(Match, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_MatchExtensions_Group_System_Text_RegularExpressions_Match_System_Int32_"></a>
+## Group\(Match, Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_MatchExtensions_Group_System_Text_RegularExpressions_Match_System_Int32_"></a>
 
 \
 Returns a group that has a specified number and it is contained in a specified match\.
@@ -42,7 +42,7 @@ A number of the group\.
 
 **match** is `null`\.
 
-## Group\(Match, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_MatchExtensions_Group_System_Text_RegularExpressions_Match_System_String_"></a>
+## Group\(Match, String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_MatchExtensions_Group_System_Text_RegularExpressions_Match_System_String_"></a>
 
 \
 Returns a group that has a specified name and it is contained in a specified match\.

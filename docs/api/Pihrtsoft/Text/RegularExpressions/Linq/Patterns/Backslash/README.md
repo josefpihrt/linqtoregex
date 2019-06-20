@@ -13,7 +13,7 @@
 | [Backslash()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Backslash) | Returns a pattern that matches a backslash\. |
 | [Backslash(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Backslash_System_Int32_) | Returns a pattern that matches a specified number of backslashes\. |
 
-## Backslash\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Backslash"></a>
+## Backslash\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Backslash"></a>
 
 \
 Returns a pattern that matches a backslash\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Backslash()
 
 [CharPattern](../../CharPattern/README.md)
 
-## Backslash\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Backslash_System_Int32_"></a>
+## Backslash\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Backslash_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of backslashes\.

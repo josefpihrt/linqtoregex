@@ -13,7 +13,7 @@
 | [Linefeed()](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Linefeed) | Appends a pattern that matches a linefeed\. |
 | [Linefeed(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Linefeed_System_Int32_) | Appends a pattern that matches a specified number of linefeeds\. |
 
-## Linefeed\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Linefeed"></a>
+## Linefeed\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Linefeed"></a>
 
 \
 Appends a pattern that matches a linefeed\.
@@ -26,7 +26,7 @@ public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Linefeed()
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## Linefeed\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Linefeed_System_Int32_"></a>
+## Linefeed\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Linefeed_System_Int32_"></a>
 
 \
 Appends a pattern that matches a specified number of linefeeds\.

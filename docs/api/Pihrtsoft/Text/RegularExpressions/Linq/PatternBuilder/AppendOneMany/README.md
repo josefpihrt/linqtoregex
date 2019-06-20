@@ -13,7 +13,7 @@
 | [AppendOneMany()](#Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendOneMany) | Appends a quantifier that matches previous element one or more times\. |
 | [AppendOneMany(Boolean)](#Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendOneMany_System_Boolean_) | Appends a quantifier that matches previous element one or more times\. |
 
-## AppendOneMany\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendOneMany"></a>
+## AppendOneMany\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendOneMany"></a>
 
 \
 Appends a quantifier that matches previous element one or more times\.
@@ -22,7 +22,7 @@ Appends a quantifier that matches previous element one or more times\.
 public void AppendOneMany()
 ```
 
-## AppendOneMany\(Boolean\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendOneMany_System_Boolean_"></a>
+## AppendOneMany\(Boolean\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendOneMany_System_Boolean_"></a>
 
 \
 Appends a quantifier that matches previous element one or more times\.

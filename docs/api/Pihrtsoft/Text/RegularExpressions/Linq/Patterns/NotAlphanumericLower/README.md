@@ -13,7 +13,7 @@
 | [NotAlphanumericLower()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAlphanumericLower) | Returns a pattern that matches a character that is not a lower\-case alphanumeric character\. Alphanumeric character is a latin alphabet lower\-case letter or an arabic digit\. |
 | [NotAlphanumericLower(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAlphanumericLower_System_Int32_) | Returns a pattern that matches a character that is not a lower\-case alphanumeric character specified number of times\. Alphanumeric character is a latin alphabet lower\-case letter or an arabic digit\. |
 
-## NotAlphanumericLower\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAlphanumericLower"></a>
+## NotAlphanumericLower\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAlphanumericLower"></a>
 
 \
 Returns a pattern that matches a character that is not a lower\-case alphanumeric character\. Alphanumeric character is a latin alphabet lower\-case letter or an arabic digit\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotAlph
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotAlphanumericLower\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAlphanumericLower_System_Int32_"></a>
+## NotAlphanumericLower\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotAlphanumericLower_System_Int32_"></a>
 
 \
 Returns a pattern that matches a character that is not a lower\-case alphanumeric character specified number of times\. Alphanumeric character is a latin alphabet lower\-case letter or an arabic digit\.

@@ -13,7 +13,7 @@
 | [Explicit(Char to CharGrouping)](#Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Explicit_System_Char__Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping) | Converts specified character to an instance of the [CharGrouping](../README.md) class\. |
 | [Explicit(String to CharGrouping)](#Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Explicit_System_String__Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping) | Converts specified characters to an instance of the [CharGrouping](../README.md) class\. |
 
-## Explicit\(Char to CharGrouping\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Explicit_System_Char__Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping"></a>
+## Explicit\(Char to CharGrouping\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Explicit_System_Char__Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping"></a>
 
 \
 Converts specified character to an instance of the [CharGrouping](../README.md) class\.
@@ -32,7 +32,7 @@ A Unicode character\.
 
 [CharGrouping](../README.md)
 
-## Explicit\(String to CharGrouping\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Explicit_System_String__Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping"></a>
+## Explicit\(String to CharGrouping\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Explicit_System_String__Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping"></a>
 
 \
 Converts specified characters to an instance of the [CharGrouping](../README.md) class\.

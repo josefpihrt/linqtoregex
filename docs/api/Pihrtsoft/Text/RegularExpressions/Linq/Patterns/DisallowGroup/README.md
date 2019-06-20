@@ -13,7 +13,7 @@
 | [DisallowGroup(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_DisallowGroup_System_Int32_) | Returns a pattern that requires previously defined group with a specified number not to be matched\. Otherwise, a match will fail\. |
 | [DisallowGroup(String)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_DisallowGroup_System_String_) | Returns a pattern that requires previously defined group with a specified name not to be matched\. Otherwise, a match will fail\. |
 
-## DisallowGroup\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_DisallowGroup_System_Int32_"></a>
+## DisallowGroup\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_DisallowGroup_System_Int32_"></a>
 
 \
 Returns a pattern that requires previously defined group with a specified number not to be matched\. Otherwise, a match will fail\.
@@ -38,7 +38,7 @@ A number of the group\.
 
 **groupNumber** is less than zero\.
 
-## DisallowGroup\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_DisallowGroup_System_String_"></a>
+## DisallowGroup\(String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_DisallowGroup_System_String_"></a>
 
 \
 Returns a pattern that requires previously defined group with a specified name not to be matched\. Otherwise, a match will fail\.

@@ -14,7 +14,7 @@
 | [Group(Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Group_System_Object_) | Returns a numbered group with a specified content\. |
 | [Group(Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Group_System_Object___) | Returns a numbered group with a specified content\. |
 
-## Group\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Group"></a>
+## Group\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Group"></a>
 
 \
 Returns an empty numbered group\.
@@ -27,7 +27,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Group()
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## Group\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Group_System_Object_"></a>
+## Group\(Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Group_System_Object_"></a>
 
 \
 Returns a numbered group with a specified content\.
@@ -52,7 +52,7 @@ The content to be matched\.
 
 **content** is `null`\.
 
-## Group\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Group_System_Object___"></a>
+## Group\(Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Group_System_Object___"></a>
 
 \
 Returns a numbered group with a specified content\.

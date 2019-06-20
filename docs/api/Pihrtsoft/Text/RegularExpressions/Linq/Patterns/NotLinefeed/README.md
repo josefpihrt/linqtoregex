@@ -13,7 +13,7 @@
 | [NotLinefeed()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotLinefeed) | Returns a pattern that matches a character that is not a linefeed\. |
 | [NotLinefeed(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotLinefeed_System_Int32_) | Returns a pattern that matches a specified number of characters that are not a linefeed\. |
 
-## NotLinefeed\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotLinefeed"></a>
+## NotLinefeed\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotLinefeed"></a>
 
 \
 Returns a pattern that matches a character that is not a linefeed\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotLine
 
 [QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotLinefeed\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotLinefeed_System_Int32_"></a>
+## NotLinefeed\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotLinefeed_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of characters that are not a linefeed\.

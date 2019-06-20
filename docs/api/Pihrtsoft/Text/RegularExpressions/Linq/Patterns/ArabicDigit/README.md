@@ -13,7 +13,7 @@
 | [ArabicDigit()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_ArabicDigit) | Returns a pattern that matches an arabic digit\. |
 | [ArabicDigit(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_ArabicDigit_System_Int32_) | Returns a pattern that matches a specified number of arabic digits\. |
 
-## ArabicDigit\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_ArabicDigit"></a>
+## ArabicDigit\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_ArabicDigit"></a>
 
 \
 Returns a pattern that matches an arabic digit\.
@@ -26,7 +26,7 @@ public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup ArabicDigit()
 
 [CharGroup](../../CharGroup/README.md)
 
-## ArabicDigit\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_ArabicDigit_System_Int32_"></a>
+## ArabicDigit\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_ArabicDigit_System_Int32_"></a>
 
 \
 Returns a pattern that matches a specified number of arabic digits\.

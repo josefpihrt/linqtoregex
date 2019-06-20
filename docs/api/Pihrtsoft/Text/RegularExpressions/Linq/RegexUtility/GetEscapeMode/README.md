@@ -13,7 +13,7 @@
 | [GetEscapeMode(Char)](#Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_GetEscapeMode_System_Char_) | Gets a value indicating how a specified character is represented in the regular expression pattern\. |
 | [GetEscapeMode(Char, Boolean)](#Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_GetEscapeMode_System_Char_System_Boolean_) | Gets a value indicating how a specified character is represented in the regular expression pattern, specifying whether the character is inside or outside of the character group\. |
 
-## GetEscapeMode\(Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_GetEscapeMode_System_Char_"></a>
+## GetEscapeMode\(Char\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_GetEscapeMode_System_Char_"></a>
 
 \
 Gets a value indicating how a specified character is represented in the regular expression pattern\.
@@ -32,7 +32,7 @@ A Unicode character\.
 
 [CharEscapeMode](../../CharEscapeMode/README.md)
 
-## GetEscapeMode\(Char, Boolean\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_GetEscapeMode_System_Char_System_Boolean_"></a>
+## GetEscapeMode\(Char, Boolean\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_GetEscapeMode_System_Char_System_Boolean_"></a>
 
 \
 Gets a value indicating how a specified character is represented in the regular expression pattern, specifying whether the character is inside or outside of the character group\.
