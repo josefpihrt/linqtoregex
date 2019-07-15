@@ -2,25 +2,24 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+**Containing Type**: [Pattern](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Appends a pattern that matches a specified content\.
 
 ```csharp
-public Pattern Append(object content)
+public Pihrtsoft.Text.RegularExpressions.Linq.Pattern Append(object content)
 ```
 
 ### Parameters
 
-**content**
+**content** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+[Pattern](../README.md)
 

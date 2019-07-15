@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+**Containing Type**: [Pattern](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -17,187 +17,181 @@
 | [EnumerateGroups(String, String)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateGroups_System_String_System_String_) | Searches the specified input string and returns an enumerable collection of groups with a specified name\. |
 | [EnumerateGroups(String, String, RegexOptions)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateGroups_System_String_System_String_System_Text_RegularExpressions_RegexOptions_) | Searches the specified input string and returns an enumerable collection of groups with a specified name, using the specified matching options\. |
 
-## EnumerateGroups\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateGroups_System_String_"></a>
+## EnumerateGroups\(String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateGroups_System_String_"></a>
 
-### Summary
-
+\
 Searches the specified input string and returns an enumerable collection of groups\.
 
 ```csharp
-public IEnumerable<Group> EnumerateGroups(string input)
+public System.Collections.Generic.IEnumerable<System.Text.RegularExpressions.Group> EnumerateGroups(string input)
 ```
 
 ### Parameters
 
-**input**
+**input** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)>
+[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)>
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **input** is `null`\.
 
-## EnumerateGroups\(String, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateGroups_System_String_System_Int32_"></a>
+## EnumerateGroups\(String, Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateGroups_System_String_System_Int32_"></a>
 
-### Summary
-
+\
 Searches the specified input string and returns an enumerable collection of groups with a specified number\.
 
 ```csharp
-public IEnumerable<Group> EnumerateGroups(string input, int groupNumber)
+public System.Collections.Generic.IEnumerable<System.Text.RegularExpressions.Group> EnumerateGroups(string input, int groupNumber)
 ```
 
 ### Parameters
 
-**input**
+**input** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
-**groupNumber**
+**groupNumber** &ensp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A valid number of the group\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)>
+[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)>
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **input** is `null`\.
 
-## EnumerateGroups\(String, Int32, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateGroups_System_String_System_Int32_System_Text_RegularExpressions_RegexOptions_"></a>
+## EnumerateGroups\(String, Int32, RegexOptions\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateGroups_System_String_System_Int32_System_Text_RegularExpressions_RegexOptions_"></a>
 
-### Summary
-
+\
 Searches the specified input string and returns an enumerable collection of groups with a specified number, using the specified matching options\.
 
 ```csharp
-public IEnumerable<Group> EnumerateGroups(string input, int groupNumber, RegexOptions options)
+public System.Collections.Generic.IEnumerable<System.Text.RegularExpressions.Group> EnumerateGroups(string input, int groupNumber, System.Text.RegularExpressions.RegexOptions options)
 ```
 
 ### Parameters
 
-**input**
+**input** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
-**groupNumber**
+**groupNumber** &ensp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A valid number of the group\.
 
-**options**
+**options** &ensp; [RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that specify options for matching\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)>
+[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)>
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **input** is `null`\.
 
-## EnumerateGroups\(String, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateGroups_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
+## EnumerateGroups\(String, RegexOptions\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateGroups_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
 
-### Summary
-
+\
 Searches the specified input string and returns an enumerable collection of groups, using the specified matching options\.
 
 ```csharp
-public IEnumerable<Group> EnumerateGroups(string input, RegexOptions options)
+public System.Collections.Generic.IEnumerable<System.Text.RegularExpressions.Group> EnumerateGroups(string input, System.Text.RegularExpressions.RegexOptions options)
 ```
 
 ### Parameters
 
-**input**
+**input** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
-**options**
+**options** &ensp; [RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that specify options for matching\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)>
+[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)>
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **input** is `null`\.
 
-## EnumerateGroups\(String, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateGroups_System_String_System_String_"></a>
+## EnumerateGroups\(String, String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateGroups_System_String_System_String_"></a>
 
-### Summary
-
+\
 Searches the specified input string and returns an enumerable collection of groups with a specified name\.
 
 ```csharp
-public IEnumerable<Group> EnumerateGroups(string input, string groupName)
+public System.Collections.Generic.IEnumerable<System.Text.RegularExpressions.Group> EnumerateGroups(string input, string groupName)
 ```
 
 ### Parameters
 
-**input**
+**input** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
-**groupName**
+**groupName** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A name of the group\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)>
+[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)>
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **input** or **groupName** is `null`\.
 
-## EnumerateGroups\(String, String, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateGroups_System_String_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
+## EnumerateGroups\(String, String, RegexOptions\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_EnumerateGroups_System_String_System_String_System_Text_RegularExpressions_RegexOptions_"></a>
 
-### Summary
-
+\
 Searches the specified input string and returns an enumerable collection of groups with a specified name, using the specified matching options\.
 
 ```csharp
-public IEnumerable<Group> EnumerateGroups(string input, string groupName, RegexOptions options)
+public System.Collections.Generic.IEnumerable<System.Text.RegularExpressions.Group> EnumerateGroups(string input, string groupName, System.Text.RegularExpressions.RegexOptions options)
 ```
 
 ### Parameters
 
-**input**
+**input** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to search for a match\.
 
-**groupName**
+**groupName** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A name of the group\.
 
-**options**
+**options** &ensp; [RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that specify options for matching\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)>
+[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)>
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **input** or **groupName** is `null`\.
 

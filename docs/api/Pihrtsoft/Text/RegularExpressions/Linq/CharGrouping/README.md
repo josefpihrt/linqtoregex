@@ -6,13 +6,12 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Represents an immutable content of the character group\. Content can be a base group or an excluded group\. This class is abstract\.
 
 ```csharp
-public abstract class CharGrouping : IBaseGroup,
-    IExcludedGroup
+public abstract class CharGrouping : Pihrtsoft.Text.RegularExpressions.Linq.IBaseGroup,
+    Pihrtsoft.Text.RegularExpressions.Linq.IExcludedGroup
 ```
 
 ### Inheritance
@@ -21,8 +20,8 @@ public abstract class CharGrouping : IBaseGroup,
 
 ### Implements
 
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[IBaseGroup](../IBaseGroup/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[IExcludedGroup](../IExcludedGroup/README.md)
+* [IBaseGroup](../IBaseGroup/README.md)
+* [IExcludedGroup](../IExcludedGroup/README.md)
 
 ## Constructors
 

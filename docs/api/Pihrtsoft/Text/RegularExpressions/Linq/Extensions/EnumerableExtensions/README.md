@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Provides a set of static methods that extends the [IEnumerable\<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1) whose generic type argument is [Match](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.match) or [Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)\.
 
 ```csharp

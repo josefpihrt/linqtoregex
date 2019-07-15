@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Represents the base part of the character subtraction pattern\.
 
 ```csharp
@@ -16,9 +15,9 @@ public interface IBaseGroup
 
 ### Derived
 
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../CharGroup/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../CharGrouping/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../CharPattern/README.md)
+* [CharGroup](../CharGroup/README.md)
+* [CharGrouping](../CharGrouping/README.md)
+* [CharPattern](../CharPattern/README.md)
 
 ## Methods
 

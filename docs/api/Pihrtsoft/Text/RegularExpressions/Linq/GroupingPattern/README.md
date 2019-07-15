@@ -6,12 +6,11 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Represents a base class for all kind of grouping constructs including assertions\. This class is abstract\.
 
 ```csharp
-public abstract class GroupingPattern : QuantifiablePattern
+public abstract class GroupingPattern : Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern
 ```
 
 ### Inheritance
@@ -20,10 +19,10 @@ public abstract class GroupingPattern : QuantifiablePattern
 
 ### Derived
 
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Assertion](../Assertion/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[BackAssertion](../BackAssertion/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[NegativeAssertion](../NegativeAssertion/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[NegativeBackAssertion](../NegativeBackAssertion/README.md)
+* [Assertion](../Assertion/README.md)
+* [BackAssertion](../BackAssertion/README.md)
+* [NegativeAssertion](../NegativeAssertion/README.md)
+* [NegativeBackAssertion](../NegativeBackAssertion/README.md)
 
 ## Constructors
 

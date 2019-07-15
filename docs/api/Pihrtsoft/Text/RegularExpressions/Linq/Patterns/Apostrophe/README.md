@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Patterns](../README.md)
+**Containing Type**: [Patterns](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -13,43 +13,41 @@
 | [Apostrophe()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Apostrophe) | Returns a pattern that matches an apostrophe\. |
 | [Apostrophe(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Apostrophe_System_Int32_) | Returns a pattern that matches a specified number of apostrophes\. |
 
-## Apostrophe\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Apostrophe"></a>
+## Apostrophe\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Apostrophe"></a>
 
-### Summary
-
+\
 Returns a pattern that matches an apostrophe\.
 
 ```csharp
-public static CharPattern Apostrophe()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Apostrophe()
 ```
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/README.md)
+[CharPattern](../../CharPattern/README.md)
 
-## Apostrophe\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Apostrophe_System_Int32_"></a>
+## Apostrophe\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Apostrophe_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of apostrophes\.
 
 ```csharp
-public static QuantifiedGroup Apostrophe(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Apostrophe(int exactCount)
 ```
 
 ### Parameters
 
-**exactCount**
+**exactCount** &ensp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of times a character has to be matched\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGroup/README.md)
+[QuantifiedGroup](../../QuantifiedGroup/README.md)
 
 ### Exceptions
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **exactCount** is less than zero\.
 

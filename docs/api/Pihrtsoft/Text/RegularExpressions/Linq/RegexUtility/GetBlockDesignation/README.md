@@ -2,25 +2,24 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[RegexUtility](../README.md)
+**Containing Type**: [RegexUtility](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Gets a designation of the specified Unicode block\.
 
 ```csharp
-public static string GetBlockDesignation(NamedBlock block)
+public static string GetBlockDesignation(Pihrtsoft.Text.RegularExpressions.Linq.NamedBlock block)
 ```
 
 ### Parameters
 
-**block**
+**block** &ensp; [NamedBlock](../../NamedBlock/README.md)
 
 An enumerated constant that identifies Unicode block\.
 
 ### Returns
 
-System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 

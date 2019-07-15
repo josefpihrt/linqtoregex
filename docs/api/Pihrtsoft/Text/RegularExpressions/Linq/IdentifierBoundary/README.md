@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Specifies which characters will be used to surround group name in the named group, balancing group and named group backreference\.
 
 ```csharp

@@ -2,35 +2,34 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+**Containing Type**: [Pattern](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Appends a pattern that matches a character in the specified range\.
 
 ```csharp
-public QuantifiablePattern Range(char first, char last)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Range(char first, char last)
 ```
 
 ### Parameters
 
-**first**
+**first** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The first character of the range\.
 
-**last**
+**last** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The last character of the range\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../QuantifiablePattern/README.md)
+[QuantifiablePattern](../../QuantifiablePattern/README.md)
 
 ### Exceptions
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **last** character number is less than **first** character number\.
 

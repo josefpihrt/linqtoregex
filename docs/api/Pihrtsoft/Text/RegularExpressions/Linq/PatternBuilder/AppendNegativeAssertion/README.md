@@ -2,12 +2,11 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[PatternBuilder](../README.md)
+**Containing Type**: [PatternBuilder](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Appends a negative lookahead assertion with a specified content\.
 
 ```csharp
@@ -16,6 +15,6 @@ public void AppendNegativeAssertion(object content)
 
 ### Parameters
 
-**content**
+**content** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 An assertion content\.

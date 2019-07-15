@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Patterns](../README.md)
+**Containing Type**: [Patterns](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -13,43 +13,41 @@
 | [Colon()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Colon) | Returns a pattern that matches a colon\. |
 | [Colon(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Colon_System_Int32_) | Returns a pattern that matches a specified number of colons\. |
 
-## Colon\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Colon"></a>
+## Colon\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Colon"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a colon\.
 
 ```csharp
-public static CharPattern Colon()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharPattern Colon()
 ```
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../../CharPattern/README.md)
+[CharPattern](../../CharPattern/README.md)
 
-## Colon\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Colon_System_Int32_"></a>
+## Colon\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_Colon_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of colons\.
 
 ```csharp
-public static QuantifiedGroup Colon(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup Colon(int exactCount)
 ```
 
 ### Parameters
 
-**exactCount**
+**exactCount** &ensp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of times a character has to be matched\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGroup/README.md)
+[QuantifiedGroup](../../QuantifiedGroup/README.md)
 
 ### Exceptions
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **exactCount** is less than zero\.
 

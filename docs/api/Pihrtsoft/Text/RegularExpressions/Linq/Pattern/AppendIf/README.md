@@ -2,29 +2,28 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+**Containing Type**: [Pattern](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 If a condition is true, appends a pattern that matches a specified content\.
 
 ```csharp
-public Pattern AppendIf(bool condition, object content)
+public Pihrtsoft.Text.RegularExpressions.Linq.Pattern AppendIf(bool condition, object content)
 ```
 
 ### Parameters
 
-**condition**
+**condition** &ensp; [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
 The condition expression to evaluate\.
 
-**content**
+**content** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+[Pattern](../README.md)
 

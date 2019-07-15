@@ -2,19 +2,18 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+**Containing Type**: [Pattern](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Appends a pattern that is matched at the beginning of the line\.
 
 ```csharp
-public QuantifiablePattern BeginLine()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern BeginLine()
 ```
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../QuantifiablePattern/README.md)
+[QuantifiablePattern](../../QuantifiablePattern/README.md)
 

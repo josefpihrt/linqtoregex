@@ -6,12 +6,11 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Represents a pattern that is quantified, i\.e\. quantifier is applied on it\. This class is abstract\.
 
 ```csharp
-public abstract class QuantifiedPattern : Pattern
+public abstract class QuantifiedPattern : Pihrtsoft.Text.RegularExpressions.Linq.Pattern
 ```
 
 ### Inheritance
@@ -20,7 +19,7 @@ public abstract class QuantifiedPattern : Pattern
 
 ### Derived
 
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../QuantifiedGroup/README.md)
+* [QuantifiedGroup](../QuantifiedGroup/README.md)
 
 ## Constructors
 

@@ -6,12 +6,11 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Represents a pattern that can be quantified, i\.e\. quantifier can be applied on it\. This class is abstract\.
 
 ```csharp
-public abstract class QuantifiablePattern : Pattern
+public abstract class QuantifiablePattern : Pihrtsoft.Text.RegularExpressions.Linq.Pattern
 ```
 
 ### Inheritance
@@ -20,11 +19,11 @@ public abstract class QuantifiablePattern : Pattern
 
 ### Derived
 
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[GroupingPattern](../GroupingPattern/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../CharGroup/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../CharPattern/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharSubtraction](../CharSubtraction/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[NegativeWordBoundary](../NegativeWordBoundary/README.md)
+* [CharGroup](../CharGroup/README.md)
+* [CharPattern](../CharPattern/README.md)
+* [CharSubtraction](../CharSubtraction/README.md)
+* [GroupingPattern](../GroupingPattern/README.md)
+* [NegativeWordBoundary](../NegativeWordBoundary/README.md)
 * [...](#derived-all "See all derived types")
 
 ## Constructors
@@ -478,11 +477,10 @@ public abstract class QuantifiablePattern : Pattern
 
 ## Derived \(All\)
 
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[GroupingPattern](../GroupingPattern/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../CharGroup/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../CharPattern/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharSubtraction](../CharSubtraction/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[NegativeWordBoundary](../NegativeWordBoundary/README.md)
+* [CharGroup](../CharGroup/README.md)
+* [CharPattern](../CharPattern/README.md)
+* [CharSubtraction](../CharSubtraction/README.md)
+* [GroupingPattern](../GroupingPattern/README.md)
+* [NegativeWordBoundary](../NegativeWordBoundary/README.md)
 * &mdash;&mdash;&mdash;&mdash;&mdash;
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[WordBoundary](../WordBoundary/README.md)
-
+* [WordBoundary](../WordBoundary/README.md)

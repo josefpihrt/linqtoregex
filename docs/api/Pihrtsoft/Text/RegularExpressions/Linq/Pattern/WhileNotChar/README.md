@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+**Containing Type**: [Pattern](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -16,129 +16,124 @@
 | [WhileNotChar(CharGrouping)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileNotChar_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_) | Appends a pattern that matches zero or more characters that are not matched by a specified [CharGrouping](../../CharGrouping/README.md)\. |
 | [WhileNotChar(String)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileNotChar_System_String_) | Appends a pattern that matches zero or more characters that are not contained in the specified [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)\. |
 
-## WhileNotChar\(AsciiChar\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileNotChar_Pihrtsoft_Text_RegularExpressions_Linq_AsciiChar_"></a>
+## WhileNotChar\(AsciiChar\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileNotChar_Pihrtsoft_Text_RegularExpressions_Linq_AsciiChar_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches zero or more characters that are not a specified character\.
 
 ```csharp
-public Pattern WhileNotChar(AsciiChar value)
+public Pihrtsoft.Text.RegularExpressions.Linq.Pattern WhileNotChar(Pihrtsoft.Text.RegularExpressions.Linq.AsciiChar value)
 ```
 
 ### Parameters
 
-**value**
+**value** &ensp; [AsciiChar](../../AsciiChar/README.md)
 
 An enumerated constant that identifies ASCII character\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+[Pattern](../README.md)
 
-## WhileNotChar\(Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileNotChar_System_Char_"></a>
+## WhileNotChar\(Char\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileNotChar_System_Char_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches zero or more characters that are not a specified character\.
 
 ```csharp
-public Pattern WhileNotChar(char value)
+public Pihrtsoft.Text.RegularExpressions.Linq.Pattern WhileNotChar(char value)
 ```
 
 ### Parameters
 
-**value**
+**value** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 A Unicode character\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+[Pattern](../README.md)
 
-## WhileNotChar\(Char\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileNotChar_System_Char___"></a>
+## WhileNotChar\(Char\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileNotChar_System_Char___"></a>
 
-### Summary
-
+\
 Appends a pattern that matches zero or more characters that are not contained in the specified characters
 
 ```csharp
-public QuantifiedPattern WhileNotChar(params char[] characters)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileNotChar(params char[] characters)
 ```
 
 ### Parameters
 
-**characters**
+**characters** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)\[\]
 
 Unicode characters\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedPattern](../../QuantifiedPattern/README.md)
+[QuantifiedPattern](../../QuantifiedPattern/README.md)
 
 ### Exceptions
 
-System\.[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
+[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
 
 **characters** is empty\.
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **characters** is `null`\.
 
-## WhileNotChar\(CharGrouping\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileNotChar_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
+## WhileNotChar\(CharGrouping\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileNotChar_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches zero or more characters that are not matched by a specified [CharGrouping](../../CharGrouping/README.md)\.
 
 ```csharp
-public Pattern WhileNotChar(CharGrouping value)
+public Pihrtsoft.Text.RegularExpressions.Linq.Pattern WhileNotChar(Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping value)
 ```
 
 ### Parameters
 
-**value**
+**value** &ensp; [CharGrouping](../../CharGrouping/README.md)
 
 A set of Unicode characters\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+[Pattern](../README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **value** is `null`\.
 
-## WhileNotChar\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileNotChar_System_String_"></a>
+## WhileNotChar\(String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_WhileNotChar_System_String_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches zero or more characters that are not contained in the specified [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)\.
 
 ```csharp
-public QuantifiedPattern WhileNotChar(string characters)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileNotChar(string characters)
 ```
 
 ### Parameters
 
-**characters**
+**characters** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Unicode characters\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedPattern](../../QuantifiedPattern/README.md)
+[QuantifiedPattern](../../QuantifiedPattern/README.md)
 
 ### Exceptions
 
-System\.[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
+[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
 
 **characters** length is equal to zero\.
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **characters** is `null`\.
 

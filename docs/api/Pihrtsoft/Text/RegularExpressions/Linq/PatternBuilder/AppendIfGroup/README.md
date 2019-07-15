@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[PatternBuilder](../README.md)
+**Containing Type**: [PatternBuilder](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -13,10 +13,9 @@
 | [AppendIfGroup(Int32, Object, Object)](#Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendIfGroup_System_Int32_System_Object_System_Object_) | Appends an if construct\. |
 | [AppendIfGroup(String, Object, Object)](#Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendIfGroup_System_String_System_Object_System_Object_) | Appends an if construct\. |
 
-## AppendIfGroup\(Int32, Object, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendIfGroup_System_Int32_System_Object_System_Object_"></a>
+## AppendIfGroup\(Int32, Object, Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendIfGroup_System_Int32_System_Object_System_Object_"></a>
 
-### Summary
-
+\
 Appends an if construct\.
 
 ```csharp
@@ -25,32 +24,31 @@ public void AppendIfGroup(int groupNumber, object trueContent, object falseConte
 
 ### Parameters
 
-**groupNumber**
+**groupNumber** &ensp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of the group\.
 
-**trueContent**
+**trueContent** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to match if the named group is matched\.
 
-**falseContent**
+**falseContent** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to match if the named group is not matched\.
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **trueContent** is `null`\.
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **groupNumber** is less than zero\.
 
-## AppendIfGroup\(String, Object, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendIfGroup_System_String_System_Object_System_Object_"></a>
+## AppendIfGroup\(String, Object, Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendIfGroup_System_String_System_Object_System_Object_"></a>
 
-### Summary
-
+\
 Appends an if construct\.
 
 ```csharp
@@ -59,25 +57,25 @@ public void AppendIfGroup(string groupName, object trueContent, object falseCont
 
 ### Parameters
 
-**groupName**
+**groupName** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A name of the group\.
 
-**trueContent**
+**trueContent** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to match if the named group is matched\.
 
-**falseContent**
+**falseContent** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to match if the named group is not matched\.
 
 ### Exceptions
 
-System\.[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
+[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
 
 **groupName** is not a valid regex group name\.
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **groupName** or **trueContent** is `null`\.
 

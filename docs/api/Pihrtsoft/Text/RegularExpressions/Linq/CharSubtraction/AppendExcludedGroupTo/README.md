@@ -2,31 +2,30 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharSubtraction](../README.md)
+**Containing Type**: [CharSubtraction](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Appends the text representation of the current instance of the character subtraction to the specified [PatternBuilder](../../PatternBuilder/README.md)\.
 
 ```csharp
-public void AppendExcludedGroupTo(PatternBuilder builder)
+public void AppendExcludedGroupTo(Pihrtsoft.Text.RegularExpressions.Linq.PatternBuilder builder)
 ```
 
 ### Parameters
 
-**builder**
+**builder** &ensp; [PatternBuilder](../../PatternBuilder/README.md)
 
 The builder to use for appending the text\.
 
 ### Implements
 
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[IExcludedGroup.AppendExcludedGroupTo](../../IExcludedGroup/AppendExcludedGroupTo/README.md)
+* [IExcludedGroup.AppendExcludedGroupTo](../../IExcludedGroup/AppendExcludedGroupTo/README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **builder** is `null`\.
 

@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Provides a set of static methods that extends [IBaseGroup](../IBaseGroup/README.md) interface\.
 
 ```csharp

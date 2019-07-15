@@ -2,19 +2,18 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Patterns](../README.md)
+**Containing Type**: [Patterns](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Returns a pattern that matches zero or more characters that are not a digit\.
 
 ```csharp
-public static QuantifiedPattern WhileNotDigit()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileNotDigit()
 ```
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedPattern](../../QuantifiedPattern/README.md)
+[QuantifiedPattern](../../QuantifiedPattern/README.md)
 

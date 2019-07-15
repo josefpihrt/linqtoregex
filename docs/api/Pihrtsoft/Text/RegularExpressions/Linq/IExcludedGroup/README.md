@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Represents the excluded part of the character subtraction pattern\.
 
 ```csharp
@@ -16,10 +15,10 @@ public interface IExcludedGroup
 
 ### Derived
 
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../CharGroup/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../CharGrouping/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../CharPattern/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharSubtraction](../CharSubtraction/README.md)
+* [CharGroup](../CharGroup/README.md)
+* [CharGrouping](../CharGrouping/README.md)
+* [CharPattern](../CharPattern/README.md)
+* [CharSubtraction](../CharSubtraction/README.md)
 
 ## Methods
 

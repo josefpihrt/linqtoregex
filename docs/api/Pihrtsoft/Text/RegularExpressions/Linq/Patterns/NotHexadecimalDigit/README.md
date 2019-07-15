@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Patterns](../README.md)
+**Containing Type**: [Patterns](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -13,43 +13,41 @@
 | [NotHexadecimalDigit()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotHexadecimalDigit) | Returns a pattern that matches a character that is not a hexadecimal digit\. |
 | [NotHexadecimalDigit(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotHexadecimalDigit_System_Int32_) | Returns a pattern that matches a character that is not a hexadecimal digit specified number of times\. |
 
-## NotHexadecimalDigit\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotHexadecimalDigit"></a>
+## NotHexadecimalDigit\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotHexadecimalDigit"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not a hexadecimal digit\.
 
 ```csharp
-public static CharGroup NotHexadecimalDigit()
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotHexadecimalDigit()
 ```
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../../CharGroup/README.md)
+[CharGroup](../../CharGroup/README.md)
 
-## NotHexadecimalDigit\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotHexadecimalDigit_System_Int32_"></a>
+## NotHexadecimalDigit\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_NotHexadecimalDigit_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character that is not a hexadecimal digit specified number of times\.
 
 ```csharp
-public static QuantifiedGroup NotHexadecimalDigit(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup NotHexadecimalDigit(int exactCount)
 ```
 
 ### Parameters
 
-**exactCount**
+**exactCount** &ensp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of times a character has to be matched\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGroup/README.md)
+[QuantifiedGroup](../../QuantifiedGroup/README.md)
 
 ### Exceptions
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **exactCount** is less than zero\.
 

@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Specifies the Unicode named block\. The set of supported named blocks is based on Unicode 4\.0\.
 
 ```csharp

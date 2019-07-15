@@ -2,16 +2,15 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+**Containing Type**: [Pattern](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Appends a pattern that is a negation of the specified pattern\.
 
 ```csharp
-public TPattern Not<TPattern>(INegateable<TPattern> value) where TPattern : Pattern
+public TPattern Not<TPattern>(Pihrtsoft.Text.RegularExpressions.Linq.INegateable<TPattern> value) where TPattern : Pihrtsoft.Text.RegularExpressions.Linq.Pattern
 ```
 
 ### Type Parameters
@@ -20,7 +19,7 @@ public TPattern Not<TPattern>(INegateable<TPattern> value) where TPattern : Patt
 
 ### Parameters
 
-**value**
+**value** &ensp; [INegateable](../../INegateable-1/README.md)\<TPattern>
 
 A pattern to be negated\.
 
@@ -30,7 +29,7 @@ TPattern
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **value** is `null`\.
 

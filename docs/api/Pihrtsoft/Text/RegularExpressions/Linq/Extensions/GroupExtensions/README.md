@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Provides a set of static methods that extends [Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group) class\.
 
 ```csharp

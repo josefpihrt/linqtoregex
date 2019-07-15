@@ -2,7 +2,7 @@
 
 [Home](../../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.Extensions\.[RegexExtensions](../README.md)
+**Containing Type**: [RegexExtensions](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -17,114 +17,111 @@
 | [EnumerateSplit(Regex, String, Int32, SplitOptions)](#Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSplit_System_Text_RegularExpressions_Regex_System_String_System_Int32_Pihrtsoft_Text_RegularExpressions_Linq_SplitOptions_) | Splits the specified input string a specified number of times at the positions defined by the regular expression into an enumerable collection of strings, using the specified split options\. |
 | [EnumerateSplit(Regex, String, SplitOptions)](#Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSplit_System_Text_RegularExpressions_Regex_System_String_Pihrtsoft_Text_RegularExpressions_Linq_SplitOptions_) | Splits the specified input string at the positions defined by the regular expression into an enumerable collection of strings, using the specified split options\. |
 
-## EnumerateSplit\(Regex, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSplit_System_Text_RegularExpressions_Regex_System_String_"></a>
+## EnumerateSplit\(Regex, String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSplit_System_Text_RegularExpressions_Regex_System_String_"></a>
 
-### Summary
-
+\
 Splits the specified input string at the positions defined by the regular expression into an enumerable collection of strings\.
 
 ```csharp
-public static IEnumerable<string> EnumerateSplit(this Regex regex, string input)
+public static System.Collections.Generic.IEnumerable<string> EnumerateSplit(this System.Text.RegularExpressions.Regex regex, string input)
 ```
 
 ### Parameters
 
-**regex**
+**regex** &ensp; [Regex](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex)
 
 The regular expression to be matched\.
 
-**input**
+**input** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to split\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
+[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **regex** or **input** is `null`\.
 
-## EnumerateSplit\(Regex, String, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSplit_System_Text_RegularExpressions_Regex_System_String_System_Int32_"></a>
+## EnumerateSplit\(Regex, String, Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSplit_System_Text_RegularExpressions_Regex_System_String_System_Int32_"></a>
 
-### Summary
-
+\
 Splits the specified input string a specified number of times at the positions defined by the regular expression into an enumerable collection of strings\.
 
 ```csharp
-public static IEnumerable<string> EnumerateSplit(this Regex regex, string input, int count)
+public static System.Collections.Generic.IEnumerable<string> EnumerateSplit(this System.Text.RegularExpressions.Regex regex, string input, int count)
 ```
 
 ### Parameters
 
-**regex**
+**regex** &ensp; [Regex](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex)
 
 The regular expression to be matched\.
 
-**input**
+**input** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to split\.
 
-**count**
+**count** &ensp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 The maximum number of times the input can be split\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
+[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **regex** or **input** is `null`\.
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **count** is less than zero\.
 
-## EnumerateSplit\(Regex, String, Int32, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSplit_System_Text_RegularExpressions_Regex_System_String_System_Int32_System_Int32_"></a>
+## EnumerateSplit\(Regex, String, Int32, Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSplit_System_Text_RegularExpressions_Regex_System_String_System_Int32_System_Int32_"></a>
 
-### Summary
-
+\
 Splits the specified input string a specified number of times at the positions defined by the regular expression into an enumerable collection of strings\.
 The search starts at a specified position in the input string\.
 
 ```csharp
-public static IEnumerable<string> EnumerateSplit(this Regex regex, string input, int count, int startAt)
+public static System.Collections.Generic.IEnumerable<string> EnumerateSplit(this System.Text.RegularExpressions.Regex regex, string input, int count, int startAt)
 ```
 
 ### Parameters
 
-**regex**
+**regex** &ensp; [Regex](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex)
 
 The regular expression to be matched\.
 
-**input**
+**input** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to split\.
 
-**count**
+**count** &ensp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 The maximum number of times the input can be split\.
 
-**startAt**
+**startAt** &ensp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 The position in the input string where the search starts\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
+[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **regex** or **input** is `null`\.
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **count** is less than zero\.
 
@@ -133,50 +130,49 @@ System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/ap
 
 
 
-## EnumerateSplit\(Regex, String, Int32, Int32, SplitOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSplit_System_Text_RegularExpressions_Regex_System_String_System_Int32_System_Int32_Pihrtsoft_Text_RegularExpressions_Linq_SplitOptions_"></a>
+## EnumerateSplit\(Regex, String, Int32, Int32, SplitOptions\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSplit_System_Text_RegularExpressions_Regex_System_String_System_Int32_System_Int32_Pihrtsoft_Text_RegularExpressions_Linq_SplitOptions_"></a>
 
-### Summary
-
+\
 Splits the specified input string a specified number of times at the positions defined by the regular expression into an enumerable collection of strings, using the specified split options\.
 The search starts at a specified position in the input string\.
 
 ```csharp
-public static IEnumerable<string> EnumerateSplit(this Regex regex, string input, int count, int startAt, SplitOptions splitOptions)
+public static System.Collections.Generic.IEnumerable<string> EnumerateSplit(this System.Text.RegularExpressions.Regex regex, string input, int count, int startAt, Pihrtsoft.Text.RegularExpressions.Linq.SplitOptions splitOptions)
 ```
 
 ### Parameters
 
-**regex**
+**regex** &ensp; [Regex](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex)
 
 The regular expression to be matched\.
 
-**input**
+**input** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to split\.
 
-**count**
+**count** &ensp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 The maximum number of times the input can be split\.
 
-**startAt**
+**startAt** &ensp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 The position in the input string where the search starts\.
 
-**splitOptions**
+**splitOptions** &ensp; [SplitOptions](../../../SplitOptions/README.md)
 
 A bitwise combination of the enumeration values that specify options\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
+[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **regex** or **input** is `null`\.
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **count** is less than zero\.
 
@@ -185,79 +181,77 @@ System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/ap
 
 
 
-## EnumerateSplit\(Regex, String, Int32, SplitOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSplit_System_Text_RegularExpressions_Regex_System_String_System_Int32_Pihrtsoft_Text_RegularExpressions_Linq_SplitOptions_"></a>
+## EnumerateSplit\(Regex, String, Int32, SplitOptions\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSplit_System_Text_RegularExpressions_Regex_System_String_System_Int32_Pihrtsoft_Text_RegularExpressions_Linq_SplitOptions_"></a>
 
-### Summary
-
+\
 Splits the specified input string a specified number of times at the positions defined by the regular expression into an enumerable collection of strings, using the specified split options\.
 
 ```csharp
-public static IEnumerable<string> EnumerateSplit(this Regex regex, string input, int count, SplitOptions splitOptions)
+public static System.Collections.Generic.IEnumerable<string> EnumerateSplit(this System.Text.RegularExpressions.Regex regex, string input, int count, Pihrtsoft.Text.RegularExpressions.Linq.SplitOptions splitOptions)
 ```
 
 ### Parameters
 
-**regex**
+**regex** &ensp; [Regex](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex)
 
 The regular expression to be matched\.
 
-**input**
+**input** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to split\.
 
-**count**
+**count** &ensp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 The maximum number of times the input can be split\.
 
-**splitOptions**
+**splitOptions** &ensp; [SplitOptions](../../../SplitOptions/README.md)
 
 A bitwise combination of the enumeration values that specify options\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
+[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **regex** or **input** is `null`\.
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **count** is less than zero\.
 
-## EnumerateSplit\(Regex, String, SplitOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSplit_System_Text_RegularExpressions_Regex_System_String_Pihrtsoft_Text_RegularExpressions_Linq_SplitOptions_"></a>
+## EnumerateSplit\(Regex, String, SplitOptions\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_RegexExtensions_EnumerateSplit_System_Text_RegularExpressions_Regex_System_String_Pihrtsoft_Text_RegularExpressions_Linq_SplitOptions_"></a>
 
-### Summary
-
+\
 Splits the specified input string at the positions defined by the regular expression into an enumerable collection of strings, using the specified split options\.
 
 ```csharp
-public static IEnumerable<string> EnumerateSplit(this Regex regex, string input, SplitOptions splitOptions)
+public static System.Collections.Generic.IEnumerable<string> EnumerateSplit(this System.Text.RegularExpressions.Regex regex, string input, Pihrtsoft.Text.RegularExpressions.Linq.SplitOptions splitOptions)
 ```
 
 ### Parameters
 
-**regex**
+**regex** &ensp; [Regex](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex)
 
 The regular expression to be matched\.
 
-**input**
+**input** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to split\.
 
-**splitOptions**
+**splitOptions** &ensp; [SplitOptions](../../../SplitOptions/README.md)
 
 A bitwise combination of the enumeration values that specify options\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
+[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **regex** or **input** is `null`\.
 

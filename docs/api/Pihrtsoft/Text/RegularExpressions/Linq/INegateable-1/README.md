@@ -6,12 +6,11 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Supports negation of a pattern\.
 
 ```csharp
-public interface INegateable<TPattern> where TPattern : Pattern
+public interface INegateable<TPattern> where TPattern : Pihrtsoft.Text.RegularExpressions.Linq.Pattern
 ```
 
 ### Type Parameters
@@ -22,11 +21,11 @@ A pattern to be negated\.
 
 ### Derived
 
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Assertion](../Assertion/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[BackAssertion](../BackAssertion/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../CharGroup/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharPattern](../CharPattern/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[WordBoundary](../WordBoundary/README.md)
+* [Assertion](../Assertion/README.md)
+* [BackAssertion](../BackAssertion/README.md)
+* [CharGroup](../CharGroup/README.md)
+* [CharPattern](../CharPattern/README.md)
+* [WordBoundary](../WordBoundary/README.md)
 
 ## Methods
 

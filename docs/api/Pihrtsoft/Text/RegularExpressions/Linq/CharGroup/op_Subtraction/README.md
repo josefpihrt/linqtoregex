@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../README.md)
+**Containing Type**: [CharGroup](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -14,93 +14,90 @@
 | [Subtraction(CharGroup, CharGrouping)](#Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_op_Subtraction_Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_) | Returns a pattern that matches a character from a specified base group except characters from a specified excluded group\. |
 | [Subtraction(CharGroup, CharPattern)](#Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_op_Subtraction_Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_Pihrtsoft_Text_RegularExpressions_Linq_CharPattern_) | Returns a pattern that matches a character from a specified base group except characters from a specified excluded group\. |
 
-## Subtraction\(CharGroup, CharGroup\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_op_Subtraction_Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_"></a>
+## Subtraction\(CharGroup, CharGroup\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_op_Subtraction_Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character from a specified base group except characters from a specified excluded group\.
 
 ```csharp
-public static CharSubtraction operator -(CharGroup baseGroup, CharGroup excludedGroup)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharSubtraction operator -(Pihrtsoft.Text.RegularExpressions.Linq.CharGroup baseGroup, Pihrtsoft.Text.RegularExpressions.Linq.CharGroup excludedGroup)
 ```
 
 ### Parameters
 
-**baseGroup**
+**baseGroup** &ensp; [CharGroup](../README.md)
 
 A base group\.
 
-**excludedGroup**
+**excludedGroup** &ensp; [CharGroup](../README.md)
 
 An excluded group\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharSubtraction](../../CharSubtraction/README.md)
+[CharSubtraction](../../CharSubtraction/README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **baseGroup** or **excludedGroup** is `null`\.
 
-## Subtraction\(CharGroup, CharGrouping\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_op_Subtraction_Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
+## Subtraction\(CharGroup, CharGrouping\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_op_Subtraction_Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character from a specified base group except characters from a specified excluded group\.
 
 ```csharp
-public static CharSubtraction operator -(CharGroup baseGroup, CharGrouping excludedGroup)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharSubtraction operator -(Pihrtsoft.Text.RegularExpressions.Linq.CharGroup baseGroup, Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping excludedGroup)
 ```
 
 ### Parameters
 
-**baseGroup**
+**baseGroup** &ensp; [CharGroup](../README.md)
 
 A base group\.
 
-**excludedGroup**
+**excludedGroup** &ensp; [CharGrouping](../../CharGrouping/README.md)
 
 An excluded group\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharSubtraction](../../CharSubtraction/README.md)
+[CharSubtraction](../../CharSubtraction/README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **baseGroup** or **excludedGroup** is `null`\.
 
-## Subtraction\(CharGroup, CharPattern\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_op_Subtraction_Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_Pihrtsoft_Text_RegularExpressions_Linq_CharPattern_"></a>
+## Subtraction\(CharGroup, CharPattern\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_op_Subtraction_Pihrtsoft_Text_RegularExpressions_Linq_CharGroup_Pihrtsoft_Text_RegularExpressions_Linq_CharPattern_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character from a specified base group except characters from a specified excluded group\.
 
 ```csharp
-public static CharSubtraction operator -(CharGroup baseGroup, CharPattern excludedGroup)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharSubtraction operator -(Pihrtsoft.Text.RegularExpressions.Linq.CharGroup baseGroup, Pihrtsoft.Text.RegularExpressions.Linq.CharPattern excludedGroup)
 ```
 
 ### Parameters
 
-**baseGroup**
+**baseGroup** &ensp; [CharGroup](../README.md)
 
 A base group\.
 
-**excludedGroup**
+**excludedGroup** &ensp; [CharPattern](../../CharPattern/README.md)
 
 An excluded group\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharSubtraction](../../CharSubtraction/README.md)
+[CharSubtraction](../../CharSubtraction/README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **baseGroup** or **excludedGroup** is `null`\.
 

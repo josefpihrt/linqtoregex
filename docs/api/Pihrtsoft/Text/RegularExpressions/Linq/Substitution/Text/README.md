@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Substitution](../README.md)
+**Containing Type**: [Substitution](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -13,43 +13,41 @@
 | [Text(Char)](#Pihrtsoft_Text_RegularExpressions_Linq_Substitution_Text_System_Char_) | Appends a specified character to the substitution pattern\. |
 | [Text(String)](#Pihrtsoft_Text_RegularExpressions_Linq_Substitution_Text_System_String_) | Appends a specified text to the substitution pattern\. |
 
-## Text\(Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Substitution_Text_System_Char_"></a>
+## Text\(Char\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Substitution_Text_System_Char_"></a>
 
-### Summary
-
+\
 Appends a specified character to the substitution pattern\.
 
 ```csharp
-public Substitution Text(char value)
+public Pihrtsoft.Text.RegularExpressions.Linq.Substitution Text(char value)
 ```
 
 ### Parameters
 
-**value**
+**value** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 A Unicode character to append\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Substitution](../README.md)
+[Substitution](../README.md)
 
-## Text\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Substitution_Text_System_String_"></a>
+## Text\(String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Substitution_Text_System_String_"></a>
 
-### Summary
-
+\
 Appends a specified text to the substitution pattern\.
 
 ```csharp
-public Substitution Text(string value)
+public Pihrtsoft.Text.RegularExpressions.Linq.Substitution Text(string value)
 ```
 
 ### Parameters
 
-**value**
+**value** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A text to append\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Substitution](../README.md)
+[Substitution](../README.md)
 

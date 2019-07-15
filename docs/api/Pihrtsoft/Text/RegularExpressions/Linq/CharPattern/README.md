@@ -6,15 +6,14 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Represents a pattern that matches a single character\. This includes Unicode category, Unicode block or character class \(\(non\-\)digit, \(non\-\)white\-space, \(non\-\)word\)\. This class is abstract\.
 
 ```csharp
-public abstract class CharPattern : QuantifiablePattern,
-    IBaseGroup,
-    IExcludedGroup,
-    INegateable<CharGroup>
+public abstract class CharPattern : Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern,
+    Pihrtsoft.Text.RegularExpressions.Linq.IBaseGroup,
+    Pihrtsoft.Text.RegularExpressions.Linq.IExcludedGroup,
+    Pihrtsoft.Text.RegularExpressions.Linq.INegateable<Pihrtsoft.Text.RegularExpressions.Linq.CharGroup>
 ```
 
 ### Inheritance
@@ -23,9 +22,9 @@ public abstract class CharPattern : QuantifiablePattern,
 
 ### Implements
 
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[IBaseGroup](../IBaseGroup/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[IExcludedGroup](../IExcludedGroup/README.md)
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[INegateable](../INegateable-1/README.md)\<[CharGroup](../CharGroup/README.md)>
+* [IBaseGroup](../IBaseGroup/README.md)
+* [IExcludedGroup](../IExcludedGroup/README.md)
+* [INegateable](../INegateable-1/README.md)\<[CharGroup](../CharGroup/README.md)>
 
 ## Methods
 

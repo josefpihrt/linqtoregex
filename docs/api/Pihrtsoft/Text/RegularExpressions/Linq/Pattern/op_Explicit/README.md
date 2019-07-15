@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+**Containing Type**: [Pattern](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -13,43 +13,41 @@
 | [Explicit(Char to Pattern)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_Explicit_System_Char__Pihrtsoft_Text_RegularExpressions_Linq_Pattern) | Converts specified character to a pattern\. |
 | [Explicit(String to Pattern)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_Explicit_System_String__Pihrtsoft_Text_RegularExpressions_Linq_Pattern) | Converts specified text to a pattern\. |
 
-## Explicit\(Char to Pattern\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_Explicit_System_Char__Pihrtsoft_Text_RegularExpressions_Linq_Pattern"></a>
+## Explicit\(Char to Pattern\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_Explicit_System_Char__Pihrtsoft_Text_RegularExpressions_Linq_Pattern"></a>
 
-### Summary
-
+\
 Converts specified character to a pattern\.
 
 ```csharp
-public static explicit operator Pattern(char value)
+public static explicit operator Pihrtsoft.Text.RegularExpressions.Linq.Pattern(char value)
 ```
 
 ### Parameters
 
-**value**
+**value** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The Unicode character to convert\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+[Pattern](../README.md)
 
-## Explicit\(String to Pattern\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_Explicit_System_String__Pihrtsoft_Text_RegularExpressions_Linq_Pattern"></a>
+## Explicit\(String to Pattern\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_op_Explicit_System_String__Pihrtsoft_Text_RegularExpressions_Linq_Pattern"></a>
 
-### Summary
-
+\
 Converts specified text to a pattern\.
 
 ```csharp
-public static explicit operator Pattern(string text)
+public static explicit operator Pihrtsoft.Text.RegularExpressions.Linq.Pattern(string text)
 ```
 
 ### Parameters
 
-**text**
+**text** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A text to convert\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+[Pattern](../README.md)
 

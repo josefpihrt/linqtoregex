@@ -1,0 +1,1636 @@
+﻿assembly Pihrtsoft.Text.RegularExpressions.Linq, Version=2.5.0.0, Culture=neutral, PublicKeyToken=7b6a2af53c8ae8ab
+
+namespace Pihrtsoft.Text.RegularExpressions.Linq
+
+  public sealed class Assertion : GroupingPattern, INegateable<NegativeAssertion>
+
+    public NegativeAssertion Negate();
+
+    public static NegativeAssertion operator !(Assertion value);
+
+  public sealed class BackAssertion : GroupingPattern, INegateable<NegativeBackAssertion>
+
+    public NegativeBackAssertion Negate();
+
+    public static NegativeBackAssertion operator !(BackAssertion value);
+
+  public static class BaseGroupExtensions
+
+    public static CharSubtraction Except(this IBaseGroup baseGroup, IExcludedGroup excludedGroup);
+
+  public abstract class CharGroup : QuantifiablePattern, IBaseGroup, IExcludedGroup, INegateable<CharGroup>
+
+    protected CharGroup();
+
+    public virtual bool Negative { get; }
+
+    public void AppendBaseGroupTo(PatternBuilder builder);
+    public void AppendExcludedGroupTo(PatternBuilder builder);
+    public CharGroup Negate();
+
+    public static explicit operator CharGroup(string characters);
+    public static explicit operator CharGroup(CharGrouping value);
+
+    public static CharGroup operator !(CharGroup value);
+    public static CharSubtraction operator -(CharGroup baseGroup, CharGroup excludedGroup);
+    public static CharSubtraction operator -(CharGroup baseGroup, CharGrouping excludedGroup);
+    public static CharSubtraction operator -(CharGroup baseGroup, CharPattern excludedGroup);
+
+  public abstract class CharGrouping : IBaseGroup, IExcludedGroup
+
+    protected CharGrouping();
+
+    public CharGrouping Alphanumeric();
+    public CharGrouping AlphanumericUnderscore();
+    public CharGrouping Ampersand();
+    public CharGrouping Apostrophe();
+    public CharGrouping Append(NamedBlock block);
+    public CharGrouping Append(GeneralCategory category);
+    public CharGrouping Append(string characters);
+    public CharGrouping Append(char value);
+    public CharGrouping Append(AsciiChar value);
+    public void AppendBaseGroupTo(PatternBuilder builder);
+    public void AppendExcludedGroupTo(PatternBuilder builder);
+    protected abstract void AppendItemContentTo(PatternBuilder builder);
+    public CharGrouping ArabicDigit();
+    public CharGrouping Asterisk();
+    public CharGrouping AtSign();
+    public CharGrouping Backslash();
+    public CharGrouping CarriageReturn();
+    public CharGrouping Character(NamedBlock block);
+    public CharGrouping Character(GeneralCategory category);
+    public CharGrouping Character(string characters);
+    public CharGrouping Character(char value);
+    public CharGrouping Character(AsciiChar value);
+    public CharGrouping CircumflexAccent();
+    public CharGrouping Colon();
+    public CharGrouping Comma();
+    public CharGrouping CurlyBracket();
+    public CharGrouping Digit();
+    public CharGrouping Dollar();
+    public CharGrouping Dot();
+    public CharGrouping EqualsSign();
+    public CharGrouping ExclamationMark();
+    public CharGrouping GraveAccent();
+    public CharGrouping Hyphen();
+    public CharGrouping LatinLetter();
+    public CharGrouping LeftAngleBracket();
+    public CharGrouping LeftCurlyBracket();
+    public CharGrouping LeftParenthesis();
+    public CharGrouping LeftSquareBracket();
+    public CharGrouping Linefeed();
+    public CharGrouping NewLineChar();
+    public CharGrouping Not(NamedBlock block);
+    public CharGrouping Not(GeneralCategory category);
+    public CharGrouping NotDigit();
+    public CharGrouping NotWhiteSpace();
+    public CharGrouping NotWordChar();
+    public CharGrouping NumberSign();
+    public CharGrouping Parenthesis();
+    public CharGrouping Percent();
+    public CharGrouping Plus();
+    public CharGrouping QuestionMark();
+    public CharGrouping QuoteMark();
+    public CharGrouping Range(char first, char last);
+    public CharGrouping RightAngleBracket();
+    public CharGrouping RightCurlyBracket();
+    public CharGrouping RightParenthesis();
+    public CharGrouping RightSquareBracket();
+    public CharGrouping Semicolon();
+    public CharGrouping Slash();
+    public CharGrouping SlashOrBackslash();
+    public CharGrouping Space();
+    public CharGrouping SquareBracket();
+    public CharGrouping Tab();
+    public CharGrouping Tilde();
+    public CharGroup ToGroup();
+    public CharGroup ToNegativeGroup();
+    public override string ToString();
+    public CharGrouping Underscore();
+    public CharGrouping VerticalBar();
+    public CharGrouping WhiteSpace();
+    public CharGrouping WordChar();
+
+    public static explicit operator CharGrouping(string characters);
+    public static explicit operator CharGrouping(char value);
+
+    public static CharGrouping operator +(CharGrouping left, CharGrouping right);
+    public static CharGrouping operator +(CharGrouping left, string right);
+    public static CharGrouping operator +(string left, CharGrouping right);
+    public static CharGrouping operator +(CharGrouping left, char right);
+    public static CharGrouping operator +(char left, CharGrouping right);
+    public static CharGroup operator !(CharGrouping value);
+    public static CharSubtraction operator -(CharGrouping baseGroup, CharGrouping excludedGroup);
+    public static CharSubtraction operator -(CharGrouping baseGroup, CharGroup excludedGroup);
+    public static CharSubtraction operator -(CharGrouping baseGroup, CharPattern excludedGroup);
+
+  public abstract class CharPattern : QuantifiablePattern, IBaseGroup, IExcludedGroup, INegateable<CharGroup>
+
+    public void AppendBaseGroupTo(PatternBuilder builder);
+    public void AppendExcludedGroupTo(PatternBuilder builder);
+    protected virtual void AppendGroupContentTo(PatternBuilder builder);
+    public abstract CharGroup Negate();
+
+    public static CharGroup operator !(CharPattern value);
+    public static CharSubtraction operator -(CharPattern baseGroup, CharPattern excludedGroup);
+    public static CharSubtraction operator -(CharPattern baseGroup, CharGroup excludedGroup);
+    public static CharSubtraction operator -(CharPattern baseGroup, CharGrouping excludedGroup);
+
+  public class CharSubtraction : QuantifiablePattern, IExcludedGroup
+
+    public void AppendExcludedGroupTo(PatternBuilder builder);
+
+  public static class Chars
+
+    public static CharGrouping Alphanumeric();
+    public static CharGrouping AlphanumericUnderscore();
+    public static CharGrouping Ampersand();
+    public static CharGrouping Apostrophe();
+    public static CharGrouping ArabicDigit();
+    public static CharGrouping Asterisk();
+    public static CharGrouping AtSign();
+    public static CharGrouping Backslash();
+    public static CharGrouping CarriageReturn();
+    public static CharGrouping Character(NamedBlock block);
+    public static CharGrouping Character(GeneralCategory category);
+    public static CharGrouping Character(string characters);
+    public static CharGrouping Character(char value);
+    public static CharGrouping Character(AsciiChar value);
+    public static CharGrouping CircumflexAccent();
+    public static CharGrouping Colon();
+    public static CharGrouping Comma();
+    public static CharGrouping CurlyBracket();
+    public static CharGrouping Digit();
+    public static CharGrouping Dollar();
+    public static CharGrouping Dot();
+    public static CharGrouping EqualsSign();
+    public static CharGrouping ExclamationMark();
+    public static CharGrouping GeneralCategory(GeneralCategory category);
+    public static CharGrouping GraveAccent();
+    public static CharGrouping HexadecimalDigit();
+    public static CharGrouping Hyphen();
+    public static CharGrouping LatinLetter();
+    public static CharGrouping LeftAngleBracket();
+    public static CharGrouping LeftCurlyBracket();
+    public static CharGrouping LeftParenthesis();
+    public static CharGrouping LeftSquareBracket();
+    public static CharGrouping Linefeed();
+    public static CharGrouping NamedBlock(NamedBlock block);
+    public static CharGrouping NewLineChar();
+    public static CharGrouping Not(NamedBlock block);
+    public static CharGrouping Not(GeneralCategory category);
+    public static CharGrouping NotDigit();
+    public static CharGrouping NotWhiteSpace();
+    public static CharGrouping NotWordChar();
+    public static CharGrouping NumberSign();
+    public static CharGrouping Parenthesis();
+    public static CharGrouping Percent();
+    public static CharGrouping Plus();
+    public static CharGrouping QuestionMark();
+    public static CharGrouping QuoteMark();
+    public static CharGrouping Range(char first, char last);
+    public static CharGrouping RightAngleBracket();
+    public static CharGrouping RightCurlyBracket();
+    public static CharGrouping RightParenthesis();
+    public static CharGrouping RightSquareBracket();
+    public static CharGrouping Semicolon();
+    public static CharGrouping Slash();
+    public static CharGrouping SlashOrBackslash();
+    public static CharGrouping Space();
+    public static CharGrouping SquareBracket();
+    public static CharGrouping Tab();
+    public static CharGrouping Tilde();
+    public static CharGrouping Underscore();
+    public static CharGrouping VerticalBar();
+    public static CharGrouping WhiteSpace();
+    public static CharGrouping WordChar();
+
+  public abstract class GroupingPattern : QuantifiablePattern
+
+    protected GroupingPattern();
+    protected GroupingPattern(object content);
+    protected GroupingPattern(GroupingPattern content);
+
+  public sealed class NegativeAssertion : GroupingPattern
+
+  public sealed class NegativeBackAssertion : GroupingPattern
+
+  public sealed class NegativeSurroundAssertion : Pattern
+
+  public sealed class NegativeWordBoundary : QuantifiablePattern
+
+  public abstract class Pattern
+
+    protected Pattern();
+
+    public CharGroup Alphanumeric();
+    public QuantifiedGroup Alphanumeric(int exactCount);
+    public QuantifiablePattern AlphanumericLower();
+    public QuantifiedGroup AlphanumericLower(int exactCount);
+    public CharGroup AlphanumericUnderscore();
+    public QuantifiedGroup AlphanumericUnderscore(int exactCount);
+    public QuantifiablePattern AlphanumericUpper();
+    public QuantifiedGroup AlphanumericUpper(int exactCount);
+    public QuantifiablePattern Ampersand();
+    public QuantifiedGroup Ampersand(int exactCount);
+    public QuantifiablePattern Any();
+    public QuantifiablePattern Any(object content);
+    public QuantifiablePattern Any(params object[] content);
+    public QuantifiedGroup Any(int exactCount);
+    public QuantifiablePattern AnyExceptLinefeed();
+    public QuantifiedGroup AnyExceptLinefeed(int exactCount);
+    public QuantifiablePattern AnyNative();
+    public QuantifiedGroup AnyNative(int exactCount);
+    public QuantifiablePattern Apostrophe();
+    public QuantifiedGroup Apostrophe(int exactCount);
+    public Pattern Append(object content);
+    public Pattern AppendIf(bool condition, object content);
+    public QuantifiablePattern ArabicDigit();
+    public QuantifiedGroup ArabicDigit(int exactCount);
+    public QuantifiedPattern ArabicDigits();
+    public QuantifiablePattern Assert(object content);
+    public QuantifiablePattern Assert(params object[] content);
+    public QuantifiablePattern AssertBack(object content);
+    public QuantifiablePattern AssertBack(params object[] content);
+    public QuantifiablePattern Asterisk();
+    public QuantifiedGroup Asterisk(int exactCount);
+    public QuantifiablePattern AtSign();
+    public QuantifiedGroup AtSign(int exactCount);
+    public QuantifiablePattern Backslash();
+    public QuantifiedGroup Backslash(int exactCount);
+    public Pattern BalanceAngleBrackets(string groupName);
+    public Pattern BalanceChar(char openingCharacter, char closingCharacter, string groupName);
+    public Pattern BalanceCurlyBrackets(string groupName);
+    public Pattern BalanceParentheses(string groupName);
+    public Pattern BalanceSquareBrackets(string groupName);
+    public QuantifiablePattern BalancingGroup(string name1, string name2, object content);
+    public QuantifiablePattern BalancingGroup(string name1, string name2, params object[] content);
+    public QuantifiablePattern BeginInput();
+    public QuantifiablePattern BeginInputOrLine();
+    public QuantifiablePattern BeginLine();
+    public QuantifiablePattern CarriageReturn();
+    public QuantifiedGroup CarriageReturn(int exactCount);
+    public QuantifiablePattern Character(NamedBlock block);
+    public QuantifiablePattern Character(GeneralCategory category);
+    public QuantifiablePattern Character(string characters);
+    public QuantifiablePattern Character(char value);
+    public QuantifiablePattern Character(AsciiChar value);
+    public QuantifiablePattern Character(CharGrouping value);
+    public QuantifiedGroup Characters(NamedBlock block);
+    public QuantifiedGroup Characters(GeneralCategory category);
+    public QuantifiedGroup Characters(char value);
+    public QuantifiedGroup Characters(AsciiChar value);
+    public QuantifiedGroup Characters(string value);
+    public QuantifiedGroup Characters(CharGrouping value);
+    public QuantifiablePattern CircumflexAccent();
+    public QuantifiedGroup CircumflexAccent(int exactCount);
+    public QuantifiablePattern Colon();
+    public QuantifiedGroup Colon(int exactCount);
+    public QuantifiablePattern Comma();
+    public QuantifiedGroup Comma(int exactCount);
+    public QuantifiedGroup Count(int exactCount, object content);
+    public QuantifiedGroup Count(int exactCount, object first, params object[] others);
+    public QuantifiedGroup Count(int minCount, int maxCount, object content);
+    public QuantifiedGroup Count(int minCount, int maxCount, object first, params object[] others);
+    public QuantifiedGroup CountFrom(int minCount, object content);
+    public QuantifiedGroup CountFrom(int minCount, object first, params object[] others);
+    public Pattern Crawl();
+    public Pattern CrawlLine();
+    public Pattern CrawlNative();
+    public CharGroup CurlyBracket();
+    public QuantifiedGroup CurlyBracket(int exactCount);
+    public QuantifiablePattern Digit();
+    public QuantifiedGroup Digit(int exactCount);
+    public QuantifiedGroup Digits();
+    public Pattern DisableOptions(RegexOptions options);
+    public QuantifiablePattern DisableOptions(RegexOptions options, object content);
+    public QuantifiablePattern DisableOptions(RegexOptions options, params object[] content);
+    public Pattern DisallowGroup(string groupName);
+    public Pattern DisallowGroup(int groupNumber);
+    public QuantifiablePattern Dollar();
+    public QuantifiedGroup Dollar(int exactCount);
+    public QuantifiablePattern Dot();
+    public QuantifiedGroup Dot(int exactCount);
+    public QuantifiablePattern EndInput();
+    public QuantifiablePattern EndInputOrBeforeEndingLinefeed();
+    public QuantifiablePattern EndInputOrLine();
+    public QuantifiablePattern EndInputOrLine(bool beforeCarriageReturn);
+    public QuantifiablePattern EndLine();
+    public Pattern EndLine(bool beforeCarriageReturn);
+    public IEnumerable<Capture> EnumerateCaptures(string input);
+    public IEnumerable<Capture> EnumerateCaptures(string input, string groupName);
+    public IEnumerable<Capture> EnumerateCaptures(string input, int groupNumber);
+    public IEnumerable<Capture> EnumerateCaptures(string input, RegexOptions options);
+    public IEnumerable<Capture> EnumerateCaptures(string input, string groupName, RegexOptions options);
+    public IEnumerable<Capture> EnumerateCaptures(string input, int groupNumber, RegexOptions options);
+    public IEnumerable<Group> EnumerateGroups(string input);
+    public IEnumerable<Group> EnumerateGroups(string input, string groupName);
+    public IEnumerable<Group> EnumerateGroups(string input, int groupNumber);
+    public IEnumerable<Group> EnumerateGroups(string input, RegexOptions options);
+    public IEnumerable<Group> EnumerateGroups(string input, string groupName, RegexOptions options);
+    public IEnumerable<Group> EnumerateGroups(string input, int groupNumber, RegexOptions options);
+    public IEnumerable<Match> EnumerateMatches(string input);
+    public IEnumerable<Match> EnumerateMatches(string input, RegexOptions options);
+    public IEnumerable<Group> EnumerateSuccessGroups(string input);
+    public IEnumerable<Group> EnumerateSuccessGroups(string input, string groupName);
+    public IEnumerable<Group> EnumerateSuccessGroups(string input, int groupNumber);
+    public IEnumerable<Group> EnumerateSuccessGroups(string input, RegexOptions options);
+    public IEnumerable<Group> EnumerateSuccessGroups(string input, string groupName, RegexOptions options);
+    public IEnumerable<Group> EnumerateSuccessGroups(string input, int groupNumber, RegexOptions options);
+    public QuantifiablePattern EqualsSign();
+    public QuantifiedGroup EqualsSign(int exactCount);
+    public QuantifiablePattern ExclamationMark();
+    public QuantifiedGroup ExclamationMark(int exactCount);
+    public QuantifiablePattern GraveAccent();
+    public QuantifiedGroup GraveAccent(int exactCount);
+    public QuantifiablePattern Group();
+    public QuantifiablePattern Group(object content);
+    public QuantifiablePattern Group(params object[] content);
+    public QuantifiablePattern GroupReference(string groupName);
+    public QuantifiablePattern GroupReference(int groupNumber);
+    public QuantifiablePattern HexadecimalDigit();
+    public QuantifiedGroup HexadecimalDigit(int exactCount);
+    public QuantifiablePattern Hyphen();
+    public QuantifiedGroup Hyphen(int exactCount);
+    public QuantifiablePattern IfAssert(object testContent, object trueContent);
+    public QuantifiablePattern IfAssert(object testContent, object trueContent, object falseContent);
+    public QuantifiablePattern IfGroup(string groupName, object trueContent);
+    public QuantifiablePattern IfGroup(int groupNumber, object trueContent);
+    public QuantifiablePattern IfGroup(string groupName, object trueContent, object falseContent);
+    public QuantifiablePattern IfGroup(int groupNumber, object trueContent, object falseContent);
+    public bool IsMatch(string input);
+    public bool IsMatch(string input, RegexOptions options);
+    public CharGroup LatinLetter();
+    public QuantifiedGroup LatinLetter(int exactCount);
+    public QuantifiablePattern LatinLetterLower();
+    public QuantifiedGroup LatinLetterLower(int exactCount);
+    public QuantifiablePattern LatinLetterUpper();
+    public QuantifiedGroup LatinLetterUpper(int exactCount);
+    public QuantifiedPattern LatinLetters();
+    public QuantifiablePattern LeftAngleBracket();
+    public QuantifiedGroup LeftAngleBracket(int exactCount);
+    public QuantifiablePattern LeftCurlyBracket();
+    public QuantifiedGroup LeftCurlyBracket(int exactCount);
+    public QuantifiablePattern LeftParenthesis();
+    public QuantifiedGroup LeftParenthesis(int exactCount);
+    public QuantifiablePattern LeftSquareBracket();
+    public QuantifiedGroup LeftSquareBracket(int exactCount);
+    public QuantifiablePattern LetterLower();
+    public QuantifiedGroup LetterLower(int exactCount);
+    public QuantifiablePattern LetterUpper();
+    public QuantifiedGroup LetterUpper(int exactCount);
+    public QuantifiablePattern Linefeed();
+    public QuantifiedGroup Linefeed(int exactCount);
+    public Match Match(string input);
+    public Match Match(string input, RegexOptions options);
+    public MatchCollection Matches(string input);
+    public MatchCollection Matches(string input, RegexOptions options);
+    public QuantifiedGroup Maybe(object content);
+    public QuantifiedGroup Maybe(object first, params object[] others);
+    public QuantifiedGroup MaybeCount(int maxCount, object content);
+    public QuantifiedGroup MaybeCount(int maxCount, object first, params object[] others);
+    public QuantifiedGroup MaybeMany(object content);
+    public QuantifiedGroup MaybeMany(object first, params object[] others);
+    public QuantifiablePattern NamedGroup(string name, object content);
+    public QuantifiablePattern NamedGroup(string name, params object[] content);
+    public Pattern Never();
+    public QuantifiablePattern NewLine();
+    public QuantifiablePattern NewLineChar();
+    public QuantifiedGroup NewLineChar(int exactCount);
+    public QuantifiablePattern NonbacktrackingGroup(object content);
+    public QuantifiablePattern NonbacktrackingGroup(params object[] content);
+    public QuantifiablePattern NoncapturingGroup(object content);
+    public QuantifiablePattern NoncapturingGroup(params object[] content);
+    public TPattern Not<TPattern>(INegateable<TPattern> value) where TPattern : Pattern;
+    public CharGroup NotAlphanumeric();
+    public QuantifiedGroup NotAlphanumeric(int exactCount);
+    public QuantifiablePattern NotAlphanumericLower();
+    public QuantifiedGroup NotAlphanumericLower(int exactCount);
+    public CharGroup NotAlphanumericUnderscore();
+    public QuantifiedGroup NotAlphanumericUnderscore(int exactCount);
+    public QuantifiablePattern NotAlphanumericUpper();
+    public QuantifiedGroup NotAlphanumericUpper(int exactCount);
+    public QuantifiablePattern NotAmpersand();
+    public QuantifiedGroup NotAmpersand(int exactCount);
+    public QuantifiablePattern NotApostrophe();
+    public QuantifiedGroup NotApostrophe(int exactCount);
+    public QuantifiablePattern NotArabicDigit();
+    public QuantifiedGroup NotArabicDigit(int exactCount);
+    public QuantifiablePattern NotAssert(object content);
+    public QuantifiablePattern NotAssert(params object[] content);
+    public QuantifiablePattern NotAssertBack(object content);
+    public QuantifiablePattern NotAssertBack(params object[] content);
+    public QuantifiablePattern NotAsterisk();
+    public QuantifiedGroup NotAsterisk(int exactCount);
+    public QuantifiablePattern NotAtSign();
+    public QuantifiedGroup NotAtSign(int exactCount);
+    public QuantifiablePattern NotBackslash();
+    public QuantifiedGroup NotBackslash(int exactCount);
+    public QuantifiablePattern NotCarriageReturn();
+    public QuantifiedGroup NotCarriageReturn(int exactCount);
+    public QuantifiablePattern NotChar(NamedBlock block);
+    public QuantifiablePattern NotChar(GeneralCategory category);
+    public QuantifiablePattern NotChar(string characters);
+    public CharGroup NotChar(params char[] characters);
+    public QuantifiablePattern NotChar(char value);
+    public QuantifiablePattern NotChar(AsciiChar value);
+    public QuantifiablePattern NotChar(CharGrouping value);
+    public QuantifiablePattern NotCircumflexAccent();
+    public QuantifiedGroup NotCircumflexAccent(int exactCount);
+    public QuantifiablePattern NotColon();
+    public QuantifiedGroup NotColon(int exactCount);
+    public QuantifiablePattern NotComma();
+    public QuantifiedGroup NotComma(int exactCount);
+    public CharGroup NotCurlyBracket();
+    public QuantifiedGroup NotCurlyBracket(int exactCount);
+    public QuantifiablePattern NotDigit();
+    public QuantifiedGroup NotDigit(int exactCount);
+    public QuantifiedGroup NotDigits();
+    public QuantifiablePattern NotDollar();
+    public QuantifiedGroup NotDollar(int exactCount);
+    public QuantifiablePattern NotDot();
+    public QuantifiedGroup NotDot(int exactCount);
+    public QuantifiablePattern NotEqualsSign();
+    public QuantifiedGroup NotEqualsSign(int exactCount);
+    public QuantifiablePattern NotExclamationMark();
+    public QuantifiedGroup NotExclamationMark(int exactCount);
+    public QuantifiablePattern NotGraveAccent();
+    public QuantifiedGroup NotGraveAccent(int exactCount);
+    public QuantifiablePattern NotHexadecimalDigit();
+    public QuantifiedGroup NotHexadecimalDigit(int exactCount);
+    public QuantifiablePattern NotHyphen();
+    public QuantifiedGroup NotHyphen(int exactCount);
+    public CharGroup NotLatinLetter();
+    public QuantifiedGroup NotLatinLetter(int exactCount);
+    public QuantifiablePattern NotLatinLetterLower();
+    public QuantifiedGroup NotLatinLetterLower(int exactCount);
+    public QuantifiablePattern NotLatinLetterUpper();
+    public QuantifiedGroup NotLatinLetterUpper(int exactCount);
+    public QuantifiablePattern NotLeftAngleBracket();
+    public QuantifiedGroup NotLeftAngleBracket(int exactCount);
+    public QuantifiablePattern NotLeftCurlyBracket();
+    public QuantifiedGroup NotLeftCurlyBracket(int exactCount);
+    public QuantifiablePattern NotLeftParenthesis();
+    public QuantifiedGroup NotLeftParenthesis(int exactCount);
+    public QuantifiablePattern NotLeftSquareBracket();
+    public QuantifiedGroup NotLeftSquareBracket(int exactCount);
+    public QuantifiablePattern NotLetterLower();
+    public QuantifiedGroup NotLetterLower(int exactCount);
+    public QuantifiablePattern NotLetterUpper();
+    public QuantifiedGroup NotLetterUpper(int exactCount);
+    public QuantifiablePattern NotLinefeed();
+    public QuantifiedGroup NotLinefeed(int exactCount);
+    public QuantifiablePattern NotNewLineChar();
+    public QuantifiedGroup NotNewLineChar(int exactCount);
+    public QuantifiablePattern NotNumberSign();
+    public QuantifiedGroup NotNumberSign(int exactCount);
+    public CharGroup NotParenthesis();
+    public QuantifiedGroup NotParenthesis(int exactCount);
+    public QuantifiablePattern NotPercent();
+    public QuantifiedGroup NotPercent(int exactCount);
+    public QuantifiablePattern NotPlus();
+    public QuantifiedGroup NotPlus(int exactCount);
+    public QuantifiablePattern NotQuestionMark();
+    public QuantifiedGroup NotQuestionMark(int exactCount);
+    public QuantifiablePattern NotQuoteMark();
+    public QuantifiedGroup NotQuoteMark(int exactCount);
+    public QuantifiablePattern NotRange(char first, char last);
+    public QuantifiablePattern NotRightAngleBracket();
+    public QuantifiedGroup NotRightAngleBracket(int exactCount);
+    public QuantifiablePattern NotRightCurlyBracket();
+    public QuantifiedGroup NotRightCurlyBracket(int exactCount);
+    public QuantifiablePattern NotRightParenthesis();
+    public QuantifiedGroup NotRightParenthesis(int exactCount);
+    public QuantifiablePattern NotRightSquareBracket();
+    public QuantifiedGroup NotRightSquareBracket(int exactCount);
+    public QuantifiablePattern NotSemicolon();
+    public QuantifiedGroup NotSemicolon(int exactCount);
+    public QuantifiablePattern NotSlash();
+    public QuantifiedGroup NotSlash(int exactCount);
+    public QuantifiablePattern NotSlashOrBackslash();
+    public QuantifiedGroup NotSlashOrBackslash(int exactCount);
+    public QuantifiablePattern NotSpace();
+    public QuantifiedGroup NotSpace(int exactCount);
+    public CharGroup NotSquareBracket();
+    public QuantifiedGroup NotSquareBracket(int exactCount);
+    public QuantifiablePattern NotTab();
+    public QuantifiedGroup NotTab(int exactCount);
+    public QuantifiablePattern NotTilde();
+    public QuantifiedGroup NotTilde(int exactCount);
+    public QuantifiablePattern NotUnderscore();
+    public QuantifiedGroup NotUnderscore(int exactCount);
+    public QuantifiablePattern NotVerticalBar();
+    public QuantifiedGroup NotVerticalBar(int exactCount);
+    public QuantifiablePattern NotWhiteSpace();
+    public QuantifiedGroup NotWhiteSpace(int exactCount);
+    public QuantifiedGroup NotWhiteSpaces();
+    public QuantifiablePattern NotWordBoundary();
+    public QuantifiablePattern NotWordChar();
+    public QuantifiedGroup NotWordChar(int exactCount);
+    public QuantifiedGroup NotWordChars();
+    public QuantifiablePattern NumberSign();
+    public QuantifiedGroup NumberSign(int exactCount);
+    public QuantifiedGroup OneMany(object content);
+    public QuantifiedGroup OneMany(object first, params object[] others);
+    public Pattern Options(RegexOptions applyOptions);
+    public QuantifiablePattern Options(RegexOptions applyOptions, object content);
+    public QuantifiablePattern Options(RegexOptions applyOptions, params object[] content);
+    public Pattern Options(RegexOptions applyOptions, RegexOptions disableOptions);
+    public QuantifiablePattern Options(RegexOptions applyOptions, RegexOptions disableOptions, object content);
+    public QuantifiablePattern Options(RegexOptions applyOptions, RegexOptions disableOptions, params object[] content);
+    public Pattern Or(object content);
+    public CharGroup Parenthesis();
+    public QuantifiedGroup Parenthesis(int exactCount);
+    public QuantifiablePattern Percent();
+    public QuantifiedGroup Percent(int exactCount);
+    public QuantifiablePattern Plus();
+    public QuantifiedGroup Plus(int exactCount);
+    public QuantifiablePattern PreviousMatchEnd();
+    public QuantifiablePattern QuestionMark();
+    public QuantifiedGroup QuestionMark(int exactCount);
+    public QuantifiablePattern QuoteMark();
+    public QuantifiedGroup QuoteMark(int exactCount);
+    public QuantifiablePattern Range(char first, char last);
+    public string Replace(string input);
+    public string Replace(string input, MatchEvaluator evaluator);
+    public string Replace(string input, string replacement);
+    public string Replace(string input, MatchEvaluator evaluator, RegexOptions options);
+    public string Replace(string input, string replacement, RegexOptions options);
+    public Pattern RequireGroup(string groupName);
+    public Pattern RequireGroup(int groupNumber);
+    public QuantifiablePattern RightAngleBracket();
+    public QuantifiedGroup RightAngleBracket(int exactCount);
+    public QuantifiablePattern RightCurlyBracket();
+    public QuantifiedGroup RightCurlyBracket(int exactCount);
+    public QuantifiablePattern RightParenthesis();
+    public QuantifiedGroup RightParenthesis(int exactCount);
+    public QuantifiablePattern RightSquareBracket();
+    public QuantifiedGroup RightSquareBracket(int exactCount);
+    public QuantifiablePattern Semicolon();
+    public QuantifiedGroup Semicolon(int exactCount);
+    public QuantifiablePattern Slash();
+    public QuantifiedGroup Slash(int exactCount);
+    public CharGroup SlashOrBackslash();
+    public QuantifiedGroup SlashOrBackslash(int exactCount);
+    public QuantifiablePattern Space();
+    public QuantifiedGroup Space(int exactCount);
+    public QuantifiedPattern Spaces();
+    public string[] Split(string input);
+    public string[] Split(string input, RegexOptions options);
+    public CharGroup SquareBracket();
+    public QuantifiedGroup SquareBracket(int exactCount);
+    public Pattern SurroundAngleBrackets();
+    public Pattern SurroundAngleBrackets(object content);
+    public Pattern SurroundAngleBrackets(params object[] content);
+    public Pattern SurroundApostrophes();
+    public Pattern SurroundApostrophes(object content);
+    public Pattern SurroundApostrophes(params object[] content);
+    public Pattern SurroundCurlyBrackets();
+    public Pattern SurroundCurlyBrackets(object content);
+    public Pattern SurroundCurlyBrackets(params object[] content);
+    public Pattern SurroundParentheses();
+    public Pattern SurroundParentheses(object content);
+    public Pattern SurroundParentheses(params object[] content);
+    public Pattern SurroundQuoteMarks();
+    public Pattern SurroundQuoteMarks(object content);
+    public Pattern SurroundQuoteMarks(params object[] content);
+    public QuantifiablePattern SurroundQuoteMarksOrApostrophes();
+    public QuantifiablePattern SurroundQuoteMarksOrApostrophes(object content);
+    public QuantifiablePattern SurroundQuoteMarksOrApostrophes(params object[] content);
+    public Pattern SurroundSquareBrackets();
+    public Pattern SurroundSquareBrackets(object content);
+    public Pattern SurroundSquareBrackets(params object[] content);
+    public QuantifiablePattern SurroundWordBoundary(object content);
+    public QuantifiablePattern SurroundWordBoundary(params object[] content);
+    public QuantifiablePattern Tab();
+    public QuantifiedGroup Tab(int exactCount);
+    public Pattern Text(string value);
+    public QuantifiablePattern Text(string value, bool ignoreCase);
+    public QuantifiablePattern Tilde();
+    public QuantifiedGroup Tilde(int exactCount);
+    public Regex ToRegex();
+    public Regex ToRegex(RegexOptions options);
+    public override string ToString();
+    public string ToString(PatternOptions options);
+    public string ToString(PatternSettings settings);
+    public QuantifiablePattern Underscore();
+    public QuantifiedGroup Underscore(int exactCount);
+    public Pattern Until(string value);
+    public QuantifiablePattern UntilChar(string characters);
+    public QuantifiablePattern UntilChar(char value);
+    public QuantifiablePattern UntilChar(AsciiChar value);
+    public QuantifiablePattern UntilChar(CharGrouping value);
+    public QuantifiablePattern UntilNewLine();
+    public QuantifiablePattern VerticalBar();
+    public QuantifiedGroup VerticalBar(int exactCount);
+    public Pattern WhileChar(char value);
+    public Pattern WhileChar(AsciiChar value);
+    public Pattern WhileChar(CharGrouping value);
+    public QuantifiedPattern WhileDigit();
+    public Pattern WhileNot(string value);
+    public QuantifiedPattern WhileNotChar(params char[] characters);
+    public QuantifiedPattern WhileNotChar(string characters);
+    public Pattern WhileNotChar(char value);
+    public Pattern WhileNotChar(AsciiChar value);
+    public Pattern WhileNotChar(CharGrouping value);
+    public QuantifiedPattern WhileNotDigit();
+    public QuantifiedPattern WhileNotNewLineChar();
+    public QuantifiedPattern WhileNotWhiteSpace();
+    public QuantifiedPattern WhileNotWordChar();
+    public QuantifiedPattern WhileWhiteSpace();
+    public QuantifiedPattern WhileWhiteSpaceExceptNewLine();
+    public QuantifiedPattern WhileWordChar();
+    public QuantifiablePattern WhiteSpace();
+    public QuantifiedGroup WhiteSpace(int exactCount);
+    public QuantifiablePattern WhiteSpaceExceptNewLine();
+    public QuantifiedGroup WhiteSpaceExceptNewLine(int exactCount);
+    public QuantifiedGroup WhiteSpaces();
+    public QuantifiablePattern Word();
+    public QuantifiablePattern WordBoundary();
+    public QuantifiablePattern WordChar();
+    public QuantifiedGroup WordChar(int exactCount);
+    public QuantifiedGroup WordChars();
+
+    public static explicit operator Pattern(string text);
+    public static explicit operator Pattern(char value);
+
+    public static Pattern operator +(Pattern left, Pattern right);
+    public static Pattern operator +(Pattern left, string right);
+    public static Pattern operator +(string left, Pattern right);
+    public static Pattern operator +(Pattern left, char right);
+    public static Pattern operator +(char left, Pattern right);
+    public static QuantifiablePattern operator |(Pattern left, Pattern right);
+    public static QuantifiablePattern operator |(Pattern left, string right);
+    public static QuantifiablePattern operator |(string left, Pattern right);
+    public static QuantifiablePattern operator |(Pattern left, CharGrouping right);
+    public static QuantifiablePattern operator |(CharGrouping left, Pattern right);
+    public static QuantifiablePattern operator |(Pattern left, char right);
+    public static QuantifiablePattern operator |(char left, Pattern right);
+
+  public sealed class PatternBuilder
+
+    public PatternSettings Settings { get; }
+
+    public void Append(char[] characters);
+    public void Append(Pattern pattern);
+    public void Append(string value);
+    public void Append(char value);
+    public void Append(AsciiChar value);
+    public void Append(int value);
+    public void Append(CharGrouping value);
+    public void Append(object value);
+    public void AppendAnyChar();
+    public void AppendAnyCharNative();
+    public void AppendAssertion(object content);
+    public void AppendBackAssertion(object content);
+    public void AppendBeginningOfInput();
+    public void AppendBeginningOfInputOrLine();
+    public void AppendCharGroup(NamedBlock block);
+    public void AppendCharGroup(GeneralCategory category);
+    public void AppendCharGroup(string characters);
+    public void AppendCharGroup(AsciiChar value);
+    public void AppendCharGroup(CharGrouping value);
+    public void AppendCharGroup(char first, char last);
+    public void AppendCount(int exactCount);
+    public void AppendCount(int exactCount, bool lazy);
+    public void AppendCount(int minCount, int maxCount);
+    public void AppendCount(int minCount, int maxCount, bool lazy);
+    public void AppendCountFrom(int minCount);
+    public void AppendCountFrom(int minCount, bool lazy);
+    public void AppendDigit();
+    public void AppendEndOfInput();
+    public void AppendEndOfInputOrBeforeEndingLinefeed();
+    public void AppendEndOfInputOrLine();
+    public void AppendGeneralCategory(GeneralCategory category);
+    public void AppendIfAssert(object testContent, object trueContent, object falseContent);
+    public void AppendIfGroup(string groupName, object trueContent, object falseContent);
+    public void AppendIfGroup(int groupNumber, object trueContent, object falseContent);
+    public void AppendMaybe();
+    public void AppendMaybe(bool lazy);
+    public void AppendMaybeCount(int maxCount);
+    public void AppendMaybeCount(int maxCount, bool lazy);
+    public void AppendMaybeMany();
+    public void AppendMaybeMany(bool lazy);
+    public void AppendNamedBlock(NamedBlock block);
+    public void AppendNamedGroup(string name, object content);
+    public void AppendNegativeAssertion(object content);
+    public void AppendNegativeBackAssertion(object content);
+    public void AppendNegativeCharGroup(NamedBlock block);
+    public void AppendNegativeCharGroup(GeneralCategory category);
+    public void AppendNegativeCharGroup(string characters);
+    public void AppendNegativeCharGroup(AsciiChar value);
+    public void AppendNegativeCharGroup(CharGrouping value);
+    public void AppendNegativeCharGroup(char first, char last);
+    public void AppendNegativeWordBoundary();
+    public void AppendNonbacktrackingGroup(object content);
+    public void AppendNoncapturingGroup(object content);
+    public void AppendNotDigit();
+    public void AppendNotGeneralCategory(GeneralCategory category);
+    public void AppendNotNamedBlock(NamedBlock block);
+    public void AppendNotWhiteSpace();
+    public void AppendNotWordChar();
+    public void AppendNumberedGroup(object content);
+    public void AppendOneMany();
+    public void AppendOneMany(bool lazy);
+    public void AppendOptions(RegexOptions applyOptions);
+    public void AppendOptions(RegexOptions applyOptions, object content);
+    public void AppendOptions(RegexOptions applyOptions, RegexOptions disableOptions);
+    public void AppendPreviousMatchEnd();
+    public void AppendSubtraction(IBaseGroup baseGroup, IExcludedGroup excludedGroup);
+    public void AppendWhiteSpace();
+    public void AppendWordBoundary();
+    public void AppendWordChar();
+    public override string ToString();
+
+  public sealed class PatternSettings
+
+    public PatternSettings();
+    public PatternSettings(PatternOptions options);
+
+    public IdentifierBoundary IdentifierBoundary { get; set; }
+    public int IndentSize { get; set; }
+    public string NewLine { get; set; }
+    public PatternOptions Options { get; set; }
+
+    public bool HasOptions(PatternOptions options);
+
+  public static class Patterns
+
+    public static CharGroup Alphanumeric();
+    public static QuantifiedGroup Alphanumeric(int exactCount);
+    public static QuantifiablePattern AlphanumericLower();
+    public static QuantifiedGroup AlphanumericLower(int exactCount);
+    public static CharGroup AlphanumericUnderscore();
+    public static QuantifiedGroup AlphanumericUnderscore(int exactCount);
+    public static QuantifiablePattern AlphanumericUpper();
+    public static QuantifiedGroup AlphanumericUpper(int exactCount);
+    public static CharPattern Ampersand();
+    public static QuantifiedGroup Ampersand(int exactCount);
+    public static QuantifiablePattern Any();
+    public static QuantifiablePattern Any(object content);
+    public static QuantifiablePattern Any(params object[] content);
+    public static QuantifiedGroup Any(int exactCount);
+    public static QuantifiablePattern AnyExceptLinefeed();
+    public static QuantifiedGroup AnyExceptLinefeed(int exactCount);
+    public static QuantifiablePattern AnyNative();
+    public static QuantifiedGroup AnyNative(int exactCount);
+    public static CharPattern Apostrophe();
+    public static QuantifiedGroup Apostrophe(int exactCount);
+    public static CharGroup ArabicDigit();
+    public static QuantifiedGroup ArabicDigit(int exactCount);
+    public static QuantifiedPattern ArabicDigits();
+    public static Assertion Assert(object content);
+    public static Assertion Assert(params object[] content);
+    public static BackAssertion AssertBack(object content);
+    public static BackAssertion AssertBack(params object[] content);
+    public static SurroundAssertion AssertSurround(object assertion, object content);
+    public static SurroundAssertion AssertSurround(object backAssertion, object content, object assertion);
+    public static CharPattern Asterisk();
+    public static QuantifiedGroup Asterisk(int exactCount);
+    public static CharPattern AtSign();
+    public static QuantifiedGroup AtSign(int exactCount);
+    public static CharPattern Backslash();
+    public static QuantifiedGroup Backslash(int exactCount);
+    public static Pattern BalanceAngleBrackets(string groupName);
+    public static Pattern BalanceChar(char openingCharacter, char closingCharacter, string groupName);
+    public static Pattern BalanceCurlyBrackets(string groupName);
+    public static Pattern BalanceParentheses(string groupName);
+    public static Pattern BalanceSquareBrackets(string groupName);
+    public static QuantifiablePattern BalancingGroup(string name1, string name2, object content);
+    public static QuantifiablePattern BalancingGroup(string name1, string name2, params object[] content);
+    public static QuantifiablePattern BeginInput();
+    public static QuantifiablePattern BeginInputOrLine();
+    public static QuantifiablePattern BeginLine();
+    public static CharPattern CarriageReturn();
+    public static QuantifiedGroup CarriageReturn(int exactCount);
+    public static CharPattern Character(NamedBlock block);
+    public static CharPattern Character(GeneralCategory category);
+    public static CharGroup Character(string characters);
+    public static CharPattern Character(char value);
+    public static CharPattern Character(AsciiChar value);
+    public static CharGroup Character(CharGrouping value);
+    public static QuantifiedGroup Characters(NamedBlock block);
+    public static QuantifiedGroup Characters(GeneralCategory category);
+    public static QuantifiedGroup Characters(char value);
+    public static QuantifiedGroup Characters(AsciiChar value);
+    public static QuantifiedGroup Characters(string value);
+    public static QuantifiedGroup Characters(CharGrouping value);
+    public static CharPattern CircumflexAccent();
+    public static QuantifiedGroup CircumflexAccent(int exactCount);
+    public static CharPattern Colon();
+    public static QuantifiedGroup Colon(int exactCount);
+    public static CharPattern Comma();
+    public static QuantifiedGroup Comma(int exactCount);
+    public static Pattern Concat(object content);
+    public static Pattern Concat(params object[] content);
+    public static QuantifiedGroup Count(int exactCount, object content);
+    public static QuantifiedGroup Count(int exactCount, object first, params object[] others);
+    public static QuantifiedGroup Count(int minCount, int maxCount, object content);
+    public static QuantifiedGroup Count(int minCount, int maxCount, object first, params object[] others);
+    public static QuantifiedGroup CountFrom(int minCount, object content);
+    public static QuantifiedGroup CountFrom(int minCount, object first, params object[] others);
+    public static Pattern Crawl();
+    public static Pattern CrawlLine();
+    public static Pattern CrawlNative();
+    public static CharGroup CurlyBracket();
+    public static QuantifiedGroup CurlyBracket(int exactCount);
+    public static CharPattern Digit();
+    public static QuantifiedGroup Digit(int exactCount);
+    public static QuantifiedGroup Digits();
+    public static Pattern DisableOptions(RegexOptions options);
+    public static QuantifiablePattern DisableOptions(RegexOptions options, object content);
+    public static QuantifiablePattern DisableOptions(RegexOptions options, params object[] content);
+    public static Pattern DisallowGroup(string groupName);
+    public static Pattern DisallowGroup(int groupNumber);
+    public static CharPattern Dollar();
+    public static QuantifiedGroup Dollar(int exactCount);
+    public static CharPattern Dot();
+    public static QuantifiedGroup Dot(int exactCount);
+    public static QuantifiablePattern EndInput();
+    public static QuantifiablePattern EndInputOrBeforeEndingLinefeed();
+    public static QuantifiablePattern EndInputOrLine();
+    public static QuantifiablePattern EndInputOrLine(bool beforeCarriageReturn);
+    public static QuantifiablePattern EndLine();
+    public static Pattern EndLine(bool beforeCarriageReturn);
+    public static QuantifiablePattern EntireInput(object content);
+    public static QuantifiablePattern EntireInput(params object[] content);
+    public static CharPattern EqualsSign();
+    public static QuantifiedGroup EqualsSign(int exactCount);
+    public static CharSubtraction Except(IBaseGroup baseGroup, IExcludedGroup excludedGroup);
+    public static CharPattern ExclamationMark();
+    public static QuantifiedGroup ExclamationMark(int exactCount);
+    public static CharPattern GraveAccent();
+    public static QuantifiedGroup GraveAccent(int exactCount);
+    public static QuantifiablePattern Group();
+    public static QuantifiablePattern Group(object content);
+    public static QuantifiablePattern Group(params object[] content);
+    public static QuantifiablePattern GroupReference(string groupName);
+    public static QuantifiablePattern GroupReference(int groupNumber);
+    public static CharGroup HexadecimalDigit();
+    public static QuantifiedGroup HexadecimalDigit(int exactCount);
+    public static CharPattern Hyphen();
+    public static QuantifiedGroup Hyphen(int exactCount);
+    public static QuantifiablePattern IfAssert(object testContent, object trueContent);
+    public static QuantifiablePattern IfAssert(object testContent, object trueContent, object falseContent);
+    public static QuantifiablePattern IfGroup(string groupName, object trueContent);
+    public static QuantifiablePattern IfGroup(int groupNumber, object trueContent);
+    public static QuantifiablePattern IfGroup(string groupName, object trueContent, object falseContent);
+    public static QuantifiablePattern IfGroup(int groupNumber, object trueContent, object falseContent);
+    public static Pattern Join(object separator, object content);
+    public static Pattern Join(object separator, params object[] content);
+    public static CharGroup LatinLetter();
+    public static QuantifiedGroup LatinLetter(int exactCount);
+    public static QuantifiablePattern LatinLetterLower();
+    public static QuantifiedGroup LatinLetterLower(int exactCount);
+    public static QuantifiablePattern LatinLetterUpper();
+    public static QuantifiedGroup LatinLetterUpper(int exactCount);
+    public static QuantifiedPattern LatinLetters();
+    public static CharPattern LeftAngleBracket();
+    public static QuantifiedGroup LeftAngleBracket(int exactCount);
+    public static CharPattern LeftCurlyBracket();
+    public static QuantifiedGroup LeftCurlyBracket(int exactCount);
+    public static CharPattern LeftParenthesis();
+    public static QuantifiedGroup LeftParenthesis(int exactCount);
+    public static CharPattern LeftSquareBracket();
+    public static QuantifiedGroup LeftSquareBracket(int exactCount);
+    public static QuantifiablePattern LetterLower();
+    public static QuantifiedGroup LetterLower(int exactCount);
+    public static QuantifiablePattern LetterUpper();
+    public static QuantifiedGroup LetterUpper(int exactCount);
+    public static CharPattern Linefeed();
+    public static QuantifiedGroup Linefeed(int exactCount);
+    public static QuantifiedGroup Maybe(object content);
+    public static QuantifiedGroup Maybe(object first, params object[] others);
+    public static QuantifiedGroup MaybeCount(int maxCount, object content);
+    public static QuantifiedGroup MaybeCount(int maxCount, object first, params object[] others);
+    public static QuantifiedGroup MaybeMany(object content);
+    public static QuantifiedGroup MaybeMany(object first, params object[] others);
+    public static QuantifiablePattern NamedGroup(string name, object content);
+    public static QuantifiablePattern NamedGroup(string name, params object[] content);
+    public static QuantifiablePattern Never();
+    public static QuantifiablePattern NewLine();
+    public static CharGroup NewLineChar();
+    public static QuantifiedGroup NewLineChar(int exactCount);
+    public static QuantifiablePattern NonbacktrackingGroup(object content);
+    public static QuantifiablePattern NonbacktrackingGroup(params object[] content);
+    public static QuantifiablePattern NoncapturingGroup(object content);
+    public static QuantifiablePattern NoncapturingGroup(params object[] content);
+    public static TPattern Not<TPattern>(INegateable<TPattern> value) where TPattern : Pattern;
+    public static CharGroup NotAlphanumeric();
+    public static QuantifiedGroup NotAlphanumeric(int exactCount);
+    public static QuantifiablePattern NotAlphanumericLower();
+    public static QuantifiedGroup NotAlphanumericLower(int exactCount);
+    public static CharGroup NotAlphanumericUnderscore();
+    public static QuantifiedGroup NotAlphanumericUnderscore(int exactCount);
+    public static QuantifiablePattern NotAlphanumericUpper();
+    public static QuantifiedGroup NotAlphanumericUpper(int exactCount);
+    public static QuantifiablePattern NotAmpersand();
+    public static QuantifiedGroup NotAmpersand(int exactCount);
+    public static QuantifiablePattern NotApostrophe();
+    public static QuantifiedGroup NotApostrophe(int exactCount);
+    public static CharGroup NotArabicDigit();
+    public static QuantifiedGroup NotArabicDigit(int exactCount);
+    public static QuantifiablePattern NotAssert(object content);
+    public static QuantifiablePattern NotAssert(params object[] content);
+    public static QuantifiablePattern NotAssertBack(object content);
+    public static QuantifiablePattern NotAssertBack(params object[] content);
+    public static NegativeSurroundAssertion NotAssertSurround(object assertion, object content);
+    public static NegativeSurroundAssertion NotAssertSurround(object backAssertion, object content, object assertion);
+    public static QuantifiablePattern NotAsterisk();
+    public static QuantifiedGroup NotAsterisk(int exactCount);
+    public static QuantifiablePattern NotAtSign();
+    public static QuantifiedGroup NotAtSign(int exactCount);
+    public static QuantifiablePattern NotBackslash();
+    public static QuantifiedGroup NotBackslash(int exactCount);
+    public static QuantifiablePattern NotCarriageReturn();
+    public static QuantifiedGroup NotCarriageReturn(int exactCount);
+    public static CharPattern NotChar(NamedBlock block);
+    public static CharPattern NotChar(GeneralCategory category);
+    public static CharGroup NotChar(string characters);
+    public static CharGroup NotChar(params char[] characters);
+    public static CharGroup NotChar(char value);
+    public static CharGroup NotChar(AsciiChar value);
+    public static CharGroup NotChar(CharGrouping value);
+    public static QuantifiablePattern NotCircumflexAccent();
+    public static QuantifiedGroup NotCircumflexAccent(int exactCount);
+    public static QuantifiablePattern NotColon();
+    public static QuantifiedGroup NotColon(int exactCount);
+    public static QuantifiablePattern NotComma();
+    public static QuantifiedGroup NotComma(int exactCount);
+    public static CharGroup NotCurlyBracket();
+    public static QuantifiedGroup NotCurlyBracket(int exactCount);
+    public static CharPattern NotDigit();
+    public static QuantifiedGroup NotDigit(int exactCount);
+    public static QuantifiedGroup NotDigits();
+    public static QuantifiablePattern NotDollar();
+    public static QuantifiedGroup NotDollar(int exactCount);
+    public static QuantifiablePattern NotDot();
+    public static QuantifiedGroup NotDot(int exactCount);
+    public static QuantifiablePattern NotEqualsSign();
+    public static QuantifiedGroup NotEqualsSign(int exactCount);
+    public static QuantifiablePattern NotExclamationMark();
+    public static QuantifiedGroup NotExclamationMark(int exactCount);
+    public static QuantifiablePattern NotGraveAccent();
+    public static QuantifiedGroup NotGraveAccent(int exactCount);
+    public static CharGroup NotHexadecimalDigit();
+    public static QuantifiedGroup NotHexadecimalDigit(int exactCount);
+    public static QuantifiablePattern NotHyphen();
+    public static QuantifiedGroup NotHyphen(int exactCount);
+    public static CharGroup NotLatinLetter();
+    public static QuantifiedGroup NotLatinLetter(int exactCount);
+    public static QuantifiablePattern NotLatinLetterLower();
+    public static QuantifiedGroup NotLatinLetterLower(int exactCount);
+    public static QuantifiablePattern NotLatinLetterUpper();
+    public static QuantifiedGroup NotLatinLetterUpper(int exactCount);
+    public static QuantifiablePattern NotLeftAngleBracket();
+    public static QuantifiedGroup NotLeftAngleBracket(int exactCount);
+    public static QuantifiablePattern NotLeftCurlyBracket();
+    public static QuantifiedGroup NotLeftCurlyBracket(int exactCount);
+    public static QuantifiablePattern NotLeftParenthesis();
+    public static QuantifiedGroup NotLeftParenthesis(int exactCount);
+    public static QuantifiablePattern NotLeftSquareBracket();
+    public static QuantifiedGroup NotLeftSquareBracket(int exactCount);
+    public static QuantifiablePattern NotLetterLower();
+    public static QuantifiedGroup NotLetterLower(int exactCount);
+    public static QuantifiablePattern NotLetterUpper();
+    public static QuantifiedGroup NotLetterUpper(int exactCount);
+    public static QuantifiablePattern NotLinefeed();
+    public static QuantifiedGroup NotLinefeed(int exactCount);
+    public static CharGroup NotNewLineChar();
+    public static QuantifiedGroup NotNewLineChar(int exactCount);
+    public static QuantifiablePattern NotNumberSign();
+    public static QuantifiedGroup NotNumberSign(int exactCount);
+    public static CharGroup NotParenthesis();
+    public static QuantifiedGroup NotParenthesis(int exactCount);
+    public static QuantifiablePattern NotPercent();
+    public static QuantifiedGroup NotPercent(int exactCount);
+    public static QuantifiablePattern NotPlus();
+    public static QuantifiedGroup NotPlus(int exactCount);
+    public static QuantifiablePattern NotQuestionMark();
+    public static QuantifiedGroup NotQuestionMark(int exactCount);
+    public static QuantifiablePattern NotQuoteMark();
+    public static QuantifiedGroup NotQuoteMark(int exactCount);
+    public static CharGroup NotRange(char first, char last);
+    public static QuantifiablePattern NotRightAngleBracket();
+    public static QuantifiedGroup NotRightAngleBracket(int exactCount);
+    public static QuantifiablePattern NotRightCurlyBracket();
+    public static QuantifiedGroup NotRightCurlyBracket(int exactCount);
+    public static QuantifiablePattern NotRightParenthesis();
+    public static QuantifiedGroup NotRightParenthesis(int exactCount);
+    public static QuantifiablePattern NotRightSquareBracket();
+    public static QuantifiedGroup NotRightSquareBracket(int exactCount);
+    public static QuantifiablePattern NotSemicolon();
+    public static QuantifiedGroup NotSemicolon(int exactCount);
+    public static QuantifiablePattern NotSlash();
+    public static QuantifiedGroup NotSlash(int exactCount);
+    public static QuantifiablePattern NotSlashOrBackslash();
+    public static QuantifiedGroup NotSlashOrBackslash(int exactCount);
+    public static QuantifiablePattern NotSpace();
+    public static QuantifiedGroup NotSpace(int exactCount);
+    public static CharGroup NotSquareBracket();
+    public static QuantifiedGroup NotSquareBracket(int exactCount);
+    public static QuantifiablePattern NotTab();
+    public static QuantifiedGroup NotTab(int exactCount);
+    public static QuantifiablePattern NotTilde();
+    public static QuantifiedGroup NotTilde(int exactCount);
+    public static QuantifiablePattern NotUnderscore();
+    public static QuantifiedGroup NotUnderscore(int exactCount);
+    public static QuantifiablePattern NotVerticalBar();
+    public static QuantifiedGroup NotVerticalBar(int exactCount);
+    public static CharPattern NotWhiteSpace();
+    public static QuantifiedGroup NotWhiteSpace(int exactCount);
+    public static QuantifiedGroup NotWhiteSpaces();
+    public static NegativeWordBoundary NotWordBoundary();
+    public static CharPattern NotWordChar();
+    public static QuantifiedGroup NotWordChar(int exactCount);
+    public static QuantifiedGroup NotWordChars();
+    public static CharPattern NumberSign();
+    public static QuantifiedGroup NumberSign(int exactCount);
+    public static QuantifiedGroup OneMany(object content);
+    public static QuantifiedGroup OneMany(object first, params object[] others);
+    public static Pattern Options(RegexOptions applyOptions);
+    public static QuantifiablePattern Options(RegexOptions applyOptions, object content);
+    public static QuantifiablePattern Options(RegexOptions applyOptions, params object[] content);
+    public static Pattern Options(RegexOptions applyOptions, RegexOptions disableOptions);
+    public static QuantifiablePattern Options(RegexOptions applyOptions, RegexOptions disableOptions, object content);
+    public static QuantifiablePattern Options(RegexOptions applyOptions, RegexOptions disableOptions, params object[] content);
+    public static CharGroup Parenthesis();
+    public static QuantifiedGroup Parenthesis(int exactCount);
+    public static CharPattern Percent();
+    public static QuantifiedGroup Percent(int exactCount);
+    public static CharPattern Plus();
+    public static QuantifiedGroup Plus(int exactCount);
+    public static QuantifiablePattern PreviousMatchEnd();
+    public static CharPattern QuestionMark();
+    public static QuantifiedGroup QuestionMark(int exactCount);
+    public static CharPattern QuoteMark();
+    public static QuantifiedGroup QuoteMark(int exactCount);
+    public static CharGroup Range(char first, char last);
+    public static Pattern RequireGroup(string groupName);
+    public static Pattern RequireGroup(int groupNumber);
+    public static CharPattern RightAngleBracket();
+    public static QuantifiedGroup RightAngleBracket(int exactCount);
+    public static CharPattern RightCurlyBracket();
+    public static QuantifiedGroup RightCurlyBracket(int exactCount);
+    public static CharPattern RightParenthesis();
+    public static QuantifiedGroup RightParenthesis(int exactCount);
+    public static CharPattern RightSquareBracket();
+    public static QuantifiedGroup RightSquareBracket(int exactCount);
+    public static CharPattern Semicolon();
+    public static QuantifiedGroup Semicolon(int exactCount);
+    public static CharPattern Slash();
+    public static QuantifiedGroup Slash(int exactCount);
+    public static CharGroup SlashOrBackslash();
+    public static QuantifiedGroup SlashOrBackslash(int exactCount);
+    public static CharPattern Space();
+    public static QuantifiedGroup Space(int exactCount);
+    public static QuantifiedPattern Spaces();
+    public static CharGroup SquareBracket();
+    public static QuantifiedGroup SquareBracket(int exactCount);
+    public static Pattern SurroundAngleBrackets();
+    public static Pattern SurroundAngleBrackets(object content);
+    public static Pattern SurroundAngleBrackets(params object[] content);
+    public static Pattern SurroundApostrophes();
+    public static Pattern SurroundApostrophes(object content);
+    public static Pattern SurroundApostrophes(params object[] content);
+    public static Pattern SurroundCurlyBrackets();
+    public static Pattern SurroundCurlyBrackets(object content);
+    public static Pattern SurroundCurlyBrackets(params object[] content);
+    public static Pattern SurroundParentheses();
+    public static Pattern SurroundParentheses(object content);
+    public static Pattern SurroundParentheses(params object[] content);
+    public static Pattern SurroundQuoteMarks();
+    public static Pattern SurroundQuoteMarks(object content);
+    public static Pattern SurroundQuoteMarks(params object[] content);
+    public static QuantifiablePattern SurroundQuoteMarksOrApostrophes();
+    public static QuantifiablePattern SurroundQuoteMarksOrApostrophes(object content);
+    public static QuantifiablePattern SurroundQuoteMarksOrApostrophes(params object[] content);
+    public static Pattern SurroundSquareBrackets();
+    public static Pattern SurroundSquareBrackets(object content);
+    public static Pattern SurroundSquareBrackets(params object[] content);
+    public static QuantifiablePattern SurroundWordBoundary(object content);
+    public static QuantifiablePattern SurroundWordBoundary(params object[] content);
+    public static CharPattern Tab();
+    public static QuantifiedGroup Tab(int exactCount);
+    public static Pattern Text(string value);
+    public static QuantifiablePattern Text(string value, bool ignoreCase);
+    public static CharPattern Tilde();
+    public static QuantifiedGroup Tilde(int exactCount);
+    public static CharPattern Underscore();
+    public static QuantifiedGroup Underscore(int exactCount);
+    public static Pattern Until(string value);
+    public static QuantifiablePattern UntilChar(string characters);
+    public static QuantifiablePattern UntilChar(char value);
+    public static QuantifiablePattern UntilChar(AsciiChar value);
+    public static QuantifiablePattern UntilChar(CharGrouping value);
+    public static QuantifiablePattern UntilNewLine();
+    public static CharPattern VerticalBar();
+    public static QuantifiedGroup VerticalBar(int exactCount);
+    public static QuantifiedPattern WhileChar(char value);
+    public static QuantifiedPattern WhileChar(AsciiChar value);
+    public static QuantifiedPattern WhileChar(CharGrouping value);
+    public static QuantifiedPattern WhileDigit();
+    public static Pattern WhileNot(string value);
+    public static QuantifiedPattern WhileNotChar(params char[] characters);
+    public static QuantifiedPattern WhileNotChar(string characters);
+    public static QuantifiedPattern WhileNotChar(char value);
+    public static QuantifiedPattern WhileNotChar(AsciiChar value);
+    public static QuantifiedPattern WhileNotChar(CharGrouping value);
+    public static QuantifiedPattern WhileNotDigit();
+    public static QuantifiedPattern WhileNotNewLineChar();
+    public static QuantifiedPattern WhileNotWhiteSpace();
+    public static QuantifiedPattern WhileNotWordChar();
+    public static QuantifiedPattern WhileWhiteSpace();
+    public static QuantifiedPattern WhileWhiteSpaceExceptNewLine();
+    public static QuantifiedPattern WhileWordChar();
+    public static CharPattern WhiteSpace();
+    public static QuantifiedGroup WhiteSpace(int exactCount);
+    public static CharSubtraction WhiteSpaceExceptNewLine();
+    public static QuantifiedGroup WhiteSpaceExceptNewLine(int exactCount);
+    public static QuantifiedGroup WhiteSpaces();
+    public static QuantifiablePattern Word();
+    public static WordBoundary WordBoundary();
+    public static CharPattern WordChar();
+    public static QuantifiedGroup WordChar(int exactCount);
+    public static QuantifiedGroup WordChars();
+
+  public abstract class QuantifiablePattern : Pattern
+
+    protected QuantifiablePattern();
+
+    public QuantifiedPattern Count(int exactCount);
+    public QuantifiedPattern Count(int minCount, int maxCount);
+    public QuantifiedPattern CountFrom(int minCount);
+    public QuantifiedPattern Maybe();
+    public QuantifiedPattern MaybeCount(int maxCount);
+    public QuantifiedPattern MaybeMany();
+    public QuantifiedPattern OneMany();
+
+  public abstract class QuantifiedGroup : QuantifiedPattern
+
+    protected QuantifiedGroup(object content);
+
+    protected abstract void AppendQuantifierTo(PatternBuilder builder);
+
+  public abstract class QuantifiedPattern : Pattern
+
+    protected QuantifiedPattern();
+
+    public Pattern Lazy();
+
+  public static class RegexUtility
+
+    public static string Escape(string input);
+    public static string Escape(char value);
+    public static string Escape(string input, bool inCharGroup);
+    public static string Escape(char value, bool inCharGroup);
+    public static string EscapeSubstitution(string input);
+    public static string GetBlockDescription(NamedBlock block);
+    public static string GetBlockDesignation(NamedBlock block);
+    public static string GetCategoryDescription(GeneralCategory category);
+    public static string GetCategoryDesignation(GeneralCategory category);
+    public static CharEscapeMode GetEscapeMode(char value);
+    public static CharEscapeMode GetEscapeMode(char value, bool inCharGroup);
+    public static string GetRandomGroupName();
+    public static string GetRandomGroupName(int length);
+    public static bool IsValidGroupName(string groupName);
+    public static bool IsValidInlineOptions(RegexOptions options);
+
+  public abstract class Substitution
+
+    protected Substitution();
+
+    public Substitution AfterMatch();
+    public Substitution BeforeMatch();
+    public Substitution EntireInput();
+    public Substitution EntireMatch();
+    public Substitution Group(int groupNumber);
+    public Substitution LastCapturedGroup();
+    public Substitution NamedGroup(string groupName);
+    public Substitution Text(string value);
+    public Substitution Text(char value);
+    public override string ToString();
+
+    public static Substitution operator +(Substitution left, Substitution right);
+    public static Substitution operator +(Substitution left, string right);
+    public static Substitution operator +(string left, Substitution right);
+    public static Substitution operator +(Substitution left, char right);
+    public static Substitution operator +(char left, Substitution right);
+
+  public static class Substitutions
+
+    public static Substitution AfterMatch();
+    public static Substitution BeforeMatch();
+    public static Substitution EntireInput();
+    public static Substitution EntireMatch();
+    public static Substitution Group(int groupNumber);
+    public static Substitution LastCapturedGroup();
+    public static Substitution NamedGroup(string groupName);
+    public static Substitution Text(string value);
+    public static Substitution Text(char value);
+
+  public sealed class SurroundAssertion : Pattern
+
+  public sealed class WordBoundary : QuantifiablePattern, INegateable<NegativeWordBoundary>
+
+    public WordBoundary();
+
+    public NegativeWordBoundary Negate();
+
+    public static NegativeWordBoundary operator !(WordBoundary value);
+
+  public interface IBaseGroup
+
+    void AppendBaseGroupTo(PatternBuilder builder);
+
+  public interface IExcludedGroup
+
+    void AppendExcludedGroupTo(PatternBuilder builder);
+
+  public interface INegateable<TPattern> where TPattern : Pattern
+
+    TPattern Negate();
+
+  public enum AsciiChar
+
+    Null = 0,
+    StartOfHeading = 1,
+    StartOfText = 2,
+    EndOfText = 3,
+    EndOfTransmission = 4,
+    Enquiry = 5,
+    Acknowledge = 6,
+    Bell = 7,
+    Backspace = 8,
+    Tab = 9,
+    Linefeed = 10,
+    VerticalTab = 11,
+    FormFeed = 12,
+    CarriageReturn = 13,
+    ShiftOut = 14,
+    ShiftIn = 15,
+    DataLinkEscape = 16,
+    DeviceControlOne = 17,
+    DeviceControlTwo = 18,
+    DeviceControlThree = 19,
+    DeviceControlFour = 20,
+    NegativeAcknowledge = 21,
+    SynchronousIdle = 22,
+    EndOfTransmissionBlock = 23,
+    Cancel = 24,
+    EndOfMedium = 25,
+    Substitute = 26,
+    Escape = 27,
+    InformationSeparatorFour = 28,
+    InformationSeparatorThree = 29,
+    InformationSeparatorTwo = 30,
+    InformationSeparatorOne = 31,
+    Space = 32,
+    ExclamationMark = 33,
+    QuoteMark = 34,
+    NumberSign = 35,
+    Dollar = 36,
+    Percent = 37,
+    Ampersand = 38,
+    Apostrophe = 39,
+    LeftParenthesis = 40,
+    RightParenthesis = 41,
+    Asterisk = 42,
+    Plus = 43,
+    Comma = 44,
+    Hyphen = 45,
+    Dot = 46,
+    Slash = 47,
+    DigitZero = 48,
+    DigitOne = 49,
+    DigitTwo = 50,
+    DigitThree = 51,
+    DigitFour = 52,
+    DigitFive = 53,
+    DigitSix = 54,
+    DigitSeven = 55,
+    DigitEight = 56,
+    DigitNine = 57,
+    Colon = 58,
+    Semicolon = 59,
+    LeftAngleBracket = 60,
+    EqualsSign = 61,
+    RightAngleBracket = 62,
+    QuestionMark = 63,
+    AtSign = 64,
+    CapitalLetterA = 65,
+    CapitalLetterB = 66,
+    CapitalLetterC = 67,
+    CapitalLetterD = 68,
+    CapitalLetterE = 69,
+    CapitalLetterF = 70,
+    CapitalLetterG = 71,
+    CapitalLetterH = 72,
+    CapitalLetterI = 73,
+    CapitalLetterJ = 74,
+    CapitalLetterK = 75,
+    CapitalLetterL = 76,
+    CapitalLetterM = 77,
+    CapitalLetterN = 78,
+    CapitalLetterO = 79,
+    CapitalLetterP = 80,
+    CapitalLetterQ = 81,
+    CapitalLetterR = 82,
+    CapitalLetterS = 83,
+    CapitalLetterT = 84,
+    CapitalLetterU = 85,
+    CapitalLetterV = 86,
+    CapitalLetterW = 87,
+    CapitalLetterX = 88,
+    CapitalLetterY = 89,
+    CapitalLetterZ = 90,
+    LeftSquareBracket = 91,
+    Backslash = 92,
+    RightSquareBracket = 93,
+    CircumflexAccent = 94,
+    Underscore = 95,
+    GraveAccent = 96,
+    SmallLetterA = 97,
+    SmallLetterB = 98,
+    SmallLetterC = 99,
+    SmallLetterD = 100,
+    SmallLetterE = 101,
+    SmallLetterF = 102,
+    SmallLetterG = 103,
+    SmallLetterH = 104,
+    SmallLetterI = 105,
+    SmallLetterJ = 106,
+    SmallLetterK = 107,
+    SmallLetterL = 108,
+    SmallLetterM = 109,
+    SmallLetterN = 110,
+    SmallLetterO = 111,
+    SmallLetterP = 112,
+    SmallLetterQ = 113,
+    SmallLetterR = 114,
+    SmallLetterS = 115,
+    SmallLetterT = 116,
+    SmallLetterU = 117,
+    SmallLetterV = 118,
+    SmallLetterW = 119,
+    SmallLetterX = 120,
+    SmallLetterY = 121,
+    SmallLetterZ = 122,
+    LeftCurlyBracket = 123,
+    VerticalBar = 124,
+    RightCurlyBracket = 125,
+    Tilde = 126,
+    Delete = 127,
+
+  public enum CharEscapeMode
+
+    None = 0,
+    AsciiHexadecimal = 1,
+    Backslash = 2,
+    Bell = 3,
+    CarriageReturn = 4,
+    Escape = 5,
+    FormFeed = 6,
+    Linefeed = 7,
+    Tab = 8,
+    VerticalTab = 9,
+
+  public enum GeneralCategory
+
+    AllControlCharacters = 0,
+    AllDiacriticMarks = 1,
+    AllLetterCharacters = 2,
+    AllNumbers = 3,
+    AllPunctuationCharacters = 4,
+    AllSeparatorCharacters = 5,
+    AllSymbols = 6,
+    LetterLowercase = 7,
+    LetterModifier = 8,
+    LetterOther = 9,
+    LetterTitlecase = 10,
+    LetterUppercase = 11,
+    MarkEnclosing = 12,
+    MarkNonspacing = 13,
+    MarkSpacingCombining = 14,
+    NumberDecimalDigit = 15,
+    NumberLetter = 16,
+    NumberOther = 17,
+    OtherControl = 18,
+    OtherFormat = 19,
+    OtherNotAssigned = 20,
+    OtherPrivateUse = 21,
+    OtherSurrogate = 22,
+    PunctuationClose = 23,
+    PunctuationConnector = 24,
+    PunctuationDash = 25,
+    PunctuationFinalQuote = 26,
+    PunctuationInitialQuote = 27,
+    PunctuationOpen = 28,
+    PunctuationOther = 29,
+    SeparatorLine = 30,
+    SeparatorParagraph = 31,
+    SeparatorSpace = 32,
+    SymbolCurrency = 33,
+    SymbolMath = 34,
+    SymbolModifier = 35,
+    SymbolOther = 36,
+
+  public enum IdentifierBoundary
+
+    AngleBrackets = 0,
+    Apostrophe = 1,
+
+  public enum NamedBlock
+
+    AlphabeticPresentationForms = 0,
+    Arabic = 1,
+    ArabicPresentationFormsA = 2,
+    ArabicPresentationFormsB = 3,
+    Armenian = 4,
+    Arrows = 5,
+    BasicLatin = 6,
+    Bengali = 7,
+    BlockElements = 8,
+    Bopomofo = 9,
+    BopomofoExtended = 10,
+    BoxDrawing = 11,
+    BraillePatterns = 12,
+    Buhid = 13,
+    CJKCompatibility = 14,
+    CJKCompatibilityForms = 15,
+    CJKCompatibilityIdeographs = 16,
+    CJKRadicalsSupplement = 17,
+    CJKSymbolsAndPunctuation = 18,
+    CJKUnifiedIdeographs = 19,
+    CJKUnifiedIdeographsExtensionA = 20,
+    CombiningDiacriticalMarks = 21,
+    CombiningDiacriticalMarksForSymbols = 22,
+    CombiningHalfMarks = 23,
+    CombiningMarksForSymbols = 24,
+    ControlPictures = 25,
+    CurrencySymbols = 26,
+    Cyrillic = 27,
+    CyrillicSupplement = 28,
+    Devanagari = 29,
+    Dingbats = 30,
+    EnclosedAlphanumerics = 31,
+    EnclosedCJKLettersAndMonths = 32,
+    Ethiopic = 33,
+    GeneralPunctuation = 34,
+    GeometricShapes = 35,
+    Georgian = 36,
+    Greek = 37,
+    GreekAndCoptic = 38,
+    GreekExtended = 39,
+    Gujarati = 40,
+    Gurmukhi = 41,
+    HalfWidthAndFullWidthForms = 42,
+    HangulCompatibilityJamo = 43,
+    HangulJamo = 44,
+    HangulSyllables = 45,
+    Hanunoo = 46,
+    Hebrew = 47,
+    HighPrivateUseSurrogates = 48,
+    HighSurrogates = 49,
+    Hiragana = 50,
+    Cherokee = 51,
+    IdeographicDescriptionCharacters = 52,
+    IPAExtensions = 53,
+    Kanbun = 54,
+    KangxiRadicals = 55,
+    Kannada = 56,
+    Katakana = 57,
+    KatakanaPhoneticExtensions = 58,
+    Khmer = 59,
+    KhmerSymbols = 60,
+    Lao = 61,
+    Latin1Supplement = 62,
+    LatinExtendedA = 63,
+    LatinExtendedAdditional = 64,
+    LatinExtendedB = 65,
+    LetterLikeSymbols = 66,
+    Limbu = 67,
+    LowSurrogates = 68,
+    Malayalam = 69,
+    MathematicalOperators = 70,
+    MiscellaneousMathematicalSymbolsA = 71,
+    MiscellaneousMathematicalSymbolsB = 72,
+    MiscellaneousSymbols = 73,
+    MiscellaneousSymbolsAndArrows = 74,
+    MiscellaneousTechnical = 75,
+    Mongolian = 76,
+    Myanmar = 77,
+    NumberForms = 78,
+    Ogham = 79,
+    OpticalCharacterRecognition = 80,
+    Oriya = 81,
+    PhoneticExtensions = 82,
+    PrivateUse = 83,
+    PrivateUseArea = 84,
+    Runic = 85,
+    Sinhala = 86,
+    SmallFormVariants = 87,
+    SpacingModifierLetters = 88,
+    Specials = 89,
+    SuperscriptsAndSubscripts = 90,
+    SupplementalArrowsA = 91,
+    SupplementalArrowsB = 92,
+    SupplementalMathematicalOperators = 93,
+    Syriac = 94,
+    Tagalog = 95,
+    Tagbanwa = 96,
+    TaiLe = 97,
+    Tamil = 98,
+    Telugu = 99,
+    Thaana = 100,
+    Thai = 101,
+    Tibetan = 102,
+    UnifiedCanadianAboriginalSyllabics = 103,
+    VariationSelectors = 104,
+    YijingHexagramSymbols = 105,
+    YiRadicals = 106,
+    YiSyllables = 107,
+
+  [Flags]
+  public enum PatternOptions
+
+    None = 0,
+    IfConditionWithoutAssertion = 1,
+    SeparateGroupNumberReference = 2,
+    Format = 4,
+    Comment = 8,
+    FormatAndComment = Format | Comment,
+    CSharpLiteral = 16,
+    VisualBasicLiteral = 32,
+    InlineOptions = 64,
+
+  [Flags]
+  public enum SplitOptions
+
+    None = 0,
+    OmitGroupValues = 1,
+    OmitEmptyValues = 2,
+
+  public delegate string GroupEvaluator(Group group);
+
+namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
+
+  public static class CaptureExtensions
+
+    public static int EndIndex(this Capture capture);
+
+  public static class EnumerableExtensions
+
+    public static IEnumerable<Capture> EnumerateCaptures(this IEnumerable<Group> groups);
+    public static IEnumerable<Capture> EnumerateCaptures(this IEnumerable<Match> matches);
+    public static IEnumerable<Capture> EnumerateCaptures(this IEnumerable<Match> matches, string groupName);
+    public static IEnumerable<Capture> EnumerateCaptures(this IEnumerable<Match> matches, int groupNumber);
+    public static IEnumerable<Group> EnumerateGroups(this IEnumerable<Match> matches);
+    public static IEnumerable<Group> EnumerateGroups(this IEnumerable<Match> matches, string groupName);
+    public static IEnumerable<Group> EnumerateGroups(this IEnumerable<Match> matches, int groupNumber);
+    public static IEnumerable<int> EnumerateIndexes(this IEnumerable<Capture> captures);
+    public static IEnumerable<int> EnumerateLengths(this IEnumerable<Capture> captures);
+    public static IEnumerable<Group> EnumerateSuccessGroups(this IEnumerable<Match> matches);
+    public static IEnumerable<Group> EnumerateSuccessGroups(this IEnumerable<Match> matches, string groupName);
+    public static IEnumerable<Group> EnumerateSuccessGroups(this IEnumerable<Match> matches, int groupNumber);
+    public static IEnumerable<string> EnumerateValues(this IEnumerable<Capture> captures);
+
+  public static class GroupExtensions
+
+    public static IEnumerable<Capture> EnumerateCaptures(this Group group);
+
+  public static class MatchExtensions
+
+    public static IEnumerable<Capture> EnumerateCaptures(this Match match);
+    public static IEnumerable<Capture> EnumerateCaptures(this Match match, string groupName);
+    public static IEnumerable<Capture> EnumerateCaptures(this Match match, int groupNumber);
+    public static IEnumerable<Group> EnumerateGroups(this Match match);
+    public static Group Group(this Match match, string groupName);
+    public static Group Group(this Match match, int groupNumber);
+
+  public static class RegexExtensions
+
+    public static IEnumerable<Capture> EnumerateCaptures(this Regex regex, string input);
+    public static IEnumerable<Capture> EnumerateCaptures(this Regex regex, string input, string groupName);
+    public static IEnumerable<Capture> EnumerateCaptures(this Regex regex, string input, int groupNumber);
+    public static IEnumerable<Group> EnumerateGroups(this Regex regex, string input);
+    public static IEnumerable<Group> EnumerateGroups(this Regex regex, string input, string groupName);
+    public static IEnumerable<Group> EnumerateGroups(this Regex regex, string input, int groupNumber);
+    public static IEnumerable<int> EnumerateIndexes(this Regex regex, string input);
+    public static IEnumerable<int> EnumerateLengths(this Regex regex, string input);
+    public static IEnumerable<Match> EnumerateMatches(this Regex regex, string input);
+    public static IEnumerable<Match> EnumerateMatches(this Regex regex, string input, int startAt);
+    public static IEnumerable<Match> EnumerateMatches(this Regex regex, string input, int beginning, int length);
+    public static IEnumerable<string> EnumerateSplit(this Regex regex, string input);
+    public static IEnumerable<string> EnumerateSplit(this Regex regex, string input, int count);
+    public static IEnumerable<string> EnumerateSplit(this Regex regex, string input, SplitOptions splitOptions);
+    public static IEnumerable<string> EnumerateSplit(this Regex regex, string input, int count, SplitOptions splitOptions);
+    public static IEnumerable<string> EnumerateSplit(this Regex regex, string input, int count, int startAt);
+    public static IEnumerable<string> EnumerateSplit(this Regex regex, string input, int count, int startAt, SplitOptions splitOptions);
+    public static IEnumerable<Group> EnumerateSuccessGroups(this Regex regex, string input);
+    public static IEnumerable<Group> EnumerateSuccessGroups(this Regex regex, string input, string groupName);
+    public static IEnumerable<Group> EnumerateSuccessGroups(this Regex regex, string input, int groupNumber);
+    public static IEnumerable<string> EnumerateValues(this Regex regex, string input);
+    public static string ReplaceGroupChar(this Regex regex, string input, char replacementChar, string groupName);
+    public static string ReplaceGroupChar(this Regex regex, string input, char replacementChar, int groupNumber);
+    public static string ReplaceMatchChar(this Regex regex, string input, char replacementChar);

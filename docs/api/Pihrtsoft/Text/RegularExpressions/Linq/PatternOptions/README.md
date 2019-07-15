@@ -6,12 +6,11 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Provides enumerated values to use when creating a text representation of a pattern\.
 
 ```csharp
-[System.FlagsAttribute]
+[Flags]
 public enum PatternOptions
 ```
 
@@ -21,7 +20,7 @@ public enum PatternOptions
 
 ### Attributes
 
-* System\.[FlagsAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.flagsattribute)
+* [FlagsAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.flagsattribute)
 
 ## Fields
 

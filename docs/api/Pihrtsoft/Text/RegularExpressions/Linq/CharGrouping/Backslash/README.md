@@ -2,19 +2,18 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../README.md)
+**Containing Type**: [CharGrouping](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Appends a pattern that matches a backslash\.
 
 ```csharp
-public CharGrouping Backslash()
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Backslash()
 ```
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../README.md)
+[CharGrouping](../README.md)
 

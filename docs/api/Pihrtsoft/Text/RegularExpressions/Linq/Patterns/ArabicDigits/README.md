@@ -2,19 +2,18 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Patterns](../README.md)
+**Containing Type**: [Patterns](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Returns a pattern that matches one or more arabic digits\.
 
 ```csharp
-public static QuantifiedPattern ArabicDigits()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern ArabicDigits()
 ```
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedPattern](../../QuantifiedPattern/README.md)
+[QuantifiedPattern](../../QuantifiedPattern/README.md)
 

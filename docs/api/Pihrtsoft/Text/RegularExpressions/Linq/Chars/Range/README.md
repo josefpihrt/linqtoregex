@@ -2,29 +2,28 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Chars](../README.md)
+**Containing Type**: [Chars](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Returns a pattern that matches any one character from the specified range\.
 
 ```csharp
-public static CharGrouping Range(char first, char last)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Range(char first, char last)
 ```
 
 ### Parameters
 
-**first**
+**first** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The first character of the range\.
 
-**last**
+**last** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The last character of the range\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../../CharGrouping/README.md)
+[CharGrouping](../../CharGrouping/README.md)
 

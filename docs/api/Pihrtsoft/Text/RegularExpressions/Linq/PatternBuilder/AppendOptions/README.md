@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[PatternBuilder](../README.md)
+**Containing Type**: [PatternBuilder](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -14,81 +14,78 @@
 | [AppendOptions(RegexOptions, Object)](#Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendOptions_System_Text_RegularExpressions_RegexOptions_System_Object_) | Appends a pattern that applies specified options to a specified pattern\. |
 | [AppendOptions(RegexOptions, RegexOptions)](#Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendOptions_System_Text_RegularExpressions_RegexOptions_System_Text_RegularExpressions_RegexOptions_) | Appends a pattern that applies and disables specified options to a specified pattern\. |
 
-## AppendOptions\(RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendOptions_System_Text_RegularExpressions_RegexOptions_"></a>
+## AppendOptions\(RegexOptions\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendOptions_System_Text_RegularExpressions_RegexOptions_"></a>
 
-### Summary
-
+\
 Appends a pattern that applies specified options\.
 
 ```csharp
-public void AppendOptions(RegexOptions applyOptions)
+public void AppendOptions(System.Text.RegularExpressions.RegexOptions applyOptions)
 ```
 
 ### Parameters
 
-**applyOptions**
+**applyOptions** &ensp; [RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that are applied\.
 
 ### Exceptions
 
-System\.[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
+[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
 
 **applyOptions** value is not convertible to inline chars\.
 
-## AppendOptions\(RegexOptions, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendOptions_System_Text_RegularExpressions_RegexOptions_System_Object_"></a>
+## AppendOptions\(RegexOptions, Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendOptions_System_Text_RegularExpressions_RegexOptions_System_Object_"></a>
 
-### Summary
-
+\
 Appends a pattern that applies specified options to a specified pattern\.
 
 ```csharp
-public void AppendOptions(RegexOptions applyOptions, object content)
+public void AppendOptions(System.Text.RegularExpressions.RegexOptions applyOptions, object content)
 ```
 
 ### Parameters
 
-**applyOptions**
+**applyOptions** &ensp; [RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that are applied\.
 
-**content**
+**content** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The pattern to match\.
 
 ### Exceptions
 
-System\.[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
+[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
 
 **applyOptions** value is not convertible to inline chars\.
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **content** is `null`\.
 
-## AppendOptions\(RegexOptions, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendOptions_System_Text_RegularExpressions_RegexOptions_System_Text_RegularExpressions_RegexOptions_"></a>
+## AppendOptions\(RegexOptions, RegexOptions\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendOptions_System_Text_RegularExpressions_RegexOptions_System_Text_RegularExpressions_RegexOptions_"></a>
 
-### Summary
-
+\
 Appends a pattern that applies and disables specified options to a specified pattern\.
 
 ```csharp
-public void AppendOptions(RegexOptions applyOptions, RegexOptions disableOptions)
+public void AppendOptions(System.Text.RegularExpressions.RegexOptions applyOptions, System.Text.RegularExpressions.RegexOptions disableOptions)
 ```
 
 ### Parameters
 
-**applyOptions**
+**applyOptions** &ensp; [RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that are applied\.
 
-**disableOptions**
+**disableOptions** &ensp; [RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that are disabled\.
 
 ### Exceptions
 
-System\.[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
+[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
 
 **applyOptions** or **disableOptions** value is not convertible to inline chars\.
 

@@ -2,7 +2,7 @@
 
 [Home](../../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.Extensions\.[MatchExtensions](../README.md)
+**Containing Type**: [MatchExtensions](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -13,63 +13,61 @@
 | [Group(Match, Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Extensions_MatchExtensions_Group_System_Text_RegularExpressions_Match_System_Int32_) | Returns a group that has a specified number and it is contained in a specified match\. |
 | [Group(Match, String)](#Pihrtsoft_Text_RegularExpressions_Linq_Extensions_MatchExtensions_Group_System_Text_RegularExpressions_Match_System_String_) | Returns a group that has a specified name and it is contained in a specified match\. |
 
-## Group\(Match, Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_MatchExtensions_Group_System_Text_RegularExpressions_Match_System_Int32_"></a>
+## Group\(Match, Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_MatchExtensions_Group_System_Text_RegularExpressions_Match_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a group that has a specified number and it is contained in a specified match\.
 
 ```csharp
-public static Group Group(this Match match, int groupNumber)
+public static System.Text.RegularExpressions.Group Group(this System.Text.RegularExpressions.Match match, int groupNumber)
 ```
 
 ### Parameters
 
-**match**
+**match** &ensp; [Match](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.match)
 
 A regular expression match\.
 
-**groupNumber**
+**groupNumber** &ensp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of the group\.
 
 ### Returns
 
-System\.Text\.RegularExpressions\.[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)
+[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **match** is `null`\.
 
-## Group\(Match, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_MatchExtensions_Group_System_Text_RegularExpressions_Match_System_String_"></a>
+## Group\(Match, String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Extensions_MatchExtensions_Group_System_Text_RegularExpressions_Match_System_String_"></a>
 
-### Summary
-
+\
 Returns a group that has a specified name and it is contained in a specified match\.
 
 ```csharp
-public static Group Group(this Match match, string groupName)
+public static System.Text.RegularExpressions.Group Group(this System.Text.RegularExpressions.Match match, string groupName)
 ```
 
 ### Parameters
 
-**match**
+**match** &ensp; [Match](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.match)
 
 A regular expression match\.
 
-**groupName**
+**groupName** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A name of the group\.
 
 ### Returns
 
-System\.Text\.RegularExpressions\.[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)
+[Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **match** is `null`\.
 

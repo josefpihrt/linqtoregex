@@ -2,19 +2,18 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+**Containing Type**: [Pattern](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Appends a pattern that matches a white\-space character zero or more times\.
 
 ```csharp
-public QuantifiedPattern WhileWhiteSpace()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedPattern WhileWhiteSpace()
 ```
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedPattern](../../QuantifiedPattern/README.md)
+[QuantifiedPattern](../../QuantifiedPattern/README.md)
 

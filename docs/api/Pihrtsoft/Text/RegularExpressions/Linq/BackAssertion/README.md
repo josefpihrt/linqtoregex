@@ -6,13 +6,12 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Represents a zero\-width positive lookbehind assertion\. This class cannot be inherited\.
 
 ```csharp
-public sealed class BackAssertion : GroupingPattern,
-    INegateable<NegativeBackAssertion>
+public sealed class BackAssertion : Pihrtsoft.Text.RegularExpressions.Linq.GroupingPattern,
+    Pihrtsoft.Text.RegularExpressions.Linq.INegateable<Pihrtsoft.Text.RegularExpressions.Linq.NegativeBackAssertion>
 ```
 
 ### Inheritance
@@ -21,7 +20,7 @@ public sealed class BackAssertion : GroupingPattern,
 
 ### Implements
 
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[INegateable](../INegateable-1/README.md)\<[NegativeBackAssertion](../NegativeBackAssertion/README.md)>
+* [INegateable](../INegateable-1/README.md)\<[NegativeBackAssertion](../NegativeBackAssertion/README.md)>
 
 ## Methods
 

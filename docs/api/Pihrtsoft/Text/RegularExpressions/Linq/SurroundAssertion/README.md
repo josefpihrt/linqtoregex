@@ -6,12 +6,11 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Represents a pattern that matches a specified content with lookbehind assertion on the left side and lookahead assertion on the right side\. This class cannot be inherited\.
 
 ```csharp
-public sealed class SurroundAssertion : Pattern
+public sealed class SurroundAssertion : Pihrtsoft.Text.RegularExpressions.Linq.Pattern
 ```
 
 ### Inheritance

@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+**Containing Type**: [Pattern](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -18,169 +18,162 @@
 | [NotChar(NamedBlock)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotChar_Pihrtsoft_Text_RegularExpressions_Linq_NamedBlock_) | Appends a pattern that matches a character that is not from a specified Unicode block\. |
 | [NotChar(String)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotChar_System_String_) | Appends a pattern that matches any character that is not contained in the specified [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)\. |
 
-## NotChar\(AsciiChar\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotChar_Pihrtsoft_Text_RegularExpressions_Linq_AsciiChar_"></a>
+## NotChar\(AsciiChar\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotChar_Pihrtsoft_Text_RegularExpressions_Linq_AsciiChar_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a character that is not a specified character\.
 
 ```csharp
-public QuantifiablePattern NotChar(AsciiChar value)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotChar(Pihrtsoft.Text.RegularExpressions.Linq.AsciiChar value)
 ```
 
 ### Parameters
 
-**value**
+**value** &ensp; [AsciiChar](../../AsciiChar/README.md)
 
 An enumerated constant that identifies ASCII character\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../QuantifiablePattern/README.md)
+[QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotChar\(GeneralCategory\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotChar_Pihrtsoft_Text_RegularExpressions_Linq_GeneralCategory_"></a>
+## NotChar\(GeneralCategory\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotChar_Pihrtsoft_Text_RegularExpressions_Linq_GeneralCategory_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a character that is not from a specified Unicode category\.
 
 ```csharp
-public QuantifiablePattern NotChar(GeneralCategory category)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotChar(Pihrtsoft.Text.RegularExpressions.Linq.GeneralCategory category)
 ```
 
 ### Parameters
 
-**category**
+**category** &ensp; [GeneralCategory](../../GeneralCategory/README.md)
 
 An enumerated constant that identifies Unicode category\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../QuantifiablePattern/README.md)
+[QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotChar\(Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotChar_System_Char_"></a>
+## NotChar\(Char\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotChar_System_Char_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a character that is not a specified character\.
 
 ```csharp
-public QuantifiablePattern NotChar(char value)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotChar(char value)
 ```
 
 ### Parameters
 
-**value**
+**value** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 A Unicode character\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../QuantifiablePattern/README.md)
+[QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotChar\(Char\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotChar_System_Char___"></a>
+## NotChar\(Char\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotChar_System_Char___"></a>
 
-### Summary
-
+\
 Appends a pattern that matches any character that is not contained in the specified characters\.
 
 ```csharp
-public CharGroup NotChar(params char[] characters)
+public Pihrtsoft.Text.RegularExpressions.Linq.CharGroup NotChar(params char[] characters)
 ```
 
 ### Parameters
 
-**characters**
+**characters** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)\[\]
 
 Unicode characters\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGroup](../../CharGroup/README.md)
+[CharGroup](../../CharGroup/README.md)
 
 ### Exceptions
 
-System\.[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
+[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
 
 **characters** is empty\.
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **characters** is `null`\.
 
-## NotChar\(CharGrouping\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotChar_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
+## NotChar\(CharGrouping\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotChar_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
 
-### Summary
-
+\
 Appends a negative character group containing specified [CharGrouping](../../CharGrouping/README.md)\.
 
 ```csharp
-public QuantifiablePattern NotChar(CharGrouping value)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotChar(Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping value)
 ```
 
 ### Parameters
 
-**value**
+**value** &ensp; [CharGrouping](../../CharGrouping/README.md)
 
 A content of a character group\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../QuantifiablePattern/README.md)
+[QuantifiablePattern](../../QuantifiablePattern/README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **value** is `null`\.
 
-## NotChar\(NamedBlock\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotChar_Pihrtsoft_Text_RegularExpressions_Linq_NamedBlock_"></a>
+## NotChar\(NamedBlock\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotChar_Pihrtsoft_Text_RegularExpressions_Linq_NamedBlock_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches a character that is not from a specified Unicode block\.
 
 ```csharp
-public QuantifiablePattern NotChar(NamedBlock block)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotChar(Pihrtsoft.Text.RegularExpressions.Linq.NamedBlock block)
 ```
 
 ### Parameters
 
-**block**
+**block** &ensp; [NamedBlock](../../NamedBlock/README.md)
 
 An enumerated constant that identifies Unicode block\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../QuantifiablePattern/README.md)
+[QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## NotChar\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotChar_System_String_"></a>
+## NotChar\(String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_NotChar_System_String_"></a>
 
-### Summary
-
+\
 Appends a pattern that matches any character that is not contained in the specified [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)\.
 
 ```csharp
-public QuantifiablePattern NotChar(string characters)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern NotChar(string characters)
 ```
 
 ### Parameters
 
-**characters**
+**characters** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Unicode characters\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../QuantifiablePattern/README.md)
+[QuantifiablePattern](../../QuantifiablePattern/README.md)
 
 ### Exceptions
 
-System\.[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
+[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
 
 **characters** length is equal to zero\.
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **characters** is `null`\.
 

@@ -6,13 +6,12 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Represents a character subtraction pattern\. This pattern matches a character from a base group except characters from a excluded group\.
 
 ```csharp
-public class CharSubtraction : QuantifiablePattern,
-    IExcludedGroup
+public class CharSubtraction : Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern,
+    Pihrtsoft.Text.RegularExpressions.Linq.IExcludedGroup
 ```
 
 ### Inheritance
@@ -21,7 +20,7 @@ public class CharSubtraction : QuantifiablePattern,
 
 ### Implements
 
-* Pihrtsoft\.Text\.RegularExpressions\.Linq\.[IExcludedGroup](../IExcludedGroup/README.md)
+* [IExcludedGroup](../IExcludedGroup/README.md)
 
 ## Methods
 

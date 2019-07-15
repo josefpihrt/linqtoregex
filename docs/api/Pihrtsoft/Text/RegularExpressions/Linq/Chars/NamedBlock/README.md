@@ -2,25 +2,24 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Chars](../README.md)
+**Containing Type**: [Chars](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Returns a pattern that matches a character from the specified Unicode block\.
 
 ```csharp
-public static CharGrouping NamedBlock(NamedBlock block)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping NamedBlock(Pihrtsoft.Text.RegularExpressions.Linq.NamedBlock block)
 ```
 
 ### Parameters
 
-**block**
+**block** &ensp; [NamedBlock](../../NamedBlock/README.md)
 
 An enumerated constant that identifies Unicode block\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../../CharGrouping/README.md)
+[CharGrouping](../../CharGrouping/README.md)
 

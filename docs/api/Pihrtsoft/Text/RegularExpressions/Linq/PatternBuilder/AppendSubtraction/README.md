@@ -2,31 +2,30 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[PatternBuilder](../README.md)
+**Containing Type**: [PatternBuilder](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Appends a pattern that matches a character from a specified base group except characters from a specified excluded group\.
 
 ```csharp
-public void AppendSubtraction(IBaseGroup baseGroup, IExcludedGroup excludedGroup)
+public void AppendSubtraction(Pihrtsoft.Text.RegularExpressions.Linq.IBaseGroup baseGroup, Pihrtsoft.Text.RegularExpressions.Linq.IExcludedGroup excludedGroup)
 ```
 
 ### Parameters
 
-**baseGroup**
+**baseGroup** &ensp; [IBaseGroup](../../IBaseGroup/README.md)
 
 A base group\.
 
-**excludedGroup**
+**excludedGroup** &ensp; [IExcludedGroup](../../IExcludedGroup/README.md)
 
 An excluded group\.
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **baseGroup** or **excludedGroup** is `null`\.
 

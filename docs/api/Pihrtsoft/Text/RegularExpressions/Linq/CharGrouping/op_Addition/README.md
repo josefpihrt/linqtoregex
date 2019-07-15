@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../README.md)
+**Containing Type**: [CharGrouping](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -16,153 +16,148 @@
 | [Addition(CharGrouping, String)](#Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_System_String_) | Concatenate two elements into a new [CharGrouping](../README.md)\. |
 | [Addition(String, CharGrouping)](#Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Addition_System_String_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_) | Concatenate two elements into a new [CharGrouping](../README.md)\. |
 
-## Addition\(Char, CharGrouping\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Addition_System_Char_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
+## Addition\(Char, CharGrouping\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Addition_System_Char_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
 
-### Summary
-
+\
 Concatenate two elements into a new [CharGrouping](../README.md)\.
 
 ```csharp
-public static CharGrouping operator +(char left, CharGrouping right)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping operator +(char left, Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping right)
 ```
 
 ### Parameters
 
-**left**
+**left** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The first element to concatenate\.
 
-**right**
+**right** &ensp; [CharGrouping](../README.md)
 
 The second element to concatenate\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../README.md)
+[CharGrouping](../README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **right** is `null`\.
 
-## Addition\(CharGrouping, Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_System_Char_"></a>
+## Addition\(CharGrouping, Char\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_System_Char_"></a>
 
-### Summary
-
+\
 Concatenate two elements into a new [CharGrouping](../README.md)\.
 
 ```csharp
-public static CharGrouping operator +(CharGrouping left, char right)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping operator +(Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping left, char right)
 ```
 
 ### Parameters
 
-**left**
+**left** &ensp; [CharGrouping](../README.md)
 
 The first element to concatenate\.
 
-**right**
+**right** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 The second element to concatenate\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../README.md)
+[CharGrouping](../README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **left** is `null`\.
 
-## Addition\(CharGrouping, CharGrouping\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
+## Addition\(CharGrouping, CharGrouping\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
 
-### Summary
-
+\
 Concatenate two elements into a new [CharGrouping](../README.md)\.
 
 ```csharp
-public static CharGrouping operator +(CharGrouping left, CharGrouping right)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping operator +(Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping left, Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping right)
 ```
 
 ### Parameters
 
-**left**
+**left** &ensp; [CharGrouping](../README.md)
 
 The first element to concatenate\.
 
-**right**
+**right** &ensp; [CharGrouping](../README.md)
 
 The second element to concatenate\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../README.md)
+[CharGrouping](../README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **left** or **right** is `null`\.
 
-## Addition\(CharGrouping, String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_System_String_"></a>
+## Addition\(CharGrouping, String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Addition_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_System_String_"></a>
 
-### Summary
-
+\
 Concatenate two elements into a new [CharGrouping](../README.md)\.
 
 ```csharp
-public static CharGrouping operator +(CharGrouping left, string right)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping operator +(Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping left, string right)
 ```
 
 ### Parameters
 
-**left**
+**left** &ensp; [CharGrouping](../README.md)
 
 The first element to concatenate\.
 
-**right**
+**right** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The second element to concatenate\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../README.md)
+[CharGrouping](../README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **left** or **right** is `null`\.
 
-## Addition\(String, CharGrouping\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Addition_System_String_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
+## Addition\(String, CharGrouping\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_op_Addition_System_String_Pihrtsoft_Text_RegularExpressions_Linq_CharGrouping_"></a>
 
-### Summary
-
+\
 Concatenate two elements into a new [CharGrouping](../README.md)\.
 
 ```csharp
-public static CharGrouping operator +(string left, CharGrouping right)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping operator +(string left, Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping right)
 ```
 
 ### Parameters
 
-**left**
+**left** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The first element to concatenate\.
 
-**right**
+**right** &ensp; [CharGrouping](../README.md)
 
 The second element to concatenate\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../README.md)
+[CharGrouping](../README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **left** or **right** is `null`\.
 

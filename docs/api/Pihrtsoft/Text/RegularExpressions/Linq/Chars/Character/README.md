@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Chars](../README.md)
+**Containing Type**: [Chars](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -16,113 +16,108 @@
 | [Character(NamedBlock)](#Pihrtsoft_Text_RegularExpressions_Linq_Chars_Character_Pihrtsoft_Text_RegularExpressions_Linq_NamedBlock_) | Returns a pattern that matches a character from the specified Unicode block\. |
 | [Character(String)](#Pihrtsoft_Text_RegularExpressions_Linq_Chars_Character_System_String_) | Returns a pattern that matches any one of the specified characters\. |
 
-## Character\(AsciiChar\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Chars_Character_Pihrtsoft_Text_RegularExpressions_Linq_AsciiChar_"></a>
+## Character\(AsciiChar\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Chars_Character_Pihrtsoft_Text_RegularExpressions_Linq_AsciiChar_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches specified Unicode character\.
 
 ```csharp
-public static CharGrouping Character(AsciiChar value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Character(Pihrtsoft.Text.RegularExpressions.Linq.AsciiChar value)
 ```
 
 ### Parameters
 
-**value**
+**value** &ensp; [AsciiChar](../../AsciiChar/README.md)
 
 An enumerated constant that identifies ASCII character\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../../CharGrouping/README.md)
+[CharGrouping](../../CharGrouping/README.md)
 
-## Character\(GeneralCategory\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Chars_Character_Pihrtsoft_Text_RegularExpressions_Linq_GeneralCategory_"></a>
+## Character\(GeneralCategory\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Chars_Character_Pihrtsoft_Text_RegularExpressions_Linq_GeneralCategory_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character from the specified Unicode category\.
 
 ```csharp
-public static CharGrouping Character(GeneralCategory category)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Character(Pihrtsoft.Text.RegularExpressions.Linq.GeneralCategory category)
 ```
 
 ### Parameters
 
-**category**
+**category** &ensp; [GeneralCategory](../../GeneralCategory/README.md)
 
 An enumerated constant that identifies Unicode category\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../../CharGrouping/README.md)
+[CharGrouping](../../CharGrouping/README.md)
 
-## Character\(Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Chars_Character_System_Char_"></a>
+## Character\(Char\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Chars_Character_System_Char_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches specified Unicode character\.
 
 ```csharp
-public static CharGrouping Character(char value)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Character(char value)
 ```
 
 ### Parameters
 
-**value**
+**value** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 A Unicode character\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../../CharGrouping/README.md)
+[CharGrouping](../../CharGrouping/README.md)
 
-## Character\(NamedBlock\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Chars_Character_Pihrtsoft_Text_RegularExpressions_Linq_NamedBlock_"></a>
+## Character\(NamedBlock\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Chars_Character_Pihrtsoft_Text_RegularExpressions_Linq_NamedBlock_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a character from the specified Unicode block\.
 
 ```csharp
-public static CharGrouping Character(NamedBlock block)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Character(Pihrtsoft.Text.RegularExpressions.Linq.NamedBlock block)
 ```
 
 ### Parameters
 
-**block**
+**block** &ensp; [NamedBlock](../../NamedBlock/README.md)
 
 An enumerated constant that identifies Unicode block\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../../CharGrouping/README.md)
+[CharGrouping](../../CharGrouping/README.md)
 
-## Character\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Chars_Character_System_String_"></a>
+## Character\(String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Chars_Character_System_String_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches any one of the specified characters\.
 
 ```csharp
-public static CharGrouping Character(string characters)
+public static Pihrtsoft.Text.RegularExpressions.Linq.CharGrouping Character(string characters)
 ```
 
 ### Parameters
 
-**characters**
+**characters** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A set of Unicode characters\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[CharGrouping](../../CharGrouping/README.md)
+[CharGrouping](../../CharGrouping/README.md)
 
 ### Exceptions
 
-System\.[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
+[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
 
 **characters** length is equal to zero\.
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **characters** is `null`\.
 

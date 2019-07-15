@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[RegexUtility](../README.md)
+**Containing Type**: [RegexUtility](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -15,10 +15,9 @@
 | [Escape(String)](#Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_Escape_System_String_) | Converts a specified text to the [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) object that represents each character as a literal rather than a metacharacter\. The text is considered not to be in the character group\. |
 | [Escape(String, Boolean)](#Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_Escape_System_String_System_Boolean_) | Converts a specified input to the [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) object that represents each character as a literal rather than a metacharacter\. |
 
-## Escape\(Char\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_Escape_System_Char_"></a>
+## Escape\(Char\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_Escape_System_Char_"></a>
 
-### Summary
-
+\
 Converts a specified character to the [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) object that represents the character as a literal rather than a metacharacter\.
 The character is considered not to be in the character group\.
 
@@ -28,18 +27,17 @@ public static string Escape(char value)
 
 ### Parameters
 
-**value**
+**value** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 A Unicode character\.
 
 ### Returns
 
-System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
-## Escape\(Char, Boolean\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_Escape_System_Char_System_Boolean_"></a>
+## Escape\(Char, Boolean\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_Escape_System_Char_System_Boolean_"></a>
 
-### Summary
-
+\
 Converts a specified character to the [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) object that represents the character as a literal rather than a metacharacter\.
 
 ```csharp
@@ -48,22 +46,21 @@ public static string Escape(char value, bool inCharGroup)
 
 ### Parameters
 
-**value**
+**value** &ensp; [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
 A Unicode character\.
 
-**inCharGroup**
+**inCharGroup** &ensp; [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
 Indicates whether the character is considered to be inside or outside of the character group\.
 
 ### Returns
 
-System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
-## Escape\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_Escape_System_String_"></a>
+## Escape\(String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_Escape_System_String_"></a>
 
-### Summary
-
+\
 Converts a specified text to the [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) object that represents each character as a literal rather than a metacharacter\.
 The text is considered not to be in the character group\.
 
@@ -73,24 +70,23 @@ public static string Escape(string input)
 
 ### Parameters
 
-**input**
+**input** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The text to be converted\.
 
 ### Returns
 
-System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **input** is `null`\.
 
-## Escape\(String, Boolean\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_Escape_System_String_System_Boolean_"></a>
+## Escape\(String, Boolean\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_RegexUtility_Escape_System_String_System_Boolean_"></a>
 
-### Summary
-
+\
 Converts a specified input to the [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) object that represents each character as a literal rather than a metacharacter\.
 
 ```csharp
@@ -99,21 +95,21 @@ public static string Escape(string input, bool inCharGroup)
 
 ### Parameters
 
-**input**
+**input** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The text to be converted\.
 
-**inCharGroup**
+**inCharGroup** &ensp; [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
 Indicates whether the text is considered to be inside or outside of the character group\.
 
 ### Returns
 
-System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **input** is `null`\.
 

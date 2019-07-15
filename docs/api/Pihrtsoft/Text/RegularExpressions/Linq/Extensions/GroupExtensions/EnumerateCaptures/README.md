@@ -2,31 +2,30 @@
 
 [Home](../../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.Extensions\.[GroupExtensions](../README.md)
+**Containing Type**: [GroupExtensions](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Returns enumerable collection of captures of a specified group\.
 
 ```csharp
-public static IEnumerable<Capture> EnumerateCaptures(this Group group)
+public static System.Collections.Generic.IEnumerable<System.Text.RegularExpressions.Capture> EnumerateCaptures(this System.Text.RegularExpressions.Group group)
 ```
 
 ### Parameters
 
-**group**
+**group** &ensp; [Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)
 
 A regular expression group\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Capture](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.capture)>
+[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Capture](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.capture)>
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **group** is `null`\.
 

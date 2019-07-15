@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Patterns](../README.md)
+**Containing Type**: [Patterns](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -13,59 +13,57 @@
 | [GroupReference(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_GroupReference_System_Int32_) | Returns a pattern that matches previously defined numbered group\. |
 | [GroupReference(String)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_GroupReference_System_String_) | Returns a pattern that matches previously defined named group\. |
 
-## GroupReference\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_GroupReference_System_Int32_"></a>
+## GroupReference\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_GroupReference_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches previously defined numbered group\.
 
 ```csharp
-public static QuantifiablePattern GroupReference(int groupNumber)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern GroupReference(int groupNumber)
 ```
 
 ### Parameters
 
-**groupNumber**
+**groupNumber** &ensp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of the group\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../QuantifiablePattern/README.md)
+[QuantifiablePattern](../../QuantifiablePattern/README.md)
 
 ### Exceptions
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **groupNumber** is less than zero\.
 
-## GroupReference\(String\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_GroupReference_System_String_"></a>
+## GroupReference\(String\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_GroupReference_System_String_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches previously defined named group\.
 
 ```csharp
-public static QuantifiablePattern GroupReference(string groupName)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern GroupReference(string groupName)
 ```
 
 ### Parameters
 
-**groupName**
+**groupName** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A name of the group\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../QuantifiablePattern/README.md)
+[QuantifiablePattern](../../QuantifiablePattern/README.md)
 
 ### Exceptions
 
-System\.[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
+[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
 
 **groupName** is not a valid regex group name\.
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **groupName** is `null`\.
 

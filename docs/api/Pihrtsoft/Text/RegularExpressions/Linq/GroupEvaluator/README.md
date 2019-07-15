@@ -6,21 +6,20 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Represents the method that is called each time a regular expression group is found during a Replace method operation\.
 
 ```csharp
-public delegate string GroupEvaluator(Group group)
+public delegate string GroupEvaluator(System.Text.RegularExpressions.Group group)
 ```
 
 ### Parameters
 
-**group**
+**group** &ensp; [Group](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.group)
 
 ### Return Value
 
-System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 ### Inheritance
 

@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Patterns](../README.md)
+**Containing Type**: [Patterns](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -13,59 +13,57 @@
 | [MaybeMany(Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_MaybeMany_System_Object_) | Returns a pattern that matches specified content zero or more times\. |
 | [MaybeMany(Object, Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_MaybeMany_System_Object_System_Object___) | Returns a pattern that matches any one specified element zero or more times\. |
 
-## MaybeMany\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_MaybeMany_System_Object_"></a>
+## MaybeMany\(Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_MaybeMany_System_Object_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches specified content zero or more times\.
 
 ```csharp
-public static QuantifiedGroup MaybeMany(object content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup MaybeMany(object content)
 ```
 
 ### Parameters
 
-**content**
+**content** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGroup/README.md)
+[QuantifiedGroup](../../QuantifiedGroup/README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **content** is `null`\.
 
-## MaybeMany\(Object, Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_MaybeMany_System_Object_System_Object___"></a>
+## MaybeMany\(Object, Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_MaybeMany_System_Object_System_Object___"></a>
 
-### Summary
-
+\
 Returns a pattern that matches any one specified element zero or more times\.
 
 ```csharp
-public static QuantifiedGroup MaybeMany(object first, params object[] others)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup MaybeMany(object first, params object[] others)
 ```
 
 ### Parameters
 
-**first**
+**first** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 First element of a sequence that contains patterns any one of which has to be matched\.
 
-**others**
+**others** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
 
 Other elements of a sequence that contains patterns any one of which has to be matched\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGroup/README.md)
+[QuantifiedGroup](../../QuantifiedGroup/README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **first** is `null`\.
 

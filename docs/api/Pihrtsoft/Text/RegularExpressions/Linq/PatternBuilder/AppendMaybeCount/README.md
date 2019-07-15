@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[PatternBuilder](../README.md)
+**Containing Type**: [PatternBuilder](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -13,10 +13,9 @@
 | [AppendMaybeCount(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendMaybeCount_System_Int32_) | Appends a quantifier that matches previous element at most specified number of times\. |
 | [AppendMaybeCount(Int32, Boolean)](#Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendMaybeCount_System_Int32_System_Boolean_) | Appends a quantifier that matches previous element at most specified number of times\. |
 
-## AppendMaybeCount\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendMaybeCount_System_Int32_"></a>
+## AppendMaybeCount\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendMaybeCount_System_Int32_"></a>
 
-### Summary
-
+\
 Appends a quantifier that matches previous element at most specified number of times\.
 
 ```csharp
@@ -25,20 +24,19 @@ public void AppendMaybeCount(int maxCount)
 
 ### Parameters
 
-**maxCount**
+**maxCount** &ensp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A maximum number of times the pattern can be matched\.
 
 ### Exceptions
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **maxCount** is less than zero\.
 
-## AppendMaybeCount\(Int32, Boolean\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendMaybeCount_System_Int32_System_Boolean_"></a>
+## AppendMaybeCount\(Int32, Boolean\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_PatternBuilder_AppendMaybeCount_System_Int32_System_Boolean_"></a>
 
-### Summary
-
+\
 Appends a quantifier that matches previous element at most specified number of times\.
 
 ```csharp
@@ -47,17 +45,17 @@ public void AppendMaybeCount(int maxCount, bool lazy)
 
 ### Parameters
 
-**maxCount**
+**maxCount** &ensp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A maximum number of times the pattern can be matched\.
 
-**lazy**
+**lazy** &ensp; [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
 Indicates whether the quantifier will be greedy or lazy\.
 
 ### Exceptions
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **maxCount** is less than zero\.
 

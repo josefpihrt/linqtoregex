@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+**Containing Type**: [Pattern](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -13,67 +13,65 @@
 | [IfAssert(Object, Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_IfAssert_System_Object_System_Object_) | Appends an if construct with the specified content to assert and a content to match if the assertion succeeds\. |
 | [IfAssert(Object, Object, Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_IfAssert_System_Object_System_Object_System_Object_) | Appends an if construct with the specified content to assert and a content to match if the assertion succeeds and a content to match if the assertion fails\. |
 
-## IfAssert\(Object, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_IfAssert_System_Object_System_Object_"></a>
+## IfAssert\(Object, Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_IfAssert_System_Object_System_Object_"></a>
 
-### Summary
-
+\
 Appends an if construct with the specified content to assert and a content to match if the assertion succeeds\.
 
 ```csharp
-public QuantifiablePattern IfAssert(object testContent, object trueContent)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern IfAssert(object testContent, object trueContent)
 ```
 
 ### Parameters
 
-**testContent**
+**testContent** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to assert\.
 
-**trueContent**
+**trueContent** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched if the assertion succeeds\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../QuantifiablePattern/README.md)
+[QuantifiablePattern](../../QuantifiablePattern/README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **testContent** or **trueContent** is `null`\.
 
-## IfAssert\(Object, Object, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_IfAssert_System_Object_System_Object_System_Object_"></a>
+## IfAssert\(Object, Object, Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_IfAssert_System_Object_System_Object_System_Object_"></a>
 
-### Summary
-
+\
 Appends an if construct with the specified content to assert and a content to match if the assertion succeeds and a content to match if the assertion fails\.
 
 ```csharp
-public QuantifiablePattern IfAssert(object testContent, object trueContent, object falseContent)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern IfAssert(object testContent, object trueContent, object falseContent)
 ```
 
 ### Parameters
 
-**testContent**
+**testContent** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to assert\.
 
-**trueContent**
+**trueContent** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched if the assertion succeeds\.
 
-**falseContent**
+**falseContent** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched if the assertion fails\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../QuantifiablePattern/README.md)
+[QuantifiablePattern](../../QuantifiablePattern/README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **testContent** or **trueContent** is `null`\.
 

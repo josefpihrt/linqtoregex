@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
-## Summary
-
+\
 Provides a set of static methods that extends [Capture](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.capture) class\.
 
 ```csharp

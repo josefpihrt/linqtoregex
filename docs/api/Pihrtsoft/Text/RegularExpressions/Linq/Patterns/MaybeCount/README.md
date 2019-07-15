@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Patterns](../README.md)
+**Containing Type**: [Patterns](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -13,75 +13,73 @@
 | [MaybeCount(Int32, Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_MaybeCount_System_Int32_System_Object_) | Returns a pattern that matches specified pattern at most specified number of times\. |
 | [MaybeCount(Int32, Object, Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_MaybeCount_System_Int32_System_Object_System_Object___) | Returns a pattern that matches any one specified pattern at most specified number of times\. |
 
-## MaybeCount\(Int32, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_MaybeCount_System_Int32_System_Object_"></a>
+## MaybeCount\(Int32, Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_MaybeCount_System_Int32_System_Object_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches specified pattern at most specified number of times\.
 
 ```csharp
-public static QuantifiedGroup MaybeCount(int maxCount, object content)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup MaybeCount(int maxCount, object content)
 ```
 
 ### Parameters
 
-**maxCount**
+**maxCount** &ensp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A maximum number of times the pattern can be matched\.
 
-**content**
+**content** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGroup/README.md)
+[QuantifiedGroup](../../QuantifiedGroup/README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **content** is `null`\.
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **maxCount** is less than zero\.
 
-## MaybeCount\(Int32, Object, Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_MaybeCount_System_Int32_System_Object_System_Object___"></a>
+## MaybeCount\(Int32, Object, Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_MaybeCount_System_Int32_System_Object_System_Object___"></a>
 
-### Summary
-
+\
 Returns a pattern that matches any one specified pattern at most specified number of times\.
 
 ```csharp
-public static QuantifiedGroup MaybeCount(int maxCount, object first, params object[] others)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup MaybeCount(int maxCount, object first, params object[] others)
 ```
 
 ### Parameters
 
-**maxCount**
+**maxCount** &ensp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A maximum number of times the pattern can be matched\.
 
-**first**
+**first** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 First element of a sequence that contains patterns any one of which has to be matched\.
 
-**others**
+**others** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
 
 Other elements of a sequence that contains patterns any one of which has to be matched\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGroup/README.md)
+[QuantifiedGroup](../../QuantifiedGroup/README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **first** is `null`\.
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **maxCount** is less than zero\.
 

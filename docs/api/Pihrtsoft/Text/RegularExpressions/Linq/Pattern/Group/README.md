@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+**Containing Type**: [Pattern](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -14,69 +14,66 @@
 | [Group(Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Group_System_Object_) | Appends a numbered group with a specified content\. |
 | [Group(Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Group_System_Object___) | Appends a numbered group with a specified content\. |
 
-## Group\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Group"></a>
+## Group\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Group"></a>
 
-### Summary
-
+\
 Appends an empty numbered group\.
 
 ```csharp
-public QuantifiablePattern Group()
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Group()
 ```
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../QuantifiablePattern/README.md)
+[QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## Group\(Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Group_System_Object_"></a>
+## Group\(Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Group_System_Object_"></a>
 
-### Summary
-
+\
 Appends a numbered group with a specified content\.
 
 ```csharp
-public QuantifiablePattern Group(object content)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Group(object content)
 ```
 
 ### Parameters
 
-**content**
+**content** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../QuantifiablePattern/README.md)
+[QuantifiablePattern](../../QuantifiablePattern/README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **content** is `null`\.
 
-## Group\(Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Group_System_Object___"></a>
+## Group\(Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Group_System_Object___"></a>
 
-### Summary
-
+\
 Appends a numbered group with a specified content\.
 
 ```csharp
-public QuantifiablePattern Group(params object[] content)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Group(params object[] content)
 ```
 
 ### Parameters
 
-**content**
+**content** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
 
 An object array that contains zero or more patterns any one of which has to be matched\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../QuantifiablePattern/README.md)
+[QuantifiablePattern](../../QuantifiablePattern/README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **content** is `null`\.
 

@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+**Containing Type**: [Pattern](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -17,175 +17,169 @@
 | [Options(RegexOptions, RegexOptions, Object)](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Options_System_Text_RegularExpressions_RegexOptions_System_Text_RegularExpressions_RegexOptions_System_Object_) | Appends a pattern that applies and disables specified options to a specified pattern\. |
 | [Options(RegexOptions, RegexOptions, Object\[\])](#Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Options_System_Text_RegularExpressions_RegexOptions_System_Text_RegularExpressions_RegexOptions_System_Object___) | Appends a pattern that applies and disables specified options to a specified pattern\. |
 
-## Options\(RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Options_System_Text_RegularExpressions_RegexOptions_"></a>
+## Options\(RegexOptions\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Options_System_Text_RegularExpressions_RegexOptions_"></a>
 
-### Summary
-
+\
 Appends a pattern that applies specified options\.
 
 ```csharp
-public Pattern Options(RegexOptions applyOptions)
+public Pihrtsoft.Text.RegularExpressions.Linq.Pattern Options(System.Text.RegularExpressions.RegexOptions applyOptions)
 ```
 
 ### Parameters
 
-**applyOptions**
+**applyOptions** &ensp; [RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that are applied\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+[Pattern](../README.md)
 
-## Options\(RegexOptions, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Options_System_Text_RegularExpressions_RegexOptions_System_Object_"></a>
+## Options\(RegexOptions, Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Options_System_Text_RegularExpressions_RegexOptions_System_Object_"></a>
 
-### Summary
-
+\
 Appends a pattern that applies specified options to a specified pattern\.
 
 ```csharp
-public QuantifiablePattern Options(RegexOptions applyOptions, object content)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Options(System.Text.RegularExpressions.RegexOptions applyOptions, object content)
 ```
 
 ### Parameters
 
-**applyOptions**
+**applyOptions** &ensp; [RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that are applied\.
 
-**content**
+**content** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../QuantifiablePattern/README.md)
+[QuantifiablePattern](../../QuantifiablePattern/README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **content** is `null`\.
 
-## Options\(RegexOptions, Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Options_System_Text_RegularExpressions_RegexOptions_System_Object___"></a>
+## Options\(RegexOptions, Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Options_System_Text_RegularExpressions_RegexOptions_System_Object___"></a>
 
-### Summary
-
+\
 Appends a pattern that applies specified options to a specified pattern\.
 
 ```csharp
-public QuantifiablePattern Options(RegexOptions applyOptions, params object[] content)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Options(System.Text.RegularExpressions.RegexOptions applyOptions, params object[] content)
 ```
 
 ### Parameters
 
-**applyOptions**
+**applyOptions** &ensp; [RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that are applied\.
 
-**content**
+**content** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
 
 An object array that contains zero or more patterns any one of which has to be matched\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../QuantifiablePattern/README.md)
+[QuantifiablePattern](../../QuantifiablePattern/README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **content** is `null`\.
 
-## Options\(RegexOptions, RegexOptions\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Options_System_Text_RegularExpressions_RegexOptions_System_Text_RegularExpressions_RegexOptions_"></a>
+## Options\(RegexOptions, RegexOptions\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Options_System_Text_RegularExpressions_RegexOptions_System_Text_RegularExpressions_RegexOptions_"></a>
 
-### Summary
-
+\
 Appends a pattern that applies and disables specified options to a specified pattern\.
 
 ```csharp
-public Pattern Options(RegexOptions applyOptions, RegexOptions disableOptions)
+public Pihrtsoft.Text.RegularExpressions.Linq.Pattern Options(System.Text.RegularExpressions.RegexOptions applyOptions, System.Text.RegularExpressions.RegexOptions disableOptions)
 ```
 
 ### Parameters
 
-**applyOptions**
+**applyOptions** &ensp; [RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that are applied\.
 
-**disableOptions**
+**disableOptions** &ensp; [RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that are disabled\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Pattern](../README.md)
+[Pattern](../README.md)
 
-## Options\(RegexOptions, RegexOptions, Object\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Options_System_Text_RegularExpressions_RegexOptions_System_Text_RegularExpressions_RegexOptions_System_Object_"></a>
+## Options\(RegexOptions, RegexOptions, Object\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Options_System_Text_RegularExpressions_RegexOptions_System_Text_RegularExpressions_RegexOptions_System_Object_"></a>
 
-### Summary
-
+\
 Appends a pattern that applies and disables specified options to a specified pattern\.
 
 ```csharp
-public QuantifiablePattern Options(RegexOptions applyOptions, RegexOptions disableOptions, object content)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Options(System.Text.RegularExpressions.RegexOptions applyOptions, System.Text.RegularExpressions.RegexOptions disableOptions, object content)
 ```
 
 ### Parameters
 
-**applyOptions**
+**applyOptions** &ensp; [RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that are applied\.
 
-**disableOptions**
+**disableOptions** &ensp; [RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that are disabled\.
 
-**content**
+**content** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 The content to be matched\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../QuantifiablePattern/README.md)
+[QuantifiablePattern](../../QuantifiablePattern/README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **content** is `null`\.
 
-## Options\(RegexOptions, RegexOptions, Object\[\]\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Options_System_Text_RegularExpressions_RegexOptions_System_Text_RegularExpressions_RegexOptions_System_Object___"></a>
+## Options\(RegexOptions, RegexOptions, Object\[\]\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Pattern_Options_System_Text_RegularExpressions_RegexOptions_System_Text_RegularExpressions_RegexOptions_System_Object___"></a>
 
-### Summary
-
+\
 Appends a pattern that applies and disables specified options to a specified pattern\.
 
 ```csharp
-public QuantifiablePattern Options(RegexOptions applyOptions, RegexOptions disableOptions, params object[] content)
+public Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern Options(System.Text.RegularExpressions.RegexOptions applyOptions, System.Text.RegularExpressions.RegexOptions disableOptions, params object[] content)
 ```
 
 ### Parameters
 
-**applyOptions**
+**applyOptions** &ensp; [RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that are applied\.
 
-**disableOptions**
+**disableOptions** &ensp; [RegexOptions](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions)
 
 A bitwise combination of the enumeration values that are disabled\.
 
-**content**
+**content** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\[\]
 
 An object array that contains zero or more patterns any one of which has to be matched\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../QuantifiablePattern/README.md)
+[QuantifiablePattern](../../QuantifiablePattern/README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **content** is `null`\.
 

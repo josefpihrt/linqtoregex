@@ -2,7 +2,7 @@
 
 [Home](../../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.[Patterns](../README.md)
+**Containing Type**: [Patterns](../README.md)
 
 **Assembly**: Pihrtsoft\.Text\.RegularExpressions\.Linq\.dll
 
@@ -13,43 +13,41 @@
 | [AlphanumericUpper()](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AlphanumericUpper) | Returns a pattern that matches an upper\-case alphanumeric character\. Alphanumeric character is a latin alphabet upper\-case letter or an arabic digit\. |
 | [AlphanumericUpper(Int32)](#Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AlphanumericUpper_System_Int32_) | Returns a pattern that matches a specified number of upper\-case alphanumeric characters\. Alphanumeric character is a latin alphabet upper\-case letter or an arabic digit\. |
 
-## AlphanumericUpper\(\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AlphanumericUpper"></a>
+## AlphanumericUpper\(\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AlphanumericUpper"></a>
 
-### Summary
-
+\
 Returns a pattern that matches an upper\-case alphanumeric character\. Alphanumeric character is a latin alphabet upper\-case letter or an arabic digit\.
 
 ```csharp
-public static QuantifiablePattern AlphanumericUpper()
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiablePattern AlphanumericUpper()
 ```
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiablePattern](../../QuantifiablePattern/README.md)
+[QuantifiablePattern](../../QuantifiablePattern/README.md)
 
-## AlphanumericUpper\(Int32\) <a name="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AlphanumericUpper_System_Int32_"></a>
+## AlphanumericUpper\(Int32\) <a id="Pihrtsoft_Text_RegularExpressions_Linq_Patterns_AlphanumericUpper_System_Int32_"></a>
 
-### Summary
-
+\
 Returns a pattern that matches a specified number of upper\-case alphanumeric characters\. Alphanumeric character is a latin alphabet upper\-case letter or an arabic digit\.
 
 ```csharp
-public static QuantifiedGroup AlphanumericUpper(int exactCount)
+public static Pihrtsoft.Text.RegularExpressions.Linq.QuantifiedGroup AlphanumericUpper(int exactCount)
 ```
 
 ### Parameters
 
-**exactCount**
+**exactCount** &ensp; [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A number of times a character has to be matched\.
 
 ### Returns
 
-Pihrtsoft\.Text\.RegularExpressions\.Linq\.[QuantifiedGroup](../../QuantifiedGroup/README.md)
+[QuantifiedGroup](../../QuantifiedGroup/README.md)
 
 ### Exceptions
 
-System\.[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+[ArgumentOutOfRangeException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
 
 **exactCount** is less than zero\.
 
