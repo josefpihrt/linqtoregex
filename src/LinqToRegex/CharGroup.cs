@@ -7,8 +7,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     /// <summary>
     /// Represents a positive or a negative character group pattern. This class is abstract.
     /// </summary>
-    public abstract partial class CharGroup
-        : QuantifiablePattern, IBaseGroup, IExcludedGroup, INegateable<CharGroup>
+    public abstract partial class CharGroup : QuantifiablePattern, IBaseGroup, IExcludedGroup, INegateable<CharGroup>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="CharGroup"/> class.

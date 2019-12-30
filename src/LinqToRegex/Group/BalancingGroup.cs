@@ -2,8 +2,7 @@
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
-    internal sealed class BalancingGroup
-        : GroupingPattern
+    internal sealed class BalancingGroup : GroupingPattern
     {
         public BalancingGroup(string name1, string name2, object content)
             : base(content)

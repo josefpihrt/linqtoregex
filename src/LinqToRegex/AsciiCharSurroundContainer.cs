@@ -4,8 +4,7 @@ using System;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
-    internal sealed class AsciiCharSurroundContainer
-        : Pattern
+    internal sealed class AsciiCharSurroundContainer : Pattern
     {
         private readonly object _content;
         private readonly AsciiChar _charBefore;

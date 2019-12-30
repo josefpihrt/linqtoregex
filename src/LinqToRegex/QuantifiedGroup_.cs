@@ -6,8 +6,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
     public abstract partial class QuantifiedGroup
     {
-        internal sealed class CountQuantifiedGroup
-            : QuantifiedGroup
+        internal sealed class CountQuantifiedGroup : QuantifiedGroup
         {
             private readonly int _count1;
             private readonly int _count2;
@@ -48,8 +47,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             }
         }
 
-        internal sealed class CountFromQuantifiedGroup
-            : QuantifiedGroup
+        internal sealed class CountFromQuantifiedGroup : QuantifiedGroup
         {
             private readonly int _minCount;
 
@@ -71,8 +69,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             }
         }
 
-        internal sealed class MaybeQuantifiedGroup
-            : QuantifiedGroup
+        internal sealed class MaybeQuantifiedGroup : QuantifiedGroup
         {
             public MaybeQuantifiedGroup(object content)
                 : base(content)
@@ -88,8 +85,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             }
         }
 
-        internal sealed class MaybeManyQuantifiedGroup
-            : QuantifiedGroup
+        internal sealed class MaybeManyQuantifiedGroup : QuantifiedGroup
         {
             public MaybeManyQuantifiedGroup(object content)
                 : base(content)
@@ -105,8 +101,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             }
         }
 
-        internal sealed class OneManyQuantifiedGroup
-            : QuantifiedGroup
+        internal sealed class OneManyQuantifiedGroup : QuantifiedGroup
         {
             public OneManyQuantifiedGroup(object content)
                 : base(content)

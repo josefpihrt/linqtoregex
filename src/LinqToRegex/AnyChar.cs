@@ -2,8 +2,7 @@
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
-    internal sealed class AnyChar
-        : QuantifiablePattern
+    internal sealed class AnyChar : QuantifiablePattern
     {
         internal override void AppendTo(PatternBuilder builder)
         {

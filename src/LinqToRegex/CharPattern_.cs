@@ -6,8 +6,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
     public abstract partial class CharPattern
     {
-        internal sealed class CharCharPattern
-            : CharPattern
+        internal sealed class CharCharPattern : CharPattern
         {
             private readonly char _value;
 
@@ -32,8 +31,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             }
         }
 
-        internal sealed class AsciiCharCharPattern
-            : CharPattern
+        internal sealed class AsciiCharCharPattern : CharPattern
         {
             private readonly AsciiChar _value;
 
@@ -58,8 +56,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             }
         }
 
-        internal class GeneralCategoryCharPattern
-            : CharPattern
+        internal class GeneralCategoryCharPattern : CharPattern
         {
             private readonly GeneralCategory _category;
             private readonly bool _negative;
@@ -78,8 +75,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             }
         }
 
-        internal class NamedBlockCharPattern
-            : CharPattern
+        internal class NamedBlockCharPattern : CharPattern
         {
             private readonly NamedBlock _block;
             private readonly bool _negative;
@@ -98,8 +94,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             }
         }
 
-        internal sealed class CharClassCharPattern
-            : CharPattern
+        internal sealed class CharClassCharPattern : CharPattern
         {
             private readonly CharClass _value;
 

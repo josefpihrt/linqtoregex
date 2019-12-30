@@ -2,8 +2,7 @@
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
-    internal sealed class AfterMatchSubstitution
-        : Substitution
+    internal sealed class AfterMatchSubstitution : Substitution
     {
         internal AfterMatchSubstitution()
         {

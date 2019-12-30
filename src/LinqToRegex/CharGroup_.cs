@@ -6,8 +6,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
     public abstract partial class CharGroup
     {
-        internal sealed class CharCharGroup
-            : CharGroup
+        internal sealed class CharCharGroup : CharGroup
         {
             private readonly char _value;
 
@@ -33,8 +32,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             public override bool Negative { get; }
         }
 
-        internal sealed class AsciiCharCharGroup
-            : CharGroup
+        internal sealed class AsciiCharCharGroup : CharGroup
         {
             private readonly AsciiChar _value;
 
@@ -60,8 +58,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             public override bool Negative { get; }
         }
 
-        internal sealed class TextCharGroup
-            : CharGroup
+        internal sealed class TextCharGroup : CharGroup
         {
             private readonly string _characters;
 
@@ -93,8 +90,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             public override bool Negative { get; }
         }
 
-        internal sealed class CharactersCharGroup
-            : CharGroup
+        internal sealed class CharactersCharGroup : CharGroup
         {
             private readonly char[] _characters;
 
@@ -126,8 +122,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             public override bool Negative { get; }
         }
 
-        internal sealed class CharRangeCharGroup
-            : CharGroup
+        internal sealed class CharRangeCharGroup : CharGroup
         {
             private readonly char _firstChar;
             private readonly char _lastChar;
@@ -158,8 +153,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             public override bool Negative { get; }
         }
 
-        internal sealed class GeneralCategoryCharGroup
-            : CharGroup
+        internal sealed class GeneralCategoryCharGroup : CharGroup
         {
             private readonly GeneralCategory _category;
 
@@ -182,8 +176,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             public override bool Negative { get; }
         }
 
-        internal sealed class NamedBlockCharGroup
-            : CharGroup
+        internal sealed class NamedBlockCharGroup : CharGroup
         {
             private readonly NamedBlock _block;
 
@@ -206,8 +199,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             public override bool Negative { get; }
         }
 
-        internal sealed class CharClassCharGroup
-            : CharGroup
+        internal sealed class CharClassCharGroup : CharGroup
         {
             private readonly CharClass _value;
 
@@ -227,8 +219,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             }
         }
 
-        internal sealed class CharGroupingCharGroup
-            : CharGroup
+        internal sealed class CharGroupingCharGroup : CharGroup
         {
             private readonly CharGrouping _item;
 
@@ -251,8 +242,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             public override bool Negative { get; }
         }
 
-        internal sealed class CharGroupCharGroup
-            : CharGroup
+        internal sealed class CharGroupCharGroup : CharGroup
         {
             private readonly CharGroup _group;
 

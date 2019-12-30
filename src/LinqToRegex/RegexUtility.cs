@@ -15,6 +15,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     public static class RegexUtility
     {
         internal const RegexOptions InlineOptions = RegexOptions.IgnoreCase | RegexOptions.Multiline | RegexOptions.ExplicitCapture | RegexOptions.Singleline | RegexOptions.IgnorePatternWhitespace;
+
         private static readonly object _randomLock = new object();
         private static Random _random;
         private static Regex _validGroupNameRegex;

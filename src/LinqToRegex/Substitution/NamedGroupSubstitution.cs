@@ -4,8 +4,7 @@ using System.Text;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
-    internal sealed class NamedGroupSubstitution
-        : Substitution
+    internal sealed class NamedGroupSubstitution : Substitution
     {
         internal NamedGroupSubstitution(string groupName)
         {

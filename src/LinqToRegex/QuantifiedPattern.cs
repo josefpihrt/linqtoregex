@@ -5,8 +5,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     /// <summary>
     /// Represents a pattern that is quantified, i.e. quantifier is applied on it. This class is abstract.
     /// </summary>
-    public abstract partial class QuantifiedPattern
-        : Pattern
+    public abstract partial class QuantifiedPattern : Pattern
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="QuantifiedPattern"/> class.

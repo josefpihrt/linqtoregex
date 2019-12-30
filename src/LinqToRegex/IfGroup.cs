@@ -5,8 +5,7 @@ using System.Globalization;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
-    internal sealed class IfGroup
-        : QuantifiablePattern
+    internal sealed class IfGroup : QuantifiablePattern
     {
         private readonly object _trueContent;
         private readonly object _falseContent;

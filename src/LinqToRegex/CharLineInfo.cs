@@ -4,8 +4,7 @@ using System.Text.RegularExpressions;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
-    internal sealed class CharLineInfo
-        : LineInfo
+    internal sealed class CharLineInfo : LineInfo
     {
         public CharLineInfo(SyntaxKind kind, int charNumber, RegexOptions options)
             : base(kind, options)

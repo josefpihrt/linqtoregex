@@ -5,8 +5,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     /// <summary>
     /// Represents a pattern that is matched at the end of the string, or before linefeed at the end of the string. This class cannot be inherited.
     /// </summary>
-    internal sealed class EndOfInputOrBeforeEndingLinefeed
-        : QuantifiablePattern
+    internal sealed class EndOfInputOrBeforeEndingLinefeed : QuantifiablePattern
     {
         internal override void AppendTo(PatternBuilder builder)
         {

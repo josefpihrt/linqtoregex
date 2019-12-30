@@ -7,8 +7,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     /// <summary>
     /// Represents a base class for all kind of grouping constructs including assertions. This class is abstract.
     /// </summary>
-    public abstract class GroupingPattern
-        : QuantifiablePattern
+    public abstract class GroupingPattern : QuantifiablePattern
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="GroupingPattern"/> class.

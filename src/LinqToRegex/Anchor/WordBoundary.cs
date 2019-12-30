@@ -8,8 +8,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     /// Represents a pattern that is matched on a boundary between a word character and a non-word character.
     /// The pattern may be also matched on a word boundary at the beginning or end of the string. This class cannot be inherited.
     /// </summary>
-    public sealed class WordBoundary
-        : QuantifiablePattern, INegateable<NegativeWordBoundary>
+    public sealed class WordBoundary : QuantifiablePattern, INegateable<NegativeWordBoundary>
     {
         /// <summary>
         /// Returns an instance of the <see cref="NegativeWordBoundary"/> class.

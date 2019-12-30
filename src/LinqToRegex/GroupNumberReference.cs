@@ -4,8 +4,7 @@ using System;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
-    internal sealed class GroupNumberReference
-        : QuantifiablePattern
+    internal sealed class GroupNumberReference : QuantifiablePattern
     {
         public GroupNumberReference(int groupNumber)
         {

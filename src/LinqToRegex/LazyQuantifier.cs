@@ -2,8 +2,7 @@
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
-    internal sealed class LazyQuantifier
-        : Pattern
+    internal sealed class LazyQuantifier : Pattern
     {
         internal override void AppendTo(PatternBuilder builder)
         {

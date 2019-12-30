@@ -2,8 +2,7 @@
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
-    internal sealed class NumberedGroup
-        : GroupingPattern
+    internal sealed class NumberedGroup : GroupingPattern
     {
         public NumberedGroup()
             : this("")

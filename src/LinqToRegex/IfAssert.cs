@@ -4,8 +4,7 @@ using System;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
-    internal sealed class IfAssert
-        : QuantifiablePattern
+    internal sealed class IfAssert : QuantifiablePattern
     {
         private readonly object _testContent;
         private readonly object _trueContent;

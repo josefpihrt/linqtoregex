@@ -2,8 +2,7 @@
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
-    internal sealed class TextPattern
-        : Pattern
+    internal sealed class TextPattern : Pattern
     {
         private readonly string _text;
 

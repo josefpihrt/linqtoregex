@@ -5,8 +5,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     /// <summary>
     /// Represents a pattern that is matched at the beginning of the string. This class cannot be inherited.
     /// </summary>
-    internal sealed class StartOfInput
-        : QuantifiablePattern
+    internal sealed class StartOfInput : QuantifiablePattern
     {
         internal override void AppendTo(PatternBuilder builder)
         {

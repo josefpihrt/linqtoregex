@@ -2,8 +2,7 @@
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
-    internal sealed class LastCapturedGroupSubstitution
-        : Substitution
+    internal sealed class LastCapturedGroupSubstitution : Substitution
     {
         internal LastCapturedGroupSubstitution()
         {

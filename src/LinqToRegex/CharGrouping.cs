@@ -10,8 +10,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     /// Represents an immutable content of the character group. Content can be a base group or an excluded group. This class is abstract.
     /// </summary>
     [DebuggerDisplay("{DebuggerDisplay,nq}")]
-    public abstract partial class CharGrouping
-        : IBaseGroup, IExcludedGroup
+    public abstract partial class CharGrouping : IBaseGroup, IExcludedGroup
     {
         /// <summary>
         /// Creates and returns a new instance of the <see cref="CharGrouping"/> class.

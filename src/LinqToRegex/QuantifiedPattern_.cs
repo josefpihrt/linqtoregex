@@ -6,8 +6,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
     public abstract partial class QuantifiedPattern
     {
-        internal sealed class CountQuantifiedPattern
-            : QuantifiedPattern
+        internal sealed class CountQuantifiedPattern : QuantifiedPattern
         {
             private readonly int _count1;
             private readonly int _count2;
@@ -43,8 +42,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             }
         }
 
-        internal sealed class CountFromQuantifiedPattern
-            : QuantifiedPattern
+        internal sealed class CountFromQuantifiedPattern : QuantifiedPattern
         {
             private readonly int _minCount;
 
@@ -62,8 +60,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             }
         }
 
-        internal sealed class MaybeQuantifiedPattern
-            : QuantifiedPattern
+        internal sealed class MaybeQuantifiedPattern : QuantifiedPattern
         {
             internal override void AppendTo(PatternBuilder builder)
             {
@@ -71,8 +68,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             }
         }
 
-        internal sealed class MaybeManyQuantifiedPattern
-            : QuantifiedPattern
+        internal sealed class MaybeManyQuantifiedPattern : QuantifiedPattern
         {
             internal override void AppendTo(PatternBuilder builder)
             {
@@ -80,8 +76,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             }
         }
 
-        internal sealed class OneManyQuantifiedPattern
-            : QuantifiedPattern
+        internal sealed class OneManyQuantifiedPattern : QuantifiedPattern
         {
             internal override void AppendTo(PatternBuilder builder)
             {

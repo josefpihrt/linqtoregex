@@ -5,8 +5,7 @@ using System.Collections;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
-    internal sealed class ConcatContainer
-        : Pattern
+    internal sealed class ConcatContainer : Pattern
     {
         private readonly object _content;
 

@@ -7,8 +7,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     /// <summary>
     /// Represents a character subtraction pattern. This pattern matches a character from a base group except characters from a excluded group.
     /// </summary>
-    public class CharSubtraction
-        : QuantifiablePattern, IExcludedGroup
+    public class CharSubtraction : QuantifiablePattern, IExcludedGroup
     {
         private readonly IBaseGroup _baseGroup;
         private readonly IExcludedGroup _excludedGroup;

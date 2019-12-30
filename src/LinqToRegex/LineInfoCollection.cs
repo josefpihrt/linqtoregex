@@ -4,8 +4,7 @@ using System.Collections.ObjectModel;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
-    internal sealed class LineInfoCollection
-        : Collection<LineInfo>
+    internal sealed class LineInfoCollection : Collection<LineInfo>
     {
     }
 }

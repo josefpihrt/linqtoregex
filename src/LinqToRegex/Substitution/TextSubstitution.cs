@@ -4,8 +4,7 @@ using System.Text;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
-    internal sealed class TextSubstitution
-        : Substitution
+    internal sealed class TextSubstitution : Substitution
     {
         private readonly string _text;
 

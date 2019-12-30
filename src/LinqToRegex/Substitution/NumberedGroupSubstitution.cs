@@ -6,8 +6,7 @@ using System.Text;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
-    internal sealed class NumberedGroupSubstitution
-        : Substitution
+    internal sealed class NumberedGroupSubstitution : Substitution
     {
         internal NumberedGroupSubstitution(int groupNumber)
         {

@@ -4,8 +4,7 @@ using System.Text.RegularExpressions;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
-    internal sealed class CaseAwareTextPattern
-        : QuantifiablePattern
+    internal sealed class CaseAwareTextPattern : QuantifiablePattern
     {
         private readonly string _text;
         private readonly bool _ignoreCase;

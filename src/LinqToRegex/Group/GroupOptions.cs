@@ -5,8 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
-    internal sealed class GroupOptions
-        : GroupingPattern
+    internal sealed class GroupOptions : GroupingPattern
     {
         private readonly RegexOptions _applyOptions;
         private readonly RegexOptions _disableOptions;

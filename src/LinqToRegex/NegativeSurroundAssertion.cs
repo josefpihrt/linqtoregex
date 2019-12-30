@@ -7,8 +7,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     /// <summary>
     /// Represents a pattern that matches a specified content with negative lookbehind assertion on the left side and negative lookahead assertion on the right side. This class cannot be inherited.
     /// </summary>
-    public sealed class NegativeSurroundAssertion
-        : Pattern
+    public sealed class NegativeSurroundAssertion : Pattern
     {
         private readonly object _content;
         private readonly object _backAssertion;

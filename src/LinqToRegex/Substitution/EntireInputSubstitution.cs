@@ -2,8 +2,7 @@
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
-    internal sealed class EntireInputSubstitution
-        : Substitution
+    internal sealed class EntireInputSubstitution : Substitution
     {
         internal EntireInputSubstitution()
         {

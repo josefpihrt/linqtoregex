@@ -5,8 +5,7 @@ using System.Collections;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq
 {
-    internal class JoinContainer
-        : Pattern
+    internal class JoinContainer : Pattern
     {
         public JoinContainer(object separator, object content)
         {

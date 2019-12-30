@@ -7,8 +7,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     /// <summary>
     /// Represents a zero-width positive lookbehind assertion. This class cannot be inherited.
     /// </summary>
-    public sealed class BackAssertion
-        : GroupingPattern, INegateable<NegativeBackAssertion>
+    public sealed class BackAssertion : GroupingPattern, INegateable<NegativeBackAssertion>
     {
         internal BackAssertion(object content)
             : base(content)
