@@ -60,7 +60,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             Group group = match.Groups[1];
             if (group.Success && group.Value.Length > 9)
             {
-                return int.TryParse(group.Value, out int result);
+                return int.TryParse(group.Value, out _);
             }
 
             return true;
@@ -191,11 +191,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (input == null)
                 throw new ArgumentNullException(nameof(input));
 
-            var mode = CharEscapeMode.None;
-
             for (int i = 0; i < input.Length; i++)
             {
-                mode = GetEscapeMode((int)input[i], inCharGroup);
+                CharEscapeMode mode = GetEscapeMode((int)input[i], inCharGroup);
                 if (mode != CharEscapeMode.None)
                 {
                     var sb = new StringBuilder();

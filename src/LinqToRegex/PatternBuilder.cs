@@ -130,11 +130,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (string.IsNullOrEmpty(value))
                 return;
 
-            var mode = CharEscapeMode.None;
-
             for (int i = 0; i < value.Length; i++)
             {
-                mode = RegexUtility.GetEscapeMode((int)value[i], inCharGroup);
+                CharEscapeMode mode = RegexUtility.GetEscapeMode((int)value[i], inCharGroup);
                 if (mode != CharEscapeMode.None)
                 {
                     char ch = value[i];
