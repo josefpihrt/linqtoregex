@@ -4,15 +4,15 @@ set _roslynatorPath=..\..\Roslynator\src
 set _visualStudioPath=C:\Program Files\Microsoft Visual Studio\2019\Community
 set _msbuildPath=%_visualStudioPath%\MSBuild\Current\Bin
 
-"%_msbuildPath%\msbuild" "%_roslynatorPath%\CommandLine.sln" /t:Build /p:Configuration=Release /v:m /m
+"%_msbuildPath%\msbuild" "%_roslynatorPath%\CommandLine.sln" /t:Build /p:Configuration=Debug /v:m /m
 
-"%_roslynatorPath%\CommandLine\bin\Release\net472\roslynator" fix "..\src\LinqToRegex.sln" ^
+"%_roslynatorPath%\CommandLine\bin\Debug\net48\roslynator" fix "..\src\LinqToRegex.sln" ^
  --msbuild-path "%_msbuildPath%" ^
  --analyzer-assemblies ^
-  "%_roslynatorPath%\Analyzers.CodeFixes\bin\Release\netstandard1.3\Roslynator.CSharp.Analyzers.dll" ^
-  "%_roslynatorPath%\Analyzers.CodeFixes\bin\Release\netstandard1.3\Roslynator.CSharp.Analyzers.CodeFixes.dll" ^
-  "%_roslynatorPath%\Formatting.Analyzers.CodeFixes\bin\Release\netstandard1.3\Roslynator.Formatting.Analyzers.dll" ^
-  "%_roslynatorPath%\Formatting.Analyzers.CodeFixes\bin\Release\netstandard1.3\Roslynator.Formatting.Analyzers.CodeFixes.dll" ^
+  "%_roslynatorPath%\Analyzers.CodeFixes\bin\Debug\netstandard2.0\Roslynator.CSharp.Analyzers.dll" ^
+  "%_roslynatorPath%\Analyzers.CodeFixes\bin\Debug\netstandard2.0\Roslynator.CSharp.Analyzers.CodeFixes.dll" ^
+  "%_roslynatorPath%\Formatting.Analyzers.CodeFixes\bin\Debug\netstandard2.0\Roslynator.Formatting.Analyzers.dll" ^
+  "%_roslynatorPath%\Formatting.Analyzers.CodeFixes\bin\Debug\netstandard2.0\Roslynator.Formatting.Analyzers.CodeFixes.dll" ^
  --format ^
  --verbosity d ^
  --file-log "roslynator.log" ^
