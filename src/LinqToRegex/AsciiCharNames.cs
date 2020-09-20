@@ -6,7 +6,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     {
         public static string GetName(AsciiChar value) => _asciiChars[(int)value];
 
-        private static readonly string[] _asciiChars = new string[] {
+        private static readonly string[] _asciiChars = new[] {
             "null",
             "start of heading",
             "start of text",

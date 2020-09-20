@@ -13,7 +13,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     {
         private const string InitialNewLine = "\r\n";
 
-        private char[] _coreNewLine = new char[] { '\r', '\n' };
+        private char[] _coreNewLine = new[] { '\r', '\n' };
         private int _indentSize;
         private PatternOptions _options;
 

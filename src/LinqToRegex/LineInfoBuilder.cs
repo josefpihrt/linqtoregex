@@ -25,7 +25,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             _spaces = CreateSpaces(_maxOptions);
             string[] splits = _newLineRegex.Split(pattern);
             int maxLength = splits.Max(f => f.Length);
-            bool isFirst = true;
+            var isFirst = true;
 
             foreach (string split in splits)
             {
@@ -205,7 +205,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             }
         }
 
-        private static readonly string[] _comments = new string[] {
+        private static readonly string[] _comments = new[] {
             "any character",
             "any character except linefeed",
             "positive lookahead assertion",

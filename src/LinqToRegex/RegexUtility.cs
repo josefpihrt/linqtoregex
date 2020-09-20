@@ -696,7 +696,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             }
         }
 
-        private static readonly CharEscapeMode[] _escapeModes = new CharEscapeMode[] {
+        private static readonly CharEscapeMode[] _escapeModes = new[] {
             // 0 0x00
             CharEscapeMode.AsciiHexadecimal,
             // 1 0x01
@@ -1211,7 +1211,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             CharEscapeMode.None
         };
 
-        private static readonly CharEscapeMode[] _charGroupEscapeModes = new CharEscapeMode[] {
+        private static readonly CharEscapeMode[] _charGroupEscapeModes = new[] {
             // 0 0x00
             CharEscapeMode.AsciiHexadecimal,
             // 1 0x01
@@ -1726,7 +1726,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             CharEscapeMode.None
         };
 
-        internal static readonly string[] CategoryDesignations = new string[]
+        internal static readonly string[] CategoryDesignations = new[]
         {
             "C",
             "M",
@@ -1767,7 +1767,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             "So"
         };
 
-        internal static readonly string[] BlockDesignations = new string[]
+        internal static readonly string[] BlockDesignations = new[]
         {
             "IsAlphabeticPresentationForms",
             "IsArabic",

@@ -40,7 +40,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
 
             Dump("all words anywhere", pattern);
 
-            var words = new string[] { "one", "two", "three" };
+            var words = new[] { "one", "two", "three" };
 
             pattern = WordBoundary()
                 .CountFrom(3,
