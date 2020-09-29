@@ -43,7 +43,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
             var words = new[] { "one", "two", "three" };
 
             pattern = WordBoundary()
-                .CountFrom(3,
+                .CountFrom(
+                    3,
                     Any(words.Select(f => Group(Patterns.Text(f))))
                     .WordBoundary()
                     .NotWordChar().MaybeMany().Lazy())

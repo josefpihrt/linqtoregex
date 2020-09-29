@@ -3901,7 +3901,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             QuantifiedPattern whileNot = WhileNotChar(open, close);
 
             return open
-                + NamedGroup(groupName,
+                + NamedGroup(
+                    groupName,
                     whileNot
                     + MaybeMany(
                         OneMany(

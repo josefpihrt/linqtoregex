@@ -48,7 +48,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
         {
             QuantifiedPattern whileNot = WhileNotChar('\\', '{', '"');
 
-            return NamedGroup("text",
+            return NamedGroup(
+                "text",
                 whileNot
                 + MaybeMany(
                     Any(
