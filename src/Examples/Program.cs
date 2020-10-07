@@ -36,7 +36,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
             Pattern pattern = BeginInput()
                 .Assert(Crawl().SurroundWordBoundary("word1"))
                 .Assert(Crawl().SurroundWordBoundary("word2"))
-                .Any().MaybeMany();
+                .Any()
+                .MaybeMany();
 
             Dump("all words anywhere", pattern);
 
@@ -46,8 +47,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
                 .CountFrom(
                     3,
                     Any(words.Select(f => Group(Patterns.Text(f))))
-                    .WordBoundary()
-                    .NotWordChar().MaybeMany().Lazy())
+                        .WordBoundary()
+                        .NotWordChar()
+                        .MaybeMany()
+                        .Lazy())
                 .GroupReference(1)
                 .GroupReference(2)
                 .GroupReference(3);

@@ -8,11 +8,14 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     {
         public static RegexOptions GetInlineOptions(RegexOptions options)
         {
-            return options & ~(
+            return options
+                & ~(
 #if NETFRAMEWORK
                 RegexOptions.Compiled |
 #endif
-                RegexOptions.CultureInvariant | RegexOptions.ECMAScript | RegexOptions.RightToLeft);
+                RegexOptions.CultureInvariant
+                    | RegexOptions.ECMAScript
+                    | RegexOptions.RightToLeft);
         }
 
         public static bool IsNone(this RegexOptions options)

@@ -16,7 +16,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
                     + Open()
                     + MaybeMany(
                         OneMany(NamedGroup("open", OpenToken) + Open())
-                        + OneMany(BalancingGroup("close", "open", '"') + Close())
+                            + OneMany(BalancingGroup("close", "open", '"') + Close())
                     )
                     + '"';
             }
@@ -26,22 +26,22 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
         {
             return
                 TextPart()
-                + MaybeMany('{' + CodePart() + '}' + TextPart())
-                + Any(
-                    Assert('"'),
-                    '{' + CodePart() + Assert(OpenToken)
-                );
+                    + MaybeMany('{' + CodePart() + '}' + TextPart())
+                    + Any(
+                        Assert('"'),
+                        '{' + CodePart() + Assert(OpenToken)
+                        );
         }
 
         private static Pattern Close()
         {
             return
                 CodePart()
-                + MaybeMany('}' + TextPart() + '{' + CodePart())
-                + Any(
-                    Assert(OpenToken),
-                    '}' + TextPart() + Assert('"')
-                );
+                    + MaybeMany('}' + TextPart() + '{' + CodePart())
+                    + Any(
+                        Assert(OpenToken),
+                        '}' + TextPart() + Assert('"')
+                        );
         }
 
         private static Pattern TextPart()
@@ -51,13 +51,13 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
             return NamedGroup(
                 "text",
                 whileNot
-                + MaybeMany(
-                    Any(
-                        '\\' + NotNewLineChar(),
-                        "{{"
-                    )
-                    + whileNot
-                )
+                    + MaybeMany(
+                        Any(
+                            '\\' + NotNewLineChar(),
+                            "{{"
+                        )
+                            + whileNot
+                        )
             );
         }
 
@@ -73,7 +73,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
                         NamedGroup("char", Snippets.CSharpCharacterLiteral()),
                         NamedGroup("comment", Snippets.CSharpMultilineComment())
                     )
-                    + whileNot
+                        + whileNot
                 );
         }
     }

@@ -3624,10 +3624,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                     {
                         return NoncapturingGroup(
                             WhileNotChar(value[0])
-                            + MaybeMany(
-                                value[0]
-                                + NotAssert(value.Substring(1))
-                                + WhileNotChar(value[0]))
+                                + MaybeMany(
+                                    value[0]
+                                        + NotAssert(value.Substring(1))
+                                        + WhileNotChar(value[0]))
                         );
                     }
             }
@@ -3782,11 +3782,11 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                     {
                         return NoncapturingGroup(
                             WhileNotChar(value[0])
-                            + MaybeMany(
-                                value[0]
-                                + NotAssert(value.Substring(1))
-                                + WhileNotChar(value[0]))
-                            + value
+                                + MaybeMany(
+                                    value[0]
+                                        + NotAssert(value.Substring(1))
+                                        + WhileNotChar(value[0]))
+                                + value
                         );
                     }
             }
@@ -3904,12 +3904,12 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 + NamedGroup(
                     groupName,
                     whileNot
-                    + MaybeMany(
-                        OneMany(
-                            NamedGroup(openGroupName, open) + whileNot)
-                        + OneMany(
-                            BalancingGroup(groupName, openGroupName, close) + whileNot)
-                    )
+                        + MaybeMany(
+                            OneMany(
+                                NamedGroup(openGroupName, open) + whileNot)
+                                + OneMany(
+                                    BalancingGroup(groupName, openGroupName, close) + whileNot)
+                            )
                 )
                 + close;
         }

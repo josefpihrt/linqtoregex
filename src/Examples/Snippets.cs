@@ -44,14 +44,14 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
         {
             return NoncapturingGroup(
                 WhiteSpaceExceptNewLine().OneMany()
-                .EndInputOrLine(true));
+                    .EndInputOrLine(true));
         }
 
         public static QuantifiablePattern LineTrailingWhiteSpace()
         {
             return NoncapturingGroup(
                 WhiteSpaceExceptNewLine().OneMany()
-                .EndLine(true));
+                    .EndLine(true));
         }
 
         /// <summary>
@@ -138,7 +138,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
         {
             return NoncapturingGroup(
                 BeginLine()
-                    .WhileNotNewLineChar().Lazy()
+                    .WhileNotNewLineChar()
+                    .Lazy()
                     .NotWhiteSpace()
                     .WhileNotNewLineChar()
                     .AppendIf(includeNewLine, NewLine().Maybe()));
@@ -162,8 +163,9 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
         {
             return NoncapturingGroup(
                 BeginLine()
-                .NotNewLineChar().OneMany()
-                .AppendIf(includeNewLine, NewLine().Maybe()));
+                    .NotNewLineChar()
+                    .OneMany()
+                    .AppendIf(includeNewLine, NewLine().Maybe()));
         }
 
         /// <summary>
@@ -240,11 +242,11 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
 
             return NoncapturingGroup(
                 left
-                + MaybeMany("." + left)
-                + "@"
-                + OneMany(Alphanumeric() + right + ".")
-                + Alphanumeric()
-                + right);
+                    + MaybeMany("." + left)
+                    + "@"
+                    + OneMany(Alphanumeric() + right + ".")
+                    + Alphanumeric()
+                    + right);
         }
     }
 }
