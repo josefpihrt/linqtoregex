@@ -1,6 +1,9 @@
 @echo off
 
-"C:\Program Files\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\msbuild" "..\src\LinqToRegex.sln" ^
+set _programFiles=%ProgramFiles(x86)%
+if not defined _programFiles set _programFiles=%ProgramFiles%
+
+"%_programFiles%\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\msbuild" "..\src\LinqToRegex.sln" ^
  /t:Clean,Build ^
  /p:Configuration=Release,TreatWarningsAsErrors=true,WarningsNotAsErrors=1591 ^
  /v:normal ^
@@ -12,8 +15,8 @@ if errorlevel 1 (
  exit
 )
 
-set _roslynatorExe="..\..\roslynator\src\CommandLine\bin\Debug\net472\roslynator"
-set _msbuildPath="C:\Program Files\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin"
+set _roslynatorExe="..\..\roslynator\src\CommandLine\bin\Debug\net48\roslynator"
+set _msbuildPath="%_programFiles%\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin"
 set _msbuildProperties="Configuration=Release"
 set _rootDirectoryUrl="../../docs/api/"
 
