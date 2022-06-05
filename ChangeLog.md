@@ -9,7 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Rename `master` to `main`
+- Rename `master` to `main`.
+- Format changelog according to 'keep a changelog' ([#4](https://github.com/josefpihrt/dotmarkdown/pull/4)).
 
 -----
 
