@@ -4,7 +4,6 @@
     <RootNamespace>Pihrtsoft.Text.RegularExpressions.Linq</RootNamespace>
     <AssemblyName>Pihrtsoft.Text.RegularExpressions.Linq</AssemblyName>
     <AssemblyTitle>LINQ to Regex Library</AssemblyTitle>
-    <CodeAnalysisRuleSet>..\global.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

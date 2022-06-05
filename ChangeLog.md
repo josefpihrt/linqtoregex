@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Migrate to a new csproj format.
 - Change target frameworks to .NET Standard 2.0 and .NET Framework 4.6.2.
 - Migrate scripts to PowerShell.
+- Replace ruleset with editorconfig.
 - Format changelog according to 'keep a changelog' ([#4](https://github.com/josefpihrt/dotmarkdown/pull/4)).
 
 -----
