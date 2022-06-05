@@ -23,6 +23,6 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Specifies that empty values will be omitted from the result.
         /// </summary>
-        OmitEmptyValues = 2,
+        OmitEmptyValues = 1 << 1,
     }
 }

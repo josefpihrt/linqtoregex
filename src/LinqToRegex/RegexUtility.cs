@@ -16,7 +16,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
     {
         internal const RegexOptions InlineOptions = RegexOptions.IgnoreCase | RegexOptions.Multiline | RegexOptions.ExplicitCapture | RegexOptions.Singleline | RegexOptions.IgnorePatternWhitespace;
 
-        private static readonly object _randomLock = new object();
+        private static readonly object _randomLock = new();
         private static Random _random;
         private static Regex _validGroupNameRegex;
 
@@ -24,7 +24,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             get
             {
-                if (_validGroupNameRegex == null)
+                if (_validGroupNameRegex is null)
                 {
                     Pattern pattern = EntireInput(
                         Group(Range('1', '9') + MaybeMany(ArabicDigit())),
@@ -73,7 +73,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         internal static void CheckGroupName(string groupName, string paramName)
         {
-            if (groupName == null)
+            if (groupName is null)
                 throw new ArgumentNullException(paramName);
 
             if (!IsValidGroupNameInternal(groupName))
@@ -188,7 +188,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
         public static string Escape(string input, bool inCharGroup)
         {
-            if (input == null)
+            if (input is null)
                 throw new ArgumentNullException(nameof(input));
 
             for (int i = 0; i < input.Length; i++)
@@ -269,8 +269,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                         }
 
                         sb.Append(input, lastPos, i - lastPos);
-
-                    } while (i < input.Length);
+                    }
+                    while (i < input.Length);
 
                     return sb.ToString();
                 }
@@ -286,7 +286,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
         public static string EscapeSubstitution(string input)
         {
-            if (input == null)
+            if (input is null)
                 throw new ArgumentNullException(nameof(input));
 
             for (int i = 0; i < input.Length; i++)
@@ -325,8 +325,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 }
 
                 sb.Append(input, lastPos, i - lastPos);
-
-            } while (i < input.Length);
+            }
+            while (i < input.Length);
         }
 
         /// <summary>
@@ -349,11 +349,11 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
             var sb = new StringBuilder(length);
 
-            if (_random == null)
+            if (_random is null)
             {
                 lock (_randomLock)
                 {
-                    if (_random == null)
+                    if (_random is null)
                         _random = new Random();
                 }
             }

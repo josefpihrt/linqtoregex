@@ -67,12 +67,12 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         internal TPattern AppendInternal<TPattern>(TPattern pattern) where TPattern : Pattern
         {
-            if (pattern == null)
+            if (pattern is null)
                 throw new ArgumentNullException(nameof(pattern));
 
             Pattern first = pattern;
 
-            while (first.Previous != null)
+            while (first.Previous is not null)
                 first = first.Previous;
 
             first.Previous = this;
@@ -510,10 +510,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="left"/> or <paramref name="right"/> is <c>null</c>.</exception>
         public static Pattern operator +(Pattern left, Pattern right)
         {
-            if (left == null)
+            if (left is null)
                 throw new ArgumentNullException(nameof(left));
 
-            if (right == null)
+            if (right is null)
                 throw new ArgumentNullException(nameof(right));
 
             return left.Append(right);
@@ -527,10 +527,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="left"/> or <paramref name="right"/> is <c>null</c>.</exception>
         public static Pattern operator +(Pattern left, string right)
         {
-            if (left == null)
+            if (left is null)
                 throw new ArgumentNullException(nameof(left));
 
-            if (right == null)
+            if (right is null)
                 throw new ArgumentNullException(nameof(right));
 
             return left.Text(right);
@@ -544,10 +544,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="left"/> or <paramref name="right"/> is <c>null</c>.</exception>
         public static Pattern operator +(string left, Pattern right)
         {
-            if (left == null)
+            if (left is null)
                 throw new ArgumentNullException(nameof(left));
 
-            if (right == null)
+            if (right is null)
                 throw new ArgumentNullException(nameof(right));
 
             return Patterns.Text(left).Append(right);
@@ -561,7 +561,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="left"/> is <c>null</c>.</exception>
         public static Pattern operator +(Pattern left, char right)
         {
-            if (left == null)
+            if (left is null)
                 throw new ArgumentNullException(nameof(left));
 
             return left.Append(Patterns.Character(right));
@@ -575,7 +575,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="right"/> is <c>null</c>.</exception>
         public static Pattern operator +(char left, Pattern right)
         {
-            if (right == null)
+            if (right is null)
                 throw new ArgumentNullException(nameof(right));
 
             return Patterns.Character(left).Append(right);
@@ -672,7 +672,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         private string Value
         {
-            get { return _value ?? (_value = ToString()); }
+            get { return _value ??= ToString(); }
         }
 
         internal Pattern Previous { get; set; }

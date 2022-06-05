@@ -17,7 +17,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Returns a new instance of the <see cref="NegativeBackAssertion"/> class.
         /// </summary>
-        public NegativeBackAssertion Negate() => new NegativeBackAssertion(this);
+        public NegativeBackAssertion Negate() => new(this);
 
         internal override void AppendTo(PatternBuilder builder)
         {
@@ -31,7 +31,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public static NegativeBackAssertion operator !(BackAssertion value)
         {
-            if (value == null)
+            if (value is null)
                 throw new ArgumentNullException(nameof(value));
 
             return value.Negate();

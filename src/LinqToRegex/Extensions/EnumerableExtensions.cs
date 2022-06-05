@@ -18,7 +18,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="matches"/> is <c>null</c>.</exception>
         public static IEnumerable<Group> EnumerateGroups(this IEnumerable<Match> matches)
         {
-            if (matches == null)
+            if (matches is null)
                 throw new ArgumentNullException(nameof(matches));
 
             return EnumerateGroups();
@@ -41,10 +41,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="matches"/> or <paramref name="groupName"/> is <c>null</c>.</exception>
         public static IEnumerable<Group> EnumerateGroups(this IEnumerable<Match> matches, string groupName)
         {
-            if (matches == null)
+            if (matches is null)
                 throw new ArgumentNullException(nameof(matches));
 
-            if (groupName == null)
+            if (groupName is null)
                 throw new ArgumentNullException(nameof(groupName));
 
             return EnumerateGroups();
@@ -64,7 +64,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="matches"/> is <c>null</c>.</exception>
         public static IEnumerable<Group> EnumerateGroups(this IEnumerable<Match> matches, int groupNumber)
         {
-            if (matches == null)
+            if (matches is null)
                 throw new ArgumentNullException(nameof(matches));
 
             return EnumerateGroups();
@@ -195,7 +195,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="groups"/> is <c>null</c>.</exception>
         public static IEnumerable<Capture> EnumerateCaptures(this IEnumerable<Group> groups)
         {
-            if (groups == null)
+            if (groups is null)
                 throw new ArgumentNullException(nameof(groups));
 
             return EnumerateCaptures();
@@ -217,7 +217,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="captures"/> is <c>null</c>.</exception>
         public static IEnumerable<int> EnumerateIndexes(this IEnumerable<Capture> captures)
         {
-            if (captures == null)
+            if (captures is null)
                 throw new ArgumentNullException(nameof(captures));
 
             return EnumerateIndexes();
@@ -236,7 +236,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="captures"/> is <c>null</c>.</exception>
         public static IEnumerable<int> EnumerateLengths(this IEnumerable<Capture> captures)
         {
-            if (captures == null)
+            if (captures is null)
                 throw new ArgumentNullException(nameof(captures));
 
             return EnumerateLengths();
@@ -255,7 +255,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="captures"/> is <c>null</c>.</exception>
         public static IEnumerable<string> EnumerateValues(this IEnumerable<Capture> captures)
         {
-            if (captures == null)
+            if (captures is null)
                 throw new ArgumentNullException(nameof(captures));
 
             return EnumerateValues();

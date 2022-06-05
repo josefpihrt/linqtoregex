@@ -33,7 +33,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         protected GroupingPattern(GroupingPattern content)
         {
-            if (content == null)
+            if (content is null)
                 throw new ArgumentNullException(nameof(content));
 
             Content = content.Content;

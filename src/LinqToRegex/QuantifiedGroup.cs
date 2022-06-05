@@ -44,12 +44,12 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             get
             {
                 if (Content is QuantifiablePattern pattern)
-                    return pattern.Previous != null;
+                    return pattern.Previous is not null;
 
                 if (Content is string s)
                     return s.Length == 0 || s.Length > 1;
 
-                return !(Content is CharGrouping);
+                return Content is not CharGrouping;
             }
         }
 

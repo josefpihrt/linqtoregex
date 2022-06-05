@@ -50,7 +50,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="builder"/> is <c>null</c>.</exception>
         protected virtual void AppendGroupContentTo(PatternBuilder builder)
         {
-            if (builder == null)
+            if (builder is null)
                 throw new ArgumentNullException(nameof(builder));
 
             AppendTo(builder);
@@ -63,7 +63,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="builder"/> is <c>null</c>.</exception>
         public void AppendBaseGroupTo(PatternBuilder builder)
         {
-            if (builder == null)
+            if (builder is null)
                 throw new ArgumentNullException(nameof(builder));
 
             AppendGroupContentTo(builder);
@@ -76,7 +76,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="builder"/> is <c>null</c>.</exception>
         public void AppendExcludedGroupTo(PatternBuilder builder)
         {
-            if (builder == null)
+            if (builder is null)
                 throw new ArgumentNullException(nameof(builder));
 
             builder.AppendCharGroupStart();
@@ -91,7 +91,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public static CharGroup operator !(CharPattern value)
         {
-            if (value == null)
+            if (value is null)
                 throw new ArgumentNullException(nameof(value));
 
             return value.Negate();

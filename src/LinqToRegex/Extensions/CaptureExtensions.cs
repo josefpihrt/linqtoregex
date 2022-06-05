@@ -17,7 +17,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="capture"/> is <c>null</c>.</exception>
         public static int EndIndex(this Capture capture)
         {
-            if (capture == null)
+            if (capture is null)
                 throw new ArgumentNullException(nameof(capture));
 
             return capture.Index + capture.Length;

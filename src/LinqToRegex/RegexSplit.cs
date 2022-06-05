@@ -35,10 +35,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         public static IEnumerable<string> EnumerateValues(Regex regex, string input, int count, int startAt, SplitOptions options)
         {
-            if (regex == null)
+            if (regex is null)
                 throw new ArgumentNullException(nameof(regex));
 
-            if (input == null)
+            if (input is null)
                 throw new ArgumentNullException(nameof(input));
 
             if (count < 0)

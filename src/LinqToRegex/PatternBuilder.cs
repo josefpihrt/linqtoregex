@@ -65,7 +65,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         private string GetPattern()
         {
-            if (_builder != null)
+            if (_builder is not null)
             {
                 return _builder.AddComments(_sb.ToString(), Settings);
             }
@@ -118,7 +118,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         internal void Append(char[] characters, bool inCharGroup)
         {
-            if (characters == null)
+            if (characters is null)
                 throw new ArgumentNullException(nameof(characters));
 
             foreach (char value in characters)
@@ -143,7 +143,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                         Append();
                         AppendDirect(value, 0, i);
 
-                        if (_builder != null && !inCharGroup)
+                        if (_builder is not null && !inCharGroup)
                             _builder.AddInfo(value, i);
                     }
 
@@ -151,7 +151,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                     {
                         Append(ch, mode);
 
-                        if (_builder != null && !inCharGroup)
+                        if (_builder is not null && !inCharGroup)
                             _builder.AddInfo(SyntaxKind.Character, ch);
 
                         i++;
@@ -173,11 +173,11 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                             Append();
                             AppendDirect(value, lastPos, i - lastPos);
 
-                            if (_builder != null && !inCharGroup)
+                            if (_builder is not null && !inCharGroup)
                                 _builder.AddInfo(value, lastPos, i - lastPos);
                         }
-
-                    } while (i < value.Length);
+                    }
+                    while (i < value.Length);
 
                     return;
                 }
@@ -186,7 +186,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             Append();
             AppendDirect(value);
 
-            if (_builder != null && !inCharGroup)
+            if (_builder is not null && !inCharGroup)
                 _builder.AddInfo(value);
         }
 
@@ -343,7 +343,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                     }
             }
 
-            if (_builder != null && !inCharGroup)
+            if (_builder is not null && !inCharGroup)
                 _builder.AddInfo(SyntaxKind.Character, (char)value);
         }
 
@@ -361,12 +361,12 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="pattern"/> is <c>null</c>.</exception>
         public void Append(Pattern pattern)
         {
-            if (pattern == null)
+            if (pattern is null)
                 throw new ArgumentNullException(nameof(pattern));
 
-            if (pattern.Previous != null)
+            if (pattern.Previous is not null)
             {
-                if (_patterns == null)
+                if (_patterns is null)
                     _patterns = new Stack<Pattern>();
 
                 int cnt = _patterns.Count;
@@ -376,8 +376,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 {
                     _patterns.Push(item);
                     item = item.Previous;
-
-                } while (item != null);
+                }
+                while (item is not null);
 
                 while (_patterns.Count > cnt)
                     _patterns.Pop().AppendTo(this);
@@ -416,7 +416,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         internal void Append(object value, GroupMode mode)
         {
-            if (value == null)
+            if (value is null)
                 return;
 
             if (value is Pattern pattern)
@@ -556,10 +556,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="testContent"/> or <paramref name="trueContent"/> is <c>null</c>.</exception>
         public void AppendIfAssert(object testContent, object trueContent, object falseContent)
         {
-            if (testContent == null)
+            if (testContent is null)
                 throw new ArgumentNullException(nameof(testContent));
 
-            if (trueContent == null)
+            if (trueContent is null)
                 throw new ArgumentNullException(nameof(trueContent));
 
             AppendGroupStart();
@@ -577,7 +577,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
             _indentLevel++;
 
-            if (falseContent == null)
+            if (falseContent is null)
             {
                 Append(trueContent, GroupMode.None);
             }
@@ -610,7 +610,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (checkGroupName)
                 RegexUtility.CheckGroupName(groupName);
 
-            if (trueContent == null)
+            if (trueContent is null)
                 throw new ArgumentNullException(nameof(trueContent));
 
             AppendGroupStart(false);
@@ -624,7 +624,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
             _indentLevel++;
 
-            if (falseContent == null)
+            if (falseContent is null)
             {
                 Append(trueContent, GroupMode.None);
             }
@@ -802,7 +802,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public void AppendNumberedGroup(object content)
         {
-            if (content == null)
+            if (content is null)
                 throw new ArgumentNullException(nameof(content));
 
             AppendNumberedGroupStart();
@@ -829,7 +829,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             RegexUtility.CheckGroupName(name, nameof(name));
 
-            if (content == null)
+            if (content is null)
                 throw new ArgumentNullException(nameof(content));
 
             AppendNamedGroupInternal(name, content);
@@ -855,7 +855,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public void AppendNoncapturingGroup(object content)
         {
-            if (content == null)
+            if (content is null)
                 throw new ArgumentNullException(nameof(content));
 
             AppendNoncapturingGroupStart();
@@ -878,7 +878,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
         public void AppendNonbacktrackingGroup(object content)
         {
-            if (content == null)
+            if (content is null)
                 throw new ArgumentNullException(nameof(content));
 
             AppendGroupStart();
@@ -892,7 +892,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         internal void AppendBalancingGroup(string name1, string name2, object content)
         {
-            if (content == null)
+            if (content is null)
                 throw new ArgumentNullException(nameof(content));
 
             AppendGroupStart();
@@ -923,7 +923,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
             AppendDirect(')');
 
-            if (_builder != null && unindent)
+            if (_builder is not null && unindent)
                 _builder.AddInfo(SyntaxKind.GroupEnd);
         }
 
@@ -1002,7 +1002,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             AppendBackslash('d');
 
-            if (_builder != null && _charGroupLevel == 0)
+            if (_builder is not null && _charGroupLevel == 0)
                 _builder.AddInfo(SyntaxKind.Digit);
         }
 
@@ -1013,7 +1013,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             AppendBackslash('D');
 
-            if (_builder != null && _charGroupLevel == 0)
+            if (_builder is not null && _charGroupLevel == 0)
                 _builder.AddInfo(SyntaxKind.NotDigit);
         }
 
@@ -1024,7 +1024,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             AppendBackslash('s');
 
-            if (_builder != null && _charGroupLevel == 0)
+            if (_builder is not null && _charGroupLevel == 0)
                 _builder.AddInfo(SyntaxKind.WhiteSpace);
         }
 
@@ -1035,7 +1035,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             AppendBackslash('S');
 
-            if (_builder != null && _charGroupLevel == 0)
+            if (_builder is not null && _charGroupLevel == 0)
                 _builder.AddInfo(SyntaxKind.NotWhiteSpace);
         }
 
@@ -1046,7 +1046,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             AppendBackslash('w');
 
-            if (_builder != null && _charGroupLevel == 0)
+            if (_builder is not null && _charGroupLevel == 0)
                 _builder.AddInfo(SyntaxKind.WordChar);
         }
 
@@ -1057,7 +1057,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             AppendBackslash('W');
 
-            if (_builder != null && _charGroupLevel == 0)
+            if (_builder is not null && _charGroupLevel == 0)
                 _builder.AddInfo(SyntaxKind.NotWordChar);
         }
 
@@ -1079,7 +1079,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (negative)
                 AppendDirect('^');
 
-            if (_builder != null && _charGroupLevel == 1)
+            if (_builder is not null && _charGroupLevel == 1)
                 _builder.AddInfo((negative) ? SyntaxKind.NegativeCharGroup : SyntaxKind.CharGroup, (char)charNumber);
         }
 
@@ -1199,7 +1199,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         internal void AppendCharGroup(string characters, bool negative)
         {
-            if (characters == null)
+            if (characters is null)
                 throw new ArgumentNullException(nameof(characters));
 
             if (characters.Length == 0)
@@ -1219,7 +1219,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         internal void AppendCharGroup(char[] characters, bool negative)
         {
-            if (characters == null)
+            if (characters is null)
                 throw new ArgumentNullException(nameof(characters));
 
             if (characters.Length == 0)
@@ -1301,7 +1301,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         internal void AppendCharGroup(CharGrouping value, bool negative)
         {
-            if (value == null)
+            if (value is null)
                 throw new ArgumentNullException(nameof(value));
 
             AppendCharGroupStart(negative);
@@ -1317,10 +1317,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="baseGroup"/> or <paramref name="excludedGroup"/> is <c>null</c>.</exception>
         public void AppendSubtraction(IBaseGroup baseGroup, IExcludedGroup excludedGroup)
         {
-            if (baseGroup == null)
+            if (baseGroup is null)
                 throw new ArgumentNullException(nameof(baseGroup));
 
-            if (excludedGroup == null)
+            if (excludedGroup is null)
                 throw new ArgumentNullException(nameof(excludedGroup));
 
             AppendCharGroupStart();
@@ -1359,7 +1359,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendDirect(RegexUtility.CategoryDesignations[(int)category]);
             AppendDirect('}');
 
-            if (_builder != null && _charGroupLevel == 0)
+            if (_builder is not null && _charGroupLevel == 0)
                 _builder.AddInfo(category, negative);
         }
 
@@ -1388,7 +1388,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendDirect(RegexUtility.BlockDesignations[(int)block]);
             AppendDirect('}');
 
-            if (_builder != null && _charGroupLevel == 0)
+            if (_builder is not null && _charGroupLevel == 0)
                 _builder.AddInfo((negative) ? SyntaxKind.NotNamedBlock : SyntaxKind.NamedBlock);
         }
 
@@ -1408,7 +1408,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             AppendDirect('?');
 
-            if (_builder != null)
+            if (_builder is not null)
                 _builder.LastLine.QuantifierKind = QuantifierKind.Maybe;
 
             if (lazy)
@@ -1431,7 +1431,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             AppendDirect('*');
 
-            if (_builder != null)
+            if (_builder is not null)
                 _builder.LastLine.QuantifierKind = QuantifierKind.MaybeMany;
 
             if (lazy)
@@ -1454,7 +1454,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             AppendDirect('+');
 
-            if (_builder != null)
+            if (_builder is not null)
                 _builder.LastLine.QuantifierKind = QuantifierKind.OneMany;
 
             if (lazy)
@@ -1494,7 +1494,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendDirect(exactCount);
             AppendDirect('}');
 
-            if (_builder != null)
+            if (_builder is not null)
             {
                 _builder.LastLine.QuantifierKind = QuantifierKind.Count;
                 _builder.LastLine.Count1 = exactCount;
@@ -1538,7 +1538,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendDirect(maxCount);
             AppendDirect('}');
 
-            if (_builder != null)
+            if (_builder is not null)
             {
                 _builder.LastLine.QuantifierKind = QuantifierKind.CountRange;
                 _builder.LastLine.Count1 = minCount;
@@ -1580,7 +1580,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendDirect(',');
             AppendDirect('}');
 
-            if (_builder != null)
+            if (_builder is not null)
             {
                 _builder.LastLine.QuantifierKind = QuantifierKind.CountFrom;
                 _builder.LastLine.Count1 = minCount;
@@ -1614,7 +1614,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             AppendDirect(maxCount);
             AppendDirect('}');
 
-            if (_builder != null)
+            if (_builder is not null)
             {
                 _builder.LastLine.QuantifierKind = QuantifierKind.MaybeCount;
                 _builder.LastLine.Count1 = 0;
@@ -1629,7 +1629,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         {
             AppendDirect('?');
 
-            if (_builder != null)
+            if (_builder is not null)
                 _builder.LastLine.Lazy = true;
         }
 
@@ -1722,7 +1722,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             if (!RegexUtility.IsValidInlineOptions(disableOptions))
                 throw new ArgumentException(ExceptionHelper.RegexOptionsNotConvertibleToInlineChars, nameof(disableOptions));
 
-            if (content == null)
+            if (content is null)
                 throw new ArgumentNullException(nameof(content));
 
             if (applyOptions != RegexOptions.None || disableOptions != RegexOptions.None)
@@ -1915,7 +1915,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         internal Stack<CharGrouping> CharGroupings
         {
-            get { return _charGroupings ?? (_charGroupings = new Stack<CharGrouping>()); }
+            get { return _charGroupings ??= new Stack<CharGrouping>(); }
         }
 
         private RegexOptions CurrentOptions

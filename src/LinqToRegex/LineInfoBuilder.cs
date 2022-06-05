@@ -191,7 +191,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
             }
         }
 
-        public LineInfoCollection Lines { get; } = new LineInfoCollection();
+        public LineInfoCollection Lines { get; } = new();
         public LineInfo CurrentLine => Lines[_index];
         public LineInfo LastLine => Lines[Lines.Count - 1];
 

@@ -31,7 +31,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// </summary>
         public override string ToString()
         {
-            if (Previous != null)
+            if (Previous is not null)
             {
                 var sb = new StringBuilder();
                 var stack = new Stack<Substitution>();
@@ -41,8 +41,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 {
                     stack.Push(item);
                     item = item.Previous;
-
-                } while (item != null);
+                }
+                while (item is not null);
 
                 while (stack.Count > 0)
                     stack.Pop().AppendTo(sb);
@@ -120,10 +120,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="left"/> or <paramref name="right"/> is <c>null</c>.</exception>
         public static Substitution operator +(Substitution left, Substitution right)
         {
-            if (left == null)
+            if (left is null)
                 throw new ArgumentNullException(nameof(left));
 
-            if (right == null)
+            if (right is null)
                 throw new ArgumentNullException(nameof(right));
 
             return left.Append(right);
@@ -137,10 +137,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="left"/> or <paramref name="right"/> is <c>null</c>.</exception>
         public static Substitution operator +(Substitution left, string right)
         {
-            if (left == null)
+            if (left is null)
                 throw new ArgumentNullException(nameof(left));
 
-            if (right == null)
+            if (right is null)
                 throw new ArgumentNullException(nameof(right));
 
             return left.Text(right);
@@ -154,10 +154,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="left"/> or <paramref name="right"/> is <c>null</c>.</exception>
         public static Substitution operator +(string left, Substitution right)
         {
-            if (left == null)
+            if (left is null)
                 throw new ArgumentNullException(nameof(left));
 
-            if (right == null)
+            if (right is null)
                 throw new ArgumentNullException(nameof(right));
 
             return Substitutions.Text(left).Append(right);
@@ -171,7 +171,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="left"/> is <c>null</c>.</exception>
         public static Substitution operator +(Substitution left, char right)
         {
-            if (left == null)
+            if (left is null)
                 throw new ArgumentNullException(nameof(left));
 
             return left.Append(Substitutions.Text(right));
@@ -185,7 +185,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="right"/> is <c>null</c>.</exception>
         public static Substitution operator +(char left, Substitution right)
         {
-            if (right == null)
+            if (right is null)
                 throw new ArgumentNullException(nameof(right));
 
             return Substitutions.Text(left).Append(right);

@@ -123,7 +123,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public static TPattern Not<TPattern>(INegateable<TPattern> value) where TPattern : Pattern
         {
-            if (value == null)
+            if (value is null)
                 throw new ArgumentNullException(nameof(value));
 
             return value.Negate();
@@ -131,10 +131,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         internal static QuantifiablePattern Or(object left, object right)
         {
-            if (left == null)
+            if (left is null)
                 throw new ArgumentNullException(nameof(left));
 
-            if (right == null)
+            if (right is null)
                 throw new ArgumentNullException(nameof(right));
 
             return new OrContainer(left, right);
@@ -654,10 +654,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="first"/> is <c>null</c>.</exception>
         public static QuantifiedGroup Maybe(object first, params object[] others)
         {
-            if (first == null)
+            if (first is null)
                 throw new ArgumentNullException(nameof(first));
 
-            if (others == null || others.Length == 0)
+            if (others is null || others.Length == 0)
                 return Maybe(first);
 
             if (others.Length == 1)
@@ -688,10 +688,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="first"/> is <c>null</c>.</exception>
         public static QuantifiedGroup MaybeMany(object first, params object[] others)
         {
-            if (first == null)
+            if (first is null)
                 throw new ArgumentNullException(nameof(first));
 
-            if (others == null || others.Length == 0)
+            if (others is null || others.Length == 0)
                 return MaybeMany(first);
 
             if (others.Length == 1)
@@ -722,10 +722,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="first"/> is <c>null</c>.</exception>
         public static QuantifiedGroup OneMany(object first, params object[] others)
         {
-            if (first == null)
+            if (first is null)
                 throw new ArgumentNullException(nameof(first));
 
-            if (others == null || others.Length == 0)
+            if (others is null || others.Length == 0)
                 return OneMany(first);
 
             if (others.Length == 1)
@@ -760,10 +760,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="exactCount"/> is less than zero.</exception>
         public static QuantifiedGroup Count(int exactCount, object first, params object[] others)
         {
-            if (first == null)
+            if (first is null)
                 throw new ArgumentNullException(nameof(first));
 
-            if (others == null || others.Length == 0)
+            if (others is null || others.Length == 0)
                 return Count(exactCount, first);
 
             if (others.Length == 1)
@@ -800,10 +800,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="minCount"/> is less than zero or <paramref name="maxCount"/> is less than <paramref name="minCount"/>.</exception>
         public static QuantifiedGroup Count(int minCount, int maxCount, object first, params object[] others)
         {
-            if (first == null)
+            if (first is null)
                 throw new ArgumentNullException(nameof(first));
 
-            if (others == null || others.Length == 0)
+            if (others is null || others.Length == 0)
                 return Count(minCount, maxCount, first);
 
             if (others.Length == 1)
@@ -838,10 +838,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="minCount"/> is less than zero.</exception>
         public static QuantifiedGroup CountFrom(int minCount, object first, params object[] others)
         {
-            if (first == null)
+            if (first is null)
                 throw new ArgumentNullException(nameof(first));
 
-            if (others == null || others.Length == 0)
+            if (others is null || others.Length == 0)
                 return CountFrom(minCount, first);
 
             if (others.Length == 1)
@@ -876,10 +876,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="maxCount"/> is less than zero.</exception>
         public static QuantifiedGroup MaybeCount(int maxCount, object first, params object[] others)
         {
-            if (first == null)
+            if (first is null)
                 throw new ArgumentNullException(nameof(first));
 
-            if (others == null || others.Length == 0)
+            if (others is null || others.Length == 0)
                 return MaybeCount(maxCount, first);
 
             if (others.Length == 1)
@@ -3611,7 +3611,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public static Pattern WhileNot(string value)
         {
-            if (value == null)
+            if (value is null)
                 throw new ArgumentNullException(nameof(value));
 
             switch (value.Length)
@@ -3769,7 +3769,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public static Pattern Until(string value)
         {
-            if (value == null)
+            if (value is null)
                 throw new ArgumentNullException(nameof(value));
 
             switch (value.Length)

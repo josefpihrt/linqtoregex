@@ -25,7 +25,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="builder"/> is <c>null</c>.</exception>
         public void AppendExcludedGroupTo(PatternBuilder builder)
         {
-            if (builder == null)
+            if (builder is null)
                 throw new ArgumentNullException(nameof(builder));
 
             AppendTo(builder);

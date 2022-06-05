@@ -31,12 +31,12 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         private CharGrouping Append(CharGrouping value)
         {
-            if (value == null)
+            if (value is null)
                 throw new ArgumentNullException(nameof(value));
 
             CharGrouping first = value;
 
-            while (first.Previous != null)
+            while (first.Previous is not null)
                 first = first.Previous;
 
             first.Previous = this;
@@ -414,7 +414,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="builder"/> is <c>null</c>.</exception>
         public void AppendBaseGroupTo(PatternBuilder builder)
         {
-            if (builder == null)
+            if (builder is null)
                 throw new ArgumentNullException(nameof(builder));
 
             AppendContentTo(builder);
@@ -427,7 +427,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="builder"/> is <c>null</c>.</exception>
         public void AppendExcludedGroupTo(PatternBuilder builder)
         {
-            if (builder == null)
+            if (builder is null)
                 throw new ArgumentNullException(nameof(builder));
 
             builder.Append(this);
@@ -435,7 +435,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
         internal void AppendContentTo(PatternBuilder builder)
         {
-            if (Previous != null)
+            if (Previous is not null)
             {
                 Stack<CharGrouping> stack = builder.CharGroupings;
                 int cnt = stack.Count;
@@ -445,8 +445,8 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
                 {
                     stack.Push(item);
                     item = item.Previous;
-
-                } while (item != null);
+                }
+                while (item is not null);
 
                 while (stack.Count > cnt)
                     stack.Pop().AppendItemContentTo(builder);
@@ -465,10 +465,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="left"/> or <paramref name="right"/> is <c>null</c>.</exception>
         public static CharGrouping operator +(CharGrouping left, CharGrouping right)
         {
-            if (left == null)
+            if (left is null)
                 throw new ArgumentNullException(nameof(left));
 
-            if (right == null)
+            if (right is null)
                 throw new ArgumentNullException(nameof(right));
 
             return left.Append(Chars.Character(right));
@@ -482,10 +482,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="left"/> or <paramref name="right"/> is <c>null</c>.</exception>
         public static CharGrouping operator +(CharGrouping left, string right)
         {
-            if (left == null)
+            if (left is null)
                 throw new ArgumentNullException(nameof(left));
 
-            if (right == null)
+            if (right is null)
                 throw new ArgumentNullException(nameof(right));
 
             return left.Append(right);
@@ -499,10 +499,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="left"/> or <paramref name="right"/> is <c>null</c>.</exception>
         public static CharGrouping operator +(string left, CharGrouping right)
         {
-            if (left == null)
+            if (left is null)
                 throw new ArgumentNullException(nameof(left));
 
-            if (right == null)
+            if (right is null)
                 throw new ArgumentNullException(nameof(right));
 
             return Chars.Character(left).Append(Chars.Character(right));
@@ -516,7 +516,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="left"/> is <c>null</c>.</exception>
         public static CharGrouping operator +(CharGrouping left, char right)
         {
-            if (left == null)
+            if (left is null)
                 throw new ArgumentNullException(nameof(left));
 
             return left.Append(right);
@@ -530,7 +530,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="right"/> is <c>null</c>.</exception>
         public static CharGrouping operator +(char left, CharGrouping right)
         {
-            if (right == null)
+            if (right is null)
                 throw new ArgumentNullException(nameof(right));
 
             return Chars.Character(left).Append(Chars.Character(right));
@@ -543,7 +543,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
         public static CharGroup operator !(CharGrouping value)
         {
-            if (value == null)
+            if (value is null)
                 throw new ArgumentNullException(nameof(value));
 
             return Patterns.NotChar(value);

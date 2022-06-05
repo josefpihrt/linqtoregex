@@ -18,7 +18,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
             internal override void AppendContentTo(PatternBuilder builder)
             {
-                if (builder == null)
+                if (builder is null)
                     throw new ArgumentNullException(nameof(builder));
 
                 builder.Append(_value, true);
@@ -44,7 +44,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
             internal override void AppendContentTo(PatternBuilder builder)
             {
-                if (builder == null)
+                if (builder is null)
                     throw new ArgumentNullException(nameof(builder));
 
                 builder.Append(_value, true);
@@ -64,7 +64,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
             public TextCharGroup(string characters, bool negative)
             {
-                if (characters == null)
+                if (characters is null)
                     throw new ArgumentNullException(nameof(characters));
 
                 if (characters.Length == 0)
@@ -76,7 +76,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
             internal override void AppendContentTo(PatternBuilder builder)
             {
-                if (builder == null)
+                if (builder is null)
                     throw new ArgumentNullException(nameof(builder));
 
                 builder.Append(_characters, true);
@@ -96,7 +96,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
             public CharactersCharGroup(char[] characters, bool negative)
             {
-                if (characters == null)
+                if (characters is null)
                     throw new ArgumentNullException(nameof(characters));
 
                 if (characters.Length == 0)
@@ -108,7 +108,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
             internal override void AppendContentTo(PatternBuilder builder)
             {
-                if (builder == null)
+                if (builder is null)
                     throw new ArgumentNullException(nameof(builder));
 
                 builder.Append(_characters, true);
@@ -139,7 +139,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
 
             internal override void AppendContentTo(PatternBuilder builder)
             {
-                if (builder == null)
+                if (builder is null)
                     throw new ArgumentNullException(nameof(builder));
 
                 builder.AppendCharRange(_firstChar, _lastChar);

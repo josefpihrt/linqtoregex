@@ -19,10 +19,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         public static IEnumerable<Match> EnumerateMatches(this Regex regex, string input)
         {
-            if (regex == null)
+            if (regex is null)
                 throw new ArgumentNullException(nameof(regex));
 
-            if (input == null)
+            if (input is null)
                 throw new ArgumentNullException(nameof(input));
 
             return EnumerateMatches();
@@ -48,10 +48,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentOutOfRangeException"><paramref name="startAt"/> is less than zero or greater that the length of <paramref name="input"/>.</exception>
         public static IEnumerable<Match> EnumerateMatches(this Regex regex, string input, int startAt)
         {
-            if (regex == null)
+            if (regex is null)
                 throw new ArgumentNullException(nameof(regex));
 
-            if (input == null)
+            if (input is null)
                 throw new ArgumentNullException(nameof(input));
 
             return EnumerateMatches();
@@ -81,10 +81,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// </exception>
         public static IEnumerable<Match> EnumerateMatches(this Regex regex, string input, int beginning, int length)
         {
-            if (regex == null)
+            if (regex is null)
                 throw new ArgumentNullException(nameof(regex));
 
-            if (input == null)
+            if (input is null)
                 throw new ArgumentNullException(nameof(input));
 
             return EnumerateMatches();
@@ -268,7 +268,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         public static string ReplaceMatchChar(this Regex regex, string input, char replacementChar)
         {
-            if (regex == null)
+            if (regex is null)
                 throw new ArgumentNullException(nameof(regex));
 
             return regex.Replace(input, match => new string(replacementChar, match.Length));
@@ -284,10 +284,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         public static string ReplaceGroupChar(this Regex regex, string input, char replacementChar, string groupName)
         {
-            if (regex == null)
+            if (regex is null)
                 throw new ArgumentNullException(nameof(regex));
 
-            if (input == null)
+            if (input is null)
                 throw new ArgumentNullException(nameof(input));
 
             return RegexReplace.ReplaceGroups(regex, input, groupName, group => new string(replacementChar, group.Length));
@@ -303,10 +303,10 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         public static string ReplaceGroupChar(this Regex regex, string input, char replacementChar, int groupNumber)
         {
-            if (regex == null)
+            if (regex is null)
                 throw new ArgumentNullException(nameof(regex));
 
-            if (input == null)
+            if (input is null)
                 throw new ArgumentNullException(nameof(input));
 
             return RegexReplace.ReplaceGroups(regex, input, groupNumber, group => new string(replacementChar, group.Length));
@@ -405,7 +405,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         public static IEnumerable<int> EnumerateIndexes(this Regex regex, string input)
         {
-            if (regex == null)
+            if (regex is null)
                 throw new ArgumentNullException(nameof(regex));
 
             return EnumerateIndexes();
@@ -425,7 +425,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         public static IEnumerable<int> EnumerateLengths(this Regex regex, string input)
         {
-            if (regex == null)
+            if (regex is null)
                 throw new ArgumentNullException(nameof(regex));
 
             return EnumerateLengths();
@@ -445,7 +445,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="regex"/> or <paramref name="input"/> is <c>null</c>.</exception>
         public static IEnumerable<string> EnumerateValues(this Regex regex, string input)
         {
-            if (regex == null)
+            if (regex is null)
                 throw new ArgumentNullException(nameof(regex));
 
             return EnumerateValues();

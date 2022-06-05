@@ -23,17 +23,17 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Specifies that an empty (noncapturing) group will be added after the group number backreference.
         /// </summary>
-        SeparateGroupNumberReference = 2,
+        SeparateGroupNumberReference = 1 << 1,
 
         /// <summary>
         /// Specifies that a pattern text will be formatted.
         /// </summary>
-        Format = 4,
+        Format = 1 << 2,
 
         /// <summary>
         /// Specifies that a comment will be added to the end of each line. This options is relevant only in combination with <see cref="Format"/> option.
         /// </summary>
-        Comment = 8,
+        Comment = 1 << 3,
 
         /// <summary>
         /// Indicates that the <see cref="Format"/> and <see cref="Comment"/> options are used. This is a composite options.
@@ -43,16 +43,16 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq
         /// <summary>
         /// Specifies that a pattern will be converted to C# multiline literal. This option cannot be used in a combination with <see cref="VisualBasicLiteral"/>.
         /// </summary>
-        CSharpLiteral = 16,
+        CSharpLiteral = 1 << 4,
 
         /// <summary>
         /// Specifies that a pattern will be converted to Visual Basic multiline literal. This option cannot be used in a combination with <see cref="CSharpLiteral"/>.
         /// </summary>
-        VisualBasicLiteral = 32,
+        VisualBasicLiteral = 1 << 5,
 
         /// <summary>
         /// Specifies that current inline options will be added to each line. This options is relevant only in combination with <see cref="Format"/> option.
         /// </summary>
-        InlineOptions = 64,
+        InlineOptions = 1 << 6,
     }
 }

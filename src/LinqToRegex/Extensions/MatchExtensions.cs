@@ -19,7 +19,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="match"/> is <c>null</c>.</exception>
         public static Group Group(this Match match, string groupName)
         {
-            if (match == null)
+            if (match is null)
                 throw new ArgumentNullException(nameof(match));
 
             return match.Groups[groupName];
@@ -33,7 +33,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="match"/> is <c>null</c>.</exception>
         public static Group Group(this Match match, int groupNumber)
         {
-            if (match == null)
+            if (match is null)
                 throw new ArgumentNullException(nameof(match));
 
             return match.Groups[groupNumber];
@@ -46,7 +46,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="match"/> is <c>null</c>.</exception>
         public static IEnumerable<Group> EnumerateGroups(this Match match)
         {
-            if (match == null)
+            if (match is null)
                 throw new ArgumentNullException(nameof(match));
 
             return EnumerateGroups();
@@ -65,7 +65,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="match"/> is <c>null</c>.</exception>
         public static IEnumerable<Capture> EnumerateCaptures(this Match match)
         {
-            if (match == null)
+            if (match is null)
                 throw new ArgumentNullException(nameof(match));
 
             return EnumerateCaptures();
@@ -92,7 +92,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="match"/> or <paramref name="groupName"/> is <c>null</c>.</exception>
         public static IEnumerable<Capture> EnumerateCaptures(this Match match, string groupName)
         {
-            if (match == null)
+            if (match is null)
                 throw new ArgumentNullException(nameof(match));
 
             return EnumerateCaptures();
@@ -116,7 +116,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq.Extensions
         /// <exception cref="ArgumentNullException"><paramref name="match"/> is <c>null</c>.</exception>
         public static IEnumerable<Capture> EnumerateCaptures(this Match match, int groupNumber)
         {
-            if (match == null)
+            if (match is null)
                 throw new ArgumentNullException(nameof(match));
 
             return EnumerateCaptures();
