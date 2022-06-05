@@ -1,0 +1,64 @@
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - v*
+  pull_request:
+
+jobs:
+
+  build_packages:
+    runs-on: ubuntu-20.04
+    env:
+      Configuration: Release
+      TreatWarningsAsErrors: true
+      WarningsNotAsErrors: 1591
+    defaults:
+      run:
+        working-directory: src
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Update path
+        run: echo ":/github/home/.dotnet/tools" >> $GITHUB_PATH
+      - run: dotnet tool install -g GitVersion.Tool --version 5.10.1 --ignore-failed-sources
+      - run: dotnet tool install -g dotnet-validate --version 0.0.1-preview.304
+      - name: Resolve semantic version
+        id: semantic_version
+        run: |
+          semantic_version=$(dotnet-gitversion /showvariable SemVer)
+          echo "semantic_version=$semantic_version" >> $GITHUB_ENV
+        working-directory: ./
+      - name: Resolve assembly version
+        id: assembly_version
+        run: |
+          assembly_version=$(dotnet-gitversion /showvariable AssemblySemVer)
+          echo "assembly_version=$assembly_version" >> $GITHUB_ENV
+        working-directory: ./
+      - run: dotnet restore --configfile nuget.config
+      #- run: dotnet format --no-restore --verify-no-changes
+      - run: dotnet build --no-restore /p:Version=${{ env.assembly_version }}
+      - run: dotnet test --no-build
+      - run: dotnet pack --no-build /p:PackageVersion=${{ env.semantic_version }}
+      - uses: actions/upload-artifact@v3
+        with:
+          name: nuget_packages
+          path: src/LinqToRegex/bin/Release/*nupkg
+
+  release_packages:
+    runs-on: ubuntu-20.04
+    needs: [build_packages]
+    if: github.ref == 'refs/heads/main' && github.ref_type == 'tag' && startsWith(github.ref_name, 'v')
+    env:
+      NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+    steps:
+      - uses: actions/download-artifact@v3
+        with:
+          name: nuget_packages
+          path: nuget_packages
+      - run: dotnet nuget push "*.nupkg" -k NUGET_API_KEY -s "https://api.nuget.org/v3/index.json"
+        working-directory: nuget_packages
