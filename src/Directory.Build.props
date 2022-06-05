@@ -1,0 +1,12 @@
+﻿<Project>
+
+  <PropertyGroup>
+    <Version>2.5.0.0</Version>
+    <LangVersion>10.0</LangVersion>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)LinqToRegex.snk</AssemblyOriginatorKeyFile>
+    <Authors>Josef Pihrt</Authors>
+    <Copyright>Copyright (c) 2017-2022 Josef Pihrt</Copyright>
+  </PropertyGroup>
+
+</Project>
