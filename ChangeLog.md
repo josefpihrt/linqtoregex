@@ -1,13 +1,28 @@
-#### LINQ to Regex 2.5.0 (2017-01-09)
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+### Changed
+
+- Rename `master` to `main`
+
+-----
+
+## [2.5.0] - 2017-01-09
 
 * Add support for .NET Standard 1.3
 * New patterns: CrawlLine, SlashOrBackslash, NotSlashOrBackslash
 
-#### LINQ to Regex 2.4.0 (2016-09-13)
+## [2.4.0] - 2016-09-13
 
 * Add support for Portable Class Library
 
-#### LINQ to Regex 2.3.0 (2016-02-07)
+## [2.3.0] - 2016-02-07
 
 * New PatternOptions value: InlineOptions.
 * New enum SplitOptions with values: None, OmitGroupValues, OmitEmptyValues.
@@ -15,22 +30,22 @@
 * New extension method that extends Regex: EnumerateSplit (3 overloads added).
 * New pattern: Characters.
 
-#### LINQ to Regex 2.2.2 (2015-11-19)
+## [2.2.2] - 2015-11-19
 
 * New patterns: LatinLetters, ArabicDigits, Spaces, RequireGroup, DisallowGroup.
 * New extension methods that extends Regex: EnumerateIndexes, EnumerateLengths, EnumerateValues.
 
-#### LINQ to Regex 2.2.1 (2015-10-04)
+## [2.2.1] - 2015-10-04
 
 * New patterns: BalanceParentheses, BalanceSquareBrackets, BalanceCurlyBrackets, BalanceAngleBrackets.
 * New extension methods that extend IEnumerable<Capture>: EnumerateIndexes, EnumerateLengths.
 * New extension method that extends Capture: EndIndex.
 
-#### LINQ to Regex 2.2.0 (2015-09-15)
+## [2.2.0] - 2015-09-15
 
 * New patterns: WhileNot, UntilChar(string).
 
-#### LINQ to Regex 2.1.0 (2015-08-25)
+## [2.1.0] - 2015-08-25
 
 * New substitution pattern: Text(char), Group.
 * New patterns: Until, WhileNotDigit, WhileNotWhiteSpace, WhileNotWordChar.
