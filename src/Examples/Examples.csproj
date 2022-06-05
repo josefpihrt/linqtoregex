@@ -8,7 +8,6 @@
     <AssemblyTitle>LINQ to Regex Samples</AssemblyTitle>
     <Product>LINQ to Regex Samples</Product>
     <Copyright>Copyright © 2015-2022</Copyright>
-    <CodeAnalysisRuleSet>..\global.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
 
   <ItemGroup>
