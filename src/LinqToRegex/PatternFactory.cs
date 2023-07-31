@@ -1203,16 +1203,23 @@ public static class PatternFactory
         return CharGroup.Create(first, last, true);
     }
 
-    /// <summary>
-    /// Returns a pattern that matches a character from a specified base group except characters from a specified excluded group.
-    /// </summary>
-    /// <param name="baseGroup">A base group.</param>
-    /// <param name="excludedGroup">An excluded group.</param>
-    /// <exception cref="ArgumentNullException"><paramref name="baseGroup"/> or <paramref name="excludedGroup"/> is <c>null</c>.</exception>
-    public static CharSubtraction Except(IBaseGroup baseGroup, IExcludedGroup excludedGroup)
-    {
-        return new CharSubtraction(baseGroup, excludedGroup);
-    }
+    public static CharSubtraction Subtract(CharGroup baseGroup, CharGroup excludedGroup) => new(baseGroup, excludedGroup);
+
+    public static CharSubtraction Subtract(CharGroup baseGroup, CharGrouping excludedGroup) => new(baseGroup, excludedGroup);
+
+    public static CharSubtraction Subtract(CharGroup baseGroup, CharPattern excludedGroup) => new(baseGroup, excludedGroup);
+
+    public static CharSubtraction Subtract(CharGrouping baseGroup, CharGroup excludedGroup) => new(baseGroup, excludedGroup);
+
+    public static CharSubtraction Subtract(CharGrouping baseGroup, CharGrouping excludedGroup) => new(baseGroup, excludedGroup);
+
+    public static CharSubtraction Subtract(CharGrouping baseGroup, CharPattern excludedGroup) => new(baseGroup, excludedGroup);
+
+    public static CharSubtraction Subtract(CharPattern baseGroup, CharGroup excludedGroup) => new(baseGroup, excludedGroup);
+
+    public static CharSubtraction Subtract(CharPattern baseGroup, CharGrouping excludedGroup) => new(baseGroup, excludedGroup);
+
+    public static CharSubtraction Subtract(CharPattern baseGroup, CharPattern excludedGroup) => new(baseGroup, excludedGroup);
 
     /// <summary>
     /// Returns a pattern that matches a tab.
@@ -3325,7 +3332,7 @@ public static class PatternFactory
     /// </summary>
     public static CharSubtraction WhiteSpaceExceptNewLine()
     {
-        return WhiteSpace().Except(NewLineChar());
+        return WhiteSpace().Subtract(NewLineChar());
     }
 
     /// <summary>

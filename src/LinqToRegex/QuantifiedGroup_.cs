@@ -31,7 +31,7 @@ public abstract partial class QuantifiedGroup
             _count2 = maxCount;
         }
 
-        protected override void AppendQuantifierTo(PatternBuilder builder)
+        private protected override void AppendQuantifierTo(PatternBuilder builder)
         {
             if (builder is null)
                 throw new ArgumentNullException(nameof(builder));
@@ -60,7 +60,7 @@ public abstract partial class QuantifiedGroup
             _minCount = minCount;
         }
 
-        protected override void AppendQuantifierTo(PatternBuilder builder)
+        private protected override void AppendQuantifierTo(PatternBuilder builder)
         {
             if (builder is null)
                 throw new ArgumentNullException(nameof(builder));
@@ -76,7 +76,7 @@ public abstract partial class QuantifiedGroup
         {
         }
 
-        protected override void AppendQuantifierTo(PatternBuilder builder)
+        private protected override void AppendQuantifierTo(PatternBuilder builder)
         {
             if (builder is null)
                 throw new ArgumentNullException(nameof(builder));
@@ -92,7 +92,7 @@ public abstract partial class QuantifiedGroup
         {
         }
 
-        protected override void AppendQuantifierTo(PatternBuilder builder)
+        private protected override void AppendQuantifierTo(PatternBuilder builder)
         {
             if (builder is null)
                 throw new ArgumentNullException(nameof(builder));
@@ -108,7 +108,7 @@ public abstract partial class QuantifiedGroup
         {
         }
 
-        protected override void AppendQuantifierTo(PatternBuilder builder)
+        private protected override void AppendQuantifierTo(PatternBuilder builder)
         {
             if (builder is null)
                 throw new ArgumentNullException(nameof(builder));

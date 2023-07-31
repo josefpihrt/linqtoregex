@@ -15,7 +15,7 @@ public abstract partial class CharGrouping
             _value = value;
         }
 
-        protected override void AppendItemContentTo(PatternBuilder builder)
+        private protected override void AppendItemContentTo(PatternBuilder builder)
         {
             if (builder is null)
                 throw new ArgumentNullException(nameof(builder));
@@ -33,7 +33,7 @@ public abstract partial class CharGrouping
             _value = value;
         }
 
-        protected override void AppendItemContentTo(PatternBuilder builder)
+        private protected override void AppendItemContentTo(PatternBuilder builder)
         {
             if (builder is null)
                 throw new ArgumentNullException(nameof(builder));
@@ -57,7 +57,7 @@ public abstract partial class CharGrouping
             _characters = characters;
         }
 
-        protected override void AppendItemContentTo(PatternBuilder builder)
+        private protected override void AppendItemContentTo(PatternBuilder builder)
         {
             if (builder is null)
                 throw new ArgumentNullException(nameof(builder));
@@ -80,7 +80,7 @@ public abstract partial class CharGrouping
             _lastChar = lastChar;
         }
 
-        protected override void AppendItemContentTo(PatternBuilder builder)
+        private protected override void AppendItemContentTo(PatternBuilder builder)
         {
             if (builder is null)
                 throw new ArgumentNullException(nameof(builder));
@@ -98,7 +98,7 @@ public abstract partial class CharGrouping
             _value = value;
         }
 
-        protected override void AppendItemContentTo(PatternBuilder builder)
+        private protected override void AppendItemContentTo(PatternBuilder builder)
         {
             if (builder is null)
                 throw new ArgumentNullException(nameof(builder));
@@ -117,7 +117,7 @@ public abstract partial class CharGrouping
             Negative = negative;
         }
 
-        protected override void AppendItemContentTo(PatternBuilder builder)
+        private protected override void AppendItemContentTo(PatternBuilder builder)
         {
             if (builder is null)
                 throw new ArgumentNullException(nameof(builder));
@@ -138,7 +138,7 @@ public abstract partial class CharGrouping
             Negative = negative;
         }
 
-        protected override void AppendItemContentTo(PatternBuilder builder)
+        private protected override void AppendItemContentTo(PatternBuilder builder)
         {
             if (builder is null)
                 throw new ArgumentNullException(nameof(builder));
@@ -158,7 +158,7 @@ public abstract partial class CharGrouping
             _value = value ?? throw new ArgumentNullException(nameof(value));
         }
 
-        protected override void AppendItemContentTo(PatternBuilder builder)
+        private protected override void AppendItemContentTo(PatternBuilder builder)
         {
             if (builder is null)
                 throw new ArgumentNullException(nameof(builder));

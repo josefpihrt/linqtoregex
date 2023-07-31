@@ -5,7 +5,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq;
 /// <summary>
 /// Represents the excluded part of the character subtraction pattern.
 /// </summary>
-public interface IExcludedGroup
+internal interface IExcludedGroup
 {
     /// <summary>
     /// Appends the text representation of the excluded group to the specified <see cref="PatternBuilder"/>.

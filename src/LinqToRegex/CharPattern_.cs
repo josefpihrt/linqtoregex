@@ -22,7 +22,7 @@ public abstract partial class CharPattern
             builder.Append(_value);
         }
 
-        protected override void AppendGroupContentTo(PatternBuilder builder)
+        private protected override void AppendGroupContentTo(PatternBuilder builder)
         {
             if (builder is null)
                 throw new ArgumentNullException(nameof(builder));
@@ -47,7 +47,7 @@ public abstract partial class CharPattern
             builder.Append(_value);
         }
 
-        protected override void AppendGroupContentTo(PatternBuilder builder)
+        private protected override void AppendGroupContentTo(PatternBuilder builder)
         {
             if (builder is null)
                 throw new ArgumentNullException(nameof(builder));

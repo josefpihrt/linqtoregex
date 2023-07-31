@@ -73,7 +73,7 @@ public abstract partial class CharGroup : QuantifiablePattern, IBaseGroup, IExcl
     /// </summary>
     /// <param name="builder">The builder to use for appending the text.</param>
     /// <exception cref="ArgumentNullException"><paramref name="builder"/> is <c>null</c>.</exception>
-    public void AppendBaseGroupTo(PatternBuilder builder)
+    void IBaseGroup.AppendBaseGroupTo(PatternBuilder builder)
     {
         if (builder is null)
             throw new ArgumentNullException(nameof(builder));
@@ -89,7 +89,7 @@ public abstract partial class CharGroup : QuantifiablePattern, IBaseGroup, IExcl
     /// </summary>
     /// <param name="builder">The builder to use for appending the text.</param>
     /// <exception cref="ArgumentNullException"><paramref name="builder"/> is <c>null</c>.</exception>
-    public void AppendExcludedGroupTo(PatternBuilder builder)
+    void IExcludedGroup.AppendExcludedGroupTo(PatternBuilder builder)
     {
         if (builder is null)
             throw new ArgumentNullException(nameof(builder));
@@ -101,6 +101,12 @@ public abstract partial class CharGroup : QuantifiablePattern, IBaseGroup, IExcl
     /// If the current instance is a positive character group, it returns a negative character group. Otherwise, it returns a positive character group. Newly created group has the same content as the current instance.
     /// </summary>
     public CharGroup Negate() => Create(this, !Negative);
+
+    public CharSubtraction Subtract(CharGroup excludedGroup) => new(this, excludedGroup);
+
+    public CharSubtraction Subtract(CharGrouping excludedGroup) => new(this, excludedGroup);
+
+    public CharSubtraction Subtract(CharPattern excludedGroup) => new(this, excludedGroup);
 
     /// <summary>
     /// If the current instance is a positive character group, it returns a negative character group. Otherwise, it returns a positive character group. Newly created group has the same content as the current instance.

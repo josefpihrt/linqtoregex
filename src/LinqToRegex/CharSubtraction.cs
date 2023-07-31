@@ -23,7 +23,7 @@ public class CharSubtraction : QuantifiablePattern, IExcludedGroup
     /// </summary>
     /// <param name="builder">The builder to use for appending the text.</param>
     /// <exception cref="ArgumentNullException"><paramref name="builder"/> is <c>null</c>.</exception>
-    public void AppendExcludedGroupTo(PatternBuilder builder)
+    void IExcludedGroup.AppendExcludedGroupTo(PatternBuilder builder)
     {
         if (builder is null)
             throw new ArgumentNullException(nameof(builder));

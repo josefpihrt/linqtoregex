@@ -23,7 +23,7 @@ public abstract partial class QuantifiedGroup : QuantifiedPattern
     /// Appends a quantifier to a specified <see cref="PatternBuilder"/>.
     /// </summary>
     /// <param name="builder">The builder to use for appending the text.</param>
-    protected abstract void AppendQuantifierTo(PatternBuilder builder);
+    private protected abstract void AppendQuantifierTo(PatternBuilder builder);
 
     internal override void AppendTo(PatternBuilder builder)
     {

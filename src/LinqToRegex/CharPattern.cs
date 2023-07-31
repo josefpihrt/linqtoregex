@@ -48,7 +48,7 @@ public abstract partial class CharPattern : QuantifiablePattern, IBaseGroup, IEx
     /// </summary>
     /// <param name="builder">The builder to use for appending the text.</param>
     /// <exception cref="ArgumentNullException"><paramref name="builder"/> is <c>null</c>.</exception>
-    protected virtual void AppendGroupContentTo(PatternBuilder builder)
+    private protected virtual void AppendGroupContentTo(PatternBuilder builder)
     {
         if (builder is null)
             throw new ArgumentNullException(nameof(builder));
@@ -61,7 +61,7 @@ public abstract partial class CharPattern : QuantifiablePattern, IBaseGroup, IEx
     /// </summary>
     /// <param name="builder">The builder to use for appending the text.</param>
     /// <exception cref="ArgumentNullException"><paramref name="builder"/> is <c>null</c>.</exception>
-    public void AppendBaseGroupTo(PatternBuilder builder)
+    void IBaseGroup.AppendBaseGroupTo(PatternBuilder builder)
     {
         if (builder is null)
             throw new ArgumentNullException(nameof(builder));
@@ -74,7 +74,7 @@ public abstract partial class CharPattern : QuantifiablePattern, IBaseGroup, IEx
     /// </summary>
     /// <param name="builder">The builder to use for appending the text.</param>
     /// <exception cref="ArgumentNullException"><paramref name="builder"/> is <c>null</c>.</exception>
-    public void AppendExcludedGroupTo(PatternBuilder builder)
+    void IExcludedGroup.AppendExcludedGroupTo(PatternBuilder builder)
     {
         if (builder is null)
             throw new ArgumentNullException(nameof(builder));
@@ -83,6 +83,12 @@ public abstract partial class CharPattern : QuantifiablePattern, IBaseGroup, IEx
         AppendGroupContentTo(builder);
         builder.AppendCharGroupEnd();
     }
+
+    public CharSubtraction Subtract(CharPattern excludedGroup) => new(this, excludedGroup);
+
+    public CharSubtraction Subtract(CharGroup excludedGroup) => new(this, excludedGroup);
+
+    public CharSubtraction Subtract(CharGrouping excludedGroup) => new(this, excludedGroup);
 
     /// <summary>
     /// Returns a patterns that matches what is not matched by the current instance.

@@ -5,7 +5,7 @@ namespace Pihrtsoft.Text.RegularExpressions.Linq;
 /// <summary>
 /// Represents the base part of the character subtraction pattern.
 /// </summary>
-public interface IBaseGroup
+internal interface IBaseGroup
 {
     /// <summary>
     /// Appends the text representation of the base group to the specified <see cref="PatternBuilder"/>.

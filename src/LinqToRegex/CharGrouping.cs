@@ -405,14 +405,14 @@ public abstract partial class CharGrouping : IBaseGroup, IExcludedGroup
     /// Appends a core content of the current instance to a specified <see cref="PatternBuilder"/>.
     /// </summary>
     /// <param name="builder">The builder to use for appending the text.</param>
-    protected abstract void AppendItemContentTo(PatternBuilder builder);
+    private protected abstract void AppendItemContentTo(PatternBuilder builder);
 
     /// <summary>
     /// Appends the text representation of the current instance of the character grouping to the specified <see cref="PatternBuilder"/>.
     /// </summary>
     /// <param name="builder">The builder to use for appending the text.</param>
     /// <exception cref="ArgumentNullException"><paramref name="builder"/> is <c>null</c>.</exception>
-    public void AppendBaseGroupTo(PatternBuilder builder)
+    void IBaseGroup.AppendBaseGroupTo(PatternBuilder builder)
     {
         if (builder is null)
             throw new ArgumentNullException(nameof(builder));
@@ -425,7 +425,7 @@ public abstract partial class CharGrouping : IBaseGroup, IExcludedGroup
     /// </summary>
     /// <param name="builder">The builder to use for appending the text.</param>
     /// <exception cref="ArgumentNullException"><paramref name="builder"/> is <c>null</c>.</exception>
-    public void AppendExcludedGroupTo(PatternBuilder builder)
+    void IExcludedGroup.AppendExcludedGroupTo(PatternBuilder builder)
     {
         if (builder is null)
             throw new ArgumentNullException(nameof(builder));
@@ -456,6 +456,12 @@ public abstract partial class CharGrouping : IBaseGroup, IExcludedGroup
             AppendItemContentTo(builder);
         }
     }
+
+    public CharSubtraction Subtract(CharGrouping excludedGroup) => new(this, excludedGroup);
+
+    public CharSubtraction Subtract(CharGroup excludedGroup) => new(this, excludedGroup);
+
+    public CharSubtraction Subtract(CharPattern excludedGroup) => new(this, excludedGroup);
 
     /// <summary>
     /// Concatenate two elements into a new <see cref="CharGrouping"/>.
