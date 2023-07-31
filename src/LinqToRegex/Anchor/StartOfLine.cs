@@ -2,16 +2,15 @@
 
 using System.Text.RegularExpressions;
 
-namespace Pihrtsoft.Text.RegularExpressions.Linq
+namespace Pihrtsoft.Text.RegularExpressions.Linq;
+
+/// <summary>
+/// Represents a pattern that is matched at the beginning of the string (or line if the <see cref="RegexOptions.Multiline"/> option is applied). This class cannot be inherited.
+/// </summary>
+internal sealed class StartOfLine : QuantifiablePattern
 {
-    /// <summary>
-    /// Represents a pattern that is matched at the beginning of the string (or line if the <see cref="RegexOptions.Multiline"/> option is applied). This class cannot be inherited.
-    /// </summary>
-    internal sealed class StartOfLine : QuantifiablePattern
+    internal override void AppendTo(PatternBuilder builder)
     {
-        internal override void AppendTo(PatternBuilder builder)
-        {
-            builder.AppendBeginningOfInputOrLine();
-        }
+        builder.AppendBeginningOfInputOrLine();
     }
 }

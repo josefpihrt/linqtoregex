@@ -6,7 +6,8 @@
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)LinqToRegex.snk</AssemblyOriginatorKeyFile>
     <Authors>Josef Pihrt</Authors>
-    <Copyright>Copyright (c) 2017-2022 Josef Pihrt</Copyright>
+    <Copyright>Copyright (c) 2017-2023 Josef Pihrt</Copyright>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
 </Project>

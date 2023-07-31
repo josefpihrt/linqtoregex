@@ -4,27 +4,26 @@ using System;
 using System.Globalization;
 using System.Text;
 
-namespace Pihrtsoft.Text.RegularExpressions.Linq
+namespace Pihrtsoft.Text.RegularExpressions.Linq;
+
+internal sealed class NumberedGroupSubstitution : Substitution
 {
-    internal sealed class NumberedGroupSubstitution : Substitution
+    internal NumberedGroupSubstitution(int groupNumber)
     {
-        internal NumberedGroupSubstitution(int groupNumber)
-        {
-            if (groupNumber < 0)
-                throw new ArgumentOutOfRangeException(nameof(groupNumber));
+        if (groupNumber < 0)
+            throw new ArgumentOutOfRangeException(nameof(groupNumber));
 
-            GroupNumber = groupNumber;
-        }
-
-        internal override void AppendTo(StringBuilder builder)
-        {
-            builder.Append("${");
-            builder.Append(Convert.ToString(GroupNumber, CultureInfo.InvariantCulture));
-            builder.Append("}");
-        }
-
-        internal override string Value => "${" + Convert.ToString(GroupNumber, CultureInfo.InvariantCulture) + "}";
-
-        public int GroupNumber { get; }
+        GroupNumber = groupNumber;
     }
+
+    internal override void AppendTo(StringBuilder builder)
+    {
+        builder.Append("${");
+        builder.Append(Convert.ToString(GroupNumber, CultureInfo.InvariantCulture));
+        builder.Append("}");
+    }
+
+    internal override string Value => "${" + Convert.ToString(GroupNumber, CultureInfo.InvariantCulture) + "}";
+
+    public int GroupNumber { get; }
 }

@@ -1,13 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net462</TargetFrameworks>
-    <RootNamespace>Pihrtsoft.Text.RegularExpressions.Linq</RootNamespace>
-    <AssemblyName>Pihrtsoft.Text.RegularExpressions.Linq</AssemblyName>
-    <AssemblyTitle>LINQ to Regex Library</AssemblyTitle>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'!='Release|AnyCPU'">
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+    <TargetFrameworks>netstandard2.0;net462</TargetFrameworks>
+    <DocumentationFile>bin\$(Configuration)\$(AssemblyName).xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <RootNamespace>Pihrtsoft.Text.RegularExpressions.Linq</RootNamespace>
+    <AssemblyName>Pihrtsoft.Text.RegularExpressions.Linq</AssemblyName>
+    <AssemblyTitle>LINQ to Regex Library</AssemblyTitle>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -40,6 +45,17 @@
     <None Include="..\..\images\icon.png" Pack="true" PackagePath="\" Visible="false" />
     <None Include="docs\NuGetReadme.md" Pack="true" PackagePath="docs\README.md" />
     <None Include="LinqToRegex.snk" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Roslynator.Analyzers" Version="4.3.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Roslynator.Formatting.Analyzers" Version="4.3.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
 </Project>

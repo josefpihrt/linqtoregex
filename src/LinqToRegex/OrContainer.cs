@@ -2,73 +2,72 @@
 
 using System;
 
-namespace Pihrtsoft.Text.RegularExpressions.Linq
-{
-    internal sealed class OrContainer : GroupingPattern
-    {
-        internal OrContainer(object first, object second)
-            : base(Combine(first, second))
-        {
-        }
+namespace Pihrtsoft.Text.RegularExpressions.Linq;
 
-        private static object Combine(object first, object second)
+internal sealed class OrContainer : GroupingPattern
+{
+    internal OrContainer(object first, object second)
+        : base(Combine(first, second))
+    {
+    }
+
+    private static object Combine(object first, object second)
+    {
+        if (first is OrContainer x)
         {
-            if (first is OrContainer x)
+            if (second is OrContainer y)
             {
-                if (second is OrContainer y)
-                {
-                    return Combine(x.Content as object[], y.Content as object[]);
-                }
-                else
-                {
-                    return Combine(x.Content as object[], second);
-                }
-            }
-            else if (second is OrContainer y)
-            {
-                return Combine(first, y.Content as object[]);
+                return Combine((object[])x.Content, (object[])y.Content);
             }
             else
             {
-                return new object[] { first, second };
+                return Combine((object[])x.Content, second);
             }
         }
-
-        private static object[] Combine(object[] left, object[] right)
+        else if (second is OrContainer y)
         {
-            var result = new object[left.Length + right.Length];
-
-            Array.Copy(left, result, left.Length);
-            Array.Copy(right, 0, result, left.Length, right.Length);
-
-            return result;
+            return Combine(first, (object[])y.Content);
         }
-
-        private static object[] Combine(object[] left, object right)
+        else
         {
-            var result = new object[left.Length + 1];
-
-            Array.Copy(left, result, left.Length);
-
-            result[left.Length] = right;
-
-            return result;
+            return new object[] { first, second };
         }
+    }
 
-        private static object[] Combine(object left, object[] right)
-        {
-            var result = new object[right.Length + 1];
+    private static object[] Combine(object[] left, object[] right)
+    {
+        var result = new object[left.Length + right.Length];
 
-            result[0] = left;
+        Array.Copy(left, result, left.Length);
+        Array.Copy(right, 0, result, left.Length, right.Length);
 
-            Array.Copy(right, 0, result, 1, right.Length);
+        return result;
+    }
 
-            return result;
-        }
+    private static object[] Combine(object[] left, object right)
+    {
+        var result = new object[left.Length + 1];
 
-        internal override void AppendTo(PatternBuilder builder)
-        {
-            builder.AppendNoncapturingGroup(Content);
-        }
+        Array.Copy(left, result, left.Length);
+
+        result[left.Length] = right;
+
+        return result;
+    }
+
+    private static object[] Combine(object left, object[] right)
+    {
+        var result = new object[right.Length + 1];
+
+        result[0] = left;
+
+        Array.Copy(right, 0, result, 1, right.Length);
+
+        return result;
+    }
+
+    internal override void AppendTo(PatternBuilder builder)
+    {
+        builder.AppendNoncapturingGroup(Content);
     }
 }

@@ -2,22 +2,25 @@
 
 using System.Text.RegularExpressions;
 
-namespace Pihrtsoft.Text.RegularExpressions.Linq
+namespace Pihrtsoft.Text.RegularExpressions.Linq;
+
+internal class LineInfo
 {
-    internal class LineInfo
+    public LineInfo(SyntaxKind kind, RegexOptions options)
     {
-        public LineInfo(SyntaxKind kind, RegexOptions options)
-        {
-            Kind = kind;
-            Options = options;
-        }
-
-        public SyntaxKind Kind { get; }
-        public QuantifierKind QuantifierKind { get; set; }
-        public bool Lazy { get; set; }
-        public RegexOptions Options { get; set; }
-
-        public int Count1 { get; set; } = -1;
-        public int Count2 { get; set; } = -1;
+        Kind = kind;
+        Options = options;
     }
+
+    public SyntaxKind Kind { get; }
+
+    public QuantifierKind QuantifierKind { get; set; }
+
+    public bool Lazy { get; set; }
+
+    public RegexOptions Options { get; set; }
+
+    public int Count1 { get; set; } = -1;
+
+    public int Count2 { get; set; } = -1;
 }

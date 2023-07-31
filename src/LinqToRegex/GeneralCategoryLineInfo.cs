@@ -2,16 +2,15 @@
 
 using System.Text.RegularExpressions;
 
-namespace Pihrtsoft.Text.RegularExpressions.Linq
-{
-    internal sealed class GeneralCategoryLineInfo : LineInfo
-    {
-        public GeneralCategoryLineInfo(SyntaxKind kind, GeneralCategory category, RegexOptions options)
-            : base(kind, options)
-        {
-            Category = category;
-        }
+namespace Pihrtsoft.Text.RegularExpressions.Linq;
 
-        public GeneralCategory Category { get; }
+internal sealed class GeneralCategoryLineInfo : LineInfo
+{
+    public GeneralCategoryLineInfo(SyntaxKind kind, GeneralCategory category, RegexOptions options)
+        : base(kind, options)
+    {
+        Category = category;
     }
+
+    public GeneralCategory Category { get; }
 }

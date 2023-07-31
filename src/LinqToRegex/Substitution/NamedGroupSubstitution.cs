@@ -2,26 +2,25 @@
 
 using System.Text;
 
-namespace Pihrtsoft.Text.RegularExpressions.Linq
+namespace Pihrtsoft.Text.RegularExpressions.Linq;
+
+internal sealed class NamedGroupSubstitution : Substitution
 {
-    internal sealed class NamedGroupSubstitution : Substitution
+    internal NamedGroupSubstitution(string groupName)
     {
-        internal NamedGroupSubstitution(string groupName)
-        {
-            RegexUtility.CheckGroupName(groupName);
+        RegexUtility.CheckGroupName(groupName);
 
-            GroupName = groupName;
-        }
-
-        internal override void AppendTo(StringBuilder builder)
-        {
-            builder.Append("${");
-            builder.Append(GroupName);
-            builder.Append("}");
-        }
-
-        internal override string Value => "${" + GroupName + "}";
-
-        public string GroupName { get; }
+        GroupName = groupName;
     }
+
+    internal override void AppendTo(StringBuilder builder)
+    {
+        builder.Append("${");
+        builder.Append(GroupName);
+        builder.Append("}");
+    }
+
+    internal override string Value => "${" + GroupName + "}";
+
+    public string GroupName { get; }
 }

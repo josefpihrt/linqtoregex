@@ -2,32 +2,31 @@
 
 using System.Text.RegularExpressions;
 
-namespace Pihrtsoft.Text.RegularExpressions.Linq
+namespace Pihrtsoft.Text.RegularExpressions.Linq;
+
+internal sealed class CaseAwareTextPattern : QuantifiablePattern
 {
-    internal sealed class CaseAwareTextPattern : QuantifiablePattern
+    private readonly string _text;
+    private readonly bool _ignoreCase;
+
+    public CaseAwareTextPattern(string text, bool ignoreCase)
     {
-        private readonly string _text;
-        private readonly bool _ignoreCase;
+        _text = text;
+        _ignoreCase = ignoreCase;
+    }
 
-        public CaseAwareTextPattern(string text, bool ignoreCase)
+    internal override void AppendTo(PatternBuilder builder)
+    {
+        if (string.IsNullOrEmpty(_text))
+            return;
+
+        if (_ignoreCase)
         {
-            _text = text;
-            _ignoreCase = ignoreCase;
+            builder.AppendOptions(RegexOptions.IgnoreCase, _text);
         }
-
-        internal override void AppendTo(PatternBuilder builder)
+        else
         {
-            if (string.IsNullOrEmpty(_text))
-                return;
-
-            if (_ignoreCase)
-            {
-                builder.AppendOptions(RegexOptions.IgnoreCase, _text);
-            }
-            else
-            {
-                builder.AppendOptions(RegexOptions.None, RegexOptions.IgnoreCase, _text);
-            }
+            builder.AppendOptions(RegexOptions.None, RegexOptions.IgnoreCase, _text);
         }
     }
 }

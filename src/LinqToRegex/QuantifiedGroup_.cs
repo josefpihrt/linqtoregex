@@ -2,119 +2,118 @@
 
 using System;
 
-namespace Pihrtsoft.Text.RegularExpressions.Linq
+namespace Pihrtsoft.Text.RegularExpressions.Linq;
+
+public abstract partial class QuantifiedGroup
 {
-    public abstract partial class QuantifiedGroup
+    internal sealed class CountQuantifiedGroup : QuantifiedGroup
     {
-        internal sealed class CountQuantifiedGroup : QuantifiedGroup
+        private readonly int _count1;
+        private readonly int _count2;
+
+        public CountQuantifiedGroup(int exactCount, object content)
+            : base(content)
         {
-            private readonly int _count1;
-            private readonly int _count2;
+            if (exactCount < 0)
+                throw new ArgumentOutOfRangeException(nameof(exactCount));
 
-            public CountQuantifiedGroup(int exactCount, object content)
-                : base(content)
-            {
-                if (exactCount < 0)
-                    throw new ArgumentOutOfRangeException(nameof(exactCount));
-
-                _count1 = exactCount;
-                _count2 = -1;
-            }
-
-            public CountQuantifiedGroup(int minCount, int maxCount, object content)
-                : base(content)
-            {
-                if (minCount < 0 || maxCount < minCount)
-                    throw new ArgumentOutOfRangeException(nameof(minCount));
-
-                _count1 = minCount;
-                _count2 = maxCount;
-            }
-
-            protected override void AppendQuantifierTo(PatternBuilder builder)
-            {
-                if (builder is null)
-                    throw new ArgumentNullException(nameof(builder));
-
-                if (_count2 == -1)
-                {
-                    builder.AppendCountInternal(_count1);
-                }
-                else
-                {
-                    builder.AppendCountInternal(_count1, _count2);
-                }
-            }
+            _count1 = exactCount;
+            _count2 = -1;
         }
 
-        internal sealed class CountFromQuantifiedGroup : QuantifiedGroup
+        public CountQuantifiedGroup(int minCount, int maxCount, object content)
+            : base(content)
         {
-            private readonly int _minCount;
+            if (minCount < 0 || maxCount < minCount)
+                throw new ArgumentOutOfRangeException(nameof(minCount));
 
-            public CountFromQuantifiedGroup(int minCount, object content)
-                : base(content)
-            {
-                if (minCount < 0)
-                    throw new ArgumentOutOfRangeException(nameof(minCount));
-
-                _minCount = minCount;
-            }
-
-            protected override void AppendQuantifierTo(PatternBuilder builder)
-            {
-                if (builder is null)
-                    throw new ArgumentNullException(nameof(builder));
-
-                builder.AppendCountFromInternal(_minCount);
-            }
+            _count1 = minCount;
+            _count2 = maxCount;
         }
 
-        internal sealed class MaybeQuantifiedGroup : QuantifiedGroup
+        protected override void AppendQuantifierTo(PatternBuilder builder)
         {
-            public MaybeQuantifiedGroup(object content)
-                : base(content)
+            if (builder is null)
+                throw new ArgumentNullException(nameof(builder));
+
+            if (_count2 == -1)
             {
+                builder.AppendCountInternal(_count1);
             }
-
-            protected override void AppendQuantifierTo(PatternBuilder builder)
+            else
             {
-                if (builder is null)
-                    throw new ArgumentNullException(nameof(builder));
-
-                builder.AppendMaybe();
+                builder.AppendCountInternal(_count1, _count2);
             }
         }
+    }
 
-        internal sealed class MaybeManyQuantifiedGroup : QuantifiedGroup
+    internal sealed class CountFromQuantifiedGroup : QuantifiedGroup
+    {
+        private readonly int _minCount;
+
+        public CountFromQuantifiedGroup(int minCount, object content)
+            : base(content)
         {
-            public MaybeManyQuantifiedGroup(object content)
-                : base(content)
-            {
-            }
+            if (minCount < 0)
+                throw new ArgumentOutOfRangeException(nameof(minCount));
 
-            protected override void AppendQuantifierTo(PatternBuilder builder)
-            {
-                if (builder is null)
-                    throw new ArgumentNullException(nameof(builder));
-
-                builder.AppendMaybeMany();
-            }
+            _minCount = minCount;
         }
 
-        internal sealed class OneManyQuantifiedGroup : QuantifiedGroup
+        protected override void AppendQuantifierTo(PatternBuilder builder)
         {
-            public OneManyQuantifiedGroup(object content)
-                : base(content)
-            {
-            }
+            if (builder is null)
+                throw new ArgumentNullException(nameof(builder));
 
-            protected override void AppendQuantifierTo(PatternBuilder builder)
-            {
-                if (builder is null)
-                    throw new ArgumentNullException(nameof(builder));
+            builder.AppendCountFromInternal(_minCount);
+        }
+    }
 
-                builder.AppendOneMany();
-            }
+    internal sealed class MaybeQuantifiedGroup : QuantifiedGroup
+    {
+        public MaybeQuantifiedGroup(object content)
+            : base(content)
+        {
+        }
+
+        protected override void AppendQuantifierTo(PatternBuilder builder)
+        {
+            if (builder is null)
+                throw new ArgumentNullException(nameof(builder));
+
+            builder.AppendMaybe();
+        }
+    }
+
+    internal sealed class MaybeManyQuantifiedGroup : QuantifiedGroup
+    {
+        public MaybeManyQuantifiedGroup(object content)
+            : base(content)
+        {
+        }
+
+        protected override void AppendQuantifierTo(PatternBuilder builder)
+        {
+            if (builder is null)
+                throw new ArgumentNullException(nameof(builder));
+
+            builder.AppendMaybeMany();
+        }
+    }
+
+    internal sealed class OneManyQuantifiedGroup : QuantifiedGroup
+    {
+        public OneManyQuantifiedGroup(object content)
+            : base(content)
+        {
+        }
+
+        protected override void AppendQuantifierTo(PatternBuilder builder)
+        {
+            if (builder is null)
+                throw new ArgumentNullException(nameof(builder));
+
+            builder.AppendOneMany();
         }
     }
 }

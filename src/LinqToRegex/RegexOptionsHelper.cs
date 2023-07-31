@@ -2,50 +2,31 @@
 
 using System.Text.RegularExpressions;
 
-namespace Pihrtsoft.Text.RegularExpressions.Linq
+namespace Pihrtsoft.Text.RegularExpressions.Linq;
+
+internal static class RegexOptionsHelper
 {
-    internal static class RegexOptionsHelper
+    public static RegexOptions GetInlineOptions(RegexOptions options)
     {
-        public static RegexOptions GetInlineOptions(RegexOptions options)
-        {
-            return options
-                & ~(
+        return options
+            & ~(
 #if NETFRAMEWORK
-                RegexOptions.Compiled |
+            RegexOptions.Compiled |
 #endif
-                RegexOptions.CultureInvariant
-                    | RegexOptions.ECMAScript
-                    | RegexOptions.RightToLeft);
-        }
-
-        public static bool IsNone(this RegexOptions options)
-        {
-            return options == RegexOptions.None;
-        }
-
-        public static bool HasIgnoreCase(this RegexOptions options)
-        {
-            return (options & RegexOptions.IgnoreCase) != 0;
-        }
-
-        public static bool HasMultiline(this RegexOptions options)
-        {
-            return (options & RegexOptions.Multiline) != 0;
-        }
-
-        public static bool HasExplicitCapture(this RegexOptions options)
-        {
-            return (options & RegexOptions.ExplicitCapture) != 0;
-        }
-
-        public static bool HasSingleline(this RegexOptions options)
-        {
-            return (options & RegexOptions.Singleline) != 0;
-        }
-
-        public static bool HasIgnorePatternWhitespace(this RegexOptions options)
-        {
-            return (options & RegexOptions.IgnorePatternWhitespace) != 0;
-        }
+            RegexOptions.CultureInvariant
+                | RegexOptions.ECMAScript
+                | RegexOptions.RightToLeft);
     }
+
+    public static bool IsNone(this RegexOptions options) => options == RegexOptions.None;
+
+    public static bool HasIgnoreCase(this RegexOptions options) => (options & RegexOptions.IgnoreCase) != 0;
+
+    public static bool HasMultiline(this RegexOptions options) => (options & RegexOptions.Multiline) != 0;
+
+    public static bool HasExplicitCapture(this RegexOptions options) => (options & RegexOptions.ExplicitCapture) != 0;
+
+    public static bool HasSingleline(this RegexOptions options) => (options & RegexOptions.Singleline) != 0;
+
+    public static bool HasIgnorePatternWhitespace(this RegexOptions options) => (options & RegexOptions.IgnorePatternWhitespace) != 0;
 }

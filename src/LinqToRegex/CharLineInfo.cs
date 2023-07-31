@@ -2,16 +2,15 @@
 
 using System.Text.RegularExpressions;
 
-namespace Pihrtsoft.Text.RegularExpressions.Linq
-{
-    internal sealed class CharLineInfo : LineInfo
-    {
-        public CharLineInfo(SyntaxKind kind, int charNumber, RegexOptions options)
-            : base(kind, options)
-        {
-            CharNumber = charNumber;
-        }
+namespace Pihrtsoft.Text.RegularExpressions.Linq;
 
-        public int CharNumber { get; }
+internal sealed class CharLineInfo : LineInfo
+{
+    public CharLineInfo(SyntaxKind kind, int charNumber, RegexOptions options)
+        : base(kind, options)
+    {
+        CharNumber = charNumber;
     }
+
+    public int CharNumber { get; }
 }

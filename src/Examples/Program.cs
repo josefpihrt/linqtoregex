@@ -3,79 +3,78 @@
 using System;
 using System.IO;
 using System.Linq;
-using static Pihrtsoft.Text.RegularExpressions.Linq.Patterns;
+using static Pihrtsoft.Text.RegularExpressions.Linq.PatternFactory;
 
-namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples
+namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples;
+
+internal static class Program
 {
-    internal static class Program
+    internal static void Main()
     {
-        internal static void Main(string[] args)
-        {
-            Dump("c# quotation", Snippets.CSharpLiteral());
+        Dump("c# quotation", Snippets.CSharpLiteral());
 
-            Dump("cdata value", Snippets.XmlCData());
+        Dump("cdata value", Snippets.XmlCData());
 
-            Dump("email address", Snippets.EmailAddress());
+        Dump("email address", Snippets.EmailAddress());
 
-            Dump("verbatim string literal", Snippets.CSharpVerbatimTextLiteral());
+        Dump("verbatim string literal", Snippets.CSharpVerbatimTextLiteral());
 
-            Dump("leading whitespace", Snippets.LeadingWhiteSpace());
+        Dump("leading whitespace", Snippets.LeadingWhiteSpace());
 
-            Dump("trailing whitespace", Snippets.TrailingWhiteSpace());
+        Dump("trailing whitespace", Snippets.TrailingWhiteSpace());
 
-            Dump("empty or whitespace line", Snippets.EmptyOrWhiteSpaceLine());
+        Dump("empty or whitespace line", Snippets.EmptyOrWhiteSpaceLine());
 
-            Dump("empty line", Snippets.EmptyLine());
+        Dump("empty line", Snippets.EmptyLine());
 
-            Dump("first line without new line", Snippets.FirstLineWithoutNewLine());
+        Dump("first line without new line", Snippets.FirstLineWithoutNewLine());
 
-            Dump("linefeed without carriage return", Snippets.LinefeedWithoutCarriageReturn());
+        Dump("linefeed without carriage return", Snippets.LinefeedWithoutCarriageReturn());
 
-            Dump("invalid file name chars", Any(Path.GetInvalidFileNameChars()));
+        Dump("invalid file name chars", Any(Path.GetInvalidFileNameChars()));
 
-            Pattern pattern = BeginInput()
-                .Assert(Crawl().SurroundWordBoundary("word1"))
-                .Assert(Crawl().SurroundWordBoundary("word2"))
-                .Any()
-                .MaybeMany();
+        Pattern pattern = BeginInput()
+            .Assert(Crawl().SurroundWordBoundary("word1"))
+            .Assert(Crawl().SurroundWordBoundary("word2"))
+            .Any()
+            .MaybeMany();
 
-            Dump("all words anywhere", pattern);
+        Dump("all words anywhere", pattern);
 
-            var words = new[] { "one", "two", "three" };
+        var words = new[] { "one", "two", "three" };
 
-            pattern = WordBoundary()
-                .CountFrom(
-                    3,
-                    Any(words.Select(f => Group(Patterns.Text(f))))
-                        .WordBoundary()
-                        .NotWordChar()
-                        .MaybeMany()
-                        .Lazy())
-                .GroupReference(1)
-                .GroupReference(2)
-                .GroupReference(3);
+        pattern = WordBoundary()
+            .CountFrom(
+                3,
+                Any(words.Select(f => Group(PatternFactory.Text(f))))
+                    .WordBoundary()
+                    .NotWordChar()
+                    .MaybeMany()
+                    .Lazy())
+            .GroupReference(1)
+            .GroupReference(2)
+            .GroupReference(3);
 
-            Dump("words in sequence in any order", pattern);
+        Dump("words in sequence in any order", pattern);
 
-            pattern = Group(Word())
-                .NotWordChars()
-                .GroupReference(1)
-                .WordBoundary();
+        pattern = Group(Word())
+            .NotWordChars()
+            .GroupReference(1)
+            .WordBoundary();
 
-            Dump("repeated word", pattern);
+        Dump("repeated word", pattern);
 
-            Console.ReadKey();
-        }
+        Console.ReadKey();
+    }
 
-        private static void Dump(string title, Pattern pattern)
-        {
-            const PatternOptions options = PatternOptions.FormatAndComment;
+    private static void Dump(string title, Pattern pattern)
+    {
+        const PatternOptions options = PatternOptions.FormatAndComment;
 
-            if (!string.IsNullOrEmpty(title))
-                Console.WriteLine($"{title}:");
+        if (!string.IsNullOrEmpty(title))
+            Console.WriteLine($"{title}:");
 
-            Console.WriteLine(pattern.ToString(options));
-            Console.WriteLine("");
-        }
+        Console.WriteLine(pattern.ToString(options));
+        Console.WriteLine("");
     }
 }

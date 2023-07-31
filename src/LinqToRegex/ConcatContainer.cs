@@ -3,29 +3,28 @@
 using System;
 using System.Collections;
 
-namespace Pihrtsoft.Text.RegularExpressions.Linq
+namespace Pihrtsoft.Text.RegularExpressions.Linq;
+
+internal sealed class ConcatContainer : Pattern
 {
-    internal sealed class ConcatContainer : Pattern
+    private readonly object _content;
+
+    public ConcatContainer(object content)
     {
-        private readonly object _content;
+        _content = content ?? throw new ArgumentNullException(nameof(content));
+    }
 
-        public ConcatContainer(object content)
+    internal override void AppendTo(PatternBuilder builder)
+    {
+        if (_content is object[] values)
         {
-            _content = content ?? throw new ArgumentNullException(nameof(content));
+            for (int i = 0; i < values.Length; i++)
+                builder.Append(values[i]);
         }
-
-        internal override void AppendTo(PatternBuilder builder)
+        else if (_content is IEnumerable items)
         {
-            if (_content is object[] values)
-            {
-                for (int i = 0; i < values.Length; i++)
-                    builder.Append(values[i]);
-            }
-            else if (_content is IEnumerable items)
-            {
-                foreach (object item in items)
-                    builder.Append(item);
-            }
+            foreach (object item in items)
+                builder.Append(item);
         }
     }
 }

@@ -2,169 +2,168 @@
 
 using System;
 
-namespace Pihrtsoft.Text.RegularExpressions.Linq
+namespace Pihrtsoft.Text.RegularExpressions.Linq;
+
+public abstract partial class CharGrouping
 {
-    public abstract partial class CharGrouping
+    internal sealed class CharacterCharGrouping : CharGrouping
     {
-        internal sealed class CharacterCharGrouping : CharGrouping
+        private readonly char _value;
+
+        public CharacterCharGrouping(char value)
         {
-            private readonly char _value;
-
-            public CharacterCharGrouping(char value)
-            {
-                _value = value;
-            }
-
-            protected override void AppendItemContentTo(PatternBuilder builder)
-            {
-                if (builder is null)
-                    throw new ArgumentNullException(nameof(builder));
-
-                builder.Append(_value, true);
-            }
+            _value = value;
         }
 
-        internal sealed class AsciiCharacterCharGrouping : CharGrouping
+        protected override void AppendItemContentTo(PatternBuilder builder)
         {
-            private readonly AsciiChar _value;
+            if (builder is null)
+                throw new ArgumentNullException(nameof(builder));
 
-            public AsciiCharacterCharGrouping(AsciiChar value)
-            {
-                _value = value;
-            }
+            builder.Append(_value, true);
+        }
+    }
 
-            protected override void AppendItemContentTo(PatternBuilder builder)
-            {
-                if (builder is null)
-                    throw new ArgumentNullException(nameof(builder));
+    internal sealed class AsciiCharacterCharGrouping : CharGrouping
+    {
+        private readonly AsciiChar _value;
 
-                builder.Append(_value, true);
-            }
+        public AsciiCharacterCharGrouping(AsciiChar value)
+        {
+            _value = value;
         }
 
-        internal sealed class CharactersCharGrouping : CharGrouping
+        protected override void AppendItemContentTo(PatternBuilder builder)
         {
-            private readonly string _characters;
+            if (builder is null)
+                throw new ArgumentNullException(nameof(builder));
 
-            public CharactersCharGrouping(string characters)
-            {
-                if (characters is null)
-                    throw new ArgumentNullException(nameof(characters));
+            builder.Append(_value, true);
+        }
+    }
 
-                if (characters.Length == 0)
-                    throw new ArgumentException(ExceptionHelper.CharGroupCannotBeEmpty, nameof(characters));
+    internal sealed class CharactersCharGrouping : CharGrouping
+    {
+        private readonly string _characters;
 
-                _characters = characters;
-            }
+        public CharactersCharGrouping(string characters)
+        {
+            if (characters is null)
+                throw new ArgumentNullException(nameof(characters));
 
-            protected override void AppendItemContentTo(PatternBuilder builder)
-            {
-                if (builder is null)
-                    throw new ArgumentNullException(nameof(builder));
+            if (characters.Length == 0)
+                throw new ArgumentException(ExceptionHelper.CharGroupCannotBeEmpty, nameof(characters));
 
-                builder.Append(_characters, true);
-            }
+            _characters = characters;
         }
 
-        internal sealed class CharacterRangeCharGrouping : CharGrouping
+        protected override void AppendItemContentTo(PatternBuilder builder)
         {
-            private readonly char _firstChar;
-            private readonly char _lastChar;
+            if (builder is null)
+                throw new ArgumentNullException(nameof(builder));
 
-            public CharacterRangeCharGrouping(char firstChar, char lastChar)
-            {
-                if (lastChar < firstChar)
-                    throw new ArgumentOutOfRangeException(nameof(lastChar));
+            builder.Append(_characters, true);
+        }
+    }
 
-                _firstChar = firstChar;
-                _lastChar = lastChar;
-            }
+    internal sealed class CharacterRangeCharGrouping : CharGrouping
+    {
+        private readonly char _firstChar;
+        private readonly char _lastChar;
 
-            protected override void AppendItemContentTo(PatternBuilder builder)
-            {
-                if (builder is null)
-                    throw new ArgumentNullException(nameof(builder));
+        public CharacterRangeCharGrouping(char firstChar, char lastChar)
+        {
+            if (lastChar < firstChar)
+                throw new ArgumentOutOfRangeException(nameof(lastChar));
 
-                builder.AppendCharRange(_firstChar, _lastChar);
-            }
+            _firstChar = firstChar;
+            _lastChar = lastChar;
         }
 
-        internal sealed class CharacterClassCharGrouping : CharGrouping
+        protected override void AppendItemContentTo(PatternBuilder builder)
         {
-            private readonly CharClass _value;
+            if (builder is null)
+                throw new ArgumentNullException(nameof(builder));
 
-            public CharacterClassCharGrouping(CharClass value)
-            {
-                _value = value;
-            }
+            builder.AppendCharRange(_firstChar, _lastChar);
+        }
+    }
 
-            protected override void AppendItemContentTo(PatternBuilder builder)
-            {
-                if (builder is null)
-                    throw new ArgumentNullException(nameof(builder));
+    internal sealed class CharacterClassCharGrouping : CharGrouping
+    {
+        private readonly CharClass _value;
 
-                builder.AppendCharClass(_value);
-            }
+        public CharacterClassCharGrouping(CharClass value)
+        {
+            _value = value;
         }
 
-        internal class GeneralCategoryCharGrouping : CharGrouping
+        protected override void AppendItemContentTo(PatternBuilder builder)
         {
-            private readonly GeneralCategory _category;
+            if (builder is null)
+                throw new ArgumentNullException(nameof(builder));
 
-            public GeneralCategoryCharGrouping(GeneralCategory category, bool negative)
-            {
-                _category = category;
-                Negative = negative;
-            }
+            builder.AppendCharClass(_value);
+        }
+    }
 
-            protected override void AppendItemContentTo(PatternBuilder builder)
-            {
-                if (builder is null)
-                    throw new ArgumentNullException(nameof(builder));
+    internal class GeneralCategoryCharGrouping : CharGrouping
+    {
+        private readonly GeneralCategory _category;
 
-                builder.AppendGeneralCategory(_category, Negative);
-            }
-
-            public bool Negative { get; }
+        public GeneralCategoryCharGrouping(GeneralCategory category, bool negative)
+        {
+            _category = category;
+            Negative = negative;
         }
 
-        internal class NamedBlockCharGrouping : CharGrouping
+        protected override void AppendItemContentTo(PatternBuilder builder)
         {
-            private readonly NamedBlock _block;
+            if (builder is null)
+                throw new ArgumentNullException(nameof(builder));
 
-            public NamedBlockCharGrouping(NamedBlock block, bool negative)
-            {
-                _block = block;
-                Negative = negative;
-            }
-
-            protected override void AppendItemContentTo(PatternBuilder builder)
-            {
-                if (builder is null)
-                    throw new ArgumentNullException(nameof(builder));
-
-                builder.AppendNamedBlock(_block, Negative);
-            }
-
-            public bool Negative { get; }
+            builder.AppendGeneralCategory(_category, Negative);
         }
 
-        internal class CharGroupingCharGrouping : CharGrouping
+        public bool Negative { get; }
+    }
+
+    internal class NamedBlockCharGrouping : CharGrouping
+    {
+        private readonly NamedBlock _block;
+
+        public NamedBlockCharGrouping(NamedBlock block, bool negative)
         {
-            private readonly CharGrouping _value;
+            _block = block;
+            Negative = negative;
+        }
 
-            public CharGroupingCharGrouping(CharGrouping value)
-            {
-                _value = value ?? throw new ArgumentNullException(nameof(value));
-            }
+        protected override void AppendItemContentTo(PatternBuilder builder)
+        {
+            if (builder is null)
+                throw new ArgumentNullException(nameof(builder));
 
-            protected override void AppendItemContentTo(PatternBuilder builder)
-            {
-                if (builder is null)
-                    throw new ArgumentNullException(nameof(builder));
+            builder.AppendNamedBlock(_block, Negative);
+        }
 
-                _value.AppendContentTo(builder);
-            }
+        public bool Negative { get; }
+    }
+
+    internal class CharGroupingCharGrouping : CharGrouping
+    {
+        private readonly CharGrouping _value;
+
+        public CharGroupingCharGrouping(CharGrouping value)
+        {
+            _value = value ?? throw new ArgumentNullException(nameof(value));
+        }
+
+        protected override void AppendItemContentTo(PatternBuilder builder)
+        {
+            if (builder is null)
+                throw new ArgumentNullException(nameof(builder));
+
+            _value.AppendContentTo(builder);
         }
     }
 }

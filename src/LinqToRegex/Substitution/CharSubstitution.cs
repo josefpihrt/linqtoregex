@@ -2,29 +2,28 @@
 
 using System.Text;
 
-namespace Pihrtsoft.Text.RegularExpressions.Linq
+namespace Pihrtsoft.Text.RegularExpressions.Linq;
+
+internal sealed class CharSubstitution : Substitution
 {
-    internal sealed class CharSubstitution : Substitution
+    private readonly char _char;
+
+    internal CharSubstitution(char character)
     {
-        private readonly char _char;
-
-        internal CharSubstitution(char character)
-        {
-            _char = character;
-        }
-
-        internal override void AppendTo(StringBuilder builder)
-        {
-            if (_char == '$')
-            {
-                builder.Append("$$");
-            }
-            else
-            {
-                builder.Append(_char);
-            }
-        }
-
-        internal override string Value => (_char == '$') ? "$$" : _char.ToString();
+        _char = character;
     }
+
+    internal override void AppendTo(StringBuilder builder)
+    {
+        if (_char == '$')
+        {
+            builder.Append("$$");
+        }
+        else
+        {
+            builder.Append(_char);
+        }
+    }
+
+    internal override string Value => (_char == '$') ? "$$" : _char.ToString();
 }

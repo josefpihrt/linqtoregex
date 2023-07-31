@@ -2,23 +2,22 @@
 
 using System;
 
-namespace Pihrtsoft.Text.RegularExpressions.Linq
+namespace Pihrtsoft.Text.RegularExpressions.Linq;
+
+internal sealed class GroupNumberReference : QuantifiablePattern
 {
-    internal sealed class GroupNumberReference : QuantifiablePattern
+    public GroupNumberReference(int groupNumber)
     {
-        public GroupNumberReference(int groupNumber)
-        {
-            if (groupNumber < 0)
-                throw new ArgumentOutOfRangeException(nameof(groupNumber));
+        if (groupNumber < 0)
+            throw new ArgumentOutOfRangeException(nameof(groupNumber));
 
-            GroupNumber = groupNumber;
-        }
-
-        internal override void AppendTo(PatternBuilder builder)
-        {
-            builder.AppendGroupReferenceInternal(GroupNumber);
-        }
-
-        public int GroupNumber { get; }
+        GroupNumber = groupNumber;
     }
+
+    internal override void AppendTo(PatternBuilder builder)
+    {
+        builder.AppendGroupReferenceInternal(GroupNumber);
+    }
+
+    public int GroupNumber { get; }
 }
