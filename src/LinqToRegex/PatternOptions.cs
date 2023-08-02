@@ -2,56 +2,88 @@
 
 using System;
 
-namespace Pihrtsoft.Text.RegularExpressions.Linq;
+#pragma warning disable RCS1223
+
+namespace Pihrtsoft.Text.RegularExpressions;
 
 /// <summary>
-/// Provides enumerated values to use when creating a text representation of a pattern.
+/// Specifies a set of features to support on the <see cref="PatternBuilder"/> object. This class cannot be inherited.
 /// </summary>
-[Flags]
-public enum PatternOptions
+public sealed class PatternOptions
 {
+    private const string InitialNewLine = "\r\n";
+
+    private char[] _coreNewLine = new[] { '\r', '\n' };
+    private int _indentSize;
+
     /// <summary>
-    /// Specifies that no options are set.
+    /// Initializes a new instance of the <see cref="PatternOptions"/> class.
     /// </summary>
-    None = 0,
+    public PatternOptions()
+    {
+        IdentifierBoundary = IdentifierBoundary.AngleBrackets;
+        IndentSize = 4;
+    }
+
+    /// <summary>
+    /// Gets or sets a value indicating whether a group name will be enclosed in angle brackets or apostrophes.
+    /// </summary>
+    public IdentifierBoundary IdentifierBoundary { get; set; }
+
+    /// <summary>
+    /// Gets or sets the number of spaces in an indent.
+    /// </summary>
+    public int IndentSize
+    {
+        get => _indentSize;
+        set => _indentSize = Math.Max(value, 1);
+    }
+
+    /// <summary>
+    /// Gets or sets the line terminator string used by the current <see cref="PatternOptions"/>.
+    /// </summary>
+    public string NewLine
+    {
+        get => new(_coreNewLine);
+        set => _coreNewLine = (value ?? InitialNewLine).ToCharArray();
+    }
 
     /// <summary>
     /// Specifies that an if construct condition will not be expressed as an assertion.
     /// </summary>
-    IfConditionWithoutAssertion = 1,
+    public bool IfConditionWithoutAssertion { get; set; }
 
     /// <summary>
     /// Specifies that an empty (noncapturing) group will be added after the group number backreference.
     /// </summary>
-    SeparateGroupNumberReference = 1 << 1,
+    public bool SeparateGroupNumberReference { get; set; }
 
     /// <summary>
     /// Specifies that a pattern text will be formatted.
     /// </summary>
-    Format = 1 << 2,
+    public bool Indented { get; set; }
 
     /// <summary>
-    /// Specifies that a comment will be added to the end of each line. This options is relevant only in combination with <see cref="Format"/> option.
+    /// Specifies that a comment will be added to the end of each line. This options is relevant only in combination with <see cref="Indented"/> option.
     /// </summary>
-    Comment = 1 << 3,
-
-    /// <summary>
-    /// Indicates that the <see cref="Format"/> and <see cref="Comment"/> options are used. This is a composite options.
-    /// </summary>
-    FormatAndComment = Format | Comment,
+    public bool IncludeComment { get; set; }
 
     /// <summary>
     /// Specifies that a pattern will be converted to C# multiline literal. This option cannot be used in a combination with <see cref="VisualBasicLiteral"/>.
     /// </summary>
-    CSharpLiteral = 1 << 4,
+    public bool CSharpLiteral { get; set; }
 
     /// <summary>
     /// Specifies that a pattern will be converted to Visual Basic multiline literal. This option cannot be used in a combination with <see cref="CSharpLiteral"/>.
     /// </summary>
-    VisualBasicLiteral = 1 << 5,
+    public bool VisualBasicLiteral { get; set; }
 
     /// <summary>
-    /// Specifies that current inline options will be added to each line. This options is relevant only in combination with <see cref="Format"/> option.
+    /// Specifies that current inline options will be added to each line. This options is relevant only in combination with <see cref="Indented"/> option.
     /// </summary>
-    InlineOptions = 1 << 6,
+    public bool IncludeInlineOptions { get; set; }
+
+    internal char OpenIdentifierBoundaryChar => (IdentifierBoundary == IdentifierBoundary.Apostrophe) ? '\'' : '<';
+
+    internal char CloseIdentifierBoundaryChar => (IdentifierBoundary == IdentifierBoundary.Apostrophe) ? '\'' : '>';
 }

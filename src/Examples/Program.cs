@@ -3,7 +3,7 @@
 using System;
 using System.IO;
 using System.Linq;
-using static Pihrtsoft.Text.RegularExpressions.Linq.PatternFactory;
+using static Pihrtsoft.Text.RegularExpressions.PatternFactory;
 
 namespace Pihrtsoft.Text.RegularExpressions.Linq.Examples;
 
@@ -69,7 +69,7 @@ internal static class Program
 
     private static void Dump(string title, Pattern pattern)
     {
-        const PatternOptions options = PatternOptions.FormatAndComment;
+        var options = new PatternOptions() { Indented = true, IncludeComment = true};
 
         if (!string.IsNullOrEmpty(title))
             Console.WriteLine($"{title}:");

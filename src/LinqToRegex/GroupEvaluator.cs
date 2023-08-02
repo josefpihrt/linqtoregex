@@ -2,7 +2,7 @@
 
 using System.Text.RegularExpressions;
 
-namespace Pihrtsoft.Text.RegularExpressions.Linq;
+namespace Pihrtsoft.Text.RegularExpressions;
 
 /// <summary>
 /// Represents the method that is called each time a regular expression group is found during a Replace method operation.

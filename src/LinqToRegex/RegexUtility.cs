@@ -1,13 +1,12 @@
 // Copyright (c) Josef Pihrt. All rights reserved. Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
 using System;
-using System.Diagnostics;
 using System.Globalization;
 using System.Text;
 using System.Text.RegularExpressions;
-using static Pihrtsoft.Text.RegularExpressions.Linq.PatternFactory;
+using static Pihrtsoft.Text.RegularExpressions.PatternFactory;
 
-namespace Pihrtsoft.Text.RegularExpressions.Linq;
+namespace Pihrtsoft.Text.RegularExpressions;
 
 /// <summary>
 /// Provides static methods for escaping and validating regular expressions elements.
@@ -261,24 +260,24 @@ public static class RegexUtility
     /// <summary>
     /// Escapes all dollar signs by doubling them.
     /// </summary>
-    /// <param name="input">The substitution pattern to be escaped.</param>
-    /// <exception cref="ArgumentNullException"><paramref name="input"/> is <c>null</c>.</exception>
-    public static string EscapeSubstitution(string input)
+    /// <param name="value">The substitution pattern to be escaped.</param>
+    /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
+    public static string EscapeSubstitution(string value)
     {
-        if (input is null)
-            throw new ArgumentNullException(nameof(input));
+        if (value is null)
+            throw new ArgumentNullException(nameof(value));
 
-        for (int i = 0; i < input.Length; i++)
+        for (int i = 0; i < value.Length; i++)
         {
-            if (input[i] == '$')
+            if (value[i] == '$')
             {
                 var sb = new StringBuilder();
-                EscapeSubstitution(input, i, sb);
+                EscapeSubstitution(value, i, sb);
                 return sb.ToString();
             }
         }
 
-        return input;
+        return value;
     }
 
     internal static void EscapeSubstitution(string input, int i, StringBuilder sb)
@@ -311,17 +310,14 @@ public static class RegexUtility
     /// <summary>
     /// Returns randomly generated group name.
     /// </summary>
-    public static string GetRandomGroupName()
-    {
-        return GetRandomGroupName(8);
-    }
+    internal static string GetRandomGroupName() => GetRandomGroupName(8);
 
     /// <summary>
     /// Returns randomly generated group name with a specified length.
     /// </summary>
     /// <param name="length">Length of a group name.</param>
     /// <exception cref="ArgumentOutOfRangeException"><paramref name="length"/> is less than one.</exception>
-    public static string GetRandomGroupName(int length)
+    internal static string GetRandomGroupName(int length)
     {
         if (length < 1)
             throw new ArgumentOutOfRangeException(nameof(length));
@@ -359,7 +355,7 @@ public static class RegexUtility
     /// Gets a description of the specified Unicode category.
     /// </summary>
     /// <param name="category">An enumerated constant that identifies Unicode category.</param>
-    public static string GetCategoryDescription(GeneralCategory category)
+    internal static string GetCategoryDescription(GeneralCategory category)
     {
         return category switch
         {
@@ -408,7 +404,7 @@ public static class RegexUtility
     /// Gets a description of the specified Unicode block.
     /// </summary>
     /// <param name="block">An enumerated constant that identifies Unicode block.</param>
-    public static string GetBlockDescription(NamedBlock block)
+    internal static string GetBlockDescription(NamedBlock block)
     {
         return block switch
         {

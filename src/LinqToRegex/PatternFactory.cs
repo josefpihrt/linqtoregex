@@ -3,7 +3,7 @@
 using System;
 using System.Text.RegularExpressions;
 
-namespace Pihrtsoft.Text.RegularExpressions.Linq;
+namespace Pihrtsoft.Text.RegularExpressions;
 
 /// <summary>
 /// Provides static methods that returns various kinds of patterns.
@@ -16,7 +16,7 @@ public static class PatternFactory
     /// <param name="content">An object that contains the elements to concatenate.</param>
     public static Pattern Concat(object content)
     {
-        return new ConcatContainer(content);
+        return new ConcatContainerPattern(content);
     }
 
     /// <summary>
@@ -25,7 +25,7 @@ public static class PatternFactory
     /// <param name="content">An object array that contains the elements to concatenate.</param>
     public static Pattern Concat(params object[] content)
     {
-        return new ConcatContainer(content);
+        return new ConcatContainerPattern(content);
     }
 
     /// <summary>
@@ -36,7 +36,7 @@ public static class PatternFactory
     /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
     public static Pattern Join(object separator, object content)
     {
-        return new JoinContainer(separator, content);
+        return new JoinContainerPattern(separator, content);
     }
 
     /// <summary>
@@ -47,7 +47,7 @@ public static class PatternFactory
     /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
     public static Pattern Join(object separator, params object[] content)
     {
-        return new JoinContainer(separator, content);
+        return new JoinContainerPattern(separator, content);
     }
 
     /// <summary>
@@ -70,7 +70,7 @@ public static class PatternFactory
     /// <exception cref="ArgumentNullException"><paramref name="contentBefore"/> or <paramref name="content"/> or <paramref name="contentAfter"/> is <c>null</c>.</exception>
     internal static Pattern Surround(object contentBefore, object content, object contentAfter)
     {
-        return new SurroundContainer(contentBefore, content, contentAfter);
+        return new SurroundContainerPattern(contentBefore, content, contentAfter);
     }
 
     /// <summary>
@@ -93,7 +93,7 @@ public static class PatternFactory
     /// <exception cref="ArgumentNullException"><paramref name="value"/> is <c>null</c>.</exception>
     internal static Pattern Surround(AsciiChar charBefore, object value, AsciiChar charAfter)
     {
-        return new AsciiCharSurroundContainer(charBefore, value, charAfter);
+        return new AsciiCharSurroundContainerPattern(charBefore, value, charAfter);
     }
 
     /// <summary>
@@ -137,7 +137,7 @@ public static class PatternFactory
         if (right is null)
             throw new ArgumentNullException(nameof(right));
 
-        return new OrContainer(left, right);
+        return new OrContainerPattern(left, right);
     }
 
     /// <summary>
@@ -160,7 +160,7 @@ public static class PatternFactory
     /// <exception cref="ArgumentNullException"><paramref name="testContent"/> or <paramref name="trueContent"/> is <c>null</c>.</exception>
     public static QuantifiablePattern IfAssert(object testContent, object trueContent, object? falseContent)
     {
-        return new IfAssert(testContent, trueContent, falseContent);
+        return new IfAssertPattern(testContent, trueContent, falseContent);
     }
 
     /// <summary>
@@ -185,7 +185,7 @@ public static class PatternFactory
     /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
     public static QuantifiablePattern IfGroup(string groupName, object trueContent, object? falseContent)
     {
-        return new IfGroup(groupName, trueContent, falseContent);
+        return new IfGroupPattern(groupName, trueContent, falseContent);
     }
 
     /// <summary>
@@ -210,7 +210,7 @@ public static class PatternFactory
     /// <exception cref="ArgumentOutOfRangeException"><paramref name="groupNumber"/> is less than zero.</exception>
     public static QuantifiablePattern IfGroup(int groupNumber, object trueContent, object? falseContent)
     {
-        return new IfGroup(groupNumber, trueContent, falseContent);
+        return new IfGroupPattern(groupNumber, trueContent, falseContent);
     }
 
     /// <summary>
@@ -344,7 +344,7 @@ public static class PatternFactory
     /// </summary>
     public static QuantifiablePattern BeginInput()
     {
-        return new StartOfInput();
+        return new StartOfInputPattern();
     }
 
     /// <summary>
@@ -352,7 +352,7 @@ public static class PatternFactory
     /// </summary>
     public static QuantifiablePattern EndInput()
     {
-        return new EndOfInput();
+        return new EndOfInputPattern();
     }
 
     /// <summary>
@@ -368,7 +368,7 @@ public static class PatternFactory
     /// </summary>
     public static QuantifiablePattern BeginInputOrLine()
     {
-        return new StartOfLine();
+        return new StartOfLinePattern();
     }
 
     /// <summary>
@@ -395,7 +395,7 @@ public static class PatternFactory
     /// </summary>
     public static QuantifiablePattern EndInputOrLine()
     {
-        return new EndOfLine();
+        return new EndOfLinePattern();
     }
 
     /// <summary>
@@ -414,7 +414,7 @@ public static class PatternFactory
     /// </summary>
     public static QuantifiablePattern EndInputOrBeforeEndingLinefeed()
     {
-        return new EndOfInputOrBeforeEndingLinefeed();
+        return new EndOfInputOrBeforeEndingLinefeedPattern();
     }
 
     /// <summary>
@@ -422,7 +422,7 @@ public static class PatternFactory
     /// </summary>
     public static QuantifiablePattern PreviousMatchEnd()
     {
-        return new PreviousMatchEnd();
+        return new PreviousMatchEndPattern();
     }
 
     /// <summary>
@@ -513,7 +513,7 @@ public static class PatternFactory
     /// </summary>
     public static QuantifiablePattern Group()
     {
-        return new NumberedGroup("");
+        return new NumberedGroupPattern("");
     }
 
     /// <summary>
@@ -523,7 +523,7 @@ public static class PatternFactory
     /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
     public static QuantifiablePattern Group(object content)
     {
-        return new NumberedGroup(content);
+        return new NumberedGroupPattern(content);
     }
 
     /// <summary>
@@ -545,7 +545,7 @@ public static class PatternFactory
     /// <exception cref="ArgumentException"><paramref name="name"/> is not a valid regex group name.</exception>
     public static QuantifiablePattern NamedGroup(string name, object content)
     {
-        return new NamedGroup(name, content);
+        return new NamedGroupPattern(name, content);
     }
 
     /// <summary>
@@ -567,7 +567,7 @@ public static class PatternFactory
     /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
     public static QuantifiablePattern NoncapturingGroup(object content)
     {
-        return new NoncapturingGroup(content);
+        return new NoncapturingGroupPattern(content);
     }
 
     /// <summary>
@@ -590,7 +590,7 @@ public static class PatternFactory
     /// <exception cref="ArgumentException"><paramref name="name1"/> or <paramref name="name2"/> is not a valid regex group name.</exception>
     public static QuantifiablePattern BalancingGroup(string name1, string name2, object content)
     {
-        return new BalancingGroup(name1, name2, content);
+        return new BalancingGroupPattern(name1, name2, content);
     }
 
     /// <summary>
@@ -613,7 +613,7 @@ public static class PatternFactory
     /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
     public static QuantifiablePattern NonbacktrackingGroup(object content)
     {
-        return new NonbacktrackingGroup(content);
+        return new NonbacktrackingGroupPattern(content);
     }
 
     /// <summary>
@@ -889,7 +889,7 @@ public static class PatternFactory
     /// <exception cref="ArgumentOutOfRangeException"><paramref name="groupNumber"/> is less than zero.</exception>
     public static QuantifiablePattern GroupReference(int groupNumber)
     {
-        return new GroupNumberReference(groupNumber);
+        return new GroupNumberReferencePattern(groupNumber);
     }
 
     /// <summary>
@@ -900,7 +900,7 @@ public static class PatternFactory
     /// <exception cref="ArgumentException"><paramref name="groupName"/> is not a valid regex group name.</exception>
     public static QuantifiablePattern GroupReference(string groupName)
     {
-        return new GroupNameReference(groupName);
+        return new GroupNameReferencePattern(groupName);
     }
 
     /// <summary>
@@ -909,7 +909,7 @@ public static class PatternFactory
     /// <param name="applyOptions">A bitwise combination of the enumeration values that are applied.</param>
     public static Pattern Options(RegexOptions applyOptions)
     {
-        return new Options(applyOptions);
+        return new OptionsPattern(applyOptions);
     }
 
     /// <summary>
@@ -920,7 +920,7 @@ public static class PatternFactory
     /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
     public static QuantifiablePattern Options(RegexOptions applyOptions, object content)
     {
-        return new GroupOptions(applyOptions, content);
+        return new GroupOptionsPattern(applyOptions, content);
     }
 
     /// <summary>
@@ -941,7 +941,7 @@ public static class PatternFactory
     /// <param name="disableOptions">A bitwise combination of the enumeration values that are disabled.</param>
     public static Pattern Options(RegexOptions applyOptions, RegexOptions disableOptions)
     {
-        return new Options(applyOptions, disableOptions);
+        return new OptionsPattern(applyOptions, disableOptions);
     }
 
     /// <summary>
@@ -953,7 +953,7 @@ public static class PatternFactory
     /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
     public static QuantifiablePattern Options(RegexOptions applyOptions, RegexOptions disableOptions, object content)
     {
-        return new GroupOptions(applyOptions, disableOptions, content);
+        return new GroupOptionsPattern(applyOptions, disableOptions, content);
     }
 
     /// <summary>
@@ -974,7 +974,7 @@ public static class PatternFactory
     /// <param name="options">A bitwise combination of the enumeration values that are disabled.</param>
     public static Pattern DisableOptions(RegexOptions options)
     {
-        return new Options(RegexOptions.None, options);
+        return new OptionsPattern(RegexOptions.None, options);
     }
 
     /// <summary>
@@ -985,7 +985,7 @@ public static class PatternFactory
     /// <exception cref="ArgumentNullException"><paramref name="content"/> is <c>null</c>.</exception>
     public static QuantifiablePattern DisableOptions(RegexOptions options, object content)
     {
-        return new GroupOptions(RegexOptions.None, options, content);
+        return new GroupOptionsPattern(RegexOptions.None, options, content);
     }
 
     /// <summary>
@@ -2566,7 +2566,7 @@ public static class PatternFactory
     /// </summary>
     public static QuantifiablePattern Any()
     {
-        return new AnyChar();
+        return new AnyCharPattern();
     }
 
     /// <summary>
@@ -2584,7 +2584,7 @@ public static class PatternFactory
     /// </summary>
     public static QuantifiablePattern AnyExceptLinefeed()
     {
-        return DisableOptions(RegexOptions.Singleline, new AnyCharNative());
+        return DisableOptions(RegexOptions.Singleline, new AnyCharNativePattern());
     }
 
     /// <summary>
@@ -2602,7 +2602,7 @@ public static class PatternFactory
     /// </summary>
     public static QuantifiablePattern AnyNative()
     {
-        return new AnyCharNative();
+        return new AnyCharNativePattern();
     }
 
     /// <summary>
@@ -2812,7 +2812,7 @@ public static class PatternFactory
     /// </summary>
     public static CharGroup Alphanumeric()
     {
-        return Character(Chars.Alphanumeric());
+        return Character(CharGroupingFactory.Alphanumeric());
     }
 
     /// <summary>
@@ -2830,7 +2830,7 @@ public static class PatternFactory
     /// </summary>
     public static CharGroup NotAlphanumeric()
     {
-        return NotChar(Chars.Alphanumeric());
+        return NotChar(CharGroupingFactory.Alphanumeric());
     }
 
     /// <summary>
@@ -2848,7 +2848,7 @@ public static class PatternFactory
     /// </summary>
     public static QuantifiablePattern AlphanumericLower()
     {
-        return DisableOptions(RegexOptions.IgnoreCase, Chars.Range('a', 'z').ArabicDigit());
+        return DisableOptions(RegexOptions.IgnoreCase, CharGroupingFactory.Range('a', 'z').ArabicDigit());
     }
 
     /// <summary>
@@ -2866,7 +2866,7 @@ public static class PatternFactory
     /// </summary>
     public static QuantifiablePattern NotAlphanumericLower()
     {
-        return DisableOptions(RegexOptions.IgnoreCase, !Chars.Range('a', 'z').ArabicDigit());
+        return DisableOptions(RegexOptions.IgnoreCase, !CharGroupingFactory.Range('a', 'z').ArabicDigit());
     }
 
     /// <summary>
@@ -2884,7 +2884,7 @@ public static class PatternFactory
     /// </summary>
     public static QuantifiablePattern AlphanumericUpper()
     {
-        return DisableOptions(RegexOptions.IgnoreCase, Chars.Range('A', 'Z').ArabicDigit());
+        return DisableOptions(RegexOptions.IgnoreCase, CharGroupingFactory.Range('A', 'Z').ArabicDigit());
     }
 
     /// <summary>
@@ -2902,7 +2902,7 @@ public static class PatternFactory
     /// </summary>
     public static QuantifiablePattern NotAlphanumericUpper()
     {
-        return DisableOptions(RegexOptions.IgnoreCase, !Chars.Range('A', 'Z').ArabicDigit());
+        return DisableOptions(RegexOptions.IgnoreCase, !CharGroupingFactory.Range('A', 'Z').ArabicDigit());
     }
 
     /// <summary>
@@ -2920,7 +2920,7 @@ public static class PatternFactory
     /// </summary>
     public static CharGroup AlphanumericUnderscore()
     {
-        return Character(Chars.AlphanumericUnderscore());
+        return Character(CharGroupingFactory.AlphanumericUnderscore());
     }
 
     /// <summary>
@@ -2938,7 +2938,7 @@ public static class PatternFactory
     /// </summary>
     public static CharGroup NotAlphanumericUnderscore()
     {
-        return NotChar(Chars.AlphanumericUnderscore());
+        return NotChar(CharGroupingFactory.AlphanumericUnderscore());
     }
 
     /// <summary>
@@ -2956,7 +2956,7 @@ public static class PatternFactory
     /// </summary>
     public static CharGroup LatinLetter()
     {
-        return Character(Chars.LatinLetter());
+        return Character(CharGroupingFactory.LatinLetter());
     }
 
     /// <summary>
@@ -2982,7 +2982,7 @@ public static class PatternFactory
     /// </summary>
     public static CharGroup NotLatinLetter()
     {
-        return NotChar(Chars.LatinLetter());
+        return NotChar(CharGroupingFactory.LatinLetter());
     }
 
     /// <summary>
@@ -3144,7 +3144,7 @@ public static class PatternFactory
     /// </summary>
     public static CharGroup ArabicDigit()
     {
-        return Character(Chars.ArabicDigit());
+        return Character(CharGroupingFactory.ArabicDigit());
     }
 
     /// <summary>
@@ -3170,7 +3170,7 @@ public static class PatternFactory
     /// </summary>
     public static CharGroup NotArabicDigit()
     {
-        return NotChar(Chars.ArabicDigit());
+        return NotChar(CharGroupingFactory.ArabicDigit());
     }
 
     /// <summary>
@@ -3188,7 +3188,7 @@ public static class PatternFactory
     /// </summary>
     public static CharGroup HexadecimalDigit()
     {
-        return Character(Chars.HexadecimalDigit());
+        return Character(CharGroupingFactory.HexadecimalDigit());
     }
 
     /// <summary>
@@ -3206,7 +3206,7 @@ public static class PatternFactory
     /// </summary>
     public static CharGroup NotHexadecimalDigit()
     {
-        return NotChar(Chars.HexadecimalDigit());
+        return NotChar(CharGroupingFactory.HexadecimalDigit());
     }
 
     /// <summary>
@@ -3224,7 +3224,7 @@ public static class PatternFactory
     /// </summary>
     public static CharGroup Parenthesis()
     {
-        return Character(Chars.Parenthesis());
+        return Character(CharGroupingFactory.Parenthesis());
     }
 
     /// <summary>
@@ -3242,7 +3242,7 @@ public static class PatternFactory
     /// </summary>
     public static CharGroup NotParenthesis()
     {
-        return NotChar(Chars.Parenthesis());
+        return NotChar(CharGroupingFactory.Parenthesis());
     }
 
     /// <summary>
@@ -3260,7 +3260,7 @@ public static class PatternFactory
     /// </summary>
     public static CharGroup CurlyBracket()
     {
-        return Character(Chars.CurlyBracket());
+        return Character(CharGroupingFactory.CurlyBracket());
     }
 
     /// <summary>
@@ -3278,7 +3278,7 @@ public static class PatternFactory
     /// </summary>
     public static CharGroup NotCurlyBracket()
     {
-        return NotChar(Chars.CurlyBracket());
+        return NotChar(CharGroupingFactory.CurlyBracket());
     }
 
     /// <summary>
@@ -3296,7 +3296,7 @@ public static class PatternFactory
     /// </summary>
     public static CharGroup SquareBracket()
     {
-        return Character(Chars.SquareBracket());
+        return Character(CharGroupingFactory.SquareBracket());
     }
 
     /// <summary>
@@ -3314,7 +3314,7 @@ public static class PatternFactory
     /// </summary>
     public static CharGroup NotSquareBracket()
     {
-        return NotChar(Chars.SquareBracket());
+        return NotChar(CharGroupingFactory.SquareBracket());
     }
 
     /// <summary>
@@ -3693,7 +3693,7 @@ public static class PatternFactory
     /// </summary>
     public static QuantifiedPattern WhileNotDigit()
     {
-        return WhileNotChar(Chars.Digit());
+        return WhileNotChar(CharGroupingFactory.Digit());
     }
 
     /// <summary>
@@ -3701,7 +3701,7 @@ public static class PatternFactory
     /// </summary>
     public static QuantifiedPattern WhileNotWhiteSpace()
     {
-        return WhileNotChar(Chars.WhiteSpace());
+        return WhileNotChar(CharGroupingFactory.WhiteSpace());
     }
 
     /// <summary>
@@ -3709,7 +3709,7 @@ public static class PatternFactory
     /// </summary>
     public static QuantifiedPattern WhileNotWordChar()
     {
-        return WhileNotChar(Chars.WordChar());
+        return WhileNotChar(CharGroupingFactory.WordChar());
     }
 
     /// <summary>

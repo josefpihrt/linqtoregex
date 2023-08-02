@@ -1,6 +1,6 @@
 ﻿// Copyright (c) Josef Pihrt. All rights reserved. Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
-namespace Pihrtsoft.Text.RegularExpressions.Linq;
+namespace Pihrtsoft.Text.RegularExpressions;
 
 /// <summary>
 /// Specifies whether a content will be enclosed in a certain kind of a group construct.

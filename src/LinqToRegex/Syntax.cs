@@ -2,7 +2,7 @@
 
 using System.Text.RegularExpressions;
 
-namespace Pihrtsoft.Text.RegularExpressions.Linq;
+namespace Pihrtsoft.Text.RegularExpressions;
 
 /// <summary>
 /// Provides static methods and constants for obtaining regular expression language elements.

@@ -2,7 +2,7 @@
 
 using System;
 
-namespace Pihrtsoft.Text.RegularExpressions.Linq;
+namespace Pihrtsoft.Text.RegularExpressions;
 
 /// <summary>
 /// Specifies a character class.

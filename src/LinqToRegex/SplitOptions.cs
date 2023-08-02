@@ -2,7 +2,7 @@
 
 using System;
 
-namespace Pihrtsoft.Text.RegularExpressions.Linq;
+namespace Pihrtsoft.Text.RegularExpressions;
 
 /// <summary>
 /// Provides enumerated values to use when splitting a text.

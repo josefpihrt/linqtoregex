@@ -44,7 +44,6 @@
   <ItemGroup>
     <None Include="..\..\images\icon.png" Pack="true" PackagePath="\" Visible="false" />
     <None Include="docs\NuGetReadme.md" Pack="true" PackagePath="docs\README.md" />
-    <None Include="LinqToRegex.snk" />
   </ItemGroup>
 
   <ItemGroup>
